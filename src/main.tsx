@@ -15,7 +15,6 @@ const seed: EventItem[] = [
 ]
 
 const money = (n: number) => `₹${Math.round(n).toLocaleString('en-IN')}`
-const sleep = (ms: number) => new Promise(resolve => window.setTimeout(resolve, ms))
 
 function App() {
   const [events, setEvents] = useState(seed)
@@ -23,18 +22,21 @@ function App() {
   const [progress, setProgress] = useState(0)
   const [tab, setTab] = useState('Overview')
   const [selected, setSelected] = useState<EventItem | null>(seed[0])
+  const [recoveredBase, setRecoveredBase] = useState(86400)
 
   useEffect(() => {
     if (!running) return
-    const timer = window.setInterval(() => setProgress(p => Math.min(100, p + 2)), 55)
+    const timer = window.setInterval(() => {
+      setProgress(p => {
+        const next = Math.min(100, p + 2)
+        if (next >= 100) window.setTimeout(() => setRunning(false), 0)
+        return next
+      })
+    }, 55)
     return () => window.clearInterval(timer)
   }, [running])
 
-  useEffect(() => {
-    if (progress >= 100) setRunning(false)
-  }, [progress])
-
-  const recovered = useMemo(() => 86400 + Math.round(progress * 73), [progress])
+  const recovered = useMemo(() => recoveredBase + Math.round(progress * 73), [progress, recoveredBase])
   const risk = 240000
   const rate = Math.min(100, Math.round((recovered / risk) * 100))
   const stage = progress < 20 ? 'DETECT' : progress < 40 ? 'DIAGNOSE' : progress < 60 ? 'DECIDE' : progress < 80 ? 'RECOVER' : 'VERIFY'
@@ -43,20 +45,24 @@ function App() {
     setProgress(0)
     setRunning(true)
     setSelected(null)
+    setRecoveredBase(86400)
     setEvents(seed.map((e, i) => i === 4 ? { ...e, result: 'Pending' } : e))
+    setTab('Overview')
   }
+
+  const complete = progress >= 100 && !running
 
   return <div className="app">
     <header className="nav">
       <div className="logo"><span className="logoMark">R</span><span>RazorRecover</span><em>AI</em></div>
       <div className="navTabs">{['Overview', 'Simulation', 'Agent trace', 'Audit trail'].map(t => <button className={tab === t ? 'active' : ''} onClick={() => setTab(t)} key={t}>{t}</button>)}</div>
-      <div className="live"><span /> LIVE · DEMO MODE</div>
+      <div className="live"><span /> {running ? `PROCESSING · ${progress}%` : complete ? 'LIVE · COMPLETE' : 'LIVE · DEMO MODE'}</div>
     </header>
 
     <main className="shell">
       <section className="hero">
         <div className="heroCopy"><div className="eyebrow">REVENUE RECOVERY / 01</div><h1>Recover revenue.<br/><i>Intelligently.</i></h1><p>An autonomous recovery agent that detects leakage, diagnoses root causes, applies bounded interventions, and proves the money recovered.</p></div>
-        <div className="heroAction"><div className="health"><span /> All systems nominal <b>·</b> 42ms</div><button className="run" onClick={run} disabled={running}><span>{running ? `Processing ${progress}%` : 'Run live simulation'}</span><b>↗</b></button></div>
+        <div className="heroAction"><div className="health"><span /> All systems nominal <b>·</b> 42ms</div><button className="run" onClick={run} disabled={running}><span>{running ? `Processing ${progress}%` : complete ? 'Run again' : 'Run live simulation'}</span><b>↗</b></button></div>
       </section>
 
       <section className="metrics">
@@ -70,22 +76,22 @@ function App() {
         <div className="panel corePanel">
           <div className="panelTop"><div><span className="eyebrow">AGENT CORE</span><h2>Revenue recovery engine</h2></div><span className="secure">● BOUNDED · SAFE</span></div>
           <div className="coreVisual" aria-label="3D recovery engine visualization">
-            <div className={`orb ${running ? 'active' : ''}`}><div className="orbGlow" /><div className="orbInner"><strong>{running ? progress : 'AI'}</strong><small>{running ? stage : 'READY'}</small></div></div>
+            <div className={`orb ${running ? 'active' : ''}`}><div className="orbGlow" /><div className="orbInner"><strong>{running ? progress : 'AI'}</strong><small>{running ? stage : complete ? 'DONE' : 'READY'}</small></div></div>
             <div className="ring r1"/><div className="ring r2"/><div className="ring r3"/>
             <div className="orbitDot od1"/><div className="orbitDot od2"/><div className="orbitDot od3"/>
             <div className="node n1"><span>01</span>DETECT</div><div className="node n2"><span>02</span>DIAGNOSE</div><div className="node n3"><span>03</span>DECIDE</div><div className="node n4"><span>04</span>RECOVER</div>
             <div className="coreGridLabel">AUTONOMOUS<br/><b>RECOVERY CORE</b></div>
           </div>
-          <div className="pipeline">{['Detect','Diagnose','Decide','Recover','Verify'].map((x,i)=>{ const done = running ? progress >= (i + 1) * 20 : false; return <div className={done ? 'step done' : 'step'} key={x}><span>{String(i+1).padStart(2,'0')}</span>{x}</div> })}</div>
+          <div className="pipeline">{['Detect','Diagnose','Decide','Recover','Verify'].map((x,i)=>{ const done = running || complete ? progress >= (i + 1) * 20 : false; return <div className={done ? 'step done' : 'step'} key={x}><span>{String(i+1).padStart(2,'0')}</span>{x}</div> })}</div>
         </div>
 
         <div className="panel tracePanel">
-          <div className="panelTop"><div><span className="eyebrow">AI JUDGEMENT</span><h2>{tab === 'Overview' ? 'Latest decisions' : tab}</h2></div><span className="pulse">● streaming</span></div>
+          <div className="panelTop"><div><span className="eyebrow">AI JUDGEMENT</span><h2>{tab === 'Overview' ? 'Latest decisions' : tab}</h2></div><span className="pulse">● {running ? 'processing' : 'streaming'}</span></div>
           {tab === 'Overview' && <>
             <div className="traceList">
               <Trace title="Root cause detected" text="Transient bank failure · retry permitted" tag="94%" />
               <Trace title="Policy gate passed" text="Idempotency ✓ · attempts 1/2 · low risk" tag="SAFE" />
-              <Trace title="Recovery executed" text="Retry payment · ₹2,499" tag="DONE" />
+              <Trace title="Recovery executed" text="Retry payment · ₹2,499" tag={progress >= 60 ? 'DONE' : 'READY'} />
               <Trace title="Safety stop" text="Retry limit reached · human escalation" tag="STOP" stop />
             </div>
             <div className="policy"><span>POLICY ENGINE</span><b>Every money action is explainable, bounded & gated.</b><div><i>✓</i> No duplicate charge&nbsp;&nbsp; <i>✓</i> Max 2 retries&nbsp;&nbsp; <i>✓</i> Audit event</div></div>
