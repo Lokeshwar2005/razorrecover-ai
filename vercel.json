@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/ai/recovery.js": {
+      "maxDuration": 20
+    }
+  }
+}
