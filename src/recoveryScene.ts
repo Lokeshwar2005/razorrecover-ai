@@ -152,7 +152,7 @@ function mountScene(host: HTMLElement) {
     cancelAnimationFrame(raf)
     observer.disconnect()
     renderer.dispose()
-    scene.traverse((object) => {
+    scene.traverse((object: THREE.Object3D) => {
       const mesh = object as THREE.Mesh
       if (mesh.geometry) mesh.geometry.dispose()
       const material = mesh.material as THREE.Material | THREE.Material[] | undefined
