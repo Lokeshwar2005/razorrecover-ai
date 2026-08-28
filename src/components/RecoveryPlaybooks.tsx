@@ -68,7 +68,7 @@ export default function RecoveryPlaybooks({ scenario, onSelectTransaction }: Pro
     setSelectedTime(now)
     onSelectTransaction(sample.id)
     setStatus('RUNNING')
-    setMessage(`${sample.id} · ${transactionDate} ${transactionTime} — AI is checking the cause, risk and policy before acting.`)
+    setMessage(`${sample.id} · ${formatTimestamp(now)} — AI is checking the cause, risk and policy before acting.`)
 
     if (activeData.id === 'Hinglish voice recovery') {
       const text = 'Namaste! Aapka payment complete nahi hua. Main ek secure payment link share kar sakta hoon. Kya aap abhi retry karna chahenge?'
