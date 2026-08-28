@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { AIRecoveryRecommendation } from '../../types/ai'
 import type { RecoveryDecision } from '../../recoveryEngine'
-import { analyzeRecoveryWithClaude } from '../../services/recoveryAi'
+import { analyzeRecoveryWithAI } from '../../services/recoveryAi'
 import './ai-recovery.css'
 
 type Transaction = {
@@ -33,10 +33,10 @@ export default function AIRecoveryAdvisor({ transaction }: { transaction: Transa
     setLoading(true)
     setError('')
     try {
-      const recommendation = await analyzeRecoveryWithClaude({ transaction })
+      const recommendation = await analyzeRecoveryWithAI({ transaction })
       setResult(recommendation)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Unable to reach Claude')
+      setError(err instanceof Error ? err.message : 'Unable to reach the AI advisor')
     } finally {
       setLoading(false)
     }
@@ -46,10 +46,10 @@ export default function AIRecoveryAdvisor({ transaction }: { transaction: Transa
     <section className="panel aiAdvisor">
       <div className="panelTop aiAdvisorTop">
         <div>
-          <span className="eyebrow">CLAUDE · AI DIAGNOSIS</span>
+          <span className="eyebrow">OPENROUTER · AI DIAGNOSIS</span>
           <h2>AI Recovery Advisor</h2>
         </div>
-        <span className={`aiStatus ${result ? 'connected' : ''}`}>● {result ? 'CLAUDE ANALYZED' : 'READY'}</span>
+        <span className={`aiStatus ${result ? 'connected' : ''}`}>● {result ? 'AI ANALYZED' : 'READY'}</span>
       </div>
 
       <div className="aiAdvisorGrid">
@@ -63,7 +63,7 @@ export default function AIRecoveryAdvisor({ transaction }: { transaction: Transa
             <span>Policy <b className={transaction.policy === 'Approved' ? 'aiGood' : 'aiStop'}>{transaction.policy}</b></span>
           </div>
           <button className="aiAnalyzeButton" onClick={analyze} disabled={loading}>
-            {loading ? 'Claude is analyzing…' : result ? 'Re-analyze with Claude ↻' : 'Analyze with Claude →'}
+            {loading ? 'AI is analyzing…' : result ? 'Re-analyze with AI ↻' : 'Analyze with AI →'}
           </button>
           {error && <div className="aiError">{error}</div>}
         </div>
@@ -72,7 +72,7 @@ export default function AIRecoveryAdvisor({ transaction }: { transaction: Transa
           {!result ? (
             <div className="aiEmpty">
               <span>AI → POLICY → ACTION</span>
-              <p>Claude diagnoses the failure and recommends a bounded intervention. Your deterministic policy gate remains the final authority.</p>
+              <p>OpenRouter provides diagnosis and a bounded recommendation. Your deterministic policy gate remains the final authority.</p>
             </div>
           ) : (
             <>
