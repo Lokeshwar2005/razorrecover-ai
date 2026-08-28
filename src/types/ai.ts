@@ -1,6 +1,6 @@
 import type { RecoveryDecision } from '../recoveryEngine'
 
-export type AIProvider = 'anthropic'
+export type AIProvider = 'openrouter'
 
 export interface AIRecoveryRequest {
   transaction: {
