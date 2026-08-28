@@ -57,7 +57,7 @@ function App(){
    const detail=(event as CustomEvent<{items?:RazorpayPayment[]}>).detail
    const incoming=(detail?.items||[]).map(mapRazorpayPayment).filter((x):x is EventItem=>Boolean(x))
    if(!incoming.length)return
-   setEvents(current=>{const byId=new Map(current.map(item=>[item.id,item]));incoming.forEach(item=>byId.set(item.id,item));return Array.from(byId.values()).slice(0,110)})
+   setEvents(current=>[...incoming,...current.filter(item=>!incoming.some(live=>live.id===item.id)).slice(0,100)])
    const latest=incoming[0]
    setSelected(latest)
    setProgress(100)
