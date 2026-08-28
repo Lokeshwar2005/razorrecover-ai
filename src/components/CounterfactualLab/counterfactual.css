@@ -1,0 +1,513 @@
+.counterfactualLab {
+  margin-top: 14px;
+  padding: 22px;
+  background: linear-gradient(145deg, #14120f 0%, #0d0c0a 100%);
+  border: 1px solid #29251f;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+}
+
+.counterfactualLab:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(228, 166, 65, 0.35), transparent);
+  pointer-events: none;
+}
+
+.counterfactualLab__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #231f19;
+}
+
+.counterfactualLab__headerLeft h2 {
+  margin: 6px 0 2px;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  color: #f5ecdf;
+}
+
+.counterfactualLab__sub {
+  margin: 0;
+  color: #8c8273;
+  font-size: 11px;
+}
+
+.counterfactualLab__headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.counterfactualLab__safetyPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(22, 19, 14, 0.9);
+  border: 1px solid #362e22;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #d8cbb8;
+}
+
+.safetyDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e4a641;
+  box-shadow: 0 0 8px #e4a641;
+}
+
+.counterfactualLab__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.cfBtn {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.cfBtn--reset {
+  background: #15120e;
+  border: 1px solid #332b20;
+  color: #a3998b;
+}
+
+.cfBtn--reset:hover {
+  background: #1f1b14;
+  border-color: #e4a641;
+  color: #f5ecdf;
+}
+
+.cfBtn--run {
+  background: linear-gradient(135deg, #e4a641, #c88a29);
+  border: 1px solid #f2bb5e;
+  color: #120e09;
+  box-shadow: 0 4px 16px rgba(228, 166, 65, 0.22);
+}
+
+.cfBtn--run:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(228, 166, 65, 0.35);
+  filter: brightness(1.04);
+}
+
+.cfBtn--run:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.cfBtn--viewToggle {
+  background: #181510;
+  border: 1px solid #3a3124;
+  color: #d9cdbd;
+}
+
+.cfBtn--viewToggle:hover {
+  border-color: #68d29a;
+  color: #fff;
+}
+
+.cfBtn--viewToggle.active {
+  background: rgba(104, 210, 154, 0.12);
+  border-color: #68d29a;
+  color: #70d09b;
+}
+
+/* Two-column Lab Layout */
+.counterfactualLab__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1.35fr;
+  gap: 20px;
+  margin-top: 18px;
+}
+
+/* Controls Panel */
+.cfControls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #100e0b;
+  border: 1px solid #241f19;
+  border-radius: 11px;
+  padding: 18px;
+}
+
+.cfControls__title {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: #c48c38;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.cfControlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.cfControlLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9.5px;
+  color: #8c8273;
+}
+
+.cfControlLabel strong {
+  font-size: 11px;
+  color: #e6dcce;
+  font-family: monospace, monospace;
+}
+
+.cfSelect {
+  width: 100%;
+  background: #16130f;
+  border: 1px solid #31291f;
+  color: #ecd9c3;
+  padding: 9px 12px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cfSelect:focus {
+  border-color: #e4a641;
+  box-shadow: 0 0 0 2px rgba(228, 166, 65, 0.18);
+}
+
+.cfSlider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #241f18;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cfSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #e4a641;
+  border: 2px solid #14110d;
+  box-shadow: 0 0 10px rgba(228, 166, 65, 0.5);
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.cfSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+  background: #fcd34d;
+}
+
+.cfSlider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #e4a641;
+  border: 2px solid #14110d;
+  box-shadow: 0 0 10px rgba(228, 166, 65, 0.5);
+  cursor: pointer;
+}
+
+.cfSlider.risk-high::-webkit-slider-thumb {
+  background: #ef4444;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.65);
+}
+
+.cfSlider.risk-low::-webkit-slider-thumb {
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
+}
+
+.cfSegmented {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.cfSegmentBtn {
+  background: #16130f;
+  border: 1px solid #2e261d;
+  color: #8c8273;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cfSegmentBtn.active {
+  background: #231b12;
+  border-color: #e4a641;
+  color: #f5ecdf;
+}
+
+/* Comparison Cards */
+.cfComparison {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cfCardsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.cfCard {
+  background: #100e0c;
+  border: 1px solid #29231b;
+  border-radius: 11px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.cfCard--original {
+  border-color: #2e271f;
+}
+
+.cfCard--counterfactual {
+  border-color: #4a3820;
+  background: radial-gradient(circle at top right, rgba(228, 166, 65, 0.06), transparent 70%), #110e0b;
+}
+
+.cfCard--counterfactual.is-passed {
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.cfCard--counterfactual.is-blocked {
+  border-color: rgba(239, 68, 68, 0.45);
+}
+
+.cfCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #211c16;
+  padding-bottom: 9px;
+}
+
+.cfCardTitle {
+  font-size: 8.5px;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  color: #7d7363;
+}
+
+.cfCard--counterfactual .cfCardTitle {
+  color: #e4a641;
+}
+
+.cfCardBadge {
+  font-size: 8px;
+  font-weight: 800;
+  padding: 3px 7px;
+  border-radius: 5px;
+  letter-spacing: 0.08em;
+}
+
+.cfCardBadge.recovered {
+  background: rgba(52, 211, 153, 0.14);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+}
+
+.cfCardBadge.stopped {
+  background: rgba(239, 68, 68, 0.14);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.cfRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 10px;
+}
+
+.cfRow span {
+  color: #6a6154;
+  font-size: 8.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cfRow strong {
+  color: #dfd4c4;
+  font-size: 11px;
+}
+
+.cfRow b {
+  font-weight: 700;
+}
+
+/* Decision Delta Section */
+.cfDeltaSection {
+  background: #0f0d0a;
+  border: 1px solid #262018;
+  border-radius: 11px;
+  padding: 16px;
+}
+
+.cfDeltaHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cfDeltaHeader h3 {
+  margin: 0;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #c48c38;
+  font-weight: 800;
+}
+
+.cfDeltaChips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.cfDeltaChip {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #15120e;
+  border: 1px solid #2c251b;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transition: all 0.2s ease;
+}
+
+.cfDeltaChip.changed {
+  background: #1b1610;
+  border-color: #554124;
+}
+
+.cfDeltaChip.flipped {
+  background: rgba(228, 166, 65, 0.08);
+  border-color: #e4a641;
+}
+
+.cfDeltaChip__label {
+  font-size: 7.5px;
+  letter-spacing: 0.12em;
+  color: #726859;
+  text-transform: uppercase;
+}
+
+.cfDeltaChip__values {
+  font-size: 10px;
+  font-weight: 700;
+  color: #dcd0bf;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cfDeltaChip__values em {
+  font-style: normal;
+  color: #776e5f;
+}
+
+.cfDeltaChip__values b {
+  color: #e4a641;
+}
+
+.cfDeltaExplanation {
+  padding: 12px 14px;
+  background: #13100c;
+  border-left: 3px solid #e4a641;
+  border-radius: 0 8px 8px 0;
+  font-size: 10.5px;
+  line-height: 1.6;
+  color: #b5aa98;
+}
+
+.cfDeltaExplanation strong {
+  color: #f5ecdf;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .counterfactualLab__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .counterfactualLab {
+    padding: 16px;
+  }
+  .counterfactualLab__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .counterfactualLab__headerRight {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cfCardsGrid {
+    grid-template-columns: 1fr;
+  }
+  .cfDeltaChips {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cfBtn, .cfSlider, .cfDeltaChip {
+    transition: none;
+  }
+  .cfBtn--run:hover:not(:disabled) {
+    transform: none;
+  }
+}

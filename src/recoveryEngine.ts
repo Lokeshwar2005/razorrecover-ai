@@ -1,5 +1,3 @@
-import './recoveryScene'
-
 export type RecoveryResult = 'Recovered' | 'Stopped' | 'Pending'
 
 export type RecoveryDecision = {
@@ -19,7 +17,7 @@ type Signal = {
   scenario: 'balanced' | 'checkout' | 'degradation'
 }
 
-const playbooks = [
+export const PLAYBOOKS = [
   { reason: 'Bank timeout', action: 'Retry payment', base: 0.91, risk: 18 },
   { reason: 'Checkout abandoned', action: 'Payment link', base: 0.78, risk: 24 },
   { reason: 'Retry limit reached', action: 'Escalate', base: 0.12, risk: 81 },
@@ -32,8 +30,10 @@ const playbooks = [
   { reason: 'Velocity risk', action: 'Escalate', base: 0.18, risk: 88 },
 ] as const
 
+export type PlaybookReason = typeof PLAYBOOKS[number]['reason']
+
 export function evaluateTransaction({ amount, index, scenario }: Signal): RecoveryDecision {
-  const playbook = playbooks[index % playbooks.length]
+  const playbook = PLAYBOOKS[index % PLAYBOOKS.length]
   const scenarioBias = scenario === 'checkout'
     ? (playbook.reason === 'Checkout abandoned' ? 0.08 : 0)
     : scenario === 'degradation'
@@ -57,6 +57,61 @@ export function evaluateTransaction({ amount, index, scenario }: Signal): Recove
     explanation: policyApproved
       ? `Bounded ${playbook.action.toLowerCase()} selected because recovery probability is ${Math.round(recoveryProbability * 100)}% with risk ${riskScore}/100.`
       : `Action stopped before money movement because policy risk reached ${riskScore}/100 or the intervention requires escalation.`,
+  }
+}
+
+export interface CounterfactualEvaluationInput {
+  amount: number
+  reason: string
+  riskScore: number
+  recoveryProbability: number // 0 to 100 percentage
+  retryAttempts?: number // 1, 2, 3
+  policyThreshold?: number // default 70
+  actionOverride?: string
+}
+
+export function evaluateCounterfactual({
+  amount,
+  reason,
+  riskScore,
+  recoveryProbability,
+  retryAttempts = 1,
+  policyThreshold = 70,
+  actionOverride,
+}: CounterfactualEvaluationInput): RecoveryDecision {
+  const matchedPlaybook = PLAYBOOKS.find((p) => p.reason === reason) || PLAYBOOKS[0]
+  const chosenAction = actionOverride || matchedPlaybook.action
+  const recProbDecimal = recoveryProbability / 100
+
+  const isEscalateAction = chosenAction === 'Escalate'
+  const isWithinRiskLimit = riskScore < policyThreshold
+  const isWithinRetryLimit = retryAttempts <= 2
+
+  const policyApproved = !isEscalateAction && isWithinRiskLimit && isWithinRetryLimit
+  const shouldRecover = policyApproved && recProbDecimal >= 0.55
+
+  const confidence = Math.max(10, Math.min(99, Math.round(72 + recProbDecimal * 24 - riskScore * 0.08)))
+
+  let explanation = ''
+  if (policyApproved) {
+    explanation = `Bounded ${chosenAction.toLowerCase()} permitted because counterfactual risk (${riskScore}/100) is below safety threshold (${policyThreshold}/100) and recovery probability is ${Math.round(recoveryProbability)}%.`
+  } else if (!isWithinRetryLimit) {
+    explanation = `Intervention stopped at policy boundary: retry attempts (${retryAttempts}/2) exceeded maximum allowable limit.`
+  } else if (!isWithinRiskLimit) {
+    explanation = `Action stopped at policy boundary because counterfactual risk (${riskScore}/100) reached or exceeded policy threshold (${policyThreshold}/100).`
+  } else {
+    explanation = `Intervention halted because selected action (${chosenAction}) requires human escalation under safety protocol.`
+  }
+
+  return {
+    reason,
+    action: policyApproved ? chosenAction : 'Escalate',
+    result: shouldRecover ? 'Recovered' : 'Stopped',
+    confidence,
+    recoveryProbability: Math.round(recoveryProbability),
+    riskScore: Math.round(riskScore),
+    policy: policyApproved ? 'Approved' : 'Escalated',
+    explanation,
   }
 }
 
