@@ -19,6 +19,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/three": "latest",
+    "@vercel/node": "^9.0.1",
     "@vitejs/plugin-react": "latest",
     "typescript": "latest",
     "vite": "latest"

@@ -1,7 +1,3 @@
 {
-  "functions": {
-    "api/ai/recovery.ts": {
-      "maxDuration": 20
-    }
-  }
+  "framework": "vite"
 }

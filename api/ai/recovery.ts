@@ -1,13 +1,15 @@
-type Request = {
-  method?: string
+import type { IncomingMessage, ServerResponse } from 'http'
+
+export interface VercelRequest extends IncomingMessage {
   body?: unknown
+  query?: Record<string, string | string[]>
+  cookies?: Record<string, string>
 }
 
-type Response = {
-  status: (code: number) => Response
+export interface VercelResponse extends ServerResponse {
+  status: (code: number) => VercelResponse
   json: (body: unknown) => void
-  setHeader: (name: string, value: string) => void
-  end: () => void
+  setHeader: (name: string, value: string) => this
 }
 
 type Transaction = {
@@ -26,7 +28,7 @@ type Transaction = {
 const MODEL = process.env.OPENROUTER_MODEL || 'openrouter/free'
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions'
 
-function send(res: Response, status: number, body: unknown) {
+function send(res: VercelResponse, status: number, body: unknown) {
   res.status(status).json(body)
 }
 
@@ -52,7 +54,7 @@ function boundedAction(action: unknown, transaction: Transaction): string {
   return normalized
 }
 
-export default async function handler(req: Request, res: Response) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
