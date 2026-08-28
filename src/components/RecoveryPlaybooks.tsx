@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { PLAYBOOKS, createTransaction, type RecoveryDirection } from '../recoveryEngine'
 
 type Scenario = 'balanced' | 'checkout' | 'degradation'
@@ -17,37 +17,58 @@ const directions: Array<{
   liveAction: string
   tone: 'gold' | 'green' | 'red'
 }> = [
-  { id: 'Payment degradation', short: 'Gateway recovery', description: 'Detect issuer or bank degradation, isolate the fault and retry only when the signal is safe.', workflow: ['Detect elevated failures', 'Cluster bank / issuer root cause', 'Gate retry by risk + attempts', 'Verify recovered payment'], liveAction: 'Run retry diagnosis', tone: 'gold' },
-  { id: 'Checkout drop-off', short: 'Checkout recovery', description: 'Recover high-intent abandoned checkouts without duplicating a payment attempt.', workflow: ['Identify abandoned checkout', 'Score intent', 'Issue recovery link', 'Verify link conversion'], liveAction: 'Issue payment link', tone: 'gold' },
-  { id: 'Failed-subscription recovery', short: 'Subscription recovery', description: 'Move past-due subscriptions through bounded retry and recovery-link steps.', workflow: ['Detect past-due state', 'Choose retry window', 'Retry or send recovery link', 'Confirm subscription restored'], liveAction: 'Start subscription retry', tone: 'green' },
-  { id: 'B2B receivables chaser', short: 'B2B collections', description: 'Prioritize overdue invoices, draft the right chase and escalate high-value receivables.', workflow: ['Age receivable', 'Score account risk', 'Send contextual reminder', 'Escalate unresolved invoice'], liveAction: 'Run AR chase', tone: 'green' },
-  { id: 'Mandate retry sequencer', short: 'Mandate recovery', description: 'Sequence mandate retries with a hard retry ceiling and fallback payment path.', workflow: ['Classify mandate failure', 'Select retry window', 'Respect retry ceiling', 'Fallback to payment link'], liveAction: 'Sequence mandate retry', tone: 'gold' },
-  { id: 'Hinglish voice recovery', short: 'Hinglish voice', description: 'Generate a concise bilingual recovery conversation for high-intent customers.', workflow: ['Detect high intent', 'Prepare Hinglish script', 'Read consent-safe prompt', 'Send recovery link'], liveAction: 'Play voice script', tone: 'green' },
-  { id: 'Promise-to-pay tracker', short: 'Promise to pay', description: 'Capture a promised payment date, monitor it and escalate only when the promise is missed.', workflow: ['Record promise', 'Set due date', 'Track status', 'Escalate missed promise'], liveAction: 'Create PTP', tone: 'red' },
+  { id: 'Payment degradation', short: 'Gateway recovery', description: 'When a bank or gateway starts failing, RazorRecover finds the pattern and retries only when it is safe.', workflow: ['Detect failed payments', 'Find bank / issuer pattern', 'Apply retry safety rules', 'Verify recovered payment'], liveAction: 'Run gateway recovery', tone: 'gold' },
+  { id: 'Checkout drop-off', short: 'Checkout recovery', description: 'When a customer leaves checkout, RazorRecover brings them back with a safe payment link instead of a duplicate charge.', workflow: ['Find abandoned checkout', 'Score purchase intent', 'Create recovery link', 'Verify conversion'], liveAction: 'Recover checkout', tone: 'gold' },
+  { id: 'Failed-subscription recovery', short: 'Subscription recovery', description: 'When a recurring payment fails, RazorRecover retries within limits and helps restore the subscription.', workflow: ['Find past-due subscription', 'Choose safe retry window', 'Retry or send recovery link', 'Confirm subscription restored'], liveAction: 'Recover subscription', tone: 'green' },
+  { id: 'B2B receivables chaser', short: 'B2B collections', description: 'For overdue business invoices, RazorRecover prioritizes the right follow-up and hands risky cases to a human.', workflow: ['Age the invoice', 'Score account risk', 'Send contextual reminder', 'Escalate risky invoice'], liveAction: 'Run AR chase', tone: 'green' },
+  { id: 'Mandate retry sequencer', short: 'Mandate recovery', description: 'For failed bank mandates, RazorRecover sequences limited retries and falls back safely when the limit is reached.', workflow: ['Classify mandate failure', 'Choose retry window', 'Respect retry ceiling', 'Fallback to payment link'], liveAction: 'Sequence mandate', tone: 'gold' },
+  { id: 'Hinglish voice recovery', short: 'Hinglish voice', description: 'For high-intent customers, RazorRecover prepares a short bilingual conversation and asks for consent before recovery.', workflow: ['Detect high intent', 'Prepare Hinglish script', 'Ask consent safely', 'Share recovery link'], liveAction: 'Play Hinglish script', tone: 'green' },
+  { id: 'Promise-to-pay tracker', short: 'Promise to pay', description: 'When a customer promises to pay later, RazorRecover tracks the date and escalates only if the promise is missed.', workflow: ['Record promise', 'Set due date', 'Track payment status', 'Escalate missed promise'], liveAction: 'Track promise', tone: 'red' },
+]
+
+const guide = [
+  ['01', 'Detect', 'Find failed, risky or abandoned payments.'],
+  ['02', 'Decide', 'AI explains the safest next step.'],
+  ['03', 'Act', 'Run a bounded recovery action.'],
+  ['04', 'Verify', 'Count money only after evidence.'],
+  ['05', 'Learn', 'Write the outcome to the shared ledger.'],
 ]
 
 export default function RecoveryPlaybooks({ scenario, onSelectTransaction }: Props) {
   const [active, setActive] = useState<RecoveryDirection | null>(null)
   const [status, setStatus] = useState<WorkflowStatus>('READY')
-  const [message, setMessage] = useState('Select a playbook to inspect its workflow.')
+  const [message, setMessage] = useState('Choose a service above. The selected transaction will appear in the shared product state.')
   const [ptpDate, setPtpDate] = useState(() => new Date(Date.now() + 86400000 * 3).toISOString().slice(0, 10))
   const [ptpState, setPtpState] = useState<'PROMISED' | 'PAID' | 'MISSED'>('PROMISED')
   const [voicePlaying, setVoicePlaying] = useState(false)
+  const [selectedTime, setSelectedTime] = useState<Date | null>(null)
+  const consoleRef = useRef<HTMLDivElement | null>(null)
 
   const activeData = useMemo(() => directions.find((d) => d.id === active) || null, [active])
+  const stepIndex = status === 'READY' ? 0 : status === 'RUNNING' ? 2 : status === 'ESCALATED' ? 3 : 4
+  const transactionTime = selectedTime
+    ? new Intl.DateTimeFormat('en-IN', { hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).format(selectedTime)
+    : '—'
+  const transactionDate = selectedTime
+    ? new Intl.DateTimeFormat('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }).format(selectedTime)
+    : 'Waiting for selection'
 
   const open = (direction: RecoveryDirection) => {
     setActive(direction)
     setStatus('READY')
-    setMessage('Workflow armed. Choose the bounded action below.')
+    setMessage('Service selected. Run the bounded action to send this transaction through the recovery journey.')
+    setSelectedTime(new Date())
+    window.requestAnimationFrame(() => consoleRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }))
   }
 
   const run = async () => {
-    if (!activeData) return
+    if (!activeData || status === 'RUNNING') return
     const sample = createTransaction(directions.findIndex((d) => d.id === activeData.id), scenario)
+    const now = new Date()
+    setSelectedTime(now)
     onSelectTransaction(sample.id)
     setStatus('RUNNING')
-    setMessage(`${activeData.short} is evaluating ${sample.id} with policy gates.`)
+    setMessage(`${sample.id} · ${transactionDate} ${transactionTime} — AI is checking the cause, risk and policy before acting.`)
 
     if (activeData.id === 'Hinglish voice recovery') {
       const text = 'Namaste! Aapka payment complete nahi hua. Main ek secure payment link share kar sakta hoon. Kya aap abhi retry karna chahenge?'
@@ -63,13 +84,16 @@ export default function RecoveryPlaybooks({ scenario, onSelectTransaction }: Pro
       setVoicePlaying(true)
       window.setTimeout(() => setVoicePlaying(false), 5200)
       setStatus('COMPLETE')
-      setMessage('Consent-safe Hinglish script prepared. No call is placed automatically.')
+      setMessage(`${sample.id} · ${formatTimestamp(now)} — consent-safe Hinglish script prepared. No automatic call is placed.`)
       return
     }
 
     if (activeData.id === 'Promise-to-pay tracker') {
-      setStatus(ptpState === 'MISSED' ? 'ESCALATED' : 'COMPLETE')
-      setMessage(ptpState === 'MISSED' ? `Promise missed on ${ptpDate}; escalation created.` : `Promise tracked through ${ptpDate}; reminder scheduled in the workflow.`)
+      const nextStatus = ptpState === 'MISSED' ? 'ESCALATED' : 'COMPLETE'
+      setStatus(nextStatus)
+      setMessage(ptpState === 'MISSED'
+        ? `${sample.id} · ${formatTimestamp(now)} — promise missed on ${ptpDate}; human escalation created.`
+        : `${sample.id} · ${formatTimestamp(now)} — promise tracked through ${ptpDate}; reminder scheduled.`)
       return
     }
 
@@ -84,22 +108,42 @@ export default function RecoveryPlaybooks({ scenario, onSelectTransaction }: Pro
         const data = await response.json()
         if (!response.ok) throw new Error(data?.error || 'Razorpay Test Mode action failed')
         setStatus('COMPLETE')
-        setMessage(action === 'Payment link' ? `Test Mode payment link created: ${data.paymentLink || 'ready'}.` : `Test Mode retry order ${data.orderId || 'created'} is ready for checkout.`)
+        setMessage(action === 'Payment link'
+          ? `${sample.id} · ${formatTimestamp(now)} — Test Mode payment link created. Payment remains unverified until checkout success.`
+          : `${sample.id} · ${formatTimestamp(now)} — Test Mode retry order ${data.orderId || 'created'} is ready. Payment remains unverified until checkout success.`)
       } catch (error) {
         setStatus('ESCALATED')
-        setMessage(error instanceof Error ? error.message : 'Test Mode action could not be completed.')
+        setMessage(`${sample.id} · ${formatTimestamp(now)} — ${error instanceof Error ? error.message : 'Test Mode action failed.'}`)
       }
       return
     }
 
     window.setTimeout(() => {
-      setStatus(activeData.id === 'B2B receivables chaser' && sample.riskScore >= 60 ? 'ESCALATED' : 'COMPLETE')
-      setMessage(activeData.id === 'B2B receivables chaser' && sample.riskScore >= 60 ? 'High-value receivable crossed the risk boundary; human AR escalation created.' : `${activeData.liveAction} completed in simulation with audit evidence attached.`)
+      const escalated = activeData.id === 'B2B receivables chaser' && sample.riskScore >= 60
+      setStatus(escalated ? 'ESCALATED' : 'COMPLETE')
+      setMessage(escalated
+        ? `${sample.id} · ${formatTimestamp(now)} — risk boundary crossed; human AR escalation created.`
+        : `${sample.id} · ${formatTimestamp(now)} — ${activeData.liveAction} completed in simulation and written to the shared product state.`)
     }, 650)
   }
 
   return <section className="panel playbooks" id="recovery-playbooks">
-    <div className="panelTop"><div><span className="eyebrow">RECOVERY PLAYBOOKS / 07</span><h2>Seven first-class recovery directions</h2></div><span className="pulse">● interactive</span></div>
+    <div className="panelTop">
+      <div><span className="eyebrow">WHAT RAZORRECOVER DOES</span><h2>One system that finds and recovers lost revenue</h2></div>
+      <span className="pulse">● plain-language demo</span>
+    </div>
+
+    <div className="productIntro">
+      <div className="introLead"><strong>Payments fail for many reasons.</strong><span>RazorRecover watches the signal, explains why a payment is at risk, chooses a safe recovery action, and records the outcome so a business can see what happened.</span></div>
+      <div className="introRule"><span>INPUT</span><b>Failed / abandoned payment</b><i>→</i><span>OUTPUT</span><b>Recovered money or safe escalation</b></div>
+    </div>
+
+    <div className="journeyGuide">
+      {guide.map(([number, title, text], index) => <div className={`journeyGuideStep ${stepIndex >= index + 1 ? 'reached' : ''}`} key={number}><span>{number}</span><div><b>{title}</b><small>{text}</small></div></div>)}
+    </div>
+
+    <div className="serviceHeader"><div><span className="eyebrow">SERVICES / 07</span><h3>Choose the problem you want to recover</h3><p>Each service below is a different way revenue gets lost. Click one to see the same transaction travel through the recovery system.</p></div><span className="serviceHint">CLICK → WATCH → EXPLAIN</span></div>
+
     <div className="playbookGrid">
       {directions.map((direction, index) => {
         const representative = PLAYBOOKS.find((p) => p.direction === direction.id)!
@@ -107,18 +151,42 @@ export default function RecoveryPlaybooks({ scenario, onSelectTransaction }: Pro
           <div className="playbookNumber">0{index + 1}</div>
           <div className="playbookCardTop"><strong>{direction.short}</strong><span className={`playbookDot ${direction.tone}`}>●</span></div>
           <p>{direction.description}</p>
-          <div className="playbookMeta"><span>{representative.reason}</span><b>{representative.action}</b></div>
+          <div className="playbookMeta"><span>Example: {representative.reason}</span><b>{representative.action}</b></div>
         </button>
       })}
     </div>
 
-    {activeData && <div className="playbookConsole">
-      <div className="playbookConsoleHead"><div><span className="eyebrow">ACTIVE WORKFLOW</span><h3>{activeData.short}</h3></div><button className="closePlaybook" onClick={() => setActive(null)}>×</button></div>
-      <div className="workflowSteps">{activeData.workflow.map((step, index) => <div className={status !== 'READY' && index < (status === 'COMPLETE' || status === 'ESCALATED' ? 4 : 2) ? 'workflowStep done' : 'workflowStep'} key={step}><span>0{index + 1}</span><b>{step}</b></div>)}</div>
+    {activeData && <div className="playbookConsole" ref={consoleRef}>
+      <div className="playbookConsoleHead">
+        <div><span className="eyebrow">LIVE TRANSACTION JOURNEY</span><h3>{activeData.short}</h3></div>
+        <button className="closePlaybook" onClick={() => setActive(null)}>×</button>
+      </div>
+
+      <div className="transactionBanner">
+        <div><span>TRANSACTION</span><strong>{createTransaction(directions.findIndex((d) => d.id === activeData.id), scenario).id}</strong></div>
+        <div><span>TIME</span><strong>{transactionTime}</strong><small>{transactionDate}</small></div>
+        <div><span>SCENARIO</span><strong>{scenario === 'balanced' ? 'Balanced' : scenario === 'checkout' ? 'Checkout drop-off' : 'Gateway degradation'}</strong></div>
+        <div><span>STATE</span><strong className={`bannerState ${status.toLowerCase()}`}>{status}</strong></div>
+      </div>
+
+      <div className="workflowSteps">
+        {activeData.workflow.map((step, index) => <div className={`workflowStep ${stepIndex > index ? 'done' : ''} ${stepIndex === index + 1 ? 'current' : ''}`} key={step}><span>0{index + 1}</span><b>{step}</b>{stepIndex === index + 1 && <em>NOW</em>}</div>)}
+      </div>
+
       {activeData.id === 'Promise-to-pay tracker' && <div className="ptpControls"><label>Promise date<input type="date" value={ptpDate} onChange={(e) => setPtpDate(e.target.value)} /></label><label>Status<select value={ptpState} onChange={(e) => setPtpState(e.target.value as typeof ptpState)}><option>PROMISED</option><option>PAID</option><option>MISSED</option></select></label></div>}
       {activeData.id === 'Hinglish voice recovery' && <div className="voicePanel"><span className="voiceWave">{voicePlaying ? '))) ))) )))' : '— — — —'}</span><p>“Namaste! Aapka payment complete nahi hua. Main ek secure payment link share kar sakta hoon. Kya aap abhi retry karna chahenge?”</p><small>Browser voice demo · consent-safe · no automatic call</small></div>}
-      <div className="playbookActionRow"><div className={`workflowStatus ${status.toLowerCase()}`}><span>●</span>{status}</div><button className="run runPlaybook" onClick={run}>{activeData.liveAction}<b>↗</b></button></div>
-      <div className="workflowMessage">{message}</div>
+
+      <div className="plainJourney"><span className="plainJourneyDot">●</span><div><b>What the judge is seeing</b><p>{message}</p></div></div>
+      <div className="playbookActionRow"><div className={`workflowStatus ${status.toLowerCase()}`}><span>●</span>{status}</div><button className="run runPlaybook" onClick={run} disabled={status === 'RUNNING'}>{status === 'RUNNING' ? 'Processing transaction' : activeData.liveAction}<b>↗</b></button></div>
     </div>}
+
+    <div className="judgeDemo">
+      <div><span className="eyebrow">30-SECOND JUDGE STORY</span><h3>“A payment fails → AI explains it → policy decides → recovery runs → money is verified.”</h3></div>
+      <div className="judgeDemoSteps"><span>1. Pick a service</span><span>2. Run it</span><span>3. Watch the journey</span><span>4. Check the ledger / graph / audit trail</span></div>
+    </div>
   </section>
+}
+
+function formatTimestamp(value: Date) {
+  return new Intl.DateTimeFormat('en-IN', { day: '2-digit', month: 'short', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).format(value)
 }
