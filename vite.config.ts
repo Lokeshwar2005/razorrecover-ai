@@ -6,7 +6,12 @@ export default defineConfig({
   base: '/razorrecover-ai/',
   build: {
     target: 'es2022',
-    cssMinify: 'lightningcss',
-    rollupOptions: { output: { manualChunks: { three: ['three'] } } },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          three: ['three'],
+        },
+      },
+    },
   },
 })
