@@ -368,6 +368,7 @@
   justify-content: space-between;
   align-items: baseline;
   font-size: 10px;
+  gap: 12px;
 }
 
 .cfRow span {
@@ -375,11 +376,15 @@
   font-size: 8.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  flex: 0 0 auto;
 }
 
 .cfRow strong {
   color: #dfd4c4;
   font-size: 11px;
+  min-width: 0;
+  text-align: right;
+  overflow-wrap: anywhere;
 }
 
 .cfRow b {
@@ -392,13 +397,16 @@
   border: 1px solid #262018;
   border-radius: 11px;
   padding: 16px;
+  min-width: 0;
 }
 
 .cfDeltaHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   margin-bottom: 12px;
+  min-width: 0;
 }
 
 .cfDeltaHeader h3 {
@@ -411,12 +419,15 @@
 
 .cfDeltaChips {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   margin-bottom: 14px;
+  min-width: 0;
 }
 
 .cfDeltaChip {
+  min-width: 0;
+  max-width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
   background: #15120e;
@@ -425,6 +436,7 @@
   flex-direction: column;
   gap: 3px;
   transition: all 0.2s ease;
+  overflow: hidden;
 }
 
 .cfDeltaChip.changed {
@@ -442,24 +454,42 @@
   letter-spacing: 0.12em;
   color: #726859;
   text-transform: uppercase;
+  min-width: 0;
 }
 
 .cfDeltaChip__values {
+  min-width: 0;
+  max-width: 100%;
   font-size: 10px;
   font-weight: 700;
   color: #dcd0bf;
   display: flex;
   align-items: center;
   gap: 5px;
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .cfDeltaChip__values em {
+  min-width: 0;
+  max-width: 100%;
   font-style: normal;
   color: #776e5f;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .cfDeltaChip__values b {
+  min-width: 0;
+  max-width: 100%;
   color: #e4a641;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.cfDeltaChip__values > span {
+  flex: 0 0 auto;
 }
 
 .cfDeltaExplanation {
@@ -470,6 +500,7 @@
   font-size: 10.5px;
   line-height: 1.6;
   color: #b5aa98;
+  overflow-wrap: anywhere;
 }
 
 .cfDeltaExplanation strong {
@@ -477,9 +508,15 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .counterfactualLab__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .cfDeltaChips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -499,7 +536,7 @@
     grid-template-columns: 1fr;
   }
   .cfDeltaChips {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
