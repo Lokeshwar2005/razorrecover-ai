@@ -1,4 +1,6 @@
-import type { Transaction } from './types'
+import type { AIRecoveryRequest } from './types/ai'
+
+type Transaction = AIRecoveryRequest['transaction']
 
 const AI_API_URL = import.meta.env.VITE_AI_API_URL || 'https://razorrecover-ai-teal.vercel.app/api/ai/recovery'
 
