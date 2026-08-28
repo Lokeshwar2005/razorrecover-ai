@@ -16,6 +16,10 @@ function money(amount: number, currency = 'INR') {
   return new Intl.NumberFormat('en-IN', { style: 'currency', currency, maximumFractionDigits: 0 }).format(amount / 100)
 }
 
+function emitPaymentFeed(items: RazorpayPayment[], fetchedAt?: string) {
+  window.dispatchEvent(new CustomEvent('razorpay:payment-feed', { detail: { items, fetchedAt: fetchedAt || new Date().toISOString() } }))
+}
+
 function mount() {
   if (document.getElementById(rootId)) return
 
@@ -24,7 +28,7 @@ function mount() {
   host.innerHTML = `
     <button data-toggle class="rr-live-toggle">RZP TEST · LIVE FEED</button>
     <section data-panel class="rr-live-panel" hidden>
-      <div class="rr-live-head"><div><strong>Razorpay Test Mode</strong><small>polling payment events</small></div><span data-state>idle</span></div>
+      <div class="rr-live-head"><div><strong>Razorpay Test Mode</strong><small>payment events → recovery operations</small></div><span data-state>idle</span></div>
       <div data-list class="rr-live-list"><div class="rr-live-empty">Connect Test Mode to see real payment events.</div></div>
       <div class="rr-live-foot"><span data-time>—</span><button data-refresh>Refresh</button></div>
     </section>
@@ -65,17 +69,19 @@ function mount() {
       const data = await response.json()
       if (!response.ok) throw new Error(data?.error || 'Feed unavailable')
       const items = (data.items || []) as RazorpayPayment[]
+      emitPaymentFeed(items, data.fetchedAt)
       list.innerHTML = items.length
         ? items.slice(0, 8).map((payment) => {
             const status = String(payment.status || 'unknown').toLowerCase()
             const amount = money(Number(payment.amount || 0), payment.currency || 'INR')
             const method = payment.method ? ` · ${payment.method}` : ''
             const error = payment.error_description ? ` · ${payment.error_description}` : ''
-            return `<article class="rr-live-row"><div class="rr-live-row-top"><b>${payment.id}</b><em class="${status}">${status}</em></div><small>${amount}${method}${error}</small></article>`
+            const created = payment.created_at ? new Date(payment.created_at * 1000).toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true }) : 'time unavailable'
+            return `<article class="rr-live-row"><div class="rr-live-row-top"><b>${payment.id}</b><em class="${status}">${status}</em></div><small>${created} · ${amount}${method}${error}</small></article>`
           }).join('')
         : '<div class="rr-live-empty">No Test Mode payments yet. Create a Test Mode transaction and refresh.</div>'
       state.textContent = 'connected'
-      time.textContent = `synced ${new Date(data.fetchedAt || Date.now()).toLocaleTimeString()}`
+      time.textContent = `synced ${new Date(data.fetchedAt || Date.now()).toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true })}`
     } catch (error) {
       state.textContent = 'offline'
       list.innerHTML = `<div class="rr-live-empty">${error instanceof Error ? error.message : 'Unable to load Razorpay Test Mode feed.'}</div>`
