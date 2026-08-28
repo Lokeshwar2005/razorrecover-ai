@@ -1,3 +1,5 @@
+import './recoveryScene'
+
 export type RecoveryResult = 'Recovered' | 'Stopped' | 'Pending'
 
 export type RecoveryDecision = {
