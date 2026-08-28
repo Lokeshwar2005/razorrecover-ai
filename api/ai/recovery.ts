@@ -132,10 +132,15 @@ Use the supplied transaction facts as the basis. If policy is Escalated or the t
     }
 
     const content = data.choices?.[0]?.message?.content || ''
-    const ai = extractJson(content)
-    if (!ai) {
-      send(res, 502, { error: 'AI returned an invalid structured response' })
-      return
+    const parsed = extractJson(content)
+    const ai = parsed || {
+      diagnosis: content.slice(0, 160) || transaction.reason,
+      rootCause: transaction.reason,
+      recommendedAction: transaction.policy === 'Approved' ? transaction.action : 'Escalate',
+      recoveryProbability: transaction.recoveryProbability,
+      riskAssessment: transaction.riskScore < 40 ? 'Low' : transaction.riskScore < 70 ? 'Medium' : 'High',
+      confidence: transaction.confidence,
+      explanation: transaction.explanation,
     }
 
     const recommendedAction = boundedAction(ai.recommendedAction, transaction)
