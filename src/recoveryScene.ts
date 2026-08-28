@@ -6,10 +6,26 @@ function mountScene(host: HTMLElement) {
   if (host.dataset.threeMounted === 'true') return
   host.dataset.threeMounted = 'true'
   host.classList.add('threeD-active')
+  host.style.position = 'relative'
+
+  host.querySelectorAll<HTMLElement>('.orb,.ring,.orbitDot').forEach((element) => {
+    element.style.visibility = 'hidden'
+  })
 
   const canvas = document.createElement('canvas')
   canvas.className = 'recovery-three-canvas'
+  canvas.style.position = 'absolute'
+  canvas.style.inset = '0'
+  canvas.style.width = '100%'
+  canvas.style.height = '100%'
+  canvas.style.display = 'block'
+  canvas.style.pointerEvents = 'none'
+  canvas.style.zIndex = '1'
   host.prepend(canvas)
+
+  host.querySelectorAll<HTMLElement>('.node,.coreGridLabel').forEach((element) => {
+    element.style.zIndex = '3'
+  })
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75))
