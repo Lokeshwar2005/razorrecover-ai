@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/ai/recovery.js": {
+    "api/ai/recovery.ts": {
       "maxDuration": 20
     }
   }
