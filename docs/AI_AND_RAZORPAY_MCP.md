@@ -68,4 +68,4 @@ A recommendation that conflicts with the policy engine must be shown as **POLICY
 
 ## Deployment
 
-The AI endpoint is provided as a Vercel-compatible serverless function at `api/ai/recovery.js`. GitHub Pages remains suitable for the static frontend, but it cannot safely host the server-side API key. For a live AI demo, deploy the API function to a trusted backend (for example Vercel) and point `VITE_AI_API_URL` at it.
+The AI endpoint is provided as a Vercel-compatible serverless function at `api/ai/recovery.ts`. GitHub Pages remains suitable for the static frontend, but it cannot safely host the server-side API key. For a live AI demo, deploy the API function to a trusted backend (for example Vercel) and point `VITE_AI_API_URL` at it.
