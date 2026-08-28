@@ -76,42 +76,42 @@ The **[Razorpay AI Buildathon 2026](https://razorpay.com/buildathon/)** challeng
 ```mermaid
 flowchart TD
     subgraph INGESTION["01. Event Stream & Ingestion Layer"]
-        A1[Live Payment Stream / 100-Event Synthetic Engine] --> A2{Failure Signal Detected}
-        A2 -->|Event Ingested| A3[Extract Transaction Context: ID, Amount, Error Code, Velocity]
+        A1["Live Payment Stream / 100-Event Synthetic Engine"] --> A2{"Failure Signal Detected"}
+        A2 -->|Event Ingested| A3["Extract Transaction Context: ID, Amount, Error Code, Velocity"]
     end
 
     subgraph AI_LAYER["02. Autonomous AI Diagnosis Layer"]
-        A3 --> B1[API Gateway: /api/ai/recovery]
-        B1 --> B2[OpenRouter / Claude LLM Inference]
-        B2 --> B3[Extract Failure Signature & Root Cause]
-        B3 --> B4[Recommend Bounded Action: Retry | Payment Link | Customer Prompt | Escalate]
+        A3 --> B1["API Gateway: /api/ai/recovery"]
+        B1 --> B2["OpenRouter / Claude LLM Inference"]
+        B2 --> B3["Extract Failure Signature & Root Cause"]
+        B3 --> B4["Recommend Bounded Action: Retry / Payment Link / Customer Prompt / Escalate"]
     end
 
     subgraph POLICY_GATE["03. Deterministic Safety Gate (Source of Truth)"]
-        B4 --> C1{Deterministic Policy Evaluation}
-        C1 -->|Risk >= 70 OR Retries > 2| C2[POLICY BLOCKED · Escalate to Human]
-        C1 -->|Risk < 70 & Prob >= 55%| C3[POLICY APPROVED · Execute Bounded Action]
-        C2 --> C4[Immutable Exception Audit Event]
+        B4 --> C1{"Deterministic Policy Evaluation"}
+        C1 -->|Risk >= 70 OR Retries > 2| C2["POLICY BLOCKED · Escalate to Human"]
+        C1 -->|Risk < 70 & Prob >= 55%| C3["POLICY APPROVED · Execute Bounded Action"]
+        C2 --> C4["Immutable Exception Audit Event"]
     end
 
     subgraph EXECUTION["04. Action Orchestration & Razorpay Bridge"]
-        C3 --> D1[Razorpay Test Mode / MCP Tool Invocation]
-        D1 --> D2[Create Test Order: order_TVLdJPjhhrCBEs]
-        D2 --> D3[Customer Checkout Modal / Payment Link]
+        C3 --> D1["Razorpay Test Mode / MCP Tool Invocation"]
+        D1 --> D2["Create Test Order: order_TVLdJPjhhrCBEs"]
+        D2 --> D3["Customer Checkout Modal / Payment Link"]
     end
 
     subgraph VERIFICATION["05. Real-Time Verification & Ledger"]
-        D3 --> E1{Razorpay Webhook / Status Lookup}
-        E1 -->|status !== captured| E2[WAITING FOR PAYMENT · Recovery Pending]
-        E1 -->|status === captured| E3[VERIFIED · Revenue Captured]
-        E3 --> E4[Update Verified Recovery Ledger & SHA-256 Audit Log]
+        D3 --> E1{"Razorpay Webhook / Status Lookup"}
+        E1 -->|status !== captured| E2["WAITING FOR PAYMENT · Recovery Pending"]
+        E1 -->|status === captured| E3["VERIFIED · Revenue Captured"]
+        E3 --> E4["Update Verified Recovery Ledger & SHA-256 Audit Log"]
     end
 
     subgraph VISUALIZATION["06. Explanatory & Spatial UI Suite"]
-        E4 --> F1[Native Three.js 3D Recovery Intelligence Graph]
-        E4 --> F2[Counterfactual Recovery Simulator Lab]
-        E4 --> F3[Decision Theater Modal]
-        E4 --> F4[AI Recovery Advisor HUD]
+        E4 --> F1["Native Three.js 3D Recovery Intelligence Graph"]
+        E4 --> F2["Counterfactual Recovery Simulator Lab"]
+        E4 --> F3["Decision Theater Modal"]
+        E4 --> F4["AI Recovery Advisor HUD"]
     end
 
     style INGESTION fill:#111,stroke:#3b3325,stroke-width:1px,color:#fff
@@ -138,14 +138,14 @@ sequenceDiagram
     participant LLM as OpenRouter / Claude
     participant Policy as Deterministic Safety Gate
 
-    Client->>Vercel: POST { transaction: { id, amount, reason, riskScore, ... } }
-    Vercel->>LLM: Prompt with transaction facts & bounded playbook
-    LLM-->>Vercel: Structured JSON { diagnosis, rootCause, recommendedAction, confidence }
-    Vercel->>Policy: Compare recommendedAction with deterministic rule
+    Client->>Vercel: POST transaction facts
+    Vercel->>LLM: Prompt with failure context & bounded playbook
+    LLM-->>Vercel: Structured JSON with diagnosis & recommendation
+    Vercel->>Policy: Compare recommendation with deterministic rules
     alt Policy Approved & Aligned
-        Policy-->>Vercel: executionAllowed: true, policyAlignment: "aligned"
+        Policy-->>Vercel: executionAllowed = true, policyAlignment = aligned
     else Policy Blocked or Escalated
-        Policy-->>Vercel: executionAllowed: false, policyAlignment: "escalate"
+        Policy-->>Vercel: executionAllowed = false, policyAlignment = escalate
     end
     Vercel-->>Client: Return diagnosis, policyReason & execution authority
 ```
@@ -160,16 +160,16 @@ sequenceDiagram
 Fintech requires absolute mathematical guarantees. LLMs cannot override safety rules.
 
 ```mermaid
-graph TD
-    In[Transaction Signal] --> R{Risk Score < 70?}
-    R -- No --> Block[STOP: Escalate to Support]
-    R -- Yes --> A{Retry Count <= 2?}
+flowchart TD
+    In["Transaction Signal"] --> R{"Risk Score < 70?"}
+    R -- No --> Block["STOP: Escalate to Support"]
+    R -- Yes --> A{"Retry Count <= 2?"}
     A -- No --> Block
-    A -- Yes --> P{Recovery Prob >= 55%?}
+    A -- Yes --> P{"Recovery Prob >= 55%?"}
     P -- No --> Block
-    P -- Yes --> Match{Action in Playbook?}
-    Match -- Yes --> Pass[APPROVE: Bounded Execution]
-    Match -- No --> Fallback[Fallback to Standard Playbook Action]
+    P -- Yes --> Match{"Action in Playbook?"}
+    Match -- Yes --> Pass["APPROVE: Bounded Execution"]
+    Match -- No --> Fallback["Fallback to Standard Playbook Action"]
     Fallback --> Pass
 ```
 
@@ -194,21 +194,21 @@ A spatial 3D visualization rendering the real-time movement of transactions thro
 ```
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph SPATIAL_CORE["3D WebGL Canvas (Three.js)"]
-        N0((00 TXN)) --> N1((01 DETECT))
-        N1 --> N2((02 DIAGNOSE))
-        N2 --> N3((03 RISK))
-        N3 --> N4((04 POLICY GATE))
-        N4 -->|Approved| N5((05 ACTION))
-        N5 --> N6((06 VERIFY))
-        N4 -->|Blocked| NB((STOPPED))
+        N0(("00 TXN")) --> N1(("01 DETECT"))
+        N1 --> N2(("02 DIAGNOSE"))
+        N2 --> N3(("03 RISK"))
+        N3 --> N4(("04 POLICY GATE"))
+        N4 -->|Approved| N5(("05 ACTION"))
+        N5 --> N6(("06 VERIFY"))
+        N4 -->|Blocked| NB(("STOPPED"))
     end
     
     subgraph HUD_LAYER["Interactive 2D HUD"]
-        H1[Live Status Pill: RECOVERY VERIFIED / STOPPED]
-        H2[7-Step Pipeline Rail]
-        H3[Interactive Node Detail Inspector]
+        H1["Live Status Pill: RECOVERY VERIFIED / STOPPED"]
+        H2["7-Step Pipeline Rail"]
+        H3["Interactive Node Detail Inspector"]
     end
 
     SPATIAL_CORE <--> HUD_LAYER
@@ -225,27 +225,27 @@ graph LR
 Allows operators and auditors to test: *"What would happen if the failure conditions changed?"*
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph CONTROLS["Interactive Mutation Controls"]
-        C1[Amount Slider: ₹199 – ₹35,000]
-        C2[Failure Signature Selector]
-        C3[Risk Score Slider: 1 – 99]
-        C4[Recovery Probability: 5% – 98%]
-        C5[Retry Boundary: 1/2, 2/2, 3/2]
-        C6[Policy Threshold: 50 – 90]
+        C1["Amount Slider: ₹199 to ₹35,000"]
+        C2["Failure Signature Selector"]
+        C3["Risk Score Slider: 1 to 99"]
+        C4["Recovery Probability: 5% to 98%"]
+        C5["Retry Boundary: 1/2, 2/2, 3/2"]
+        C6["Policy Threshold: 50 to 90"]
     end
 
     subgraph ENGINE["Deterministic Evaluation (evaluateCounterfactual)"]
-        CONTROLS --> E1[Pure Function Evaluation]
-        E1 --> E2[Immutable Original Transaction Snapshot]
+        CONTROLS --> E1["Pure Function Evaluation"]
+        E1 --> E2["Immutable Original Transaction Snapshot"]
     end
 
     subgraph COMPARISON["Real-Time Comparison & Delta"]
-        E2 --> D1[ORIGINAL DECISION Card]
-        E2 --> D2[COUNTERFACTUAL DECISION Card]
-        D1 & D2 --> D3[Visual Delta Chips: Risk 12 → 42]
-        D3 --> D4[Outcome Flip Badge: STOPPED ➔ APPROVED]
-        D4 --> D5[Natural Language Explainability Rationale]
+        E2 --> D1["ORIGINAL DECISION Card"]
+        E2 --> D2["COUNTERFACTUAL DECISION Card"]
+        D1 & D2 --> D3["Visual Delta Chips: Risk 12 → 42"]
+        D3 --> D4["Outcome Flip Badge: STOPPED to APPROVED"]
+        D4 --> D5["Natural Language Explainability Rationale"]
     end
 ```
 
@@ -266,18 +266,18 @@ sequenceDiagram
 
     UI->>Bridge: Action "Retry payment" triggered
     Bridge->>RZP_API: Create Test Order { amount, currency: INR }
-    RZP_API-->>Bridge: Return { orderId: "order_TVLdJPjhhrCBEs", keyId }
+    RZP_API-->>Bridge: Return { orderId, keyId }
     Bridge->>UI: Render RZP Recovery Verification Card ("WAITING FOR PAYMENT")
     Customer->>Bridge: Click "Open Test Payment ↗"
     Bridge->>Bridge: Hide verification card to prevent modal overlap
-    Bridge->>RZP_Modal: Open Razorpay Checkout (order_TVLdJPjhhrCBEs)
+    Bridge->>RZP_Modal: Open Razorpay Checkout Modal
     Customer->>RZP_Modal: Complete Success / Failure Payment
     alt Payment Succeeded
         RZP_Modal-->>Bridge: Return razorpay_payment_id
         Bridge->>RZP_API: Fetch Payment Details (paymentId)
         RZP_API-->>Bridge: status === "captured", verified === true
         Bridge->>UI: Status -> "VERIFIED" (Revenue added to Recovered Ledger)
-    else Payment Cancelled / Closed
+    else Payment Cancelled or Closed
         RZP_Modal-->>Bridge: modal.ondismiss
         Bridge->>UI: Status -> "WAITING FOR PAYMENT" (No revenue added)
     end
