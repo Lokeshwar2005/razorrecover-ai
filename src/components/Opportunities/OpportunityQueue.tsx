@@ -1,19 +1,30 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
-import { fetchOpportunities, type OpportunityItem } from '../../services/backendApi'
+import React, { useEffect, useState, useMemo } from 'react'
+import {
+  fetchOpportunities,
+  fetchOpportunitySummary,
+  type OpportunityItem,
+  type OpportunitySummary,
+} from '../../services/backendApi'
 
 export const OpportunityQueue: React.FC = () => {
   const [opportunities, setOpportunities] = useState<OpportunityItem[]>([])
+  const [summary, setSummary] = useState<OpportunitySummary | null>(null)
   const [loading, setLoading] = useState(true)
   const [selectedOpp, setSelectedOpp] = useState<OpportunityItem | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [priorityFilter, setPriorityFilter] = useState<'ALL' | 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL')
+  const [policyFilter, setPolicyFilter] = useState<'ALL' | 'Approved' | 'Blocked' | 'Escalated'>('ALL')
+  const [sortBy, setSortBy] = useState<'ev' | 'amount' | 'prob' | 'risk'>('ev')
   const [executing, setExecuting] = useState(false)
   const [executionMessage, setExecutionMessage] = useState<string | null>(null)
 
   useEffect(() => {
-    fetchOpportunities().then((data) => {
-      setOpportunities(data)
-      if (data.length > 0) setSelectedOpp(data[0])
+    Promise.all([fetchOpportunities(), fetchOpportunitySummary()]).then(([opps, sum]) => {
+      setOpportunities(opps)
+      setSummary(sum)
+      if (opps.length > 0) setSelectedOpp(opps[0])
       setLoading(false)
     })
   }, [])
@@ -22,13 +33,39 @@ export const OpportunityQueue: React.FC = () => {
     return `₹${(minor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`
   }
 
+  const filteredOpportunities = useMemo(() => {
+    return opportunities
+      .filter((opp) => {
+        const matchesSearch =
+          opp.transaction_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          opp.reason.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          opp.recommended_action.toLowerCase().includes(searchQuery.toLowerCase())
+        const matchesPriority = priorityFilter === 'ALL' || opp.priority === priorityFilter
+        const matchesPolicy = policyFilter === 'ALL' || opp.policy_status === policyFilter
+        return matchesSearch && matchesPriority && matchesPolicy
+      })
+      .sort((a, b) => {
+        if (sortBy === 'amount') return b.amount_minor - a.amount_minor
+        if (sortBy === 'prob') return b.recovery_probability - a.recovery_probability
+        if (sortBy === 'risk') return a.risk_score - b.risk_score
+        // Default: Expected Value descending with Approved policy boost
+        const aBoost = a.policy_status === 'Approved' ? 1 : 0
+        const bBoost = b.policy_status === 'Approved' ? 1 : 0
+        if (aBoost !== bBoost) return bBoost - aBoost
+        return b.expected_value_minor - a.expected_value_minor
+      })
+  }, [opportunities, searchQuery, priorityFilter, policyFilter, sortBy])
+
   const handleExecute = (opp: OpportunityItem) => {
+    if (opp.policy_status === 'Blocked') return
     setExecuting(true)
-    setExecutionMessage(`Initializing bounded '${opp.recommended_action}' via Razorpay Test Mode...`)
+    setExecutionMessage(`Initializing bounded '${opp.best_safe_action || opp.recommended_action}' via Razorpay Test Mode...`)
     setTimeout(() => {
       setExecuting(false)
       setExecutionMessage(
-        `✓ Recovery initiated for ${opp.transaction_id}. Expected outcome: ${formatRupees(opp.expected_value_minor)} under deterministic policy authorization.`
+        `✓ Recovery initiated for ${opp.transaction_id}. Expected yield: ${formatRupees(
+          opp.expected_value_minor
+        )} authorized by deterministic safety boundaries.`
       )
     }, 1200)
   }
@@ -37,10 +74,17 @@ export const OpportunityQueue: React.FC = () => {
     return <div className="p-8 text-center text-[#e5a944] animate-pulse">Calculating Expected Recovery Values...</div>
   }
 
+  const priorityColors = {
+    CRITICAL: 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/40',
+    HIGH: 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/40',
+    MEDIUM: 'bg-[#3b82f6]/10 text-[#3b82f6] border-[#3b82f6]/40',
+    LOW: 'bg-[#7a7164]/10 text-[#a89f91] border-[#7a7164]/40',
+  }
+
   return (
     <div className="space-y-6 max-w-7xl mx-auto px-4 py-6">
-      {/* Header */}
-      <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] flex flex-col md:flex-row md:items-center justify-between gap-4">
+      {/* Top Banner */}
+      <div className="p-5 rounded-xl bg-gradient-to-r from-[#15120c] via-[#0f0c08] to-[#15120c] border border-[#2e271c] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
             <span className="text-lg">🎯</span>
@@ -54,128 +98,317 @@ export const OpportunityQueue: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4 text-xs font-mono text-[#7a7164]">
-          <div>
-            TOTAL QUEUE: <span className="text-[#f4ede2] font-bold">{opportunities.length} Items</span>
+        {summary && (
+          <div className="flex items-center gap-4 text-xs font-mono">
+            <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
+              <div className="text-[#7a7164] text-[10px]">TOTAL OPPORTUNITIES</div>
+              <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Queue Items</div>
+            </div>
+            <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
+              <div className="text-[#7a7164] text-[10px]">POTENTIAL RECOVERY</div>
+              <div className="text-[#10b981] font-bold">{formatRupees(summary.expected_recovery_value_minor)}</div>
+            </div>
           </div>
-          <div>
-            POTENTIAL: <span className="text-[#10b981] font-bold">
-              {formatRupees(opportunities.reduce((acc, o) => acc + o.expected_value_minor, 0))}
-            </span>
-          </div>
-        </div>
+        )}
       </div>
 
+      {/* Summary KPI Cards */}
+      {summary && (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
+            <div className="text-[10px] font-mono text-[#7a7164]">AT RISK VOLUME</div>
+            <div className="text-base font-bold font-mono text-[#ef4444] mt-1">
+              {formatRupees(summary.total_revenue_at_risk_minor)}
+            </div>
+          </div>
+          <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
+            <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED RECOVERY</div>
+            <div className="text-base font-bold font-mono text-[#fcd34d] mt-1">
+              {formatRupees(summary.expected_recovery_value_minor)}
+            </div>
+          </div>
+          <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
+            <div className="text-[10px] font-mono text-[#7a7164]">AVG PROBABILITY</div>
+            <div className="text-base font-bold font-mono text-[#10b981] mt-1">
+              {summary.average_recovery_probability}%
+            </div>
+          </div>
+          <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
+            <div className="text-[10px] font-mono text-[#7a7164]">POLICY ELIGIBLE</div>
+            <div className="text-base font-bold font-mono text-[#10b981] mt-1">
+              {summary.policy_eligible_count} Safe
+            </div>
+          </div>
+          <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
+            <div className="text-[10px] font-mono text-[#7a7164]">POLICY BLOCKED</div>
+            <div className="text-base font-bold font-mono text-[#ef4444] mt-1">
+              {summary.policy_blocked_count} Gated
+            </div>
+          </div>
+          <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
+            <div className="text-[10px] font-mono text-[#7a7164]">HIGH PRIORITY</div>
+            <div className="text-base font-bold font-mono text-[#e5a944] mt-1">
+              {summary.high_priority_count} Critical
+            </div>
+          </div>
+        </div>
+      )}
+
       {executionMessage && (
-        <div className="p-4 rounded-lg bg-[#10b981]/10 border border-[#10b981]/40 text-[#10b981] text-sm font-mono flex items-center justify-between">
-          <span>{executionMessage}</span>
+        <div className="p-4 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#10b981] text-xs font-mono flex items-center justify-between shadow-[0_0_15px_rgba(16,185,129,0.2)] animate-fade-in">
+          <div className="flex items-center gap-2">
+            <span>✓</span>
+            <span>{executionMessage}</span>
+          </div>
           <button onClick={() => setExecutionMessage(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
         </div>
       )}
 
-      {/* Main Grid: Queue on Left, Optimizer on Right */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Opportunity List (2 Columns on large screens) */}
-        <div className="lg:col-span-2 space-y-3">
-          {opportunities.map((opp) => {
-            const isSelected = selectedOpp?.id === opp.id
-            const priorityColors = {
-              CRITICAL: 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30',
-              HIGH: 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30',
-              MEDIUM: 'bg-[#3b82f6]/10 text-[#3b82f6] border-[#3b82f6]/30',
-              LOW: 'bg-[#7a7164]/10 text-[#a89f91] border-[#7a7164]/30',
-            }
-
-            return (
-              <div
-                key={opp.id}
-                onClick={() => setSelectedOpp(opp)}
-                className={`p-4 rounded-xl border transition cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-4 ${
-                  isSelected
-                    ? 'bg-[#1c1710] border-[#e5a944] shadow-[0_0_15px_rgba(229,169,68,0.15)]'
-                    : 'bg-[#0f0c08] border-[#2e271c] hover:border-[#453d32]'
-                }`}
-              >
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span className={`px-2 py-0.5 text-[10px] font-mono font-bold rounded border ${priorityColors[opp.priority]}`}>
-                      {opp.priority}
-                    </span>
-                    <span className="font-mono font-bold text-sm text-[#f4ede2]">{opp.transaction_id}</span>
-                    <span className="text-xs text-[#7a7164]">• {opp.reason}</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-xs font-mono text-[#a89f91]">
-                    <span>Amount: <strong className="text-[#f4ede2]">{formatRupees(opp.amount_minor)}</strong></span>
-                    <span>Prob: <strong className="text-[#10b981]">{opp.recovery_probability}%</strong></span>
-                    <span>Risk: <strong className="text-[#e5a944]">{opp.risk_score}/100</strong></span>
-                  </div>
-                </div>
-
-                <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
-                  <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED VALUE</div>
-                  <div className="text-lg font-mono font-bold text-[#fcd34d]">
-                    {formatRupees(opp.expected_value_minor)}
-                  </div>
-                </div>
-              </div>
-            )
-          })}
+      {/* Filter and Search Bar */}
+      <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono">
+        <div className="w-full md:w-72">
+          <input
+            type="text"
+            placeholder="Search by ID, failure, action..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944]"
+          />
         </div>
 
-        {/* Strategy Optimizer Detail Panel */}
+        <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
+          <span className="text-[#7a7164]">PRIORITY:</span>
+          {(['ALL', 'CRITICAL', 'HIGH', 'MEDIUM', 'LOW'] as const).map((lvl) => (
+            <button
+              key={lvl}
+              onClick={() => setPriorityFilter(lvl)}
+              className={`px-2.5 py-1 rounded border transition ${
+                priorityFilter === lvl
+                  ? 'bg-[#e5a944] text-[#080705] border-[#e5a944] font-bold'
+                  : 'bg-[#15120c] text-[#a89f91] border-[#2e271c] hover:border-[#453d32]'
+              }`}
+            >
+              {lvl}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-2 w-full md:w-auto">
+          <span className="text-[#7a7164]">SORT:</span>
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as any)}
+            className="px-2.5 py-1 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944]"
+          >
+            <option value="ev">Expected Value (High → Low)</option>
+            <option value="amount">Amount (High → Low)</option>
+            <option value="prob">Recovery Probability</option>
+            <option value="risk">Lowest Risk First</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Main Grid: Queue on Left, Optimizer & Explainability on Right */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Opportunity List */}
+        <div className="lg:col-span-2 space-y-3">
+          {filteredOpportunities.length === 0 ? (
+            <div className="p-8 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center text-[#a89f91] text-sm">
+              No recovery opportunities match the active filters.
+            </div>
+          ) : (
+            filteredOpportunities.map((opp) => {
+              const isSelected = selectedOpp?.id === opp.id
+              const isBlocked = opp.policy_status === 'Blocked'
+
+              return (
+                <div
+                  key={opp.id}
+                  onClick={() => setSelectedOpp(opp)}
+                  className={`p-4 rounded-xl border transition cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-4 ${
+                    isSelected
+                      ? 'bg-[#1a150e] border-[#e5a944] shadow-[0_0_15px_rgba(229,169,68,0.2)]'
+                      : isBlocked
+                      ? 'bg-[#0f0c08]/80 border-[#ef4444]/30 hover:border-[#ef4444]/50 opacity-80'
+                      : 'bg-[#0f0c08] border-[#2e271c] hover:border-[#453d32]'
+                  }`}
+                >
+                  <div className="space-y-1.5 flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className={`px-2 py-0.5 text-[10px] font-mono font-bold rounded border ${priorityColors[opp.priority]}`}>
+                        {opp.priority}
+                      </span>
+                      <span className="font-mono font-bold text-sm text-[#f4ede2]">{opp.transaction_id}</span>
+                      <span className="text-xs text-[#7a7164]">• {opp.reason}</span>
+                      <span
+                        className={`px-1.5 py-0.2 text-[10px] font-mono rounded border ml-auto md:ml-0 ${
+                          opp.policy_status === 'Approved'
+                            ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
+                            : opp.policy_status === 'Blocked'
+                            ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
+                            : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
+                        }`}
+                      >
+                        {opp.policy_status}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#a89f91]">
+                      <span>Amount: <strong className="text-[#f4ede2]">{formatRupees(opp.amount_minor)}</strong></span>
+                      <span>Prob: <strong className="text-[#10b981]">{opp.recovery_probability}%</strong></span>
+                      <span>Risk: <strong className={opp.risk_score >= 70 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>{opp.risk_score}/100</strong></span>
+                      <span>Action: <strong className="text-[#f4ede2]">{opp.recommended_action}</strong></span>
+                    </div>
+                  </div>
+
+                  <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
+                    <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED VALUE</div>
+                    <div className="text-lg font-mono font-bold text-[#fcd34d]">
+                      {formatRupees(opp.expected_value_minor)}
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          )}
+        </div>
+
+        {/* Strategy Optimizer & Explainability Panel */}
         {selectedOpp && (
-          <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4">
+          <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-5">
             <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
               <div>
                 <h3 className="text-sm font-mono font-bold text-[#e5a944]">STRATEGY OPTIMIZER</h3>
                 <div className="text-xs text-[#a89f91]">Candidate Playbook Simulation</div>
               </div>
-              <span className="px-2 py-0.5 text-xs font-mono rounded bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30">
+              <span
+                className={`px-2 py-0.5 text-xs font-mono rounded border ${
+                  selectedOpp.policy_status === 'Approved'
+                    ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
+                    : selectedOpp.policy_status === 'Blocked'
+                    ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
+                    : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
+                }`}
+              >
                 {selectedOpp.policy_status}
               </span>
             </div>
 
-            <div className="space-y-2">
-              <div className="text-xs text-[#7a7164]">TARGET TRANSACTION</div>
-              <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1 text-xs font-mono">
-                <div className="flex justify-between">
-                  <span className="text-[#a89f91]">Transaction ID:</span>
-                  <span className="text-[#f4ede2] font-bold">{selectedOpp.transaction_id}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#a89f91]">Raw Value:</span>
-                  <span className="text-[#f4ede2]">{formatRupees(selectedOpp.amount_minor)}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#a89f91]">Failure Signal:</span>
-                  <span className="text-[#e5a944]">{selectedOpp.reason}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#a89f91]">Expected Recovery:</span>
-                  <span className="text-[#10b981] font-bold">{formatRupees(selectedOpp.expected_value_minor)}</span>
-                </div>
+            {/* Target Breakdown */}
+            <div className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1.5 text-xs font-mono">
+              <div className="flex justify-between">
+                <span className="text-[#7a7164]">Target Transaction:</span>
+                <span className="text-[#f4ede2] font-bold">{selectedOpp.transaction_id}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[#7a7164]">Raw Amount:</span>
+                <span className="text-[#f4ede2]">{formatRupees(selectedOpp.amount_minor)}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[#7a7164]">Failure Signal:</span>
+                <span className="text-[#e5a944]">{selectedOpp.reason}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-[#7a7164]">Expected Recovery Yield:</span>
+                <span className="text-[#10b981] font-bold">{formatRupees(selectedOpp.expected_value_minor)}</span>
               </div>
             </div>
 
+            {/* Candidate Playbooks Table */}
+            {selectedOpp.candidate_actions && selectedOpp.candidate_actions.length > 0 && (
+              <div className="space-y-2">
+                <div className="text-xs font-mono text-[#7a7164]">CANDIDATE ACTION SIMULATION</div>
+                <div className="space-y-1.5 text-[11px] font-mono">
+                  {selectedOpp.candidate_actions.map((act) => (
+                    <div
+                      key={act.action}
+                      className={`p-2.5 rounded border flex items-center justify-between ${
+                        act.execution_allowed
+                          ? 'bg-[#15120c] border-[#2e271c]'
+                          : 'bg-[#15120c]/60 border-[#ef4444]/20 opacity-70'
+                      }`}
+                    >
+                      <div>
+                        <div className="text-[#f4ede2] font-bold">{act.action}</div>
+                        <div className="text-[10px] text-[#7a7164]">
+                          Prob: {act.recovery_probability}% • Risk: {act.risk_score}/100
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-[#fcd34d] font-bold">{formatRupees(act.expected_value_minor)}</div>
+                        <span
+                          className={`text-[9px] px-1 rounded ${
+                            act.policy_decision === 'Approved'
+                              ? 'text-[#10b981] bg-[#10b981]/10'
+                              : act.policy_decision === 'Blocked'
+                              ? 'text-[#ef4444] bg-[#ef4444]/10'
+                              : 'text-[#e5a944] bg-[#e5a944]/10'
+                          }`}
+                        >
+                          {act.policy_decision}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Best Safe Action Recommendation */}
             <div className="space-y-2">
-              <div className="text-xs text-[#7a7164]">RECOMMENDED SAFE ACTION</div>
-              <div className="p-3 rounded-lg bg-[#15120c] border border-[#e5a944]/40 space-y-1">
+              <div className="text-xs font-mono text-[#7a7164]">RECOMMENDED SAFE ACTION</div>
+              <div
+                className={`p-3.5 rounded-lg border space-y-1.5 ${
+                  selectedOpp.policy_status === 'Approved'
+                    ? 'bg-[#15120c] border-[#10b981]/40'
+                    : 'bg-[#15120c] border-[#ef4444]/40'
+                }`}
+              >
                 <div className="text-sm font-bold text-[#f4ede2] flex items-center gap-2">
-                  <span>⚡</span> {selectedOpp.recommended_action}
+                  <span>⚡</span> {selectedOpp.best_safe_action || selectedOpp.recommended_action}
                 </div>
-                <p className="text-xs text-[#a89f91]">
-                  Authorized by deterministic policy gate (Risk {selectedOpp.risk_score} &lt; 70 ceiling, Probability {selectedOpp.recovery_probability}% &gt; 55% floor).
-                </p>
+                {selectedOpp.explainability && (
+                  <p className="text-xs text-[#a89f91] leading-relaxed">
+                    {selectedOpp.explainability.why_action}
+                  </p>
+                )}
               </div>
             </div>
 
-            <button
-              onClick={() => handleExecute(selectedOpp)}
-              disabled={executing}
-              className="w-full py-2.5 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50"
-            >
-              {executing ? 'Executing Bounded Action...' : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
-            </button>
+            {/* Audited Explainability Breakdown */}
+            {selectedOpp.explainability && (
+              <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-2 text-[11px] font-mono">
+                <div className="text-[#e5a944] font-bold">AUDITED EXPLAINABILITY</div>
+                <div>
+                  <span className="text-[#7a7164]">Priority Rationale: </span>
+                  <span className="text-[#a89f91]">{selectedOpp.explainability.why_priority}</span>
+                </div>
+                <div>
+                  <span className="text-[#7a7164]">Policy Gate: </span>
+                  <span className="text-[#a89f91]">{selectedOpp.explainability.why_policy_status}</span>
+                </div>
+              </div>
+            )}
+
+            {/* Action Execution Button */}
+            {selectedOpp.policy_status === 'Blocked' ? (
+              <button
+                disabled
+                className="w-full py-3 px-4 rounded-lg bg-[#ef4444]/20 border border-[#ef4444]/50 text-[#ef4444] font-bold text-xs cursor-not-allowed font-mono"
+              >
+                ⛔ Recovery Blocked by Deterministic Safety Gate
+              </button>
+            ) : (
+              <button
+                onClick={() => handleExecute(selectedOpp)}
+                disabled={executing}
+                className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer"
+              >
+                {executing
+                  ? 'Executing Bounded Action...'
+                  : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
+              </button>
+            )}
           </div>
         )}
       </div>
