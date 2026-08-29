@@ -1,12 +1,13 @@
-# ⚡ RazorRecover AI — Autonomous Explainable Revenue Recovery Agent
+# ⚡ RazorRecover AI 2.0 — Autonomous Explainable Revenue Recovery Platform
 
 > **Built for [Razorpay AI Buildathon 2026](https://razorpay.com/buildathon/) — Track 3: AI Revenue Recovery**  
-> *Autonomous AI agent detecting leakage, diagnosing failure signatures, enforcing deterministic policy boundaries, and verifying captured revenue.*
+> *Production-grade autonomous AI recovery platform with Next.js 16, FastAPI, PostgreSQL, Three.js 3D intelligence graph, deterministic safety gates, and Razorpay Test Mode verification.*
 
 [![Live Frontend](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://lokeshwar2005.github.io/razorrecover-ai/)
-[![Vercel API](https://img.shields.io/badge/Serverless%20API-Vercel-black?style=for-the-badge&logo=vercel)](https://razorrecover-ai-teal.vercel.app/api/ai/recovery)
+[![Serverless API](https://img.shields.io/badge/Serverless%20API-Vercel-black?style=for-the-badge&logo=vercel)](https://razorrecover-ai-teal.vercel.app/api/ai/recovery)
+[![Next.js](https://img.shields.io/badge/Frontend-Next.js%2016%20%2B%20React%2019-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20%2B%20PostgreSQL-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Track 3](https://img.shields.io/badge/Buildathon%20Track-Track%203%3A%20AI%20Revenue%20Recovery-orange?style=for-the-badge)](https://razorpay.com/buildathon/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Three.js](https://img.shields.io/badge/3D%20Engine-Three.js-049EF4?style=for-the-badge&logo=three.js)](https://threejs.org/)
 
 ---
