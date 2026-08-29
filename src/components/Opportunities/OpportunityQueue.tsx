@@ -5,6 +5,7 @@ import {
   useTransactionStore,
   computeOpportunitiesFromTransactions,
   computeOpportunitySummary,
+  type CanonicalTransaction,
 } from '../../services/canonicalTransactionStore'
 import {
   type OpportunityItem,
@@ -20,16 +21,47 @@ export const OpportunityQueue: React.FC = () => {
   const verifyPayment = useTransactionStore((s) => s.verifyPayment)
 
   const [searchQuery, setSearchQuery] = useState('')
-  const [priorityFilter, setPriorityFilter] = useState<'ALL' | 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL')
-  const [policyFilter, setPolicyFilter] = useState<'ALL' | 'Approved' | 'Blocked' | 'Escalated'>('ALL')
-  const [sortBy, setSortBy] = useState<'ev' | 'amount' | 'prob' | 'risk'>('ev')
+  const [activeFilter, setActiveFilter] = useState<
+    | 'ALL'
+    | 'CRITICAL'
+    | 'HIGH'
+    | 'MEDIUM'
+    | 'LOW'
+    | 'RECOVERED'
+    | 'PENDING'
+    | 'FAILED'
+    | 'BLOCKED'
+  >('ALL')
+  const [sortBy, setSortBy] = useState<
+    | 'ev_desc'
+    | 'ev_asc'
+    | 'amount_desc'
+    | 'amount_asc'
+    | 'prob_desc'
+    | 'risk_desc'
+    | 'newest'
+    | 'oldest'
+  >('ev_desc')
+
+  const [pageSize, setPageSize] = useState<number>(15)
   const [currentPage, setCurrentPage] = useState(1)
-  const PAGE_SIZE = 15
+  const [continuousScroll, setContinuousScroll] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(25)
+
   const [executing, setExecuting] = useState(false)
   const [executionResult, setExecutionResult] = useState<RecoveryExecutionResult | null>(null)
   const [executionError, setExecutionError] = useState<string | null>(null)
   const [verifying, setVerifying] = useState(false)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
+
+  // Map for O(1) canonical transaction lookup
+  const transactionMap = useMemo(() => {
+    const map = new Map<string, CanonicalTransaction>()
+    for (const t of transactions) {
+      map.set(t.id, t)
+    }
+    return map
+  }, [transactions])
 
   // Single Source of Truth: Derived directly from canonical transactions
   const allOpportunities = useMemo(() => {
@@ -39,6 +71,21 @@ export const OpportunityQueue: React.FC = () => {
   const summary = useMemo(() => {
     return computeOpportunitySummary(allOpportunities)
   }, [allOpportunities])
+
+  // Breakdown counts derived from canonical dataset
+  const breakdown = useMemo(() => {
+    let syntheticCount = 0
+    let razorpayTestCount = 0
+    let liveCount = 0
+
+    for (const t of transactions) {
+      if (t.source === 'synthetic') syntheticCount++
+      else if (t.source === 'razorpay_test') razorpayTestCount++
+      else if (t.source === 'live') liveCount++
+    }
+
+    return { syntheticCount, razorpayTestCount, liveCount, total: transactions.length }
+  }, [transactions])
 
   // Resolve selected opportunity from canonical selectedTransactionId or default to top item
   const selectedOpp = useMemo(() => {
@@ -65,46 +112,86 @@ export const OpportunityQueue: React.FC = () => {
     setExecutionError(null)
   }
 
+  // Filter and sort across COMPLETE canonical dataset
   const filteredOpportunities = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
     const cleanNum = q.replace(/^txn-?/, '')
 
     return allOpportunities
       .filter((opp) => {
+        const parentTxn = transactionMap.get(opp.transaction_id)
+
         const matchesSearch =
           !q ||
           opp.transaction_id.toLowerCase().includes(q) ||
-          opp.transaction_id.replace('TXN-', '').toLowerCase().includes(cleanNum) ||
+          (cleanNum && opp.transaction_id.replace('TXN-', '').toLowerCase().includes(cleanNum)) ||
           opp.id.toLowerCase().includes(q) ||
           opp.reason.toLowerCase().includes(q) ||
-          opp.recommended_action.toLowerCase().includes(q)
+          opp.recommended_action.toLowerCase().includes(q) ||
+          (opp.best_safe_action && opp.best_safe_action.toLowerCase().includes(q)) ||
+          opp.priority.toLowerCase().includes(q) ||
+          opp.policy_status.toLowerCase().includes(q) ||
+          (opp.status ? opp.status.toLowerCase().includes(q) : false) ||
+          (parentTxn?.provider_payment_id && parentTxn.provider_payment_id.toLowerCase().includes(q)) ||
+          (parentTxn?.provider_order_id && parentTxn.provider_order_id.toLowerCase().includes(q)) ||
+          (parentTxn?.direction && parentTxn.direction.toLowerCase().includes(q)) ||
+          (parentTxn?.source && parentTxn.source.toLowerCase().includes(q))
 
-        const matchesPriority = priorityFilter === 'ALL' || opp.priority === priorityFilter
-        const matchesPolicy = policyFilter === 'ALL' || opp.policy_status === policyFilter
-        return matchesSearch && matchesPriority && matchesPolicy
+        let matchesFilter = true
+        if (activeFilter === 'CRITICAL') matchesFilter = opp.priority === 'CRITICAL'
+        else if (activeFilter === 'HIGH') matchesFilter = opp.priority === 'HIGH'
+        else if (activeFilter === 'MEDIUM') matchesFilter = opp.priority === 'MEDIUM'
+        else if (activeFilter === 'LOW') matchesFilter = opp.priority === 'LOW'
+        else if (activeFilter === 'RECOVERED') matchesFilter = opp.status === 'RECOVERED' || parentTxn?.status === 'RECOVERED'
+        else if (activeFilter === 'PENDING') matchesFilter = opp.status === 'ELIGIBLE' || opp.status === 'PENDING' || parentTxn?.status === 'PENDING'
+        else if (activeFilter === 'FAILED') matchesFilter = opp.status === 'STOPPED' || parentTxn?.status === 'STOPPED'
+        else if (activeFilter === 'BLOCKED') matchesFilter = opp.policy_status === 'Blocked' || parentTxn?.policy === 'Blocked'
+
+        return matchesSearch && matchesFilter
       })
       .sort((a, b) => {
-        if (sortBy === 'amount') return b.amount_minor - a.amount_minor
-        if (sortBy === 'prob') return b.recovery_probability - a.recovery_probability
-        if (sortBy === 'risk') return a.risk_score - b.risk_score
-        // Default: Expected Value descending with Approved policy boost
-        const aBoost = a.policy_status === 'Approved' ? 1 : 0
-        const bBoost = b.policy_status === 'Approved' ? 1 : 0
-        if (aBoost !== bBoost) return bBoost - aBoost
+        const txnA = transactionMap.get(a.transaction_id)
+        const txnB = transactionMap.get(b.transaction_id)
+
+        if (sortBy === 'ev_desc') {
+          const aBoost = a.policy_status === 'Approved' ? 1 : 0
+          const bBoost = b.policy_status === 'Approved' ? 1 : 0
+          if (aBoost !== bBoost) return bBoost - aBoost
+          return b.expected_value_minor - a.expected_value_minor
+        }
+        if (sortBy === 'ev_asc') return a.expected_value_minor - b.expected_value_minor
+        if (sortBy === 'amount_desc') return b.amount_minor - a.amount_minor
+        if (sortBy === 'amount_asc') return a.amount_minor - b.amount_minor
+        if (sortBy === 'prob_desc') return b.recovery_probability - a.recovery_probability
+        if (sortBy === 'risk_desc') return a.risk_score - b.risk_score
+        if (sortBy === 'newest') {
+          const timeA = txnA ? new Date(txnA.created_at).getTime() : 0
+          const timeB = txnB ? new Date(txnB.created_at).getTime() : 0
+          return timeB - timeA
+        }
+        if (sortBy === 'oldest') {
+          const timeA = txnA ? new Date(txnA.created_at).getTime() : 0
+          const timeB = txnB ? new Date(txnB.created_at).getTime() : 0
+          return timeA - timeB
+        }
         return b.expected_value_minor - a.expected_value_minor
       })
-  }, [allOpportunities, searchQuery, priorityFilter, policyFilter, sortBy])
+  }, [allOpportunities, searchQuery, activeFilter, sortBy, transactionMap])
 
   // Reset pagination when search/filter/sort changes
   useEffect(() => {
     setCurrentPage(1)
-  }, [searchQuery, priorityFilter, policyFilter, sortBy])
+    setVisibleCount(25)
+  }, [searchQuery, activeFilter, sortBy, pageSize])
 
-  const totalPages = Math.max(1, Math.ceil(filteredOpportunities.length / PAGE_SIZE))
+  const totalPages = Math.max(1, Math.ceil(filteredOpportunities.length / pageSize))
   const paginatedOpportunities = useMemo(() => {
-    const start = (currentPage - 1) * PAGE_SIZE
-    return filteredOpportunities.slice(start, start + PAGE_SIZE)
-  }, [filteredOpportunities, currentPage])
+    if (continuousScroll) {
+      return filteredOpportunities.slice(0, visibleCount)
+    }
+    const start = (currentPage - 1) * pageSize
+    return filteredOpportunities.slice(start, start + pageSize)
+  }, [filteredOpportunities, currentPage, pageSize, continuousScroll, visibleCount])
 
   const handleExecute = async (opp: OpportunityItem) => {
     if (opp.policy_status === 'Blocked') {
@@ -143,7 +230,7 @@ export const OpportunityQueue: React.FC = () => {
   }
 
   const handleLaunchCheckout = (opp: OpportunityItem) => {
-    const parentTxn = transactions.find((t) => t.id === opp.transaction_id)
+    const parentTxn = transactionMap.get(opp.transaction_id)
     launchRazorpayCheckout({
       order_id: executionResult?.order_id || parentTxn?.provider_order_id,
       amount_minor: opp.amount_minor,
@@ -178,7 +265,7 @@ export const OpportunityQueue: React.FC = () => {
   }
 
   const handleVerifyPayment = async (opp: OpportunityItem) => {
-    const parentTxn = transactions.find((t) => t.id === opp.transaction_id)
+    const parentTxn = transactionMap.get(opp.transaction_id)
     if (!parentTxn?.provider_payment_id) {
       setExecutionError('Payment verification unavailable. No payment has been submitted or captured yet.')
       return
@@ -194,9 +281,7 @@ export const OpportunityQueue: React.FC = () => {
         opp.currency || 'INR',
         parentTxn.provider_order_id
       )
-
       if (verifyRes.verified) {
-        setExecutionResult(null)
         setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
       } else {
         setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
@@ -220,33 +305,33 @@ export const OpportunityQueue: React.FC = () => {
       {/* Top Banner */}
       <div className="p-5 rounded-xl bg-gradient-to-r from-[#15120c] via-[#0f0c08] to-[#15120c] border border-[#2e271c] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="text-lg">🎯</span>
-            <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Recovery Opportunity Engine</h1>
-            <span className="px-2 py-0.5 text-xs font-mono rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
-              Ranked by Expected Value (Amount × Probability)
+            <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Recovery Opportunity Explorer</h1>
+            <span className="px-2.5 py-0.5 text-xs font-mono font-bold rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
+              {allOpportunities.length} Canonical Opportunities
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Prioritizes highest-value safe recoveries within deterministic policy boundaries across {allOpportunities.length} canonical opportunities.
+            Search, filter, rank, and inspect every recovery opportunity ({breakdown.syntheticCount} Synthetic · {breakdown.razorpayTestCount} Razorpay Test · {breakdown.liveCount} Live).
           </p>
         </div>
 
         {summary && (
-          <div className="flex items-center gap-4 text-xs font-mono">
+          <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
             <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
               <div className="text-[#7a7164] text-[10px]">TOTAL OPPORTUNITIES</div>
-              <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Queue Items</div>
+              <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Canonical Items</div>
             </div>
             <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
-              <div className="text-[#7a7164] text-[10px]">POTENTIAL RECOVERY</div>
+              <div className="text-[#7a7164] text-[10px]">EXPECTED RECOVERY</div>
               <div className="text-[#10b981] font-bold">{formatRupees(summary.expected_recovery_value_minor)}</div>
             </div>
           </div>
         )}
       </div>
 
-      {/* Summary KPI Cards */}
+      {/* Summary KPI Cards (Entire Canonical Dataset) */}
       {summary && (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
@@ -342,158 +427,251 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       )}
 
-      {/* Filter and Search Bar */}
-      <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono">
-        <div className="w-full md:w-72">
-          <input
-            type="text"
-            placeholder="Search by ID (e.g. 1033), reason, action..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944]"
-          />
+      {/* Filter, Search and Sort Control Bar */}
+      <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-3 text-xs font-mono">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+          {/* Prominent Search Box */}
+          <div className="w-full md:flex-1 relative">
+            <input
+              type="text"
+              placeholder="Search by transaction ID, payment ID, reason, action, or status..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-9 pr-8 py-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] placeholder:text-[#7a7164] focus:outline-none focus:border-[#e5a944] text-xs"
+            />
+            <span className="absolute left-3 top-2.5 text-[#7a7164]">🔎</span>
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-2.5 text-[#7a7164] hover:text-[#f4ede2]"
+              >
+                ✕
+              </button>
+            )}
+          </div>
+
+          {/* Sort Selector */}
+          <div className="flex items-center gap-2 w-full md:w-auto">
+            <span className="text-[#7a7164]">SORT:</span>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as any)}
+              className="px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944] text-xs"
+            >
+              <option value="ev_desc">Expected Value (High → Low)</option>
+              <option value="ev_asc">Expected Value (Low → High)</option>
+              <option value="amount_desc">Amount (High → Low)</option>
+              <option value="amount_asc">Amount (Low → High)</option>
+              <option value="prob_desc">Recovery Probability (High → Low)</option>
+              <option value="risk_desc">Risk (Low → High)</option>
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+            </select>
+          </div>
+
+          {/* View Mode & Page Size */}
+          <div className="flex items-center gap-2 w-full md:w-auto">
+            <button
+              onClick={() => setContinuousScroll(!continuousScroll)}
+              className={`px-3 py-2 rounded-lg border transition ${
+                continuousScroll
+                  ? 'bg-[#e5a944]/15 border-[#e5a944] text-[#e5a944] font-bold'
+                  : 'bg-[#15120c] border-[#2e271c] text-[#a89f91] hover:border-[#453d32]'
+              }`}
+            >
+              {continuousScroll ? '📜 Continuous Scroll' : '📄 Paginated'}
+            </button>
+          </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
-          <span className="text-[#7a7164]">PRIORITY:</span>
-          {(['ALL', 'CRITICAL', 'HIGH', 'MEDIUM', 'LOW'] as const).map((lvl) => (
+        {/* Filter Chips Bar */}
+        <div className="flex flex-wrap items-center gap-1.5 pt-1 border-t border-[#2e271c]/50">
+          <span className="text-[#7a7164] mr-1">FILTER:</span>
+          {(
+            [
+              { id: 'ALL', label: 'ALL' },
+              { id: 'CRITICAL', label: 'CRITICAL' },
+              { id: 'HIGH', label: 'HIGH' },
+              { id: 'MEDIUM', label: 'MEDIUM' },
+              { id: 'LOW', label: 'LOW' },
+              { id: 'RECOVERED', label: 'RECOVERED' },
+              { id: 'PENDING', label: 'PENDING' },
+              { id: 'FAILED', label: 'FAILED / STOPPED' },
+              { id: 'BLOCKED', label: 'POLICY BLOCKED' },
+            ] as const
+          ).map((flt) => (
             <button
-              key={lvl}
-              onClick={() => setPriorityFilter(lvl)}
+              key={flt.id}
+              onClick={() => setActiveFilter(flt.id)}
               className={`px-2.5 py-1 rounded border transition ${
-                priorityFilter === lvl
+                activeFilter === flt.id
                   ? 'bg-[#e5a944] text-[#080705] border-[#e5a944] font-bold'
                   : 'bg-[#15120c] text-[#a89f91] border-[#2e271c] hover:border-[#453d32]'
               }`}
             >
-              {lvl}
+              {flt.label}
             </button>
           ))}
-        </div>
 
-        <div className="flex items-center gap-2 w-full md:w-auto">
-          <span className="text-[#7a7164]">SORT:</span>
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as any)}
-            className="px-2.5 py-1 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944]"
-          >
-            <option value="ev">Expected Value (High → Low)</option>
-            <option value="amount">Amount (High → Low)</option>
-            <option value="prob">Recovery Probability</option>
-            <option value="risk">Lowest Risk First</option>
-          </select>
+          <span className="ml-auto text-[#7a7164] text-[11px]">
+            Showing <strong className="text-[#f4ede2]">{filteredOpportunities.length}</strong> of {allOpportunities.length} opportunities
+          </span>
         </div>
       </div>
 
-      {/* Main Grid: Queue on Left, Optimizer & Explainability on Right */}
+      {/* Main Grid: Opportunity Explorer on Left, Optimizer & Explainability on Right */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Opportunity List */}
         <div className="lg:col-span-2 space-y-3">
           {filteredOpportunities.length === 0 ? (
-            <div className="p-8 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center text-[#a89f91] text-sm font-mono">
-              No recovery opportunities match the search & filter criteria.
+            <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-3 font-mono">
+              <span className="text-3xl">🔍</span>
+              <h4 className="text-sm font-bold text-[#f4ede2]">No opportunities match your search.</h4>
+              <p className="text-xs text-[#a89f91]">Try another transaction ID, payment ID, reason, action, or status.</p>
+              <button
+                onClick={() => {
+                  setSearchQuery('')
+                  setActiveFilter('ALL')
+                }}
+                className="px-3.5 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#e5a944] text-xs transition cursor-pointer"
+              >
+                Clear Search & Filters
+              </button>
             </div>
           ) : (
-            paginatedOpportunities.map((opp) => {
-              const isSelected = selectedOpp?.id === opp.id
-              const isBlocked = opp.policy_status === 'Blocked'
-              const isRecovered = opp.status === 'RECOVERED'
-              const isInProgress = opp.status === 'IN_PROGRESS'
+            <div className="space-y-3">
+              {paginatedOpportunities.map((opp) => {
+                const parentTxn = transactionMap.get(opp.transaction_id)
+                const isSelected = selectedOpp?.id === opp.id
+                const isBlocked = opp.policy_status === 'Blocked'
+                const isRecovered = opp.status === 'RECOVERED' || parentTxn?.status === 'RECOVERED'
+                const isInProgress = opp.status === 'IN_PROGRESS' || parentTxn?.status === 'IN_PROGRESS'
 
-              return (
-                <div
-                  key={opp.id}
-                  onClick={() => handleSelectOpportunity(opp)}
-                  className={`p-4 rounded-xl border transition cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-4 ${
-                    isSelected
-                      ? 'bg-[#1a150e] border-[#e5a944] shadow-[0_0_15px_rgba(229,169,68,0.2)]'
-                      : isBlocked
-                      ? 'bg-[#0f0c08]/80 border-[#ef4444]/30 hover:border-[#ef4444]/50 opacity-80'
-                      : isRecovered
-                      ? 'bg-[#0f0c08] border-[#10b981]/40 hover:border-[#10b981]/60'
-                      : 'bg-[#0f0c08] border-[#2e271c] hover:border-[#453d32]'
-                  }`}
-                >
-                  <div className="space-y-1.5 flex-1">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className={`px-2 py-0.5 text-[10px] font-mono font-bold rounded border ${priorityColors[opp.priority]}`}>
-                        {opp.priority}
-                      </span>
-                      <span className="font-mono font-bold text-sm text-[#f4ede2]">{opp.transaction_id}</span>
-                      <span className="text-xs text-[#7a7164]">• {opp.reason}</span>
-                      
-                      {isRecovered ? (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
-                          ✓ RECOVERED
+                return (
+                  <div
+                    key={opp.id}
+                    onClick={() => handleSelectOpportunity(opp)}
+                    className={`p-4 rounded-xl border transition cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-4 ${
+                      isSelected
+                        ? 'bg-[#1a150e] border-[#e5a944] shadow-[0_0_15px_rgba(229,169,68,0.2)]'
+                        : isBlocked
+                        ? 'bg-[#0f0c08]/80 border-[#ef4444]/30 hover:border-[#ef4444]/50 opacity-80'
+                        : isRecovered
+                        ? 'bg-[#0f0c08] border-[#10b981]/40 hover:border-[#10b981]/60'
+                        : 'bg-[#0f0c08] border-[#2e271c] hover:border-[#453d32]'
+                    }`}
+                  >
+                    <div className="space-y-1.5 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className={`px-2 py-0.5 text-[10px] font-mono font-bold rounded border ${priorityColors[opp.priority]}`}>
+                          {opp.priority}
                         </span>
-                      ) : isInProgress ? (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
-                          ⚡ IN PROGRESS
-                        </span>
-                      ) : (
-                        <span
-                          className={`px-1.5 py-0.2 text-[10px] font-mono rounded border ml-auto md:ml-0 ${
-                            opp.policy_status === 'Approved'
-                              ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
-                              : opp.policy_status === 'Blocked'
-                              ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
-                              : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
-                          }`}
-                        >
-                          {opp.policy_status}
-                        </span>
-                      )}
+                        <span className="font-mono font-bold text-sm text-[#f4ede2]">{opp.transaction_id}</span>
+                        
+                        {parentTxn?.source === 'razorpay_test' && (
+                          <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#3b82f6]/20 text-[#60a5fa] border border-[#3b82f6]/40">
+                            RAZORPAY TEST
+                          </span>
+                        )}
+                        {parentTxn?.provider_payment_id && (
+                          <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-[#15120c] text-[#fcd34d] border border-[#2e271c]">
+                            {parentTxn.provider_payment_id}
+                          </span>
+                        )}
+
+                        <span className="text-xs text-[#7a7164]">• {opp.reason}</span>
+                        
+                        {isRecovered ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
+                            ✓ RECOVERED
+                          </span>
+                        ) : isInProgress ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
+                            ⚡ IN PROGRESS
+                          </span>
+                        ) : (
+                          <span
+                            className={`px-1.5 py-0.2 text-[10px] font-mono rounded border ml-auto md:ml-0 ${
+                              opp.policy_status === 'Approved'
+                                ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
+                                : opp.policy_status === 'Blocked'
+                                ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
+                                : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
+                            }`}
+                          >
+                            {opp.policy_status}
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#a89f91]">
+                        <span>Amount: <strong className="text-[#f4ede2]">{formatRupees(opp.amount_minor)}</strong></span>
+                        <span>Prob: <strong className="text-[#10b981]">{opp.recovery_probability}%</strong></span>
+                        <span>Risk: <strong className={opp.risk_score >= 70 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>{opp.risk_score}/100</strong></span>
+                        <span>Action: <strong className="text-[#f4ede2]">{opp.recommended_action}</strong></span>
+                      </div>
                     </div>
 
-                    <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#a89f91]">
-                      <span>Amount: <strong className="text-[#f4ede2]">{formatRupees(opp.amount_minor)}</strong></span>
-                      <span>Prob: <strong className="text-[#10b981]">{opp.recovery_probability}%</strong></span>
-                      <span>Risk: <strong className={opp.risk_score >= 70 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>{opp.risk_score}/100</strong></span>
-                      <span>Action: <strong className="text-[#f4ede2]">{opp.recommended_action}</strong></span>
+                    <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
+                      <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED VALUE</div>
+                      <div className="text-lg font-mono font-bold text-[#fcd34d]">
+                        {formatRupees(opp.expected_value_minor)}
+                      </div>
                     </div>
                   </div>
-
-                  <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
-                    <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED VALUE</div>
-                    <div className="text-lg font-mono font-bold text-[#fcd34d]">
-                      {formatRupees(opp.expected_value_minor)}
-                    </div>
-                  </div>
-                </div>
-              )
-            })
+                )
+              })}
+            </div>
           )}
 
-          {/* Pagination Controls */}
-          {filteredOpportunities.length > PAGE_SIZE && (
-            <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
+          {/* Continuous Scroll Load-More or Pagination Controls */}
+          {filteredOpportunities.length > 0 && (
+            <div className="flex flex-col sm:flex-row items-center justify-between p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono gap-3">
               <div className="text-[#7a7164]">
-                Showing {(currentPage - 1) * PAGE_SIZE + 1} - {Math.min(filteredOpportunities.length, currentPage * PAGE_SIZE)} of {filteredOpportunities.length} opportunities
+                {continuousScroll
+                  ? `Showing 1 - ${Math.min(filteredOpportunities.length, visibleCount)} of ${filteredOpportunities.length} opportunities`
+                  : `Showing ${(currentPage - 1) * pageSize + 1} - ${Math.min(filteredOpportunities.length, currentPage * pageSize)} of ${filteredOpportunities.length} opportunities`}
               </div>
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                  disabled={currentPage === 1}
-                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition cursor-pointer"
-                >
-                  ◀ Prev
-                </button>
-                <button
-                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                  disabled={currentPage === totalPages}
-                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition cursor-pointer"
-                >
-                  Next ▶
-                </button>
-              </div>
+
+              {continuousScroll ? (
+                visibleCount < filteredOpportunities.length ? (
+                  <button
+                    onClick={() => setVisibleCount((c) => Math.min(filteredOpportunities.length, c + 25))}
+                    className="px-4 py-2 rounded-lg bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition cursor-pointer"
+                  >
+                    Load More Opportunities (+25) ▶
+                  </button>
+                ) : (
+                  <span className="text-[#10b981] font-bold">✓ All {filteredOpportunities.length} opportunities loaded</span>
+                )
+              ) : (
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                    className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition cursor-pointer"
+                  >
+                    ◀ Prev
+                  </button>
+                  <span className="text-[#a89f91] px-1">
+                    Page {currentPage} of {totalPages}
+                  </span>
+                  <button
+                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                    disabled={currentPage === totalPages}
+                    className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition cursor-pointer"
+                  >
+                    Next ▶
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </div>
 
-        {/* Strategy Optimizer & Explainability Panel */}
+        {/* Strategy Optimizer & Explainability Panel (Right Side) */}
         {selectedOpp && (
-          <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-5">
+          <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-5 h-fit">
             <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
               <div>
                 <h3 className="text-sm font-mono font-bold text-[#e5a944]">STRATEGY OPTIMIZER</h3>
@@ -512,61 +690,27 @@ export const OpportunityQueue: React.FC = () => {
               </span>
             </div>
 
-            {/* Execution/Verification Feedback */}
-            {executionResult && (
-              <div className="p-3.5 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-2">
-                <div className="font-bold text-[#10b981]">⚡ RECOVERY ACTION DISPATCHED</div>
-                <div>{executionResult.workflow_message}</div>
-                {executionResult.payment_link && (
-                  <a
-                    href={executionResult.payment_link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-[#10b981] underline block pt-1"
-                  >
-                    Open Razorpay Link ↗
-                  </a>
-                )}
-                {executionResult.order_id && selectedOpp.status !== 'RECOVERED' && (
-                  <button
-                    onClick={() => handleLaunchCheckout(selectedOpp)}
-                    className="w-full py-2 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs font-mono hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer mt-1 shadow-md"
-                  >
-                    <span>💳 Open Razorpay Test Checkout Modal</span>
-                  </button>
-                )}
-              </div>
-            )}
-
-            {verifiedSuccess && (
-              <div className="p-3.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/60 text-[#10b981] text-xs font-mono font-bold">
-                {verifiedSuccess}
-              </div>
-            )}
-
-            {executionError && (
-              <div className="p-3.5 rounded-lg bg-[#ef4444]/15 border border-[#ef4444]/50 text-[#ef4444] text-xs font-mono">
-                ⛔ {executionError}
-              </div>
-            )}
-
-            {/* Target Breakdown */}
-            <div className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1.5 text-xs font-mono">
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Target Transaction:</span>
+            {/* Target Transaction Specs */}
+            <div className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+              <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
+                <span className="text-[#7a7164]">TARGET TRANSACTION:</span>
                 <span className="text-[#f4ede2] font-bold">{selectedOpp.transaction_id}</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Raw Amount:</span>
-                <span className="text-[#f4ede2]">{formatRupees(selectedOpp.amount_minor)}</span>
+              <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
+                <span className="text-[#7a7164]">AMOUNT:</span>
+                <span className="text-[#f4ede2] font-bold">{formatRupees(selectedOpp.amount_minor)}</span>
+              </div>
+              <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
+                <span className="text-[#7a7164]">EXPECTED RECOVERY:</span>
+                <span className="text-[#fcd34d] font-bold">{formatRupees(selectedOpp.expected_value_minor)}</span>
+              </div>
+              <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
+                <span className="text-[#7a7164]">FAILURE REASON:</span>
+                <span className="text-[#ef4444]">{selectedOpp.reason}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#7a7164]">Failure Signal:</span>
-                <span className="text-[#e5a944]">{selectedOpp.reason}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Expected Recovery Yield:</span>
-                <span className="text-[#10b981] font-bold">{formatRupees(selectedOpp.expected_value_minor)}</span>
+                <span className="text-[#7a7164]">PRIORITY RATING:</span>
+                <span className="text-[#e5a944] font-bold">{selectedOpp.priority} ({selectedOpp.priority_score}/100)</span>
               </div>
             </div>
 

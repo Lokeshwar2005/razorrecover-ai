@@ -860,8 +860,11 @@ function App() {
         <section className="panel transactions" id="recovery-operations">
           <div className="panelTop">
             <div>
-              <span className="eyebrow">EVENT STREAM / SHARED LEDGER</span>
-              <h2>Recovery operations</h2>
+              <span className="eyebrow">CANONICAL OPPORTUNITY EXPLORER</span>
+              <h2>Recovery Opportunity Explorer</h2>
+              <p style={{ margin: '4px 0 0', fontSize: '12px', color: '#a89f91' }}>
+                Search, filter, rank, and inspect every recovery opportunity.
+              </p>
             </div>
             <span>
               {liveCount ? `${liveCount} Razorpay live + ${events.length - liveCount} synthetic` : `${events.length} synthetic transactions`}
