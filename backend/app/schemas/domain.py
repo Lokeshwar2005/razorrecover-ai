@@ -4,36 +4,28 @@ from pydantic import BaseModel, ConfigDict, Field
 
 
 # Common Types
-RecoveryResultType = Literal["Recovered", "Stopped", "Pending"]
-PolicyDecisionType = Literal["Approved", "Escalated"]
+RecoveryResultType = str
+PolicyDecisionType = str
 WorkflowStatusType = Literal["READY", "RUNNING", "COMPLETE", "ESCALATED", "BLOCKED", "FAILED"]
 PriorityType = Literal["CRITICAL", "HIGH", "MEDIUM", "LOW"]
 UserRoleType = Literal["ADMIN", "OPERATOR", "ANALYST", "AUDITOR"]
 
-RecoveryDirectionType = Literal[
-    "Payment degradation",
-    "Checkout drop-off",
-    "Failed-subscription recovery",
-    "B2B receivables chaser",
-    "Mandate retry sequencer",
-    "Hinglish voice recovery",
-    "Promise-to-pay tracker",
-]
+RecoveryDirectionType = str
 
 
 class TransactionBase(BaseModel):
     id: str = Field(..., description="Unique transaction ID e.g. TXN-1042 or RZP-pay_...")
     amount_minor: int = Field(..., gt=0, description="Amount in integer minor units (paise)")
     currency: str = Field(default="INR", max_length=3)
-    source: Literal["synthetic", "razorpay"] = "synthetic"
+    source: str = "synthetic"
     reason: str = Field(..., description="Detected failure signature reason")
-    direction: RecoveryDirectionType = "Payment degradation"
+    direction: str = "Payment degradation"
     action: str = Field(default="Retry payment")
     
     confidence: int = Field(default=94, ge=0, le=100)
     recovery_probability: int = Field(default=72, ge=0, le=100)
     risk_score: int = Field(default=28, ge=0, le=100)
-    policy: PolicyDecisionType = "Approved"
+    policy: str = "Approved"
     explanation: Optional[str] = None
     provider_id: Optional[str] = None
 
@@ -48,7 +40,7 @@ class TransactionCreate(TransactionBase):
 
 class TransactionResponse(TransactionBase):
     merchant_id: Optional[str] = None
-    status: RecoveryResultType = "Pending"
+    status: str = "PENDING"
     verified_amount_minor: int = 0
     created_at: datetime
     updated_at: datetime

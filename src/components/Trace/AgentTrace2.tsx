@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
+import { useTransactionStore } from '../../services/canonicalTransactionStore'
 
 export interface TraceStep {
   index: number
@@ -11,67 +12,83 @@ export interface TraceStep {
 }
 
 export const AgentTrace2: React.FC = () => {
+  const selectedTxn = useTransactionStore((s) => s.getSelectedTransaction())
   const [activeStep, setActiveStep] = useState<number>(6) // Default to step 6 (Verify completed)
   const [isPlaying, setIsPlaying] = useState<boolean>(false)
 
-  const steps: TraceStep[] = [
-    {
-      index: 0,
-      name: '01 DETECT',
-      status: 'DONE',
-      detail: 'Raw payment signal captured: ₹45,000 failed under bank timeout signature.',
-      decision: 'Signal Ingested',
-    },
-    {
-      index: 1,
-      name: '02 DIAGNOSE',
-      status: 'DONE',
-      detail: 'OpenRouter AI Diagnostic inference: Transient issuer degradation on HDFC payment gateway.',
-      decision: '94% Confidence',
-    },
-    {
-      index: 2,
-      name: '03 SCORE',
-      status: 'DONE',
-      detail: 'Calculated recoverability probability: 84%, Base risk score: 22/100.',
-      decision: 'Risk 22 (Low)',
-    },
-    {
-      index: 3,
-      name: '04 PRIORITIZE',
-      status: 'DONE',
-      detail: 'Expected recovery value calculated: ₹37,800. Placed in CRITICAL opportunity queue.',
-      decision: 'CRITICAL Priority',
-    },
-    {
-      index: 4,
-      name: '05 POLICY',
-      status: 'DONE',
-      detail: 'Deterministic Policy Gate evaluated: Risk 22 < 70, Retries 1 <= 2, Prob 84% >= 55%.',
-      decision: 'APPROVED',
-    },
-    {
-      index: 5,
-      name: '06 ACTION',
-      status: 'DONE',
-      detail: 'Bounded recovery playbook executed: Automated payment retry via Razorpay Order order_OXb128.',
-      decision: 'Order Generated',
-    },
-    {
-      index: 6,
-      name: '07 VERIFY',
-      status: 'DONE',
-      detail: 'Payment Verification Bridge received Razorpay webhook: status === captured (pay_TVLdJPjhhrCBEs).',
-      decision: 'VERIFIED RECOVERY',
-    },
-    {
-      index: 7,
-      name: '08 LEARN',
-      status: 'DONE',
-      detail: 'Verified recovery outcome ingested into empirical historical dataset. Success rate updated.',
-      decision: 'Telemetry Updated',
-    },
-  ]
+  const steps: TraceStep[] = useMemo(() => {
+    if (!selectedTxn) {
+      return []
+    }
+
+    const amtFormatted = `₹${selectedTxn.amount.toLocaleString('en-IN')}`
+    const expValFormatted = `₹${Math.floor((selectedTxn.amount * selectedTxn.recovery_probability) / 100).toLocaleString('en-IN')}`
+    const isRecovered = selectedTxn.status === 'RECOVERED'
+    const isBlocked = selectedTxn.policy === 'Blocked'
+
+    return [
+      {
+        index: 0,
+        name: '01 DETECT',
+        status: 'DONE',
+        detail: `Raw payment failure signal captured: ${amtFormatted} failed under '${selectedTxn.reason}' (${selectedTxn.id}).`,
+        decision: 'Signal Ingested',
+      },
+      {
+        index: 1,
+        name: '02 DIAGNOSE',
+        status: 'DONE',
+        detail: `OpenRouter AI Diagnostic inference for ${selectedTxn.direction}: ${selectedTxn.explanation}`,
+        decision: `${selectedTxn.confidence}% Confidence`,
+      },
+      {
+        index: 2,
+        name: '03 SCORE',
+        status: 'DONE',
+        detail: `Calculated recovery probability: ${selectedTxn.recovery_probability}%, Policy risk score: ${selectedTxn.risk_score}/100.`,
+        decision: `Risk ${selectedTxn.risk_score} (${selectedTxn.risk_score >= 60 ? 'High' : 'Safe'})`,
+      },
+      {
+        index: 3,
+        name: '04 PRIORITIZE',
+        status: 'DONE',
+        detail: `Expected recovery value calculated: ${expValFormatted}. Opportunity ranked by monetary yield.`,
+        decision: `${selectedTxn.policy === 'Approved' ? 'High Yield' : 'Gated'}`,
+      },
+      {
+        index: 4,
+        name: '05 POLICY',
+        status: 'DONE',
+        detail: `Deterministic Policy Gate evaluated: Risk ${selectedTxn.risk_score}/100 vs 70 ceiling, Policy decision: ${selectedTxn.policy}.`,
+        decision: isBlocked ? 'BLOCKED' : 'APPROVED',
+      },
+      {
+        index: 5,
+        name: '06 ACTION',
+        status: 'DONE',
+        detail: isBlocked
+          ? `Action halted by safety gate. Escalated to human operator.`
+          : `Bounded recovery playbook executed: ${selectedTxn.action} via Razorpay Test Mode.`,
+        decision: isBlocked ? 'ESCALATED' : 'ACTION DISPATCHED',
+      },
+      {
+        index: 6,
+        name: '07 VERIFY',
+        status: 'DONE',
+        detail: isRecovered
+          ? `Payment Verification Bridge confirmed Razorpay captured status for ${selectedTxn.id}. Verified revenue credited.`
+          : `Awaiting captured payment confirmation from Razorpay webhook/verification gate.`,
+        decision: isRecovered ? 'VERIFIED CAPTURED' : 'PENDING CAPTURE',
+      },
+      {
+        index: 7,
+        name: '08 LEARN',
+        status: 'DONE',
+        detail: `Verified recovery outcome ingested into empirical historical dataset. Recovery rate updated for ${selectedTxn.reason}.`,
+        decision: 'TELEMETRY UPDATED',
+      },
+    ]
+  }, [selectedTxn])
 
   useEffect(() => {
     let interval: NodeJS.Timeout
@@ -98,6 +115,10 @@ export const AgentTrace2: React.FC = () => {
     setActiveStep((prev) => (prev >= 7 ? 0 : prev + 1))
   }
 
+  if (!selectedTxn || steps.length === 0) {
+    return <div className="p-8 text-center text-[#e5a944] font-mono text-xs">Loading canonical agent trace...</div>
+  }
+
   return (
     <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4 max-w-7xl mx-auto my-6">
       {/* Header & Replay Controls */}
@@ -107,11 +128,11 @@ export const AgentTrace2: React.FC = () => {
             <span className="text-lg">🎬</span>
             <h2 className="text-base font-bold text-[#f4ede2]">Agent Trace & Decision Replay Theater</h2>
             <span className="px-2 py-0.5 text-xs font-mono rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
-              8-Stage Deterministic Timeline
+              {selectedTxn.id}
             </span>
           </div>
           <p className="text-xs text-[#a89f91] mt-1">
-            Replay and audit end-to-end execution of AI diagnostic reasoning and deterministic policy gates.
+            Replay and audit end-to-end execution of AI diagnostic reasoning and deterministic policy gates for <strong>{selectedTxn.id}</strong> (₹{selectedTxn.amount.toLocaleString('en-IN')}).
           </p>
         </div>
 
@@ -179,11 +200,11 @@ export const AgentTrace2: React.FC = () => {
       <div className="p-4 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1">
         <div className="flex items-center justify-between text-xs font-mono">
           <span className="text-[#e5a944] font-bold">
-            STAGE {activeStep + 1}: {steps[activeStep].name}
+            STAGE {activeStep + 1}: {steps[activeStep]?.name}
           </span>
-          <span className="text-[#10b981] font-bold">{steps[activeStep].decision}</span>
+          <span className="text-[#10b981] font-bold">{steps[activeStep]?.decision}</span>
         </div>
-        <p className="text-xs text-[#a89f91]">{steps[activeStep].detail}</p>
+        <p className="text-xs text-[#a89f91]">{steps[activeStep]?.detail}</p>
       </div>
     </div>
   )

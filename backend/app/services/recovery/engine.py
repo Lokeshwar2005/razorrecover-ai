@@ -76,13 +76,13 @@ def create_synthetic_transaction(index: int, scenario: ScenarioType = "balanced"
         action=playbook.action,
     )
 
-    txn_id = f"TXN-{1000 + index}"
+    txn_id = f"TXN-{1042 - index:04d}"
     return {
         "id": txn_id,
         "amount_minor": amount_minor,
         "currency": "INR",
         "source": "synthetic",
-        "status": "Pending",
+        "status": "PENDING",
         "direction": playbook.direction,
         "reason": playbook.reason,
         "action": policy_eval["action"],

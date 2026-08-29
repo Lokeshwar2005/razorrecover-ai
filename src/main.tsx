@@ -17,6 +17,7 @@ import { AuditComplianceCenter } from './components/Audit/AuditComplianceCenter'
 import { AgentTrace2 } from './components/Trace/AgentTrace2'
 import { GraphTransactionContext } from './types/graph'
 import { createTransaction, type RecoveryDirection } from './recoveryEngine'
+import { useTransactionStore } from './services/canonicalTransactionStore'
 
 type Result = 'Recovered' | 'Stopped' | 'Pending'
 type Scenario = 'balanced' | 'checkout' | 'degradation'
@@ -218,6 +219,22 @@ function App() {
       if (raf.current) cancelAnimationFrame(raf.current)
     }
   }, [])
+
+  // Sync selected transaction with canonical store
+  useEffect(() => {
+    if (selected?.id) {
+      useTransactionStore.getState().setSelectedTransactionId(selected.id)
+    }
+  }, [selected?.id])
+
+  // Sync canonical store selection to main app state
+  const canonicalSelectedId = useTransactionStore((s) => s.selectedTransactionId)
+  useEffect(() => {
+    if (canonicalSelectedId && canonicalSelectedId !== selected?.id) {
+      const match = events.find((e) => e.id === canonicalSelectedId)
+      if (match) setSelected(match)
+    }
+  }, [canonicalSelectedId])
 
   const addAudit = (event: string, detail: string, status: AuditItem['status'] = 'INFO') =>
     setAudit((a) => [

@@ -34,6 +34,8 @@ class OpportunityService:
         limit: int = 50,
         offset: int = 0,
     ) -> List[OpportunityDetailResponse]:
+        from backend.app.api.v1.routes.transactions import seed_synthetic_transactions_if_empty
+        seed_synthetic_transactions_if_empty(db)
         query = db.query(TransactionModel)
 
         if status:
@@ -86,6 +88,8 @@ class OpportunityService:
         db: Session,
         opportunity_id: str,
     ) -> Optional[OpportunityDetailResponse]:
+        from backend.app.api.v1.routes.transactions import seed_synthetic_transactions_if_empty
+        seed_synthetic_transactions_if_empty(db)
         raw_id = opportunity_id.replace("opp-", "")
         txn = db.query(TransactionModel).filter(
             (TransactionModel.id == opportunity_id) | (TransactionModel.id == raw_id)

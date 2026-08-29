@@ -7,6 +7,8 @@ import DecisionComparison from './DecisionComparison'
 import DecisionDelta from './DecisionDelta'
 import './counterfactual.css'
 
+import { useTransactionStore } from '../../services/canonicalTransactionStore'
+
 export interface CounterfactualLabProps {
   originalTransaction: GraphTransactionContext | null
   onActiveGraphTargetChange?: (target: 'original' | 'counterfactual', counterfactual: GraphTransactionContext | null, isRunning: boolean, progress: number) => void
@@ -16,10 +18,28 @@ export const CounterfactualLab: React.FC<CounterfactualLabProps> = ({
   originalTransaction,
   onActiveGraphTargetChange,
 }) => {
+  const selectedCanonical = useTransactionStore((s) => s.getSelectedTransaction())
+
   // Fallback transaction if none selected
   const defaultOriginal: GraphTransactionContext = useMemo(
-    () =>
-      originalTransaction || {
+    () => {
+      if (originalTransaction) return originalTransaction
+      if (selectedCanonical) {
+        return {
+          id: selectedCanonical.id,
+          amount: selectedCanonical.amount,
+          reason: selectedCanonical.reason,
+          action: selectedCanonical.action,
+          result: selectedCanonical.status === 'RECOVERED' ? 'Recovered' : 'Pending',
+          confidence: selectedCanonical.confidence,
+          recoveryProbability: selectedCanonical.recovery_probability,
+          riskScore: selectedCanonical.risk_score,
+          policy: selectedCanonical.policy === 'Approved' ? 'Approved' : 'Escalated',
+          explanation: selectedCanonical.explanation,
+          latency: selectedCanonical.latency,
+        }
+      }
+      return {
         id: 'TXN-1042',
         amount: 2499,
         reason: 'Network degradation',
@@ -31,8 +51,9 @@ export const CounterfactualLab: React.FC<CounterfactualLabProps> = ({
         policy: 'Approved',
         explanation: 'Bounded retry payment selected because recovery probability is 82% with risk 28/100.',
         latency: '210ms',
-      },
-    [originalTransaction]
+      }
+    },
+    [originalTransaction, selectedCanonical]
   )
 
   // Initialize mutable counterfactual inputs

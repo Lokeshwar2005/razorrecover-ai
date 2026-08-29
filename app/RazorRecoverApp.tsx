@@ -14,6 +14,7 @@ import { PolicySettingsView } from '../src/components/Settings/PolicySettingsVie
 import { AuditComplianceCenter } from '../src/components/Audit/AuditComplianceCenter'
 import { GraphTransactionContext } from '../src/types/graph'
 import { createTransaction, type RecoveryDirection } from '../src/recoveryEngine'
+import { useTransactionStore } from '../src/services/canonicalTransactionStore'
 
 type Result = 'Recovered' | 'Stopped' | 'Pending'
 type Scenario = 'balanced' | 'checkout' | 'degradation'
@@ -213,6 +214,22 @@ export function RazorRecoverApp() {
   useEffect(() => () => {
     if (raf.current) cancelAnimationFrame(raf.current)
   }, [])
+
+  // Sync selected transaction with canonical store
+  useEffect(() => {
+    if (selected?.id) {
+      useTransactionStore.getState().setSelectedTransactionId(selected.id)
+    }
+  }, [selected?.id])
+
+  // Sync canonical store selection to main app state
+  const canonicalSelectedId = useTransactionStore((s) => s.selectedTransactionId)
+  useEffect(() => {
+    if (canonicalSelectedId && canonicalSelectedId !== selected?.id) {
+      const match = events.find((e) => e.id === canonicalSelectedId)
+      if (match) setSelected(match)
+    }
+  }, [canonicalSelectedId])
 
   const addAudit = (event: string, detail: string, status: AuditItem['status'] = 'INFO') =>
     setAudit((a) => [

@@ -24,9 +24,11 @@ router = APIRouter(prefix="/transactions", tags=["Transaction Intelligence"])
 
 
 def seed_synthetic_transactions_if_empty(db: Session, scenario: str = "balanced") -> None:
-    if db.query(TransactionModel).count() == 0:
-        for i in range(100):
-            txn_dict = create_synthetic_transaction(i, scenario)
+    existing_ids = {t[0] for t in db.query(TransactionModel.id).all()}
+    added = False
+    for i in range(100):
+        txn_dict = create_synthetic_transaction(i, scenario)
+        if txn_dict["id"] not in existing_ids:
             txn = TransactionModel(
                 id=txn_dict["id"],
                 amount_minor=txn_dict["amount_minor"],
@@ -43,6 +45,8 @@ def seed_synthetic_transactions_if_empty(db: Session, scenario: str = "balanced"
                 explanation=txn_dict["explanation"],
             )
             db.add(txn)
+            added = True
+    if added:
         db.commit()
 
 

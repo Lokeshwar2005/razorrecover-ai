@@ -3,6 +3,8 @@
  * Connects frontend views to FastAPI endpoints with high-fidelity synthetic fallback.
  */
 
+import { useTransactionStore } from './canonicalTransactionStore'
+
 const API_BASE =
   (typeof process !== 'undefined' && (process.env?.NEXT_PUBLIC_BACKEND_API_URL || process.env?.VITE_BACKEND_API_URL)) ||
   (typeof import.meta !== 'undefined' && (import.meta as any)?.env?.VITE_BACKEND_API_URL) ||
@@ -152,17 +154,21 @@ export async function fetchDashboardStats(): Promise<DashboardStats> {
     const res = await fetch(`${API_BASE}/dashboard/stats`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback for static mode
+    // Fallback to canonical store
   }
 
+  const metrics = useTransactionStore.getState().getMetrics()
+  const opps = useTransactionStore.getState().getOpportunities()
+  const oppsValue = opps.reduce((sum, o) => sum + o.expected_value_minor, 0)
+
   return {
-    revenue_at_risk_minor: 18450000,
-    revenue_recovered_minor: 13284000,
-    recovery_rate: 72.0,
-    failed_transactions_count: 28,
-    active_recovery_attempts_count: 14,
-    policy_blocks_count: 8,
-    total_opportunities_value_minor: 9640000,
+    revenue_at_risk_minor: metrics.revenueAtRiskMinor,
+    revenue_recovered_minor: metrics.verifiedRecoveredMinor,
+    recovery_rate: metrics.recoveryRate,
+    failed_transactions_count: metrics.stoppedCount,
+    active_recovery_attempts_count: metrics.pendingCount,
+    policy_blocks_count: metrics.blockedCount,
+    total_opportunities_value_minor: oppsValue,
     average_ai_confidence: 94.0,
     velocity_minor_per_sec: 4300,
     trends: [
@@ -172,7 +178,7 @@ export async function fetchDashboardStats(): Promise<DashboardStats> {
       { timestamp: 'Aug 26', revenue_at_risk_minor: 8200000, revenue_recovered_minor: 6100000, recovery_rate: 74.3 },
       { timestamp: 'Aug 27', revenue_at_risk_minor: 11500000, revenue_recovered_minor: 8400000, recovery_rate: 73.0 },
       { timestamp: 'Aug 28', revenue_at_risk_minor: 14900000, revenue_recovered_minor: 10800000, recovery_rate: 72.4 },
-      { timestamp: 'Aug 29', revenue_at_risk_minor: 18450000, revenue_recovered_minor: 13284000, recovery_rate: 72.0 },
+      { timestamp: 'Aug 29', revenue_at_risk_minor: metrics.revenueAtRiskMinor, revenue_recovered_minor: metrics.verifiedRecoveredMinor, recovery_rate: metrics.recoveryRate },
     ],
   }
 }
@@ -192,204 +198,16 @@ export async function fetchOpportunities(filter?: {
     const res = await fetch(url, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback for static mode
+    // Fallback to canonical store
   }
 
-  const fallback: OpportunityItem[] = [
-    {
-      id: 'opp-TXN-1082',
-      opportunity_id: 'opp-TXN-1082',
-      transaction_id: 'TXN-1082',
-      amount_minor: 4500000,
-      currency: 'INR',
-      failure_signature: 'Bank timeout',
-      recovery_probability: 84,
-      expected_value_minor: 3780000,
-      expected_recovery_value_minor: 3780000,
-      priority_score: 88,
-      priority_level: 'CRITICAL',
-      priority: 'CRITICAL',
-      recommended_action: 'Retry payment',
-      best_safe_action: 'Retry payment',
-      policy_status: 'Approved',
-      reason: 'Bank timeout',
-      risk_score: 22,
-      status: 'ELIGIBLE',
-      explainability: {
-        why_priority: 'Critical priority due to high recoverable value (₹37,800 expected out of ₹45,000), 84% recovery probability, and low risk (22/100).',
-        why_action: 'Automated gateway retry is recommended for transient bank timeout as gateway telemetry indicates network recovery.',
-        why_policy_status: 'Authorized by deterministic policy gate (Risk 22 < 70 ceiling, Retries 1 <= 2).',
-      },
-      candidate_actions: [
-        { action: 'Retry payment', recovery_probability: 89, risk_score: 22, expected_value_minor: 4005000, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 22 < 70, Retries 1 <= 2' },
-        { action: 'Payment link', recovery_probability: 95, risk_score: 14, expected_value_minor: 4275000, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 14 < 70' },
-        { action: 'Customer prompt', recovery_probability: 86, risk_score: 17, expected_value_minor: 3870000, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 17 < 70' },
-        { action: 'Escalate', recovery_probability: 40, risk_score: 22, expected_value_minor: 1800000, policy_decision: 'Escalated', execution_allowed: false, policy_reason: 'Requires operator action' },
-      ],
-      created_at: new Date().toISOString(),
-    },
-    {
-      id: 'opp-TXN-1094',
-      opportunity_id: 'opp-TXN-1094',
-      transaction_id: 'TXN-1094',
-      amount_minor: 3499900,
-      currency: 'INR',
-      failure_signature: 'Checkout abandoned',
-      recovery_probability: 79,
-      expected_value_minor: 2764921,
-      expected_recovery_value_minor: 2764921,
-      priority_score: 82,
-      priority_level: 'CRITICAL',
-      priority: 'CRITICAL',
-      recommended_action: 'Payment link',
-      best_safe_action: 'Payment link',
-      policy_status: 'Approved',
-      reason: 'Checkout abandoned',
-      risk_score: 27,
-      status: 'ELIGIBLE',
-      explainability: {
-        why_priority: 'Critical priority with ₹27,649 expected recovery value and high buyer purchase intent.',
-        why_action: 'Smart Payment Link is recommended to bypass checkout friction by delivering a pre-filled Razorpay link.',
-        why_policy_status: 'Authorized by deterministic policy gate (Risk 27 < 70 ceiling).',
-      },
-      candidate_actions: [
-        { action: 'Payment link', recovery_probability: 91, risk_score: 19, expected_value_minor: 3184909, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 19 < 70' },
-        { action: 'Retry payment', recovery_probability: 84, risk_score: 27, expected_value_minor: 2939916, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 27 < 70' },
-        { action: 'Customer prompt', recovery_probability: 81, risk_score: 22, expected_value_minor: 2834919, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 22 < 70' },
-        { action: 'Escalate', recovery_probability: 40, risk_score: 27, expected_value_minor: 1399960, policy_decision: 'Escalated', execution_allowed: false, policy_reason: 'Requires operator action' },
-      ],
-      created_at: new Date().toISOString(),
-    },
-    {
-      id: 'opp-TXN-1077',
-      opportunity_id: 'opp-TXN-1077',
-      transaction_id: 'TXN-1077',
-      amount_minor: 1899900,
-      currency: 'INR',
-      failure_signature: 'Subscription charge failed',
-      recovery_probability: 76,
-      expected_value_minor: 1443924,
-      expected_recovery_value_minor: 1443924,
-      priority_score: 71,
-      priority_level: 'HIGH',
-      priority: 'HIGH',
-      recommended_action: 'Retry subscription',
-      best_safe_action: 'Payment link',
-      policy_status: 'Approved',
-      reason: 'Subscription charge failed',
-      risk_score: 34,
-      status: 'ELIGIBLE',
-      explainability: {
-        why_priority: 'High priority recurring subscription renewal with ₹14,439 expected recovery value.',
-        why_action: 'Subscription dunning sequence with smart payment link authorized to prevent customer churn.',
-        why_policy_status: 'Authorized by deterministic policy gate (Risk 34 < 70 ceiling).',
-      },
-      candidate_actions: [
-        { action: 'Payment link', recovery_probability: 88, risk_score: 26, expected_value_minor: 1671912, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 26 < 70' },
-        { action: 'Retry payment', recovery_probability: 81, risk_score: 34, expected_value_minor: 1538919, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 34 < 70' },
-        { action: 'Customer prompt', recovery_probability: 78, risk_score: 29, expected_value_minor: 1481922, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 29 < 70' },
-        { action: 'Escalate', recovery_probability: 40, risk_score: 34, expected_value_minor: 759960, policy_decision: 'Escalated', execution_allowed: false, policy_reason: 'Requires operator action' },
-      ],
-      created_at: new Date().toISOString(),
-    },
-    {
-      id: 'opp-TXN-1065',
-      opportunity_id: 'opp-TXN-1065',
-      transaction_id: 'TXN-1065',
-      amount_minor: 2499900,
-      currency: 'INR',
-      failure_signature: 'High-intent failed payment',
-      recovery_probability: 73,
-      expected_value_minor: 1824927,
-      expected_recovery_value_minor: 1824927,
-      priority_score: 68,
-      priority_level: 'HIGH',
-      priority: 'HIGH',
-      recommended_action: 'Call + payment link',
-      best_safe_action: 'Hinglish voice recovery',
-      policy_status: 'Approved',
-      reason: 'High-intent failed payment',
-      risk_score: 37,
-      status: 'ELIGIBLE',
-      explainability: {
-        why_priority: 'High priority customer with ₹18,249 expected yield on high-intent e-commerce cart.',
-        why_action: 'Hinglish voice assistance & WhatsApp payment link recommended for high-touch recovery.',
-        why_policy_status: 'Authorized by deterministic policy gate (Risk 37 < 70 ceiling).',
-      },
-      candidate_actions: [
-        { action: 'Hinglish voice recovery', recovery_probability: 77, risk_score: 35, expected_value_minor: 1924923, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 35 < 70' },
-        { action: 'Payment link', recovery_probability: 85, risk_score: 29, expected_value_minor: 2124915, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 29 < 70' },
-        { action: 'Retry payment', recovery_probability: 78, risk_score: 37, expected_value_minor: 1949922, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 37 < 70' },
-        { action: 'Escalate', recovery_probability: 40, risk_score: 37, expected_value_minor: 999960, policy_decision: 'Escalated', execution_allowed: false, policy_reason: 'Requires operator action' },
-      ],
-      created_at: new Date().toISOString(),
-    },
-    {
-      id: 'opp-TXN-1051',
-      opportunity_id: 'opp-TXN-1051',
-      transaction_id: 'TXN-1051',
-      amount_minor: 1299900,
-      currency: 'INR',
-      failure_signature: 'Mandate debit failed',
-      recovery_probability: 74,
-      expected_value_minor: 961926,
-      expected_recovery_value_minor: 961926,
-      priority_score: 58,
-      priority_level: 'MEDIUM',
-      priority: 'MEDIUM',
-      recommended_action: 'Retry mandate',
-      best_safe_action: 'Retry payment',
-      policy_status: 'Approved',
-      reason: 'Mandate debit failed',
-      risk_score: 38,
-      status: 'ELIGIBLE',
-      explainability: {
-        why_priority: 'Medium priority recurring mandate debit with ₹9,619 expected yield.',
-        why_action: 'Automated mandate retry within the bank settlement processing window.',
-        why_policy_status: 'Authorized by deterministic policy gate (Risk 38 < 70 ceiling).',
-      },
-      candidate_actions: [
-        { action: 'Retry payment', recovery_probability: 79, risk_score: 38, expected_value_minor: 1026921, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 38 < 70' },
-        { action: 'Payment link', recovery_probability: 86, risk_score: 30, expected_value_minor: 1117914, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 30 < 70' },
-        { action: 'Customer prompt', recovery_probability: 76, risk_score: 33, expected_value_minor: 987924, policy_decision: 'Approved', execution_allowed: true, policy_reason: 'Authorized: Risk 33 < 70' },
-        { action: 'Escalate', recovery_probability: 40, risk_score: 38, expected_value_minor: 519960, policy_decision: 'Escalated', execution_allowed: false, policy_reason: 'Requires operator action' },
-      ],
-      created_at: new Date().toISOString(),
-    },
-    {
-      id: 'opp-TXN-1042',
-      opportunity_id: 'opp-TXN-1042',
-      transaction_id: 'TXN-1042',
-      amount_minor: 7200000,
-      currency: 'INR',
-      failure_signature: 'High-risk velocity detected',
-      recovery_probability: 79,
-      expected_value_minor: 5688000,
-      expected_recovery_value_minor: 5688000,
-      priority_score: 25,
-      priority_level: 'LOW',
-      priority: 'LOW',
-      recommended_action: 'Escalate',
-      best_safe_action: 'Escalate',
-      policy_status: 'Blocked',
-      reason: 'High-risk velocity detected',
-      risk_score: 84,
-      status: 'POLICY_BLOCKED',
-      explainability: {
-        why_priority: 'Low priority because transaction carries high risk (84/100) and is blocked by deterministic safety gates.',
-        why_action: 'Manual escalation is recommended because automated retries exceed safe risk boundaries.',
-        why_policy_status: 'Blocked by Safety Gate: Risk score (84/100) exceeded maximum risk ceiling (70/100).',
-      },
-      candidate_actions: [
-        { action: 'Retry payment', recovery_probability: 84, risk_score: 84, expected_value_minor: 6048000, policy_decision: 'Blocked', execution_allowed: false, policy_reason: 'Blocked: Risk 84 >= 70 ceiling' },
-        { action: 'Payment link', recovery_probability: 91, risk_score: 76, expected_value_minor: 6552000, policy_decision: 'Blocked', execution_allowed: false, policy_reason: 'Blocked: Risk 76 >= 70 ceiling' },
-        { action: 'Escalate', recovery_probability: 40, risk_score: 84, expected_value_minor: 2880000, policy_decision: 'Escalated', execution_allowed: false, policy_reason: 'Escalated to human operator' },
-      ],
-      created_at: new Date().toISOString(),
-    },
-  ]
-
-  return fallback
+  // Canonical Single Source of Truth
+  const allOpps = useTransactionStore.getState().getOpportunities()
+  return allOpps.filter((opp) => {
+    if (filter?.priority && filter.priority !== 'ALL' && opp.priority !== filter.priority) return false
+    if (filter?.policy_status && filter.policy_status !== 'ALL' && opp.policy_status !== filter.policy_status) return false
+    return true
+  })
 }
 
 export async function fetchOpportunitySummary(): Promise<OpportunitySummary> {
@@ -397,18 +215,26 @@ export async function fetchOpportunitySummary(): Promise<OpportunitySummary> {
     const res = await fetch(`${API_BASE}/opportunities/summary`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback
+    // Fallback to canonical store metrics
   }
 
+  const opps = useTransactionStore.getState().getOpportunities()
+  const totalRisk = opps.reduce((sum, o) => sum + o.amount_minor, 0)
+  const expectedRecovery = opps.reduce((sum, o) => sum + o.expected_value_minor, 0)
+  const eligible = opps.filter((o) => o.policy_status === 'Approved').length
+  const blocked = opps.filter((o) => o.policy_status === 'Blocked').length
+  const highPriority = opps.filter((o) => o.priority === 'CRITICAL' || o.priority === 'HIGH').length
+  const avgProb = opps.length > 0 ? Math.round((opps.reduce((sum, o) => sum + o.recovery_probability, 0) / opps.length) * 10) / 10 : 75
+
   return {
-    total_opportunities: 6,
-    total_revenue_at_risk_minor: 20999600,
-    expected_recovery_value_minor: 16463698,
-    policy_eligible_count: 5,
-    policy_blocked_count: 1,
-    high_priority_count: 4,
-    average_recovery_probability: 77.8,
-    mode: 'synthetic-preview',
+    total_opportunities: opps.length,
+    total_revenue_at_risk_minor: totalRisk,
+    expected_recovery_value_minor: expectedRecovery,
+    policy_eligible_count: eligible,
+    policy_blocked_count: blocked,
+    high_priority_count: highPriority,
+    average_recovery_probability: avgProb,
+    mode: 'canonical-store',
   }
 }
 
@@ -419,8 +245,9 @@ export async function fetchOpportunityById(id: string): Promise<OpportunityItem 
   } catch (e) {
     // Fallback
   }
-  const opps = await fetchOpportunities()
-  return opps.find((o) => o.id === id || o.transaction_id === id) || null
+  const opps = useTransactionStore.getState().getOpportunities()
+  const cleanId = id.toUpperCase().replace('OPP-', '')
+  return opps.find((o) => o.id.toUpperCase() === id.toUpperCase() || o.transaction_id.toUpperCase() === cleanId || o.transaction_id.toUpperCase() === id.toUpperCase()) || null
 }
 
 export async function executeRecoveryAction(payload: {
@@ -505,27 +332,60 @@ export async function fetchAnalytics(): Promise<AnalyticsData> {
     const res = await fetch(`${API_BASE}/analytics/recovery`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback
+    // Fallback to canonical store
   }
 
+  const txns = useTransactionStore.getState().transactions
+  const metrics = useTransactionStore.getState().getMetrics()
+
+  // Compute action performance dynamically from canonical transactions
+  const actionMap = new Map<string, { total: number; recovered: number; recoveredMinor: number }>()
+  for (const t of txns) {
+    const act = t.action || 'Retry payment'
+    const cur = actionMap.get(act) || { total: 0, recovered: 0, recoveredMinor: 0 }
+    cur.total++
+    if (t.status === 'RECOVERED') {
+      cur.recovered++
+      cur.recoveredMinor += t.verified_amount_minor || t.amount_minor
+    }
+    actionMap.set(act, cur)
+  }
+
+  const action_performance: ActionPerformance[] = Array.from(actionMap.entries()).map(([action, data]) => ({
+    action,
+    total_attempts: data.total,
+    verified_recoveries: data.recovered,
+    success_rate: data.total > 0 ? Math.round((data.recovered / data.total) * 1000) / 10 : 0,
+    total_recovered_minor: data.recoveredMinor,
+  }))
+
+  // Compute failure distribution dynamically from canonical transactions
+  const failureMap = new Map<string, { count: number; atRiskMinor: number; recoveredMinor: number }>()
+  for (const t of txns) {
+    const sig = t.reason || 'Payment degradation'
+    const cur = failureMap.get(sig) || { count: 0, atRiskMinor: 0, recoveredMinor: 0 }
+    cur.count++
+    cur.atRiskMinor += t.amount_minor
+    if (t.status === 'RECOVERED') {
+      cur.recoveredMinor += t.verified_amount_minor || t.amount_minor
+    }
+    failureMap.set(sig, cur)
+  }
+
+  const failure_distributions: FailureDistribution[] = Array.from(failureMap.entries()).map(([sig, data]) => ({
+    failure_signature: sig,
+    count: data.count,
+    total_at_risk_minor: data.atRiskMinor,
+    recovered_minor: data.recoveredMinor,
+    recovery_rate: data.atRiskMinor > 0 ? Math.round((data.recoveredMinor / data.atRiskMinor) * 1000) / 10 : 0,
+  }))
+
   return {
-    overall_recovery_rate: 72.0,
-    total_revenue_at_risk_minor: 18450000,
-    total_revenue_recovered_minor: 13284000,
-    action_performance: [
-      { action: 'Retry payment', total_attempts: 42, verified_recoveries: 36, success_rate: 85.7, total_recovered_minor: 5840000 },
-      { action: 'Payment link', total_attempts: 28, verified_recoveries: 21, success_rate: 75.0, total_recovered_minor: 4120000 },
-      { action: 'Retry subscription', total_attempts: 16, verified_recoveries: 12, success_rate: 75.0, total_recovered_minor: 1890000 },
-      { action: 'Call + payment link', total_attempts: 10, verified_recoveries: 7, success_rate: 70.0, total_recovered_minor: 940000 },
-      { action: 'Customer prompt', total_attempts: 8, verified_recoveries: 5, success_rate: 62.5, total_recovered_minor: 494000 },
-    ],
-    failure_distributions: [
-      { failure_signature: 'Bank timeout', count: 35, total_at_risk_minor: 6200000, recovered_minor: 5332000, recovery_rate: 86.0 },
-      { failure_signature: 'Checkout abandoned', count: 24, total_at_risk_minor: 4800000, recovered_minor: 3456000, recovery_rate: 72.0 },
-      { failure_signature: 'Subscription charge failed', count: 18, total_at_risk_minor: 3100000, recovered_minor: 2356000, recovery_rate: 76.0 },
-      { failure_signature: 'Mandate debit failed', count: 14, total_at_risk_minor: 2450000, recovered_minor: 1813000, recovery_rate: 74.0 },
-      { failure_signature: '3DS challenge expired', count: 9, total_at_risk_minor: 1900000, recovered_minor: 1254000, recovery_rate: 66.0 },
-    ],
+    overall_recovery_rate: metrics.recoveryRate,
+    total_revenue_at_risk_minor: metrics.revenueAtRiskMinor,
+    total_revenue_recovered_minor: metrics.verifiedRecoveredMinor,
+    action_performance,
+    failure_distributions,
   }
 }
 
