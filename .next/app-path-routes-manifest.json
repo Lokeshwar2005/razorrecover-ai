@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/_global-error/page": "/_global-error",
+  "/agent-trace/page": "/agent-trace",
+  "/audit-trail/page": "/audit-trail",
+  "/judge-demo/page": "/judge-demo",
+  "/overview/page": "/overview",
+  "/page": "/",
+  "/simulation/page": "/simulation"
+}

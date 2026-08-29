@@ -1,6 +1,9 @@
 import type { AIRecoveryRecommendation, AIRecoveryRequest } from '../types/ai'
 
-const AI_API_URL = import.meta.env.VITE_AI_API_URL || '/api/ai/recovery'
+const AI_API_URL =
+  (typeof process !== 'undefined' && (process.env?.NEXT_PUBLIC_AI_API_URL || process.env?.VITE_AI_API_URL)) ||
+  (typeof import.meta !== 'undefined' && (import.meta as any)?.env?.VITE_AI_API_URL) ||
+  '/api/ai/recovery'
 
 export async function analyzeRecoveryWithAI(
   request: AIRecoveryRequest,

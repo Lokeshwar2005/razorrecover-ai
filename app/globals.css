@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* RazorRecover AI 2.0 Fintech Theme */
+:root {
+  --fintech-bg: #080705;
+  --fintech-card: #0f0c08;
+  --fintech-card-subtle: #15120c;
+  --fintech-card-hover: #1c1710;
+  --fintech-border: #2e271c;
+  --fintech-border-light: #453d32;
+  --fintech-gold: #e5a944;
+  --fintech-gold-light: #fcd34d;
+  --fintech-gold-muted: #926a27;
+  --fintech-verified: #10b981;
+  --fintech-stopped: #ef4444;
+  --fintech-text-primary: #f4ede2;
+  --fintech-text-secondary: #a89f91;
+  --fintech-text-muted: #7a7164;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--fintech-bg);
+  color: var(--fintech-text-primary);
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,16 +1,23 @@
 {
   "name": "razorrecover-ai",
   "private": true,
-  "version": "0.1.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:next": "next dev",
     "build": "tsc --noEmit && vite build",
+    "build:next": "next build --webpack",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "autoprefixer": "^10.5.4",
+    "next": "^16.3.3",
+    "postcss": "^8.5.26",
     "react": "latest",
     "react-dom": "latest",
+    "tailwindcss": "^4.3.3",
     "three": "latest",
     "zustand": "latest"
   },
