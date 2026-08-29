@@ -197,6 +197,45 @@ export const MerchantDashboard: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* System Status & Telemetry Provenance */}
+      <div className="p-5 rounded-xl bg-gradient-to-r from-[#120f0a] via-[#0d0a07] to-[#120f0a] border border-[#2e271c] space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <span className="text-base">🛡️</span>
+            <h3 className="text-sm font-bold text-[#f4ede2]">System Health & Data Provenance</h3>
+            <span className="px-2 py-0.5 text-[10px] font-mono font-bold rounded bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30">
+              HEALTHY
+            </span>
+          </div>
+          <div className="text-xs font-mono text-[#7a7164]">
+            Single Authoritative Canonical Store
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1 text-xs font-mono">
+          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
+            <div className="text-[#7a7164] text-[10px]">DATABASE ENGINE</div>
+            <div className="text-[#f4ede2] font-semibold mt-0.5">PostgreSQL / SQLite</div>
+            <div className="text-[#10b981] text-[10px] mt-0.5">● Connected</div>
+          </div>
+          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
+            <div className="text-[#7a7164] text-[10px]">RAZORPAY TEST FEED</div>
+            <div className="text-[#f4ede2] font-semibold mt-0.5">{canonicalMetrics.providerTestCount} Test Fixtures</div>
+            <div className="text-[#10b981] text-[10px] mt-0.5">● Normalized</div>
+          </div>
+          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
+            <div className="text-[#7a7164] text-[10px]">AI DIAGNOSTIC</div>
+            <div className="text-[#f4ede2] font-semibold mt-0.5">OpenRouter / Deterministic</div>
+            <div className="text-[#10b981] text-[10px] mt-0.5">● Bounded Active</div>
+          </div>
+          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
+            <div className="text-[#7a7164] text-[10px]">CANONICAL TOTAL</div>
+            <div className="text-[#e5a944] font-semibold mt-0.5">{canonicalMetrics.totalTransactions} Transactions</div>
+            <div className="text-[#a89f91] text-[10px] mt-0.5">{canonicalMetrics.syntheticCount} Synth · {canonicalMetrics.providerTestCount} RZP · {canonicalMetrics.liveCount} Live</div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

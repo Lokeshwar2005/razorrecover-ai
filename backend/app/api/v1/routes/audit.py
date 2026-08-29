@@ -13,6 +13,7 @@ from backend.app.services.audit.ledger import AuditLedgerService
 router = APIRouter(tags=["Audit & Agent Trace"])
 
 
+@router.get("/audit/trail", response_model=List[AuditEventResponse])
 @router.get("/audit/events", response_model=List[AuditEventResponse])
 def list_all_audit_events(
     limit: int = Query(100, ge=1, le=500),

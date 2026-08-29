@@ -10,27 +10,10 @@ client = TestClient(app)
 @pytest.fixture(autouse=True)
 def ensure_clean_canonical_db():
     db = SessionLocal()
-    from backend.app.services.recovery.engine import create_synthetic_transaction
     db.query(TransactionModel).delete()
-    for i in range(100):
-        txn_dict = create_synthetic_transaction(i, "balanced")
-        txn = TransactionModel(
-            id=txn_dict["id"],
-            amount_minor=txn_dict["amount_minor"],
-            currency=txn_dict["currency"],
-            source=txn_dict["source"],
-            status=txn_dict["status"],
-            direction=txn_dict["direction"],
-            reason=txn_dict["reason"],
-            action=txn_dict["action"],
-            confidence=txn_dict["confidence"],
-            recovery_probability=txn_dict["recovery_probability"],
-            risk_score=txn_dict["risk_score"],
-            policy=txn_dict["policy"],
-            explanation=txn_dict["explanation"],
-        )
-        db.add(txn)
     db.commit()
+    from backend.app.db.seed import seed_canonical_database
+    seed_canonical_database(db, force=True)
     db.close()
 
 
@@ -166,5 +149,21 @@ def test_transactions_sync_endpoint():
     assert data["synced_count"] >= 3
     assert data["total_canonical_transactions"] >= 103
     assert "last_synced_at" in data
+
+
+def test_health_data_diagnostic_endpoint():
+    """Verify GET /api/v1/health/data returns authoritative telemetry."""
+    resp = client.get("/api/v1/health/data")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["status"] == "healthy"
+    assert data["database"] in ("sqlite", "postgresql")
+    assert data["database_connected"] is True
+    assert data["transactions"] >= 103
+    assert data["synthetic_transactions"] == 100
+    assert data["razorpay_test_transactions"] >= 3
+    assert "password" not in str(data).lower()
+    assert "secret" not in str(data).lower()
+
 
 

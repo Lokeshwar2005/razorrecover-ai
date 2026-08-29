@@ -611,3 +611,26 @@ export async function fetchCanonicalTransactions(params?: {
   } catch (e) {}
   return null
 }
+
+export interface DatabaseHealthData {
+  status: string
+  database: string
+  database_connected: boolean
+  transactions: number
+  synthetic_transactions: number
+  razorpay_test_transactions: number
+  live_transactions: number
+  recovery_operations: number
+  verified_recoveries: number
+  latest_transaction_at: string | null
+  latest_sync_at: string | null
+  timestamp: string
+}
+
+export async function fetchDatabaseHealth(): Promise<DatabaseHealthData | null> {
+  try {
+    const res = await fetch(`${API_BASE}/health/data`, { signal: AbortSignal.timeout(3000) })
+    if (res.ok) return await res.json()
+  } catch (e) {}
+  return null
+}
