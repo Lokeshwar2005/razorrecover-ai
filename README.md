@@ -156,8 +156,8 @@ flowchart TD
 
 ---
 
-### 8. Decision Replay Theater & Agent Trace 2.0 (`/agent-trace`)
-![Agent Trace 2.0](docs/screenshots/agent_trace.png)
+### 8. Decision Replay Theater & Agent Trace (`/agent-trace`)
+![Agent Trace](docs/screenshots/agent_trace.png)
 > **Summary**: Step-by-step playback system allowing judges and compliance officers to step through the 8 stages of AI decision making (`DETECT ➔ DIAGNOSE ➔ SCORE ➔ PRIORITIZE ➔ POLICY ➔ ACTION ➔ VERIFY ➔ LEARN`) with real-time camera tracking on the 3D topology.
 
 ---

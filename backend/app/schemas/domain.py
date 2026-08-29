@@ -198,9 +198,7 @@ class PolicyConfigurationResponse(PolicyConfigurationUpdate):
     model_config = ConfigDict(from_attributes=True)
 
 
-# ---------------------------------------------------------------------------
-# Agent Trace 2.0 (Phase 32)
-# ---------------------------------------------------------------------------
+# Agent Trace Schema
 
 class AgentTraceStep(BaseModel):
     stage_index: int  # 0 to 7

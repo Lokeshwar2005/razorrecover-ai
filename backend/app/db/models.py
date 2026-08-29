@@ -246,7 +246,7 @@ class AgentTraceModel(Base):
 
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     transaction_id = Column(String(64), ForeignKey("transactions.id", ondelete="CASCADE"), nullable=False, index=True)
-    stage_index = Column(Integer, nullable=False)  # 0 to 7 (8 stages in Trace 2.0)
+    stage_index = Column(Integer, nullable=False)  # 0 to 7 (8 stages in Agent Trace)
     stage_name = Column(String(64), nullable=False)
     status = Column(String(16), nullable=False)  # "WAIT" | "DONE" | "STOP"
     input_summary = Column(Text, nullable=True)

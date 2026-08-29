@@ -105,7 +105,7 @@ export const AgentTrace2: React.FC = () => {
         <div>
           <div className="flex items-center gap-2">
             <span className="text-lg">🎬</span>
-            <h2 className="text-base font-bold text-[#f4ede2]">Agent Trace 2.0 & Decision Replay Theater</h2>
+            <h2 className="text-base font-bold text-[#f4ede2]">Agent Trace & Decision Replay Theater</h2>
             <span className="px-2 py-0.5 text-xs font-mono rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
               8-Stage Deterministic Timeline
             </span>
