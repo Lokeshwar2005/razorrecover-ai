@@ -586,6 +586,12 @@ export const TransactionExplorer: React.FC = () => {
                     {selectedTxn.policy}
                   </span>
                 </div>
+                {selectedTxn.recovery_operation_id && (
+                  <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                    <span className="text-[#7a7164]">Recovery Operation ID:</span>
+                    <span className="text-[#e5a944] font-bold">{selectedTxn.recovery_operation_id}</span>
+                  </div>
+                )}
                 <div className="flex justify-between py-1">
                   <span className="text-[#7a7164]">Timestamp:</span>
                   <span className="text-[#a89f91]">{new Date(selectedTxn.created_at).toLocaleString('en-IN')}</span>
@@ -598,40 +604,97 @@ export const TransactionExplorer: React.FC = () => {
                 <p className="text-xs text-[#a89f91] leading-relaxed">{selectedTxn.explanation}</p>
               </div>
 
-              {/* Action Buttons */}
+              {/* State-Aware Lifecycle Controls (Governed by Canonical Store) */}
               <div className="space-y-2 pt-2">
                 {selectedTxn.status === 'RECOVERED' ? (
-                  <button
-                    disabled
-                    className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
-                  >
-                    ✓ Payment Captured & Verified
-                  </button>
+                  <div className="space-y-2">
+                    <button
+                      disabled
+                      className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
+                    >
+                      ✓ Recovery Verified & Captured in Razorpay Test Mode
+                    </button>
+                    <button
+                      onClick={() => {
+                        window.dispatchEvent(
+                          new CustomEvent('razorrecover:navigate-tab', {
+                            detail: { tab: 'Audit', txnId: selectedTxn.id },
+                          })
+                        )
+                      }}
+                      className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-mono transition cursor-pointer text-center"
+                    >
+                      View Audit Trail ➔
+                    </button>
+                  </div>
                 ) : selectedTxn.policy === 'Blocked' ? (
                   <button
                     disabled
                     className="w-full py-2.5 rounded-lg bg-[#ef4444]/20 border border-[#ef4444]/50 text-[#ef4444] font-bold text-xs font-mono cursor-not-allowed"
                   >
-                    ⛔ Blocked by Deterministic Policy Ceiling
+                    ⛔ Blocked by Deterministic Policy Ceiling (Risk {selectedTxn.risk_score}/100)
                   </button>
-                ) : (
-                  <button
-                    onClick={handleExecuteRecovery}
-                    disabled={executing}
-                    className="w-full py-2.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs font-mono hover:bg-[#fcd34d] transition disabled:opacity-50 cursor-pointer"
-                  >
-                    {executing ? '⚡ Executing via Razorpay...' : `Execute Recovery (${selectedTxn.action}) ▶`}
-                  </button>
-                )}
+                ) : selectedTxn.status === 'IN_PROGRESS' ? (
+                  <div className="space-y-2">
+                    <div className="p-3 rounded-lg bg-[#e5a944]/15 border border-[#e5a944]/50 text-[#f4ede2] text-xs font-mono space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-[#e5a944]">⚡ RECOVERY IN PROGRESS</span>
+                        <span className="px-1.5 py-0.5 text-[9px] rounded bg-[#e5a944]/20 text-[#e5a944] font-mono border border-[#e5a944]/40">
+                          {selectedTxn.recovery_operation_id || 'ACTIVE'}
+                        </span>
+                      </div>
+                      <div className="text-[#a89f91] text-[11px]">
+                        {selectedTxn.workflow_message || 'Recovery workflow initiated. Awaiting checkout capture.'}
+                      </div>
+                      {selectedTxn.provider_payment_link_id && (
+                        <a
+                          href={selectedTxn.provider_payment_link_id}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[#e5a944] underline block pt-1"
+                        >
+                          Open Payment Link ↗
+                        </a>
+                      )}
+                      {selectedTxn.provider_order_id && (
+                        <button
+                          onClick={handleLaunchCheckout}
+                          className="w-full py-2 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs font-mono hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer mt-1 shadow-md"
+                        >
+                          <span>💳 Open Razorpay Test Checkout Modal</span>
+                        </button>
+                      )}
+                    </div>
 
-                {selectedTxn.status !== 'RECOVERED' && (
-                  <button
-                    onClick={handleVerifyPayment}
-                    disabled={verifying}
-                    className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
-                  >
-                    {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
-                  </button>
+                    {selectedTxn.provider_payment_id && (
+                      <button
+                        onClick={handleVerifyPayment}
+                        disabled={verifying}
+                        className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
+                      >
+                        {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
+                      </button>
+                    )}
+                  </div>
+                ) : (
+                  <div className="space-y-1.5">
+                    <button
+                      onClick={() => {
+                        window.dispatchEvent(
+                          new CustomEvent('razorrecover:navigate-tab', {
+                            detail: { tab: 'Opportunities', txnId: selectedTxn.id },
+                          })
+                        )
+                      }}
+                      className="w-full py-2.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs font-mono hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] cursor-pointer flex items-center justify-center gap-2"
+                    >
+                      <span>Open Recovery Opportunity</span>
+                      <span>➔</span>
+                    </button>
+                    <p className="text-[10px] text-[#7a7164] text-center font-mono">
+                      Recovery execution decisions are governed via the Recovery Opportunities workspace.
+                    </p>
+                  </div>
                 )}
               </div>
             </div>

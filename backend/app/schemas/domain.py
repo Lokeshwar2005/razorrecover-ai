@@ -244,6 +244,7 @@ class RecoveryExecutionRequest(BaseModel):
     action_type: str
     amount_minor: int = Field(..., gt=0)
     currency: str = "INR"
+    recovery_operation_id: Optional[str] = None
 
 
 class RecoveryExecutionResponse(BaseModel):
@@ -251,6 +252,7 @@ class RecoveryExecutionResponse(BaseModel):
     action_type: str
     workflow_status: WorkflowStatusType
     workflow_message: str
+    recovery_operation_id: Optional[str] = None
     provider_id: Optional[str] = None
     payment_link: Optional[str] = None
     order_id: Optional[str] = None

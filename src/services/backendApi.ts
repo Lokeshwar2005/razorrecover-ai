@@ -65,6 +65,7 @@ export interface OpportunityItem {
   reason: string
   risk_score: number
   status?: string
+  recovery_operation_id?: string
   explainability?: OpportunityExplainability
   candidate_actions?: CandidateAction[]
   created_at: string
@@ -133,6 +134,7 @@ export interface RecoveryExecutionResult {
   action_type: string
   workflow_status: 'COMPLETE' | 'BLOCKED' | 'ESCALATED' | 'FAILED' | 'READY' | 'RUNNING'
   workflow_message: string
+  recovery_operation_id?: string
   provider_id?: string
   order_id?: string
   payment_link?: string
@@ -208,7 +210,12 @@ export async function executeRecoveryAction(payload: {
   action_type: string
   amount_minor: number
   currency?: string
+  recovery_operation_id?: string
 }): Promise<RecoveryExecutionResult> {
+  const recoveryOpId =
+    payload.recovery_operation_id ||
+    `REC-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${payload.transaction_id.replace(/[^a-zA-Z0-9]/g, '')}`
+
   // 1. Try FastAPI backend route
   try {
     const res = await fetch(`${API_BASE}/recovery/execute`, {
@@ -219,6 +226,7 @@ export async function executeRecoveryAction(payload: {
         action_type: payload.action_type,
         amount_minor: payload.amount_minor,
         currency: payload.currency || 'INR',
+        recovery_operation_id: recoveryOpId,
       }),
     })
     if (res.ok) {
@@ -237,6 +245,7 @@ export async function executeRecoveryAction(payload: {
         transactionId: payload.transaction_id,
         amount: Math.round(payload.amount_minor / 100),
         currency: payload.currency || 'INR',
+        recoveryOperationId: recoveryOpId,
       }),
     })
     if (res.ok) {
@@ -246,8 +255,9 @@ export async function executeRecoveryAction(payload: {
         action_type: payload.action_type,
         workflow_status: 'COMPLETE',
         workflow_message: data.paymentLink
-          ? `Razorpay Test Mode Payment Link generated: ${data.paymentLink}. Awaiting checkout capture.`
-          : `Razorpay Test Mode Order ${data.orderId} created. Awaiting captured checkout payment.`,
+          ? `Razorpay Test Mode Payment Link generated: ${data.paymentLink}. Awaiting checkout capture [${recoveryOpId}].`
+          : `Razorpay Test Mode Order ${data.orderId} created [${recoveryOpId}]. Awaiting captured checkout payment.`,
+        recovery_operation_id: recoveryOpId,
         order_id: data.orderId,
         payment_link: data.paymentLink,
         key_id: data.keyId,
@@ -262,7 +272,8 @@ export async function executeRecoveryAction(payload: {
     transaction_id: payload.transaction_id,
     action_type: payload.action_type,
     workflow_status: 'READY',
-    workflow_message: `Recovery order created for ${payload.transaction_id} — awaiting Test Mode payment.`,
+    workflow_message: `Recovery order created for ${payload.transaction_id} [${recoveryOpId}] — awaiting Test Mode payment.`,
+    recovery_operation_id: recoveryOpId,
     executed_at: new Date().toISOString(),
   }
 }

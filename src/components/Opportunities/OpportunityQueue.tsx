@@ -646,14 +646,42 @@ export const OpportunityQueue: React.FC = () => {
               </div>
             )}
 
-            {/* Action Execution Button */}
+            {/* Action Execution Section */}
             {selectedOpp.status === 'RECOVERED' ? (
-              <button
-                disabled
-                className="w-full py-3 px-4 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
-              >
-                ✓ Recovery Verified & Captured in Razorpay Test Mode
-              </button>
+              <div className="space-y-2">
+                <button
+                  disabled
+                  className="w-full py-3 px-4 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
+                >
+                  ✓ Recovery Verified & Captured in Razorpay Test Mode
+                </button>
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    onClick={() => {
+                      window.dispatchEvent(
+                        new CustomEvent('razorrecover:navigate-tab', {
+                          detail: { tab: 'Transactions', txnId: selectedOpp.transaction_id },
+                        })
+                      )
+                    }}
+                    className="py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-mono transition cursor-pointer text-center"
+                  >
+                    Transactions ➔
+                  </button>
+                  <button
+                    onClick={() => {
+                      window.dispatchEvent(
+                        new CustomEvent('razorrecover:navigate-tab', {
+                          detail: { tab: 'Audit', txnId: selectedOpp.transaction_id },
+                        })
+                      )
+                    }}
+                    className="py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-mono transition cursor-pointer text-center"
+                  >
+                    Audit Trail ➔
+                  </button>
+                </div>
+              </div>
             ) : selectedOpp.policy_status === 'Blocked' ? (
               <button
                 disabled
@@ -663,13 +691,22 @@ export const OpportunityQueue: React.FC = () => {
               </button>
             ) : (
               <div className="space-y-2">
+                {selectedOpp.recovery_operation_id && (
+                  <div className="flex items-center justify-between px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[11px] font-mono text-[#7a7164]">
+                    <span>RECOVERY OPERATION:</span>
+                    <span className="text-[#e5a944] font-bold">{selectedOpp.recovery_operation_id}</span>
+                  </div>
+                )}
+
                 <button
                   onClick={() => handleExecute(selectedOpp)}
-                  disabled={executing}
+                  disabled={executing || selectedOpp.status === 'IN_PROGRESS'}
                   className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer font-mono"
                 >
                   {executing
                     ? '⚡ Contacting Razorpay Orchestrator...'
+                    : selectedOpp.status === 'IN_PROGRESS'
+                    ? `⚡ Recovery In Progress (${selectedOpp.recovery_operation_id || 'ACTIVE'})`
                     : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
                 </button>
 

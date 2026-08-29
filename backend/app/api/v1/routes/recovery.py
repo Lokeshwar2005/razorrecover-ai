@@ -135,12 +135,26 @@ async def execute_recovery_action(
     order_id = None
     payment_link = None
     key_id = None
+    clean_id = request.transaction_id.replace('-', '').replace('_', '')
+    recovery_operation_id = request.recovery_operation_id or f"REC-{now.strftime('%Y%m%d')}-{clean_id}"
 
     # 1. Lookup Transaction
     txn = db.query(TransactionModel).filter(TransactionModel.id == request.transaction_id).first()
     risk_score = txn.risk_score if txn else 30
     recovery_probability = txn.recovery_probability if txn else 75
     retry_count = 1
+
+    # Idempotency check: if transaction is already recovered
+    if txn and txn.status == "RECOVERED":
+        return RecoveryExecutionResponse(
+            transaction_id=request.transaction_id,
+            action_type=request.action_type,
+            workflow_status="COMPLETE",
+            workflow_message=f"Transaction {request.transaction_id} is already verified and recovered.",
+            recovery_operation_id=recovery_operation_id,
+            provider_id=txn.provider_id,
+            executed_at=now,
+        )
 
     # 2. Evaluate Deterministic Policy Gate
     policy_eval = DeterministicPolicyEngine.evaluate(
@@ -163,6 +177,7 @@ async def execute_recovery_action(
             decision=block_decision,
             reason=block_reason,
             metadata={
+                "recovery_operation_id": recovery_operation_id,
                 "risk_score": risk_score,
                 "action_type": request.action_type,
                 "amount_minor": request.amount_minor,
@@ -179,6 +194,7 @@ async def execute_recovery_action(
             action_type=request.action_type,
             workflow_status="BLOCKED" if block_decision == "Blocked" else "ESCALATED",
             workflow_message=f"Recovery blocked by deterministic policy gate: {block_reason}",
+            recovery_operation_id=recovery_operation_id,
             executed_at=now,
         )
 
@@ -189,8 +205,9 @@ async def execute_recovery_action(
         event_type="RECOVERY_STARTED",
         actor="Razorpay Action Orchestrator",
         decision="Approved",
-        reason=f"Initiating {request.action_type} under policy authorization.",
+        reason=f"Initiating {request.action_type} under policy authorization [{recovery_operation_id}].",
         metadata={
+            "recovery_operation_id": recovery_operation_id,
             "amount_minor": request.amount_minor,
             "currency": request.currency,
             "risk_score": risk_score,
@@ -208,9 +225,9 @@ async def execute_recovery_action(
             payment_link = result.get("payment_link")
             payment_link_id = result.get("payment_link_id")
             if payment_link:
-                msg = f"Razorpay Payment Link generated: {payment_link}. Payment pending checkout capture."
+                msg = f"Razorpay Payment Link generated: {payment_link}. Payment pending checkout capture [{recovery_operation_id}]."
             else:
-                msg = f"Razorpay Test Mode Payment Link reference {payment_link_id} created for {request.transaction_id}. Payment pending checkout capture."
+                msg = f"Razorpay Test Mode Payment Link reference {payment_link_id} created for {request.transaction_id} [{recovery_operation_id}]. Payment pending checkout capture."
         else:
             result = await RazorpayService.create_order(
                 transaction_id=request.transaction_id,
@@ -219,7 +236,7 @@ async def execute_recovery_action(
             )
             order_id = result.get("order_id")
             key_id = result.get("key_id")
-            msg = f"Razorpay Test Mode Order {order_id} created for {request.transaction_id}. Awaiting captured checkout payment."
+            msg = f"Razorpay Test Mode Order {order_id} created for {request.transaction_id} [{recovery_operation_id}]. Awaiting captured checkout payment."
 
         workflow_status = "COMPLETE"
 
@@ -249,6 +266,7 @@ async def execute_recovery_action(
             decision=workflow_status,
             reason=request.action_type,
             metadata={
+                "recovery_operation_id": recovery_operation_id,
                 "order_id": order_id,
                 "payment_link": payment_link,
                 "payment_link_id": payment_link_id,
@@ -261,6 +279,7 @@ async def execute_recovery_action(
             action_type=request.action_type,
             workflow_status=workflow_status,
             workflow_message=msg,
+            recovery_operation_id=recovery_operation_id,
             provider_id=payment_link or payment_link_id or order_id,
             order_id=order_id,
             payment_link=payment_link,

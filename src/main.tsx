@@ -295,6 +295,20 @@ function App() {
     return () => window.removeEventListener('razorpay:payment-feed', onRazorpayFeed)
   }, [])
 
+  useEffect(() => {
+    const handleNavigateTab = (event: Event) => {
+      const detail = (event as CustomEvent<{ tab: string; txnId?: string }>).detail
+      if (detail?.tab) {
+        navigateToTab(detail.tab)
+        if (detail.txnId) {
+          useTransactionStore.getState().setSelectedTransactionId(detail.txnId)
+        }
+      }
+    }
+    window.addEventListener('razorrecover:navigate-tab', handleNavigateTab)
+    return () => window.removeEventListener('razorrecover:navigate-tab', handleNavigateTab)
+  }, [])
+
   const processed = Math.floor(progress)
   const riskEvents = running ? events.slice(0, processed) : events
   const risk = riskEvents.reduce((s, e) => s + e.amount, 0)

@@ -34,6 +34,7 @@ export interface CanonicalTransaction {
 
   // Optional Provider / Recovery fields
   provider?: 'razorpay'
+  recovery_operation_id?: string
   provider_id?: string
   provider_payment_id?: string
   provider_order_id?: string
@@ -273,6 +274,7 @@ export function computeOpportunitiesFromTransactions(
       reason: t.reason,
       risk_score: t.risk_score,
       status: t.status === 'RECOVERED' ? 'RECOVERED' : t.policy === 'Blocked' ? 'POLICY_BLOCKED' : 'ELIGIBLE',
+      recovery_operation_id: t.recovery_operation_id,
       explainability: {
         why_priority: `${priority} priority recovery candidate with ₹${yieldRupees} expected recovery yield.`,
         why_action: `Targeted automated intervention for ${t.reason} within policy boundaries.`,
@@ -431,7 +433,7 @@ export interface CanonicalStoreState {
   executeRecovery: (
     id: string,
     actionType?: string
-  ) => Promise<{ success: boolean; message: string; orderId?: string; paymentLink?: string }>
+  ) => Promise<{ success: boolean; message: string; orderId?: string; paymentLink?: string; recoveryOperationId?: string }>
   verifyPayment: (
     id: string,
     paymentId: string,
@@ -451,6 +453,7 @@ export interface CanonicalStoreState {
 let lastIngestedFingerprint = ''
 let isRefreshingProviderFeed = false
 let cachedSynthetic: { scenario: string; items: CanonicalTransaction[] } | null = null
+const activeRecoveryExecutionLocks = new Set<string>()
 
 function getCachedSyntheticTransactions(scenario: 'balanced' | 'checkout' | 'degradation'): CanonicalTransaction[] {
   if (cachedSynthetic && cachedSynthetic.scenario === scenario) {
@@ -490,9 +493,11 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
     ingestProviderPayments: (rawPayments, isLive = false) => {
       if (!rawPayments || rawPayments.length === 0) return
 
-      const fingerprint =
-        `${isLive ? 'live' : 'test'}_` +
-        rawPayments.map((p) => `${p.id}_${p.status || ''}_${p.amount || 0}`).join('|')
+      const fingerprint = rawPayments
+        .map((p) => `${p.id}:${p.status || ''}:${p.amount || 0}`)
+        .sort()
+        .join('|')
+
       if (fingerprint === lastIngestedFingerprint && get().transactions.length > 0) {
         return
       }
@@ -580,12 +585,49 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         return { success: false, message: `Transaction ${id} not found.` }
       }
 
+      // Idempotency: Already recovered
+      if (txn.status === 'RECOVERED') {
+        return {
+          success: true,
+          message: `Transaction ${id} is already verified and recovered [${txn.recovery_operation_id || 'REC-VERIFIED'}].`,
+          orderId: txn.provider_order_id,
+          paymentLink: txn.provider_payment_link_id,
+          recoveryOperationId: txn.recovery_operation_id,
+        }
+      }
+
+      // Idempotency: Already in progress
+      if (txn.status === 'IN_PROGRESS' && (txn.provider_order_id || txn.recovery_operation_id)) {
+        return {
+          success: true,
+          message: `Recovery operation [${txn.recovery_operation_id}] is already active for ${id}.`,
+          orderId: txn.provider_order_id,
+          paymentLink: txn.provider_payment_link_id,
+          recoveryOperationId: txn.recovery_operation_id,
+        }
+      }
+
+      if (activeRecoveryExecutionLocks.has(id)) {
+        return {
+          success: false,
+          message: `Recovery execution is already in flight for ${id}.`,
+          recoveryOperationId: txn.recovery_operation_id,
+        }
+      }
+
       if (txn.policy === 'Blocked') {
         return {
           success: false,
-          message: `Recovery blocked by policy gate: Risk score (${txn.risk_score}/100) exceeds threshold.`,
+          message: `Recovery blocked by deterministic policy gate: Risk score (${txn.risk_score}/100) exceeds threshold.`,
         }
       }
+
+      activeRecoveryExecutionLocks.add(id)
+
+      const cleanId = txn.id.replace(/[^a-zA-Z0-9]/g, '')
+      const recoveryOperationId =
+        txn.recovery_operation_id ||
+        `REC-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${cleanId}`
 
       const chosenAction = actionType || txn.action || 'Retry payment'
       try {
@@ -594,15 +636,26 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
           action_type: chosenAction,
           amount_minor: txn.amount_minor,
           currency: txn.currency,
+          recovery_operation_id: recoveryOperationId,
         })
 
         if (result.workflow_status === 'BLOCKED' || result.workflow_status === 'ESCALATED') {
           set((state) => ({
             transactions: state.transactions.map((t) =>
-              t.id === id ? { ...t, policy: 'Blocked', status: 'STOPPED' } : t
+              t.id === id
+                ? {
+                    ...t,
+                    policy: 'Blocked',
+                    status: 'STOPPED',
+                    recovery_operation_id: recoveryOperationId,
+                    workflow_status: result.workflow_status,
+                    workflow_message: result.workflow_message,
+                    updated_at: new Date().toISOString(),
+                  }
+                : t
             ),
           }))
-          return { success: false, message: result.workflow_message }
+          return { success: false, message: result.workflow_message, recoveryOperationId }
         }
 
         set((state) => ({
@@ -611,6 +664,7 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
               ? {
                   ...t,
                   status: 'IN_PROGRESS',
+                  recovery_operation_id: recoveryOperationId,
                   provider_id: result.provider_id || result.order_id || result.payment_link,
                   provider_order_id: result.order_id,
                   provider_payment_link_id: result.payment_link,
@@ -627,9 +681,12 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
           message: result.workflow_message,
           orderId: result.order_id,
           paymentLink: result.payment_link,
+          recoveryOperationId,
         }
       } catch (e: any) {
         return { success: false, message: e?.message || 'Failed to start recovery execution.' }
+      } finally {
+        activeRecoveryExecutionLocks.delete(id)
       }
     },
 
