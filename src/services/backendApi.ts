@@ -449,17 +449,16 @@ export async function executeRecoveryAction(payload: {
 
   const isLink = payload.action_type.toLowerCase().includes('link') || payload.action_type.toLowerCase().includes('voice')
   const orderId = `order_test_${payload.transaction_id.replace('-', '_').toLowerCase()}`
-  const paymentLink = `https://rzp.io/i/test-${payload.transaction_id.toLowerCase()}`
 
   return {
     transaction_id: payload.transaction_id,
     action_type: payload.action_type,
     workflow_status: 'COMPLETE',
     workflow_message: isLink
-      ? `Razorpay Payment Link generated: ${paymentLink}. Payment pending checkout capture.`
+      ? `Razorpay Test Mode Payment Link reference created for ${payload.transaction_id}. Payment pending checkout capture.`
       : `Razorpay Test Mode Order ${orderId} created. Awaiting captured checkout payment.`,
     order_id: isLink ? undefined : orderId,
-    payment_link: isLink ? paymentLink : undefined,
+    payment_link: undefined,
     key_id: 'rzp_test_placeholder',
     executed_at: new Date().toISOString(),
   }

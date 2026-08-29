@@ -198,6 +198,7 @@ async def execute_recovery_action(
     )
 
     try:
+        payment_link_id = None
         if request.action_type in ("Payment link", "Recovery link", "Hinglish voice recovery", "Call + payment link"):
             result = await RazorpayService.create_payment_link(
                 transaction_id=request.transaction_id,
@@ -205,7 +206,11 @@ async def execute_recovery_action(
                 currency=request.currency,
             )
             payment_link = result.get("payment_link")
-            msg = f"Razorpay Payment Link generated: {payment_link}. Payment pending checkout capture."
+            payment_link_id = result.get("payment_link_id")
+            if payment_link:
+                msg = f"Razorpay Payment Link generated: {payment_link}. Payment pending checkout capture."
+            else:
+                msg = f"Razorpay Test Mode Payment Link reference {payment_link_id} created for {request.transaction_id}. Payment pending checkout capture."
         else:
             result = await RazorpayService.create_order(
                 transaction_id=request.transaction_id,
@@ -214,7 +219,7 @@ async def execute_recovery_action(
             )
             order_id = result.get("order_id")
             key_id = result.get("key_id")
-            msg = f"Razorpay Test Mode Order {order_id} created. Awaiting captured checkout payment."
+            msg = f"Razorpay Test Mode Order {order_id} created for {request.transaction_id}. Awaiting captured checkout payment."
 
         workflow_status = "COMPLETE"
 
@@ -230,7 +235,7 @@ async def execute_recovery_action(
 
         if txn:
             txn.status = "PENDING"
-            txn.provider_id = order_id or payment_link
+            txn.provider_id = payment_link or payment_link_id or order_id
             txn.action = request.action_type
 
         db.commit()
@@ -246,6 +251,7 @@ async def execute_recovery_action(
             metadata={
                 "order_id": order_id,
                 "payment_link": payment_link,
+                "payment_link_id": payment_link_id,
                 "amount_minor": request.amount_minor,
             },
         )
@@ -255,7 +261,7 @@ async def execute_recovery_action(
             action_type=request.action_type,
             workflow_status=workflow_status,
             workflow_message=msg,
-            provider_id=order_id or payment_link,
+            provider_id=payment_link or payment_link_id or order_id,
             order_id=order_id,
             payment_link=payment_link,
             key_id=key_id,
@@ -285,55 +291,133 @@ async def verify_payment(
 ):
     """
     CRITICAL FINTECH RULE:
-    Revenue is marked as RECOVERED ONLY IF Razorpay returns status === 'captured'.
+    Revenue is marked as RECOVERED ONLY IF Razorpay returns status === 'captured'
+    AND the payment amount and currency exactly match the target transaction.
     """
     now = datetime.now(timezone.utc)
+    
+    # 1. Lookup target transaction
+    txn = db.query(TransactionModel).filter(TransactionModel.id == request.transaction_id).first()
+    expected_amount = txn.amount_minor if txn else (request.amount_minor or 0)
+    expected_currency = txn.currency if txn else (request.currency or "INR")
+
+    # 2. Check Idempotency: If already verified, return cached confirmation
+    if txn and txn.status == "RECOVERED" and txn.verified_amount_minor == expected_amount:
+        return PaymentVerificationResponse(
+            transaction_id=request.transaction_id,
+            payment_id=request.payment_id,
+            amount_minor=expected_amount,
+            currency=expected_currency,
+            status="captured",
+            verified=True,
+            verified_at=now,
+            message="Payment already verified as captured in Razorpay Test Mode.",
+        )
+
+    # 3. Validate requested amount and currency against transaction if specified
+    if request.amount_minor is not None and txn and request.amount_minor != txn.amount_minor:
+        AuditLedgerService.record_event(
+            db=db,
+            transaction_id=request.transaction_id,
+            event_type="PAYMENT_VERIFICATION_FAILED",
+            actor="Razorpay Verification Bridge",
+            decision="REJECTED",
+            reason=f"Amount mismatch: Expected ₹{txn.amount_minor/100}, received ₹{request.amount_minor/100}",
+            metadata={"requested_amount": request.amount_minor, "expected_amount": txn.amount_minor},
+        )
+        return PaymentVerificationResponse(
+            transaction_id=request.transaction_id,
+            payment_id=request.payment_id,
+            amount_minor=request.amount_minor,
+            currency=request.currency,
+            status="failed",
+            verified=False,
+            verified_at=now,
+            message=f"Verification rejected: Amount mismatch (Expected ₹{txn.amount_minor/100}, received ₹{request.amount_minor/100}).",
+        )
+
     try:
-        verification = await RazorpayService.verify_payment(request.payment_id)
+        # Record Verification Attempt Audit Event
+        AuditLedgerService.record_event(
+            db=db,
+            transaction_id=request.transaction_id,
+            event_type="PAYMENT_VERIFICATION_STARTED",
+            actor="Razorpay Verification Bridge",
+            decision="PENDING",
+            reason=f"Verifying payment {request.payment_id} for {request.transaction_id}",
+            metadata={"amount_minor": expected_amount, "currency": expected_currency},
+        )
+
+        verification = await RazorpayService.verify_payment(
+            payment_id=request.payment_id,
+            expected_amount_minor=expected_amount,
+            expected_currency=expected_currency,
+        )
         is_verified = verification["verified"]
         pay_status = verification["status"]
-        amount_minor = verification.get("amount_minor", request.amount_minor or 249900)
+        amount_minor = verification.get("amount_minor", expected_amount)
 
         # Record Verification in DB
         verif_model = PaymentVerificationModel(
             transaction_id=request.transaction_id,
             razorpay_payment_id=request.payment_id,
             amount_minor=amount_minor,
-            currency=request.currency,
+            currency=expected_currency,
             status=pay_status,
             verified=is_verified,
             verified_at=now,
         )
         db.add(verif_model)
 
-        # Update Transaction in DB if captured
-        txn = db.query(TransactionModel).filter(TransactionModel.id == request.transaction_id).first()
+        # Update Transaction in DB only if captured
         if txn:
             if is_verified:
-                txn.status = "Recovered"
+                txn.status = "RECOVERED"
                 txn.verified_amount_minor = amount_minor
                 txn.provider_id = request.payment_id
             else:
-                txn.status = "Pending"
+                txn.status = "PENDING"
+
         db.commit()
 
-        # Audit Event
-        AuditLedgerService.record_event(
-            db=db,
-            transaction_id=request.transaction_id,
-            event_type="PAYMENT_VERIFIED" if is_verified else "PAYMENT_VERIFICATION_PENDING",
-            actor="Razorpay Verification Bridge",
-            decision="VERIFIED" if is_verified else "UNVERIFIED",
-            reason=f"Razorpay status: {pay_status}",
-            metadata={
-                "payment_id": request.payment_id,
-                "amount_minor": amount_minor,
-                "verified": is_verified,
-            },
-        )
+        # Record Completion Audit Events
+        if is_verified:
+            AuditLedgerService.record_event(
+                db=db,
+                transaction_id=request.transaction_id,
+                event_type="PAYMENT_VERIFIED",
+                actor="Razorpay Verification Bridge",
+                decision="VERIFIED",
+                reason="Authoritative captured status confirmed by Razorpay API.",
+                metadata={
+                    "payment_id": request.payment_id,
+                    "amount_minor": amount_minor,
+                    "currency": expected_currency,
+                    "verified": True,
+                },
+            )
+            AuditLedgerService.record_event(
+                db=db,
+                transaction_id=request.transaction_id,
+                event_type="RECOVERY_COMPLETED",
+                actor="Recovery Ledger Orchestrator",
+                decision="COMPLETED",
+                reason=f"Credited ₹{amount_minor/100:,.2f} to verified recovered ledger.",
+                metadata={"amount_minor": amount_minor},
+            )
+        else:
+            AuditLedgerService.record_event(
+                db=db,
+                transaction_id=request.transaction_id,
+                event_type="PAYMENT_VERIFICATION_FAILED",
+                actor="Razorpay Verification Bridge",
+                decision="UNVERIFIED",
+                reason=f"Payment status is '{pay_status}' (not captured).",
+                metadata={"payment_id": request.payment_id, "status": pay_status},
+            )
 
         msg = (
-            "Payment captured and verified. Revenue credited to shared recovery ledger."
+            f"✓ Verified Capture Confirmed! Recovered ₹{amount_minor/100:,.0f} for {request.transaction_id}."
             if is_verified
             else f"Payment status is '{pay_status}'. Revenue remains pending until captured."
         )
@@ -342,7 +426,7 @@ async def verify_payment(
             transaction_id=request.transaction_id,
             payment_id=request.payment_id,
             amount_minor=amount_minor,
-            currency=request.currency,
+            currency=expected_currency,
             status=pay_status,
             verified=is_verified,
             verified_at=now,

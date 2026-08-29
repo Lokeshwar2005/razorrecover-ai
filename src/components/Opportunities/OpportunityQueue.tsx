@@ -39,6 +39,13 @@ export const OpportunityQueue: React.FC = () => {
     return `₹${(minor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`
   }
 
+  const handleSelectOpportunity = (opp: OpportunityItem) => {
+    setSelectedOpp(opp)
+    setExecutionResult(null)
+    setVerifiedSuccess(null)
+    setExecutionError(null)
+  }
+
   const filteredOpportunities = useMemo(() => {
     return opportunities
       .filter((opp) => {
@@ -110,10 +117,11 @@ export const OpportunityQueue: React.FC = () => {
     }
   }
 
-  const handleVerifyPayment = async (opp: OpportunityItem, orderIdOrLink?: string) => {
+  const handleVerifyPayment = async (opp: OpportunityItem) => {
     setVerifying(true)
+    setExecutionError(null)
     try {
-      const mockPayId = `pay_rzp_${opp.transaction_id.replace('-', '_').toLowerCase()}_${Date.now()}`
+      const mockPayId = `pay_${opp.transaction_id.replace('-', '_').toLowerCase()}_${Date.now()}`
       const verifyRes = await verifyPaymentCapture({
         transaction_id: opp.transaction_id,
         payment_id: mockPayId,
@@ -122,7 +130,9 @@ export const OpportunityQueue: React.FC = () => {
       })
 
       if (verifyRes.verified) {
-        setVerifiedSuccess(`✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
+        // Clear pending execution banner so contradictory banners never coexist
+        setExecutionResult(null)
+        setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
         setOpportunities((prev) =>
           prev.map((item) =>
             item.id === opp.id
@@ -137,9 +147,11 @@ export const OpportunityQueue: React.FC = () => {
             policy_eligible_count: Math.max(0, summary.policy_eligible_count - 1),
           })
         }
+      } else {
+        setExecutionError(verifyRes.message || 'Payment verification failed. Capture status unconfirmed.')
       }
     } catch (e: any) {
-      setExecutionError('Payment verification failed. Capture not detected yet.')
+      setExecutionError(e?.message || 'Payment verification failed. Capture not detected yet.')
     } finally {
       setVerifying(false)
     }
@@ -230,12 +242,12 @@ export const OpportunityQueue: React.FC = () => {
       )}
 
       {/* Execution Feedback Banners */}
-      {executionResult && (
+      {executionResult && selectedOpp && executionResult.transaction_id === selectedOpp.transaction_id && (
         <div className="p-4 rounded-xl bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-2 shadow-[0_0_20px_rgba(16,185,129,0.2)] animate-fade-in">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-[#10b981] font-bold">
-              <span>✓ RECOVERY ACTION EXECUTED</span>
-              <span className="text-[#a89f91] font-normal">({executionResult.action_type})</span>
+              <span>⚡ RECOVERY ACTION INITIATED</span>
+              <span className="text-[#a89f91] font-normal">({executionResult.action_type} for {executionResult.transaction_id})</span>
             </div>
             <button onClick={() => setExecutionResult(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
           </div>
@@ -252,20 +264,18 @@ export const OpportunityQueue: React.FC = () => {
                 Open Razorpay Payment Link ↗
               </a>
             )}
-            {selectedOpp && (
-              <button
-                onClick={() => handleVerifyPayment(selectedOpp, executionResult.order_id || executionResult.payment_link)}
-                disabled={verifying}
-                className="px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition text-xs inline-flex items-center gap-1.5 disabled:opacity-50"
-              >
-                {verifying ? 'Checking Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
-              </button>
-            )}
+            <button
+              onClick={() => handleVerifyPayment(selectedOpp)}
+              disabled={verifying}
+              className="px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition text-xs inline-flex items-center gap-1.5 disabled:opacity-50"
+            >
+              {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
+            </button>
           </div>
         </div>
       )}
 
-      {verifiedSuccess && (
+      {verifiedSuccess && selectedOpp && (
         <div className="p-4 rounded-xl bg-[#10b981]/20 border border-[#10b981]/60 text-[#10b981] text-xs font-mono flex items-center justify-between shadow-[0_0_20px_rgba(16,185,129,0.3)] animate-fade-in">
           <div className="flex items-center gap-2">
             <span className="text-base">💰</span>
@@ -347,7 +357,7 @@ export const OpportunityQueue: React.FC = () => {
               return (
                 <div
                   key={opp.id}
-                  onClick={() => setSelectedOpp(opp)}
+                  onClick={() => handleSelectOpportunity(opp)}
                   className={`p-4 rounded-xl border transition cursor-pointer flex flex-col md:flex-row md:items-center justify-between gap-4 ${
                     isSelected
                       ? 'bg-[#1a150e] border-[#e5a944] shadow-[0_0_15px_rgba(229,169,68,0.2)]'

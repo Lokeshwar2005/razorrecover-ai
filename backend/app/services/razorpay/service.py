@@ -37,11 +37,11 @@ class RazorpayService:
         if not headers:
             # Synthetic simulation fallback order ID if keys are not set locally
             return {
-                "order_id": f"order_synth_{transaction_id.replace('-', '_')}_{int(time.time())}",
+                "order_id": f"order_test_{transaction_id.replace('-', '_').lower()}_{int(time.time())}",
                 "amount": amount_minor,
                 "currency": currency,
                 "status": "created",
-                "key_id": "rzp_test_mock",
+                "key_id": "rzp_test_placeholder",
                 "simulated": True,
             }
 
@@ -84,9 +84,11 @@ class RazorpayService:
         """Creates a Razorpay Payment Link for abandoned checkout recovery."""
         headers = cls._auth_header()
         if not headers:
+            # When live keys are not configured, return an in-app test checkout reference
+            # DO NOT generate fake rzp.io URLs because rzp.io is Razorpay's production shortlink server
             return {
-                "payment_link_id": f"plink_synth_{transaction_id.replace('-', '_')}",
-                "payment_link": f"https://rzp.io/i/synth-{transaction_id.lower()}",
+                "payment_link_id": f"plink_test_{transaction_id.replace('-', '_').lower()}_{int(time.time())}",
+                "payment_link": None,
                 "status": "created",
                 "simulated": True,
             }
@@ -123,19 +125,23 @@ class RazorpayService:
     async def verify_payment(
         cls,
         payment_id: str,
+        expected_amount_minor: Optional[int] = None,
+        expected_currency: Optional[str] = None,
     ) -> Dict[str, Any]:
         """
         Fetches payment status from Razorpay API.
-        VERIFIED is True ONLY IF status is 'captured' or 'authorized'.
+        VERIFIED is True ONLY IF status is 'captured' or 'authorized' AND amount and currency match.
         """
         headers = cls._auth_header()
         if not headers:
-            # In test mode without live credentials, verify dummy captured payment
+            # In test/mock mode:
             is_captured = not payment_id.startswith("pay_failed")
+            amt = expected_amount_minor if expected_amount_minor is not None else 0
+            curr = (expected_currency or "INR").upper()
             return {
                 "payment_id": payment_id,
-                "amount_minor": 249900,
-                "currency": "INR",
+                "amount_minor": amt,
+                "currency": curr,
                 "status": "captured" if is_captured else "failed",
                 "verified": is_captured,
                 "simulated": True,
@@ -153,12 +159,27 @@ class RazorpayService:
 
             status = str(data.get("status", "unknown")).lower()
             is_captured = (status == "captured" or status == "authorized")
+            actual_amount = data.get("amount", 0)
+            actual_currency = str(data.get("currency", "INR")).upper()
+
+            # Validate amount and currency
+            amount_matches = True
+            if expected_amount_minor is not None and actual_amount != expected_amount_minor:
+                amount_matches = False
+                is_captured = False
+
+            currency_matches = True
+            if expected_currency is not None and actual_currency != expected_currency.upper():
+                currency_matches = False
+                is_captured = False
 
             return {
                 "payment_id": data.get("id"),
-                "amount_minor": data.get("amount", 0),
-                "currency": data.get("currency", "INR"),
+                "amount_minor": actual_amount,
+                "currency": actual_currency,
                 "status": status,
                 "verified": is_captured,
+                "amount_matches": amount_matches,
+                "currency_matches": currency_matches,
                 "simulated": False,
             }
