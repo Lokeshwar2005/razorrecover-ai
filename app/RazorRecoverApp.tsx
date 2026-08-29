@@ -6,6 +6,12 @@ import RecoveryIntelligenceGraph from '../src/components/RecoveryIntelligenceGra
 import CounterfactualLab from '../src/components/CounterfactualLab/CounterfactualLab'
 import AIRecoveryAdvisor from '../src/components/AIRecoveryAdvisor/AIRecoveryAdvisor'
 import { AgentTrace2 } from '../src/components/Trace/AgentTrace2'
+import { MerchantDashboard } from '../src/components/Dashboard/MerchantDashboard'
+import { OpportunityQueue } from '../src/components/Opportunities/OpportunityQueue'
+import { TransactionExplorer } from '../src/components/Transactions/TransactionExplorer'
+import { RecoveryAnalyticsView } from '../src/components/Analytics/RecoveryAnalyticsView'
+import { PolicySettingsView } from '../src/components/Settings/PolicySettingsView'
+import { AuditComplianceCenter } from '../src/components/Audit/AuditComplianceCenter'
 import { GraphTransactionContext } from '../src/types/graph'
 import { createTransaction, type RecoveryDirection } from '../src/recoveryEngine'
 
@@ -165,6 +171,20 @@ function mapRazorpayPayment(payment: RazorpayPayment): EventItem | null {
   }
 }
 
+const detectViewFromUrl = (): string => {
+  if (typeof window === 'undefined') return 'Overview'
+  const full = `${window.location.pathname} ${window.location.hash} ${window.location.search}`.toLowerCase()
+  if (full.includes('dashboard')) return 'Command Center'
+  if (full.includes('opportunities')) return 'Opportunities'
+  if (full.includes('transactions')) return 'Transactions'
+  if (full.includes('analytics')) return 'Analytics'
+  if (full.includes('policies') || full.includes('settings')) return 'Policies'
+  if (full.includes('audit')) return 'Audit'
+  if (full.includes('simulation')) return 'Simulation'
+  if (full.includes('agent-trace') || full.includes('trace')) return 'Agent trace'
+  return 'Overview'
+}
+
 export function RazorRecoverApp() {
   const seed = useMemo(() => makeEvents('balanced'), [])
   const [events, setEvents] = useState<EventItem[]>(seed)
@@ -172,7 +192,7 @@ export function RazorRecoverApp() {
   const [scenario, setScenario] = useState<Scenario>('balanced')
   const [running, setRunning] = useState(false)
   const [progress, setProgress] = useState(0)
-  const [tab, setTab] = useState('Overview')
+  const [tab, setTab] = useState<string>(detectViewFromUrl())
   const [toast, setToast] = useState('')
   const [audit, setAudit] = useState<AuditItem[]>([])
   const [activeDirection, setActiveDirection] = useState<RecoveryDirection | null>(null)
@@ -441,24 +461,51 @@ export function RazorRecoverApp() {
     window.setTimeout(() => document.getElementById('recovery-operations')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250)
   }
 
+  const navigateToTab = (newTab: string) => {
+    setTab(newTab)
+    const slugMap: Record<string, string> = {
+      'Command Center': 'dashboard',
+      Opportunities: 'opportunities',
+      Transactions: 'transactions',
+      Analytics: 'analytics/recovery',
+      Policies: 'settings/policies',
+      Audit: 'audit',
+      Overview: '',
+      Simulation: 'simulation',
+      'Agent trace': 'agent-trace',
+    }
+    const slug = slugMap[newTab] ?? ''
+    const basePath = typeof window !== 'undefined' && window.location.pathname.includes('/razorrecover-ai') ? '/razorrecover-ai/' : '/'
+    const newUrl = slug ? `${basePath}${slug}` : basePath
+    if (typeof window !== 'undefined') {
+      window.history.pushState(null, '', newUrl)
+    }
+  }
+
+  const navItems = [
+    'Overview',
+    'Command Center',
+    'Opportunities',
+    'Transactions',
+    'Analytics',
+    'Policies',
+    'Audit',
+    'Simulation',
+    'Agent trace',
+  ]
+
   return (
     <div className="app">
       <header className="nav">
         <div className="navMain">
-          <div className="logo">
+          <div className="logo" onClick={() => navigateToTab('Overview')} style={{ cursor: 'pointer' }}>
             <span className="logoMark">R</span>
             <span>RazorRecover</span>
             <em>AI 3.0</em>
           </div>
           <div className="navTabs">
-            <a href="/dashboard" className="navLink">Command Center</a>
-            <a href="/opportunities" className="navLink">Opportunities</a>
-            <a href="/transactions" className="navLink">Transactions</a>
-            <a href="/analytics/recovery" className="navLink">Analytics</a>
-            <a href="/settings/policies" className="navLink">Policies</a>
-            <a href="/audit" className="navLink">Audit</a>
-            {['Overview', 'Simulation', 'Agent trace'].map((t) => (
-              <button className={tab === t ? 'active' : ''} onClick={() => setTab(t)} key={t}>
+            {navItems.map((t) => (
+              <button className={tab === t ? 'active' : ''} onClick={() => navigateToTab(t)} key={t}>
                 {t}
               </button>
             ))}
@@ -481,27 +528,8 @@ export function RazorRecoverApp() {
         </div>
         <div className="mobileNav">
           <div className="mobileNavTabs">
-            <a href="/dashboard" className="mobileNavLink">Command Center</a>
-            <a href="/opportunities" className="mobileNavLink">Opportunities</a>
-            <a href="/transactions" className="mobileNavLink">Transactions</a>
-            <a href="/analytics/recovery" className="mobileNavLink">Analytics</a>
-            <a href="/settings/policies" className="mobileNavLink">Policies</a>
-            <a href="/audit" className="mobileNavLink">Audit</a>
-            {['Overview', 'Simulation', 'Agent trace'].map((t) => (
-              <button
-                className={tab === t ? 'active' : ''}
-                onClick={() => {
-                  setTab(t)
-                  const target =
-                    t === 'Overview'
-                      ? document.querySelector('.hero')
-                      : t === 'Simulation'
-                      ? document.querySelector('.lab')
-                      : document.querySelector('.tracePanel')
-                  target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-                }}
-                key={t}
-              >
+            {navItems.map((t) => (
+              <button className={tab === t ? 'active' : ''} onClick={() => navigateToTab(t)} key={t}>
                 {t}
               </button>
             ))}
@@ -511,6 +539,14 @@ export function RazorRecoverApp() {
           </div>
         </div>
       </header>
+
+      {/* Render Sub-View if tab is not Overview */}
+      {tab === 'Command Center' && <MerchantDashboard />}
+      {tab === 'Opportunities' && <OpportunityQueue />}
+      {tab === 'Transactions' && <TransactionExplorer />}
+      {tab === 'Analytics' && <RecoveryAnalyticsView />}
+      {tab === 'Policies' && <PolicySettingsView />}
+      {tab === 'Audit' && <AuditComplianceCenter />}
 
       <main className="shell">
         <section className="hero">
