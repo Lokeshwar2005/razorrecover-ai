@@ -1,41 +1,56 @@
 (() => {
   const sectionFor = (label) => {
-    if (label === 'Overview') return document.querySelector('.hero');
-    if (label === 'Simulation') return document.querySelector('.lab');
-    if (label === 'Agent trace') return document.querySelector('.tracePanel');
-    if (label === 'Audit trail') {
-      return [...document.querySelectorAll('.panel')].find((el) => /audit trail/i.test(el.textContent || '')) || document.querySelector('.audit');
+    const clean = (label || '').toLowerCase();
+    if (clean.includes('overview')) return document.querySelector('.hero');
+    if (clean.includes('simulation')) return document.querySelector('.lab') || document.querySelector('#recovery-playbooks');
+    if (clean.includes('agent trace')) return document.querySelector('.tracePanel');
+    if (clean.includes('audit trail')) {
+      return [...document.querySelectorAll('.panel')].find((el) => /audit trail/i.test(el.textContent || '')) || document.querySelector('.audit') || document.querySelector('.tracePanel');
     }
     return null;
   };
 
   const wire = () => {
-    const navButtons = [...document.querySelectorAll('.navTabs button')];
+    const navButtons = [...document.querySelectorAll('.navTabs button, .mobileNavTabs button')];
     if (!navButtons.length) return false;
 
     navButtons.forEach((button) => {
       if (button.dataset.journeyWired) return;
       button.dataset.journeyWired = 'true';
       button.addEventListener('click', (event) => {
-        event.preventDefault();
-        const target = sectionFor(button.textContent.trim());
+        const text = button.textContent.trim();
+        if (text.includes('Judge Demo')) return; // handled by React state
+        const target = sectionFor(text);
         if (!target) return;
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // sync active state across all button matches
+        const allMatching = navButtons.filter(b => b.textContent.trim() === text);
         navButtons.forEach((item) => item.classList.remove('active'));
-        button.classList.add('active');
+        allMatching.forEach(m => m.classList.add('active'));
       });
     });
 
-    const targets = navButtons.map((button) => ({ button, target: sectionFor(button.textContent.trim()) })).filter((item) => item.target);
+    const targets = ['Overview', 'Simulation', 'Agent trace', 'Audit trail']
+      .map((name) => ({ name, target: sectionFor(name) }))
+      .filter((item) => item.target);
+
     if (targets.length && !window.__razorJourneyObserver) {
       window.__razorJourneyObserver = new IntersectionObserver((entries) => {
         const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (!visible) return;
         const match = targets.find((item) => item.target === visible.target);
         if (!match) return;
-        navButtons.forEach((item) => item.classList.remove('active'));
-        match.button.classList.add('active');
-      }, { rootMargin: '-18% 0px -62% 0px', threshold: [0.1, 0.35, 0.6] });
+        const currentButtons = [...document.querySelectorAll('.navTabs button, .mobileNavTabs button')];
+        currentButtons.forEach((item) => {
+          if (item.textContent.trim() === match.name) {
+            item.classList.add('active');
+          } else if (!item.textContent.includes('Judge Demo')) {
+            item.classList.remove('active');
+          }
+        });
+      }, { rootMargin: '-15% 0px -55% 0px', threshold: [0.1, 0.3, 0.6] });
+
       targets.forEach(({ target }) => window.__razorJourneyObserver.observe(target));
     }
     return true;

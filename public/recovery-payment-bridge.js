@@ -21,8 +21,7 @@
     if (el) return el
     el = document.createElement('section')
     el.id = 'rr-payment-verification'
-    el.setAttribute('aria-live', 'polite')
-    el.style.cssText = 'position:fixed;right:20px;bottom:20px;z-index:9999;width:min(380px,calc(100vw - 32px));background:#0d0d0d;color:#f5f0e7;border:1px solid #3b3325;border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.65);font:14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:none;overflow:hidden;transition:opacity .2s,transform .2s;'
+    el.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999;width:min(380px,calc(100vw - 24px));max-width:calc(100vw - 24px);box-sizing:border-box;background:#0d0d0d;color:#f5f0e7;border:1px solid #3b3325;border-radius:14px;box-shadow:0 24px 70px rgba(0,0,0,.65);font:14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:none;overflow:hidden;transition:opacity .2s,transform .2s;'
     document.body.appendChild(el)
     return el
   }

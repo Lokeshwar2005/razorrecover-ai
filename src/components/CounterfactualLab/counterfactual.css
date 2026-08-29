@@ -7,6 +7,8 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .counterfactualLab:before {
@@ -29,6 +31,10 @@
   border-bottom: 1px solid #231f19;
 }
 
+.counterfactualLab__headerLeft {
+  min-width: 0;
+}
+
 .counterfactualLab__headerLeft h2 {
   margin: 6px 0 2px;
   font-size: 18px;
@@ -47,6 +53,7 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  min-width: 0;
 }
 
 .counterfactualLab__safetyPill {
@@ -61,6 +68,7 @@
   font-weight: 800;
   letter-spacing: 0.12em;
   color: #d8cbb8;
+  white-space: nowrap;
 }
 
 .safetyDot {
@@ -69,11 +77,13 @@
   border-radius: 50%;
   background: #e4a641;
   box-shadow: 0 0 8px #e4a641;
+  flex-shrink: 0;
 }
 
 .counterfactualLab__actions {
   display: flex;
   gap: 8px;
+  min-width: 0;
 }
 
 .cfBtn {
@@ -89,6 +99,7 @@
   gap: 6px;
   transition: all 0.2s ease;
   white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .cfBtn--reset {
@@ -144,6 +155,7 @@
   grid-template-columns: 1.15fr 1.35fr;
   gap: 20px;
   margin-top: 18px;
+  min-width: 0;
 }
 
 /* Controls Panel */
@@ -155,6 +167,8 @@
   border: 1px solid #241f19;
   border-radius: 11px;
   padding: 18px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .cfControls__title {
@@ -172,6 +186,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  min-width: 0;
 }
 
 .cfControlLabel {
@@ -180,6 +195,7 @@
   align-items: center;
   font-size: 9.5px;
   color: #8c8273;
+  gap: 8px;
 }
 
 .cfControlLabel strong {
@@ -190,6 +206,8 @@
 
 .cfSelect {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: #16130f;
   border: 1px solid #31291f;
   color: #ecd9c3;
@@ -200,6 +218,7 @@
   cursor: pointer;
   outline: none;
   transition: border-color 0.2s;
+  min-width: 0;
 }
 
 .cfSelect:focus {
@@ -209,6 +228,8 @@
 
 .cfSlider {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   -webkit-appearance: none;
   appearance: none;
   height: 6px;
@@ -261,18 +282,25 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
+  width: 100%;
+  min-width: 0;
 }
 
 .cfSegmentBtn {
   background: #16130f;
   border: 1px solid #2e261d;
   color: #8c8273;
-  padding: 8px 10px;
+  padding: 8px 6px;
   border-radius: 7px;
   font-size: 10px;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
+  text-align: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .cfSegmentBtn.active {
@@ -286,12 +314,14 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
 }
 
 .cfCardsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+  min-width: 0;
 }
 
 .cfCard {
@@ -305,6 +335,7 @@
   position: relative;
   overflow: hidden;
   transition: border-color 0.25s, box-shadow 0.25s;
+  min-width: 0;
 }
 
 .cfCard--original {
@@ -330,6 +361,7 @@
   align-items: center;
   border-bottom: 1px solid #211c16;
   padding-bottom: 9px;
+  gap: 8px;
 }
 
 .cfCardTitle {
@@ -337,6 +369,7 @@
   letter-spacing: 0.16em;
   font-weight: 800;
   color: #7d7363;
+  white-space: nowrap;
 }
 
 .cfCard--counterfactual .cfCardTitle {
@@ -349,6 +382,7 @@
   padding: 3px 7px;
   border-radius: 5px;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 .cfCardBadge.recovered {
@@ -520,23 +554,74 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .counterfactualLab {
-    padding: 16px;
+    padding: 16px 12px;
   }
   .counterfactualLab__header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 14px;
   }
   .counterfactualLab__headerRight {
     width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .counterfactualLab__safetyPill {
+    align-self: flex-start;
+  }
+  .counterfactualLab__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+  }
+  .cfBtn {
+    min-height: 42px;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  .cfBtn--run {
+    grid-column: 1 / -1;
+    min-height: 46px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    width: 100%;
   }
   .cfCardsGrid {
     grid-template-columns: 1fr;
   }
   .cfDeltaChips {
     grid-template-columns: 1fr;
+  }
+  .cfControls {
+    padding: 14px 12px;
+  }
+  .cfCard {
+    padding: 14px 12px;
+  }
+  .cfDeltaSection {
+    padding: 14px 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cfSegmentBtn {
+    padding: 7px 3px;
+    font-size: 9px;
+  }
+  .cfCardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .cfCardBadge {
+    align-self: flex-start;
   }
 }
 

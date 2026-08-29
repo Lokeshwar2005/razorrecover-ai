@@ -40,17 +40,21 @@ export const RecoveryIntelligenceGraph: React.FC<RecoveryIntelligenceGraphProps>
   useEffect(() => {
     if (!canvasRef.current) return
 
-    const scene = new RecoveryGraphScene({
-      canvas: canvasRef.current,
-      onNodeClick: (nodeId) => {
-        setSelectedNodeId(nodeId)
-      },
-    })
-    sceneRef.current = scene
+    try {
+      const scene = new RecoveryGraphScene({
+        canvas: canvasRef.current,
+        onNodeClick: (nodeId) => {
+          setSelectedNodeId(nodeId)
+        },
+      })
+      sceneRef.current = scene
 
-    return () => {
-      scene.dispose()
-      sceneRef.current = null
+      return () => {
+        scene.dispose()
+        sceneRef.current = null
+      }
+    } catch (e) {
+      console.warn('WebGL is not available in this environment:', e)
     }
   }, [])
 

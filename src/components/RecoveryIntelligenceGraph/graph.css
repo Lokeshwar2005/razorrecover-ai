@@ -1,6 +1,7 @@
 .recoveryGraph {
   position: relative;
   width: 100%;
+  max-width: 100%;
   border-radius: 12px;
   background: radial-gradient(circle at center, rgba(228, 166, 65, 0.08) 0%, rgba(16, 14, 11, 0.95) 70%, #0a0907 100%);
   border: 1px solid #28231c;
@@ -8,6 +9,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.45);
+  min-width: 0;
 }
 
 .recoveryGraph__canvasContainer {
@@ -16,13 +18,14 @@
   height: 380px;
   min-height: 340px;
   overflow: hidden;
+  min-width: 0;
 }
 
 .recoveryGraph__canvas {
   width: 100%;
   height: 100%;
   display: block;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 /* Header HUD */
@@ -36,6 +39,7 @@
   align-items: center;
   pointer-events: none;
   z-index: 10;
+  gap: 8px;
 }
 
 .recoveryGraph__badge {
@@ -53,6 +57,7 @@
   letter-spacing: 0.14em;
   color: #dfd3c3;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .recoveryGraph__badgeDot {
@@ -61,6 +66,7 @@
   border-radius: 50%;
   background: #70d09b;
   box-shadow: 0 0 10px #70d09b;
+  flex-shrink: 0;
 }
 
 .recoveryGraph__badge.processing .recoveryGraph__badgeDot {
@@ -83,6 +89,7 @@
   pointer-events: auto;
   display: flex;
   gap: 6px;
+  flex-shrink: 0;
 }
 
 .recoveryGraph__resetBtn {
@@ -96,6 +103,7 @@
   cursor: pointer;
   backdrop-filter: blur(8px);
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .recoveryGraph__resetBtn:hover {
@@ -127,12 +135,14 @@
   font-size: 7.5px;
   letter-spacing: 0.1em;
   color: #8c8273;
+  white-space: nowrap;
 }
 
 .legendDot {
   width: 5px;
   height: 5px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .legendDot.active {
@@ -185,6 +195,7 @@
   grid-template-columns: repeat(7, 1fr);
   border-top: 1px solid #241f19;
   background: #0d0b09;
+  width: 100%;
 }
 
 .recoveryGraph__stepBtn {
@@ -197,6 +208,7 @@
   color: #635c52;
   transition: all 0.25s ease;
   position: relative;
+  min-width: 0;
 }
 
 .recoveryGraph__stepBtn:last-child {
@@ -247,6 +259,9 @@
   font-size: 7.5px;
   margin-top: 2px;
   color: #554e43;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .recoveryGraph__stepBtn.is-passed .recoveryGraph__stepStatus {
@@ -275,6 +290,7 @@
   align-items: center;
   gap: 16px;
   font-size: 9px;
+  min-width: 0;
 }
 
 .recoveryGraph__inspectorLeft {
@@ -282,6 +298,7 @@
   align-items: center;
   gap: 12px;
   min-width: 0;
+  overflow: hidden;
 }
 
 .recoveryGraph__inspectorKey {
@@ -293,12 +310,15 @@
   font-weight: 800;
   font-size: 8px;
   letter-spacing: 0.1em;
+  flex-shrink: 0;
 }
 
 .recoveryGraph__inspectorTitle {
   font-size: 11px;
   font-weight: 700;
   color: #e8ded0;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .recoveryGraph__inspectorDesc {
@@ -306,6 +326,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .recoveryGraph__inspectorRight {
@@ -347,8 +368,8 @@
 /* Responsive Rules */
 @media (max-width: 900px) {
   .recoveryGraph__canvasContainer {
-    height: 320px;
-    min-height: 300px;
+    height: 300px;
+    min-height: 280px;
   }
   .recoveryGraph__pipeline {
     grid-template-columns: repeat(4, 1fr);
@@ -360,6 +381,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    padding: 12px 14px;
   }
   .recoveryGraph__inspectorRight {
     width: 100%;
@@ -369,25 +391,31 @@
 
 @media (max-width: 600px) {
   .recoveryGraph__canvasContainer {
-    height: 280px;
-    min-height: 260px;
+    height: 260px;
+    min-height: 240px;
   }
   .recoveryGraph__legend {
     display: none;
   }
   .recoveryGraph__hudTop {
-    top: 10px;
-    left: 10px;
-    right: 10px;
+    top: 8px;
+    left: 8px;
+    right: 8px;
   }
   .recoveryGraph__pipeline {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .recoveryGraph__stepBtn {
-    padding: 8px 4px;
+    padding: 7px 3px;
+  }
+  .recoveryGraph__stepNum {
+    font-size: 7px;
   }
   .recoveryGraph__stepTitle {
-    font-size: 8px;
+    font-size: 7.5px;
+  }
+  .recoveryGraph__stepStatus {
+    font-size: 6.5px;
   }
   .recoveryGraph__coreTag {
     display: none;
