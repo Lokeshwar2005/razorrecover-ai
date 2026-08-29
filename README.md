@@ -1,340 +1,211 @@
-# ⚡ RazorRecover AI 2.0 — Autonomous Explainable Revenue Recovery Platform
+# ⚡ RazorRecover AI 3.0 — AI Revenue Recovery Platform
 
-> **Built for [Razorpay AI Buildathon 2026](https://razorpay.com/buildathon/) — Track 3: AI Revenue Recovery**  
-> *Production-grade autonomous AI recovery platform with Next.js 16, FastAPI, PostgreSQL, Three.js 3D intelligence graph, deterministic safety gates, and Razorpay Test Mode verification.*
+[![Razorpay AI Buildathon 2026](https://img.shields.io/badge/Razorpay%20AI%20Buildathon%202026-Track%203%3A%20AI%20Revenue%20Recovery-0c2340?style=for-the-badge&logo=razorpay)](https://razorpay.com/buildathon/)
+[![CI / CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing%20(Run%20%2396)-10b981?style=for-the-badge&logo=githubactions)](https://github.com/Lokeshwar2005/razorrecover-ai/actions)
+[![Python Tests](https://img.shields.io/badge/Pytest-24%2F24%20Passing-10b981?style=for-the-badge&logo=pytest)](https://github.com/Lokeshwar2005/razorrecover-ai)
+[![License](https://img.shields.io/badge/License-MIT-e5a944?style=for-the-badge)](LICENSE)
 
-[![Live Frontend](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://lokeshwar2005.github.io/razorrecover-ai/)
-[![Serverless API](https://img.shields.io/badge/Serverless%20API-Vercel-black?style=for-the-badge&logo=vercel)](https://razorrecover-ai-teal.vercel.app/api/ai/recovery)
-[![Next.js](https://img.shields.io/badge/Frontend-Next.js%2016%20%2B%20React%2019-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20%2B%20PostgreSQL-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![Track 3](https://img.shields.io/badge/Buildathon%20Track-Track%203%3A%20AI%20Revenue%20Recovery-orange?style=for-the-badge)](https://razorpay.com/buildathon/)
-[![Three.js](https://img.shields.io/badge/3D%20Engine-Three.js-049EF4?style=for-the-badge&logo=three.js)](https://threejs.org/)
+> **Autonomous, explainable, and bounded revenue recovery intelligence for merchants and digital businesses.**  
+> Built for the **Razorpay AI Buildathon 2026 — Track 3: AI Revenue Recovery**.
 
 ---
 
-## 📌 Table of Contents
-1. [Executive Summary & Problem Statement](#-executive-summary--problem-statement)
-2. [Razorpay AI Buildathon 2026: Track 3 Context](#-razorpay-ai-buildathon-2026-track-3-context)
-3. [Full End-to-End System Architecture](#-full-end-to-end-system-architecture)
-4. [Modular Architecture & Deep Dives](#-modular-architecture--deep-dives)
-   - [A. Autonomous AI Diagnosis Layer (OpenRouter / Claude / MCP)](#a-autonomous-ai-diagnosis-layer-openrouter--claude--mcp)
-   - [B. Deterministic Safety Gate & Policy Engine](#b-deterministic-safety-gate--policy-engine)
-   - [C. Native Three.js 3D Recovery Intelligence Graph](#c-native-threejs-3d-recovery-intelligence-graph)
-   - [D. Counterfactual Recovery Simulator (What-If Lab)](#d-counterfactual-recovery-simulator-what-if-lab)
-   - [E. Razorpay Test Mode & Real-Time Checkout Verification Bridge](#e-razorpay-test-mode--real-time-checkout-verification-bridge)
-   - [F. Decision Theater & Audit Trail Ledger](#f-decision-theater--audit-trail-ledger)
-5. [Key Problems Faced & Engineering Solutions](#-key-problems-faced--engineering-solutions)
-6. [Tech Stack & Dependencies](#-tech-stack--dependencies)
-7. [Live Deployment Endpoints](#-live-deployment-endpoints)
-8. [Local Development & Repository Cloning Guide](#-local-development--repository-cloning-guide)
+## 🌐 Live Production Deployments
+
+| Component | Endpoint / URL | Description |
+| :--- | :--- | :--- |
+| **Live Web Platform** | [https://lokeshwar2005.github.io/razorrecover-ai/](https://lokeshwar2005.github.io/razorrecover-ai/) | Production single-page application with 3D recovery graph |
+| **Merchant Command Center** | [https://lokeshwar2005.github.io/razorrecover-ai/dashboard/](https://lokeshwar2005.github.io/razorrecover-ai/dashboard/) | Real-time recovery KPIs, 7-day velocity & telemetry charts |
+| **Opportunity Engine** | [https://lokeshwar2005.github.io/razorrecover-ai/opportunities/](https://lokeshwar2005.github.io/razorrecover-ai/opportunities/) | Prioritized opportunity queue ranked by Expected Recovery Value |
+| **Transaction Explorer** | [https://lokeshwar2005.github.io/razorrecover-ai/transactions/](https://lokeshwar2005.github.io/razorrecover-ai/transactions/) | Full 7-stage lifecycle audit drawer for every payment event |
+| **Recovery Analytics** | [https://lokeshwar2005.github.io/razorrecover-ai/analytics/recovery/](https://lokeshwar2005.github.io/razorrecover-ai/analytics/recovery/) | Historical empirical success rates by playbook & failure signature |
+| **Policy Configuration** | [https://lokeshwar2005.github.io/razorrecover-ai/settings/policies/](https://lokeshwar2005.github.io/razorrecover-ai/settings/policies/) | Deterministic authorization ceilings & retry boundaries |
+| **Audit Center** | [https://lokeshwar2005.github.io/razorrecover-ai/audit/](https://lokeshwar2005.github.io/razorrecover-ai/audit/) | SHA-256 tamper-evident chained ledger with CSV/JSON export |
+| **Serverless AI API** | [https://razorrecover-ai-teal.vercel.app/api/ai/recovery](https://razorrecover-ai-teal.vercel.app/api/ai/recovery) | OpenRouter / Claude 3.5 Sonnet diagnostic reasoning engine |
+| **GitHub Repository** | [https://github.com/Lokeshwar2005/razorrecover-ai](https://github.com/Lokeshwar2005/razorrecover-ai) | Full monorepo containing Frontend, FastAPI backend, & tests |
 
 ---
 
-## 🎯 Executive Summary & Problem Statement
+## 🎯 The Problem Statement
 
-In high-volume digital commerce, **10% to 25% of all transactions fail** due to transient gateway degradation, bank timeouts, 3DS challenge drop-offs, network interruptions, and user abandonment.
+In high-volume digital commerce and Indian fintech (UPI, Cards, NetBanking, e-Mandates, Subscriptions):
+1. **$100B+ Revenue Leakage**: 15–25% of legitimate payment attempts fail due to transient bank network spikes, checkout friction, expired OTP/3DS sessions, soft card declines, and delayed B2B settlements.
+2. **Blind Automation Danger**: Naive automated retry scripts create double-debits, degrade merchant standing with banks, and trigger payment gateway rate-limits.
+3. **Slow Human Intervention**: Manual review teams take hours to respond, losing high-intent buyers permanently.
+4. **AI Hallucination Risk**: Pure generative LLMs cannot be trusted to execute financial transactions or modify balances without strict mathematical boundaries.
 
-### The Problem:
-* **Blind Retries Damage Merchant Reputation:** Naive retry scripts trigger bank rate-limits, incur network fees, and increase customer friction.
-* **Manual Support is Slow:** Waiting hours for human agents to review payment logs results in permanently lost revenue.
-* **Uncontrolled Generative AI is Risky in Fintech:** LLMs hallucinate numbers, misinterpret risk thresholds, and lack execution boundaries when dealing with money-moving operations.
-
-### The RazorRecover Solution:
-**RazorRecover AI** implements **Deterministic Bounded Autonomy**:
-1. An **AI Diagnosis Agent** (powered by OpenRouter / Claude / Razorpay MCP) classifies failure signatures and recommends surgical interventions.
-2. A **Zero-Hallucination Deterministic Policy Gate** strictly enforces mathematical boundaries (idempotency, max 2 retry limits, risk ceilings `< 70`, recovery probability `≥ 55%`).
-3. **Razorpay Test-Mode Verification Bridge** ensures revenue is **never marked as recovered** until Razorpay confirms a captured payment status.
-4. **Spatial 3D Intelligence & Counterfactual Simulation** provide complete transparency, explainability, and "what-if" scenario testing for operators and compliance teams.
-
-```
-   ┌────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
-   │ Payment Signal │ ───► │  AI Diagnosis Advisor   │ ───► │ Deterministic Safety    │
-   │    Captured    │      │ (OpenRouter / Claude)   │      │ (Policy Gating Engine)  │
-   └────────────────┘      └─────────────────────────┘      └─────────────────────────┘
-                                                                         │
-                                                                         ▼
-   ┌────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
-   │ Revenue Counted│ ◄─── │ Razorpay Verification   │ ◄─── │ Bounded Recovery Action │
-   │   in Ledger    │      │  (status === captured)  │      │(Payment Link / Retry /…)│
-   └────────────────┘      └─────────────────────────┘      └─────────────────────────┘
-```
+### The RazorRecover 3.0 Solution: Deterministic Bounded Autonomy
+RazorRecover bridges the gap between **generative AI intelligence** and **deterministic financial safety**:
+- **AI Analyzes & Explains**: LLMs diagnose root causes, assess customer intent, and calculate recovery likelihood.
+- **Deterministic Policy Gates Authorize**: Hard-coded mathematical policy rules block unauthorized retries, cap attempt limits, and enforce merchant risk ceilings.
+- **Payment Gateway Verifies**: Only actual captured payments recorded via Razorpay webhooks enter the verified recovery ledger.
+- **Empirical Statistics Learn**: Future priorities are optimized strictly based on verified historical outcomes.
 
 ---
 
-## 🏆 Razorpay AI Buildathon 2026: Track 3 Context
-
-The **[Razorpay AI Buildathon 2026](https://razorpay.com/buildathon/)** challenges engineers to rethink financial infrastructure through autonomous agentic systems.
-
-* **Track:** **Track 3 — AI Revenue Recovery**
-* **Core Mandate:** Design and build autonomous AI agents that detect, diagnose, and recover lost revenue from failed transactions, abandoned checkouts, and recurring subscription drop-offs while guaranteeing safety, explainability, and verifiable proof of recovery.
-* **Project Name:** **RazorRecover AI**
-* **Repository:** [https://github.com/Lokeshwar2005/razorrecover-ai](https://github.com/Lokeshwar2005/razorrecover-ai)
-
----
-
-## 🏛️ Full End-to-End System Architecture
-
-```mermaid
-flowchart TD
-    subgraph INGESTION["01. Event Stream & Ingestion Layer"]
-        A1["Live Payment Stream / 100-Event Synthetic Engine"] --> A2{"Failure Signal Detected"}
-        A2 -->|Event Ingested| A3["Extract Transaction Context: ID, Amount, Error Code, Velocity"]
-    end
-
-    subgraph AI_LAYER["02. Autonomous AI Diagnosis Layer"]
-        A3 --> B1["API Gateway: /api/ai/recovery"]
-        B1 --> B2["OpenRouter / Claude LLM Inference"]
-        B2 --> B3["Extract Failure Signature & Root Cause"]
-        B3 --> B4["Recommend Bounded Action: Retry / Payment Link / Customer Prompt / Escalate"]
-    end
-
-    subgraph POLICY_GATE["03. Deterministic Safety Gate (Source of Truth)"]
-        B4 --> C1{"Deterministic Policy Evaluation"}
-        C1 -->|Risk >= 70 OR Retries > 2| C2["POLICY BLOCKED · Escalate to Human"]
-        C1 -->|Risk < 70 & Prob >= 55%| C3["POLICY APPROVED · Execute Bounded Action"]
-        C2 --> C4["Immutable Exception Audit Event"]
-    end
-
-    subgraph EXECUTION["04. Action Orchestration & Razorpay Bridge"]
-        C3 --> D1["Razorpay Test Mode / MCP Tool Invocation"]
-        D1 --> D2["Create Test Order: order_TVLdJPjhhrCBEs"]
-        D2 --> D3["Customer Checkout Modal / Payment Link"]
-    end
-
-    subgraph VERIFICATION["05. Real-Time Verification & Ledger"]
-        D3 --> E1{"Razorpay Webhook / Status Lookup"}
-        E1 -->|status !== captured| E2["WAITING FOR PAYMENT · Recovery Pending"]
-        E1 -->|status === captured| E3["VERIFIED · Revenue Captured"]
-        E3 --> E4["Update Verified Recovery Ledger & SHA-256 Audit Log"]
-    end
-
-    subgraph VISUALIZATION["06. Explanatory & Spatial UI Suite"]
-        E4 --> F1["Native Three.js 3D Recovery Intelligence Graph"]
-        E4 --> F2["Counterfactual Recovery Simulator Lab"]
-        E4 --> F3["Decision Theater Modal"]
-        E4 --> F4["AI Recovery Advisor HUD"]
-    end
-
-    style INGESTION fill:#111,stroke:#3b3325,stroke-width:1px,color:#fff
-    style AI_LAYER fill:#14120e,stroke:#b99552,stroke-width:1px,color:#fff
-    style POLICY_GATE fill:#1a140d,stroke:#e4a641,stroke-width:1px,color:#fff
-    style EXECUTION fill:#111a14,stroke:#70d09b,stroke-width:1px,color:#fff
-    style VERIFICATION fill:#0d1a12,stroke:#8ee3ae,stroke-width:1px,color:#fff
-    style VISUALIZATION fill:#15120e,stroke:#554a3a,stroke-width:1px,color:#fff
-```
-
----
-
-## 🧩 Modular Architecture & Deep Dives
-
-### A. Autonomous AI Diagnosis Layer (OpenRouter / Claude / MCP)
-
-The AI layer diagnoses failure context without holding money-moving authorization.
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Client as Frontend Client
-    participant Vercel as Vercel Serverless (/api/ai/recovery)
-    participant LLM as OpenRouter / Claude
-    participant Policy as Deterministic Safety Gate
-
-    Client->>Vercel: POST transaction facts
-    Vercel->>LLM: Prompt with failure context & bounded playbook
-    LLM-->>Vercel: Structured JSON with diagnosis & recommendation
-    Vercel->>Policy: Compare recommendation with deterministic rules
-    alt Policy Approved & Aligned
-        Policy-->>Vercel: executionAllowed = true, policyAlignment = aligned
-    else Policy Blocked or Escalated
-        Policy-->>Vercel: executionAllowed = false, policyAlignment = escalate
-    end
-    Vercel-->>Client: Return diagnosis, policyReason & execution authority
-```
-
-* **Resilient JSON Parser:** Eliminates 502 gateway errors by gracefully falling back to deterministic transaction facts if LLM output contains raw markdown.
-* **Zero Secret Leakage:** OpenRouter API keys and Razorpay API secrets remain strictly inside the serverless runtime.
-
----
-
-### B. Deterministic Safety Gate & Policy Engine
-
-Fintech requires absolute mathematical guarantees. LLMs cannot override safety rules.
-
-```mermaid
-flowchart TD
-    In["Transaction Signal"] --> R{"Risk Score < 70?"}
-    R -- No --> Block["STOP: Escalate to Support"]
-    R -- Yes --> A{"Retry Count <= 2?"}
-    A -- No --> Block
-    A -- Yes --> P{"Recovery Prob >= 55%?"}
-    P -- No --> Block
-    P -- Yes --> Match{"Action in Playbook?"}
-    Match -- Yes --> Pass["APPROVE: Bounded Execution"]
-    Match -- No --> Fallback["Fallback to Standard Playbook Action"]
-    Fallback --> Pass
-```
-
-#### Policy Rules Enforced:
-1. **Idempotency Guarantee:** Duplicate order IDs are deduplicated before reaching gateways.
-2. **Hard Retry Ceiling:** Max 2 automated retries per transaction.
-3. **Risk Boundary:** Any transaction with a Risk Score `≥ 70` is immediately blocked.
-4. **Autonomous Action Playbook:** Limited strictly to:
-   - `Retry payment` (Network degradation, Bank timeout)
-   - `Payment link` (Checkout abandoned, Insufficient balance)
-   - `Customer prompt` (3DS challenge expired, Authentication failed)
-   - `Escalate` (Velocity risk, Stolen instrument flags)
-
----
-
-### C. Native Three.js 3D Recovery Intelligence Graph
-
-A spatial 3D visualization rendering the real-time movement of transactions through the 7 recovery stages.
-
-```
- [00 Txn Ingest] ──► [01 Detect] ──► [02 Diagnose] ──► [03 Risk] ──► [04 Policy Gate] ──► [05 Action] ──► [06 Verify]
-```
+## 🔁 The Central 9-Stage Operating Loop
 
 ```mermaid
 flowchart LR
-    subgraph SPATIAL_CORE["3D WebGL Canvas (Three.js)"]
-        N0(("00 TXN")) --> N1(("01 DETECT"))
-        N1 --> N2(("02 DIAGNOSE"))
-        N2 --> N3(("03 RISK"))
-        N3 --> N4(("04 POLICY GATE"))
-        N4 -->|Approved| N5(("05 ACTION"))
-        N5 --> N6(("06 VERIFY"))
-        N4 -->|Blocked| NB(("STOPPED"))
-    end
-    
-    subgraph HUD_LAYER["Interactive 2D HUD"]
-        H1["Live Status Pill: RECOVERY VERIFIED / STOPPED"]
-        H2["7-Step Pipeline Rail"]
-        H3["Interactive Node Detail Inspector"]
-    end
-
-    SPATIAL_CORE <--> HUD_LAYER
+    A["01 DETECT\n(Payment Fail)"] --> B["02 DIAGNOSE\n(AI Ingest)"]
+    B --> C["03 SCORE\n(Prob & Risk)"]
+    C --> D["04 PRIORITIZE\n(Expected Value)"]
+    D --> E["05 OPTIMIZE\n(Best Action)"]
+    E --> F["06 POLICY CHECK\n(Deterministic Gate)"]
+    F -->|Approved| G["07 RECOVER\n(Razorpay Action)"]
+    F -->|Blocked| H["ESCALATE\n(Human Review)"]
+    G --> I["08 VERIFY\n(Captured Event)"]
+    I --> J["09 LEARN\n(Empirical Stats)"]
 ```
-
-* **GPU Lifecycle Management:** Clean scene disposal on unmount, single WebGL canvas reuse, zero per-frame garbage collector allocations.
-* **Adaptive Flow Conduits:** Traveling particle packets represent transaction data moving across curved bezier conduits.
-* **Policy Reactivity:** If an action is blocked at `04 POLICY GATE`, energy conduits immediately halt, illuminating the gate red while downstream action nodes stay inactive.
 
 ---
 
-### D. Counterfactual Recovery Simulator (What-If Lab)
-
-Allows operators and auditors to test: *"What would happen if the failure conditions changed?"*
+## 🏛️ System Architecture
 
 ```mermaid
 flowchart TD
-    subgraph CONTROLS["Interactive Mutation Controls"]
-        C1["Amount Slider: ₹199 to ₹35,000"]
-        C2["Failure Signature Selector"]
-        C3["Risk Score Slider: 1 to 99"]
-        C4["Recovery Probability: 5% to 98%"]
-        C5["Retry Boundary: 1/2, 2/2, 3/2"]
-        C6["Policy Threshold: 50 to 90"]
+    subgraph CLIENT["Frontend Presentation Layer (Next.js 16 / React 19 / Three.js)"]
+        UI_DASH["Merchant Command Center (/dashboard)"]
+        UI_OPP["Opportunity Engine Queue (/opportunities)"]
+        UI_TXN["Transaction Intelligence Explorer (/transactions)"]
+        UI_GRAPH["3D Recovery Intelligence Topology (Three.js WebGL)"]
+        UI_TRACE["Agent Trace 2.0 & Decision Replay Theater"]
+        UI_AUDIT["Audit & Compliance Center (/audit)"]
+        UI_SETT["Policy Boundary Configuration (/settings/policies)"]
     end
 
-    subgraph ENGINE["Deterministic Evaluation (evaluateCounterfactual)"]
-        CONTROLS --> E1["Pure Function Evaluation"]
-        E1 --> E2["Immutable Original Transaction Snapshot"]
+    subgraph API_GW["API Gateway & Serverless Layer (FastAPI & Vercel)"]
+        RT_AI["/api/ai/recovery (Claude 3.5 Sonnet / OpenRouter)"]
+        RT_DASH["/api/v1/dashboard/stats"]
+        RT_OPP["/api/v1/opportunities & /optimize/{id}"]
+        RT_TXN["/api/v1/transactions"]
+        RT_ANALYTICS["/api/v1/analytics/recovery"]
+        RT_POLICIES["/api/v1/settings/policies"]
+        RT_AUDIT["/api/v1/audit & /export"]
     end
 
-    subgraph COMPARISON["Real-Time Comparison & Delta"]
-        E2 --> D1["ORIGINAL DECISION Card"]
-        E2 --> D2["COUNTERFACTUAL DECISION Card"]
-        D1 & D2 --> D3["Visual Delta Chips: Risk 12 → 42"]
-        D3 --> D4["Outcome Flip Badge: STOPPED to APPROVED"]
-        D4 --> D5["Natural Language Explainability Rationale"]
+    subgraph RECOVERY_CORE["Recovery Intelligence Core"]
+        ENG_OPP["Opportunity Engine (Amount × Probability)"]
+        ENG_OPT["Strategy Optimizer (Best Safe Action)"]
+        ENG_POL["Deterministic Policy Engine (Risk < 70, Retries ≤ 2)"]
+        ENG_LEARN["Historical Learning Engine (Empirical Success Aggregator)"]
     end
+
+    subgraph INTEGRATION["Payment & External Services"]
+        RZP_API["Razorpay Payment Gateway (Test Mode / Orders / Links / Webhooks)"]
+        LLM_AI["OpenRouter / Anthropic Claude 3.5 Sonnet"]
+    end
+
+    subgraph PERSISTENCE["Durable Persistence (PostgreSQL / SQLAlchemy 2.0)"]
+        DB_TXN[("Transactions Table")]
+        DB_OPP[("Recovery Opportunities Table")]
+        DB_AUDIT[("Cryptographic Audit Ledger (SHA-256 Chained)")]
+        DB_STATS[("Historical Performance Aggregates")]
+        DB_POL[("Merchant Policy Configurations")]
+    end
+
+    CLIENT --> API_GW
+    API_GW --> RECOVERY_CORE
+    RECOVERY_CORE --> INTEGRATION
+    RECOVERY_CORE --> PERSISTENCE
 ```
 
 ---
 
-### E. Razorpay Test Mode & Real-Time Checkout Verification Bridge
+## 📸 Deployed Platform Sections & Visual Walkthrough
 
-No revenue is marked as recovered based on an AI prediction alone. Revenue enters the ledger **only when Razorpay confirms a captured payment**.
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Customer as User / Customer
-    participant UI as RazorRecover UI
-    participant Bridge as Payment Bridge (recovery-payment-bridge.js)
-    participant RZP_API as Razorpay Backend API (/api/razorpay/action)
-    participant RZP_Modal as Razorpay Standard Checkout
-
-    UI->>Bridge: Action "Retry payment" triggered
-    Bridge->>RZP_API: Create Test Order { amount, currency: INR }
-    RZP_API-->>Bridge: Return { orderId, keyId }
-    Bridge->>UI: Render RZP Recovery Verification Card ("WAITING FOR PAYMENT")
-    Customer->>Bridge: Click "Open Test Payment ↗"
-    Bridge->>Bridge: Hide verification card to prevent modal overlap
-    Bridge->>RZP_Modal: Open Razorpay Checkout Modal
-    Customer->>RZP_Modal: Complete Success / Failure Payment
-    alt Payment Succeeded
-        RZP_Modal-->>Bridge: Return razorpay_payment_id
-        Bridge->>RZP_API: Fetch Payment Details (paymentId)
-        RZP_API-->>Bridge: status === "captured", verified === true
-        Bridge->>UI: Status -> "VERIFIED" (Revenue added to Recovered Ledger)
-    else Payment Cancelled or Closed
-        RZP_Modal-->>Bridge: modal.ondismiss
-        Bridge->>UI: Status -> "WAITING FOR PAYMENT" (No revenue added)
-    end
-```
+### 1. Overview & 3D Recovery Intelligence Graph
+![Overview Screen](docs/screenshots/overview.png)
+> **Summary**: The opening experience displays the high-level revenue recovery posture, key headline metrics (Revenue at Risk, Money Recovered, Recovery Rate, Actions Gated), failure environment selector (Balanced, Checkout Drop-off, Gateway Degradation), and interactive 3D WebGL transaction node topology.
 
 ---
 
-### F. Decision Theater & Audit Trail Ledger
-
-* **Decision Theater Modal:** Accessible deep-dive inspect tool detailing signal ingestion, classification latency, model confidence, and policy rules.
-* **Cryptographic Event Hash:** Every recovery decision outputs a deterministic SHA-256 audit fingerprint (`hash: 9f2a…e81c`) ensuring compliance traceability.
-* **100-Event Synthetic Streams:** Includes 3 failure environments:
-  1. *Balanced:* Mixed failure distribution with standard gating.
-  2. *Checkout Drop-off:* High abandonment volume with payment link triggers.
-  3. *Gateway Degradation:* Transient bank downtimes with retry-first policies.
+### 2. Merchant Command Center (`/dashboard`)
+![Merchant Command Center](docs/screenshots/dashboard.png)
+> **Summary**: Operational mission control providing real-time telemetry: Revenue at Risk, Verified Recovered funds, Recovery Velocity (+₹4,250/sec), Active Playbook Attempts, and 7-Day Time-Series comparison of failed payment volume against captured revenue.
 
 ---
 
-## 🛠️ Key Problems Faced & Engineering Solutions
-
-| # | Challenge | Root Cause | Engineering Solution |
-|---|---|---|---|
-| **1** | **Fintech Safety vs Generative AI** | LLMs can hallucinate amounts, actions, or override risk thresholds. | Engineered a **Two-Tier Architecture**: AI layer provides advisory recommendations, while a **pure deterministic engine** holds sole execution authority. |
-| **2** | **405 Method Not Allowed on GitHub Pages** | GitHub Pages is a static file host that rejects HTTP `POST` requests to relative `/api/...` routes. | Updated GitHub Actions workflow to compile with `VITE_AI_API_URL` pointing directly to the live Vercel Serverless Function, enabling secure cross-origin API calls with CORS headers. |
-| **3** | **Production Blank Page (Vercel)** | `vite.config.ts` had a hardcoded `base: '/razorrecover-ai/'` for GitHub Pages, causing 404s on Vercel's root domain. | Configured a **dynamic base path** in Vite: `process.env.VITE_BASE_PATH \|\| (process.env.GITHUB_ACTIONS ? '/razorrecover-ai/' : '/')`. |
-| **4** | **Vercel Build Error (`recovery.js` pattern)** | Stale `vercel.json` referenced `api/ai/recovery.js` after rewriting the backend in TypeScript. | Cleaned `vercel.json` to `{ "framework": "vite" }`, allowing Vercel's builder to natively detect and compile `api/ai/recovery.ts` with zero pattern mismatches. |
-| **5** | **Checkout Popup Overlap & Missing Close** | The RZP Verification card had maximum z-index (`2147483647`) and no dismiss button, obstructing Razorpay's checkout modal. | Added an accessible `✕` close button, keyboard <kbd>Esc</kbd> support, and automated hiding/restoring during checkout modal lifecycle. |
-| **6** | **WebGL Performance & Memory Leaks** | Continuous 3D canvas recreation during state updates causes GPU context loss and frame drops. | Built a modular singleton scene manager with `IntersectionObserver` auto-pause, GPU geometry/material disposal, and zero per-frame allocations. |
+### 3. Recovery Opportunity Engine & Strategy Optimizer (`/opportunities`)
+![Recovery Opportunity Engine](docs/screenshots/opportunities.png)
+> **Summary**: Automatically calculates **Expected Recovery Value** ($\text{Recoverable Amount} \times \text{Recovery Probability}$) to prioritize highest-yield opportunities first. The **Strategy Optimizer** simulates candidate playbooks and selects the **Best Safe Action** permitted by policy constraints.
 
 ---
 
-## 💻 Tech Stack & Dependencies
-
-* **Frontend Framework:** React 19, TypeScript (Strict Mode)
-* **Build Tooling:** Vite 8, Rolldown bundler, GitHub Actions CI/CD
-* **3D Spatial Visualization:** Three.js (Native WebGL)
-* **State & Flow Management:** Zustand & React Hooks
-* **Styling:** Custom Vanilla CSS (Dark Fintech Aesthetics, Glassmorphism, Responsive Grid)
-* **Backend Runtime:** Vercel Serverless Functions (Node.js / Edge Runtime)
-* **AI & LLM Gateway:** OpenRouter API (`openrouter/free`, Claude Sonnet, Anthropic)
-* **Payment Infrastructure:** Razorpay SDK (Standard Checkout, Orders API, Payment Verification)
+### 4. Transaction Intelligence Explorer (`/transactions`)
+![Transaction Explorer](docs/screenshots/transactions.png)
+> **Summary**: Real-time searchable transaction table with quick-filter pills (*All*, *Pending Recovery*, *Verified Recovered*, *Failed/Stopped*, *Policy Blocked*, *High Risk ≥60*, *High Value ≥₹20k*). Clicking any item opens the **7-Stage Lifecycle Breadcrumb Drawer** verifying end-to-end evidence.
 
 ---
 
-## 🌐 Live Deployment Endpoints
-
-* **Production Frontend (GitHub Pages):**  
-  [https://lokeshwar2005.github.io/razorrecover-ai/](https://lokeshwar2005.github.io/razorrecover-ai/)
-* **Production Serverless Function (Vercel API):**  
-  [https://razorrecover-ai-teal.vercel.app/api/ai/recovery](https://razorrecover-ai-teal.vercel.app/api/ai/recovery)
-* **GitHub Repository:**  
-  [https://github.com/Lokeshwar2005/razorrecover-ai](https://github.com/Lokeshwar2005/razorrecover-ai)
+### 5. Historical Statistical Learning & Analytics (`/analytics/recovery`)
+![Recovery Analytics](docs/screenshots/analytics.png)
+> **Summary**: Transparent empirical recovery analytics based exclusively on captured Razorpay payments. Displays historical playbook recovery rates (*Retry Payment 85.7%*, *Payment Link 75.0%*, *Subscription 75.0%*, *Voice 70.0%*, *Customer Prompt 62.5%*) and failure signature effectiveness.
 
 ---
 
-## 🚀 Local Development & Repository Cloning Guide
+### 6. Merchant Policy Configuration (`/settings/policies`)
+![Policy Configuration](docs/screenshots/policies.png)
+> **Summary**: Configurable authorization guardrails ensuring the AI operates strictly within merchant risk tolerance. Controls include **Maximum Risk Ceiling (10–85%)**, **Max Automated Retries (1–4)**, **Minimum Recovery Probability Floor (30–80%)**, and explicit playbook toggles.
+
+---
+
+### 7. Audit & Compliance Center (`/audit`)
+![Audit Center](docs/screenshots/audit.png)
+> **Summary**: Tamper-evident, cryptographically chained event log using SHA-256 hashing. Every ingestion, AI diagnosis inference, deterministic policy decision, and payment verification is immutably recorded with one-click **CSV** and **JSON** export.
+
+---
+
+### 8. Decision Replay Theater & Agent Trace 2.0 (`/agent-trace`)
+![Agent Trace 2.0](docs/screenshots/agent_trace.png)
+> **Summary**: Step-by-step playback system allowing judges and compliance officers to step through the 8 stages of AI decision making (`DETECT ➔ DIAGNOSE ➔ SCORE ➔ PRIORITIZE ➔ POLICY ➔ ACTION ➔ VERIFY ➔ LEARN`) with real-time camera tracking on the 3D topology.
+
+---
+
+### 9. 7 Bounded Autonomous Recovery Playbooks & Counterfactual Lab
+![Recovery Playbooks](docs/screenshots/counterfactual.png)
+> **Summary**: Specialized domain recovery workflows (*Gateway Recovery*, *Checkout Drop-off Recovery*, *Subscription Dunning*, *B2B Receivables Chase*, *Mandate Retries*, *Hinglish Voice Recovery*, and *Promise-to-Pay Tracker*) integrated with the **Counterfactual Simulator** to test alternate policy scenarios.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend Framework** | Next.js 16 (App Router), React 19, TypeScript |
+| **Styling & Design System** | Tailwind CSS v4, PostCSS, Custom Fintech Gold Dark Theme |
+| **Visualizations & 3D** | Three.js (WebGL Node Graph), Canvas 2D, SVG Sparklines |
+| **State Management** | Zustand, React Hooks |
+| **Backend API** | FastAPI, Python 3.11, Pydantic v2, Uvicorn |
+| **Database & ORM** | PostgreSQL / SQLite, SQLAlchemy 2.0 |
+| **AI Diagnostic Layer** | OpenRouter API / Anthropic Claude 3.5 Sonnet |
+| **Payment Integration** | Razorpay Test Mode API (Standard Checkout, Payment Links, Webhooks) |
+| **Testing & Quality** | Pytest, Pytest-Asyncio, HTTPX TestClient, TypeScript Strict Mode |
+| **Deployment & CI/CD** | GitHub Pages (SPA static routing), Vercel Serverless Functions, GitHub Actions |
+
+---
+
+## 🧩 Problems Faced & How We Solved Them
+
+1. **GitHub Pages 404 on Direct Sub-Route Visits**:
+   - *Problem*: Direct URLs (e.g. `/dashboard`, `/transactions`) returned GitHub Pages 404 because static hosting lacks server-side path rewriting.
+   - *Solution*: Developed [`scripts/build-pages.js`](file:///Users/lokeshwarsudam/.gemini/antigravity/scratch/razorrecover-ai/scripts/build-pages.js) to generate physical static route folders (`dist/dashboard/index.html`, etc.) and created `dist/404.html` SPA fallback, paired with dynamic in-app History API routing.
+2. **Tailwind CSS v4 Utility Compilation in Vite**:
+   - *Problem*: Vite production builds stripped custom Tailwind v4 classes when building sub-components.
+   - *Solution*: Configured `@tailwindcss/postcss` and `autoprefixer` in [`postcss.config.js`](file:///Users/lokeshwarsudam/.gemini/antigravity/scratch/razorrecover-ai/postcss.config.js) and injected `@import "tailwindcss";` into the main stylesheet, compiling all card, badge, and grid utilities.
+3. **Cross-Origin Vercel Serverless 405 Method Not Allowed**:
+   - *Problem*: Calling relative `/api/ai/recovery` from GitHub Pages defaulted to the static host.
+   - *Solution*: Configured `VITE_AI_API_URL` environment variables during CI build to route requests directly to the production Vercel serverless function with CORS pre-flight handling.
+4. **Preventing AI Hallucinations in Financial Recovery**:
+   - *Problem*: LLMs can hallucinate success states or retry endlessly on invalid cards.
+   - *Solution*: Built a strict **Deterministic Policy Gate** that authorizes actions only when `risk_score < max_risk_ceiling`, `retry_count <= max_retry_ceiling`, and `probability >= min_probability_floor`.
+5. **Authoritative Financial Math**:
+   - *Problem*: Floating point arithmetic causes rounding errors in multi-currency transactions.
+   - *Solution*: Represented all financial values as safe integer minor units (paise) throughout Python models, database schemas, and TypeScript services.
+
+---
+
+## 🚀 Local Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -342,52 +213,44 @@ git clone https://github.com/Lokeshwar2005/razorrecover-ai.git
 cd razorrecover-ai
 ```
 
-### 2. Install Dependencies
+### 2. Frontend Setup & Run
 ```bash
+# Install Node dependencies
 npm install
-```
 
-### 3. Configure Environment Variables
-Copy the `.env.example` file to `.env.local`:
-```bash
-cp .env.example .env.local
-```
-
-Configure the following variables in `.env.local` or your Vercel Dashboard:
-```bash
-# Server-Side AI Inference (Vercel Serverless)
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-OPENROUTER_MODEL=openrouter/free
-
-# Razorpay Test Mode Credentials
-RAZORPAY_KEY_ID=your_razorpay_test_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_test_secret
-
-# Frontend API Destination (Optional, defaults to /api/ai/recovery or Vercel URL)
-VITE_AI_API_URL=https://razorrecover-ai-teal.vercel.app/api/ai/recovery
-```
-
-### 4. Run Locally
-```bash
+# Start Vite Development Server
 npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### 5. Build & Typecheck
+# Or start Next.js Development Server
+npm run dev:next
+```
+
+### 3. Backend Setup & Run (FastAPI)
 ```bash
+# Create and activate Python virtual environment
+python3 -m venv backend/.venv
+source backend/.venv/bin/activate
+
+# Install Python dependencies
+pip install fastapi uvicorn pydantic pydantic-settings sqlalchemy httpx pytest pytest-asyncio
+
+# Start FastAPI server
+uvicorn backend.app.main:app --reload --port 8000
+```
+
+### 4. Running Automated Test Suites
+```bash
+# Run 24 Python Pytest unit and integration tests
+PYTHONPATH=. pytest backend/app/tests
+
+# Run TypeScript compile check and production build
 npm run build
 ```
-Executes TypeScript type checking (`tsc --noEmit`) and compiles the production bundle via Vite.
 
 ---
 
-## 🔒 Security & Safe Harbour Note
-* RazorRecover AI runs exclusively against **synthetic payment data** and **Razorpay Test Mode**.
-* No real customer cards, bank accounts, or real funds are ever charged or moved.
-* API secrets and keys are never bundled in client-side code.
+## 👥 Authors & Acknowledgments
 
----
-
-<div align="center">
-  <sub>Built with ❤️ for the <strong>Razorpay AI Buildathon 2026</strong> · Track 3: AI Revenue Recovery</sub>
-</div>
+* **Developer**: Lokeshwar ([@Lokeshwar2005](https://github.com/Lokeshwar2005))
+* **Buildathon**: Developed for the **[Razorpay AI Buildathon 2026](https://razorpay.com/buildathon/) — Track 3: AI Revenue Recovery**
+* **Technologies**: Powered by Razorpay, FastAPI, Next.js, and Anthropic Claude via OpenRouter.
