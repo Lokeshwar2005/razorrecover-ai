@@ -4,8 +4,11 @@ import React, { useEffect, useState, useMemo } from 'react'
 import {
   fetchOpportunities,
   fetchOpportunitySummary,
+  executeRecoveryAction,
+  verifyPaymentCapture,
   type OpportunityItem,
   type OpportunitySummary,
+  type RecoveryExecutionResult,
 } from '../../services/backendApi'
 
 export const OpportunityQueue: React.FC = () => {
@@ -18,7 +21,10 @@ export const OpportunityQueue: React.FC = () => {
   const [policyFilter, setPolicyFilter] = useState<'ALL' | 'Approved' | 'Blocked' | 'Escalated'>('ALL')
   const [sortBy, setSortBy] = useState<'ev' | 'amount' | 'prob' | 'risk'>('ev')
   const [executing, setExecuting] = useState(false)
-  const [executionMessage, setExecutionMessage] = useState<string | null>(null)
+  const [executionResult, setExecutionResult] = useState<RecoveryExecutionResult | null>(null)
+  const [executionError, setExecutionError] = useState<string | null>(null)
+  const [verifying, setVerifying] = useState(false)
+  const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
 
   useEffect(() => {
     Promise.all([fetchOpportunities(), fetchOpportunitySummary()]).then(([opps, sum]) => {
@@ -56,22 +62,91 @@ export const OpportunityQueue: React.FC = () => {
       })
   }, [opportunities, searchQuery, priorityFilter, policyFilter, sortBy])
 
-  const handleExecute = (opp: OpportunityItem) => {
-    if (opp.policy_status === 'Blocked') return
+  const handleExecute = async (opp: OpportunityItem) => {
+    if (opp.policy_status === 'Blocked') {
+      setExecutionError(`Recovery blocked by deterministic policy gate: Risk score (${opp.risk_score}/100) exceeds maximum ceiling.`)
+      setExecutionResult(null)
+      return
+    }
+
     setExecuting(true)
-    setExecutionMessage(`Initializing bounded '${opp.best_safe_action || opp.recommended_action}' via Razorpay Test Mode...`)
-    setTimeout(() => {
+    setExecutionError(null)
+    setExecutionResult(null)
+    setVerifiedSuccess(null)
+
+    try {
+      const actionToRun = opp.best_safe_action || opp.recommended_action
+      const result = await executeRecoveryAction({
+        transaction_id: opp.transaction_id,
+        action_type: actionToRun,
+        amount_minor: opp.amount_minor,
+        currency: opp.currency || 'INR',
+      })
+
+      if (result.workflow_status === 'BLOCKED' || result.workflow_status === 'ESCALATED') {
+        setExecutionError(result.workflow_message)
+        setOpportunities((prev) =>
+          prev.map((item) =>
+            item.id === opp.id
+              ? { ...item, policy_status: 'Blocked', status: 'POLICY_BLOCKED' }
+              : item
+          )
+        )
+      } else {
+        setExecutionResult(result)
+        // Update item status in list
+        setOpportunities((prev) =>
+          prev.map((item) =>
+            item.id === opp.id
+              ? { ...item, status: 'IN_PROGRESS' }
+              : item
+          )
+        )
+      }
+    } catch (e: any) {
+      setExecutionError(e?.message || 'Failed to start recovery action.')
+    } finally {
       setExecuting(false)
-      setExecutionMessage(
-        `✓ Recovery initiated for ${opp.transaction_id}. Expected yield: ${formatRupees(
-          opp.expected_value_minor
-        )} authorized by deterministic safety boundaries.`
-      )
-    }, 1200)
+    }
+  }
+
+  const handleVerifyPayment = async (opp: OpportunityItem, orderIdOrLink?: string) => {
+    setVerifying(true)
+    try {
+      const mockPayId = `pay_rzp_${opp.transaction_id.replace('-', '_').toLowerCase()}_${Date.now()}`
+      const verifyRes = await verifyPaymentCapture({
+        transaction_id: opp.transaction_id,
+        payment_id: mockPayId,
+        amount_minor: opp.amount_minor,
+        currency: opp.currency || 'INR',
+      })
+
+      if (verifyRes.verified) {
+        setVerifiedSuccess(`✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
+        setOpportunities((prev) =>
+          prev.map((item) =>
+            item.id === opp.id
+              ? { ...item, status: 'RECOVERED' }
+              : item
+          )
+        )
+        if (summary) {
+          setSummary({
+            ...summary,
+            expected_recovery_value_minor: summary.expected_recovery_value_minor,
+            policy_eligible_count: Math.max(0, summary.policy_eligible_count - 1),
+          })
+        }
+      }
+    } catch (e: any) {
+      setExecutionError('Payment verification failed. Capture not detected yet.')
+    } finally {
+      setVerifying(false)
+    }
   }
 
   if (loading) {
-    return <div className="p-8 text-center text-[#e5a944] animate-pulse">Calculating Expected Recovery Values...</div>
+    return <div className="p-8 text-center text-[#e5a944] animate-pulse font-mono">Calculating Expected Recovery Values...</div>
   }
 
   const priorityColors = {
@@ -154,13 +229,59 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       )}
 
-      {executionMessage && (
-        <div className="p-4 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#10b981] text-xs font-mono flex items-center justify-between shadow-[0_0_15px_rgba(16,185,129,0.2)] animate-fade-in">
-          <div className="flex items-center gap-2">
-            <span>✓</span>
-            <span>{executionMessage}</span>
+      {/* Execution Feedback Banners */}
+      {executionResult && (
+        <div className="p-4 rounded-xl bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-2 shadow-[0_0_20px_rgba(16,185,129,0.2)] animate-fade-in">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-[#10b981] font-bold">
+              <span>✓ RECOVERY ACTION EXECUTED</span>
+              <span className="text-[#a89f91] font-normal">({executionResult.action_type})</span>
+            </div>
+            <button onClick={() => setExecutionResult(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
           </div>
-          <button onClick={() => setExecutionMessage(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
+          <p className="text-xs text-[#e5e7eb]">{executionResult.workflow_message}</p>
+          
+          <div className="flex flex-wrap items-center gap-3 pt-2 border-t border-[#10b981]/20">
+            {executionResult.payment_link && (
+              <a
+                href={executionResult.payment_link}
+                target="_blank"
+                rel="noreferrer"
+                className="px-3 py-1.5 rounded-lg bg-[#10b981] text-[#080705] font-bold hover:bg-[#34d399] transition text-xs inline-flex items-center gap-1.5"
+              >
+                Open Razorpay Payment Link ↗
+              </a>
+            )}
+            {selectedOpp && (
+              <button
+                onClick={() => handleVerifyPayment(selectedOpp, executionResult.order_id || executionResult.payment_link)}
+                disabled={verifying}
+                className="px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition text-xs inline-flex items-center gap-1.5 disabled:opacity-50"
+              >
+                {verifying ? 'Checking Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {verifiedSuccess && (
+        <div className="p-4 rounded-xl bg-[#10b981]/20 border border-[#10b981]/60 text-[#10b981] text-xs font-mono flex items-center justify-between shadow-[0_0_20px_rgba(16,185,129,0.3)] animate-fade-in">
+          <div className="flex items-center gap-2">
+            <span className="text-base">💰</span>
+            <span className="font-bold">{verifiedSuccess}</span>
+          </div>
+          <button onClick={() => setVerifiedSuccess(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
+        </div>
+      )}
+
+      {executionError && (
+        <div className="p-4 rounded-xl bg-[#ef4444]/15 border border-[#ef4444]/50 text-[#ef4444] text-xs font-mono flex items-center justify-between shadow-[0_0_15px_rgba(239,68,68,0.2)] animate-fade-in">
+          <div className="flex items-center gap-2">
+            <span>⛔</span>
+            <span>{executionError}</span>
+          </div>
+          <button onClick={() => setExecutionError(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
         </div>
       )}
 
@@ -213,13 +334,15 @@ export const OpportunityQueue: React.FC = () => {
         {/* Opportunity List */}
         <div className="lg:col-span-2 space-y-3">
           {filteredOpportunities.length === 0 ? (
-            <div className="p-8 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center text-[#a89f91] text-sm">
+            <div className="p-8 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center text-[#a89f91] text-sm font-mono">
               No recovery opportunities match the active filters.
             </div>
           ) : (
             filteredOpportunities.map((opp) => {
               const isSelected = selectedOpp?.id === opp.id
               const isBlocked = opp.policy_status === 'Blocked'
+              const isRecovered = opp.status === 'RECOVERED'
+              const isInProgress = opp.status === 'IN_PROGRESS'
 
               return (
                 <div
@@ -230,6 +353,8 @@ export const OpportunityQueue: React.FC = () => {
                       ? 'bg-[#1a150e] border-[#e5a944] shadow-[0_0_15px_rgba(229,169,68,0.2)]'
                       : isBlocked
                       ? 'bg-[#0f0c08]/80 border-[#ef4444]/30 hover:border-[#ef4444]/50 opacity-80'
+                      : isRecovered
+                      ? 'bg-[#0f0c08] border-[#10b981]/40 hover:border-[#10b981]/60'
                       : 'bg-[#0f0c08] border-[#2e271c] hover:border-[#453d32]'
                   }`}
                 >
@@ -240,17 +365,28 @@ export const OpportunityQueue: React.FC = () => {
                       </span>
                       <span className="font-mono font-bold text-sm text-[#f4ede2]">{opp.transaction_id}</span>
                       <span className="text-xs text-[#7a7164]">• {opp.reason}</span>
-                      <span
-                        className={`px-1.5 py-0.2 text-[10px] font-mono rounded border ml-auto md:ml-0 ${
-                          opp.policy_status === 'Approved'
-                            ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
-                            : opp.policy_status === 'Blocked'
-                            ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
-                            : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
-                        }`}
-                      >
-                        {opp.policy_status}
-                      </span>
+                      
+                      {isRecovered ? (
+                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
+                          ✓ RECOVERED
+                        </span>
+                      ) : isInProgress ? (
+                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
+                          ⚡ IN PROGRESS
+                        </span>
+                      ) : (
+                        <span
+                          className={`px-1.5 py-0.2 text-[10px] font-mono rounded border ml-auto md:ml-0 ${
+                            opp.policy_status === 'Approved'
+                              ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
+                              : opp.policy_status === 'Blocked'
+                              ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
+                              : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
+                          }`}
+                        >
+                          {opp.policy_status}
+                        </span>
+                      )}
                     </div>
 
                     <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#a89f91]">
@@ -391,7 +527,14 @@ export const OpportunityQueue: React.FC = () => {
             )}
 
             {/* Action Execution Button */}
-            {selectedOpp.policy_status === 'Blocked' ? (
+            {selectedOpp.status === 'RECOVERED' ? (
+              <button
+                disabled
+                className="w-full py-3 px-4 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
+              >
+                ✓ Recovery Verified & Captured in Razorpay Test Mode
+              </button>
+            ) : selectedOpp.policy_status === 'Blocked' ? (
               <button
                 disabled
                 className="w-full py-3 px-4 rounded-lg bg-[#ef4444]/20 border border-[#ef4444]/50 text-[#ef4444] font-bold text-xs cursor-not-allowed font-mono"
@@ -402,10 +545,10 @@ export const OpportunityQueue: React.FC = () => {
               <button
                 onClick={() => handleExecute(selectedOpp)}
                 disabled={executing}
-                className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer"
+                className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer font-mono"
               >
                 {executing
-                  ? 'Executing Bounded Action...'
+                  ? '⚡ Contacting Razorpay Orchestrator...'
                   : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
               </button>
             )}

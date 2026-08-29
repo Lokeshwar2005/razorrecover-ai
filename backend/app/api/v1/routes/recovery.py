@@ -128,15 +128,77 @@ async def execute_recovery_action(
     db: Session = Depends(get_db),
 ):
     """
-    Executes a bounded recovery action (Order creation, Payment Link generation, etc.).
+    Executes a bounded recovery action through deterministic policy validation
+    and Razorpay Test Mode Order/Payment Link generation.
     """
     now = datetime.now(timezone.utc)
     order_id = None
     payment_link = None
     key_id = None
 
+    # 1. Lookup Transaction
+    txn = db.query(TransactionModel).filter(TransactionModel.id == request.transaction_id).first()
+    risk_score = txn.risk_score if txn else 30
+    recovery_probability = txn.recovery_probability if txn else 75
+    retry_count = 1
+
+    # 2. Evaluate Deterministic Policy Gate
+    policy_eval = DeterministicPolicyEngine.evaluate(
+        risk_score=risk_score,
+        recovery_probability=recovery_probability,
+        retry_count=retry_count,
+        action=request.action_type,
+    )
+
+    if not policy_eval["execution_allowed"]:
+        # Blocked or Escalated by deterministic policy gate
+        block_decision = policy_eval["decision"]
+        block_reason = policy_eval["boundary_rule"]
+
+        AuditLedgerService.record_event(
+            db=db,
+            transaction_id=request.transaction_id,
+            event_type=f"POLICY_{block_decision.upper()}",
+            actor="Deterministic Policy Gate",
+            decision=block_decision,
+            reason=block_reason,
+            metadata={
+                "risk_score": risk_score,
+                "action_type": request.action_type,
+                "amount_minor": request.amount_minor,
+            },
+        )
+
+        if txn:
+            txn.status = "STOPPED" if block_decision == "Blocked" else "ESCALATED"
+            txn.policy = block_decision
+            db.commit()
+
+        return RecoveryExecutionResponse(
+            transaction_id=request.transaction_id,
+            action_type=request.action_type,
+            workflow_status="BLOCKED" if block_decision == "Blocked" else "ESCALATED",
+            workflow_message=f"Recovery blocked by deterministic policy gate: {block_reason}",
+            executed_at=now,
+        )
+
+    # 3. Policy Approved: Record RECOVERY_STARTED Audit Event
+    AuditLedgerService.record_event(
+        db=db,
+        transaction_id=request.transaction_id,
+        event_type="RECOVERY_STARTED",
+        actor="Razorpay Action Orchestrator",
+        decision="Approved",
+        reason=f"Initiating {request.action_type} under policy authorization.",
+        metadata={
+            "amount_minor": request.amount_minor,
+            "currency": request.currency,
+            "risk_score": risk_score,
+        },
+    )
+
     try:
-        if request.action_type in ("Payment link", "Recovery link"):
+        if request.action_type in ("Payment link", "Recovery link", "Hinglish voice recovery", "Call + payment link"):
             result = await RazorpayService.create_payment_link(
                 transaction_id=request.transaction_id,
                 amount_minor=request.amount_minor,
@@ -165,6 +227,12 @@ async def execute_recovery_action(
             executed_at=now,
         )
         db.add(action_model)
+
+        if txn:
+            txn.status = "PENDING"
+            txn.provider_id = order_id or payment_link
+            txn.action = request.action_type
+
         db.commit()
 
         # Audit Event

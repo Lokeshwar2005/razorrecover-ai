@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field
 # Common Types
 RecoveryResultType = Literal["Recovered", "Stopped", "Pending"]
 PolicyDecisionType = Literal["Approved", "Escalated"]
-WorkflowStatusType = Literal["READY", "RUNNING", "COMPLETE", "ESCALATED"]
+WorkflowStatusType = Literal["READY", "RUNNING", "COMPLETE", "ESCALATED", "BLOCKED", "FAILED"]
 PriorityType = Literal["CRITICAL", "HIGH", "MEDIUM", "LOW"]
 UserRoleType = Literal["ADMIN", "OPERATOR", "ANALYST", "AUDITOR"]
 
