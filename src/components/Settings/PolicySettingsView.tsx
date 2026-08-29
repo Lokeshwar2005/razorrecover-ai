@@ -7,6 +7,7 @@ export const PolicySettingsView: React.FC = () => {
   const [settings, setSettings] = useState<PolicySettings | null>(null)
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
+  const [savedSuccess, setSavedSuccess] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
 
   useEffect(() => {
@@ -16,16 +17,20 @@ export const PolicySettingsView: React.FC = () => {
     })
   }, [])
 
-  const handleSave = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!settings) return
+  const handleSave = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault()
+    if (!settings || saving) return
     setSaving(true)
     setMessage(null)
 
     try {
       const updated = await savePolicySettings(settings)
       setSettings(updated)
+      setSavedSuccess(true)
       setMessage('✓ Policy boundaries updated & active across deterministic evaluation gates.')
+      setTimeout(() => {
+        setSavedSuccess(false)
+      }, 3500)
     } catch (err) {
       setMessage('Error updating policy configuration.')
     } finally {
@@ -56,8 +61,11 @@ export const PolicySettingsView: React.FC = () => {
       </div>
 
       {message && (
-        <div className="p-4 rounded-lg bg-[#10b981]/10 border border-[#10b981]/40 text-[#10b981] text-sm font-mono flex items-center justify-between">
-          <span>{message}</span>
+        <div className="p-4 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#10b981] text-xs font-mono flex items-center justify-between shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+          <div className="flex items-center gap-2">
+            <span>✓</span>
+            <span>{message}</span>
+          </div>
           <button onClick={() => setMessage(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
         </div>
       )}
@@ -79,7 +87,7 @@ export const PolicySettingsView: React.FC = () => {
               max="85"
               value={settings.max_risk_ceiling}
               onChange={(e) => setSettings({ ...settings, max_risk_ceiling: Number(e.target.value) })}
-              className="w-full accent-[#e5a944] bg-[#15120c]"
+              className="w-full accent-[#e5a944] bg-[#15120c] cursor-pointer"
             />
             <p className="text-[11px] text-[#7a7164]">
               Transactions with a risk score above this ceiling are automatically blocked and escalated to human operators.
@@ -98,7 +106,7 @@ export const PolicySettingsView: React.FC = () => {
               max="4"
               value={settings.max_retry_ceiling}
               onChange={(e) => setSettings({ ...settings, max_retry_ceiling: Number(e.target.value) })}
-              className="w-full accent-[#e5a944] bg-[#15120c]"
+              className="w-full accent-[#e5a944] bg-[#15120c] cursor-pointer"
             />
             <p className="text-[11px] text-[#7a7164]">
               Prevents bank rate-limiting and merchant reputation degradation. (Default: 2)
@@ -117,7 +125,7 @@ export const PolicySettingsView: React.FC = () => {
               max="80"
               value={settings.min_recovery_probability}
               onChange={(e) => setSettings({ ...settings, min_recovery_probability: Number(e.target.value) })}
-              className="w-full accent-[#10b981] bg-[#15120c]"
+              className="w-full accent-[#10b981] bg-[#15120c] cursor-pointer"
             />
             <p className="text-[11px] text-[#7a7164]">
               Transactions with recovery likelihood below this floor require human review. (Default: 55%)
@@ -187,12 +195,32 @@ export const PolicySettingsView: React.FC = () => {
           </div>
         </div>
 
+        {/* Message Banner right above button */}
+        {message && (
+          <div className="p-3.5 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#10b981] text-xs font-mono flex items-center justify-between animate-fade-in shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+            <div className="flex items-center gap-2">
+              <span className="text-base">✓</span>
+              <span className="font-bold">{message}</span>
+            </div>
+            <button type="button" onClick={() => setMessage(null)} className="text-xs text-[#a89f91] hover:text-white">✕</button>
+          </div>
+        )}
+
         <button
           type="submit"
+          onClick={() => handleSave()}
           disabled={saving}
-          className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50"
+          className={`w-full py-3.5 px-4 rounded-lg font-bold text-sm transition duration-200 cursor-pointer ${
+            savedSuccess
+              ? 'bg-[#10b981] text-[#080705] shadow-[0_0_20px_rgba(16,185,129,0.5)] scale-[1.01]'
+              : 'bg-[#e5a944] text-[#080705] hover:bg-[#fcd34d] shadow-[0_0_15px_rgba(229,169,68,0.3)]'
+          } disabled:opacity-50`}
         >
-          {saving ? 'Saving Policy Configuration...' : 'Save & Activate Policy Boundaries ▶'}
+          {saving
+            ? 'Saving Policy Configuration...'
+            : savedSuccess
+            ? '✓ Policy Boundaries Active & Saved!'
+            : 'Save & Activate Policy Boundaries ▶'}
         </button>
       </form>
     </div>

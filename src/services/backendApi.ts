@@ -214,10 +214,25 @@ export async function fetchAnalytics(): Promise<AnalyticsData> {
   }
 }
 
+const POLICY_STORAGE_KEY = 'razorrecover_merchant_policies'
+
 export async function fetchPolicySettings(): Promise<PolicySettings> {
+  if (typeof window !== 'undefined') {
+    try {
+      const cached = localStorage.getItem(POLICY_STORAGE_KEY)
+      if (cached) return JSON.parse(cached)
+    } catch (e) {}
+  }
+
   try {
     const res = await fetch(`${API_BASE}/settings/policies`, { signal: AbortSignal.timeout(3000) })
-    if (res.ok) return await res.json()
+    if (res.ok) {
+      const data = await res.json()
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(POLICY_STORAGE_KEY, JSON.stringify(data))
+      }
+      return data
+    }
   } catch (e) {
     // Fallback
   }
@@ -235,15 +250,29 @@ export async function fetchPolicySettings(): Promise<PolicySettings> {
 }
 
 export async function savePolicySettings(settings: PolicySettings): Promise<PolicySettings> {
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(POLICY_STORAGE_KEY, JSON.stringify(settings))
+      window.dispatchEvent(new CustomEvent('razorrecover:policy-updated', { detail: settings }))
+    } catch (e) {}
+  }
+
   try {
     const res = await fetch(`${API_BASE}/settings/policies`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(settings),
     })
-    if (res.ok) return await res.json()
+    if (res.ok) {
+      const saved = await res.json()
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(POLICY_STORAGE_KEY, JSON.stringify(saved))
+      }
+      return saved
+    }
   } catch (e) {
     // Return saved locally
   }
   return settings
 }
+
