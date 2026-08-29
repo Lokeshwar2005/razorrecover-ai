@@ -11,22 +11,24 @@ from backend.app.schemas.domain import (
 )
 from backend.app.services.recovery.opportunity import OpportunityEngine
 
+from backend.app.db.seed import seed_canonical_database
+
 router = APIRouter(prefix="/dashboard", tags=["Merchant Command Center"])
 
 
 @router.get("/stats", response_model=DashboardStatsResponse)
 def get_dashboard_stats(db: Session = Depends(get_db)):
+    seed_canonical_database(db)
     transactions = db.query(TransactionModel).all()
 
     total_at_risk_minor = sum(t.amount_minor for t in transactions)
     total_recovered_minor = sum(t.verified_amount_minor for t in transactions if t.status == "RECOVERED")
     failed_count = sum(1 for t in transactions if t.status == "STOPPED")
-    active_attempts_count = sum(1 for t in transactions if t.status == "PENDING")
-    policy_blocks_count = sum(1 for t in transactions if t.policy == "Escalated")
+    active_attempts_count = sum(1 for t in transactions if t.status in ("PENDING", "IN_PROGRESS"))
+    policy_blocks_count = sum(1 for t in transactions if t.policy in ("Escalated", "Blocked") or t.risk_score >= 70)
     
     total_count = len(transactions)
-    recovered_count = sum(1 for t in transactions if t.status == "RECOVERED")
-    recovery_rate = round((recovered_count / total_count * 100), 1) if total_count > 0 else 0.0
+    recovery_rate = round((total_recovered_minor / total_at_risk_minor * 100), 1) if total_at_risk_minor > 0 else 0.0
     
     avg_confidence = int(sum(t.confidence for t in transactions) / total_count) if total_count > 0 else 94
     

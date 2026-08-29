@@ -20,6 +20,9 @@ export const TransactionExplorer: React.FC = () => {
   const verifyPayment = useTransactionStore((s) => s.verifyPayment)
   const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
   const providerFeedStatus = useTransactionStore((s) => s.providerFeedStatus)
+  const syncStatus = useTransactionStore((s) => s.syncStatus)
+  const syncMessage = useTransactionStore((s) => s.syncMessage)
+  const lastSyncedAt = useTransactionStore((s) => s.lastSyncedAt)
 
   const metrics = useMemo(() => computeMetricsFromTransactions(transactions), [transactions])
 
@@ -261,6 +264,12 @@ export const TransactionExplorer: React.FC = () => {
           <p className="text-sm text-[#a89f91] mt-1">
             Deterministic transaction inspection across complete canonical store ({metrics.syntheticCount} Synthetic + {metrics.providerTestCount} Razorpay Test).
           </p>
+          {syncMessage && (
+            <div className="mt-2 text-xs font-mono text-[#10b981] flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
+              <span>{syncMessage}</span>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-wrap items-center gap-3 text-xs font-mono">

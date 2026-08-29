@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 import uuid
 
 from backend.app.db.models import TransactionModel
+from backend.app.db.seed import seed_canonical_database
 from backend.app.services.opportunities.schemas import (
     OpportunityDetailResponse,
     OpportunitySummaryMetrics,
@@ -30,19 +31,35 @@ class OpportunityService:
         priority: Optional[str] = None,
         policy_status: Optional[str] = None,
         status: Optional[str] = None,
+        source: Optional[str] = None,
+        search: Optional[str] = None,
         sort_by: str = "expected_value",
-        limit: int = 50,
+        limit: int = 200,
         offset: int = 0,
     ) -> List[OpportunityDetailResponse]:
-        from backend.app.api.v1.routes.transactions import seed_synthetic_transactions_if_empty
-        seed_synthetic_transactions_if_empty(db)
+        seed_canonical_database(db)
         query = db.query(TransactionModel)
 
-        if status:
+        if status and status.upper() != "ALL":
             query = query.filter(TransactionModel.status == status.upper())
-        else:
-            # Default to pending recovery transactions
-            query = query.filter(TransactionModel.status == "PENDING")
+
+        if source and source.lower() != "all":
+            query = query.filter(TransactionModel.source == source.lower())
+
+        if search:
+            s = search.strip()
+            search_pattern = f"%{s}%"
+            clean_num = s.lower().replace("txn-", "").replace("txn", "")
+            clean_pattern = f"%{clean_num}%" if clean_num else search_pattern
+            query = query.filter(
+                (TransactionModel.id.ilike(search_pattern))
+                | (TransactionModel.id.ilike(clean_pattern))
+                | (TransactionModel.provider_id.ilike(search_pattern))
+                | (TransactionModel.reason.ilike(search_pattern))
+                | (TransactionModel.action.ilike(search_pattern))
+                | (TransactionModel.source.ilike(search_pattern))
+                | (TransactionModel.status.ilike(search_pattern))
+            )
 
         transactions = query.all()
         results: List[OpportunityDetailResponse] = []
@@ -51,9 +68,9 @@ class OpportunityService:
             opp = cls._build_opportunity_from_transaction(t)
 
             # Apply in-memory filters
-            if priority and opp.priority_level.upper() != priority.upper():
+            if priority and priority.upper() != "ALL" and opp.priority_level.upper() != priority.upper():
                 continue
-            if policy_status and opp.policy_status.lower() != policy_status.lower():
+            if policy_status and policy_status.lower() != "all" and opp.policy_status.lower() != policy_status.lower():
                 continue
 
             results.append(opp)
@@ -88,8 +105,7 @@ class OpportunityService:
         db: Session,
         opportunity_id: str,
     ) -> Optional[OpportunityDetailResponse]:
-        from backend.app.api.v1.routes.transactions import seed_synthetic_transactions_if_empty
-        seed_synthetic_transactions_if_empty(db)
+        seed_canonical_database(db)
         raw_id = opportunity_id.replace("opp-", "")
         txn = db.query(TransactionModel).filter(
             (TransactionModel.id == opportunity_id) | (TransactionModel.id == raw_id)
@@ -102,9 +118,8 @@ class OpportunityService:
 
     @classmethod
     def get_summary_metrics(cls, db: Session) -> OpportunitySummaryMetrics:
-        transactions = db.query(TransactionModel).filter(
-            TransactionModel.status.in_(["PENDING", "FAILED"])
-        ).all()
+        seed_canonical_database(db)
+        transactions = db.query(TransactionModel).all()
 
         total_opps = len(transactions)
         total_risk_minor = sum(t.amount_minor for t in transactions)
@@ -154,7 +169,7 @@ class OpportunityService:
     @classmethod
     def refresh_opportunities(cls, db: Session) -> List[OpportunityDetailResponse]:
         """Refreshes all opportunities against the latest policy rules."""
-        return cls.get_opportunities(db=db, limit=50)
+        return cls.get_opportunities(db=db, limit=200)
 
     @classmethod
     def _build_opportunity_from_transaction(

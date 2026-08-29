@@ -19,6 +19,11 @@ export const OpportunityQueue: React.FC = () => {
   const setSelectedTransactionId = useTransactionStore((s) => s.setSelectedTransactionId)
   const executeRecovery = useTransactionStore((s) => s.executeRecovery)
   const verifyPayment = useTransactionStore((s) => s.verifyPayment)
+  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
+  const syncStatus = useTransactionStore((s) => s.syncStatus)
+  const syncMessage = useTransactionStore((s) => s.syncMessage)
+  const lastSyncedAt = useTransactionStore((s) => s.lastSyncedAt)
+  const [refreshingFeed, setRefreshingFeed] = useState(false)
 
   const [searchQuery, setSearchQuery] = useState('')
   const [activeFilter, setActiveFilter] = useState<
@@ -293,6 +298,15 @@ export const OpportunityQueue: React.FC = () => {
     }
   }
 
+  const handleRefreshFeed = async () => {
+    setRefreshingFeed(true)
+    try {
+      await refreshProviderFeed()
+    } finally {
+      setTimeout(() => setRefreshingFeed(false), 500)
+    }
+  }
+
   const priorityColors = {
     CRITICAL: 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/40',
     HIGH: 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/40',
@@ -315,20 +329,37 @@ export const OpportunityQueue: React.FC = () => {
           <p className="text-sm text-[#a89f91] mt-1">
             Search, filter, rank, and inspect every recovery opportunity ({breakdown.syntheticCount} Synthetic · {breakdown.razorpayTestCount} Razorpay Test · {breakdown.liveCount} Live).
           </p>
+          {syncMessage && (
+            <div className="mt-2 text-xs font-mono text-[#10b981] flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
+              <span>{syncMessage}</span>
+            </div>
+          )}
         </div>
 
-        {summary && (
-          <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
-            <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
-              <div className="text-[#7a7164] text-[10px]">TOTAL OPPORTUNITIES</div>
-              <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Canonical Items</div>
-            </div>
-            <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
-              <div className="text-[#7a7164] text-[10px]">EXPECTED RECOVERY</div>
-              <div className="text-[#10b981] font-bold">{formatRupees(summary.expected_recovery_value_minor)}</div>
-            </div>
-          </div>
-        )}
+        <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
+          {summary && (
+            <>
+              <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
+                <div className="text-[#7a7164] text-[10px]">TOTAL OPPORTUNITIES</div>
+                <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Canonical Items</div>
+              </div>
+              <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
+                <div className="text-[#7a7164] text-[10px]">EXPECTED RECOVERY</div>
+                <div className="text-[#10b981] font-bold">{formatRupees(summary.expected_recovery_value_minor)}</div>
+              </div>
+            </>
+          )}
+          <button
+            onClick={handleRefreshFeed}
+            disabled={refreshingFeed}
+            className="px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] hover:text-[#e5a944] transition flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+            title="Fetch and normalize latest Razorpay Test Mode payments"
+          >
+            <span className={refreshingFeed ? 'animate-spin' : ''}>🔄</span>
+            <span>{refreshingFeed ? 'Syncing...' : 'Refresh Feed'}</span>
+          </button>
+        </div>
       </div>
 
       {/* Summary KPI Cards (Entire Canonical Dataset) */}

@@ -85,7 +85,7 @@ export const MerchantDashboard: React.FC = () => {
             <span className="h-2.5 w-2.5 rounded-full bg-[#10b981] animate-ping" />
             <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Merchant Command Center</h1>
             <span className="px-2 py-0.5 text-xs font-mono rounded border border-[#10b981]/40 bg-[#10b981]/10 text-[#10b981]">
-              Live Telemetry • 100 Canonical Records
+              Live Telemetry • {canonicalMetrics.totalTransactions} Canonical Records
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">

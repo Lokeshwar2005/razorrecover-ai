@@ -23,6 +23,13 @@ class Settings(BaseSettings):
     # Database configuration (Defaults to local SQLite for tests, PostgreSQL in production)
     DATABASE_URL: str = "sqlite:///./razorrecover.db"
 
+    @property
+    def SQLALCHEMY_DATABASE_URL(self) -> str:
+        url = self.DATABASE_URL
+        if url.startswith("postgres://"):
+            url = url.replace("postgres://", "postgresql://", 1)
+        return url
+
     # AI Service (OpenRouter / Claude)
     OPENROUTER_API_KEY: str = ""
     OPENROUTER_MODEL: str = "openrouter/free"

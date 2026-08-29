@@ -15,13 +15,19 @@ from backend.app.api.v1.routes import (
     transactions,
 )
 from backend.app.core.config import settings
-from backend.app.db.session import init_db
+from backend.app.db.session import init_db, SessionLocal
+from backend.app.db.seed import seed_canonical_database
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Initialize database tables on startup
     init_db()
+    db = SessionLocal()
+    try:
+        seed_canonical_database(db)
+    finally:
+        db.close()
     yield
 
 

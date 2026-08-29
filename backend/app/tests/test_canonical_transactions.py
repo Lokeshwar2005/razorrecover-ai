@@ -36,10 +36,14 @@ def ensure_clean_canonical_db():
 
 def test_canonical_dataset_contains_100_synthetic_transactions():
     """Verify backend transaction API seeds and serves 100 canonical synthetic transactions."""
-    resp = client.get("/api/v1/transactions?limit=200")
+    resp = client.get("/api/v1/transactions?source=synthetic&limit=200")
     assert resp.status_code == 200
     data = resp.json()
     assert len(data) == 100
+
+    resp_all = client.get("/api/v1/transactions?limit=200")
+    assert resp_all.status_code == 200
+    assert len(resp_all.json()) >= 100
 
 
 def test_txn_1033_exists_in_canonical_dataset():
@@ -138,4 +142,29 @@ def test_razorpay_payments_feed_endpoint():
     assert "pay_TVWRbgbZZuldtX" in ids
     assert "pay_TVKcFPdvHDKIPQ" in ids
     assert "pay_TVKaknokzpndeV" in ids
+
+
+def test_health_endpoint_database_diagnostic():
+    """Verify GET /api/v1/health returns safe database connectivity diagnostic."""
+    resp = client.get("/api/v1/health")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["status"] == "healthy"
+    assert data["database_connected"] is True
+    assert data["database_type"] in ("sqlite", "postgresql")
+    assert data["canonical_transaction_count"] >= 100
+    assert "secret" not in str(data).lower()
+    assert "password" not in str(data).lower()
+
+
+def test_transactions_sync_endpoint():
+    """Verify POST /api/v1/transactions/sync merges provider payments into canonical database."""
+    resp = client.post("/api/v1/transactions/sync")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["status"] == "success"
+    assert data["synced_count"] >= 3
+    assert data["total_canonical_transactions"] >= 103
+    assert "last_synced_at" in data
+
 

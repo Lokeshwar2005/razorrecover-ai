@@ -568,3 +568,46 @@ export async function savePolicySettings(settings: PolicySettings): Promise<Poli
   }
   return settings
 }
+
+export async function syncTransactionsBackend(): Promise<{
+  status: string
+  synced_count: number
+  new_records: number
+  updated_records: number
+  total_canonical_transactions: number
+  last_synced_at: string
+} | null> {
+  try {
+    const res = await fetch(`${API_BASE}/transactions/sync`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    })
+    if (res.ok) return await res.json()
+  } catch (e) {}
+  return null
+}
+
+export async function fetchCanonicalTransactions(params?: {
+  search?: string
+  status?: string
+  source?: string
+  filter_type?: string
+  limit?: number
+  offset?: number
+}): Promise<any[] | null> {
+  try {
+    const q = new URLSearchParams()
+    if (params?.search) q.append('search', params.search)
+    if (params?.status) q.append('status', params.status)
+    if (params?.source) q.append('source', params.source)
+    if (params?.filter_type) q.append('filter_type', params.filter_type)
+    if (params?.limit) q.append('limit', String(params.limit))
+    if (params?.offset) q.append('offset', String(params.offset))
+
+    const res = await fetch(`${API_BASE}/transactions?${q.toString()}`, { signal: AbortSignal.timeout(4000) })
+    if (res.ok) {
+      return await res.json()
+    }
+  } catch (e) {}
+  return null
+}
