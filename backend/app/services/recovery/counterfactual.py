@@ -45,13 +45,19 @@ class CounterfactualService:
 
         outcome_flipped = orig_decision != cf_decision
 
+        orig_amount = original_txn.get("amount_minor", 249900)
+        orig_prob = original_txn.get("recovery_probability", 72)
+        orig_ev = int((orig_amount * orig_prob) / 100) if orig_decision == "Approved" else 0
+        cf_ev = int((request.amount_minor * request.recovery_probability) / 100) if cf_decision == "Approved" else 0
+        ev_delta = cf_ev - orig_ev
+
         # Build Variable Deltas
         deltas: List[VariableDelta] = [
             VariableDelta(
                 variable="Amount",
-                original=f"₹{original_txn.get('amount_minor', 249900) // 100:,}",
+                original=f"₹{orig_amount // 100:,}",
                 counterfactual=f"₹{request.amount_minor // 100:,}",
-                changed=(original_txn.get("amount_minor", 0) != request.amount_minor),
+                changed=(orig_amount != request.amount_minor),
             ),
             VariableDelta(
                 variable="Failure Reason",
@@ -61,20 +67,20 @@ class CounterfactualService:
             ),
             VariableDelta(
                 variable="Risk Score",
-                original=original_txn.get("risk_score", 28),
-                counterfactual=request.risk_score,
+                original=str(original_txn.get("risk_score", 28)),
+                counterfactual=str(request.risk_score),
                 changed=(original_txn.get("risk_score") != request.risk_score),
             ),
             VariableDelta(
-                variable="Recovery Prob.",
+                variable="Recovery Probability",
                 original=f"{original_txn.get('recovery_probability', 72)}%",
                 counterfactual=f"{request.recovery_probability}%",
                 changed=(original_txn.get("recovery_probability") != request.recovery_probability),
             ),
             VariableDelta(
-                variable="Retry Count",
-                original="1/2",
-                counterfactual=f"{request.retry_attempts}/2",
+                variable="Retry Attempts",
+                original="1",
+                counterfactual=str(request.retry_attempts),
                 changed=(request.retry_attempts != 1),
             ),
             VariableDelta(
@@ -109,6 +115,9 @@ class CounterfactualService:
             counterfactual_decision=cf_decision,
             original_result=orig_result,
             counterfactual_result=cf_result,
+            original_expected_value_minor=orig_ev,
+            counterfactual_expected_value_minor=cf_ev,
+            expected_value_delta_minor=ev_delta,
             outcome_flipped=outcome_flipped,
             deltas=deltas,
             explanation=explanation,

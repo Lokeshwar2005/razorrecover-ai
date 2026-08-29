@@ -5,6 +5,7 @@ import DecisionExecutionSequence from '../src/components/DecisionExecutionSequen
 import RecoveryIntelligenceGraph from '../src/components/RecoveryIntelligenceGraph/RecoveryIntelligenceGraph'
 import CounterfactualLab from '../src/components/CounterfactualLab/CounterfactualLab'
 import AIRecoveryAdvisor from '../src/components/AIRecoveryAdvisor/AIRecoveryAdvisor'
+import { AgentTrace2 } from '../src/components/Trace/AgentTrace2'
 import { GraphTransactionContext } from '../src/types/graph'
 import { createTransaction, type RecoveryDirection } from '../src/recoveryEngine'
 
@@ -447,10 +448,16 @@ export function RazorRecoverApp() {
           <div className="logo">
             <span className="logoMark">R</span>
             <span>RazorRecover</span>
-            <em>AI 2.0</em>
+            <em>AI 3.0</em>
           </div>
           <div className="navTabs">
-            {['Overview', 'Simulation', 'Agent trace', 'Audit trail'].map((t) => (
+            <a href="/dashboard" className="navLink">Command Center</a>
+            <a href="/opportunities" className="navLink">Opportunities</a>
+            <a href="/transactions" className="navLink">Transactions</a>
+            <a href="/analytics/recovery" className="navLink">Analytics</a>
+            <a href="/settings/policies" className="navLink">Policies</a>
+            <a href="/audit" className="navLink">Audit</a>
+            {['Overview', 'Simulation', 'Agent trace'].map((t) => (
               <button className={tab === t ? 'active' : ''} onClick={() => setTab(t)} key={t}>
                 {t}
               </button>
@@ -474,7 +481,13 @@ export function RazorRecoverApp() {
         </div>
         <div className="mobileNav">
           <div className="mobileNavTabs">
-            {['Overview', 'Simulation', 'Agent trace', 'Audit trail'].map((t) => (
+            <a href="/dashboard" className="mobileNavLink">Command Center</a>
+            <a href="/opportunities" className="mobileNavLink">Opportunities</a>
+            <a href="/transactions" className="mobileNavLink">Transactions</a>
+            <a href="/analytics/recovery" className="mobileNavLink">Analytics</a>
+            <a href="/settings/policies" className="mobileNavLink">Policies</a>
+            <a href="/audit" className="mobileNavLink">Audit</a>
+            {['Overview', 'Simulation', 'Agent trace'].map((t) => (
               <button
                 className={tab === t ? 'active' : ''}
                 onClick={() => {
@@ -484,9 +497,7 @@ export function RazorRecoverApp() {
                       ? document.querySelector('.hero')
                       : t === 'Simulation'
                       ? document.querySelector('.lab')
-                      : t === 'Agent trace'
-                      ? document.querySelector('.tracePanel')
-                      : document.querySelector('.audit') || document.querySelector('.tracePanel')
+                      : document.querySelector('.tracePanel')
                   target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }}
                 key={t}
@@ -784,11 +795,13 @@ export function RazorRecoverApp() {
           </section>
         )}
 
+        <AgentTrace2 />
+
         {selected && <AIRecoveryAdvisor transaction={selected} />}
         {selected && <DecisionExecutionSequence key={`${selected.id}-${selected.amount}-${selected.workflowStatus}`} amount={selected.amount} />}
         {selected && <CounterfactualLab originalTransaction={selected} onActiveGraphTargetChange={handleCfSync} />}
 
-        <footer>RAZORRECOVER AI 2.0 · RAZORPAY TEST + SYNTHETIC DATA · NO REAL CUSTOMER FUNDS · BUILDATHON PROTOTYPE</footer>
+        <footer>RAZORRECOVER AI 3.0 · DETERMINISTIC BOUNDED AUTONOMY REVENUE RECOVERY PLATFORM · RAZORPAY TEST MODE</footer>
       </main>
 
       {toast && (

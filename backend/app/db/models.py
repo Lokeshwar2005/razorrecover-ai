@@ -6,6 +6,7 @@ from sqlalchemy import (
     Boolean,
     Column,
     DateTime,
+    Float,
     ForeignKey,
     Index,
     Integer,
@@ -23,11 +24,81 @@ class Base(DeclarativeBase):
     pass
 
 
+# ---------------------------------------------------------------------------
+# Multi-Tenant Foundation (Phases 36 & 37)
+# ---------------------------------------------------------------------------
+
+class OrganizationModel(Base):
+    __tablename__ = "organizations"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    name = Column(String(128), nullable=False)
+    slug = Column(String(64), nullable=False, unique=True, index=True)
+    created_at = Column(DateTime(timezone=True), default=utc_now, nullable=False)
+
+    merchants = relationship("MerchantModel", back_populates="organization", cascade="all, delete-orphan")
+
+
+class MerchantModel(Base):
+    __tablename__ = "merchants"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    organization_id = Column(String(36), ForeignKey("organizations.id", ondelete="CASCADE"), nullable=False, index=True)
+    name = Column(String(128), nullable=False)
+    razorpay_account_id = Column(String(64), nullable=True)
+    created_at = Column(DateTime(timezone=True), default=utc_now, nullable=False)
+
+    organization = relationship("OrganizationModel", back_populates="merchants")
+    users = relationship("UserModel", back_populates="merchant", cascade="all, delete-orphan")
+    transactions = relationship("TransactionModel", back_populates="merchant", cascade="all, delete-orphan")
+    policy_config = relationship("PolicyConfigurationModel", back_populates="merchant", uselist=False, cascade="all, delete-orphan")
+
+
+class UserModel(Base):
+    __tablename__ = "users"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    merchant_id = Column(String(36), ForeignKey("merchants.id", ondelete="CASCADE"), nullable=False, index=True)
+    email = Column(String(255), nullable=False, unique=True, index=True)
+    name = Column(String(128), nullable=False)
+    role = Column(String(32), nullable=False, default="OPERATOR")  # "ADMIN" | "OPERATOR" | "ANALYST" | "AUDITOR"
+    created_at = Column(DateTime(timezone=True), default=utc_now, nullable=False)
+
+    merchant = relationship("MerchantModel", back_populates="users")
+
+
+class PolicyConfigurationModel(Base):
+    __tablename__ = "policy_configurations"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    merchant_id = Column(String(36), ForeignKey("merchants.id", ondelete="CASCADE"), nullable=False, unique=True, index=True)
+    
+    max_risk_ceiling = Column(Integer, nullable=False, default=70)
+    max_retry_ceiling = Column(Integer, nullable=False, default=2)
+    min_recovery_probability = Column(Integer, nullable=False, default=55)
+    
+    allow_retry_payment = Column(Boolean, nullable=False, default=True)
+    allow_payment_link = Column(Boolean, nullable=False, default=True)
+    allow_customer_prompt = Column(Boolean, nullable=False, default=True)
+    allow_voice_recovery = Column(Boolean, nullable=False, default=True)
+    allow_ptp_tracker = Column(Boolean, nullable=False, default=True)
+    
+    updated_at = Column(DateTime(timezone=True), default=utc_now, onupdate=utc_now, nullable=False)
+
+    merchant = relationship("MerchantModel", back_populates="policy_config")
+
+
+# ---------------------------------------------------------------------------
+# Core Transaction & Recovery Lifecycle (Phases 25, 26, 27, 28, 29, 31, 32)
+# ---------------------------------------------------------------------------
+
 class TransactionModel(Base):
     __tablename__ = "transactions"
 
     id = Column(String(64), primary_key=True, index=True)
-    # Monetary values stored in integer minor units (e.g. paise for INR, 100 paise = 1 INR)
+    merchant_id = Column(String(36), ForeignKey("merchants.id", ondelete="SET NULL"), nullable=True, index=True)
+    
+    # Monetary values in integer minor units (paise for INR)
     amount_minor = Column(BigInteger, nullable=False)
     currency = Column(String(3), nullable=False, default="INR")
     source = Column(String(16), nullable=False, default="synthetic")  # "synthetic" | "razorpay"
@@ -44,13 +115,14 @@ class TransactionModel(Base):
     policy = Column(String(16), nullable=False, default="Approved")  # "Approved" | "Escalated"
     explanation = Column(Text, nullable=True)
     
-    provider_id = Column(String(64), nullable=True)  # Razorpay payment/order ID if live
+    provider_id = Column(String(64), nullable=True)  # Razorpay payment/order ID
     verified_amount_minor = Column(BigInteger, nullable=False, default=0)
     
     created_at = Column(DateTime(timezone=True), default=utc_now, nullable=False, index=True)
     updated_at = Column(DateTime(timezone=True), default=utc_now, onupdate=utc_now, nullable=False)
 
     # Relationships
+    merchant = relationship("MerchantModel", back_populates="transactions")
     failure_events = relationship("FailureEventModel", back_populates="transaction", cascade="all, delete-orphan")
     ai_diagnoses = relationship("AIDiagnosisModel", back_populates="transaction", cascade="all, delete-orphan")
     policy_decisions = relationship("PolicyDecisionModel", back_populates="transaction", cascade="all, delete-orphan")
@@ -58,10 +130,12 @@ class TransactionModel(Base):
     payment_verifications = relationship("PaymentVerificationModel", back_populates="transaction", cascade="all, delete-orphan")
     audit_events = relationship("AuditEventModel", back_populates="transaction", cascade="all, delete-orphan")
     agent_traces = relationship("AgentTraceModel", back_populates="transaction", cascade="all, delete-orphan")
+    opportunity = relationship("RecoveryOpportunityModel", back_populates="transaction", uselist=False, cascade="all, delete-orphan")
 
     __table_args__ = (
         Index("ix_transactions_status_created", "status", "created_at"),
         Index("ix_transactions_source_status", "source", "status"),
+        Index("ix_transactions_risk_prob", "risk_score", "recovery_probability"),
     )
 
 
@@ -88,7 +162,9 @@ class AIDiagnosisModel(Base):
     recommended_action = Column(String(64), nullable=False)
     confidence = Column(Integer, nullable=False)
     recovery_probability = Column(Integer, nullable=False)
+    priority = Column(String(16), nullable=False, default="MEDIUM")  # "CRITICAL" | "HIGH" | "MEDIUM" | "LOW"
     explanation = Column(Text, nullable=False)
+    reasoning_factors_json = Column(Text, nullable=True)
     model_name = Column(String(64), nullable=False, default="openrouter/free")
     created_at = Column(DateTime(timezone=True), default=utc_now, nullable=False)
 
@@ -170,13 +246,49 @@ class AgentTraceModel(Base):
 
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     transaction_id = Column(String(64), ForeignKey("transactions.id", ondelete="CASCADE"), nullable=False, index=True)
-    stage_index = Column(Integer, nullable=False)  # 0 to 6
+    stage_index = Column(Integer, nullable=False)  # 0 to 7 (8 stages in Trace 2.0)
     stage_name = Column(String(64), nullable=False)
     status = Column(String(16), nullable=False)  # "WAIT" | "DONE" | "STOP"
+    input_summary = Column(Text, nullable=True)
+    output_summary = Column(Text, nullable=True)
+    decision = Column(String(32), nullable=True)
     detail = Column(Text, nullable=False)
     recorded_at = Column(DateTime(timezone=True), default=utc_now, nullable=False)
 
     transaction = relationship("TransactionModel", back_populates="agent_traces")
+
+
+class RecoveryOpportunityModel(Base):
+    __tablename__ = "recovery_opportunities"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    transaction_id = Column(String(64), ForeignKey("transactions.id", ondelete="CASCADE"), nullable=False, unique=True, index=True)
+    
+    amount_minor = Column(BigInteger, nullable=False)
+    recovery_probability = Column(Integer, nullable=False)
+    expected_value_minor = Column(BigInteger, nullable=False)  # Amount * Probability
+    priority = Column(String(16), nullable=False, default="HIGH", index=True)  # "CRITICAL" | "HIGH" | "MEDIUM" | "LOW"
+    recommended_action = Column(String(64), nullable=False)
+    policy_status = Column(String(16), nullable=False, default="Approved")
+    
+    created_at = Column(DateTime(timezone=True), default=utc_now, nullable=False)
+
+    transaction = relationship("TransactionModel", back_populates="opportunity")
+
+
+class HistoricalStatModel(Base):
+    __tablename__ = "historical_stats"
+
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    failure_signature = Column(String(128), nullable=False, index=True)
+    action_type = Column(String(64), nullable=False, index=True)
+    
+    total_attempts = Column(Integer, nullable=False, default=0)
+    verified_recoveries = Column(Integer, nullable=False, default=0)
+    success_rate = Column(Float, nullable=False, default=0.0)
+    total_recovered_minor = Column(BigInteger, nullable=False, default=0)
+    
+    updated_at = Column(DateTime(timezone=True), default=utc_now, onupdate=utc_now, nullable=False)
 
 
 class CounterfactualRunModel(Base):
@@ -194,6 +306,9 @@ class CounterfactualRunModel(Base):
     
     original_decision = Column(String(16), nullable=False)
     counterfactual_decision = Column(String(16), nullable=False)
+    original_expected_value_minor = Column(BigInteger, nullable=False, default=0)
+    counterfactual_expected_value_minor = Column(BigInteger, nullable=False, default=0)
+    
     outcome_flipped = Column(Boolean, nullable=False, default=False)
     delta_json = Column(Text, nullable=True)
     explanation = Column(Text, nullable=False)
