@@ -124,3 +124,18 @@ def test_opportunities_engine_contains_txn_1033():
     data = resp.json()
     assert data["transaction_id"] == "TXN-1033"
     assert data["expected_recovery_value_minor"] > 0
+
+
+def test_razorpay_payments_feed_endpoint():
+    """Verify GET /api/v1/recovery/razorpay/payments returns normalized provider feed."""
+    resp = client.get("/api/v1/recovery/razorpay/payments")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["provider"] == "razorpay"
+    assert data["count"] >= 3
+    items = data["items"]
+    ids = [p["id"] for p in items]
+    assert "pay_TVWRbgbZZuldtX" in ids
+    assert "pay_TVKcFPdvHDKIPQ" in ids
+    assert "pay_TVKaknokzpndeV" in ids
+

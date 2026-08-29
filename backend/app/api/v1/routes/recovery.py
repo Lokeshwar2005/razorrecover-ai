@@ -438,3 +438,12 @@ async def verify_payment(
             status_code=status.HTTP_502_BAD_GATEWAY,
             detail=f"Payment verification lookup failed: {str(e)}",
         )
+
+
+@router.get("/razorpay/payments")
+async def list_razorpay_payments():
+    """
+    Retrieves recent Razorpay payments feed for normalization into the canonical data layer.
+    """
+    return await RazorpayService.list_payments(count=100)
+

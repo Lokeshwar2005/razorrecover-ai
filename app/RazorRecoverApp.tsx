@@ -248,9 +248,16 @@ export function RazorRecoverApp() {
     ].slice(0, 20))
 
   useEffect(() => {
+    // Sync with canonical store provider feed
+    useTransactionStore.getState().refreshProviderFeed()
+
     const onRazorpayFeed = (event: Event) => {
       const detail = (event as CustomEvent<{ items?: RazorpayPayment[] }>).detail
-      const incoming = (detail?.items || []).map(mapRazorpayPayment).filter((x): x is EventItem => Boolean(x))
+      const rawItems = detail?.items || []
+      if (rawItems.length > 0) {
+        useTransactionStore.getState().ingestProviderPayments(rawItems, false)
+      }
+      const incoming = rawItems.map(mapRazorpayPayment).filter((x): x is EventItem => Boolean(x))
       if (!incoming.length) return
       setEvents((current) => [...incoming, ...current.filter((item) => !incoming.some((live) => live.id === item.id)).slice(0, 100)])
       const latest = incoming[0]

@@ -17,12 +17,16 @@ export const TransactionExplorer: React.FC = () => {
   const getTransactionById = useTransactionStore((s) => s.getTransactionById)
   const executeRecovery = useTransactionStore((s) => s.executeRecovery)
   const verifyPayment = useTransactionStore((s) => s.verifyPayment)
+  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
+  const providerFeedStatus = useTransactionStore((s) => s.providerFeedStatus)
 
   const metrics = useMemo(() => computeMetricsFromTransactions(transactions), [transactions])
 
+  const [sourceFilter, setSourceFilter] = useState<'all' | 'synthetic' | 'razorpay_test' | 'live'>('all')
   const [filter, setFilter] = useState<string>('all')
   const [search, setSearch] = useState<string>('')
   const [currentPage, setCurrentPage] = useState<number>(1)
+  const [refreshingFeed, setRefreshingFeed] = useState(false)
   const [executing, setExecuting] = useState(false)
   const [executionResult, setExecutionResult] = useState<{ orderId?: string; paymentLink?: string; message: string } | null>(null)
   const [executionError, setExecutionError] = useState<string | null>(null)
@@ -40,34 +44,50 @@ export const TransactionExplorer: React.FC = () => {
     }
   }, [setSelectedTransactionId])
 
-  // Filter & Search over the entire canonical dataset (100 records)
+  const handleRefreshFeed = async () => {
+    setRefreshingFeed(true)
+    try {
+      await refreshProviderFeed()
+    } finally {
+      setTimeout(() => setRefreshingFeed(false), 500)
+    }
+  }
+
+  // Filter & Search over the entire canonical dataset
   const filteredTransactions = useMemo(() => {
     return transactions.filter((txn) => {
-      // 1. Search match (Case-insensitive across ID, reason, action, direction, status, merchant, provider ID)
+      // 1. Source filter match
+      if (sourceFilter !== 'all' && txn.source !== sourceFilter) {
+        return false
+      }
+
+      // 2. Search match (Case-insensitive across ID, raw numeric, provider ID, partial provider ID, reason, action, direction, status, merchant)
       const q = search.trim().toLowerCase()
       let matchesSearch = true
       if (q) {
         const cleanId = txn.id.toLowerCase()
-        const cleanRawNum = txn.id.replace('TXN-', '').toLowerCase()
+        const cleanRawNum = txn.id.replace(/^txn-?/i, '').toLowerCase()
         const cleanReason = txn.reason.toLowerCase()
         const cleanAction = txn.action.toLowerCase()
         const cleanDirection = txn.direction.toLowerCase()
         const cleanStatus = txn.status.toLowerCase()
         const cleanMerchant = txn.merchant_id.toLowerCase()
         const cleanProviderId = (txn.provider_payment_id || '').toLowerCase()
+        const cleanSource = txn.source.toLowerCase()
 
         matchesSearch =
           cleanId.includes(q) ||
-          cleanRawNum.includes(q) ||
+          (cleanRawNum && cleanRawNum.includes(q)) ||
           cleanReason.includes(q) ||
           cleanAction.includes(q) ||
           cleanDirection.includes(q) ||
           cleanStatus.includes(q) ||
           cleanMerchant.includes(q) ||
-          cleanProviderId.includes(q)
+          cleanProviderId.includes(q) ||
+          cleanSource.includes(q)
       }
 
-      // 2. Filter category match
+      // 3. Category/Status filter match
       let matchesFilter = true
       if (filter === 'pending') matchesFilter = txn.status === 'PENDING' || txn.status === 'IN_PROGRESS'
       else if (filter === 'recovered') matchesFilter = txn.status === 'RECOVERED'
@@ -78,12 +98,12 @@ export const TransactionExplorer: React.FC = () => {
 
       return matchesSearch && matchesFilter
     })
-  }, [transactions, search, filter])
+  }, [transactions, sourceFilter, search, filter])
 
   // Reset pagination when search or filter changes
   useEffect(() => {
     setCurrentPage(1)
-  }, [search, filter])
+  }, [sourceFilter, search, filter])
 
   // Selected Transaction: resolve canonical instance
   const selectedTxn: CanonicalTransaction | null = useMemo(() => {
@@ -139,8 +159,8 @@ export const TransactionExplorer: React.FC = () => {
     setExecutionError(null)
 
     try {
-      const mockPayId = `pay_${selectedTxn.id.replace('-', '_').toLowerCase()}_${Date.now()}`
-      const res = await verifyPayment(selectedTxn.id, mockPayId, selectedTxn.amount_minor, selectedTxn.currency)
+      const payId = selectedTxn.provider_payment_id || `pay_${selectedTxn.id.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}_${Date.now()}`
+      const res = await verifyPayment(selectedTxn.id, payId, selectedTxn.amount_minor, selectedTxn.currency)
       if (res.verified) {
         setExecutionResult(null)
         setVerifiedSuccess(res.message || `✓ Verified Capture Confirmed! Recovered ₹${(selectedTxn.amount_minor / 100).toLocaleString('en-IN')} for ${selectedTxn.id}.`)
@@ -168,7 +188,7 @@ export const TransactionExplorer: React.FC = () => {
     }
     if (source === 'razorpay_test') {
       return (
-        <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#3b82f6]/20 text-[#3b82f6] border border-[#3b82f6]/40">
+        <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40">
           RAZORPAY TEST
         </span>
       )
@@ -189,15 +209,15 @@ export const TransactionExplorer: React.FC = () => {
             <span className="text-lg">🔎</span>
             <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Transaction Intelligence Explorer</h1>
             <span className="px-2.5 py-0.5 text-xs font-mono font-bold rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
-              {transactions.length} Canonical Transactions
+              {metrics.totalTransactions} Canonical Transactions
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Deterministic transaction inspection across complete canonical store with full lifecycle telemetry.
+            Deterministic transaction inspection across complete canonical store ({metrics.syntheticCount} Synthetic + {metrics.providerTestCount} Razorpay Test).
           </p>
         </div>
 
-        <div className="flex items-center gap-3 text-xs font-mono">
+        <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
           <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
             <div className="text-[#7a7164] text-[10px]">TOTAL AT RISK</div>
             <div className="text-[#ef4444] font-bold">{formatRupees(metrics.revenueAtRiskMinor)}</div>
@@ -206,16 +226,59 @@ export const TransactionExplorer: React.FC = () => {
             <div className="text-[#7a7164] text-[10px]">VERIFIED RECOVERED</div>
             <div className="text-[#10b981] font-bold">{formatRupees(metrics.verifiedRecoveredMinor)}</div>
           </div>
+          <button
+            onClick={handleRefreshFeed}
+            disabled={refreshingFeed}
+            className="px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] hover:text-[#e5a944] transition flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+            title="Fetch and normalize latest Razorpay Test Mode payments"
+          >
+            <span className={refreshingFeed ? 'animate-spin' : ''}>🔄</span>
+            <span>{refreshingFeed ? 'Syncing...' : 'Refresh Feed'}</span>
+          </button>
         </div>
       </div>
 
       {/* Filter and Search Bar */}
       <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-3">
+        {/* Source Switcher */}
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#2e271c]/50 pb-3 text-xs font-mono">
+          <div className="flex items-center gap-2">
+            <span className="text-[#7a7164] text-[11px]">DATA SOURCE:</span>
+            {[
+              { id: 'all', label: 'ALL SOURCES', count: metrics.totalTransactions },
+              { id: 'synthetic', label: 'SYNTHETIC', count: metrics.syntheticCount },
+              { id: 'razorpay_test', label: 'RAZORPAY TEST', count: metrics.providerTestCount },
+              { id: 'live', label: 'LIVE', count: metrics.liveCount },
+            ].map((src) => (
+              <button
+                key={src.id}
+                onClick={() => setSourceFilter(src.id as any)}
+                className={`px-2.5 py-1 rounded border transition flex items-center gap-1.5 ${
+                  sourceFilter === src.id
+                    ? 'bg-[#e5a944] text-[#080705] border-[#e5a944] font-bold'
+                    : 'bg-[#15120c] text-[#a89f91] border-[#2e271c] hover:border-[#453d32]'
+                }`}
+              >
+                <span>{src.label}</span>
+                <span className={`px-1.5 py-0.2 rounded text-[10px] ${sourceFilter === src.id ? 'bg-[#080705]/20 text-[#080705]' : 'bg-[#2e271c] text-[#a89f91]'}`}>
+                  {src.count}
+                </span>
+              </button>
+            ))}
+          </div>
+
+          <div className="text-[11px] text-[#7a7164] flex items-center gap-1.5">
+            <span className={`w-2 h-2 rounded-full ${providerFeedStatus === 'connected' ? 'bg-[#10b981]' : 'bg-[#e5a944]'}`} />
+            <span>Feed: {providerFeedStatus === 'connected' ? 'Razorpay Test Connected' : 'Synthetic Mode'}</span>
+          </div>
+        </div>
+
+        {/* Search input and status pills */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="w-full md:w-96 relative">
             <input
               type="text"
-              placeholder="Search by ID (e.g. 1033), reason, action..."
+              placeholder="Search by ID (e.g. 1033), provider (e.g. pay_TVWR), reason..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full px-3.5 py-2 pl-9 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] text-xs font-mono focus:outline-none focus:border-[#e5a944]"
@@ -239,11 +302,11 @@ export const TransactionExplorer: React.FC = () => {
           </div>
         </div>
 
-        {/* Dynamic Filter Pills */}
+        {/* Dynamic Category Filter Pills */}
         <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-[#2e271c]/50 text-xs font-mono">
-          <span className="text-[#7a7164] text-[11px]">FILTER:</span>
+          <span className="text-[#7a7164] text-[11px]">STATUS:</span>
           {[
-            { id: 'all', label: 'All', count: transactions.length },
+            { id: 'all', label: 'All Statuses', count: transactions.length },
             { id: 'pending', label: 'Pending', count: metrics.pendingCount },
             { id: 'recovered', label: 'Recovered', count: metrics.recoveredCount },
             { id: 'failed', label: 'Failed / Stopped', count: metrics.stoppedCount },
@@ -281,7 +344,7 @@ export const TransactionExplorer: React.FC = () => {
                 Searched across all {transactions.length} canonical records for "{search}".
               </p>
               <button
-                onClick={() => { setSearch(''); setFilter('all') }}
+                onClick={() => { setSearch(''); setFilter('all'); setSourceFilter('all') }}
                 className="mt-3 px-3 py-1.5 rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30 text-xs font-mono hover:bg-[#e5a944]/20"
               >
                 Clear Search & Filters
@@ -312,6 +375,11 @@ export const TransactionExplorer: React.FC = () => {
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="font-mono font-bold text-sm text-[#f4ede2]">{txn.id}</span>
                       {renderSourceBadge(txn.source)}
+                      {txn.provider_payment_id && (
+                        <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-[#15120c] text-[#7a7164] border border-[#2e271c]">
+                          {txn.provider_payment_id}
+                        </span>
+                      )}
                       <span className="text-xs text-[#7a7164]">• {txn.direction}</span>
                       
                       {isRecovered ? (
@@ -348,7 +416,7 @@ export const TransactionExplorer: React.FC = () => {
                   <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
                     <div className="text-[10px] font-mono text-[#7a7164]">AMOUNT</div>
                     <div className="text-base font-mono font-bold text-[#f4ede2]">
-                      {formatRupees(txn.amount_minor)}
+                      ₹{txn.amount.toLocaleString('en-IN')}
                     </div>
                   </div>
                 </div>
@@ -358,166 +426,161 @@ export const TransactionExplorer: React.FC = () => {
 
           {/* Pagination Controls */}
           {filteredTransactions.length > PAGE_SIZE && (
-            <div className="p-3 rounded-xl bg-[#0f0c08] border border-[#2e271c] flex items-center justify-between text-xs font-mono">
-              <button
-                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                disabled={currentPage === 1}
-                className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#a89f91] hover:text-[#f4ede2] disabled:opacity-30 disabled:cursor-not-allowed"
-              >
-                ◀ Previous
-              </button>
-
-              <div className="flex items-center gap-1">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                  <button
-                    key={page}
-                    onClick={() => setCurrentPage(page)}
-                    className={`w-7 h-7 rounded text-xs transition ${
-                      currentPage === page
-                        ? 'bg-[#e5a944] text-[#080705] font-bold'
-                        : 'bg-[#15120c] text-[#a89f91] hover:text-white border border-[#2e271c]'
-                    }`}
-                  >
-                    {page}
-                  </button>
-                ))}
+            <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
+              <div className="text-[#7a7164]">
+                Page {currentPage} of {totalPages}
               </div>
-
-              <button
-                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-                disabled={currentPage === totalPages}
-                className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#a89f91] hover:text-[#f4ede2] disabled:opacity-30 disabled:cursor-not-allowed"
-              >
-                Next ▶
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
+                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition"
+                >
+                  ◀ Prev
+                </button>
+                <button
+                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition"
+                >
+                  Next ▶
+                </button>
+              </div>
             </div>
           )}
         </div>
 
-        {/* Selected Transaction Lifecycle & Execution Panel */}
-        {selectedTxn ? (
-          <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-5">
-            <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
-              <div>
-                <h3 className="text-sm font-mono font-bold text-[#e5a944]">LIFECYCLE TRACE</h3>
-                <div className="text-xs text-[#a89f91]">Canonical Identity: {selectedTxn.id}</div>
-              </div>
-              {renderSourceBadge(selectedTxn.source)}
-            </div>
-
-            {/* Target Breakdown */}
-            <div className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1.5 text-xs font-mono">
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Transaction ID:</span>
-                <span className="text-[#f4ede2] font-bold">{selectedTxn.id}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Amount:</span>
-                <span className="text-[#f4ede2] font-bold">{formatRupees(selectedTxn.amount_minor)}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Failure Direction:</span>
-                <span className="text-[#e5a944]">{selectedTxn.direction}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Root Reason:</span>
-                <span className="text-[#f4ede2]">{selectedTxn.reason}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Risk Score:</span>
-                <span className={selectedTxn.risk_score >= 60 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>
-                  {selectedTxn.risk_score}/100
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Recovery Probability:</span>
-                <span className="text-[#10b981] font-bold">{selectedTxn.recovery_probability}%</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[#7a7164]">Deterministic Policy:</span>
-                <span className={selectedTxn.policy === 'Approved' ? 'text-[#10b981] font-bold' : 'text-[#ef4444] font-bold'}>
-                  {selectedTxn.policy}
-                </span>
-              </div>
-            </div>
-
-            {/* Explanation */}
-            <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-xs font-mono text-[#a89f91] space-y-1">
-              <div className="text-[10px] text-[#7a7164] font-bold">AI DIAGNOSIS & RATIONALE</div>
-              <p className="leading-relaxed text-[#f4ede2]">{selectedTxn.explanation}</p>
-            </div>
-
-            {/* Execution Banners */}
-            {executionResult && (
-              <div className="p-3.5 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-xs font-mono space-y-2 text-[#f4ede2]">
-                <div className="flex items-center justify-between text-[#10b981] font-bold">
-                  <span>⚡ ACTION EXECUTED</span>
-                  <button onClick={() => setExecutionResult(null)} className="text-[#a89f91] hover:text-white">✕</button>
+        {/* Selected Transaction: Lifecycle Trace & Action Terminal */}
+        {selectedTxn && (
+          <div className="space-y-4">
+            <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4">
+              <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
+                <div>
+                  <div className="text-xs font-mono text-[#7a7164]">LIFECYCLE TRACE</div>
+                  <h3 className="text-base font-mono font-bold text-[#e5a944]">{selectedTxn.id}</h3>
                 </div>
-                <p>{executionResult.message}</p>
-                <div className="flex items-center gap-2 pt-2 border-t border-[#10b981]/20">
+                {renderSourceBadge(selectedTxn.source)}
+              </div>
+
+              {/* Execution/Verification Feedback */}
+              {executionResult && (
+                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-1">
+                  <div className="font-bold text-[#10b981]">⚡ RECOVERY DISPATCHED</div>
+                  <div>{executionResult.message}</div>
                   {executionResult.paymentLink && (
                     <a
                       href={executionResult.paymentLink}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-2.5 py-1 rounded bg-[#10b981] text-[#080705] font-bold text-xs"
+                      className="text-[#10b981] underline block pt-1"
                     >
-                      Open Link ↗
+                      Open Razorpay Link ↗
                     </a>
                   )}
+                </div>
+              )}
+
+              {verifiedSuccess && (
+                <div className="p-3 rounded-lg bg-[#10b981]/20 border border-[#10b981]/60 text-[#10b981] text-xs font-mono font-bold">
+                  {verifiedSuccess}
+                </div>
+              )}
+
+              {executionError && (
+                <div className="p-3 rounded-lg bg-[#ef4444]/15 border border-[#ef4444]/50 text-[#ef4444] text-xs font-mono">
+                  ⛔ {executionError}
+                </div>
+              )}
+
+              {/* Transaction Specs */}
+              <div className="space-y-2 text-xs font-mono">
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Amount:</span>
+                  <span className="text-[#f4ede2] font-bold">₹{selectedTxn.amount.toLocaleString('en-IN')} ({selectedTxn.currency})</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Source:</span>
+                  <span className="text-[#f4ede2] uppercase">{selectedTxn.source}</span>
+                </div>
+                {selectedTxn.provider_payment_id && (
+                  <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                    <span className="text-[#7a7164]">Provider Payment ID:</span>
+                    <span className="text-[#fcd34d] font-bold">{selectedTxn.provider_payment_id}</span>
+                  </div>
+                )}
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Direction:</span>
+                  <span className="text-[#f4ede2]">{selectedTxn.direction}</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Reason:</span>
+                  <span className="text-[#ef4444]">{selectedTxn.reason}</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Risk Score:</span>
+                  <span className={selectedTxn.risk_score >= 60 ? 'text-[#ef4444] font-bold' : 'text-[#10b981]'}>
+                    {selectedTxn.risk_score}/100
+                  </span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Recovery Probability:</span>
+                  <span className="text-[#10b981] font-bold">{selectedTxn.recovery_probability}%</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Policy Gate:</span>
+                  <span className={selectedTxn.policy === 'Approved' ? 'text-[#10b981]' : 'text-[#ef4444]'}>
+                    {selectedTxn.policy}
+                  </span>
+                </div>
+                <div className="flex justify-between py-1">
+                  <span className="text-[#7a7164]">Timestamp:</span>
+                  <span className="text-[#a89f91]">{new Date(selectedTxn.created_at).toLocaleString('en-IN')}</span>
+                </div>
+              </div>
+
+              {/* AI Explanation Box */}
+              <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1">
+                <div className="text-[10px] font-mono text-[#e5a944] font-bold">AI DIAGNOSTIC EXPLANATION</div>
+                <p className="text-xs text-[#a89f91] leading-relaxed">{selectedTxn.explanation}</p>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="space-y-2 pt-2">
+                {selectedTxn.status === 'RECOVERED' ? (
+                  <button
+                    disabled
+                    className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
+                  >
+                    ✓ Payment Captured & Verified
+                  </button>
+                ) : selectedTxn.policy === 'Blocked' ? (
+                  <button
+                    disabled
+                    className="w-full py-2.5 rounded-lg bg-[#ef4444]/20 border border-[#ef4444]/50 text-[#ef4444] font-bold text-xs font-mono cursor-not-allowed"
+                  >
+                    ⛔ Blocked by Deterministic Policy Ceiling
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleExecuteRecovery}
+                    disabled={executing}
+                    className="w-full py-2.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs font-mono hover:bg-[#fcd34d] transition disabled:opacity-50 cursor-pointer"
+                  >
+                    {executing ? '⚡ Executing via Razorpay...' : `Execute Recovery (${selectedTxn.action}) ▶`}
+                  </button>
+                )}
+
+                {selectedTxn.status !== 'RECOVERED' && (
                   <button
                     onClick={handleVerifyPayment}
                     disabled={verifying}
-                    className="px-2.5 py-1 rounded bg-[#e5a944] text-[#080705] font-bold text-xs hover:bg-[#fcd34d]"
+                    className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
                   >
-                    {verifying ? 'Verifying...' : 'Verify Captured Payment Gate ▶'}
+                    {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
                   </button>
-                </div>
+                )}
               </div>
-            )}
-
-            {verifiedSuccess && (
-              <div className="p-3.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/60 text-xs font-mono text-[#10b981] flex items-center justify-between">
-                <span>{verifiedSuccess}</span>
-                <button onClick={() => setVerifiedSuccess(null)} className="text-[#a89f91] hover:text-white">✕</button>
-              </div>
-            )}
-
-            {executionError && (
-              <div className="p-3.5 rounded-lg bg-[#ef4444]/15 border border-[#ef4444]/50 text-xs font-mono text-[#ef4444] flex items-center justify-between">
-                <span>⛔ {executionError}</span>
-                <button onClick={() => setExecutionError(null)} className="text-[#a89f91] hover:text-white">✕</button>
-              </div>
-            )}
-
-            {/* Action Buttons */}
-            {selectedTxn.status === 'RECOVERED' ? (
-              <div className="p-3 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] text-center font-bold text-xs font-mono">
-                ✓ Verified Recovered in Razorpay Test Mode
-              </div>
-            ) : selectedTxn.policy === 'Blocked' ? (
-              <button
-                disabled
-                className="w-full py-3 px-4 rounded-lg bg-[#ef4444]/20 border border-[#ef4444]/50 text-[#ef4444] font-bold text-xs font-mono cursor-not-allowed"
-              >
-                ⛔ Recovery Blocked by Safety Gate
-              </button>
-            ) : (
-              <button
-                onClick={handleExecuteRecovery}
-                disabled={executing}
-                className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition font-mono shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50"
-              >
-                {executing
-                  ? '⚡ Contacting Razorpay Orchestrator...'
-                  : `Execute Recovery (${selectedTxn.action}) ▶`}
-              </button>
-            )}
-          </div>
-        ) : (
-          <div className="p-8 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center text-[#a89f91] font-mono text-xs">
-            Select a transaction to inspect its lifecycle trace.
+            </div>
           </div>
         )}
       </div>

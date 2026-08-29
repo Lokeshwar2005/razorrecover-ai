@@ -3,6 +3,7 @@ import { createTransaction, type RecoveryDirection } from '../recoveryEngine'
 import {
   executeRecoveryAction,
   verifyPaymentCapture,
+  fetchRazorpayFeed,
   type OpportunityItem,
   type OpportunitySummary,
 } from './backendApi'
@@ -96,50 +97,96 @@ export function generateCanonicalSyntheticTransactions(
 }
 
 /**
+ * Baseline Razorpay Test Mode payments (e.g. pay_TVWRbgbZZuldtX, pay_TVKcFPdvHDKIPQ, pay_TVKaknokzpndeV).
+ */
+export const INITIAL_RAZORPAY_TEST_PAYMENTS: RawProviderPayment[] = [
+  {
+    id: 'pay_TVWRbgbZZuldtX',
+    amount: 76800,
+    currency: 'INR',
+    status: 'captured',
+    method: 'card',
+    created_at: 1788015000,
+  },
+  {
+    id: 'pay_TVKcFPdvHDKIPQ',
+    amount: 76800,
+    currency: 'INR',
+    status: 'failed',
+    method: 'upi',
+    created_at: 1788014200,
+    error_description: 'Bank timeout - issuer unavailable',
+  },
+  {
+    id: 'pay_TVKaknokzpndeV',
+    amount: 76800,
+    currency: 'INR',
+    status: 'failed',
+    method: 'card',
+    created_at: 1788013800,
+    error_description: '3DS challenge expired',
+  },
+]
+
+/**
  * Normalizes incoming Razorpay Test Mode or Live webhook/feed payments into canonical transactions.
  * Strict Rule: Razorpay amount is ALWAYS minor units (paise). amount_minor = payment.amount.
+ * A captured provider payment is NOT counted as recovered until verified through RazorRecover.
  */
 export function normalizeRazorpayPayment(
   payment: RawProviderPayment,
   isLive: boolean = false
 ): CanonicalTransaction {
-  const amountMinor = payment.amount
+  const amountMinor = payment.amount || 0
   const amountRupees = Math.round(amountMinor / 100)
   const currency = (payment.currency || 'INR').toUpperCase()
   const statusLower = (payment.status || 'pending').toLowerCase()
 
+  // Status mapping:
+  // - failed -> STOPPED
+  // - authorized / created / captured -> PENDING (awaiting recovery / verification)
   let status: TransactionStatus = 'PENDING'
-  if (statusLower === 'captured' || statusLower === 'authorized') status = 'RECOVERED'
-  else if (statusLower === 'failed') status = 'STOPPED'
+  if (statusLower === 'failed') {
+    status = 'STOPPED'
+  } else {
+    status = 'PENDING'
+  }
 
   const createdTime = payment.created_at
     ? (payment.created_at > 1e11 ? new Date(payment.created_at).toISOString() : new Date(payment.created_at * 1000).toISOString())
     : new Date().toISOString()
 
-  const transactionId = payment.notes?.transaction_id || `PAY-${payment.id.replace('pay_', '')}`
+  // Keep transaction_id and provider_payment_id distinct
+  const transactionId = payment.notes?.transaction_id || `RZP-${payment.id}`
+  const reason = payment.error_description || (statusLower === 'captured' ? 'Checkout capture received' : 'Gateway degradation / bank timeout')
+  const direction = payment.error_description?.toLowerCase().includes('subscription')
+    ? 'Failed-subscription recovery'
+    : payment.error_description?.toLowerCase().includes('checkout')
+    ? 'Checkout drop-off'
+    : 'Payment degradation'
 
   return {
     id: transactionId,
-    merchant_id: payment.notes?.merchant_id || 'mer_default',
+    merchant_id: payment.notes?.merchant_id || 'mer_razorpay',
     amount: amountRupees,
     amount_minor: amountMinor,
     currency,
     source: isLive ? 'live' : 'razorpay_test',
     status,
-    direction: 'Payment degradation',
-    reason: payment.error_description || 'Payment failure / checkout drop-off',
-    action: 'Retry payment',
-    confidence: 90,
-    recovery_probability: 75,
-    risk_score: 25,
+    direction,
+    reason,
+    action: statusLower === 'failed' ? 'Retry payment' : 'Review payment',
+    confidence: 94,
+    recovery_probability: statusLower === 'failed' ? 72 : 88,
+    risk_score: statusLower === 'failed' ? 32 : 12,
     policy: 'Approved',
     explanation: `Ingested from Razorpay ${isLive ? 'Live' : 'Test Mode'} payment ${payment.id}.`,
-    latency: '450ms',
+    latency: '420ms',
     created_at: createdTime,
     provider: 'razorpay',
     provider_payment_id: payment.id,
     provider_status: payment.status,
-    verified_amount_minor: status === 'RECOVERED' ? amountMinor : 0,
+    verified_amount_minor: 0, // Never claimed as recovered until verified!
   }
 }
 
@@ -157,8 +204,9 @@ export function mergeCanonicalTransactions(
   // Add provider transactions first
   for (const txn of provider) {
     const key = `${txn.provider || 'prov'}_${txn.provider_payment_id || txn.id}`
-    if (!seenKeys.has(key)) {
+    if (!seenKeys.has(key) && !seenKeys.has(txn.id)) {
       seenKeys.add(key)
+      seenKeys.add(txn.id)
       merged.push(txn)
     }
   }
@@ -269,7 +317,8 @@ export function computeOpportunitySummary(opportunities: OpportunityItem[]): Opp
 export function computeMetricsFromTransactions(transactions: CanonicalTransaction[]) {
   const totalTransactions = transactions.length
   let syntheticCount = 0
-  let providerCount = 0
+  let providerTestCount = 0
+  let liveCount = 0
   let revenueAtRiskMinor = 0
   let verifiedRecoveredMinor = 0
   let pendingCount = 0
@@ -281,11 +330,12 @@ export function computeMetricsFromTransactions(transactions: CanonicalTransactio
 
   for (const t of transactions) {
     if (t.source === 'synthetic') syntheticCount++
-    else providerCount++
+    else if (t.source === 'razorpay_test') providerTestCount++
+    else if (t.source === 'live') liveCount++
 
     revenueAtRiskMinor += t.amount_minor
 
-    if (t.status === 'RECOVERED') {
+    if (t.status === 'RECOVERED' && (t.verified_amount_minor ?? 0) > 0) {
       recoveredCount++
       verifiedRecoveredMinor += t.verified_amount_minor || t.amount_minor
     } else if (t.status === 'STOPPED') {
@@ -307,7 +357,9 @@ export function computeMetricsFromTransactions(transactions: CanonicalTransactio
   return {
     totalTransactions,
     syntheticCount,
-    providerCount,
+    providerTestCount,
+    liveCount,
+    providerCount: providerTestCount + liveCount,
     revenueAtRiskMinor,
     verifiedRecoveredMinor,
     recoveryRate,
@@ -331,6 +383,7 @@ export interface CanonicalStoreState {
   setScenario: (scenario: 'balanced' | 'checkout' | 'degradation') => void
   setSelectedTransactionId: (id: string | null) => void
   ingestProviderPayments: (payments: RawProviderPayment[], isLive?: boolean) => void
+  refreshProviderFeed: () => Promise<void>
   updateTransactionStatus: (
     id: string,
     status: TransactionStatus,
@@ -357,13 +410,15 @@ export interface CanonicalStoreState {
 
 export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
   const initialSynthetic = generateCanonicalSyntheticTransactions('balanced')
+  const initialProvider = INITIAL_RAZORPAY_TEST_PAYMENTS.map((p) => normalizeRazorpayPayment(p, false))
+  const initialMerged = mergeCanonicalTransactions(initialSynthetic, initialProvider)
 
   return {
-    transactions: initialSynthetic,
-    providerTransactions: [],
+    transactions: initialMerged,
+    providerTransactions: initialProvider,
     selectedTransactionId: null,
     scenario: 'balanced',
-    providerFeedStatus: 'idle',
+    providerFeedStatus: 'connected',
 
     setScenario: (scenario) => {
       const synthetic = generateCanonicalSyntheticTransactions(scenario)
@@ -402,6 +457,17 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         transactions: merged,
         providerFeedStatus: 'connected',
       })
+    },
+
+    refreshProviderFeed: async () => {
+      try {
+        const feed = await fetchRazorpayFeed()
+        if (feed && Array.isArray(feed.items) && feed.items.length > 0) {
+          get().ingestProviderPayments(feed.items, feed.mode === 'live')
+        }
+      } catch (e) {
+        set({ providerFeedStatus: 'unavailable' })
+      }
     },
 
     updateTransactionStatus: (id, status, verifiedAmountMinor, providerId) => {
@@ -524,7 +590,9 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         (t) =>
           t.id.toUpperCase() === cleanId ||
           t.id.toUpperCase().replace('TXN-', '') === cleanId ||
-          (t.provider_payment_id && t.provider_payment_id.toUpperCase() === cleanId)
+          t.id.toUpperCase().replace('RZP-', '') === cleanId ||
+          (t.provider_payment_id && t.provider_payment_id.toUpperCase() === cleanId) ||
+          (t.provider_payment_id && t.provider_payment_id.toUpperCase().includes(cleanId))
       )
     },
 

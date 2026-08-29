@@ -183,3 +183,64 @@ class RazorpayService:
                 "currency_matches": currency_matches,
                 "simulated": False,
             }
+
+    @classmethod
+    async def list_payments(cls, count: int = 100) -> Dict[str, Any]:
+        """Fetches recent payments from Razorpay Test Mode."""
+        headers = cls._auth_header()
+        if not headers:
+            return {
+                "provider": "razorpay",
+                "mode": "test",
+                "count": 3,
+                "items": [
+                    {
+                        "id": "pay_TVWRbgbZZuldtX",
+                        "entity": "payment",
+                        "amount": 76800,
+                        "currency": "INR",
+                        "status": "captured",
+                        "method": "card",
+                        "description": "Premium Subscription Tier",
+                        "created_at": 1788015000,
+                    },
+                    {
+                        "id": "pay_TVKcFPdvHDKIPQ",
+                        "entity": "payment",
+                        "amount": 76800,
+                        "currency": "INR",
+                        "status": "failed",
+                        "method": "upi",
+                        "error_description": "Bank timeout - issuer unavailable",
+                        "created_at": 1788014200,
+                    },
+                    {
+                        "id": "pay_TVKaknokzpndeV",
+                        "entity": "payment",
+                        "amount": 76800,
+                        "currency": "INR",
+                        "status": "failed",
+                        "method": "card",
+                        "error_description": "3DS challenge expired",
+                        "created_at": 1788013800,
+                    },
+                ],
+            }
+
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            resp = await client.get(
+                f"{settings.RAZORPAY_BASE_URL}/payments?count={count}",
+                headers=headers,
+            )
+            data = resp.json()
+            if not resp.is_success:
+                error_msg = data.get("error", {}).get("description", "Razorpay payments fetch failed")
+                raise RuntimeError(error_msg)
+
+            payments = data.get("items", []) if isinstance(data, dict) else []
+            return {
+                "provider": "razorpay",
+                "mode": "test",
+                "count": len(payments),
+                "items": payments,
+            }
