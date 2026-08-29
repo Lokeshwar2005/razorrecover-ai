@@ -525,10 +525,12 @@ export class RecoveryGraphScene {
   }
 
   private handleWheel(e: WheelEvent) {
-    e.preventDefault()
-    this.targetZoom += e.deltaY * 0.004
-    // Strict zoom bounds
-    this.targetZoom = Math.max(6.8, Math.min(13.2, this.targetZoom))
+    if (e.ctrlKey || e.metaKey) {
+      e.preventDefault()
+      this.targetZoom += e.deltaY * 0.004
+      // Strict zoom bounds
+      this.targetZoom = Math.max(6.8, Math.min(13.2, this.targetZoom))
+    }
   }
 
   private handleClick() {

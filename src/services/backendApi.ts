@@ -384,6 +384,8 @@ export function launchRazorpayCheckout(options: {
             order_id: options.order_id,
             notes: options.notes,
             handler: (response: any) => {
+              document.body.style.overflow = ''
+              document.body.style.pointerEvents = ''
               options.onSuccess({
                 razorpay_payment_id: response.razorpay_payment_id,
                 razorpay_order_id: response.razorpay_order_id || options.order_id,
@@ -393,6 +395,8 @@ export function launchRazorpayCheckout(options: {
             },
             modal: {
               ondismiss: () => {
+                document.body.style.overflow = ''
+                document.body.style.pointerEvents = ''
                 if (options.onFailure) options.onFailure(new Error('Checkout dismissed by user.'))
                 resolve()
               },
@@ -400,10 +404,14 @@ export function launchRazorpayCheckout(options: {
           })
           rzp.open()
         } catch (e) {
+          document.body.style.overflow = ''
+          document.body.style.pointerEvents = ''
           if (options.onFailure) options.onFailure(e)
           resolve()
         }
       } else {
+        document.body.style.overflow = ''
+        document.body.style.pointerEvents = ''
         if (options.onFailure) options.onFailure(new Error('Razorpay Checkout SDK not loaded.'))
         resolve()
       }

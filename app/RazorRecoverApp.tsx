@@ -231,7 +231,7 @@ export function RazorRecoverApp() {
     }
   }, [canonicalSelectedId])
 
-  const addAudit = (event: string, detail: string, status: AuditItem['status'] = 'INFO') =>
+  const addAudit = (event: string, detail: string, status: AuditItem['status'] = 'INFO') => {
     setAudit((a) => [
       {
         time: new Date().toLocaleTimeString('en-IN', {
@@ -246,34 +246,47 @@ export function RazorRecoverApp() {
       },
       ...a,
     ].slice(0, 20))
+  }
+
+  const lastSeenPaymentIds = useRef<Set<string>>(new Set())
 
   useEffect(() => {
-    // Sync with canonical store provider feed
+    // Initial sync with canonical store provider feed
     useTransactionStore.getState().refreshProviderFeed()
 
     const onRazorpayFeed = (event: Event) => {
       const detail = (event as CustomEvent<{ items?: RazorpayPayment[] }>).detail
       const rawItems = detail?.items || []
-      if (rawItems.length > 0) {
-        useTransactionStore.getState().ingestProviderPayments(rawItems, false)
-      }
+      if (rawItems.length === 0) return
+
+      useTransactionStore.getState().ingestProviderPayments(rawItems, false)
+
       const incoming = rawItems.map(mapRazorpayPayment).filter((x): x is EventItem => Boolean(x))
       if (!incoming.length) return
-      setEvents((current) => [...incoming, ...current.filter((item) => !incoming.some((live) => live.id === item.id)).slice(0, 100)])
-      const latest = incoming[0]
-      setSelected(latest)
-      setProgress(100)
-      setRunning(false)
-      setActiveDirection(latest.direction)
-      setWorkflowStatus(latest.workflowStatus || 'READY')
-      setWorkflowMessage(latest.workflowMessage || 'Razorpay event ingested into the shared recovery ledger.')
-      addAudit('rzp.event.ingested', `${formatEventTime(latest.occurredAt)} · ${money(latest.amount)} · ${latest.reason}`, 'LIVE')
-      setToast(`Razorpay event ingested · ${money(latest.amount)}`)
-      window.setTimeout(() => {
-        document.getElementById('recovery-operations')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-        setToast('')
-      }, 700)
+
+      // Deduplicate new incoming items
+      const trulyNew = incoming.filter((item) => !lastSeenPaymentIds.current.has(item.id))
+      incoming.forEach((item) => lastSeenPaymentIds.current.add(item.id))
+
+      setEvents((current) => {
+        const existingIds = new Set(incoming.map((i) => i.id))
+        const remaining = current.filter((item) => !existingIds.has(item.id))
+        return [...incoming, ...remaining].slice(0, 100)
+      })
+
+      // Only select if user does not have a selection yet
+      setSelected((prev) => prev || incoming[0])
+
+      // Only show toast if a genuinely new, previously unseen payment arrived
+      if (trulyNew.length > 0) {
+        const latest = trulyNew[0]
+        addAudit('rzp.event.ingested', `${formatEventTime(latest.occurredAt)} · ${money(latest.amount)} · ${latest.reason}`, 'LIVE')
+        setToast(`Razorpay event ingested · ${money(latest.amount)}`)
+        window.setTimeout(() => setToast(''), 3000)
+      }
+      // Never scroll automatically on background feed events
     }
+
     window.addEventListener('razorpay:payment-feed', onRazorpayFeed)
     return () => window.removeEventListener('razorpay:payment-feed', onRazorpayFeed)
   }, [])

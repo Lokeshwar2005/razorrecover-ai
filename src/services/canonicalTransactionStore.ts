@@ -222,17 +222,22 @@ export function mergeCanonicalTransactions(
   return merged
 }
 
-/**
- * Pure function to derive all Recovery Opportunities directly from Canonical Transactions.
- */
-export function computeOpportunitiesFromTransactions(transactions: CanonicalTransaction[]): OpportunityItem[] {
-  return transactions.map((t) => {
-    const expectedValueMinor = Math.floor((t.amount_minor * t.recovery_probability) / 100)
-    let priority: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' = 'LOW'
-    if (expectedValueMinor >= 2000000 && t.policy === 'Approved') priority = 'CRITICAL'
-    else if (expectedValueMinor >= 1000000) priority = 'HIGH'
-    else if (expectedValueMinor >= 400000) priority = 'MEDIUM'
+const opportunitiesCache = new WeakMap<CanonicalTransaction[], OpportunityItem[]>()
+const opportunitySummaryCache = new WeakMap<OpportunityItem[], OpportunitySummary>()
+const metricsCache = new WeakMap<CanonicalTransaction[], ReturnType<typeof computeMetricsRaw>>()
 
+/**
+ * Pure function to project canonical transactions into the Recovery Opportunities model.
+ */
+export function computeOpportunitiesFromTransactions(
+  transactions: CanonicalTransaction[]
+): OpportunityItem[] {
+  const cached = opportunitiesCache.get(transactions)
+  if (cached) return cached
+
+  const result = transactions.map((t) => {
+    const rawVal = (t.amount_minor * t.recovery_probability) / 100
+    const expectedValueMinor = Math.round(rawVal)
     const priorityScore = Math.min(
       99,
       Math.round(
@@ -241,6 +246,13 @@ export function computeOpportunitiesFromTransactions(transactions: CanonicalTran
           (1 - t.risk_score / 100) * 25
       )
     )
+
+    let priority: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' = 'LOW'
+    if (expectedValueMinor >= 2000000 && t.policy === 'Approved') priority = 'CRITICAL'
+    else if (expectedValueMinor >= 1000000) priority = 'HIGH'
+    else if (expectedValueMinor >= 400000) priority = 'MEDIUM'
+
+    const yieldRupees = Math.floor(expectedValueMinor / 100)
 
     return {
       id: `opp-${t.id}`,
@@ -262,8 +274,8 @@ export function computeOpportunitiesFromTransactions(transactions: CanonicalTran
       risk_score: t.risk_score,
       status: t.status === 'RECOVERED' ? 'RECOVERED' : t.policy === 'Blocked' ? 'POLICY_BLOCKED' : 'ELIGIBLE',
       explainability: {
-        why_priority: `${priority} priority recovery candidate with ₹${(expectedValueMinor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })} expected recovery yield.`,
-        why_action: `Targeted automated intervention for ${t.reason.toLowerCase()} within policy boundaries.`,
+        why_priority: `${priority} priority recovery candidate with ₹${yieldRupees} expected recovery yield.`,
+        why_action: `Targeted automated intervention for ${t.reason} within policy boundaries.`,
         why_policy_status: `Evaluated by Deterministic Policy Engine (Risk ${t.risk_score}/100, Probability ${t.recovery_probability}%).`,
       },
       candidate_actions: [
@@ -281,25 +293,40 @@ export function computeOpportunitiesFromTransactions(transactions: CanonicalTran
       updated_at: t.updated_at,
     }
   })
+
+  opportunitiesCache.set(transactions, result)
+  return result
 }
 
 /**
  * Pure function to derive summary metrics for opportunities.
  */
 export function computeOpportunitySummary(opportunities: OpportunityItem[]): OpportunitySummary {
-  const totalRisk = opportunities.reduce((sum, o) => sum + o.amount_minor, 0)
-  const expectedRecovery = opportunities.reduce((sum, o) => sum + o.expected_value_minor, 0)
-  const eligible = opportunities.filter((o) => o.policy_status === 'Approved').length
-  const blocked = opportunities.filter((o) => o.policy_status === 'Blocked').length
-  const highPriority = opportunities.filter((o) => o.priority === 'CRITICAL' || o.priority === 'HIGH').length
+  const cached = opportunitySummaryCache.get(opportunities)
+  if (cached) return cached
+
+  let totalRisk = 0
+  let expectedRecovery = 0
+  let eligible = 0
+  let blocked = 0
+  let highPriority = 0
+  let probSum = 0
+
+  for (const o of opportunities) {
+    totalRisk += o.amount_minor
+    expectedRecovery += o.expected_value_minor
+    if (o.policy_status === 'Approved') eligible++
+    else if (o.policy_status === 'Blocked') blocked++
+    if (o.priority === 'CRITICAL' || o.priority === 'HIGH') highPriority++
+    probSum += o.recovery_probability
+  }
+
   const avgProb =
     opportunities.length > 0
-      ? Math.round(
-          (opportunities.reduce((sum, o) => sum + o.recovery_probability, 0) / opportunities.length) * 10
-        ) / 10
+      ? Math.round((probSum / opportunities.length) * 10) / 10
       : 75
 
-  return {
+  const result: OpportunitySummary = {
     total_opportunities: opportunities.length,
     total_revenue_at_risk_minor: totalRisk,
     expected_recovery_value_minor: expectedRecovery,
@@ -309,12 +336,12 @@ export function computeOpportunitySummary(opportunities: OpportunityItem[]): Opp
     average_recovery_probability: avgProb,
     mode: 'canonical-store',
   }
+
+  opportunitySummaryCache.set(opportunities, result)
+  return result
 }
 
-/**
- * Pure function to calculate dashboard & system KPIs from canonical transactions.
- */
-export function computeMetricsFromTransactions(transactions: CanonicalTransaction[]) {
+function computeMetricsRaw(transactions: CanonicalTransaction[]) {
   const totalTransactions = transactions.length
   let syntheticCount = 0
   let providerTestCount = 0
@@ -372,6 +399,17 @@ export function computeMetricsFromTransactions(transactions: CanonicalTransactio
   }
 }
 
+/**
+ * Pure function to calculate dashboard & system KPIs from canonical transactions.
+ */
+export function computeMetricsFromTransactions(transactions: CanonicalTransaction[]) {
+  const cached = metricsCache.get(transactions)
+  if (cached) return cached
+  const result = computeMetricsRaw(transactions)
+  metricsCache.set(transactions, result)
+  return result
+}
+
 export interface CanonicalStoreState {
   transactions: CanonicalTransaction[]
   providerTransactions: CanonicalTransaction[]
@@ -410,6 +448,19 @@ export interface CanonicalStoreState {
   getMetrics: () => ReturnType<typeof computeMetricsFromTransactions>
 }
 
+let lastIngestedFingerprint = ''
+let isRefreshingProviderFeed = false
+let cachedSynthetic: { scenario: string; items: CanonicalTransaction[] } | null = null
+
+function getCachedSyntheticTransactions(scenario: 'balanced' | 'checkout' | 'degradation'): CanonicalTransaction[] {
+  if (cachedSynthetic && cachedSynthetic.scenario === scenario) {
+    return cachedSynthetic.items
+  }
+  const items = generateCanonicalSyntheticTransactions(scenario)
+  cachedSynthetic = { scenario, items }
+  return items
+}
+
 export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
   const initialSynthetic = generateCanonicalSyntheticTransactions('balanced')
   const initialProvider = INITIAL_RAZORPAY_TEST_PAYMENTS.map((p) => normalizeRazorpayPayment(p, false))
@@ -437,12 +488,22 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
     },
 
     ingestProviderPayments: (rawPayments, isLive = false) => {
+      if (!rawPayments || rawPayments.length === 0) return
+
+      const fingerprint =
+        `${isLive ? 'live' : 'test'}_` +
+        rawPayments.map((p) => `${p.id}_${p.status || ''}_${p.amount || 0}`).join('|')
+      if (fingerprint === lastIngestedFingerprint && get().transactions.length > 0) {
+        return
+      }
+
       const normalized = rawPayments.map((p) => normalizeRazorpayPayment(p, isLive))
       const currentProvider = get().providerTransactions
-      
+
       const seen = new Set<string>()
       const updatedProvider: CanonicalTransaction[] = []
-      
+      let hasChanges = false
+
       for (const p of [...normalized, ...currentProvider]) {
         const key = `${p.provider || 'prov'}_${p.provider_payment_id || p.id}`
         if (!seen.has(key)) {
@@ -451,7 +512,28 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         }
       }
 
-      const synthetic = generateCanonicalSyntheticTransactions(get().scenario)
+      if (updatedProvider.length !== currentProvider.length) {
+        hasChanges = true
+      } else {
+        for (let i = 0; i < updatedProvider.length; i++) {
+          if (
+            updatedProvider[i].id !== currentProvider[i].id ||
+            updatedProvider[i].status !== currentProvider[i].status ||
+            updatedProvider[i].amount_minor !== currentProvider[i].amount_minor
+          ) {
+            hasChanges = true
+            break
+          }
+        }
+      }
+
+      lastIngestedFingerprint = fingerprint
+
+      if (!hasChanges && get().transactions.length > 0) {
+        return
+      }
+
+      const synthetic = getCachedSyntheticTransactions(get().scenario)
       const merged = mergeCanonicalTransactions(synthetic, updatedProvider)
 
       set({
@@ -462,6 +544,8 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
     },
 
     refreshProviderFeed: async () => {
+      if (isRefreshingProviderFeed) return
+      isRefreshingProviderFeed = true
       try {
         const feed = await fetchRazorpayFeed()
         if (feed && Array.isArray(feed.items) && feed.items.length > 0) {
@@ -469,6 +553,8 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         }
       } catch (e) {
         set({ providerFeedStatus: 'unavailable' })
+      } finally {
+        isRefreshingProviderFeed = false
       }
     },
 

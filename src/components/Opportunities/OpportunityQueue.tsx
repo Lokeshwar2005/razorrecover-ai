@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import {
   useTransactionStore,
   computeOpportunitiesFromTransactions,
@@ -23,6 +23,8 @@ export const OpportunityQueue: React.FC = () => {
   const [priorityFilter, setPriorityFilter] = useState<'ALL' | 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL')
   const [policyFilter, setPolicyFilter] = useState<'ALL' | 'Approved' | 'Blocked' | 'Escalated'>('ALL')
   const [sortBy, setSortBy] = useState<'ev' | 'amount' | 'prob' | 'risk'>('ev')
+  const [currentPage, setCurrentPage] = useState(1)
+  const PAGE_SIZE = 15
   const [executing, setExecuting] = useState(false)
   const [executionResult, setExecutionResult] = useState<RecoveryExecutionResult | null>(null)
   const [executionError, setExecutionError] = useState<string | null>(null)
@@ -92,6 +94,17 @@ export const OpportunityQueue: React.FC = () => {
         return b.expected_value_minor - a.expected_value_minor
       })
   }, [allOpportunities, searchQuery, priorityFilter, policyFilter, sortBy])
+
+  // Reset pagination when search/filter/sort changes
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [searchQuery, priorityFilter, policyFilter, sortBy])
+
+  const totalPages = Math.max(1, Math.ceil(filteredOpportunities.length / PAGE_SIZE))
+  const paginatedOpportunities = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE
+    return filteredOpportunities.slice(start, start + PAGE_SIZE)
+  }, [filteredOpportunities, currentPage])
 
   const handleExecute = async (opp: OpportunityItem) => {
     if (opp.policy_status === 'Blocked') {
@@ -382,7 +395,7 @@ export const OpportunityQueue: React.FC = () => {
               No recovery opportunities match the search & filter criteria.
             </div>
           ) : (
-            filteredOpportunities.map((opp) => {
+            paginatedOpportunities.map((opp) => {
               const isSelected = selectedOpp?.id === opp.id
               const isBlocked = opp.policy_status === 'Blocked'
               const isRecovered = opp.status === 'RECOVERED'
@@ -450,6 +463,31 @@ export const OpportunityQueue: React.FC = () => {
                 </div>
               )
             })
+          )}
+
+          {/* Pagination Controls */}
+          {filteredOpportunities.length > PAGE_SIZE && (
+            <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
+              <div className="text-[#7a7164]">
+                Showing {(currentPage - 1) * PAGE_SIZE + 1} - {Math.min(filteredOpportunities.length, currentPage * PAGE_SIZE)} of {filteredOpportunities.length} opportunities
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
+                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition cursor-pointer"
+                >
+                  ◀ Prev
+                </button>
+                <button
+                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition cursor-pointer"
+                >
+                  Next ▶
+                </button>
+              </div>
+            </div>
           )}
         </div>
 
