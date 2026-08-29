@@ -4,6 +4,7 @@ import {
   executeRecoveryAction,
   verifyPaymentCapture,
   type OpportunityItem,
+  type OpportunitySummary,
 } from './backendApi'
 
 export type TransactionSource = 'synthetic' | 'razorpay_test' | 'live'
@@ -96,13 +97,13 @@ export function generateCanonicalSyntheticTransactions(
 
 /**
  * Normalizes incoming Razorpay Test Mode or Live webhook/feed payments into canonical transactions.
+ * Strict Rule: Razorpay amount is ALWAYS minor units (paise). amount_minor = payment.amount.
  */
 export function normalizeRazorpayPayment(
   payment: RawProviderPayment,
   isLive: boolean = false
 ): CanonicalTransaction {
-  const isMinor = payment.amount > 100000 || payment.amount % 100 === 0
-  const amountMinor = isMinor ? payment.amount : payment.amount * 100
+  const amountMinor = payment.amount
   const amountRupees = Math.round(amountMinor / 100)
   const currency = (payment.currency || 'INR').toUpperCase()
   const statusLower = (payment.status || 'pending').toLowerCase()
@@ -144,31 +145,179 @@ export function normalizeRazorpayPayment(
 
 /**
  * Deduplicates and merges provider transactions with canonical synthetic transactions.
+ * Provider records are deduplicated by provider + provider_payment_id.
  */
 export function mergeCanonicalTransactions(
   synthetic: CanonicalTransaction[],
   provider: CanonicalTransaction[]
 ): CanonicalTransaction[] {
-  const seen = new Set<string>()
+  const seenKeys = new Set<string>()
   const merged: CanonicalTransaction[] = []
 
   // Add provider transactions first
   for (const txn of provider) {
-    if (!seen.has(txn.id)) {
-      seen.add(txn.id)
+    const key = `${txn.provider || 'prov'}_${txn.provider_payment_id || txn.id}`
+    if (!seenKeys.has(key)) {
+      seenKeys.add(key)
       merged.push(txn)
     }
   }
 
   // Add synthetic transactions
   for (const txn of synthetic) {
-    if (!seen.has(txn.id)) {
-      seen.add(txn.id)
+    if (!seenKeys.has(txn.id)) {
+      seenKeys.add(txn.id)
       merged.push(txn)
     }
   }
 
   return merged
+}
+
+/**
+ * Pure function to derive all Recovery Opportunities directly from Canonical Transactions.
+ */
+export function computeOpportunitiesFromTransactions(transactions: CanonicalTransaction[]): OpportunityItem[] {
+  return transactions.map((t) => {
+    const expectedValueMinor = Math.floor((t.amount_minor * t.recovery_probability) / 100)
+    let priority: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' = 'LOW'
+    if (expectedValueMinor >= 2000000 && t.policy === 'Approved') priority = 'CRITICAL'
+    else if (expectedValueMinor >= 1000000) priority = 'HIGH'
+    else if (expectedValueMinor >= 400000) priority = 'MEDIUM'
+
+    const priorityScore = Math.min(
+      99,
+      Math.round(
+        (expectedValueMinor / 5000000) * 40 +
+          (t.recovery_probability / 100) * 35 +
+          (1 - t.risk_score / 100) * 25
+      )
+    )
+
+    return {
+      id: `opp-${t.id}`,
+      opportunity_id: `opp-${t.id}`,
+      transaction_id: t.id,
+      amount_minor: t.amount_minor,
+      currency: t.currency,
+      failure_signature: t.reason,
+      recovery_probability: t.recovery_probability,
+      expected_value_minor: expectedValueMinor,
+      expected_recovery_value_minor: expectedValueMinor,
+      priority_score: priorityScore,
+      priority_level: priority,
+      priority: priority,
+      recommended_action: t.action,
+      best_safe_action: t.action,
+      policy_status: t.policy,
+      reason: t.reason,
+      risk_score: t.risk_score,
+      status: t.status === 'RECOVERED' ? 'RECOVERED' : t.policy === 'Blocked' ? 'POLICY_BLOCKED' : 'ELIGIBLE',
+      explainability: {
+        why_priority: `${priority} priority recovery candidate with ₹${(expectedValueMinor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })} expected recovery yield.`,
+        why_action: `Targeted automated intervention for ${t.reason.toLowerCase()} within policy boundaries.`,
+        why_policy_status: `Evaluated by Deterministic Policy Engine (Risk ${t.risk_score}/100, Probability ${t.recovery_probability}%).`,
+      },
+      candidate_actions: [
+        {
+          action: t.action,
+          recovery_probability: t.recovery_probability,
+          risk_score: t.risk_score,
+          expected_value_minor: expectedValueMinor,
+          policy_decision: t.policy,
+          execution_allowed: t.policy === 'Approved',
+          policy_reason: `Deterministic rule check: Risk score ${t.risk_score} <= 70.`,
+        },
+      ],
+      created_at: t.created_at,
+      updated_at: t.updated_at,
+    }
+  })
+}
+
+/**
+ * Pure function to derive summary metrics for opportunities.
+ */
+export function computeOpportunitySummary(opportunities: OpportunityItem[]): OpportunitySummary {
+  const totalRisk = opportunities.reduce((sum, o) => sum + o.amount_minor, 0)
+  const expectedRecovery = opportunities.reduce((sum, o) => sum + o.expected_value_minor, 0)
+  const eligible = opportunities.filter((o) => o.policy_status === 'Approved').length
+  const blocked = opportunities.filter((o) => o.policy_status === 'Blocked').length
+  const highPriority = opportunities.filter((o) => o.priority === 'CRITICAL' || o.priority === 'HIGH').length
+  const avgProb =
+    opportunities.length > 0
+      ? Math.round(
+          (opportunities.reduce((sum, o) => sum + o.recovery_probability, 0) / opportunities.length) * 10
+        ) / 10
+      : 75
+
+  return {
+    total_opportunities: opportunities.length,
+    total_revenue_at_risk_minor: totalRisk,
+    expected_recovery_value_minor: expectedRecovery,
+    policy_eligible_count: eligible,
+    policy_blocked_count: blocked,
+    high_priority_count: highPriority,
+    average_recovery_probability: avgProb,
+    mode: 'canonical-store',
+  }
+}
+
+/**
+ * Pure function to calculate dashboard & system KPIs from canonical transactions.
+ */
+export function computeMetricsFromTransactions(transactions: CanonicalTransaction[]) {
+  const totalTransactions = transactions.length
+  let syntheticCount = 0
+  let providerCount = 0
+  let revenueAtRiskMinor = 0
+  let verifiedRecoveredMinor = 0
+  let pendingCount = 0
+  let recoveredCount = 0
+  let stoppedCount = 0
+  let blockedCount = 0
+  let highRiskCount = 0
+  let highValueCount = 0
+
+  for (const t of transactions) {
+    if (t.source === 'synthetic') syntheticCount++
+    else providerCount++
+
+    revenueAtRiskMinor += t.amount_minor
+
+    if (t.status === 'RECOVERED') {
+      recoveredCount++
+      verifiedRecoveredMinor += t.verified_amount_minor || t.amount_minor
+    } else if (t.status === 'STOPPED') {
+      stoppedCount++
+    } else {
+      pendingCount++
+    }
+
+    if (t.policy === 'Blocked') blockedCount++
+    if (t.risk_score >= 60) highRiskCount++
+    if (t.amount >= 20000) highValueCount++
+  }
+
+  const recoveryRate =
+    revenueAtRiskMinor > 0
+      ? Math.round((verifiedRecoveredMinor / revenueAtRiskMinor) * 1000) / 10
+      : 0
+
+  return {
+    totalTransactions,
+    syntheticCount,
+    providerCount,
+    revenueAtRiskMinor,
+    verifiedRecoveredMinor,
+    recoveryRate,
+    pendingCount,
+    recoveredCount,
+    stoppedCount,
+    blockedCount,
+    highRiskCount,
+    highValueCount,
+  }
 }
 
 export interface CanonicalStoreState {
@@ -203,20 +352,7 @@ export interface CanonicalStoreState {
   getTransactionById: (id: string) => CanonicalTransaction | undefined
   getSelectedTransaction: () => CanonicalTransaction | undefined
   getOpportunities: () => OpportunityItem[]
-  getMetrics: () => {
-    totalTransactions: number
-    syntheticCount: number
-    providerCount: number
-    revenueAtRiskMinor: number
-    verifiedRecoveredMinor: number
-    recoveryRate: number
-    pendingCount: number
-    recoveredCount: number
-    stoppedCount: number
-    blockedCount: number
-    highRiskCount: number
-    highValueCount: number
-  }
+  getMetrics: () => ReturnType<typeof computeMetricsFromTransactions>
 }
 
 export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
@@ -247,12 +383,11 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
       const normalized = rawPayments.map((p) => normalizeRazorpayPayment(p, isLive))
       const currentProvider = get().providerTransactions
       
-      // Deduplicate on provider_payment_id or id
       const seen = new Set<string>()
       const updatedProvider: CanonicalTransaction[] = []
       
       for (const p of [...normalized, ...currentProvider]) {
-        const key = p.provider_payment_id || p.id
+        const key = `${p.provider || 'prov'}_${p.provider_payment_id || p.id}`
         if (!seen.has(key)) {
           seen.add(key)
           updatedProvider.push(p)
@@ -400,136 +535,11 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
     },
 
     getOpportunities: () => {
-      const txns = get().transactions
-      return txns.map((t) => {
-        const expectedValueMinor = Math.floor((t.amount_minor * t.recovery_probability) / 100)
-        let priority: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' = 'LOW'
-        if (expectedValueMinor >= 2000000 && t.policy === 'Approved') priority = 'CRITICAL'
-        else if (expectedValueMinor >= 1000000) priority = 'HIGH'
-        else if (expectedValueMinor >= 400000) priority = 'MEDIUM'
-
-        const priorityScore = Math.min(
-          99,
-          Math.round(
-            (expectedValueMinor / 5000000) * 40 +
-              (t.recovery_probability / 100) * 35 +
-              (1 - t.risk_score / 100) * 25
-          )
-        )
-
-        return {
-          id: `opp-${t.id}`,
-          opportunity_id: `opp-${t.id}`,
-          transaction_id: t.id,
-          amount_minor: t.amount_minor,
-          currency: t.currency,
-          failure_signature: t.reason,
-          recovery_probability: t.recovery_probability,
-          expected_value_minor: expectedValueMinor,
-          expected_recovery_value_minor: expectedValueMinor,
-          priority_score: priorityScore,
-          priority_level: priority,
-          priority: priority,
-          recommended_action: t.action,
-          best_safe_action: t.action,
-          policy_status: t.policy,
-          reason: t.reason,
-          risk_score: t.risk_score,
-          status: t.status === 'RECOVERED' ? 'RECOVERED' : t.policy === 'Blocked' ? 'POLICY_BLOCKED' : 'ELIGIBLE',
-          explainability: {
-            why_priority: `${priority} priority recovery candidate with ₹${(expectedValueMinor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })} expected recovery yield.`,
-            why_action: `Targeted automated intervention for ${t.reason.toLowerCase()} within policy boundaries.`,
-            why_policy_status: `Evaluated by Deterministic Policy Engine (Risk ${t.risk_score}/100, Probability ${t.recovery_probability}%).`,
-          },
-          candidate_actions: [
-            {
-              action: t.action,
-              recovery_probability: t.recovery_probability,
-              risk_score: t.risk_score,
-              expected_value_minor: expectedValueMinor,
-              policy_decision: t.policy,
-              execution_allowed: t.policy === 'Approved',
-              policy_reason: `Authorized: Risk ${t.risk_score} < 70 ceiling`,
-            },
-            {
-              action: 'Payment link',
-              recovery_probability: Math.min(95, t.recovery_probability + 7),
-              risk_score: Math.max(10, t.risk_score - 8),
-              expected_value_minor: Math.floor((t.amount_minor * Math.min(95, t.recovery_probability + 7)) / 100),
-              policy_decision: 'Approved',
-              execution_allowed: true,
-              policy_reason: 'Authorized: Low risk customer self-serve checkout link',
-            },
-            {
-              action: 'Escalate',
-              recovery_probability: 40,
-              risk_score: t.risk_score,
-              expected_value_minor: Math.floor((t.amount_minor * 40) / 100),
-              policy_decision: 'Escalated',
-              execution_allowed: false,
-              policy_reason: 'Requires merchant operator review',
-            },
-          ],
-          created_at: t.created_at,
-        }
-      })
+      return computeOpportunitiesFromTransactions(get().transactions)
     },
 
     getMetrics: () => {
-      const txns = get().transactions
-      const total = txns.length
-      const synthetic = txns.filter((t) => t.source === 'synthetic').length
-      const provider = txns.filter((t) => t.source !== 'synthetic').length
-
-      let atRiskMinor = 0
-      let recoveredMinor = 0
-      let pendingCount = 0
-      let recoveredCount = 0
-      let stoppedCount = 0
-      let blockedCount = 0
-      let highRiskCount = 0
-      let highValueCount = 0
-
-      for (const t of txns) {
-        if (t.status === 'RECOVERED') {
-          recoveredCount++
-          recoveredMinor += t.verified_amount_minor || t.amount_minor
-        } else if (t.status === 'STOPPED') {
-          stoppedCount++
-          atRiskMinor += t.amount_minor
-        } else {
-          pendingCount++
-          atRiskMinor += t.amount_minor
-        }
-
-        if (t.policy === 'Blocked' || t.policy === 'Escalated') {
-          blockedCount++
-        }
-        if (t.risk_score >= 60) {
-          highRiskCount++
-        }
-        if (t.amount_minor >= 2000000) {
-          highValueCount++
-        }
-      }
-
-      const totalValue = atRiskMinor + recoveredMinor
-      const recoveryRate = totalValue > 0 ? (recoveredMinor / totalValue) * 100 : 0
-
-      return {
-        totalTransactions: total,
-        syntheticCount: synthetic,
-        providerCount: provider,
-        revenueAtRiskMinor: atRiskMinor,
-        verifiedRecoveredMinor: recoveredMinor,
-        recoveryRate: Math.round(recoveryRate * 10) / 10,
-        pendingCount,
-        recoveredCount,
-        stoppedCount,
-        blockedCount,
-        highRiskCount,
-        highValueCount,
-      }
+      return computeMetricsFromTransactions(get().transactions)
     },
   }
 })

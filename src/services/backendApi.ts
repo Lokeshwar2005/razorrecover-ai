@@ -1,9 +1,11 @@
 /**
- * Unified Backend API Client for RazorRecover AI
- * Connects frontend views to FastAPI endpoints with high-fidelity synthetic fallback.
+ * Pure Backend API Client for RazorRecover AI
+ * Responsibilities:
+ * - HTTP / API calls only
+ * - FastAPI & Razorpay server communication
+ * - Pure typed API responses
+ * - Zero store imports / Zero circular dependencies
  */
-
-import { useTransactionStore } from './canonicalTransactionStore'
 
 const API_BASE =
   (typeof process !== 'undefined' && (process.env?.NEXT_PUBLIC_BACKEND_API_URL || process.env?.VITE_BACKEND_API_URL)) ||
@@ -149,45 +151,21 @@ export interface PaymentVerificationResult {
   message: string
 }
 
-export async function fetchDashboardStats(): Promise<DashboardStats> {
+export async function fetchDashboardStats(): Promise<DashboardStats | null> {
   try {
     const res = await fetch(`${API_BASE}/dashboard/stats`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback to canonical store
+    // Network or server unavailable
   }
-
-  const metrics = useTransactionStore.getState().getMetrics()
-  const opps = useTransactionStore.getState().getOpportunities()
-  const oppsValue = opps.reduce((sum, o) => sum + o.expected_value_minor, 0)
-
-  return {
-    revenue_at_risk_minor: metrics.revenueAtRiskMinor,
-    revenue_recovered_minor: metrics.verifiedRecoveredMinor,
-    recovery_rate: metrics.recoveryRate,
-    failed_transactions_count: metrics.stoppedCount,
-    active_recovery_attempts_count: metrics.pendingCount,
-    policy_blocks_count: metrics.blockedCount,
-    total_opportunities_value_minor: oppsValue,
-    average_ai_confidence: 94.0,
-    velocity_minor_per_sec: 4300,
-    trends: [
-      { timestamp: 'Aug 23', revenue_at_risk_minor: 3200000, revenue_recovered_minor: 2100000, recovery_rate: 65.6 },
-      { timestamp: 'Aug 24', revenue_at_risk_minor: 4100000, revenue_recovered_minor: 2900000, recovery_rate: 70.7 },
-      { timestamp: 'Aug 25', revenue_at_risk_minor: 5800000, revenue_recovered_minor: 4200000, recovery_rate: 72.4 },
-      { timestamp: 'Aug 26', revenue_at_risk_minor: 8200000, revenue_recovered_minor: 6100000, recovery_rate: 74.3 },
-      { timestamp: 'Aug 27', revenue_at_risk_minor: 11500000, revenue_recovered_minor: 8400000, recovery_rate: 73.0 },
-      { timestamp: 'Aug 28', revenue_at_risk_minor: 14900000, revenue_recovered_minor: 10800000, recovery_rate: 72.4 },
-      { timestamp: 'Aug 29', revenue_at_risk_minor: metrics.revenueAtRiskMinor, revenue_recovered_minor: metrics.verifiedRecoveredMinor, recovery_rate: metrics.recoveryRate },
-    ],
-  }
+  return null
 }
 
 export async function fetchOpportunities(filter?: {
   priority?: string
   policy_status?: string
   sort_by?: string
-}): Promise<OpportunityItem[]> {
+}): Promise<OpportunityItem[] | null> {
   try {
     const params = new URLSearchParams()
     if (filter?.priority) params.append('priority', filter.priority)
@@ -198,44 +176,19 @@ export async function fetchOpportunities(filter?: {
     const res = await fetch(url, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback to canonical store
+    // Network or server unavailable
   }
-
-  // Canonical Single Source of Truth
-  const allOpps = useTransactionStore.getState().getOpportunities()
-  return allOpps.filter((opp) => {
-    if (filter?.priority && filter.priority !== 'ALL' && opp.priority !== filter.priority) return false
-    if (filter?.policy_status && filter.policy_status !== 'ALL' && opp.policy_status !== filter.policy_status) return false
-    return true
-  })
+  return null
 }
 
-export async function fetchOpportunitySummary(): Promise<OpportunitySummary> {
+export async function fetchOpportunitySummary(): Promise<OpportunitySummary | null> {
   try {
     const res = await fetch(`${API_BASE}/opportunities/summary`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback to canonical store metrics
+    // Network or server unavailable
   }
-
-  const opps = useTransactionStore.getState().getOpportunities()
-  const totalRisk = opps.reduce((sum, o) => sum + o.amount_minor, 0)
-  const expectedRecovery = opps.reduce((sum, o) => sum + o.expected_value_minor, 0)
-  const eligible = opps.filter((o) => o.policy_status === 'Approved').length
-  const blocked = opps.filter((o) => o.policy_status === 'Blocked').length
-  const highPriority = opps.filter((o) => o.priority === 'CRITICAL' || o.priority === 'HIGH').length
-  const avgProb = opps.length > 0 ? Math.round((opps.reduce((sum, o) => sum + o.recovery_probability, 0) / opps.length) * 10) / 10 : 75
-
-  return {
-    total_opportunities: opps.length,
-    total_revenue_at_risk_minor: totalRisk,
-    expected_recovery_value_minor: expectedRecovery,
-    policy_eligible_count: eligible,
-    policy_blocked_count: blocked,
-    high_priority_count: highPriority,
-    average_recovery_probability: avgProb,
-    mode: 'canonical-store',
-  }
+  return null
 }
 
 export async function fetchOpportunityById(id: string): Promise<OpportunityItem | null> {
@@ -243,11 +196,9 @@ export async function fetchOpportunityById(id: string): Promise<OpportunityItem 
     const res = await fetch(`${API_BASE}/opportunities/${id}`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback
+    // Network or server unavailable
   }
-  const opps = useTransactionStore.getState().getOpportunities()
-  const cleanId = id.toUpperCase().replace('OPP-', '')
-  return opps.find((o) => o.id.toUpperCase() === id.toUpperCase() || o.transaction_id.toUpperCase() === cleanId || o.transaction_id.toUpperCase() === id.toUpperCase()) || null
+  return null
 }
 
 export async function executeRecoveryAction(payload: {
@@ -271,7 +222,7 @@ export async function executeRecoveryAction(payload: {
       return await res.json()
     }
   } catch (e) {
-    // Fallback for static mode
+    // Fallback for static demo mode
   }
 
   const isLink = payload.action_type.toLowerCase().includes('link') || payload.action_type.toLowerCase().includes('voice')
@@ -282,10 +233,10 @@ export async function executeRecoveryAction(payload: {
     action_type: payload.action_type,
     workflow_status: 'COMPLETE',
     workflow_message: isLink
-      ? `Razorpay Test Mode Payment Link reference created for ${payload.transaction_id}. Payment pending checkout capture.`
+      ? `Razorpay Test Mode Payment Link created for ${payload.transaction_id}. Payment pending checkout capture.`
       : `Razorpay Test Mode Order ${orderId} created. Awaiting captured checkout payment.`,
     order_id: isLink ? undefined : orderId,
-    payment_link: undefined,
+    payment_link: isLink ? `https://rzp.io/i/test-${payload.transaction_id.toLowerCase()}` : undefined,
     key_id: 'rzp_test_placeholder',
     executed_at: new Date().toISOString(),
   }
@@ -327,66 +278,14 @@ export async function verifyPaymentCapture(payload: {
   }
 }
 
-export async function fetchAnalytics(): Promise<AnalyticsData> {
+export async function fetchAnalytics(): Promise<AnalyticsData | null> {
   try {
     const res = await fetch(`${API_BASE}/analytics/recovery`, { signal: AbortSignal.timeout(3000) })
     if (res.ok) return await res.json()
   } catch (e) {
-    // Fallback to canonical store
+    // Network or server unavailable
   }
-
-  const txns = useTransactionStore.getState().transactions
-  const metrics = useTransactionStore.getState().getMetrics()
-
-  // Compute action performance dynamically from canonical transactions
-  const actionMap = new Map<string, { total: number; recovered: number; recoveredMinor: number }>()
-  for (const t of txns) {
-    const act = t.action || 'Retry payment'
-    const cur = actionMap.get(act) || { total: 0, recovered: 0, recoveredMinor: 0 }
-    cur.total++
-    if (t.status === 'RECOVERED') {
-      cur.recovered++
-      cur.recoveredMinor += t.verified_amount_minor || t.amount_minor
-    }
-    actionMap.set(act, cur)
-  }
-
-  const action_performance: ActionPerformance[] = Array.from(actionMap.entries()).map(([action, data]) => ({
-    action,
-    total_attempts: data.total,
-    verified_recoveries: data.recovered,
-    success_rate: data.total > 0 ? Math.round((data.recovered / data.total) * 1000) / 10 : 0,
-    total_recovered_minor: data.recoveredMinor,
-  }))
-
-  // Compute failure distribution dynamically from canonical transactions
-  const failureMap = new Map<string, { count: number; atRiskMinor: number; recoveredMinor: number }>()
-  for (const t of txns) {
-    const sig = t.reason || 'Payment degradation'
-    const cur = failureMap.get(sig) || { count: 0, atRiskMinor: 0, recoveredMinor: 0 }
-    cur.count++
-    cur.atRiskMinor += t.amount_minor
-    if (t.status === 'RECOVERED') {
-      cur.recoveredMinor += t.verified_amount_minor || t.amount_minor
-    }
-    failureMap.set(sig, cur)
-  }
-
-  const failure_distributions: FailureDistribution[] = Array.from(failureMap.entries()).map(([sig, data]) => ({
-    failure_signature: sig,
-    count: data.count,
-    total_at_risk_minor: data.atRiskMinor,
-    recovered_minor: data.recoveredMinor,
-    recovery_rate: data.atRiskMinor > 0 ? Math.round((data.recoveredMinor / data.atRiskMinor) * 1000) / 10 : 0,
-  }))
-
-  return {
-    overall_recovery_rate: metrics.recoveryRate,
-    total_revenue_at_risk_minor: metrics.revenueAtRiskMinor,
-    total_revenue_recovered_minor: metrics.verifiedRecoveredMinor,
-    action_performance,
-    failure_distributions,
-  }
+  return null
 }
 
 const POLICY_STORAGE_KEY = 'razorrecover_merchant_policies'

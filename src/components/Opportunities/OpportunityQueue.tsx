@@ -1,21 +1,23 @@
 'use client'
 
-import React, { useEffect, useState, useMemo } from 'react'
+import React, { useState, useMemo } from 'react'
 import {
-  fetchOpportunities,
-  fetchOpportunitySummary,
-  executeRecoveryAction,
-  verifyPaymentCapture,
+  useTransactionStore,
+  computeOpportunitiesFromTransactions,
+  computeOpportunitySummary,
+} from '../../services/canonicalTransactionStore'
+import {
   type OpportunityItem,
-  type OpportunitySummary,
   type RecoveryExecutionResult,
 } from '../../services/backendApi'
 
 export const OpportunityQueue: React.FC = () => {
-  const [opportunities, setOpportunities] = useState<OpportunityItem[]>([])
-  const [summary, setSummary] = useState<OpportunitySummary | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [selectedOpp, setSelectedOpp] = useState<OpportunityItem | null>(null)
+  const transactions = useTransactionStore((s) => s.transactions)
+  const selectedTransactionId = useTransactionStore((s) => s.selectedTransactionId)
+  const setSelectedTransactionId = useTransactionStore((s) => s.setSelectedTransactionId)
+  const executeRecovery = useTransactionStore((s) => s.executeRecovery)
+  const verifyPayment = useTransactionStore((s) => s.verifyPayment)
+
   const [searchQuery, setSearchQuery] = useState('')
   const [priorityFilter, setPriorityFilter] = useState<'ALL' | 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL')
   const [policyFilter, setPolicyFilter] = useState<'ALL' | 'Approved' | 'Blocked' | 'Escalated'>('ALL')
@@ -26,33 +28,54 @@ export const OpportunityQueue: React.FC = () => {
   const [verifying, setVerifying] = useState(false)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
 
-  useEffect(() => {
-    Promise.all([fetchOpportunities(), fetchOpportunitySummary()]).then(([opps, sum]) => {
-      setOpportunities(opps)
-      setSummary(sum)
-      if (opps.length > 0) setSelectedOpp(opps[0])
-      setLoading(false)
-    })
-  }, [])
+  // Single Source of Truth: Derived directly from canonical transactions
+  const allOpportunities = useMemo(() => {
+    return computeOpportunitiesFromTransactions(transactions)
+  }, [transactions])
+
+  const summary = useMemo(() => {
+    return computeOpportunitySummary(allOpportunities)
+  }, [allOpportunities])
+
+  // Resolve selected opportunity from canonical selectedTransactionId or default to top item
+  const selectedOpp = useMemo(() => {
+    if (selectedTransactionId) {
+      const match = allOpportunities.find(
+        (o) =>
+          o.transaction_id.toUpperCase() === selectedTransactionId.toUpperCase() ||
+          o.id.toUpperCase() === selectedTransactionId.toUpperCase() ||
+          o.transaction_id.replace('TXN-', '') === selectedTransactionId.replace('TXN-', '')
+      )
+      if (match) return match
+    }
+    return allOpportunities.length > 0 ? allOpportunities[0] : null
+  }, [allOpportunities, selectedTransactionId])
 
   const formatRupees = (minor: number) => {
     return `₹${(minor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`
   }
 
   const handleSelectOpportunity = (opp: OpportunityItem) => {
-    setSelectedOpp(opp)
+    setSelectedTransactionId(opp.transaction_id)
     setExecutionResult(null)
     setVerifiedSuccess(null)
     setExecutionError(null)
   }
 
   const filteredOpportunities = useMemo(() => {
-    return opportunities
+    const q = searchQuery.trim().toLowerCase()
+    const cleanNum = q.replace(/^txn-?/, '')
+
+    return allOpportunities
       .filter((opp) => {
         const matchesSearch =
-          opp.transaction_id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          opp.reason.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          opp.recommended_action.toLowerCase().includes(searchQuery.toLowerCase())
+          !q ||
+          opp.transaction_id.toLowerCase().includes(q) ||
+          opp.transaction_id.replace('TXN-', '').toLowerCase().includes(cleanNum) ||
+          opp.id.toLowerCase().includes(q) ||
+          opp.reason.toLowerCase().includes(q) ||
+          opp.recommended_action.toLowerCase().includes(q)
+
         const matchesPriority = priorityFilter === 'ALL' || opp.priority === priorityFilter
         const matchesPolicy = policyFilter === 'ALL' || opp.policy_status === policyFilter
         return matchesSearch && matchesPriority && matchesPolicy
@@ -67,7 +90,7 @@ export const OpportunityQueue: React.FC = () => {
         if (aBoost !== bBoost) return bBoost - aBoost
         return b.expected_value_minor - a.expected_value_minor
       })
-  }, [opportunities, searchQuery, priorityFilter, policyFilter, sortBy])
+  }, [allOpportunities, searchQuery, priorityFilter, policyFilter, sortBy])
 
   const handleExecute = async (opp: OpportunityItem) => {
     if (opp.policy_status === 'Blocked') {
@@ -83,32 +106,20 @@ export const OpportunityQueue: React.FC = () => {
 
     try {
       const actionToRun = opp.best_safe_action || opp.recommended_action
-      const result = await executeRecoveryAction({
-        transaction_id: opp.transaction_id,
-        action_type: actionToRun,
-        amount_minor: opp.amount_minor,
-        currency: opp.currency || 'INR',
-      })
+      const result = await executeRecovery(opp.transaction_id, actionToRun)
 
-      if (result.workflow_status === 'BLOCKED' || result.workflow_status === 'ESCALATED') {
-        setExecutionError(result.workflow_message)
-        setOpportunities((prev) =>
-          prev.map((item) =>
-            item.id === opp.id
-              ? { ...item, policy_status: 'Blocked', status: 'POLICY_BLOCKED' }
-              : item
-          )
-        )
+      if (!result.success) {
+        setExecutionError(result.message)
       } else {
-        setExecutionResult(result)
-        // Update item status in list
-        setOpportunities((prev) =>
-          prev.map((item) =>
-            item.id === opp.id
-              ? { ...item, status: 'IN_PROGRESS' }
-              : item
-          )
-        )
+        setExecutionResult({
+          transaction_id: opp.transaction_id,
+          action_type: actionToRun,
+          workflow_status: 'COMPLETE',
+          workflow_message: result.message,
+          order_id: result.orderId,
+          payment_link: result.paymentLink,
+          executed_at: new Date().toISOString(),
+        })
       }
     } catch (e: any) {
       setExecutionError(e?.message || 'Failed to start recovery action.')
@@ -122,31 +133,16 @@ export const OpportunityQueue: React.FC = () => {
     setExecutionError(null)
     try {
       const mockPayId = `pay_${opp.transaction_id.replace('-', '_').toLowerCase()}_${Date.now()}`
-      const verifyRes = await verifyPaymentCapture({
-        transaction_id: opp.transaction_id,
-        payment_id: mockPayId,
-        amount_minor: opp.amount_minor,
-        currency: opp.currency || 'INR',
-      })
+      const verifyRes = await verifyPayment(
+        opp.transaction_id,
+        mockPayId,
+        opp.amount_minor,
+        opp.currency || 'INR'
+      )
 
       if (verifyRes.verified) {
-        // Clear pending execution banner so contradictory banners never coexist
         setExecutionResult(null)
         setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
-        setOpportunities((prev) =>
-          prev.map((item) =>
-            item.id === opp.id
-              ? { ...item, status: 'RECOVERED' }
-              : item
-          )
-        )
-        if (summary) {
-          setSummary({
-            ...summary,
-            expected_recovery_value_minor: summary.expected_recovery_value_minor,
-            policy_eligible_count: Math.max(0, summary.policy_eligible_count - 1),
-          })
-        }
       } else {
         setExecutionError(verifyRes.message || 'Payment verification failed. Capture status unconfirmed.')
       }
@@ -155,10 +151,6 @@ export const OpportunityQueue: React.FC = () => {
     } finally {
       setVerifying(false)
     }
-  }
-
-  if (loading) {
-    return <div className="p-8 text-center text-[#e5a944] animate-pulse font-mono">Calculating Expected Recovery Values...</div>
   }
 
   const priorityColors = {
@@ -181,7 +173,7 @@ export const OpportunityQueue: React.FC = () => {
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Prioritizes highest-value safe recoveries within deterministic policy boundaries.
+            Prioritizes highest-value safe recoveries within deterministic policy boundaries across {allOpportunities.length} canonical opportunities.
           </p>
         </div>
 
@@ -267,7 +259,7 @@ export const OpportunityQueue: React.FC = () => {
             <button
               onClick={() => handleVerifyPayment(selectedOpp)}
               disabled={verifying}
-              className="px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition text-xs inline-flex items-center gap-1.5 disabled:opacity-50"
+              className="px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition text-xs inline-flex items-center gap-1.5 disabled:opacity-50 cursor-pointer"
             >
               {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
             </button>
@@ -300,7 +292,7 @@ export const OpportunityQueue: React.FC = () => {
         <div className="w-full md:w-72">
           <input
             type="text"
-            placeholder="Search by ID, failure, action..."
+            placeholder="Search by ID (e.g. 1033), reason, action..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944]"
@@ -345,7 +337,7 @@ export const OpportunityQueue: React.FC = () => {
         <div className="lg:col-span-2 space-y-3">
           {filteredOpportunities.length === 0 ? (
             <div className="p-8 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center text-[#a89f91] text-sm font-mono">
-              No recovery opportunities match the active filters.
+              No recovery opportunities match the search & filter criteria.
             </div>
           ) : (
             filteredOpportunities.map((opp) => {

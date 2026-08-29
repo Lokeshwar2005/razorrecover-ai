@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import {
   useTransactionStore,
+  computeMetricsFromTransactions,
   type CanonicalTransaction,
   type TransactionSource,
 } from '../../services/canonicalTransactionStore'
@@ -16,7 +17,8 @@ export const TransactionExplorer: React.FC = () => {
   const getTransactionById = useTransactionStore((s) => s.getTransactionById)
   const executeRecovery = useTransactionStore((s) => s.executeRecovery)
   const verifyPayment = useTransactionStore((s) => s.verifyPayment)
-  const metrics = useTransactionStore((s) => s.getMetrics())
+
+  const metrics = useMemo(() => computeMetricsFromTransactions(transactions), [transactions])
 
   const [filter, setFilter] = useState<string>('all')
   const [search, setSearch] = useState<string>('')
