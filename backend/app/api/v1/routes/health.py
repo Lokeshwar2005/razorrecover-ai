@@ -8,7 +8,7 @@ router = APIRouter(tags=["Health"])
 async def health_check():
     return {
         "status": "healthy",
-        "service": "RazorRecover AI 2.0 Backend",
+        "service": "RazorRecover AI Backend",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "mode": "bounded-deterministic-autonomy",
     }

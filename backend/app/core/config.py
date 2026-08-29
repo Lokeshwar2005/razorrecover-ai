@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "RazorRecover AI 2.0"
+    PROJECT_NAME: str = "RazorRecover AI"
     API_V1_PREFIX: str = "/api/v1"
     DEBUG: bool = False
 

@@ -70,7 +70,7 @@ app.include_router(counterfactual.router, prefix=settings.API_V1_PREFIX)
 @app.get("/")
 def root_redirect():
     return {
-        "service": "RazorRecover AI 3.0 Platform API",
+        "service": "RazorRecover AI Platform API",
         "docs": "/docs",
         "health": f"{settings.API_V1_PREFIX}/health",
         "status": "online",

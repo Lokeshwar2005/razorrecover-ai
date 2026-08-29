@@ -17,7 +17,7 @@ export const MerchantDashboard: React.FC = () => {
   if (loading || !stats) {
     return (
       <div className="p-8 text-center text-[#e5a944] animate-pulse">
-        Connecting to RazorRecover 3.0 Telemetry Stream...
+        Connecting to RazorRecover Telemetry Stream...
       </div>
     )
   }
@@ -34,8 +34,8 @@ export const MerchantDashboard: React.FC = () => {
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#10b981] animate-ping" />
             <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Merchant Command Center</h1>
-            <span className="px-2 py-0.5 text-xs font-mono rounded border border-[#e5a944]/40 bg-[#e5a944]/10 text-[#e5a944]">
-              v3.0 Live
+            <span className="px-2 py-0.5 text-xs font-mono rounded border border-[#10b981]/40 bg-[#10b981]/10 text-[#10b981]">
+              Live Telemetry
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">

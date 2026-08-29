@@ -501,7 +501,7 @@ export function RazorRecoverApp() {
           <div className="logo" onClick={() => navigateToTab('Overview')} style={{ cursor: 'pointer' }}>
             <span className="logoMark">R</span>
             <span>RazorRecover</span>
-            <em>AI 3.0</em>
+            <em>AI</em>
           </div>
           <div className="navTabs">
             {navItems.map((t) => (
@@ -838,7 +838,7 @@ export function RazorRecoverApp() {
         {selected && <DecisionExecutionSequence key={`${selected.id}-${selected.amount}-${selected.workflowStatus}`} amount={selected.amount} />}
         {selected && <CounterfactualLab originalTransaction={selected} onActiveGraphTargetChange={handleCfSync} />}
 
-        <footer>RAZORRECOVER AI 3.0 · DETERMINISTIC BOUNDED AUTONOMY REVENUE RECOVERY PLATFORM · RAZORPAY TEST MODE</footer>
+        <footer>RAZORRECOVER AI · DETERMINISTIC BOUNDED AUTONOMY REVENUE RECOVERY PLATFORM · RAZORPAY TEST MODE</footer>
       </main>
       )}
 

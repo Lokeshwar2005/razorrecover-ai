@@ -93,7 +93,7 @@ class AIDiagnosisService:
                         "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
                         "Content-Type": "application/json",
                         "HTTP-Referer": "https://github.com/Lokeshwar2005/razorrecover-ai",
-                        "X-Title": "RazorRecover AI 2.0",
+                        "X-Title": "RazorRecover AI",
                     },
                     json={
                         "model": settings.OPENROUTER_MODEL,

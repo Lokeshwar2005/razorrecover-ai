@@ -1,4 +1,4 @@
-# ⚡ RazorRecover AI 3.0 — AI Revenue Recovery Platform
+# ⚡ RazorRecover AI — Autonomous Revenue Recovery Platform
 
 [![Razorpay AI Buildathon 2026](https://img.shields.io/badge/Razorpay%20AI%20Buildathon%202026-Track%203%3A%20AI%20Revenue%20Recovery-0c2340?style=for-the-badge&logo=razorpay)](https://razorpay.com/buildathon/)
 [![CI / CD Pipeline](https://img.shields.io/badge/CI%2FCD-Passing%20(Run%20%2396)-10b981?style=for-the-badge&logo=githubactions)](https://github.com/Lokeshwar2005/razorrecover-ai/actions)
@@ -34,7 +34,7 @@ In high-volume digital commerce and Indian fintech (UPI, Cards, NetBanking, e-Ma
 3. **Slow Human Intervention**: Manual review teams take hours to respond, losing high-intent buyers permanently.
 4. **AI Hallucination Risk**: Pure generative LLMs cannot be trusted to execute financial transactions or modify balances without strict mathematical boundaries.
 
-### The RazorRecover 3.0 Solution: Deterministic Bounded Autonomy
+### The RazorRecover AI Solution: Deterministic Bounded Autonomy
 RazorRecover bridges the gap between **generative AI intelligence** and **deterministic financial safety**:
 - **AI Analyzes & Explains**: LLMs diagnose root causes, assess customer intent, and calculate recovery likelihood.
 - **Deterministic Policy Gates Authorize**: Hard-coded mathematical policy rules block unauthorized retries, cap attempt limits, and enforce merchant risk ceilings.

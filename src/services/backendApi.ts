@@ -1,5 +1,5 @@
 /**
- * Unified Backend API Client for RazorRecover 3.0
+ * Unified Backend API Client for RazorRecover AI
  * Connects frontend views to FastAPI endpoints with high-fidelity synthetic fallback.
  */
 

@@ -55,7 +55,7 @@ class RazorpayService:
                     "currency": currency,
                     "receipt": receipt,
                     "notes": {
-                        "source": "RazorRecover AI 2.0",
+                        "source": "RazorRecover AI",
                         "transaction_id": transaction_id,
                     },
                 },
@@ -102,7 +102,7 @@ class RazorpayService:
                     "description": f"RazorRecover Recovery for {transaction_id}",
                     "reference_id": ref_id,
                     "notes": {
-                        "source": "RazorRecover AI 2.0",
+                        "source": "RazorRecover AI",
                         "transaction_id": transaction_id,
                     },
                 },

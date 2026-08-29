@@ -7,7 +7,7 @@ import '../src/components/decision-execution.css'
 import '../src/components/recovery-playbooks.css'
 
 export const metadata: Metadata = {
-  title: 'RazorRecover AI 2.0 — Autonomous Revenue Recovery Platform',
+  title: 'RazorRecover AI — Autonomous Revenue Recovery Platform',
   description: 'Deterministic Bounded Autonomy for Revenue Recovery · Razorpay AI Buildathon 2026 Track 3',
 }
 
