@@ -121,11 +121,12 @@ class OpportunityService:
         seed_canonical_database(db)
         transactions = db.query(TransactionModel).all()
 
-        total_opps = len(transactions)
-        total_risk_minor = sum(t.amount_minor for t in transactions)
+        active_transactions = [t for t in transactions if t.status != "RECOVERED"]
+        total_opps = len(active_transactions)
+        total_risk_minor = sum(t.amount_minor for t in active_transactions)
         total_ev_minor = sum(
             OpportunityScoringEngine.calculate_expected_recovery_value(t.amount_minor, t.recovery_probability)
-            for t in transactions
+            for t in active_transactions
         )
 
         eligible_count = 0
@@ -133,7 +134,7 @@ class OpportunityService:
         high_priority_count = 0
         prob_sum = 0
 
-        for t in transactions:
+        for t in active_transactions:
             ev = OpportunityScoringEngine.calculate_expected_recovery_value(t.amount_minor, t.recovery_probability)
             is_eligible = t.policy == "Approved" and t.risk_score < 70
             score, level = OpportunityScoringEngine.calculate_priority_score(

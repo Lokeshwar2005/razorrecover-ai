@@ -77,19 +77,31 @@ export const OpportunityQueue: React.FC = () => {
     return computeOpportunitySummary(allOpportunities)
   }, [allOpportunities])
 
-  // Breakdown counts derived from canonical dataset
+  // Active breakdown counts derived from canonical dataset
   const breakdown = useMemo(() => {
-    let syntheticCount = 0
-    let razorpayTestCount = 0
-    let liveCount = 0
+    let activeSyntheticCount = 0
+    let activeRazorpayTestCount = 0
+    let activeLiveCount = 0
+    let recoveredCount = 0
 
     for (const t of transactions) {
-      if (t.source === 'synthetic') syntheticCount++
-      else if (t.source === 'razorpay_test') razorpayTestCount++
-      else if (t.source === 'live') liveCount++
+      if (t.status === 'RECOVERED') {
+        recoveredCount++
+      } else {
+        if (t.source === 'synthetic') activeSyntheticCount++
+        else if (t.source === 'razorpay_test') activeRazorpayTestCount++
+        else if (t.source === 'live') activeLiveCount++
+      }
     }
 
-    return { syntheticCount, razorpayTestCount, liveCount, total: transactions.length }
+    return {
+      activeSyntheticCount,
+      activeRazorpayTestCount,
+      activeLiveCount,
+      totalActive: transactions.length - recoveredCount,
+      recoveredCount,
+      total: transactions.length,
+    }
   }, [transactions])
 
   // Resolve selected opportunity from canonical selectedTransactionId or default to top item
@@ -323,11 +335,11 @@ export const OpportunityQueue: React.FC = () => {
             <span className="text-lg">🎯</span>
             <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Recovery Opportunity Explorer</h1>
             <span className="px-2.5 py-0.5 text-xs font-mono font-bold rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
-              {allOpportunities.length} Canonical Opportunities
+              {summary.total_opportunities} Active Opportunities
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Search, filter, rank, and inspect every recovery opportunity ({breakdown.syntheticCount} Synthetic · {breakdown.razorpayTestCount} Razorpay Test · {breakdown.liveCount} Live).
+            Search, filter, rank, and inspect every recovery opportunity ({breakdown.activeSyntheticCount} Synthetic · {breakdown.activeRazorpayTestCount} Razorpay Test · {breakdown.activeLiveCount} Live{breakdown.recoveredCount > 0 ? ` · ${breakdown.recoveredCount} Recovered` : ''}).
           </p>
           {syncMessage && (
             <div className="mt-2 text-xs font-mono text-[#10b981] flex items-center gap-1.5">
@@ -341,8 +353,8 @@ export const OpportunityQueue: React.FC = () => {
           {summary && (
             <>
               <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
-                <div className="text-[#7a7164] text-[10px]">TOTAL OPPORTUNITIES</div>
-                <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Canonical Items</div>
+                <div className="text-[#7a7164] text-[10px]">ACTIVE OPPORTUNITIES</div>
+                <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Active Items</div>
               </div>
               <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
                 <div className="text-[#7a7164] text-[10px]">EXPECTED RECOVERY</div>

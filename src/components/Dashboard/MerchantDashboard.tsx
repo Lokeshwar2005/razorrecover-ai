@@ -5,6 +5,7 @@ import {
   useTransactionStore,
   computeMetricsFromTransactions,
   computeOpportunitiesFromTransactions,
+  computeOpportunitySummary,
 } from '../../services/canonicalTransactionStore'
 import { fetchDashboardStats, type DashboardStats } from '../../services/backendApi'
 
@@ -27,9 +28,13 @@ export const MerchantDashboard: React.FC = () => {
     return computeOpportunitiesFromTransactions(transactions)
   }, [transactions])
 
-  const oppsValueMinor = useMemo(() => {
-    return opps.reduce((sum, o) => sum + o.expected_value_minor, 0)
+  const oppSummary = useMemo(() => {
+    return computeOpportunitySummary(opps)
   }, [opps])
+
+  const oppsValueMinor = useMemo(() => {
+    return oppSummary.expected_recovery_value_minor
+  }, [oppSummary])
 
   const stats: DashboardStats = useMemo(() => {
     if (backendStats) {

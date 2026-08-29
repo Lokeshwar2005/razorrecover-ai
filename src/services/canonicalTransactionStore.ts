@@ -303,11 +303,23 @@ export function computeOpportunitiesFromTransactions(
 }
 
 /**
+ * Determines whether a transaction or opportunity item represents an active
+ * recovery opportunity (i.e. still exposed to leakage and not yet verified/recovered).
+ */
+export function isActiveRecoveryOpportunity(item: { status?: string }): boolean {
+  const s = (item.status || '').toUpperCase()
+  return s !== 'RECOVERED' && s !== 'VERIFIED'
+}
+
+/**
  * Pure function to derive summary metrics for opportunities.
  */
 export function computeOpportunitySummary(opportunities: OpportunityItem[]): OpportunitySummary {
   const cached = opportunitySummaryCache.get(opportunities)
   if (cached) return cached
+
+  // Filter for ACTIVE (unrecovered) opportunities
+  const activeOpps = opportunities.filter(isActiveRecoveryOpportunity)
 
   let totalRisk = 0
   let expectedRecovery = 0
@@ -316,7 +328,7 @@ export function computeOpportunitySummary(opportunities: OpportunityItem[]): Opp
   let highPriority = 0
   let probSum = 0
 
-  for (const o of opportunities) {
+  for (const o of activeOpps) {
     totalRisk += o.amount_minor
     expectedRecovery += o.expected_value_minor
     if (o.policy_status === 'Approved') eligible++
@@ -326,12 +338,12 @@ export function computeOpportunitySummary(opportunities: OpportunityItem[]): Opp
   }
 
   const avgProb =
-    opportunities.length > 0
-      ? Math.round((probSum / opportunities.length) * 10) / 10
-      : 75
+    activeOpps.length > 0
+      ? Math.round((probSum / activeOpps.length) * 10) / 10
+      : 0
 
   const result: OpportunitySummary = {
-    total_opportunities: opportunities.length,
+    total_opportunities: activeOpps.length,
     total_revenue_at_risk_minor: totalRisk,
     expected_recovery_value_minor: expectedRecovery,
     policy_eligible_count: eligible,
@@ -352,6 +364,7 @@ function computeMetricsRaw(transactions: CanonicalTransaction[]) {
   let liveCount = 0
   let revenueAtRiskMinor = 0
   let verifiedRecoveredMinor = 0
+  let totalExposureMinor = 0
   let pendingCount = 0
   let recoveredCount = 0
   let stoppedCount = 0
@@ -364,15 +377,17 @@ function computeMetricsRaw(transactions: CanonicalTransaction[]) {
     else if (t.source === 'razorpay_test') providerTestCount++
     else if (t.source === 'live') liveCount++
 
-    revenueAtRiskMinor += t.amount_minor
+    totalExposureMinor += t.amount_minor
 
     if (t.status === 'RECOVERED' && (t.verified_amount_minor ?? 0) > 0) {
       recoveredCount++
       verifiedRecoveredMinor += t.verified_amount_minor || t.amount_minor
     } else if (t.status === 'STOPPED') {
       stoppedCount++
+      revenueAtRiskMinor += t.amount_minor
     } else {
       pendingCount++
+      revenueAtRiskMinor += t.amount_minor
     }
 
     if (t.policy === 'Blocked') blockedCount++
@@ -381,8 +396,8 @@ function computeMetricsRaw(transactions: CanonicalTransaction[]) {
   }
 
   const recoveryRate =
-    revenueAtRiskMinor > 0
-      ? Math.round((verifiedRecoveredMinor / revenueAtRiskMinor) * 1000) / 10
+    totalExposureMinor > 0
+      ? Math.round((verifiedRecoveredMinor / totalExposureMinor) * 1000) / 10
       : 0
 
   return {
@@ -639,15 +654,30 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
       }
     },
 
-    updateTransactionStatus: (id, status, verifiedAmountMinor, providerId) => {
+    updateTransactionStatus: (id, status, verifiedAmountMinorOrOpts, providerId) => {
+      let verifiedAmt: number | undefined
+      let provId: string | undefined
+      let provStatus: string | undefined
+
+      if (typeof verifiedAmountMinorOrOpts === 'object' && verifiedAmountMinorOrOpts !== null) {
+        verifiedAmt = (verifiedAmountMinorOrOpts as any).verified_amount_minor
+        provId = (verifiedAmountMinorOrOpts as any).provider_payment_id || (verifiedAmountMinorOrOpts as any).provider_id
+        provStatus = (verifiedAmountMinorOrOpts as any).provider_status
+      } else {
+        verifiedAmt = verifiedAmountMinorOrOpts as number | undefined
+        provId = providerId
+      }
+
       set((state) => ({
         transactions: state.transactions.map((t) =>
           t.id === id
             ? {
                 ...t,
                 status,
-                verified_amount_minor: verifiedAmountMinor ?? t.verified_amount_minor,
-                provider_id: providerId ?? t.provider_id,
+                verified_amount_minor: verifiedAmt !== undefined ? verifiedAmt : (status === 'RECOVERED' ? t.amount_minor : t.verified_amount_minor),
+                provider_id: provId !== undefined ? provId : t.provider_id,
+                provider_payment_id: provId !== undefined ? provId : t.provider_payment_id,
+                provider_status: provStatus !== undefined ? provStatus : (status === 'RECOVERED' ? 'captured' : t.provider_status),
                 updated_at: new Date().toISOString(),
               }
             : t

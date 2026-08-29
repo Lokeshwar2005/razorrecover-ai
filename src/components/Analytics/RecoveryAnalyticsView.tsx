@@ -16,8 +16,6 @@ export const RecoveryAnalyticsView: React.FC = () => {
 
   // Single Source of Truth: Calculate analytics directly from canonical store
   const data: AnalyticsData = useMemo(() => {
-    if (backendData) return backendData
-
     let totalRisk = 0
     let totalRecovered = 0
 
@@ -51,7 +49,7 @@ export const RecoveryAnalyticsView: React.FC = () => {
       failureMap.set(sig, curSig)
     }
 
-    const overallRate = totalRisk > 0 ? Math.round((totalRecovered / totalRisk) * 1000) / 10 : 72.0
+    const overallRate = totalRisk > 0 ? Math.round((totalRecovered / totalRisk) * 1000) / 10 : 0
 
     const action_performance: ActionPerformance[] = Array.from(actionMap.entries()).map(([action, d]) => ({
       action,
@@ -76,7 +74,7 @@ export const RecoveryAnalyticsView: React.FC = () => {
       action_performance,
       failure_distributions,
     }
-  }, [backendData, transactions])
+  }, [transactions])
 
   const formatRupees = (minor: number) => {
     return `₹${(minor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`
