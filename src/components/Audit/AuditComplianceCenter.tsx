@@ -35,7 +35,7 @@ export const AuditComplianceCenter: React.FC = () => {
     let prevHash = '0000000000000000000000000000000000000000000000000000000000000000'
     let counter = 100
 
-    for (const txn of transactions.slice(0, 30)) {
+    for (const txn of transactions) {
       counter++
       const h1 = pseudoSha256(`${prevHash}:${txn.id}:TRANSACTION_DETECTED`)
       list.unshift({
@@ -59,7 +59,7 @@ export const AuditComplianceCenter: React.FC = () => {
         event_type: 'AI_DIAGNOSIS_CREATED',
         actor: 'AI Diagnosis Advisor',
         decision: 'Recommended',
-        reason: `Diagnosed root cause for ${txn.direction}. Confidence ${txn.confidence}%.`,
+        reason: `Diagnosed root cause for ${txn.direction}. Confidence ${txn.confidence}%. Action: ${txn.action}.`,
         hash: h2,
         prev_hash: prevHash,
         recorded_at: txn.created_at,
@@ -83,19 +83,37 @@ export const AuditComplianceCenter: React.FC = () => {
       })
       prevHash = h3
 
-      if (txn.status === 'RECOVERED') {
+      if (txn.provider_order_id || txn.recovery_operation_id || txn.status === 'IN_PROGRESS') {
+        counter++
+        const hRec = pseudoSha256(`${prevHash}:${txn.id}:RECOVERY_INITIATED`)
+        list.unshift({
+          id: `AUD-${String(counter).padStart(5, '0')}`,
+          transaction_id: txn.id,
+          event_type: 'RECOVERY_INITIATED',
+          actor: 'Autonomous Recovery Orchestrator',
+          decision: 'Dispatched',
+          reason: `Recovery operation [${txn.recovery_operation_id || 'REC-ACTIVE'}] initiated. Order: ${txn.provider_order_id || 'order_pending'}.`,
+          hash: hRec,
+          prev_hash: prevHash,
+          recorded_at: txn.created_at,
+        })
+        prevHash = hRec
+      }
+
+      if (txn.status === 'RECOVERED' || txn.workflow_status === 'VERIFIED') {
         counter++
         const h4 = pseudoSha256(`${prevHash}:${txn.id}:PAYMENT_VERIFIED`)
+        const recoveredAmt = txn.verified_amount_minor ? txn.verified_amount_minor / 100 : txn.amount
         list.unshift({
           id: `AUD-${String(counter).padStart(5, '0')}`,
           transaction_id: txn.id,
           event_type: 'PAYMENT_VERIFIED',
           actor: 'Razorpay Verification Bridge',
           decision: 'Captured',
-          reason: `Verified capture confirmed. Credited ₹${txn.amount.toLocaleString('en-IN')} to recovery ledger.`,
+          reason: `Verified capture confirmed. Credited ₹${recoveredAmt.toLocaleString('en-IN')} to recovery ledger. Provider ID: ${txn.provider_payment_id || 'pay_verified'}.`,
           hash: h4,
           prev_hash: prevHash,
-          recorded_at: txn.created_at,
+          recorded_at: txn.captured_at || txn.created_at,
         })
         prevHash = h4
       }
@@ -130,7 +148,11 @@ export const AuditComplianceCenter: React.FC = () => {
   }
 
   const filtered = auditEvents.filter((e) => {
-    if (filter === 'selected' && selectedTransactionId) return e.transaction_id.toUpperCase() === selectedTransactionId.toUpperCase()
+    if (filter === 'selected' && selectedTransactionId) {
+      const q = selectedTransactionId.trim().toUpperCase()
+      const tId = e.transaction_id.trim().toUpperCase()
+      return tId === q || tId.replace('TXN-', '') === q.replace('TXN-', '')
+    }
     if (filter === 'verified') return e.event_type === 'PAYMENT_VERIFIED'
     if (filter === 'blocked') return e.event_type === 'POLICY_BLOCKED'
     if (filter === 'policy') return e.event_type.startsWith('POLICY_')
@@ -232,6 +254,13 @@ export const AuditComplianceCenter: React.FC = () => {
                 </td>
               </tr>
             ))}
+            {filtered.length === 0 && (
+              <tr>
+                <td colSpan={7} className="py-12 text-center text-[#7a7164]">
+                  No audit events found matching the selected filter.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
