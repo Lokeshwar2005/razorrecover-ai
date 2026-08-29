@@ -628,9 +628,28 @@ function App() {
             <div className="health">
               <span /> Shared recovery ledger <b>·</b> {liveCount ? 'Razorpay connected' : '42ms'}
             </div>
-            <button className="run" onClick={run} disabled={running}>
-              <span>{running ? `Processing ${Math.floor(progress)}%` : complete ? 'Run again' : 'Run live simulation'}</span>
-              <b>↗</b>
+            <button
+              className="run"
+              onClick={() => {
+                if (tab === 'Overview') {
+                  navigateToTab('Simulation')
+                } else {
+                  run()
+                }
+              }}
+              disabled={tab === 'Simulation' && running}
+              aria-label={tab === 'Overview' ? 'Launch Recovery Simulator' : 'Run Simulation'}
+            >
+              <span>
+                {tab === 'Simulation'
+                  ? running
+                    ? `Processing ${Math.floor(progress)}%`
+                    : complete
+                    ? 'Run Simulation Again'
+                    : 'Run Simulation'
+                  : 'Launch Recovery Simulator'}
+              </span>
+              <b aria-hidden="true">↗</b>
             </button>
           </div>
         </section>
@@ -967,6 +986,23 @@ function Trace({ title, text, tag, stop }: { title: string; text: string; tag: s
 function SimulationInfo({ progress, running, scenario }: { progress: number; running: boolean; scenario: string }) {
   return (
     <div className="infoView">
+      <div
+        style={{
+          display: 'inline-block',
+          padding: '4px 10px',
+          borderRadius: '6px',
+          background: 'rgba(229,169,68,0.12)',
+          color: '#e5a944',
+          border: '1px solid rgba(229,169,68,0.3)',
+          fontSize: '10px',
+          fontFamily: 'monospace',
+          fontWeight: 'bold',
+          letterSpacing: '0.05em',
+          marginBottom: '10px',
+        }}
+      >
+        SIMULATION ONLY · NO REAL FUNDS
+      </div>
       <div className="bigProgress">
         {Math.floor(progress)}
         <small>%</small>
