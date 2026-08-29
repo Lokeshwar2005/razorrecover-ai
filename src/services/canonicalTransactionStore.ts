@@ -66,6 +66,7 @@ const STABLE_EPOCH_BASE = 1788000000000
 /**
  * Deterministically generates the 100 canonical synthetic transactions
  * (TXN-1042 down to TXN-0943, including TXN-1033 at index 9).
+ * Synthetic transactions enter the system as PENDING recovery opportunities.
  */
 export function generateCanonicalSyntheticTransactions(
   scenario: 'balanced' | 'checkout' | 'degradation' = 'balanced'
@@ -84,7 +85,7 @@ export function generateCanonicalSyntheticTransactions(
       amount_minor: amountMinor,
       currency: 'INR',
       source: 'synthetic',
-      status: raw.result === 'Recovered' ? 'RECOVERED' : raw.result === 'Stopped' ? 'STOPPED' : 'PENDING',
+      status: 'PENDING',
       direction: raw.direction,
       reason: raw.reason,
       action: raw.action,
@@ -95,6 +96,7 @@ export function generateCanonicalSyntheticTransactions(
       explanation: raw.explanation,
       latency: raw.latency,
       created_at: createdIso,
+      verified_amount_minor: 0,
     }
   })
 }
@@ -470,6 +472,27 @@ export interface CanonicalStoreState {
   getMetrics: () => ReturnType<typeof computeMetricsFromTransactions>
 }
 
+const STORAGE_KEY = 'razorrecover_persisted_txn_states_v3'
+
+export function loadPersistedTransactionStates(): Record<string, Partial<CanonicalTransaction>> {
+  if (typeof window === 'undefined') return {}
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    return raw ? JSON.parse(raw) : {}
+  } catch (e) {
+    return {}
+  }
+}
+
+export function savePersistedTransactionState(id: string, state: Partial<CanonicalTransaction>) {
+  if (typeof window === 'undefined') return
+  try {
+    const current = loadPersistedTransactionStates()
+    current[id] = { ...current[id], ...state }
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(current))
+  } catch (e) {}
+}
+
 let lastIngestedFingerprint = ''
 let isRefreshingProviderFeed = false
 let cachedSynthetic: { scenario: string; items: CanonicalTransaction[] } | null = null
@@ -485,8 +508,19 @@ function getCachedSyntheticTransactions(scenario: 'balanced' | 'checkout' | 'deg
 }
 
 export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
-  const initialSynthetic = generateCanonicalSyntheticTransactions('balanced')
-  const initialProvider = INITIAL_RAZORPAY_TEST_PAYMENTS.map((p) => normalizeRazorpayPayment(p, false))
+  const persistedStates = loadPersistedTransactionStates()
+
+  const initialSynthetic = generateCanonicalSyntheticTransactions('balanced').map((t) => {
+    const override = persistedStates[t.id]
+    return override ? { ...t, ...override } : t
+  })
+
+  const initialProvider = INITIAL_RAZORPAY_TEST_PAYMENTS.map((p) => {
+    const normalized = normalizeRazorpayPayment(p, false)
+    const override = persistedStates[normalized.id]
+    return override ? { ...normalized, ...override } : normalized
+  })
+
   const initialMerged = mergeCanonicalTransactions(initialSynthetic, initialProvider)
 
   return {
@@ -500,7 +534,21 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
     lastSyncedAt: new Date().toISOString(),
 
     setScenario: (scenario) => {
-      const synthetic = generateCanonicalSyntheticTransactions(scenario)
+      const persisted = loadPersistedTransactionStates()
+      const currentTxnMap = new Map(get().transactions.map((t) => [t.id, t]))
+
+      const synthetic = generateCanonicalSyntheticTransactions(scenario).map((t) => {
+        const existing = currentTxnMap.get(t.id)
+        const override = persisted[t.id]
+        if (existing && existing.status === 'RECOVERED') {
+          return existing
+        }
+        if (override) {
+          return { ...t, ...override }
+        }
+        return existing ? { ...t, ...existing } : t
+      })
+
       const provider = get().providerTransactions
       const merged = mergeCanonicalTransactions(synthetic, provider)
       set({
@@ -525,43 +573,47 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         return
       }
 
+      const persisted = loadPersistedTransactionStates()
+      const currentTxnMap = new Map(get().transactions.map((t) => [t.id, t]))
       const normalized = rawPayments.map((p) => normalizeRazorpayPayment(p, isLive))
       const currentProvider = get().providerTransactions
 
       const seen = new Set<string>()
       const updatedProvider: CanonicalTransaction[] = []
-      let hasChanges = false
 
       for (const p of [...normalized, ...currentProvider]) {
         const key = `${p.provider || 'prov'}_${p.provider_payment_id || p.id}`
         if (!seen.has(key)) {
           seen.add(key)
-          updatedProvider.push(p)
-        }
-      }
-
-      if (updatedProvider.length !== currentProvider.length) {
-        hasChanges = true
-      } else {
-        for (let i = 0; i < updatedProvider.length; i++) {
-          if (
-            updatedProvider[i].id !== currentProvider[i].id ||
-            updatedProvider[i].status !== currentProvider[i].status ||
-            updatedProvider[i].amount_minor !== currentProvider[i].amount_minor
-          ) {
-            hasChanges = true
-            break
+          const existing = currentTxnMap.get(p.id) || currentTxnMap.get(`RZP-${p.provider_payment_id}`)
+          const override = persisted[p.id] || (p.provider_payment_id ? persisted[`RZP-${p.provider_payment_id}`] : undefined)
+          if (existing && existing.status === 'RECOVERED') {
+            updatedProvider.push(existing)
+          } else if (override) {
+            updatedProvider.push({ ...p, ...override })
+          } else if (existing) {
+            updatedProvider.push({ ...p, ...existing })
+          } else {
+            updatedProvider.push(p)
           }
         }
       }
 
       lastIngestedFingerprint = fingerprint
 
-      if (!hasChanges && get().transactions.length > 0) {
-        return
-      }
+      // Build updated synthetic list, preserving any modified or recovered states
+      const synthetic = getCachedSyntheticTransactions(get().scenario).map((st) => {
+        const existing = currentTxnMap.get(st.id)
+        const override = persisted[st.id]
+        if (existing && existing.status === 'RECOVERED') {
+          return existing
+        }
+        if (override) {
+          return { ...st, ...override }
+        }
+        return existing ? { ...st, ...existing } : st
+      })
 
-      const synthetic = getCachedSyntheticTransactions(get().scenario)
       const merged = mergeCanonicalTransactions(synthetic, updatedProvider)
 
       set({
@@ -579,9 +631,8 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
 
       try {
         // 1. Authoritative backend synchronization
-        let syncData: any = null
         try {
-          syncData = await syncTransactionsBackend()
+          await syncTransactionsBackend()
         } catch (e) {}
 
         // 2. Ingest provider payments from feed
@@ -594,11 +645,34 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         try {
           const backendTxns = await fetchCanonicalTransactions({ limit: 200 })
           if (backendTxns && backendTxns.length > 0) {
+            const persisted = loadPersistedTransactionStates()
             const existingMap = new Map(get().transactions.map((t) => [t.id, t]))
-            let added = false
+
             for (const bt of backendTxns) {
-              if (!existingMap.has(bt.id)) {
-                existingMap.set(bt.id, {
+              const existing = existingMap.get(bt.id)
+              if (existing) {
+                // If backend has authoritative RECOVERED status or verified amount, reconcile it
+                if (bt.status === 'RECOVERED' || (bt.verified_amount_minor ?? 0) > 0) {
+                  const updated: CanonicalTransaction = {
+                    ...existing,
+                    status: 'RECOVERED',
+                    verified_amount_minor: bt.verified_amount_minor || existing.amount_minor,
+                    provider_payment_id: bt.provider_id || bt.provider_payment_id || existing.provider_payment_id,
+                    provider_status: 'captured',
+                    workflow_status: 'VERIFIED',
+                  }
+                  existingMap.set(bt.id, updated)
+                  savePersistedTransactionState(bt.id, {
+                    status: 'RECOVERED',
+                    verified_amount_minor: updated.verified_amount_minor,
+                    provider_payment_id: updated.provider_payment_id,
+                    provider_status: 'captured',
+                    workflow_status: 'VERIFIED',
+                  })
+                }
+              } else {
+                const override = persisted[bt.id]
+                const newTxn: CanonicalTransaction = {
                   id: bt.id,
                   merchant_id: bt.merchant_id || 'mer_default',
                   amount: Math.round(bt.amount_minor / 100),
@@ -618,13 +692,13 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
                   created_at: bt.created_at || new Date().toISOString(),
                   provider_payment_id: bt.provider_id || bt.provider_payment_id,
                   verified_amount_minor: bt.verified_amount_minor || 0,
-                })
-                added = true
+                  ...(override || {}),
+                }
+                existingMap.set(bt.id, newTxn)
               }
             }
-            if (added) {
-              set({ transactions: Array.from(existingMap.values()) })
-            }
+
+            set({ transactions: Array.from(existingMap.values()) })
           }
         } catch (e) {}
 
@@ -668,6 +742,18 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         provId = providerId
       }
 
+      const finalVerifiedAmt = verifiedAmt !== undefined ? verifiedAmt : (status === 'RECOVERED' ? undefined : undefined)
+      const finalProvStatus = provStatus !== undefined ? provStatus : (status === 'RECOVERED' ? 'captured' : undefined)
+
+      savePersistedTransactionState(id, {
+        status,
+        ...(finalVerifiedAmt !== undefined ? { verified_amount_minor: finalVerifiedAmt } : {}),
+        ...(provId !== undefined ? { provider_payment_id: provId, provider_id: provId } : {}),
+        ...(finalProvStatus !== undefined ? { provider_status: finalProvStatus } : {}),
+        ...(status === 'RECOVERED' ? { workflow_status: 'VERIFIED', captured_at: new Date().toISOString() } : {}),
+        updated_at: new Date().toISOString(),
+      })
+
       set((state) => ({
         transactions: state.transactions.map((t) =>
           t.id === id
@@ -678,6 +764,8 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
                 provider_id: provId !== undefined ? provId : t.provider_id,
                 provider_payment_id: provId !== undefined ? provId : t.provider_payment_id,
                 provider_status: provStatus !== undefined ? provStatus : (status === 'RECOVERED' ? 'captured' : t.provider_status),
+                workflow_status: status === 'RECOVERED' ? 'VERIFIED' : t.workflow_status,
+                captured_at: status === 'RECOVERED' ? (t.captured_at || new Date().toISOString()) : t.captured_at,
                 updated_at: new Date().toISOString(),
               }
             : t
@@ -813,6 +901,17 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         })
 
         if (res.verified) {
+          savePersistedTransactionState(id, {
+            status: 'RECOVERED',
+            verified_amount_minor: res.amount_minor,
+            provider_payment_id: res.payment_id,
+            provider_order_id: res.order_id || orderId || txn.provider_order_id,
+            provider_status: 'captured',
+            workflow_status: 'VERIFIED',
+            captured_at: new Date().toISOString(),
+            updated_at: new Date().toISOString(),
+          })
+
           set((state) => ({
             transactions: state.transactions.map((t) =>
               t.id === id
