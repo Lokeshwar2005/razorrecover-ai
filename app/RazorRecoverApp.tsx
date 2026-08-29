@@ -548,7 +548,9 @@ export function RazorRecoverApp() {
       {tab === 'Policies' && <PolicySettingsView />}
       {tab === 'Audit' && <AuditComplianceCenter />}
 
-      <main className="shell">
+      {/* Main Core View (Overview / Simulation / Agent trace) */}
+      {(tab === 'Overview' || tab === 'Simulation' || tab === 'Agent trace') && (
+        <main className="shell">
         <section className="hero">
           <div className="heroCopy">
             <div className="eyebrow">REVENUE RECOVERY / 01</div>
@@ -677,7 +679,6 @@ export function RazorRecoverApp() {
             )}
             {tab === 'Simulation' && <SimulationInfo progress={progress} running={running} scenario={scenarios[scenario].label} />}
             {tab === 'Agent trace' && <AgentTrace progress={progress} />}
-            {tab === 'Audit trail' && <AuditTrail items={audit} />}
           </div>
         </section>
 
@@ -839,6 +840,7 @@ export function RazorRecoverApp() {
 
         <footer>RAZORRECOVER AI 3.0 · DETERMINISTIC BOUNDED AUTONOMY REVENUE RECOVERY PLATFORM · RAZORPAY TEST MODE</footer>
       </main>
+      )}
 
       {toast && (
         <div className="toast">

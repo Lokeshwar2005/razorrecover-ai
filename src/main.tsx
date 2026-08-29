@@ -553,7 +553,8 @@ function App() {
       {tab === 'Audit' && <AuditComplianceCenter />}
 
       {/* Main Core View (Overview / Simulation / Agent trace) */}
-      <main className="shell">
+      {(tab === 'Overview' || tab === 'Simulation' || tab === 'Agent trace') && (
+        <main className="shell">
         <section className="hero">
           <div className="heroCopy">
             <div className="eyebrow">REVENUE RECOVERY / 01</div>
@@ -701,7 +702,6 @@ function App() {
             )}
             {tab === 'Simulation' && <SimulationInfo progress={progress} running={running} scenario={scenarios[scenario].label} />}
             {tab === 'Agent trace' && <AgentTrace progress={progress} />}
-            {tab === 'Audit trail' && <AuditTrail items={audit} />}
           </div>
         </section>
 
@@ -865,6 +865,7 @@ function App() {
 
         <footer>RAZORRECOVER AI 3.0 · DETERMINISTIC BOUNDED AUTONOMY REVENUE RECOVERY PLATFORM · RAZORPAY TEST MODE</footer>
       </main>
+      )}
 
       {toast && (
         <div className="toast">
