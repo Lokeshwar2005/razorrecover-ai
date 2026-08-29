@@ -398,7 +398,9 @@ export interface CanonicalStoreState {
     id: string,
     paymentId: string,
     amountMinor?: number,
-    currency?: string
+    currency?: string,
+    orderId?: string,
+    signature?: string
   ) => Promise<{ verified: boolean; message: string }>
 
   // Selectors / Resolvers
@@ -545,7 +547,7 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
       }
     },
 
-    verifyPayment: async (id, paymentId, amountMinor, currency) => {
+    verifyPayment: async (id, paymentId, amountMinor, currency, orderId, signature) => {
       const txn = get().transactions.find((t) => t.id === id)
       if (!txn) {
         return { verified: false, message: `Transaction ${id} not found.` }
@@ -555,6 +557,8 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         const res = await verifyPaymentCapture({
           transaction_id: txn.id,
           payment_id: paymentId,
+          order_id: orderId || txn.provider_order_id,
+          signature: signature,
           amount_minor: amountMinor ?? txn.amount_minor,
           currency: currency ?? txn.currency,
         })
@@ -568,7 +572,11 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
                     status: 'RECOVERED',
                     verified_amount_minor: res.amount_minor,
                     provider_payment_id: res.payment_id,
+                    provider_order_id: res.order_id || orderId || txn.provider_order_id,
                     provider_status: 'captured',
+                    captured_at: new Date().toISOString(),
+                    workflow_status: 'VERIFIED',
+                    workflow_message: res.message,
                     updated_at: new Date().toISOString(),
                   }
                 : t
@@ -576,10 +584,10 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
           }))
           return { verified: true, message: res.message }
         } else {
-          return { verified: false, message: res.message }
+          return { verified: false, message: res.message || 'Payment could not be verified — recovery not recorded.' }
         }
       } catch (e: any) {
-        return { verified: false, message: e?.message || 'Payment verification failed.' }
+        return { verified: false, message: e?.message || 'Payment verification unavailable.' }
       }
     },
 

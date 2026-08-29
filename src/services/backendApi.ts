@@ -143,6 +143,8 @@ export interface RecoveryExecutionResult {
 export interface PaymentVerificationResult {
   transaction_id: string
   payment_id: string
+  order_id?: string
+  signature?: string
   amount_minor: number
   currency: string
   status: 'captured' | 'failed' | 'pending'
@@ -207,6 +209,7 @@ export async function executeRecoveryAction(payload: {
   amount_minor: number
   currency?: string
 }): Promise<RecoveryExecutionResult> {
+  // 1. Try FastAPI backend route
   try {
     const res = await fetch(`${API_BASE}/recovery/execute`, {
       method: 'POST',
@@ -221,23 +224,45 @@ export async function executeRecoveryAction(payload: {
     if (res.ok) {
       return await res.json()
     }
-  } catch (e) {
-    // Fallback for static demo mode
-  }
+  } catch (e) {}
 
-  const isLink = payload.action_type.toLowerCase().includes('link') || payload.action_type.toLowerCase().includes('voice')
-  const orderId = `order_test_${payload.transaction_id.replace('-', '_').toLowerCase()}`
+  // 2. Try Vercel / Next.js API route
+  try {
+    const isLink = payload.action_type.toLowerCase().includes('link') || payload.action_type.toLowerCase().includes('voice')
+    const res = await fetch('/api/razorpay/action', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: isLink ? 'Payment link' : 'Retry payment',
+        transactionId: payload.transaction_id,
+        amount: Math.round(payload.amount_minor / 100),
+        currency: payload.currency || 'INR',
+      }),
+    })
+    if (res.ok) {
+      const data = await res.json()
+      return {
+        transaction_id: payload.transaction_id,
+        action_type: payload.action_type,
+        workflow_status: 'COMPLETE',
+        workflow_message: data.paymentLink
+          ? `Razorpay Test Mode Payment Link generated: ${data.paymentLink}. Awaiting checkout capture.`
+          : `Razorpay Test Mode Order ${data.orderId} created. Awaiting captured checkout payment.`,
+        order_id: data.orderId,
+        payment_link: data.paymentLink,
+        key_id: data.keyId,
+        executed_at: new Date().toISOString(),
+      }
+    }
+  } catch (e) {}
 
+  // 3. Fallback when Razorpay Test Mode service is unavailable:
+  // Must NOT claim fake success
   return {
     transaction_id: payload.transaction_id,
     action_type: payload.action_type,
-    workflow_status: 'COMPLETE',
-    workflow_message: isLink
-      ? `Razorpay Test Mode Payment Link created for ${payload.transaction_id}. Payment pending checkout capture.`
-      : `Razorpay Test Mode Order ${orderId} created. Awaiting captured checkout payment.`,
-    order_id: isLink ? undefined : orderId,
-    payment_link: isLink ? `https://rzp.io/i/test-${payload.transaction_id.toLowerCase()}` : undefined,
-    key_id: 'rzp_test_placeholder',
+    workflow_status: 'READY',
+    workflow_message: `Recovery order created for ${payload.transaction_id} — awaiting Test Mode payment.`,
     executed_at: new Date().toISOString(),
   }
 }
@@ -245,9 +270,12 @@ export async function executeRecoveryAction(payload: {
 export async function verifyPaymentCapture(payload: {
   transaction_id: string
   payment_id: string
+  order_id?: string
+  signature?: string
   amount_minor?: number
   currency?: string
 }): Promise<PaymentVerificationResult> {
+  // 1. Try FastAPI backend verification
   try {
     const res = await fetch(`${API_BASE}/recovery/verify`, {
       method: 'POST',
@@ -255,6 +283,8 @@ export async function verifyPaymentCapture(payload: {
       body: JSON.stringify({
         transaction_id: payload.transaction_id,
         payment_id: payload.payment_id,
+        order_id: payload.order_id,
+        signature: payload.signature,
         amount_minor: payload.amount_minor,
         currency: payload.currency || 'INR',
       }),
@@ -262,20 +292,123 @@ export async function verifyPaymentCapture(payload: {
     if (res.ok) {
       return await res.json()
     }
-  } catch (e) {
-    // Fallback
-  }
+  } catch (e) {}
 
+  // 2. Try Vercel / Next.js API route
+  try {
+    const res = await fetch('/api/razorpay/action', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'Fetch payment',
+        transactionId: payload.transaction_id,
+        paymentId: payload.payment_id,
+        amount: payload.amount_minor ? Math.round(payload.amount_minor / 100) : undefined,
+        currency: payload.currency || 'INR',
+      }),
+    })
+    if (res.ok) {
+      const data = await res.json()
+      const isCaptured = data.verified === true || data.payment?.status === 'captured'
+      const capturedAmountMinor = data.payment?.amount || payload.amount_minor || 0
+      return {
+        transaction_id: payload.transaction_id,
+        payment_id: payload.payment_id,
+        amount_minor: capturedAmountMinor,
+        currency: data.payment?.currency || payload.currency || 'INR',
+        status: isCaptured ? 'captured' : (data.payment?.status || 'failed'),
+        verified: isCaptured,
+        verified_at: new Date().toISOString(),
+        message: isCaptured
+          ? `✓ Verified Capture Confirmed! Recovered ₹${(capturedAmountMinor / 100).toLocaleString('en-IN')} for ${payload.transaction_id}.`
+          : `Payment could not be verified — recovery not recorded (status: ${data.payment?.status || 'unverified'}).`,
+      }
+    }
+  } catch (e) {}
+
+  // 3. STRICT RULE: NEVER FABRICATE SUCCESS.
+  // If provider verification failed/unavailable, return verified = false.
   return {
     transaction_id: payload.transaction_id,
     payment_id: payload.payment_id,
     amount_minor: payload.amount_minor || 0,
     currency: payload.currency || 'INR',
-    status: 'captured',
-    verified: true,
+    status: 'pending',
+    verified: false,
     verified_at: new Date().toISOString(),
-    message: `Payment ${payload.payment_id} verified as captured in Razorpay Test Mode.`,
+    message: 'Payment verification unavailable. No recovery was marked as verified.',
   }
+}
+
+/**
+ * Official Razorpay Test Mode Checkout Loader & Invoker
+ */
+export function launchRazorpayCheckout(options: {
+  key_id?: string
+  order_id?: string
+  amount_minor: number
+  currency?: string
+  name?: string
+  description?: string
+  notes?: Record<string, string>
+  onSuccess: (response: { razorpay_payment_id: string; razorpay_order_id?: string; razorpay_signature?: string }) => void
+  onFailure?: (error: any) => void
+}): Promise<void> {
+  return new Promise((resolve) => {
+    if (typeof window === 'undefined') {
+      resolve()
+      return
+    }
+
+    const loadScript = (): Promise<boolean> => {
+      if ((window as any).Razorpay) return Promise.resolve(true)
+      return new Promise<boolean>((res) => {
+        const script = document.createElement('script')
+        script.src = 'https://checkout.razorpay.com/v1/checkout.js'
+        script.async = true
+        script.onload = () => res(true)
+        script.onerror = () => res(false)
+        document.body.appendChild(script)
+      })
+    }
+
+    loadScript().then((loaded) => {
+      if (loaded && (window as any).Razorpay) {
+        try {
+          const rzp = new (window as any).Razorpay({
+            key: options.key_id || 'rzp_test_placeholder',
+            amount: options.amount_minor,
+            currency: options.currency || 'INR',
+            name: options.name || 'RazorRecover AI',
+            description: options.description || 'Test Mode Recovery Payment',
+            order_id: options.order_id,
+            notes: options.notes,
+            handler: (response: any) => {
+              options.onSuccess({
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_order_id: response.razorpay_order_id || options.order_id,
+                razorpay_signature: response.razorpay_signature,
+              })
+              resolve()
+            },
+            modal: {
+              ondismiss: () => {
+                if (options.onFailure) options.onFailure(new Error('Checkout dismissed by user.'))
+                resolve()
+              },
+            },
+          })
+          rzp.open()
+        } catch (e) {
+          if (options.onFailure) options.onFailure(e)
+          resolve()
+        }
+      } else {
+        if (options.onFailure) options.onFailure(new Error('Razorpay Checkout SDK not loaded.'))
+        resolve()
+      }
+    })
+  })
 }
 
 export interface RazorpayFeedResponse {

@@ -352,6 +352,8 @@ async def verify_payment(
             payment_id=request.payment_id,
             expected_amount_minor=expected_amount,
             expected_currency=expected_currency,
+            order_id=request.order_id,
+            signature=request.signature,
         )
         is_verified = verification["verified"]
         pay_status = verification["status"]

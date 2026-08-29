@@ -9,6 +9,7 @@ import {
 import {
   type OpportunityItem,
   type RecoveryExecutionResult,
+  launchRazorpayCheckout,
 } from '../../services/backendApi'
 
 export const OpportunityQueue: React.FC = () => {
@@ -128,26 +129,67 @@ export const OpportunityQueue: React.FC = () => {
     }
   }
 
+  const handleLaunchCheckout = (opp: OpportunityItem) => {
+    const parentTxn = transactions.find((t) => t.id === opp.transaction_id)
+    launchRazorpayCheckout({
+      order_id: executionResult?.order_id || parentTxn?.provider_order_id,
+      amount_minor: opp.amount_minor,
+      currency: opp.currency || 'INR',
+      description: `RazorRecover AI Recovery for ${opp.transaction_id}`,
+      onSuccess: async (resp) => {
+        setVerifying(true)
+        setExecutionResult(null)
+        setExecutionError(null)
+        try {
+          const verifyRes = await verifyPayment(
+            opp.transaction_id,
+            resp.razorpay_payment_id,
+            opp.amount_minor,
+            opp.currency || 'INR',
+            resp.razorpay_order_id,
+            resp.razorpay_signature
+          )
+          if (verifyRes.verified) {
+            setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
+          } else {
+            setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
+          }
+        } finally {
+          setVerifying(false)
+        }
+      },
+      onFailure: (err) => {
+        setExecutionError(err?.message || 'Razorpay Checkout cancelled.')
+      },
+    })
+  }
+
   const handleVerifyPayment = async (opp: OpportunityItem) => {
+    const parentTxn = transactions.find((t) => t.id === opp.transaction_id)
+    if (!parentTxn?.provider_payment_id) {
+      setExecutionError('Payment verification unavailable. No payment has been submitted or captured yet.')
+      return
+    }
+
     setVerifying(true)
     setExecutionError(null)
     try {
-      const mockPayId = `pay_${opp.transaction_id.replace('-', '_').toLowerCase()}_${Date.now()}`
       const verifyRes = await verifyPayment(
         opp.transaction_id,
-        mockPayId,
+        parentTxn.provider_payment_id,
         opp.amount_minor,
-        opp.currency || 'INR'
+        opp.currency || 'INR',
+        parentTxn.provider_order_id
       )
 
       if (verifyRes.verified) {
         setExecutionResult(null)
         setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
       } else {
-        setExecutionError(verifyRes.message || 'Payment verification failed. Capture status unconfirmed.')
+        setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
       }
     } catch (e: any) {
-      setExecutionError(e?.message || 'Payment verification failed. Capture not detected yet.')
+      setExecutionError(e?.message || 'Payment verification unavailable.')
     } finally {
       setVerifying(false)
     }
@@ -432,6 +474,44 @@ export const OpportunityQueue: React.FC = () => {
               </span>
             </div>
 
+            {/* Execution/Verification Feedback */}
+            {executionResult && (
+              <div className="p-3.5 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-2">
+                <div className="font-bold text-[#10b981]">⚡ RECOVERY ACTION DISPATCHED</div>
+                <div>{executionResult.workflow_message}</div>
+                {executionResult.payment_link && (
+                  <a
+                    href={executionResult.payment_link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[#10b981] underline block pt-1"
+                  >
+                    Open Razorpay Link ↗
+                  </a>
+                )}
+                {executionResult.order_id && selectedOpp.status !== 'RECOVERED' && (
+                  <button
+                    onClick={() => handleLaunchCheckout(selectedOpp)}
+                    className="w-full py-2 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs font-mono hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer mt-1 shadow-md"
+                  >
+                    <span>💳 Open Razorpay Test Checkout Modal</span>
+                  </button>
+                )}
+              </div>
+            )}
+
+            {verifiedSuccess && (
+              <div className="p-3.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/60 text-[#10b981] text-xs font-mono font-bold">
+                {verifiedSuccess}
+              </div>
+            )}
+
+            {executionError && (
+              <div className="p-3.5 rounded-lg bg-[#ef4444]/15 border border-[#ef4444]/50 text-[#ef4444] text-xs font-mono">
+                ⛔ {executionError}
+              </div>
+            )}
+
             {/* Target Breakdown */}
             <div className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1.5 text-xs font-mono">
               <div className="flex justify-between">
@@ -544,15 +624,25 @@ export const OpportunityQueue: React.FC = () => {
                 ⛔ Recovery Blocked by Deterministic Safety Gate
               </button>
             ) : (
-              <button
-                onClick={() => handleExecute(selectedOpp)}
-                disabled={executing}
-                className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer font-mono"
-              >
-                {executing
-                  ? '⚡ Contacting Razorpay Orchestrator...'
-                  : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
-              </button>
+              <div className="space-y-2">
+                <button
+                  onClick={() => handleExecute(selectedOpp)}
+                  disabled={executing}
+                  className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer font-mono"
+                >
+                  {executing
+                    ? '⚡ Contacting Razorpay Orchestrator...'
+                    : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
+                </button>
+
+                <button
+                  onClick={() => handleVerifyPayment(selectedOpp)}
+                  disabled={verifying}
+                  className="w-full py-2 px-4 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
+                >
+                  {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
+                </button>
+              </div>
             )}
           </div>
         )}

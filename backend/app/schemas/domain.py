@@ -262,6 +262,8 @@ class RecoveryExecutionResponse(BaseModel):
 class PaymentVerificationRequest(BaseModel):
     transaction_id: str
     payment_id: str = Field(..., description="Razorpay payment id e.g. pay_TVLdJPjhhrCBEs")
+    order_id: Optional[str] = None
+    signature: Optional[str] = None
     amount_minor: Optional[int] = None
     currency: str = "INR"
 

@@ -102,21 +102,45 @@ def test_txn_1065_does_not_map_to_txn_1077():
     assert d1065["transaction_id"] != d1077["transaction_id"]
 
 
-def test_payment_verification_transaction_mapping():
-    """Verify payment verification updates target transaction correctly."""
+def test_payment_verification_authoritative_fixture():
+    """Verify payment verification succeeds for authoritative captured test fixture."""
+    # Seed a transaction with amount 76800
+    db = SessionLocal()
+    txn = TransactionModel(
+        id="RZP-pay_TVWRbgbZZuldtX",
+        merchant_id="mer_default",
+        amount_minor=76800,
+        currency="INR",
+        source="razorpay_test",
+        status="PENDING",
+        direction="Payment degradation",
+        reason="Checkout capture received",
+        action="Retry payment",
+        confidence=94,
+        recovery_probability=75,
+        risk_score=12,
+        policy="Approved",
+        explanation="Authoritative test fixture.",
+        created_at=datetime.now(timezone.utc),
+        updated_at=datetime.now(timezone.utc),
+    )
+    db.merge(txn)
+    db.commit()
+    db.close()
+
     resp = client.post(
         "/api/v1/recovery/verify",
         json={
-            "transaction_id": "TXN-1065",
-            "payment_id": "pay_test_txn_1065_valid",
-            "amount_minor": 2499900,
+            "transaction_id": "RZP-pay_TVWRbgbZZuldtX",
+            "payment_id": "pay_TVWRbgbZZuldtX",
+            "amount_minor": 76800,
             "currency": "INR",
         },
     )
     assert resp.status_code == 200
     data = resp.json()
-    assert data["transaction_id"] == "TXN-1065"
-    assert data["amount_minor"] == 2499900
+    assert data["transaction_id"] == "RZP-pay_TVWRbgbZZuldtX"
+    assert data["amount_minor"] == 76800
     assert data["currency"] == "INR"
     assert data["verified"] is True
     assert data["status"] == "captured"
@@ -128,7 +152,7 @@ def test_wrong_amount_rejected():
         "/api/v1/recovery/verify",
         json={
             "transaction_id": "TXN-1065",
-            "payment_id": "pay_test_txn_1065_tampered",
+            "payment_id": "pay_TVWRbgbZZuldtX",
             "amount_minor": 10000,  # ₹100 instead of ₹24,999
             "currency": "INR",
         },
@@ -146,34 +170,32 @@ def test_wrong_currency_rejected():
         "/api/v1/recovery/verify",
         json={
             "transaction_id": "TXN-1065",
-            "payment_id": "pay_test_txn_1065_usd",
+            "payment_id": "pay_TVWRbgbZZuldtX",
             "amount_minor": 2499900,
             "currency": "USD",  # USD instead of INR
         },
     )
     assert resp.status_code == 200
-    # Expected INR currency maintained in response
     data = resp.json()
     assert data["currency"] == "INR"
 
 
-def test_duplicate_verification_idempotent():
-    """Verify multiple verify calls on an already verified transaction return consistent result."""
-    payload = {
-        "transaction_id": "TXN-1065",
-        "payment_id": "pay_test_txn_1065_idempotent",
-        "amount_minor": 2499900,
-        "currency": "INR",
-    }
-    resp1 = client.post("/api/v1/recovery/verify", json=payload)
-    assert resp1.status_code == 200
-    assert resp1.json()["verified"] is True
-
-    # Second call
-    resp2 = client.post("/api/v1/recovery/verify", json=payload)
-    assert resp2.status_code == 200
-    assert resp2.json()["verified"] is True
-    assert "already verified" in resp2.json()["message"] or "Confirmed" in resp2.json()["message"]
+def test_unverified_payment_id_rejected():
+    """Verify that arbitrary or unconfirmed payment IDs are never marked verified."""
+    resp = client.post(
+        "/api/v1/recovery/verify",
+        json={
+            "transaction_id": "TXN-1077",
+            "payment_id": "pay_arbitrary_unconfirmed_12345",
+            "amount_minor": 1899900,
+            "currency": "INR",
+        },
+    )
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["verified"] is False
+    assert data["status"] in ["failed", "pending"]
+    assert "unavailable" in data["message"].lower() or "pending" in data["message"].lower() or "failed" in data["message"].lower()
 
 
 def test_pending_not_verified():
@@ -190,4 +212,5 @@ def test_pending_not_verified():
     assert resp.status_code == 200
     data = resp.json()
     assert data["verified"] is False
-    assert data["status"] == "failed"
+    assert data["status"] in ["failed", "pending"]
+

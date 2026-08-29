@@ -7,6 +7,7 @@ import {
   type CanonicalTransaction,
   type TransactionSource,
 } from '../../services/canonicalTransactionStore'
+import { launchRazorpayCheckout } from '../../services/backendApi'
 
 const PAGE_SIZE = 15
 
@@ -153,22 +154,67 @@ export const TransactionExplorer: React.FC = () => {
     }
   }
 
+  const handleLaunchCheckout = () => {
+    if (!selectedTxn) return
+    launchRazorpayCheckout({
+      order_id: executionResult?.orderId || selectedTxn.provider_order_id,
+      amount_minor: selectedTxn.amount_minor,
+      currency: selectedTxn.currency,
+      description: `RazorRecover AI Recovery for ${selectedTxn.id}`,
+      onSuccess: async (resp) => {
+        setVerifying(true)
+        setExecutionResult(null)
+        setExecutionError(null)
+        try {
+          const verifyRes = await verifyPayment(
+            selectedTxn.id,
+            resp.razorpay_payment_id,
+            selectedTxn.amount_minor,
+            selectedTxn.currency,
+            resp.razorpay_order_id,
+            resp.razorpay_signature
+          )
+          if (verifyRes.verified) {
+            setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ₹${(selectedTxn.amount_minor / 100).toLocaleString('en-IN')} for ${selectedTxn.id}.`)
+          } else {
+            setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
+          }
+        } finally {
+          setVerifying(false)
+        }
+      },
+      onFailure: (err) => {
+        setExecutionError(err?.message || 'Razorpay Checkout cancelled.')
+      },
+    })
+  }
+
   const handleVerifyPayment = async () => {
     if (!selectedTxn) return
+    if (!selectedTxn.provider_payment_id) {
+      setExecutionError('Payment verification unavailable. No payment has been submitted or captured yet.')
+      return
+    }
+
     setVerifying(true)
     setExecutionError(null)
 
     try {
-      const payId = selectedTxn.provider_payment_id || `pay_${selectedTxn.id.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase()}_${Date.now()}`
-      const res = await verifyPayment(selectedTxn.id, payId, selectedTxn.amount_minor, selectedTxn.currency)
+      const res = await verifyPayment(
+        selectedTxn.id,
+        selectedTxn.provider_payment_id,
+        selectedTxn.amount_minor,
+        selectedTxn.currency,
+        selectedTxn.provider_order_id
+      )
       if (res.verified) {
         setExecutionResult(null)
         setVerifiedSuccess(res.message || `✓ Verified Capture Confirmed! Recovered ₹${(selectedTxn.amount_minor / 100).toLocaleString('en-IN')} for ${selectedTxn.id}.`)
       } else {
-        setExecutionError(res.message || 'Payment verification failed.')
+        setExecutionError(res.message || 'Payment could not be verified — recovery not recorded.')
       }
     } catch (e: any) {
-      setExecutionError(e?.message || 'Payment verification failed.')
+      setExecutionError(e?.message || 'Payment verification unavailable.')
     } finally {
       setVerifying(false)
     }
@@ -464,7 +510,7 @@ export const TransactionExplorer: React.FC = () => {
 
               {/* Execution/Verification Feedback */}
               {executionResult && (
-                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-1">
+                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-2">
                   <div className="font-bold text-[#10b981]">⚡ RECOVERY DISPATCHED</div>
                   <div>{executionResult.message}</div>
                   {executionResult.paymentLink && (
@@ -476,6 +522,14 @@ export const TransactionExplorer: React.FC = () => {
                     >
                       Open Razorpay Link ↗
                     </a>
+                  )}
+                  {executionResult.orderId && selectedTxn.status !== 'RECOVERED' && (
+                    <button
+                      onClick={handleLaunchCheckout}
+                      className="w-full py-2 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs font-mono hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer mt-1 shadow-md"
+                    >
+                      <span>💳 Open Razorpay Test Checkout Modal</span>
+                    </button>
                   )}
                 </div>
               )}
