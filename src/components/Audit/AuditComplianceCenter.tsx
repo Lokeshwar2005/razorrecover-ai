@@ -29,6 +29,21 @@ export const AuditComplianceCenter: React.FC = () => {
   const [filter, setFilter] = useState<string>('all')
   const transactions = useTransactionStore((s) => s.transactions)
   const selectedTransactionId = useTransactionStore((s) => s.selectedTransactionId)
+  const setSelectedTransactionId = useTransactionStore((s) => s.setSelectedTransactionId)
+  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
+
+  // URL Deep-linking & Mount Feed Rehydration
+  React.useEffect(() => {
+    refreshProviderFeed()
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const txnParam = params.get('transaction') || params.get('txn') || params.get('id')
+      if (txnParam) {
+        setSelectedTransactionId(txnParam.toUpperCase())
+        setFilter('selected')
+      }
+    }
+  }, [setSelectedTransactionId, refreshProviderFeed])
 
   const auditEvents: AuditItem[] = useMemo(() => {
     const list: AuditItem[] = []
