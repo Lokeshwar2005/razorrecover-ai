@@ -37,8 +37,9 @@ export const TransactionExplorer: React.FC = () => {
   const [verifying, setVerifying] = useState(false)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
 
-  // URL Deep-linking support (?transaction=TXN-1033 or ?txn=TXN-1033)
+  // URL Deep-linking support (?transaction=TXN-1033 or ?txn=TXN-1033) & Mount Feed Rehydration
   useEffect(() => {
+    refreshProviderFeed()
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)
       const txnParam = params.get('transaction') || params.get('txn') || params.get('id')
@@ -46,7 +47,7 @@ export const TransactionExplorer: React.FC = () => {
         setSelectedTransactionId(txnParam.toUpperCase())
       }
     }
-  }, [setSelectedTransactionId])
+  }, [setSelectedTransactionId, refreshProviderFeed])
 
   const handleRefreshFeed = async () => {
     setRefreshingFeed(true)
@@ -65,7 +66,7 @@ export const TransactionExplorer: React.FC = () => {
         return false
       }
 
-      // 2. Search match (Case-insensitive across ID, raw numeric, provider ID, partial provider ID, reason, action, direction, status, merchant)
+      // 2. Search match (Case-insensitive across ID, raw numeric, provider ID, order ID, recovery operation, reason, action, direction, status, merchant)
       const q = search.trim().toLowerCase()
       let matchesSearch = true
       if (q) {
@@ -77,6 +78,8 @@ export const TransactionExplorer: React.FC = () => {
         const cleanStatus = txn.status.toLowerCase()
         const cleanMerchant = txn.merchant_id.toLowerCase()
         const cleanProviderId = (txn.provider_payment_id || '').toLowerCase()
+        const cleanOrderId = (txn.provider_order_id || '').toLowerCase()
+        const cleanRecOpId = (txn.recovery_operation_id || '').toLowerCase()
         const cleanSource = txn.source.toLowerCase()
 
         matchesSearch =
@@ -88,6 +91,8 @@ export const TransactionExplorer: React.FC = () => {
           cleanStatus.includes(q) ||
           cleanMerchant.includes(q) ||
           cleanProviderId.includes(q) ||
+          cleanOrderId.includes(q) ||
+          cleanRecOpId.includes(q) ||
           cleanSource.includes(q)
       }
 
