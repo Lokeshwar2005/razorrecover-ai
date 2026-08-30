@@ -1,0 +1,190 @@
+{
+  "total_images": 30,
+  "titan_count": 15,
+  "fastrack_count": 15,
+  "other_brands_count": 0,
+  "unknown_count": 0,
+  "duplicate_count": 0,
+  "items": [
+    {
+      "brand": "Titan",
+      "model": "Titan Edge Silver Dial",
+      "file": "dataset/titan/01_titan_edge_silver.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Edge Ceramic Green Dial",
+      "file": "dataset/titan/02_titan_edge_ceramic_green.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Edge Ceramic White Dial",
+      "file": "dataset/titan/03_titan_edge_ceramic_white.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Edge Metal Black Dial",
+      "file": "dataset/titan/04_titan_edge_metal_black.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Maritime Chronograph",
+      "file": "dataset/titan/05_titan_maritime_chronograph.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Maritime Analog",
+      "file": "dataset/titan/06_titan_maritime_analog.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Maritime Multifunction",
+      "file": "dataset/titan/07_titan_maritime_multifunction.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Neo Roman",
+      "file": "dataset/titan/08_titan_neo_roman.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Neo Curve",
+      "file": "dataset/titan/09_titan_neo_curve.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Neo Splash",
+      "file": "dataset/titan/10_titan_neo_splash.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Karishma Analog",
+      "file": "dataset/titan/11_titan_karishma_analog.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Karishma Day-Date",
+      "file": "dataset/titan/12_titan_karishma_day_date.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Karishma Zing",
+      "file": "dataset/titan/13_titan_karishma_zing.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Zero Hour Diver 100m",
+      "file": "dataset/titan/14_titan_zero_hour_diver.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Titan",
+      "model": "Titan Minimals Black Dial",
+      "file": "dataset/titan/15_titan_minimals_black.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Stunners White Dial Metal Strap Watch for Guys",
+      "file": "dataset/fastrack/01_fastrack_stunners_white.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Stunners X Quartz Analog Beige Dial Leather Strap Watch for Guys",
+      "file": "dataset/fastrack/02_fastrack_stunners_x_beige.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Fastfit Quartz Analog Grey Dial Grey Colour Silicone Strap Unisex Watch",
+      "file": "dataset/fastrack/03_fastrack_fastfit_grey.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Vyb Maverick Quartz Analog Brown Dial Metal Strap Watch for Guys",
+      "file": "dataset/fastrack/04_fastrack_vyb_maverick_brown.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Hype Adventure Quartz Analog Green Dial Green Silicone Strap Watch for Guys",
+      "file": "dataset/fastrack/05_fastrack_hype_adventure_green.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack UFO Quartz Multifunction Green Dial Silver Stainless Steel Strap Watch for Guys",
+      "file": "dataset/fastrack/06_fastrack_ufo_multifunction_green.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Thor Quartz Multifunction Red Dial Metal Strap Watch for Guys",
+      "file": "dataset/fastrack/07_fastrack_thor_multifunction_red.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Groove Multifunction Anthracite Dial Metal Strap Guy's Watch",
+      "file": "dataset/fastrack/08_fastrack_groove_anthracite.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Kronos Guys Chronograph Watch With Date Black Dial & Brown Leather Strap",
+      "file": "dataset/fastrack/09_fastrack_kronos_chronograph_black.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Pulse IV Dual Time Watch for Men with Teal Green Sunray Dial & Silver Metal Strap",
+      "file": "dataset/fastrack/10_fastrack_pulse_iv_teal_green.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack StreetStyle Quartz Analog Digital Black Dial Translucent Green Polyether Strap Watch for Guys",
+      "file": "dataset/fastrack/11_fastrack_streetstyle_analog_digital.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Overdrive Quartz Round Dial Watch for Men",
+      "file": "dataset/fastrack/12_fastrack_overdrive_round.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Men Tik Tok 5.0 Quartz Brown Shaped Dial Watch",
+      "file": "dataset/fastrack/13_fastrack_tik_tok_brown.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Men Automatics Dial Metal Strap Automatic Watch",
+      "file": "dataset/fastrack/14_fastrack_automatics_skeleton.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fastrack",
+      "model": "Fastrack Stunners Quartz Analog Green Dial Silver Stainless Steel Strap Watch for Guys",
+      "file": "dataset/fastrack/15_fastrack_stunners_green.jpg",
+      "status": "KEEP"
+    }
+  ]
+}
