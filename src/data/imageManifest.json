@@ -268,5 +268,140 @@
     "gallery": [
       "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85"
     ]
+  },
+  "chronova-031": {
+    "id": "chronova-031",
+    "brand": "Casio",
+    "name": "Casio Vintage A168WA-1YES",
+    "primaryImage": "/products/casio/chronova-031/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-031/primary.jpg"
+    ]
+  },
+  "chronova-032": {
+    "id": "chronova-032",
+    "brand": "Casio",
+    "name": "Casio Vintage A158WA-1",
+    "primaryImage": "/products/casio/chronova-032/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-032/primary.jpg"
+    ]
+  },
+  "chronova-033": {
+    "id": "chronova-033",
+    "brand": "Casio",
+    "name": "Casio Vintage A168WG-9",
+    "primaryImage": "/products/casio/chronova-033/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-033/primary.jpg"
+    ]
+  },
+  "chronova-034": {
+    "id": "chronova-034",
+    "brand": "Casio",
+    "name": "Casio Vintage AQ-230A-7B",
+    "primaryImage": "/products/casio/chronova-034/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-034/primary.jpg"
+    ]
+  },
+  "chronova-035": {
+    "id": "chronova-035",
+    "brand": "Casio",
+    "name": "Casio Enticer MTP-1302PD-3AVEF",
+    "primaryImage": "/products/casio/chronova-035/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-035/primary.jpg"
+    ]
+  },
+  "chronova-036": {
+    "id": "chronova-036",
+    "brand": "Casio",
+    "name": "Casio Enticer MTP-1302PD-2A2VEF",
+    "primaryImage": "/products/casio/chronova-036/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-036/primary.jpg"
+    ]
+  },
+  "chronova-037": {
+    "id": "chronova-037",
+    "brand": "Casio",
+    "name": "Casio Enticer MTP-VT01D-7B2",
+    "primaryImage": "/products/casio/chronova-037/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-037/primary.jpg"
+    ]
+  },
+  "chronova-038": {
+    "id": "chronova-038",
+    "brand": "Casio",
+    "name": "Casio Edifice EFV-100D-2AV",
+    "primaryImage": "/products/casio/chronova-038/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-038/primary.jpg"
+    ]
+  },
+  "chronova-039": {
+    "id": "chronova-039",
+    "brand": "Casio",
+    "name": "Casio Edifice EFR-S108D-2AV",
+    "primaryImage": "/products/casio/chronova-039/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-039/primary.jpg"
+    ]
+  },
+  "chronova-040": {
+    "id": "chronova-040",
+    "brand": "Casio",
+    "name": "Casio G-SHOCK GA-2100-1A1",
+    "primaryImage": "/products/casio/chronova-040/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-040/primary.jpg"
+    ]
+  },
+  "chronova-041": {
+    "id": "chronova-041",
+    "brand": "Casio",
+    "name": "Casio G-SHOCK GA-B2100-1A1",
+    "primaryImage": "/products/casio/chronova-041/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-041/primary.jpg"
+    ]
+  },
+  "chronova-042": {
+    "id": "chronova-042",
+    "brand": "Casio",
+    "name": "Casio G-SHOCK DW-5600E-1",
+    "primaryImage": "/products/casio/chronova-042/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-042/primary.jpg"
+    ]
+  },
+  "chronova-043": {
+    "id": "chronova-043",
+    "brand": "Casio",
+    "name": "Casio G-SHOCK GA-700-1A",
+    "primaryImage": "/products/casio/chronova-043/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-043/primary.jpg"
+    ]
+  },
+  "chronova-044": {
+    "id": "chronova-044",
+    "brand": "Casio",
+    "name": "Casio Pro Trek PRG-340-1",
+    "primaryImage": "/products/casio/chronova-044/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-044/primary.jpg"
+    ]
+  },
+  "chronova-045": {
+    "id": "chronova-045",
+    "brand": "Casio",
+    "name": "Casio Vintage F-91W-1",
+    "primaryImage": "/products/casio/chronova-045/primary.jpg",
+    "gallery": [
+      "/products/casio/chronova-045/primary.jpg"
+    ]
   }
 }

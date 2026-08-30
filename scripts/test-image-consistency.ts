@@ -10,6 +10,7 @@ function testImageConsistency() {
   const brandsToSample = [
     'Titan',
     'Fastrack',
+    'Casio',
   ]
 
   // 1. Check all 190 products

@@ -1,5 +1,5 @@
 {
-  "total_images": 30,
+  "total_images": 45,
   "titan_count": 15,
   "fastrack_count": 15,
   "other_brands_count": 0,
@@ -185,6 +185,127 @@
       "model": "Fastrack Stunners Quartz Analog Green Dial Silver Stainless Steel Strap Watch for Guys",
       "file": "dataset/fastrack/15_fastrack_stunners_green.jpg",
       "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Vintage A168WA-1YES",
+      "category": "Digital Watches",
+      "style": "Classic Silver Digital Rectangular Case",
+      "file": "dataset/casio/01_casio_vintage_a168wa_1yes.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Vintage A158WA-1",
+      "category": "Digital Watches",
+      "style": "Slim Silver Stainless Steel Digital",
+      "file": "dataset/casio/02_casio_vintage_a158wa_1.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Vintage A168WG-9",
+      "category": "Digital Watches",
+      "style": "Gold-Tone Vintage Digital Display",
+      "file": "dataset/casio/03_casio_vintage_a168wg_9.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Vintage AQ-230A-7B",
+      "category": "Analog Watches",
+      "style": "Dual Analog-Digital White Dial Silver Strap",
+      "file": "dataset/casio/04_casio_vintage_aq230a_7b.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Enticer MTP-1302PD-3AVEF",
+      "category": "Analog Watches",
+      "style": "Sunray Green Dial Fluted Bezel Steel",
+      "file": "dataset/casio/05_casio_enticer_mtp1302pd_3avef.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Enticer MTP-1302PD-2A2VEF",
+      "category": "Analog Watches",
+      "style": "Tiffany Sky Blue Dial Stainless Steel",
+      "file": "dataset/casio/06_casio_enticer_mtp1302pd_2a2vef.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Enticer MTP-VT01D-7B2",
+      "category": "Minimal Watches",
+      "style": "Clean White Minimalist Dial Steel Bracelet",
+      "file": "dataset/casio/07_casio_enticer_mtpvt01d_7b2.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Edifice EFV-100D-2AV",
+      "category": "Chronograph",
+      "style": "Sporty Blue Sunburst Dial Solid Steel",
+      "file": "dataset/casio/08_casio_edifice_efv100d_2av.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Edifice EFR-S108D-2AV",
+      "category": "Sports Watches",
+      "style": "Slim Octagonal Bezel Deep Blue Dial",
+      "file": "dataset/casio/09_casio_edifice_efrs108d_2av.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio G-SHOCK GA-2100-1A1",
+      "category": "Sports Watches",
+      "style": "All-Black Octagonal CasiOak Carbon Core Guard",
+      "file": "dataset/casio/10_casio_gshock_ga2100_1a1.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio G-SHOCK GA-B2100-1A1",
+      "category": "Sports Watches",
+      "style": "Tough Solar Bluetooth Octagonal Black Resin",
+      "file": "dataset/casio/11_casio_gshock_gab2100_1a1.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio G-SHOCK DW-5600E-1",
+      "category": "Digital Watches",
+      "style": "Classic Square Black Resin 200M Shock Resistant",
+      "file": "dataset/casio/12_casio_gshock_dw5600e_1.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio G-SHOCK GA-700-1A",
+      "category": "Sports Watches",
+      "style": "Rugged Dimensional Bezel Analog-Digital Black",
+      "file": "dataset/casio/13_casio_gshock_ga700_1a.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Pro Trek PRG-340-1",
+      "category": "Outdoor Watches",
+      "style": "Triple Sensor Solar Digital Outdoor Watch",
+      "file": "dataset/casio/14_casio_protrek_prg340_1.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Casio",
+      "model": "Casio Vintage F-91W-1",
+      "category": "Digital Watches",
+      "style": "Iconic Ultra-Compact Black Resin Digital Timepiece",
+      "file": "dataset/casio/15_casio_vintage_f91w_1.jpg",
+      "status": "KEEP"
     }
-  ]
+  ],
+  "casio_count": 15
 }

@@ -1890,12 +1890,958 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Precision Quartz Analog engineering",
       "50m water resistance rating"
     ]
+  },
+  {
+    "id": "chronova-031",
+    "name": "Casio Vintage A168WA-1YES",
+    "brand": "Casio",
+    "model": "A168WA-1YES",
+    "series": "Vintage",
+    "price_rupees": 2695,
+    "original_price_rupees": 2995,
+    "discount_percent": 10,
+    "currency": "INR",
+    "category": "Digital Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.9,
+    "review_count": 520,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ELECTROLUMINESCENCE",
+    "is_bestseller": true,
+    "description": "The quintessential vintage digital watch. Featuring Casio's vibrant ElectroLuminescent teal backlight, 1/100s stopwatch, daily alarm, and stainless steel link bracelet.",
+    "specs": {
+      "movement": "Casio Digital Quartz Module 3298",
+      "case_size": "38.6 \u00d7 36.3 mm",
+      "case_thickness": "9.6 mm",
+      "case_material": "Chrome-Plated Resin",
+      "dial_color": "Digital LCD with Blue/Red Outline",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Resin Glass",
+      "water_resistance": "30m (Water Resistant)",
+      "battery_life": "7 Years (CR2016)",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "EL Backlight with full-panel illumination",
+      "1/100-second digital chronograph stopwatch",
+      "7-year battery life with stainless steel bracelet"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-031/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-031/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Silver / Chrome",
+        "hex": "#e2e8f0"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-1",
+        "reviewer_name": "Rohan M.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "The timeless icon",
+        "comment": "The EL backlight is far superior to standard LEDs. Perfect retro aesthetic and unmatched durability.",
+        "helpful_votes": 48,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-032",
+    "name": "Casio Vintage A158WA-1",
+    "brand": "Casio",
+    "model": "A158WA-1DF",
+    "series": "Vintage",
+    "price_rupees": 1895,
+    "original_price_rupees": 2195,
+    "discount_percent": 14,
+    "currency": "INR",
+    "category": "Digital Watches",
+    "gender": "Unisex",
+    "vibe": "Minimal",
+    "rating": 4.8,
+    "review_count": 680,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "RETRO CLASSIC",
+    "is_bestseller": true,
+    "description": "Ultra-slim vintage profile featuring clean rectangular digital display, 7-year battery, micro-light illumination, and adjustable silver steel bracelet.",
+    "specs": {
+      "movement": "Casio Digital Quartz Module 593",
+      "case_size": "36.8 \u00d7 33.2 mm",
+      "case_thickness": "8.2 mm",
+      "case_material": "Chrome-Plated Resin",
+      "dial_color": "Grey Digital LCD",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Resin Glass",
+      "water_resistance": "30m",
+      "battery_life": "7 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Ultra-compact 8.2mm slim profile",
+      "Self-adjustable stainless steel clasp",
+      "Daily alarm and hourly time signal"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-032/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-032/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Silver / Steel",
+        "hex": "#cbd5e1"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-2",
+        "reviewer_name": "Arjun K.",
+        "rating": 5,
+        "date": "2026-08-20",
+        "title": "Minimalist legend",
+        "comment": "Slips under any cuff, lightweight and looks incredible with casual or formal wear.",
+        "helpful_votes": 52,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-033",
+    "name": "Casio Vintage A168WG-9",
+    "brand": "Casio",
+    "model": "A168WG-9WDF",
+    "series": "Vintage",
+    "price_rupees": 4495,
+    "original_price_rupees": 4995,
+    "discount_percent": 10,
+    "currency": "INR",
+    "category": "Digital Watches",
+    "gender": "Unisex",
+    "vibe": "Party",
+    "rating": 4.9,
+    "review_count": 390,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "GOLD EDITION",
+    "is_bestseller": true,
+    "description": "Lustrous all-gold ion-plated vintage timepiece. Complete with gold-tone stainless steel bracelet, EL backlight, and classic digital module.",
+    "specs": {
+      "movement": "Casio Digital Quartz Module 3298",
+      "case_size": "38.6 \u00d7 36.3 mm",
+      "case_thickness": "9.6 mm",
+      "case_material": "Gold Ion Plated Resin",
+      "dial_color": "Gold-Tone Digital LCD",
+      "strap_material": "Gold Ion Plated Stainless Steel",
+      "strap_color": "Yellow Gold",
+      "glass": "Resin Glass",
+      "water_resistance": "30m",
+      "battery_life": "7 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Rich yellow gold ion plating",
+      "ElectroLuminescent green-blue backlight",
+      "Daily alarm and 1/100s stopwatch"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-033/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-033/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Yellow Gold",
+        "hex": "#eab308"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-3",
+        "reviewer_name": "Meera S.",
+        "rating": 5,
+        "date": "2026-08-16",
+        "title": "Stunning statement piece",
+        "comment": "The gold tone is rich and doesn't fade. Gets compliments everywhere I go.",
+        "helpful_votes": 37,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-034",
+    "name": "Casio Vintage AQ-230A-7B",
+    "brand": "Casio",
+    "model": "AQ-230A-7BMQ",
+    "series": "Vintage",
+    "price_rupees": 3295,
+    "original_price_rupees": 3795,
+    "discount_percent": 13,
+    "currency": "INR",
+    "category": "Analog Watches",
+    "gender": "Unisex",
+    "vibe": "Office",
+    "rating": 4.7,
+    "review_count": 210,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ANA-DIGI",
+    "is_bestseller": false,
+    "description": "Dual time display combining traditional analog hands with a digital LCD window. Clean white dial with silver baton hands and steel bracelet.",
+    "specs": {
+      "movement": "Casio Ana-Digi Module",
+      "case_size": "38.8 \u00d7 29.8 mm",
+      "case_thickness": "8.1 mm",
+      "case_material": "Chrome-Plated Resin",
+      "dial_color": "Clean White with Digital Sub-Window",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Resin Glass",
+      "water_resistance": "30m",
+      "battery_life": "3 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Simultaneous dual-time zone tracking",
+      "Slim 8.1mm elegant rectangular profile",
+      "Independent analog and digital display"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-034/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-034/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "White / Steel",
+        "hex": "#f8fafc"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-4",
+        "reviewer_name": "Nikhil T.",
+        "rating": 5,
+        "date": "2026-08-11",
+        "title": "Best of both worlds",
+        "comment": "Analog hands for quick glance and digital display for stopwatch and second timezone.",
+        "helpful_votes": 24,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-035",
+    "name": "Casio Enticer MTP-1302PD-3AVEF",
+    "brand": "Casio",
+    "model": "MTP-1302PD-3AVEF",
+    "series": "Enticer",
+    "price_rupees": 3995,
+    "original_price_rupees": 4495,
+    "discount_percent": 11,
+    "currency": "INR",
+    "category": "Analog Watches",
+    "gender": "Men",
+    "vibe": "Premium",
+    "rating": 4.9,
+    "review_count": 410,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "EMERALD SUNRAY",
+    "is_bestseller": true,
+    "description": "Refined sunray emerald green dial with fluted coin-edge bezel, date aperture at 3 o'clock, and solid stainless steel link bracelet.",
+    "specs": {
+      "movement": "Casio Quartz 3-Hand with Date",
+      "case_size": "44.2 \u00d7 38.5 mm",
+      "case_thickness": "9.2 mm",
+      "case_material": "Stainless Steel / Ion Plated",
+      "dial_color": "Sunray Emerald Green",
+      "strap_material": "Solid Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Mineral Crystal Glass",
+      "water_resistance": "50m",
+      "battery_life": "3 Years (SR626SW)",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Lustrous sunray emerald green dial",
+      "Iconic fluted coin-edge bezel",
+      "50-meter water resistance with date window"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-035/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-035/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Emerald Green / Steel",
+        "hex": "#047857"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-5",
+        "reviewer_name": "Abhishek C.",
+        "rating": 5,
+        "date": "2026-08-08",
+        "title": "Looks like a 50k luxury watch",
+        "comment": "The green dial catches light dramatically. Bezel fluting is immaculate.",
+        "helpful_votes": 61,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-036",
+    "name": "Casio Enticer MTP-1302PD-2A2VEF",
+    "brand": "Casio",
+    "model": "MTP-1302PD-2A2VEF",
+    "series": "Enticer",
+    "price_rupees": 3995,
+    "original_price_rupees": 4495,
+    "discount_percent": 11,
+    "currency": "INR",
+    "category": "Analog Watches",
+    "gender": "Men",
+    "vibe": "Office",
+    "rating": 4.9,
+    "review_count": 550,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "TIFFANY BLUE",
+    "is_bestseller": true,
+    "description": "Sensational Tiffany turquoise sky-blue dial with fluted coin-edge bezel, date window, and stainless steel oyster-style bracelet.",
+    "specs": {
+      "movement": "Casio Quartz 3-Hand with Date",
+      "case_size": "44.2 \u00d7 38.5 mm",
+      "case_thickness": "9.2 mm",
+      "case_material": "Stainless Steel / Ion Plated",
+      "dial_color": "Tiffany Turquoise Sky Blue",
+      "strap_material": "Solid Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Mineral Crystal",
+      "water_resistance": "50m",
+      "battery_life": "3 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Viral Tiffany sky-blue dial finish",
+      "Fluted coin-edge luxury bezel",
+      "50m water resistance and mineral crystal"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-036/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-036/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Tiffany Sky Blue",
+        "hex": "#38bdf8"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-6",
+        "reviewer_name": "Karthik V.",
+        "rating": 5,
+        "date": "2026-08-04",
+        "title": "Unreal value for money",
+        "comment": "The turquoise blue is mesmerizing in real life. Easily the best watch under 5k.",
+        "helpful_votes": 73,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-037",
+    "name": "Casio Enticer MTP-VT01D-7B2",
+    "brand": "Casio",
+    "model": "MTP-VT01D-7B2UDF",
+    "series": "Enticer",
+    "price_rupees": 2495,
+    "original_price_rupees": 2995,
+    "discount_percent": 17,
+    "currency": "INR",
+    "category": "Minimal Watches",
+    "gender": "Men",
+    "vibe": "Minimal",
+    "rating": 4.7,
+    "review_count": 180,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "MINIMALIST",
+    "is_bestseller": false,
+    "description": "Minimalist aesthetic featuring clean white dial, ultra-slender indices, silver baton hands, and stainless steel mesh/link bracelet.",
+    "specs": {
+      "movement": "Casio Quartz 3-Hand",
+      "case_size": "45 \u00d7 40 mm",
+      "case_thickness": "8.2 mm",
+      "case_material": "Stainless Steel",
+      "dial_color": "Minimalist Pure White",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Mineral Glass",
+      "water_resistance": "30m",
+      "battery_life": "3 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Ultra-clean Bauhaus-inspired dial",
+      "Slimline 8.2mm casing",
+      "Classic stainless steel bracelet"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-037/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-037/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Pure White / Steel",
+        "hex": "#ffffff"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-7",
+        "reviewer_name": "Sanjay D.",
+        "rating": 5,
+        "date": "2026-07-29",
+        "title": "Clean and understated",
+        "comment": "Great everyday office watch. Very crisp dial and comfortable strap.",
+        "helpful_votes": 19,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-038",
+    "name": "Casio Edifice EFV-100D-2AV",
+    "brand": "Casio",
+    "model": "EFV-100D-2AVUDF",
+    "series": "Edifice",
+    "price_rupees": 7495,
+    "original_price_rupees": 8995,
+    "discount_percent": 17,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Sport",
+    "rating": 4.8,
+    "review_count": 230,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "100M EDIFICE",
+    "is_bestseller": true,
+    "description": "Motorsport-engineered Edifice with 100M water resistance, screw-lock back, sunburst navy dial, high-contrast lume markers, and solid steel bracelet.",
+    "specs": {
+      "movement": "Casio Edifice Quartz Calibre",
+      "case_size": "48 \u00d7 42 mm",
+      "case_thickness": "10.9 mm",
+      "case_material": "Solid 316L Stainless Steel",
+      "dial_color": "Sunburst Navy Blue",
+      "strap_material": "Solid Stainless Steel",
+      "strap_color": "Brushed Silver",
+      "glass": "Mineral Crystal Glass",
+      "water_resistance": "100m (Screw-Lock Back)",
+      "battery_life": "3 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "100M water resistance with screw-down caseback",
+      "Solid 316L stainless steel build",
+      "Neobrite luminous hands and markers"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-038/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-038/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Navy Blue / Steel",
+        "hex": "#1e3a8a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-8",
+        "reviewer_name": "Varun P.",
+        "rating": 5,
+        "date": "2026-07-22",
+        "title": "Incredible build quality",
+        "comment": "Substantial steel weight, screw-down crown and caseback. Outstanding watch.",
+        "helpful_votes": 31,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-039",
+    "name": "Casio Edifice EFR-S108D-2AV",
+    "brand": "Casio",
+    "model": "EFR-S108D-2AVUDF",
+    "series": "Edifice Slim",
+    "price_rupees": 10995,
+    "original_price_rupees": 12995,
+    "discount_percent": 15,
+    "currency": "INR",
+    "category": "Luxury Watches",
+    "gender": "Men",
+    "vibe": "Office",
+    "rating": 4.9,
+    "review_count": 290,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "SAPPHIRE GLASS",
+    "is_bestseller": true,
+    "description": "Ultra-slim 7.8mm octagonal bezel sports watch with scratch-resistant sapphire crystal glass, textured turquoise dial, and integrated H-link steel bracelet.",
+    "specs": {
+      "movement": "Casio Slim Quartz Movement",
+      "case_size": "44.8 \u00d7 39.9 mm",
+      "case_thickness": "7.8 mm",
+      "case_material": "Solid Stainless Steel with Octagonal Bezel",
+      "dial_color": "Textured Cyan Blue",
+      "strap_material": "Solid Stainless Steel",
+      "strap_color": "Silver",
+      "glass": "Sapphire Crystal with Anti-Reflective Coating",
+      "water_resistance": "100m",
+      "battery_life": "3 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Scratch-proof sapphire crystal glass",
+      "Ultra-slim 7.8mm case profile",
+      "Octagonal sports luxury bezel architecture"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-039/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-039/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Cyan Blue / Steel",
+        "hex": "#0284c7"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-9",
+        "reviewer_name": "Sameer K.",
+        "rating": 5,
+        "date": "2026-07-15",
+        "title": "Royal Oak vibes with sapphire",
+        "comment": "7.8mm thin, sapphire crystal, and 100m WR. The value is unbeatable.",
+        "helpful_votes": 45,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-040",
+    "name": "Casio G-SHOCK GA-2100-1A1",
+    "brand": "Casio",
+    "model": "GA-2100-1A1DR",
+    "series": "G-SHOCK",
+    "price_rupees": 9195,
+    "original_price_rupees": 9995,
+    "discount_percent": 8,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.9,
+    "review_count": 890,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "CASIOAK STEALTH",
+    "is_bestseller": true,
+    "description": "The world-famous 'CasiOak'. Octagonal bezel with Carbon Core Guard structure, all-black stealth analog-digital display, 200M water resistance, and double LED light.",
+    "specs": {
+      "movement": "Casio Ana-Digi Module 5611",
+      "case_size": "48.5 \u00d7 45.4 mm",
+      "case_thickness": "11.8 mm",
+      "case_material": "Carbon / Resin",
+      "dial_color": "All-Black Stealth Analog-Digital",
+      "strap_material": "Black Resin",
+      "strap_color": "Matte Black",
+      "glass": "Mineral Glass",
+      "water_resistance": "200m (20 Bar Shock Resistant)",
+      "battery_life": "3 Years (SR726W \u00d7 2)",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Carbon Core Guard structure (11.8mm slim)",
+      "200-meter water resistance and shock resistance",
+      "World time across 31 time zones & double LED"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-040/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-040/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Stealth Black",
+        "hex": "#09090b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-10",
+        "reviewer_name": "Tushar B.",
+        "rating": 5,
+        "date": "2026-07-08",
+        "title": "The greatest modern G-Shock",
+        "comment": "Slim, indestructible, and the blackout look is peak streetwear.",
+        "helpful_votes": 88,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-041",
+    "name": "Casio G-SHOCK GA-B2100-1A1",
+    "brand": "Casio",
+    "model": "GA-B2100-1A1DR",
+    "series": "G-SHOCK",
+    "price_rupees": 12495,
+    "original_price_rupees": 13995,
+    "discount_percent": 11,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.9,
+    "review_count": 420,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "TOUGH SOLAR + BLUETOOTH",
+    "is_bestseller": true,
+    "description": "The enhanced CasiOak with Tough Solar infinite solar charging and Bluetooth Smartphone Link. Auto-syncs time globally via G-SHOCK Connected app.",
+    "specs": {
+      "movement": "Casio Tough Solar Module with Bluetooth 5689",
+      "case_size": "48.5 \u00d7 45.4 mm",
+      "case_thickness": "11.9 mm",
+      "case_material": "Carbon / Resin",
+      "dial_color": "Stealth Black Solar Analog-Digital",
+      "strap_material": "Black Resin",
+      "strap_color": "Matte Black",
+      "glass": "Mineral Glass",
+      "water_resistance": "200m",
+      "battery_life": "Tough Solar (Never Needs Battery Change)",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Tough Solar light-powered charging",
+      "Bluetooth Smartphone Link time synchronization",
+      "Carbon Core Guard 200M shock resistant"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-041/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-041/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Stealth Black Solar",
+        "hex": "#18181b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-11",
+        "reviewer_name": "Karan M.",
+        "rating": 5,
+        "date": "2026-06-30",
+        "title": "Solar + Bluetooth is the ultimate upgrade",
+        "comment": "Never worry about battery replacement and time is always accurate to the millisecond.",
+        "helpful_votes": 54,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-042",
+    "name": "Casio G-SHOCK DW-5600E-1",
+    "brand": "Casio",
+    "model": "DW-5600E-1VDF",
+    "series": "G-SHOCK",
+    "price_rupees": 6495,
+    "original_price_rupees": 6995,
+    "discount_percent": 7,
+    "currency": "INR",
+    "category": "Digital Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.9,
+    "review_count": 1100,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ORIGIN ICON",
+    "is_bestseller": true,
+    "description": "The timeless square G-SHOCK derived directly from the 1983 original DW-5000C. 200M water resistance, hollow case shock structure, and EL backlight with flash alert.",
+    "specs": {
+      "movement": "Casio Digital Quartz Module 3229",
+      "case_size": "48.9 \u00d7 42.8 mm",
+      "case_thickness": "13.4 mm",
+      "case_material": "Shock-Resistant Resin",
+      "dial_color": "Classic Square Digital LCD",
+      "strap_material": "Black Resin",
+      "strap_color": "Matte Black",
+      "glass": "Mineral Glass",
+      "water_resistance": "200m (20 Bar)",
+      "battery_life": "2 Years",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Legendary original 1983 square silhouette",
+      "Full 200-meter water resistance and shock proofing",
+      "EL backlight with afterglow & flash alert"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-042/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-042/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Classic Black",
+        "hex": "#111827"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-12",
+        "reviewer_name": "Rahul G.",
+        "rating": 5,
+        "date": "2026-06-22",
+        "title": "Indestructible tool watch",
+        "comment": "Survived hiking, scuba diving, and daily gym workouts. An absolute tank.",
+        "helpful_votes": 95,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-043",
+    "name": "Casio G-SHOCK GA-700-1A",
+    "brand": "Casio",
+    "model": "GA-700-1ADR",
+    "series": "G-SHOCK",
+    "price_rupees": 8995,
+    "original_price_rupees": 9995,
+    "discount_percent": 10,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Sport",
+    "rating": 4.8,
+    "review_count": 380,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "HEAVY DUTY",
+    "is_bestseller": false,
+    "description": "Bold multidimensional case design with front-facing light button, 3D dial hands, 5-year battery life, and 200M water resistance.",
+    "specs": {
+      "movement": "Casio Ana-Digi Module 5522",
+      "case_size": "57.5 \u00d7 53.4 mm",
+      "case_thickness": "18.4 mm",
+      "case_material": "Resin",
+      "dial_color": "3D Dimensional Black & Red",
+      "strap_material": "Heavy-Duty Black Resin",
+      "strap_color": "Matte Black",
+      "glass": "Mineral Glass",
+      "water_resistance": "200m",
+      "battery_life": "5 Years (CR2016)",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Front super illuminator LED button",
+      "5-year long battery lifespan",
+      "Massive 53.4mm heavy-duty resin chassis"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-043/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-043/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Black / Red",
+        "hex": "#991b1b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-13",
+        "reviewer_name": "Praveen S.",
+        "rating": 5,
+        "date": "2026-06-14",
+        "title": "Huge wrist presence",
+        "comment": "The front light button is super convenient in the dark. 5-year battery is great.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-044",
+    "name": "Casio Pro Trek PRG-340-1",
+    "brand": "Casio",
+    "model": "PRG-340-1DR",
+    "series": "Pro Trek",
+    "price_rupees": 17995,
+    "original_price_rupees": 19995,
+    "discount_percent": 10,
+    "currency": "INR",
+    "category": "Outdoor Watches",
+    "gender": "Men",
+    "vibe": "Travel",
+    "rating": 4.9,
+    "review_count": 210,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "TRIPLE SENSOR",
+    "is_bestseller": true,
+    "description": "Tough Solar outdoor adventurer watch with Triple Sensor v3 (digital compass, altimeter/barometer, thermometer), rotating compass bezel, and duplex LCD.",
+    "specs": {
+      "movement": "Tough Solar Triple Sensor v3 Module",
+      "case_size": "54.7 \u00d7 51.7 mm",
+      "case_thickness": "15.1 mm",
+      "case_material": "Biomass Plastic / Resin",
+      "dial_color": "High-Contrast Duplex Digital LCD",
+      "strap_material": "Biomass Plastic Strap",
+      "strap_color": "Matte Charcoal Black",
+      "glass": "Mineral Glass",
+      "water_resistance": "100m (Low-Temp Resistant -10\u00b0C)",
+      "battery_life": "Tough Solar Light-Powered",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "Triple Sensor v3: Altimeter, Barometer, Compass, Thermometer",
+      "Tough Solar charging from sunlight & ambient light",
+      "Eco-friendly biomass plastic construction"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-044/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-044/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Charcoal Black / Compass",
+        "hex": "#1f2937"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-14",
+        "reviewer_name": "Deepak N.",
+        "rating": 5,
+        "date": "2026-06-05",
+        "title": "Ultimate trekking companion",
+        "comment": "Used it on a Himalayan trek. Barometer accurately predicted weather changes.",
+        "helpful_votes": 49,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-045",
+    "name": "Casio Vintage F-91W-1",
+    "brand": "Casio",
+    "model": "F-91W-1DG",
+    "series": "Vintage",
+    "price_rupees": 1095,
+    "original_price_rupees": 1295,
+    "discount_percent": 15,
+    "currency": "INR",
+    "category": "Digital Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.9,
+    "review_count": 2400,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "GLOBAL BESTSELLER",
+    "is_bestseller": true,
+    "description": "The most famous digital watch in human history. Lightweight black resin case and strap, 7-year battery, 1/100s stopwatch, daily alarm, and \u00b130 seconds per month accuracy.",
+    "specs": {
+      "movement": "Casio Digital Quartz Module 593",
+      "case_size": "38.2 \u00d7 35.2 mm",
+      "case_thickness": "8.5 mm",
+      "case_material": "Resin",
+      "dial_color": "Classic Grey LCD with Blue Border",
+      "strap_material": "Resin Strap",
+      "strap_color": "Black",
+      "glass": "Resin Glass",
+      "water_resistance": "30m (Water Resistant)",
+      "battery_life": "7 Years (CR2016)",
+      "warranty": "2 Years Casio India Official"
+    },
+    "highlights": [
+      "The world's most iconic digital watch",
+      "Weighs only 21 grams with 7-year battery",
+      "1/100-second chronograph stopwatch and daily alarm"
+    ],
+    "images": {
+      "primary": "/products/casio/chronova-045/primary.jpg",
+      "gallery": [
+        "/products/casio/chronova-045/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Original Classic Black",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-cs-15",
+        "reviewer_name": "Aman S.",
+        "rating": 5,
+        "date": "2026-05-28",
+        "title": "A masterpiece of industrial design",
+        "comment": "Simple, reliable, lightweight, and immortal battery. Everyone should own an F-91W.",
+        "helpful_votes": 120,
+        "verified_purchase": true
+      }
+    ]
   }
 ]
 
 export const ALL_BRANDS: WatchBrand[] = [
   'Titan',
   'Fastrack',
+  'Casio',
 ]
 
 export const ALL_CATEGORIES: WatchCategory[] = [

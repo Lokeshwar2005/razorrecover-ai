@@ -1,6 +1,7 @@
 export type WatchBrand =
   | 'Titan'
   | 'Fastrack'
+  | 'Casio'
 
 export type WatchCategory =
   | 'Analog Watches'

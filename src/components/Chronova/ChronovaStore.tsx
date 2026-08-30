@@ -140,6 +140,21 @@ export const ChronovaStore: React.FC = () => {
       featuredWatch: 'Titan Maritime Chronograph',
       price: '₹14,636',
     },
+    {
+      id: 'slide-4',
+      badge: '🔥 INDESTRUCTIBLE ICON',
+      title: 'CASIO G-SHOCK & VINTAGE',
+      subtitle: '200M Carbon Core Guard shock resistance, Tough Solar & iconic vintage digital heritage.',
+      cta: 'EXPLORE CASIO',
+      action: () => {
+        handleClearAllFilters()
+        setSelectedBrands(['Casio'])
+        setCurrentView('catalog')
+      },
+      image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'Casio G-SHOCK GA-2100 CasiOak',
+      price: '₹9,195',
+    },
   ]
 
   // Hero Autoplay
@@ -657,7 +672,7 @@ export const ChronovaStore: React.FC = () => {
                   setSearchQuery(e.target.value)
                   if (e.target.value) setCurrentView('catalog')
                 }}
-                placeholder="Search Titan & Fastrack watches, models & styles (e.g. Edge, Stunners, Maritime, UFO)..."
+                placeholder="Search Titan, Fastrack & Casio watches, models & styles (e.g. Edge, Stunners, G-Shock, Vintage, CasiOak)..."
                 className="w-full pl-11 pr-10 py-2.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:bg-white transition shadow-xs"
               />
               <span className="absolute left-4 top-3 text-slate-400 text-xs">🔍</span>
@@ -1440,11 +1455,11 @@ export const ChronovaStore: React.FC = () => {
           <div className="space-y-3">
             <h4 className="text-white font-bold uppercase tracking-wider font-mono">Approved Brands</h4>
             <ul className="space-y-2">
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan Edge & Maritime</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan Karishma & Neo</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Stunners & UFO</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Thor & Kronos</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Automatics</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan (Edge, Maritime, Karishma)</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack (Stunners, UFO, Thor)</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio (G-Shock, Vintage, Edifice)</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedCategories(['Digital Watches']); setCurrentView('catalog'); }}>Casio Vintage A168 & F-91W</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedCategories(['Sports Watches']); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>G-Shock GA-2100 CasiOak</li>
             </ul>
           </div>
 
