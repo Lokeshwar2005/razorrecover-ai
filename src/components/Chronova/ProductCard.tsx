@@ -30,18 +30,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="group relative bg-[#0b101d] border border-[#1e293b] hover:border-[#38bdf8]/50 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-sky-500/10"
+      className="group relative bg-white border border-slate-200 hover:border-slate-400 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl"
     >
       {/* Badges & Wishlist */}
       <div className="absolute top-3 left-3 right-3 z-10 flex items-center justify-between pointer-events-none">
         <div className="flex flex-col gap-1">
           {product.badge && (
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold font-mono tracking-wider bg-[#38bdf8] text-[#050811] shadow">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold tracking-wider bg-slate-900 text-white shadow-sm">
               {product.badge.toUpperCase()}
             </span>
           )}
           {product.discount_percent > 0 && (
-            <span className="px-2 py-0.5 rounded-full text-[10px] font-bold font-mono bg-[#ef4444] text-white shadow">
+            <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-rose-600 text-white shadow-sm">
               {product.discount_percent}% OFF
             </span>
           )}
@@ -52,22 +52,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             e.stopPropagation()
             onToggleWishlist(product)
           }}
-          className="w-8 h-8 rounded-full bg-[#050811]/80 backdrop-blur-md border border-[#1e293b] text-white flex items-center justify-center transition-transform hover:scale-110 pointer-events-auto cursor-pointer"
+          className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 flex items-center justify-center transition-transform hover:scale-110 shadow-sm pointer-events-auto cursor-pointer"
           title={isWishlisted ? 'Remove from Wishlist' : 'Add to Wishlist'}
         >
-          <span className={isWishlisted ? 'text-[#ef4444]' : 'text-[#94a3b8]'}>
+          <span className={isWishlisted ? 'text-rose-600' : 'text-slate-400'}>
             {isWishlisted ? '❤️' : '🤍'}
           </span>
         </button>
       </div>
 
-      {/* Product Photographic Thumbnail (1:1 Aspect Ratio, Zero Stretching) */}
+      {/* Product Photographic Thumbnail (1:1 Aspect Ratio, Clean Off-White Background) */}
       <div
         onClick={() => onSelectProduct(product)}
-        className="relative w-full aspect-square bg-[#050811] p-4 flex items-center justify-center overflow-hidden cursor-pointer"
+        className="relative w-full aspect-square bg-[#f8fafc] p-6 flex items-center justify-center overflow-hidden cursor-pointer"
       >
         {imgError ? (
-          <div className="w-full h-full flex flex-col items-center justify-center text-[#64748b] space-y-1">
+          <div className="w-full h-full flex flex-col items-center justify-center text-slate-400 space-y-1">
             <span className="text-3xl">⌚</span>
             <span className="text-[10px] font-mono">Image preview</span>
           </div>
@@ -88,7 +88,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               e.stopPropagation()
               onSelectProduct(product)
             }}
-            className="w-full py-2 bg-[#0b132b]/95 backdrop-blur-md hover:bg-[#1e293b] text-[#38bdf8] border border-[#38bdf8]/40 rounded-xl text-xs font-bold transition shadow-lg flex items-center justify-center gap-1.5 cursor-pointer"
+            className="w-full py-2 bg-white/95 backdrop-blur-md hover:bg-slate-900 hover:text-white text-slate-900 border border-slate-300 rounded-xl text-xs font-bold transition shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
           >
             <span>👁️ Quick View</span>
           </button>
@@ -96,50 +96,50 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </div>
 
       {/* Product Details */}
-      <div className="p-4 flex-1 flex flex-col justify-between space-y-3 bg-[#0b101d]">
+      <div className="p-4 flex-1 flex flex-col justify-between space-y-3 bg-white">
         <div onClick={() => onSelectProduct(product)} className="cursor-pointer space-y-1">
           <div className="flex items-center justify-between text-[11px] font-mono">
-            <span className="text-[#38bdf8] font-bold tracking-wider uppercase">{product.brand}</span>
-            <span className="text-[#64748b]">{product.category}</span>
+            <span className="text-blue-700 font-bold tracking-wider uppercase">{product.brand}</span>
+            <span className="text-slate-500">{product.category}</span>
           </div>
 
-          <h3 className="text-xs sm:text-sm font-bold text-white line-clamp-1 group-hover:text-[#38bdf8] transition-colors">
+          <h3 className="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1 group-hover:text-blue-600 transition-colors">
             {product.name}
           </h3>
 
           {/* Rating & Gender */}
-          <div className="flex items-center gap-1.5 text-xs">
-            <span className="px-1.5 py-0.5 rounded bg-[#f59e0b]/20 text-[#f59e0b] font-bold text-[10px] flex items-center gap-0.5">
+          <div className="flex items-center gap-1.5 text-xs pt-0.5">
+            <span className="px-1.5 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 font-bold text-[10px] flex items-center gap-0.5">
               <span>★</span>
               <span>{product.rating.toFixed(1)}</span>
             </span>
-            <span className="text-[11px] text-[#64748b]">({product.review_count})</span>
-            <span className="text-[#334155] text-[10px]">·</span>
-            <span className="text-[10px] text-[#94a3b8]">{product.gender}</span>
+            <span className="text-[11px] text-slate-500">({product.review_count})</span>
+            <span className="text-slate-300 text-[10px]">·</span>
+            <span className="text-[11px] text-slate-600 font-medium">{product.gender}</span>
           </div>
         </div>
 
         {/* Price & Add to Cart */}
-        <div className="pt-2 border-t border-[#1e293b]/70 flex items-center justify-between gap-2">
+        <div className="pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
           <div>
             <div className="flex items-baseline gap-1.5">
-              <span className="text-sm sm:text-base font-extrabold text-white">
+              <span className="text-sm sm:text-base font-black text-slate-900">
                 {formatINR(product.price_rupees)}
               </span>
               {product.original_price_rupees > product.price_rupees && (
-                <span className="text-[11px] text-[#64748b] line-through font-mono">
+                <span className="text-[11px] text-slate-400 line-through font-mono">
                   {formatINR(product.original_price_rupees)}
                 </span>
               )}
             </div>
-            <div className="text-[10px] text-[#10b981] font-medium font-mono">
-              Free Express Delivery
+            <div className="text-[10px] text-emerald-600 font-semibold">
+              ✓ Free Express Shipping
             </div>
           </div>
 
           <button
             onClick={() => onAddToCart(product)}
-            className="px-3 py-2 rounded-xl bg-[#2563eb] hover:bg-[#3b82f6] text-white text-xs font-bold transition shadow-md shadow-blue-500/20 flex items-center gap-1 cursor-pointer shrink-0"
+            className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition shadow-sm flex items-center gap-1 cursor-pointer shrink-0"
             title="Add to Bag"
           >
             <span>+</span>

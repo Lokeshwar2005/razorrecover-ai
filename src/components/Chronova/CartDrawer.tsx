@@ -50,63 +50,63 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       {/* Backdrop */}
       <div
         onClick={onClose}
-        className="absolute inset-0 bg-black/75 backdrop-blur-sm transition-opacity"
+        className="absolute inset-0 bg-slate-900/60 backdrop-blur-xs transition-opacity"
       />
 
       <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
-        <div className="w-screen max-w-md bg-[#090e1a] border-l border-[#1e293b] text-[#e2e8f0] flex flex-col justify-between shadow-2xl">
+        <div className="w-screen max-w-md bg-white border-l border-slate-200 text-slate-900 flex flex-col justify-between shadow-2xl">
           {/* Header */}
-          <div className="p-5 border-b border-[#1e293b] flex items-center justify-between bg-[#040711]">
+          <div className="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
             <div className="flex items-center gap-2">
               <span className="text-xl">🛍️</span>
-              <h2 className="text-base font-extrabold text-white">Your Chronova Bag</h2>
-              <span className="px-2 py-0.5 rounded-full bg-[#2563eb]/20 text-[#38bdf8] font-mono text-xs font-bold">
+              <h2 className="text-base font-black text-slate-900">Your Shopping Bag</h2>
+              <span className="px-2 py-0.5 rounded-full bg-slate-200 text-slate-800 font-mono text-xs font-bold">
                 {items.reduce((sum, i) => sum + i.quantity, 0)} Items
               </span>
             </div>
             <button
               onClick={onClose}
-              className="w-8 h-8 rounded-full bg-[#1e293b] text-[#94a3b8] hover:text-white flex items-center justify-center transition cursor-pointer"
+              className="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center transition cursor-pointer"
             >
               ✕
             </button>
           </div>
 
           {/* Shipping Tracker */}
-          <div className="bg-[#0b132b] px-5 py-2.5 border-b border-[#1e293b] text-xs font-mono">
-            <div className="flex justify-between text-[11px] mb-1">
-              <span className="text-[#38bdf8] font-bold">✓ Premium Insured Delivery:</span>
-              <span className="text-[#34d399] font-bold">FREE</span>
+          <div className="bg-emerald-50 px-5 py-2.5 border-b border-emerald-200 text-xs">
+            <div className="flex justify-between text-[11px] mb-1 text-emerald-800">
+              <span className="font-bold">✓ Insured Express Courier:</span>
+              <span className="font-extrabold">FREE FOR ALL ORDERS</span>
             </div>
-            <div className="w-full h-1.5 rounded-full bg-[#1e293b] overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-r from-[#38bdf8] to-[#10b981]" />
+            <div className="w-full h-1.5 rounded-full bg-emerald-200 overflow-hidden">
+              <div className="w-full h-full bg-emerald-600" />
             </div>
           </div>
 
           {/* Items List */}
           <div className="flex-1 overflow-y-auto p-5 space-y-4">
             {items.length === 0 ? (
-              <div className="py-16 text-center text-[#64748b] space-y-3">
+              <div className="py-16 text-center text-slate-400 space-y-3">
                 <div className="text-4xl">⌚</div>
-                <div className="text-sm font-semibold text-white">Your bag is currently empty</div>
-                <p className="text-xs text-[#94a3b8] max-w-xs mx-auto">
-                  Explore our catalog of 190 timepieces to find your signature watch.
+                <div className="text-sm font-bold text-slate-800">Your shopping bag is empty</div>
+                <p className="text-xs text-slate-500 max-w-xs mx-auto">
+                  Browse our curated 190-watch collection to discover your next signature timepiece.
                 </p>
                 <button
                   onClick={onClose}
-                  className="mt-4 px-4 py-2 bg-[#2563eb] hover:bg-[#3b82f6] text-white rounded-xl text-xs font-bold transition cursor-pointer"
+                  className="mt-4 px-4 py-2 bg-slate-900 hover:bg-blue-600 text-white rounded-xl text-xs font-bold transition cursor-pointer"
                 >
-                  Browse Watches →
+                  Explore Watches →
                 </button>
               </div>
             ) : (
               items.map((item) => (
                 <div
                   key={item.product.id}
-                  className="p-3.5 rounded-2xl bg-[#0b132b] border border-[#1e293b] flex gap-3 relative group"
+                  className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 flex gap-3 relative group shadow-xs"
                 >
                   {/* Thumbnail */}
-                  <div className="w-20 h-20 rounded-xl bg-[#040711] p-1.5 border border-[#1e293b] shrink-0 flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-xl bg-white p-1.5 border border-slate-200 shrink-0 flex items-center justify-center">
                     <img
                       src={item.product.images.primary}
                       alt={item.product.name}
@@ -118,42 +118,42 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between">
-                        <span className="text-[10px] font-mono text-[#38bdf8] uppercase font-bold">
+                        <span className="text-[10px] font-mono text-blue-700 uppercase font-bold">
                           {item.product.brand}
                         </span>
                         <button
                           onClick={() => onRemoveItem(item.product.id)}
-                          className="text-[#64748b] hover:text-[#ef4444] text-xs transition cursor-pointer p-1"
+                          className="text-slate-400 hover:text-rose-600 text-xs transition cursor-pointer p-1"
                           title="Remove item"
                         >
                           🗑️
                         </button>
                       </div>
-                      <h4 className="text-xs font-bold text-white line-clamp-1">
+                      <h4 className="text-xs font-bold text-slate-900 line-clamp-1">
                         {item.product.name}
                       </h4>
                       {item.selected_color && (
-                        <span className="text-[10px] text-[#94a3b8]">Color: {item.selected_color}</span>
+                        <span className="text-[10px] text-slate-500">Color: {item.selected_color}</span>
                       )}
                     </div>
 
-                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-[#1e293b]/60">
-                      <div className="text-xs font-extrabold text-white">
+                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-slate-200">
+                      <div className="text-xs font-black text-slate-900">
                         {formatINR(item.product.price_rupees * item.quantity)}
                       </div>
 
                       {/* Quantity Stepper */}
-                      <div className="flex items-center bg-[#090e1a] border border-[#1e293b] rounded-lg">
+                      <div className="flex items-center bg-white border border-slate-300 rounded-lg">
                         <button
                           onClick={() => onUpdateQuantity(item.product.id, Math.max(1, item.quantity - 1))}
-                          className="w-6 h-6 text-xs text-white hover:bg-[#1e293b] flex items-center justify-center cursor-pointer"
+                          className="w-6 h-6 text-xs text-slate-700 hover:bg-slate-100 flex items-center justify-center cursor-pointer"
                         >
                           -
                         </button>
-                        <span className="w-6 text-center text-xs font-mono text-white">{item.quantity}</span>
+                        <span className="w-6 text-center text-xs font-mono font-bold text-slate-900">{item.quantity}</span>
                         <button
                           onClick={() => onUpdateQuantity(item.product.id, Math.min(10, item.quantity + 1))}
-                          className="w-6 h-6 text-xs text-white hover:bg-[#1e293b] flex items-center justify-center cursor-pointer"
+                          className="w-6 h-6 text-xs text-slate-700 hover:bg-slate-100 flex items-center justify-center cursor-pointer"
                         >
                           +
                         </button>
@@ -167,7 +167,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
           {/* Footer */}
           {items.length > 0 && (
-            <div className="p-5 border-t border-[#1e293b] bg-[#040711] space-y-4">
+            <div className="p-5 border-t border-slate-200 bg-slate-50 space-y-4">
               {/* Promo Form */}
               <form onSubmit={handleApplyPromo} className="space-y-1">
                 <div className="flex gap-2">
@@ -175,18 +175,18 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     type="text"
                     value={promoCode}
                     onChange={(e) => setPromoCode(e.target.value)}
-                    placeholder="Promo Code (e.g. CHRONOVA10)"
-                    className="flex-1 px-3 py-2 rounded-xl bg-[#090e1a] border border-[#1e293b] text-xs text-white uppercase font-mono focus:outline-none focus:border-[#38bdf8]"
+                    placeholder="Enter Coupon (e.g. CHRONOVA10)"
+                    className="flex-1 px-3 py-2 rounded-xl bg-white border border-slate-300 text-xs text-slate-900 uppercase font-mono focus:outline-none focus:border-blue-600"
                   />
                   <button
                     type="submit"
-                    className="px-3 py-2 rounded-xl bg-[#1e293b] hover:bg-[#334155] text-white text-xs font-bold transition cursor-pointer"
+                    className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition cursor-pointer"
                   >
                     Apply
                   </button>
                 </div>
                 {promoMessage && (
-                  <div className={`text-[10px] font-mono ${promoMessage.startsWith('✓') ? 'text-[#34d399]' : 'text-[#ef4444]'}`}>
+                  <div className={`text-[10px] font-medium ${promoMessage.startsWith('✓') ? 'text-emerald-700' : 'text-rose-600'}`}>
                     {promoMessage}
                   </div>
                 )}
@@ -194,23 +194,23 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
               {/* Price Calculation */}
               <div className="space-y-1.5 text-xs">
-                <div className="flex justify-between text-[#94a3b8]">
-                  <span>Subtotal:</span>
-                  <span className="text-white">{formatINR(subtotal)}</span>
+                <div className="flex justify-between text-slate-600">
+                  <span>Bag Subtotal:</span>
+                  <span className="text-slate-900 font-semibold">{formatINR(subtotal)}</span>
                 </div>
                 {discountAmount > 0 && (
-                  <div className="flex justify-between text-[#34d399]">
-                    <span>VIP Member Discount ({discountPercent}%):</span>
+                  <div className="flex justify-between text-emerald-700">
+                    <span>Coupon Discount ({discountPercent}%):</span>
                     <span>-{formatINR(discountAmount)}</span>
                   </div>
                 )}
-                <div className="flex justify-between text-[#94a3b8]">
-                  <span>Insured Express Delivery:</span>
-                  <span className="text-[#34d399]">FREE</span>
+                <div className="flex justify-between text-slate-600">
+                  <span>Insured Express Shipping:</span>
+                  <span className="text-emerald-700 font-bold">FREE</span>
                 </div>
-                <div className="flex justify-between text-white font-extrabold text-sm pt-2 border-t border-[#1e293b]">
-                  <span>Total Due:</span>
-                  <span className="text-[#38bdf8] text-base">{formatINR(finalTotal)}</span>
+                <div className="flex justify-between text-slate-900 font-black text-sm pt-2 border-t border-slate-200">
+                  <span>Order Total:</span>
+                  <span className="text-blue-700 text-base">{formatINR(finalTotal)}</span>
                 </div>
               </div>
 
@@ -220,13 +220,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   onClose()
                   onProceedToCheckout()
                 }}
-                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#2563eb] to-[#0284c7] hover:from-[#3b82f6] hover:to-[#0ea5e9] text-white font-bold text-sm transition cursor-pointer shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2"
+                className="w-full py-3.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-sm transition cursor-pointer shadow-md flex items-center justify-center gap-2"
               >
                 <span>Proceed to Checkout</span>
                 <span>→</span>
               </button>
 
-              <div className="text-[10px] text-center text-[#64748b]">
+              <div className="text-[10px] text-center text-slate-500 font-medium">
                 🔒 256-Bit SSL Encrypted Razorpay Test Gateway
               </div>
             </div>

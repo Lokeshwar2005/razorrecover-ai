@@ -109,7 +109,6 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
     // Live Razorpay Checkout
     try {
-      // Check if Razorpay script is present
       if (typeof window !== 'undefined' && (window as any).Razorpay) {
         const options = {
           key: 'rzp_test_mockKeyId', // public Test Key
@@ -124,7 +123,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
             contact: address.phone,
           },
           theme: {
-            color: '#2563eb',
+            color: '#0f172a',
           },
           handler: function (response: any) {
             setPaymentLoading(false)
@@ -180,7 +179,6 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         })
         rzp.open()
       } else {
-        // Fallback smooth mock test settlement if Razorpay script is blocked in environment
         setTimeout(() => {
           setPaymentLoading(false)
           setOrderReceipt({
@@ -204,17 +202,17 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-2xl bg-[#090e1a] border border-[#1e293b] rounded-3xl overflow-hidden shadow-2xl my-auto text-[#e2e8f0]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-900/70 backdrop-blur-sm overflow-y-auto">
+      <div className="relative w-full max-w-2xl bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-2xl my-auto text-slate-900">
         {/* Step Indicator Header */}
-        <div className="p-4 sm:p-5 bg-[#040711] border-b border-[#1e293b] flex items-center justify-between">
+        <div className="px-6 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="text-xl">⌚</span>
             <div>
-              <h3 className="text-sm font-extrabold text-white">CHRONOVA SECURE CHECKOUT</h3>
-              <p className="text-[10px] text-[#64748b] font-mono">
-                {step === 'delivery' && 'STEP 01 OF 02 · DELIVERY DETAILS'}
-                {step === 'payment' && 'STEP 02 OF 02 · RAZORPAY PAYMENT'}
+              <h3 className="text-sm font-black text-slate-900">CHRONOVA EXPRESS CHECKOUT</h3>
+              <p className="text-[10px] text-slate-500 font-mono">
+                {step === 'delivery' && 'STEP 01 OF 02 · SHIPPING & CONTACT'}
+                {step === 'payment' && 'STEP 02 OF 02 · SECURE RAZORPAY PAYMENT'}
                 {step === 'success' && 'ORDER CONFIRMED'}
                 {step === 'failure' && 'PAYMENT INTERRUPTED'}
               </p>
@@ -223,7 +221,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-[#1e293b] text-[#94a3b8] hover:text-white flex items-center justify-center transition cursor-pointer"
+            className="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-600 flex items-center justify-center transition cursor-pointer"
           >
             ✕
           </button>
@@ -232,104 +230,104 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         {/* Step 1: Delivery Address Form */}
         {step === 'delivery' && (
           <form onSubmit={handleProceedToPayment} className="p-6 space-y-4 max-h-[75vh] overflow-y-auto">
-            <h4 className="text-xs font-mono font-bold text-[#38bdf8] uppercase tracking-wider">
-              Shipping & Contact Information
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+              1. Delivery Address Details
             </h4>
 
             {errorMessage && (
-              <div className="p-3 rounded-xl bg-[#ef4444]/15 border border-[#ef4444]/40 text-[#ef4444] text-xs font-mono">
+              <div className="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-mono">
                 {errorMessage}
               </div>
             )}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
               <div>
-                <label className="block text-[#94a3b8] mb-1 font-medium">Full Name *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">Full Name *</label>
                 <input
                   type="text"
                   required
                   value={address.full_name}
                   onChange={(e) => setAddress({ ...address, full_name: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-[#94a3b8] mb-1 font-medium">Email Address (for Order Updates) *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">Email (for Tracking) *</label>
                 <input
                   type="email"
                   required
                   value={address.email}
                   onChange={(e) => setAddress({ ...address, email: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-[#94a3b8] mb-1 font-medium">Mobile Number (with Country Code) *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">Mobile Number *</label>
                 <input
                   type="tel"
                   required
                   value={address.phone}
                   onChange={(e) => setAddress({ ...address, phone: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-[#94a3b8] mb-1 font-medium">Pincode *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">Pincode *</label>
                 <input
                   type="text"
                   required
                   value={address.pincode}
                   onChange={(e) => setAddress({ ...address, pincode: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white font-mono focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 font-mono focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
 
               <div className="sm:col-span-2">
-                <label className="block text-[#94a3b8] mb-1 font-medium">Flat / House No. / Street *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">Flat / House No. / Building / Street *</label>
                 <input
                   type="text"
                   required
                   value={address.address_line1}
                   onChange={(e) => setAddress({ ...address, address_line1: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-[#94a3b8] mb-1 font-medium">City *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">City *</label>
                 <input
                   type="text"
                   required
                   value={address.city}
                   onChange={(e) => setAddress({ ...address, city: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
 
               <div>
-                <label className="block text-[#94a3b8] mb-1 font-medium">State *</label>
+                <label className="block text-slate-600 mb-1 font-semibold">State *</label>
                 <input
                   type="text"
                   required
                   value={address.state}
                   onChange={(e) => setAddress({ ...address, state: e.target.value })}
-                  className="w-full px-3 py-2.5 rounded-xl bg-[#050811] border border-[#1e293b] text-white focus:outline-none focus:border-[#38bdf8]"
+                  className="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:outline-none focus:border-blue-600 focus:bg-white"
                 />
               </div>
             </div>
 
-            {/* Order Summary Line */}
-            <div className="p-3 rounded-xl bg-[#050811] border border-[#1e293b] flex items-center justify-between text-xs">
-              <span className="text-[#94a3b8]">Items Total ({items.length} Timepiece):</span>
-              <span className="text-[#38bdf8] font-extrabold text-sm">{formatINR(totalDue)}</span>
+            {/* Summary Line */}
+            <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs">
+              <span className="text-slate-600 font-medium">Order Total ({items.length} Timepiece):</span>
+              <span className="text-slate-900 font-black text-sm">{formatINR(totalDue)}</span>
             </div>
 
             <button
               type="submit"
-              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#2563eb] to-[#0284c7] hover:from-[#3b82f6] hover:to-[#0ea5e9] text-white font-bold text-xs transition cursor-pointer shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2"
+              className="w-full py-3.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs transition cursor-pointer shadow-md flex items-center justify-center gap-2"
             >
               <span>Continue to Payment</span>
               <span>→</span>
@@ -337,70 +335,70 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           </form>
         )}
 
-        {/* Step 2: Payment Options with Razorpay Test Mode */}
+        {/* Step 2: Payment Step with Razorpay Test Mode */}
         {step === 'payment' && (
           <div className="p-6 space-y-5 max-h-[75vh] overflow-y-auto">
             {/* Delivery Destination Badge */}
-            <div className="p-3 rounded-xl bg-[#050811] border border-[#1e293b] flex items-center justify-between text-xs">
+            <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs">
               <div className="space-y-0.5">
-                <span className="text-[#38bdf8] font-bold block">Deliver to: {address.full_name}</span>
-                <span className="text-[11px] text-[#94a3b8]">
+                <span className="text-slate-900 font-bold block">Deliver to: {address.full_name}</span>
+                <span className="text-[11px] text-slate-500">
                   {address.address_line1}, {address.city} - {address.pincode}
                 </span>
               </div>
               <button
                 onClick={() => setStep('delivery')}
-                className="text-xs text-[#38bdf8] hover:underline cursor-pointer"
+                className="text-xs text-blue-600 font-bold hover:underline cursor-pointer"
               >
                 Edit
               </button>
             </div>
 
             {/* Price Summary */}
-            <div className="p-4 rounded-2xl bg-[#050811] border border-[#1e293b] space-y-2">
-              <div className="flex justify-between text-xs text-[#94a3b8]">
-                <span>Total Items:</span>
-                <span className="text-white">{items.length}</span>
+            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+              <div className="flex justify-between text-xs text-slate-600">
+                <span>Items in Bag:</span>
+                <span className="text-slate-900 font-semibold">{items.length}</span>
               </div>
-              <div className="flex justify-between text-xs text-[#94a3b8]">
+              <div className="flex justify-between text-xs text-slate-600">
                 <span>Insured Express Courier:</span>
-                <span className="text-[#34d399]">FREE</span>
+                <span className="text-emerald-700 font-bold">FREE</span>
               </div>
-              <div className="flex justify-between text-sm font-extrabold text-white pt-2 border-t border-[#1e293b]">
-                <span>Grand Total to Pay:</span>
-                <span className="text-[#38bdf8] text-base">{formatINR(totalDue)}</span>
+              <div className="flex justify-between text-sm font-black text-slate-900 pt-2 border-t border-slate-200">
+                <span>Total Amount to Pay:</span>
+                <span className="text-blue-700 text-base">{formatINR(totalDue)}</span>
               </div>
             </div>
 
-            {/* Test Mode Simulation Controls */}
+            {/* Payment Launcher Controls */}
             <div className="space-y-3">
-              <span className="text-xs font-mono font-bold text-[#94a3b8] uppercase tracking-wider block">
-                Razorpay Test Mode Checkout Options
+              <span className="text-xs font-bold text-slate-700 uppercase tracking-wider block">
+                Razorpay Test Mode Payment
               </span>
 
               {/* Standard Pay Button */}
               <button
                 disabled={paymentLoading}
                 onClick={() => handleRazorpayTestPay('success')}
-                className="w-full py-4 px-4 rounded-2xl bg-gradient-to-r from-[#2563eb] to-[#0284c7] hover:from-[#3b82f6] hover:to-[#0ea5e9] text-white font-bold text-sm transition cursor-pointer shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full py-4 px-4 rounded-2xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-sm transition cursor-pointer shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 <span>💳 Complete Payment with Razorpay</span>
                 <span>{paymentLoading ? '...' : '→'}</span>
               </button>
 
-              {/* Failure Simulation Buttons for Judge Demo */}
-              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-[#1e293b]">
+              {/* Simulation Failure Scenarios for Demo */}
+              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-slate-200">
                 <button
                   disabled={paymentLoading}
                   onClick={() => handleRazorpayTestPay('timeout')}
-                  className="py-2.5 px-3 rounded-xl bg-[#1e293b]/70 hover:bg-[#334155] text-[#f59e0b] border border-[#f59e0b]/30 text-xs font-mono font-bold transition cursor-pointer flex items-center justify-center gap-1"
+                  className="py-2.5 px-3 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 text-xs font-mono font-bold transition cursor-pointer flex items-center justify-center gap-1"
                 >
                   <span>⏱️ 3DS Timeout</span>
                 </button>
                 <button
                   disabled={paymentLoading}
                   onClick={() => handleRazorpayTestPay('low_balance')}
-                  className="py-2.5 px-3 rounded-xl bg-[#1e293b]/70 hover:bg-[#334155] text-[#ef4444] border border-[#ef4444]/30 text-xs font-mono font-bold transition cursor-pointer flex items-center justify-center gap-1"
+                  className="py-2.5 px-3 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-900 border border-rose-300 text-xs font-mono font-bold transition cursor-pointer flex items-center justify-center gap-1"
                 >
                   <span>📉 Low Balance</span>
                 </button>
@@ -412,72 +410,72 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         {/* Step 3: Success Screen */}
         {step === 'success' && orderReceipt && (
           <div className="p-8 text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-[#10b981]/20 text-[#10b981] text-3xl mx-auto flex items-center justify-center shadow-lg shadow-emerald-500/20">
+            <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 text-3xl mx-auto flex items-center justify-center shadow-sm">
               ✓
             </div>
-            <h3 className="text-xl font-extrabold text-white">Payment Successful!</h3>
-            <p className="text-xs text-[#94a3b8] max-w-md mx-auto">
-              Thank you for shopping with CHRONOVA. Your order has been placed and is being prepared for express dispatch.
+            <h3 className="text-2xl font-black text-slate-900">Order Confirmed!</h3>
+            <p className="text-xs text-slate-600 max-w-md mx-auto">
+              Thank you for choosing CHRONOVA. Your order has been placed and is currently being packed for express courier dispatch.
             </p>
 
-            <div className="p-4 rounded-2xl bg-[#050811] border border-[#1e293b] text-left text-xs font-mono space-y-2 max-w-md mx-auto">
+            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-left text-xs font-mono space-y-2 max-w-md mx-auto">
               <div className="flex justify-between">
-                <span className="text-[#64748b]">Order Reference:</span>
-                <span className="text-white font-bold">{orderReceipt.orderId}</span>
+                <span className="text-slate-500">Order ID:</span>
+                <span className="text-slate-900 font-bold">{orderReceipt.orderId}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#64748b]">Payment ID:</span>
-                <span className="text-[#38bdf8] font-bold">{orderReceipt.paymentId}</span>
+                <span className="text-slate-500">Payment ID:</span>
+                <span className="text-blue-700 font-bold">{orderReceipt.paymentId}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#64748b]">Amount Paid:</span>
-                <span className="text-[#10b981] font-bold">{formatINR(orderReceipt.amount)}</span>
+                <span className="text-slate-500">Amount Paid:</span>
+                <span className="text-emerald-700 font-bold">{formatINR(orderReceipt.amount)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#64748b]">Order Date:</span>
-                <span className="text-white">{orderReceipt.date}</span>
+                <span className="text-slate-500">Date:</span>
+                <span className="text-slate-900">{orderReceipt.date}</span>
               </div>
             </div>
 
             <button
               onClick={onClose}
-              className="mt-4 px-6 py-3 rounded-xl bg-[#2563eb] hover:bg-[#3b82f6] text-white font-bold text-xs transition cursor-pointer"
+              className="mt-4 px-6 py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs transition cursor-pointer"
             >
-              Continue Browsing
+              Continue Shopping
             </button>
           </div>
         )}
 
-        {/* Step 4: Consumer-Safe Failure Screen (No RazorRecover or AI terms) */}
+        {/* Step 4: Consumer-Safe Friendly Failure Screen */}
         {step === 'failure' && (
           <div className="p-8 text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-[#ef4444]/20 text-[#ef4444] text-3xl mx-auto flex items-center justify-center shadow-lg shadow-red-500/20">
+            <div className="w-16 h-16 rounded-full bg-rose-100 text-rose-600 text-3xl mx-auto flex items-center justify-center shadow-sm">
               ⚠️
             </div>
-            <h3 className="text-xl font-extrabold text-white">Payment Could Not Be Completed</h3>
-            <p className="text-xs text-[#94a3b8] max-w-md mx-auto leading-relaxed">
-              Don't worry — your selected timepieces have been reserved in your bag. You can retry with a different payment method or use the secure checkout retry link sent to your email.
+            <h3 className="text-xl font-black text-slate-900">Payment Could Not Be Completed</h3>
+            <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
+              Don't worry — your selected watches are reserved in your bag. Please try another payment method (UPI, Cards, NetBanking) or check with your bank.
             </p>
 
-            <div className="p-4 rounded-2xl bg-[#050811] border border-[#1e293b] text-left text-xs font-mono space-y-1.5 max-w-md mx-auto">
-              <div className="text-[#38bdf8] font-bold">🔒 Secure Order Reservation Active</div>
-              <div className="text-[#64748b] text-[11px]">
-                Issuer Bank Gateway Switch interrupted during 3DS verification.
+            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-left text-xs font-mono space-y-1.5 max-w-md mx-auto">
+              <div className="text-blue-700 font-bold">🔒 Order Hold Active</div>
+              <div className="text-slate-500 text-[11px]">
+                The bank gateway encountered an authentication timeout during 3DS verification.
               </div>
             </div>
 
             <div className="flex gap-3 max-w-md mx-auto pt-2">
               <button
                 onClick={() => setStep('payment')}
-                className="flex-1 py-3 px-4 rounded-xl bg-[#2563eb] hover:bg-[#3b82f6] text-white font-bold text-xs transition cursor-pointer"
+                className="flex-1 py-3 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs transition cursor-pointer"
               >
                 Try Another Payment Method
               </button>
               <button
                 onClick={onClose}
-                className="py-3 px-4 rounded-xl bg-[#1e293b] hover:bg-[#334155] text-white text-xs font-bold transition cursor-pointer"
+                className="py-3 px-4 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold transition cursor-pointer"
               >
-                Return to Store
+                Return to Bag
               </button>
             </div>
           </div>
