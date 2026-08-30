@@ -312,6 +312,24 @@ export function RazorRecoverApp() {
   const rate = risk ? Math.min(99, Math.round((recovered / risk) * 100)) : 0
   const stopped = riskEvents.filter((e) => e.result === 'Stopped' || e.workflowStatus === 'ESCALATED').length
   const complete = progress >= 100 && !running
+  const [overviewSearch, setOverviewSearch] = useState('')
+  const filteredOverviewEvents = useMemo(() => {
+    const q = overviewSearch.trim().toLowerCase()
+    const clean = q.replace(/^txn-?/, '')
+    if (!q) return events.slice(0, 15)
+    return events.filter((e) => {
+      return (
+        e.id.toLowerCase().includes(q) ||
+        (clean && e.id.replace('TXN-', '').toLowerCase().includes(clean)) ||
+        (e.providerId && e.providerId.toLowerCase().includes(q)) ||
+        (e.reason && e.reason.toLowerCase().includes(q)) ||
+        (e.action && e.action.toLowerCase().includes(q)) ||
+        (e.direction && e.direction.toLowerCase().includes(q)) ||
+        (e.result && e.result.toLowerCase().includes(q)) ||
+        (e.workflowStatus && e.workflowStatus.toLowerCase().includes(q))
+      )
+    })
+  }, [events, overviewSearch])
   const visible = useMemo(() => events.slice(0, 10), [events])
   const liveCount = events.filter((e) => e.source === 'razorpay').length
   const recoveredEvents = riskEvents.filter((e) => (e.verifiedAmount ?? (e.result === 'Recovered' ? e.amount : 0)) > 0)
@@ -846,26 +864,90 @@ export function RazorRecoverApp() {
             </div>
             <span>{liveCount ? `${liveCount} Razorpay live + ${events.length - liveCount} synthetic` : `${events.length} synthetic transactions`}</span>
           </div>
+
+          {/* Search Input Field */}
+          <div style={{ padding: '0 0 16px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+              <span style={{ position: 'absolute', left: '12px', fontSize: '14px', color: '#e5a944', pointerEvents: 'none' }}>🔎</span>
+              <input
+                type="text"
+                placeholder="Search all transactions..."
+                value={overviewSearch}
+                onChange={(e) => setOverviewSearch(e.target.value)}
+                style={{
+                  width: '100%',
+                  padding: '10px 36px 10px 36px',
+                  background: '#15120c',
+                  border: '1px solid #2e271c',
+                  borderRadius: '8px',
+                  color: '#f4ede2',
+                  fontSize: '13px',
+                  fontFamily: 'inherit',
+                  outline: 'none',
+                }}
+              />
+              {overviewSearch && (
+                <button
+                  onClick={() => setOverviewSearch('')}
+                  aria-label="Clear search"
+                  style={{
+                    position: 'absolute',
+                    right: '12px',
+                    background: 'none',
+                    border: 'none',
+                    color: '#a89f91',
+                    fontSize: '13px',
+                    cursor: 'pointer',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#a89f91', padding: '0 2px' }}>
+              <span>Search by transaction ID, payment ID, order ID, recovery ID, or failure reason</span>
+              {overviewSearch && (
+                <span style={{ color: '#e5a944', fontWeight: 'bold' }}>
+                  {filteredOverviewEvents.length} of {events.length} matches
+                </span>
+              )}
+            </div>
+          </div>
+
           <div className="table">
-            {visible.map((e) => (
-              <button className={`row ${selected?.id === e.id ? 'selected' : ''}`} key={e.id} onClick={() => setSelected(e)}>
-                <strong>{e.id}</strong>
-                <b>{money(e.amount)}</b>
-                <span>
-                  {formatEventTime(e.occurredAt)}
-                  {e.source === 'razorpay' ? ' · RZP LIVE' : ''} · {e.reason}
-                </span>
-                <span className="action">→ {e.workflowAction || e.action}</span>
-                <span className={`status ${e.result.toLowerCase()}`}>
-                  {e.source === 'razorpay' && e.workflowStatus === 'READY'
-                    ? 'AT RISK'
-                    : e.workflowStatus && e.workflowStatus !== 'READY'
-                    ? e.workflowStatus
-                    : e.result}
-                </span>
-                <span className="confidence">{e.confidence}%</span>
-              </button>
-            ))}
+            {filteredOverviewEvents.length === 0 ? (
+              <div style={{ padding: '24px', textAlign: 'center', color: '#a89f91', fontSize: '12px', fontFamily: 'monospace' }}>
+                No transactions found matching &ldquo;{overviewSearch}&rdquo;.
+                <br />
+                <button
+                  onClick={() => setOverviewSearch('')}
+                  style={{ marginTop: '8px', background: '#15120c', border: '1px solid #2e271c', color: '#e5a944', padding: '4px 12px', borderRadius: '6px', cursor: 'pointer' }}
+                >
+                  Clear Search
+                </button>
+              </div>
+            ) : (
+              filteredOverviewEvents.map((e) => (
+                <button className={`row ${selected?.id === e.id ? 'selected' : ''}`} key={e.id} onClick={() => setSelected(e)}>
+                  <strong>{e.id}</strong>
+                  <b>{money(e.amount)}</b>
+                  <span>
+                    {formatEventTime(e.occurredAt)}
+                    {e.source === 'razorpay' ? ' · RZP LIVE' : ''} · {e.reason}
+                  </span>
+                  <span className="action">→ {e.workflowAction || e.action}</span>
+                  <span className={`status ${e.result.toLowerCase()}`}>
+                    {e.source === 'razorpay' && e.workflowStatus === 'READY'
+                      ? 'AT RISK'
+                      : e.workflowStatus && e.workflowStatus !== 'READY'
+                      ? e.workflowStatus
+                      : e.result}
+                  </span>
+                  <span className="confidence">{e.confidence}%</span>
+                </button>
+              ))
+            )}
           </div>
         </section>
 

@@ -389,6 +389,41 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       </div>
 
+      {/* Prominent Global Canonical Transaction Search */}
+      <div className="p-5 rounded-xl bg-[#0f0c08] border-2 border-[#e5a944]/40 shadow-[0_0_20px_rgba(229,169,68,0.15)] space-y-2 font-mono">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+          <div className="w-full relative flex-1">
+            <div className="relative flex items-center">
+              <span className="absolute left-3.5 text-base text-[#e5a944] pointer-events-none">🔎</span>
+              <input
+                type="text"
+                placeholder="Search all transactions..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-11 pr-10 py-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] placeholder:text-[#a89f91] focus:outline-none focus:border-[#e5a944] text-sm transition font-sans"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  aria-label="Clear search"
+                  className="absolute right-3.5 text-[#a89f91] hover:text-[#f4ede2] p-1 cursor-pointer text-sm font-bold"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+            <div className="text-xs text-[#a89f91] mt-2 flex flex-wrap items-center justify-between gap-2 px-1">
+              <span>Search by transaction ID, payment ID, order ID, recovery ID, or failure reason</span>
+              {searchQuery && (
+                <span className="text-[#e5a944] font-bold">
+                  {filteredOpportunities.length} of {allOpportunities.length} matches
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Summary KPI Cards (Entire Canonical Dataset) */}
       {summary && (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
@@ -485,38 +520,12 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       )}
 
-      {/* Global Canonical Transaction Search & Filter Control Bar */}
+      {/* Filter and Sort Control Bar */}
       <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-3 text-xs font-mono">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-3">
-          {/* Prominent Global Search Box */}
-          <div className="w-full md:flex-1 relative">
-            <div className="relative flex items-center">
-              <span className="absolute left-3 text-[#7a7164] pointer-events-none">🔎</span>
-              <input
-                type="text"
-                placeholder="Search all transactions..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-9 pr-8 py-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] placeholder:text-[#7a7164] focus:outline-none focus:border-[#e5a944] text-xs transition"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  aria-label="Clear search"
-                  className="absolute right-3 text-[#7a7164] hover:text-[#f4ede2] p-1 cursor-pointer"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
-            <div className="text-[11px] text-[#7a7164] mt-1.5 flex flex-wrap items-center justify-between gap-2">
-              <span>Search by transaction ID, payment ID, order ID, recovery ID, or failure reason</span>
-              {searchQuery && (
-                <span className="text-[#e5a944] font-bold">
-                  {filteredOpportunities.length} of {allOpportunities.length} matches
-                </span>
-              )}
-            </div>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-[#a89f91]">
+            <span className="text-base">⚡</span>
+            <span>OPPORTUNITY QUEUE CONTROLS</span>
           </div>
 
           {/* Sort Selector */}
