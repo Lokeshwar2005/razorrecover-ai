@@ -104,6 +104,8 @@ export interface ChronovaProduct {
     primary: string
     gallery: string[]
   }
+  primaryImage?: string
+  thumbnailImage?: string
   color_variants: WatchColorVariant[]
   specs: WatchSpecs
   reviews: WatchReview[]

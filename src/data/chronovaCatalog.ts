@@ -37,14 +37,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -54,8 +56,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -64,11 +66,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -131,14 +134,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -148,8 +153,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -158,11 +163,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -225,14 +231,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -242,8 +250,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -252,11 +260,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -319,14 +328,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
@@ -336,8 +347,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -346,11 +357,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -413,14 +425,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
@@ -430,8 +444,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -440,11 +454,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -507,14 +522,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -524,8 +541,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -534,11 +551,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -601,14 +619,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
@@ -618,8 +638,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -628,11 +648,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -695,14 +716,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -712,8 +735,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -722,11 +745,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -789,14 +813,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -806,8 +832,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -816,11 +842,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -883,14 +910,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -900,8 +929,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -910,11 +939,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -977,14 +1007,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
@@ -994,8 +1026,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1004,11 +1036,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1071,14 +1104,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
@@ -1088,8 +1123,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1098,11 +1133,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1165,14 +1201,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -1182,8 +1220,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1192,11 +1230,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1259,14 +1298,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
@@ -1276,8 +1317,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1286,11 +1327,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1353,14 +1395,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
@@ -1370,8 +1414,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1380,11 +1424,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1447,14 +1492,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
@@ -1464,8 +1511,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1474,11 +1521,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1541,14 +1589,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -1558,8 +1608,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1568,11 +1618,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1635,14 +1686,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -1652,8 +1705,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1662,11 +1715,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1729,14 +1783,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -1746,8 +1802,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1756,11 +1812,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1823,14 +1880,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
@@ -1840,8 +1899,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1850,11 +1909,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -1917,14 +1977,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
@@ -1934,8 +1996,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -1944,11 +2006,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2011,14 +2074,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -2028,8 +2093,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2038,11 +2103,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2105,14 +2171,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -2122,8 +2190,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2132,11 +2200,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2199,14 +2268,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -2216,8 +2287,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2226,11 +2297,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2293,14 +2365,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
@@ -2310,8 +2384,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2320,11 +2394,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2387,14 +2462,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
@@ -2404,8 +2481,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2414,11 +2491,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2481,14 +2559,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -2498,8 +2578,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2508,11 +2588,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2575,14 +2656,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -2592,8 +2675,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2602,11 +2685,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2669,14 +2753,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
@@ -2686,8 +2772,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2696,11 +2782,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2763,14 +2850,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
@@ -2780,8 +2869,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2790,11 +2879,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2857,14 +2947,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
@@ -2874,8 +2966,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2884,11 +2976,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -2951,14 +3044,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
@@ -2968,8 +3063,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -2978,11 +3073,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3045,14 +3141,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
@@ -3062,8 +3160,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3072,11 +3170,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3139,14 +3238,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
@@ -3156,8 +3257,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3166,11 +3267,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3233,14 +3335,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
@@ -3250,8 +3354,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3260,11 +3364,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3327,14 +3432,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
@@ -3344,8 +3451,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3354,11 +3461,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3421,14 +3529,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
@@ -3438,8 +3548,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3448,11 +3558,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3515,14 +3626,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
@@ -3532,8 +3645,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3542,11 +3655,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3609,14 +3723,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
@@ -3626,8 +3742,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3636,11 +3752,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3703,14 +3820,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
@@ -3720,8 +3839,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3730,11 +3849,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3797,14 +3917,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
@@ -3814,8 +3936,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3824,11 +3946,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3891,14 +4014,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
@@ -3908,8 +4033,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -3918,11 +4043,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -3973,7 +4099,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Waterbury Traditional Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -3985,14 +4111,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
@@ -4002,21 +4130,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4079,14 +4208,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -4096,8 +4227,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4106,11 +4237,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4173,14 +4305,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -4190,8 +4324,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4200,11 +4334,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4267,14 +4402,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
@@ -4284,8 +4421,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4294,11 +4431,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4361,14 +4499,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
@@ -4378,8 +4518,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4388,11 +4528,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4443,7 +4584,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Easy Reader Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -4455,14 +4596,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -4472,21 +4615,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4549,14 +4693,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -4566,8 +4712,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4576,11 +4722,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4643,14 +4790,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
@@ -4660,8 +4809,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4670,11 +4819,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4737,14 +4887,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
@@ -4754,8 +4906,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4764,11 +4916,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4831,14 +4984,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -4848,8 +5003,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -4858,11 +5013,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -4913,7 +5069,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Q Timex Reissue Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -4925,14 +5081,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -4942,21 +5100,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5019,14 +5178,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
@@ -5036,8 +5197,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5046,11 +5207,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5113,14 +5275,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
@@ -5130,8 +5294,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5140,11 +5304,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5207,14 +5372,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -5224,8 +5391,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5234,11 +5401,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5301,14 +5469,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
@@ -5318,8 +5488,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5328,11 +5498,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5383,7 +5554,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Neutra Minimalist Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 40mm case",
+      "Mechanical Automatic with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -5395,14 +5566,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
@@ -5412,21 +5585,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5489,14 +5663,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -5506,8 +5682,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5516,11 +5692,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5583,14 +5760,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
@@ -5600,8 +5779,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5610,11 +5789,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5677,14 +5857,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
@@ -5694,8 +5876,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5704,11 +5886,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5771,14 +5954,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
@@ -5788,8 +5973,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5798,11 +5983,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5853,7 +6039,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Minimalist 3H Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 40mm case",
+      "Mechanical Automatic with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -5865,14 +6051,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
@@ -5882,21 +6070,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -5959,14 +6148,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -5976,8 +6167,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -5986,11 +6177,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6053,14 +6245,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
@@ -6070,8 +6264,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6080,11 +6274,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6147,14 +6342,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
@@ -6164,8 +6361,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6174,11 +6371,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6241,14 +6439,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
@@ -6258,8 +6458,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6268,11 +6468,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6323,7 +6524,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Townsman Automatic Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 40mm case",
+      "Mechanical Automatic with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -6335,14 +6536,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
@@ -6352,21 +6555,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6429,14 +6633,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
@@ -6446,8 +6652,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6456,11 +6662,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6523,14 +6730,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
@@ -6540,8 +6749,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6550,11 +6759,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6617,14 +6827,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
@@ -6634,8 +6846,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6644,11 +6856,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6711,14 +6924,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
@@ -6728,8 +6943,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6738,11 +6953,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6805,14 +7021,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -6822,8 +7040,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6832,11 +7050,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6899,14 +7118,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -6916,8 +7137,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -6926,11 +7147,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -6993,14 +7215,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -7010,8 +7234,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7020,11 +7244,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7087,14 +7312,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
@@ -7104,8 +7331,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7114,11 +7341,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7181,14 +7409,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
@@ -7198,8 +7428,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7208,11 +7438,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7275,14 +7506,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -7292,8 +7525,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7302,11 +7535,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7369,14 +7603,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -7386,8 +7622,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7396,11 +7632,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7463,14 +7700,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -7480,8 +7719,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7490,11 +7729,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7557,14 +7797,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
@@ -7574,8 +7816,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7584,11 +7826,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7651,14 +7894,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
@@ -7668,8 +7913,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7678,11 +7923,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7745,14 +7991,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
@@ -7762,8 +8010,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7772,11 +8020,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7839,14 +8088,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -7856,8 +8107,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -7866,11 +8117,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Digital LCD",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -7921,7 +8173,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Presage Cocktail Time Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -7933,14 +8185,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -7950,21 +8204,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8027,14 +8282,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -8044,8 +8301,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8054,11 +8311,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8121,14 +8379,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -8138,8 +8398,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8148,11 +8408,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8215,14 +8476,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -8232,8 +8495,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8242,11 +8505,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8309,14 +8573,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
@@ -8326,8 +8592,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8336,11 +8602,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8391,7 +8658,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Speedtimer Solar Chrono Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -8403,14 +8670,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -8420,21 +8689,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8497,14 +8767,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -8514,8 +8786,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8524,11 +8796,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8591,14 +8864,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -8608,8 +8883,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8618,11 +8893,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8685,14 +8961,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -8702,8 +8980,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8712,11 +8990,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8779,14 +9058,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
@@ -8796,8 +9077,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8806,11 +9087,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8861,7 +9143,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Astron GPS Solar Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -8873,14 +9155,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -8890,21 +9174,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -8967,14 +9252,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -8984,8 +9271,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -8994,11 +9281,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9061,14 +9349,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -9078,8 +9368,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9088,11 +9378,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9155,14 +9446,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -9172,8 +9465,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9182,11 +9475,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9237,7 +9531,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Eco-Drive Titanium Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -9249,14 +9543,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -9266,21 +9562,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9343,14 +9640,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -9360,8 +9659,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9370,11 +9669,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9437,14 +9737,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -9454,8 +9756,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9464,11 +9766,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9531,14 +9834,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
@@ -9548,8 +9853,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9558,11 +9863,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9625,14 +9931,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
@@ -9642,8 +9950,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9652,11 +9960,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9707,7 +10016,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Chrono Eco-Drive Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -9719,14 +10028,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -9736,21 +10047,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9813,14 +10125,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
@@ -9830,8 +10144,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9840,11 +10154,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -9907,14 +10222,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
@@ -9924,8 +10241,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -9934,11 +10251,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10001,14 +10319,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -10018,8 +10338,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10028,11 +10348,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10095,14 +10416,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
@@ -10112,8 +10435,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10122,11 +10445,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10177,7 +10501,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Classic Corso Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -10189,14 +10513,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
@@ -10206,21 +10532,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10283,14 +10610,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
@@ -10300,8 +10629,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10310,11 +10639,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10377,14 +10707,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -10394,8 +10726,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10404,11 +10736,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10471,14 +10804,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
@@ -10488,8 +10823,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10498,11 +10833,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10553,7 +10889,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Aethelgard Skeleton Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -10565,14 +10901,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -10582,21 +10920,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10659,14 +10998,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -10676,8 +11017,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10686,11 +11027,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10753,14 +11095,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -10770,8 +11114,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10780,11 +11124,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10847,14 +11192,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -10864,8 +11211,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10874,11 +11221,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -10941,14 +11289,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
@@ -10958,8 +11308,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -10968,11 +11318,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11023,7 +11374,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Chronova Apex Chrono Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -11035,14 +11386,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -11052,21 +11405,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11129,14 +11483,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -11146,8 +11502,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11156,11 +11512,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11223,14 +11580,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -11240,8 +11599,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11250,11 +11609,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11317,14 +11677,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -11334,8 +11696,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11344,11 +11706,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11411,14 +11774,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
@@ -11428,8 +11793,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11438,11 +11803,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11493,7 +11859,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Vanguard Heritage Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -11505,14 +11871,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -11522,21 +11890,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11599,14 +11968,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -11616,8 +11987,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11626,11 +11997,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11693,14 +12065,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -11710,8 +12084,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11720,11 +12094,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11787,14 +12162,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
@@ -11804,8 +12181,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11814,11 +12191,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11881,14 +12259,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
@@ -11898,8 +12278,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -11908,11 +12288,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
-      "strap_material": "Premium Silicone",
+      "strap_material": "Silicone",
       "strap_color": "Silver Steel",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -11963,7 +12344,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Nautilus Titanium Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Mechanical Automatic with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
@@ -11975,14 +12356,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
@@ -11992,21 +12375,22 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Mechanical Automatic",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Solid Oyster Bracelet",
+      "strap_material": "Titanium Mesh",
       "strap_color": "Gold PVD",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -12069,14 +12453,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
@@ -12086,8 +12472,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12096,11 +12482,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "40mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Obsidian Black",
-      "strap_material": "Full-Grain Italian Leather",
+      "strap_material": "Genuine Leather",
       "strap_color": "Classic Brown",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -12163,14 +12550,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
@@ -12180,8 +12569,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12190,11 +12579,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "case_size": "42mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Emerald Green",
-      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_material": "Stainless Steel",
       "strap_color": "Midnight Black",
       "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
       "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
       "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "display_type": "Analog Dial",
       "warranty": "2 Years Official Manufacturer Warranty",
       "origin": "Japan / Switzerland / India"
     },
@@ -12257,14 +12647,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
@@ -12274,8 +12666,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12283,13 +12675,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Silicone",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12364,14 +12756,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
@@ -12381,8 +12775,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12390,13 +12784,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12471,14 +12865,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
@@ -12488,8 +12884,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12497,13 +12893,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Ceramic",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12575,28 +12971,30 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12604,13 +13002,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Silicone",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12681,29 +13079,31 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -12711,13 +13111,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "48mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12785,46 +13185,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "50mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Ceramic",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12892,46 +13294,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Silicone",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -12999,46 +13403,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13106,46 +13512,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Ceramic",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13213,46 +13621,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Silicone",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13327,14 +13737,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
@@ -13344,8 +13756,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -13353,13 +13765,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Silicone",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13434,14 +13846,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
@@ -13451,8 +13865,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -13460,13 +13874,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13541,14 +13955,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
@@ -13558,8 +13974,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -13567,13 +13983,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Ceramic",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13645,28 +14061,30 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -13674,13 +14092,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Silicone",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13751,29 +14169,31 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -13781,13 +14201,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "48mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13855,46 +14275,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "50mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Ceramic",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -13962,46 +14384,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Silicone",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14069,46 +14493,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14176,46 +14602,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Ceramic",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14283,46 +14711,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Silicone",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14397,14 +14827,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
@@ -14414,8 +14846,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -14423,13 +14855,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Silicone",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14504,14 +14936,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
@@ -14521,8 +14955,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -14530,13 +14964,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14611,14 +15045,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
@@ -14628,8 +15064,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -14637,13 +15073,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Ceramic",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14715,28 +15151,30 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -14744,13 +15182,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Silicone",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14821,29 +15259,31 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -14851,13 +15291,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "48mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -14925,46 +15365,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "50mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Ceramic",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15032,46 +15474,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Silicone",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15139,46 +15583,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15246,46 +15692,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Ceramic",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15353,46 +15801,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Silicone",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15467,14 +15917,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
@@ -15484,8 +15936,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -15493,13 +15945,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Silicone",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15574,14 +16026,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
@@ -15591,8 +16045,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -15600,13 +16054,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15681,14 +16135,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
@@ -15698,8 +16154,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -15707,13 +16163,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Ceramic",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15785,28 +16241,30 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -15814,13 +16272,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Silicone",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15891,29 +16349,31 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -15921,13 +16381,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "48mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -15995,46 +16455,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "50mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Ceramic",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16102,46 +16564,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Silicone",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16209,46 +16673,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16316,46 +16782,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Ceramic",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16423,46 +16891,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Silicone",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16537,14 +17007,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
@@ -16554,8 +17026,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -16563,13 +17035,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Silicone",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16644,14 +17116,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
@@ -16661,8 +17135,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -16670,13 +17144,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16751,14 +17225,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
@@ -16768,8 +17244,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -16777,13 +17253,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Ceramic",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16855,28 +17331,30 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -16884,13 +17362,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Silicone",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -16961,29 +17439,31 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -16991,13 +17471,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "48mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17065,46 +17545,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "50mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Ceramic",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17172,46 +17654,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Silicone",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17279,46 +17763,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17386,46 +17872,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Ceramic",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17493,46 +17981,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Silicone",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17607,14 +18097,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
@@ -17624,8 +18116,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -17633,13 +18125,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Silicone",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17714,14 +18206,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
@@ -17731,8 +18225,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -17740,13 +18234,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17821,14 +18315,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
@@ -17838,8 +18334,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -17847,13 +18343,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Ceramic",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -17925,28 +18421,30 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -17954,13 +18452,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Silicone",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -18031,29 +18529,31 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
+        "name": "Silver Steel",
+        "hex": "#64748b",
         "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
@@ -18061,13 +18561,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "48mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -18135,46 +18635,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "50mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Ceramic",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -18242,46 +18744,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "40mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Silicone",
+      "strap_color": "Silver",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.50 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -18349,46 +18853,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "42mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
+      "dial_color": "Space Grey",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Green",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.60 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -18456,46 +18962,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "44mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Ceramic",
+      "strap_color": "Black",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "AMOLED",
       "display_size": "1.30 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
@@ -18563,46 +19071,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Obsidian",
+        "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Royal Sapphire",
+        "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver Steel",
+        "hex": "#64748b",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
       "movement": "Smart Digital OS (Multi-Core Dual Engine)",
       "case_size": "46mm",
       "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
+      "dial_color": "Midnight Blue",
+      "strap_material": "Silicone",
+      "strap_color": "Midnight Blue",
       "water_resistance": "5 ATM / IP68 (50m Swimproof)",
       "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
       "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_type": "High-Res TFT",
       "display_size": "1.40 inches",
       "resolution": "466 x 466 px (326 PPI)",
       "bluetooth_calling": true,
