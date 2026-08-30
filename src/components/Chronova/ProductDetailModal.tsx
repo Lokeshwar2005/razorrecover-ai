@@ -4,10 +4,10 @@ import React, { useState } from 'react'
 import type { ChronovaProduct } from './types'
 
 interface ProductDetailModalProps {
-  product: ChronovaProduct
+  product: ChronovaProduct | null
   onClose: () => void
-  onAddToCart: (product: ChronovaProduct, qty: number, color?: string) => void
-  onInstantBuy: (product: ChronovaProduct, qty: number, color?: string) => void
+  onAddToCart: (product: ChronovaProduct, quantity: number, selectedColor?: string) => void
+  onInstantBuy: (product: ChronovaProduct, quantity: number, selectedColor?: string) => void
 }
 
 export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
@@ -16,306 +16,372 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   onAddToCart,
   onInstantBuy,
 }) => {
-  const [selectedImageIdx, setSelectedImageIdx] = useState(0)
-  const [selectedColor, setSelectedColor] = useState(product.color_variants[0]?.name || 'Standard')
-  const [quantity, setQuantity] = useState(1)
-  const [activeTab, setActiveTab] = useState<'specs' | 'reviews' | 'offers' | 'warranty'>('specs')
-  const [pincode, setPincode] = useState('560048')
-  const [pincodeVerified, setPincodeVerified] = useState(true)
+  if (!product) return null
 
-  const formatINR = (amt: number) => `₹${amt.toLocaleString('en-IN')}`
+  // Ensure initial active image is strictly gallery[0] === primaryImage
+  const [activeImageIndex, setActiveImageIndex] = useState<number>(0)
+  const [selectedColor, setSelectedColor] = useState<string>(
+    product.color_variants?.[0]?.name || 'Standard'
+  )
+  const [quantity, setQuantity] = useState<number>(1)
+  const [pincode, setPincode] = useState<string>('')
+  const [deliveryStatus, setDeliveryStatus] = useState<string | null>(null)
+  const [activeTab, setActiveTab] = useState<'specs' | 'features' | 'warranty' | 'reviews' | 'faq'>('specs')
 
-  const galleryImages = product.images.gallery && product.images.gallery.length > 0
-    ? product.images.gallery
-    : [product.images.primary]
+  const currentImage = product.images.gallery[activeImageIndex] || product.images.primary
 
-  const currentImage = galleryImages[selectedImageIdx] || product.images.primary
+  const handleCheckDelivery = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!pincode || pincode.length < 6) {
+      setDeliveryStatus('Please enter a valid 6-digit Indian PIN code.')
+      return
+    }
+    setDeliveryStatus(`✓ Express Delivery available to ${pincode} by Tomorrow, 5 PM. Free courier delivery.`)
+  }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-slate-900/70 backdrop-blur-sm overflow-y-auto">
-      <div className="relative w-full max-w-4xl bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-2xl my-auto text-slate-900">
-        {/* Header with Close */}
-        <div className="px-6 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
-          <div className="flex items-center gap-2 text-xs">
-            <span className="font-mono font-bold uppercase tracking-wider text-blue-700">
-              {product.brand} · {product.series}
-            </span>
-            <span className="text-slate-300">|</span>
-            <span className="text-slate-500 font-mono">{product.model}</span>
-          </div>
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <div className="relative bg-white rounded-3xl max-w-5xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200 text-left">
+        {/* Sticky Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center font-bold text-base transition shadow-sm cursor-pointer"
+          title="Close Product View"
+        >
+          ✕
+        </button>
 
-          <button
-            onClick={onClose}
-            className="w-8 h-8 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-600 flex items-center justify-center transition cursor-pointer"
-            title="Close"
-          >
-            ✕
-          </button>
-        </div>
-
-        {/* Modal Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 max-h-[82vh] overflow-y-auto">
-          {/* Left Column: Gallery (Clean white studio container) */}
-          <div className="md:col-span-6 p-6 flex flex-col justify-between bg-[#f8fafc] border-b md:border-b-0 md:border-r border-slate-200">
-            <div className="w-full aspect-square rounded-2xl bg-white border border-slate-200 p-8 flex items-center justify-center overflow-hidden relative shadow-sm">
-              <img
-                src={currentImage}
-                alt={`${product.brand} ${product.name}`}
-                className="max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-110 cursor-zoom-in"
-              />
-              {product.badge && (
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold tracking-wider bg-slate-900 text-white shadow-sm">
-                  {product.badge.toUpperCase()}
-                </span>
-              )}
-            </div>
-
-            {/* Thumbnail Strip */}
-            <div className="flex items-center gap-3 mt-4 overflow-x-auto pb-1">
-              {galleryImages.map((img, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setSelectedImageIdx(idx)}
-                  className={`w-16 h-16 rounded-xl bg-white p-1.5 border transition cursor-pointer shrink-0 ${
-                    selectedImageIdx === idx
-                      ? 'border-blue-600 ring-2 ring-blue-500/20 shadow-sm'
-                      : 'border-slate-200 opacity-60 hover:opacity-100'
-                  }`}
-                >
-                  <img src={img} alt={`${product.name} view ${idx + 1}`} className="w-full h-full object-contain" />
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Column: Information, Specs, Offers & Purchase */}
-          <div className="md:col-span-6 p-6 space-y-5 bg-white">
-            {/* Title & Brand */}
-            <div className="space-y-1.5">
-              <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-mono text-[11px] font-bold">
-                  {product.category}
-                </span>
-                <span className="text-slate-300">·</span>
-                <span className="text-[11px] text-slate-500 font-medium">{product.gender}'s Edition</span>
+        <div className="p-6 sm:p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            {/* LEFT COLUMN: Gallery Thumbnails + Large Studio Image */}
+            <div className="lg:col-span-6 flex flex-col-reverse sm:flex-row gap-4 items-start">
+              {/* Vertical Thumbnail List */}
+              <div className="flex sm:flex-col gap-2.5 overflow-x-auto sm:overflow-y-auto max-h-[460px] pb-2 sm:pb-0 scrollbar-none shrink-0">
+                {product.images.gallery.map((img, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveImageIndex(idx)}
+                    className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border-2 bg-slate-50 p-1.5 overflow-hidden transition-all duration-200 cursor-pointer ${
+                      activeImageIndex === idx
+                        ? 'border-slate-900 shadow-md ring-2 ring-slate-900/10'
+                        : 'border-slate-200 hover:border-slate-400'
+                    }`}
+                  >
+                    <img
+                      src={img}
+                      alt={`${product.name} View ${idx + 1}`}
+                      className="w-full h-full object-contain filter drop-shadow-xs"
+                    />
+                  </button>
+                ))}
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 leading-tight">
-                {product.name}
-              </h2>
-
-              <div className="flex items-center gap-2 pt-1">
-                <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 font-bold text-xs flex items-center gap-1">
-                  <span>★</span>
-                  <span>{product.rating.toFixed(1)}</span>
-                </span>
-                <span className="text-xs text-slate-600 font-medium">
-                  <strong>{product.review_count} verified ratings</strong> & 100% genuine guaranteed
-                </span>
-              </div>
-            </div>
-
-            {/* Pricing Card */}
-            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
-              <div className="flex items-baseline gap-2.5">
-                <span className="text-2xl sm:text-3xl font-black text-slate-900">
-                  {formatINR(product.price_rupees)}
-                </span>
-                {product.original_price_rupees > product.price_rupees && (
-                  <span className="text-sm text-slate-400 line-through font-mono">
-                    {formatINR(product.original_price_rupees)}
+              {/* Main Large Image Container */}
+              <div className="relative flex-1 aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-inner">
+                {product.badge && (
+                  <span className="absolute top-4 left-4 z-10 px-3 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-black uppercase tracking-wider font-mono shadow-md">
+                    {product.badge}
                   </span>
                 )}
-                {product.discount_percent > 0 && (
-                  <span className="text-xs font-bold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
-                    SAVE {product.discount_percent}%
-                  </span>
-                )}
+                <img
+                  src={currentImage}
+                  alt={product.name}
+                  className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-all duration-300 hover:scale-105"
+                />
               </div>
-              <p className="text-[11px] text-slate-500 font-medium">
-                Inclusive of all taxes · Free Insured Express Delivery across India
-              </p>
             </div>
 
-            {/* Pincode Delivery Check */}
-            <div className="flex items-center gap-2 text-xs">
-              <span className="text-slate-500">Deliver to:</span>
-              <input
-                type="text"
-                value={pincode}
-                onChange={(e) => setPincode(e.target.value)}
-                maxLength={6}
-                className="w-24 px-2 py-1 bg-slate-50 border border-slate-300 rounded-lg text-xs font-mono font-bold text-slate-900 focus:outline-none focus:border-blue-600"
-              />
-              <button
-                onClick={() => setPincodeVerified(true)}
-                className="text-blue-600 font-bold hover:underline cursor-pointer"
-              >
-                Check
-              </button>
-              {pincodeVerified && (
-                <span className="text-[11px] text-emerald-600 font-medium">
-                  ✓ Express delivery by tomorrow 5 PM
-                </span>
-              )}
-            </div>
-
-            {/* Colorways Selector */}
-            {product.color_variants && product.color_variants.length > 0 && (
+            {/* RIGHT COLUMN: Product Details & Buying Actions */}
+            <div className="lg:col-span-6 space-y-6">
+              {/* Header Info */}
               <div className="space-y-2">
-                <div className="flex justify-between text-xs">
-                  <span className="text-slate-600 font-semibold">Dial / Strap Color:</span>
-                  <span className="text-slate-900 font-bold">{selectedColor}</span>
-                </div>
                 <div className="flex items-center gap-2">
-                  {product.color_variants.map((c, idx) => (
-                    <button
-                      key={c.name}
-                      onClick={() => {
-                        setSelectedColor(c.name)
-                        if (idx < galleryImages.length) {
-                          setSelectedImageIdx(idx)
-                        }
-                      }}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-mono flex items-center gap-2 border transition cursor-pointer ${
-                        selectedColor === c.name
-                          ? 'border-blue-600 bg-blue-50 text-blue-900 font-bold shadow-sm'
-                          : 'border-slate-200 bg-white text-slate-600 hover:border-slate-400'
-                      }`}
-                    >
-                      <span className="w-3 h-3 rounded-full border border-slate-300" style={{ backgroundColor: c.hex }} />
-                      <span>{c.name}</span>
-                    </button>
-                  ))}
+                  <span className="px-3 py-1 rounded-md bg-blue-50 text-blue-800 border border-blue-200 text-xs font-black font-mono uppercase tracking-wider">
+                    {product.brand} Official
+                  </span>
+                  <span className="text-xs font-bold text-slate-500 font-mono">
+                    Model: {product.model}
+                  </span>
+                </div>
+
+                <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight">
+                  {product.name}
+                </h1>
+
+                <div className="flex items-center gap-3 pt-1">
+                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold font-mono">
+                    <span>★ {product.rating}</span>
+                  </div>
+                  <span className="text-xs font-semibold text-slate-500">
+                    ({product.review_count} Verified Customer Reviews)
+                  </span>
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                    {product.stock_status}
+                  </span>
                 </div>
               </div>
-            )}
 
-            {/* Expandable Tabs for Specs / Reviews / Offers */}
-            <div className="border-t border-slate-200 pt-3 space-y-3">
-              <div className="flex gap-4 border-b border-slate-200 text-xs font-bold">
-                <button
-                  onClick={() => setActiveTab('specs')}
-                  className={`pb-2 transition cursor-pointer ${
-                    activeTab === 'specs'
-                      ? 'text-blue-700 border-b-2 border-blue-700'
-                      : 'text-slate-500 hover:text-slate-900'
-                  }`}
-                >
-                  Specifications
-                </button>
-                <button
-                  onClick={() => setActiveTab('reviews')}
-                  className={`pb-2 transition cursor-pointer ${
-                    activeTab === 'reviews'
-                      ? 'text-blue-700 border-b-2 border-blue-700'
-                      : 'text-slate-500 hover:text-slate-900'
-                  }`}
-                >
-                  Reviews ({product.reviews.length})
-                </button>
-                <button
-                  onClick={() => setActiveTab('offers')}
-                  className={`pb-2 transition cursor-pointer ${
-                    activeTab === 'offers'
-                      ? 'text-blue-700 border-b-2 border-blue-700'
-                      : 'text-slate-500 hover:text-slate-900'
-                  }`}
-                >
-                  Bank Offers (3)
-                </button>
+              {/* Pricing Section */}
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+                <div className="flex items-baseline gap-3">
+                  <span className="text-3xl font-black text-slate-900">
+                    ₹{product.price_rupees.toLocaleString('en-IN')}
+                  </span>
+                  {product.discount_percent > 0 && (
+                    <>
+                      <span className="text-base text-slate-400 line-through font-semibold">
+                        ₹{product.original_price_rupees.toLocaleString('en-IN')}
+                      </span>
+                      <span className="text-sm font-black text-rose-600 font-mono">
+                        ({product.discount_percent}% OFF)
+                      </span>
+                    </>
+                  )}
+                </div>
+                <div className="text-[11px] font-medium text-slate-500">
+                  Inclusive of all taxes · Free pan-India express courier shipping
+                </div>
               </div>
 
-              {/* Specs Content */}
-              {activeTab === 'specs' && (
-                <div className="grid grid-cols-2 gap-2 text-[11px] font-mono">
-                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-slate-400 block text-[10px]">MOVEMENT</span>
-                    <span className="text-slate-900 font-bold">{product.specs.movement}</span>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-slate-400 block text-[10px]">CASE SIZE</span>
-                    <span className="text-slate-900 font-bold">{product.specs.case_size}</span>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-slate-400 block text-[10px]">CASE MATERIAL</span>
-                    <span className="text-slate-900 font-bold">{product.specs.case_material}</span>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-slate-400 block text-[10px]">WATER RESISTANCE</span>
-                    <span className="text-slate-900 font-bold">{product.specs.water_resistance}</span>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-slate-400 block text-[10px]">STRAP</span>
-                    <span className="text-slate-900 font-bold">{product.specs.strap_material}</span>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-slate-400 block text-[10px]">WARRANTY</span>
-                    <span className="text-slate-900 font-bold">{product.specs.warranty}</span>
+              {/* Bank & Coupon Offers Box */}
+              <div className="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-1.5 text-xs text-amber-900">
+                <div className="font-bold flex items-center gap-1.5">
+                  <span>🏷️ Special Bank & Promo Offers:</span>
+                </div>
+                <ul className="space-y-1 pl-4 list-disc text-[11px]">
+                  <li>Use code <strong className="font-mono bg-white px-1.5 py-0.5 rounded border border-amber-300">CHRONOVA10</strong> for extra 10% instant discount at checkout.</li>
+                  <li>Flat ₹500 off on all major Credit/Debit Cards & UPI via Razorpay.</li>
+                </ul>
+              </div>
+
+              {/* Colorways Selector */}
+              {product.color_variants && product.color_variants.length > 0 && (
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-slate-800">
+                    Selected Dial/Strap Finish: <strong className="text-slate-900 font-black">{selectedColor}</strong>
+                  </span>
+                  <div className="flex items-center gap-3">
+                    {product.color_variants.map((c) => (
+                      <button
+                        key={c.name}
+                        onClick={() => setSelectedColor(c.name)}
+                        className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-bold transition cursor-pointer ${
+                          selectedColor === c.name
+                            ? 'border-slate-900 bg-slate-900 text-white shadow-xs'
+                            : 'border-slate-300 bg-white text-slate-700 hover:border-slate-500'
+                        }`}
+                      >
+                        <span className="w-3.5 h-3.5 rounded-full border border-white" style={{ backgroundColor: c.hex }} />
+                        <span>{c.name}</span>
+                      </button>
+                    ))}
                   </div>
                 </div>
               )}
 
-              {/* Reviews Content */}
+              {/* Quantity Stepper & Buy Buttons */}
+              <div className="space-y-3 pt-2">
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center border border-slate-300 rounded-xl bg-white overflow-hidden shadow-xs">
+                    <button
+                      onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                      className="px-3.5 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                    >
+                      −
+                    </button>
+                    <span className="px-4 py-2.5 text-xs font-black text-slate-900 font-mono">
+                      {quantity}
+                    </span>
+                    <button
+                      onClick={() => setQuantity((q) => Math.min(5, q + 1))}
+                      className="px-3.5 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      onAddToCart(product, quantity, selectedColor)
+                      onClose()
+                    }}
+                    className="flex-1 py-3.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer"
+                  >
+                    ADD TO BAG
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      onInstantBuy(product, quantity, selectedColor)
+                      onClose()
+                    }}
+                    className="flex-1 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer"
+                  >
+                    BUY NOW WITH RAZORPAY
+                  </button>
+                </div>
+              </div>
+
+              {/* Pincode Delivery Check */}
+              <div className="pt-2">
+                <form onSubmit={handleCheckDelivery} className="flex gap-2">
+                  <input
+                    type="text"
+                    maxLength={6}
+                    value={pincode}
+                    onChange={(e) => setPincode(e.target.value)}
+                    placeholder="Enter 6-digit Pincode (e.g. 560001)"
+                    className="flex-1 px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-xs font-bold text-slate-900 focus:outline-none focus:border-slate-900"
+                  />
+                  <button
+                    type="submit"
+                    className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold uppercase transition cursor-pointer"
+                  >
+                    CHECK
+                  </button>
+                </form>
+                {deliveryStatus && (
+                  <p className="text-xs text-slate-700 font-medium mt-2">
+                    {deliveryStatus}
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* LOWER SECTION: Full Specifications & Verified Reviews Accordions */}
+          <div className="mt-12 pt-8 border-t border-slate-200">
+            {/* Tabs */}
+            <div className="flex items-center gap-4 sm:gap-8 border-b border-slate-200 overflow-x-auto pb-1 text-xs font-bold uppercase tracking-wider text-slate-500">
+              <button
+                onClick={() => setActiveTab('specs')}
+                className={`pb-2.5 transition cursor-pointer border-b-2 ${
+                  activeTab === 'specs' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
+                }`}
+              >
+                Specifications
+              </button>
+              <button
+                onClick={() => setActiveTab('features')}
+                className={`pb-2.5 transition cursor-pointer border-b-2 ${
+                  activeTab === 'features' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
+                }`}
+              >
+                Key Features
+              </button>
+              <button
+                onClick={() => setActiveTab('warranty')}
+                className={`pb-2.5 transition cursor-pointer border-b-2 ${
+                  activeTab === 'warranty' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
+                }`}
+              >
+                Warranty & Shipping
+              </button>
+              <button
+                onClick={() => setActiveTab('reviews')}
+                className={`pb-2.5 transition cursor-pointer border-b-2 ${
+                  activeTab === 'reviews' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
+                }`}
+              >
+                Verified Customer Reviews ({product.reviews.length})
+              </button>
+            </div>
+
+            {/* Tab Contents */}
+            <div className="py-6 text-xs text-slate-700">
+              {activeTab === 'specs' && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Movement Calibre:</span>
+                      <span className="font-black text-slate-900">{product.specs.movement}</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Case Dimension:</span>
+                      <span className="font-black text-slate-900">{product.specs.case_size}</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Case Material:</span>
+                      <span className="font-black text-slate-900">{product.specs.case_material}</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Dial Color:</span>
+                      <span className="font-black text-slate-900">{product.specs.dial_color}</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Water Resistance:</span>
+                      <span className="font-black text-slate-900">{product.specs.water_resistance}</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Strap Material:</span>
+                      <span className="font-black text-slate-900">{product.specs.strap_material}</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Glass Crystal:</span>
+                      <span className="font-black text-slate-900">{product.specs.glass || 'Sapphire Crystal'}</span>
+                    </div>
+                    <div className="flex justify-between py-2 border-b border-slate-100">
+                      <span className="font-semibold text-slate-500">Warranty:</span>
+                      <span className="font-black text-slate-900">{product.specs.warranty}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'features' && (
+                <div className="space-y-4">
+                  <p className="leading-relaxed text-slate-600">{product.description}</p>
+                  <div className="space-y-2 pt-2">
+                    <h4 className="font-black text-slate-900 uppercase">Product Highlights</h4>
+                    <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
+                      {product.highlights.map((h, i) => (
+                        <li key={i}>{h}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )}
+
+              {activeTab === 'warranty' && (
+                <div className="space-y-4 leading-relaxed text-slate-600">
+                  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <h4 className="font-black text-slate-900 uppercase">100% Genuine Brand Warranty</h4>
+                    <p>All timepieces purchased through CHRONOVA include an official stamped manufacturer warranty card with pan-India authorized service centre coverage.</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <h4 className="font-black text-slate-900 uppercase">Free 7-Day Doorstep Replacement</h4>
+                    <p>If your watch arrives damaged or defective, request a free doorstep reverse pickup and replacement within 7 days of delivery.</p>
+                  </div>
+                </div>
+              )}
+
               {activeTab === 'reviews' && (
-                <div className="space-y-2.5 max-h-44 overflow-y-auto pr-1">
+                <div className="space-y-6">
                   {product.reviews.map((rev) => (
-                    <div key={rev.id} className="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                      <div className="flex items-center justify-between text-xs">
-                        <div className="flex items-center gap-1.5">
-                          <span className="font-bold text-slate-900">{rev.reviewer_name}</span>
+                    <div key={rev.id} className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <span className="font-black text-slate-900">{rev.reviewer_name}</span>
                           {rev.verified_purchase && (
-                            <span className="text-[10px] text-emerald-600 font-semibold font-mono">✓ Verified Buyer</span>
+                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                              ✓ Verified Buyer
+                            </span>
                           )}
                         </div>
-                        <span className="text-[10px] text-slate-400 font-mono">{rev.date}</span>
+                        <span className="text-slate-400 text-[11px]">{rev.date}</span>
                       </div>
-                      <div className="text-amber-500 text-xs">{'★'.repeat(rev.rating)}</div>
-                      <div className="text-xs font-bold text-slate-900">{rev.title}</div>
-                      <p className="text-xs text-slate-600 leading-relaxed">{rev.comment}</p>
+                      <div className="text-amber-500 font-bold">
+                        {'★'.repeat(rev.rating)}{'☆'.repeat(5 - rev.rating)}
+                      </div>
+                      <h5 className="font-black text-slate-900">{rev.title}</h5>
+                      <p className="text-slate-600 leading-relaxed">{rev.comment}</p>
                     </div>
                   ))}
                 </div>
               )}
-
-              {/* Offers Content */}
-              {activeTab === 'offers' && (
-                <div className="space-y-2 text-xs">
-                  <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800">
-                    <strong>10% Instant Discount</strong> on code <code className="font-bold">CHRONOVA10</code>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-800">
-                    <strong>Flat ₹500 Cashback</strong> on Razorpay UPI checkout
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-purple-50 border border-purple-200 text-purple-800">
-                    <strong>No Cost EMI</strong> starting at ₹849/month
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Action Buttons */}
-            <div className="pt-4 border-t border-slate-200 flex gap-3">
-              <button
-                onClick={() => {
-                  onAddToCart(product, quantity, selectedColor)
-                  onClose()
-                }}
-                className="flex-1 py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs transition cursor-pointer border border-slate-300"
-              >
-                Add to Bag
-              </button>
-
-              <button
-                onClick={() => {
-                  onInstantBuy(product, quantity, selectedColor)
-                  onClose()
-                }}
-                className="flex-1 py-3 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs transition cursor-pointer shadow-md flex items-center justify-center gap-1.5"
-              >
-                <span>Buy Now with Razorpay</span>
-                <span>→</span>
-              </button>
             </div>
           </div>
         </div>
