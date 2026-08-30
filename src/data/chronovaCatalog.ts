@@ -1863,9 +1863,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "glass": "Mineral Glass"
     },
     "images": {
-      "primary": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "color_variants": [
@@ -2875,9 +2875,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -2970,9 +2970,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -3920,9 +3920,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -4015,9 +4015,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -4775,9 +4775,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -4870,9 +4870,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -4965,9 +4965,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -5060,9 +5060,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -5725,9 +5725,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
@@ -5820,9 +5820,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -6010,9 +6010,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -6675,9 +6675,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -6770,9 +6770,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -7625,9 +7625,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
@@ -7720,9 +7720,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
@@ -7815,9 +7815,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -8575,9 +8575,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -8670,9 +8670,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -8765,9 +8765,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -10665,9 +10665,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -10760,9 +10760,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -11615,9 +11615,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -11710,9 +11710,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -12660,9 +12660,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -13610,9 +13610,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -14560,9 +14560,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -15510,9 +15510,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -16460,9 +16460,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -17410,9 +17410,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
