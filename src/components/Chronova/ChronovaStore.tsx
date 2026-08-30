@@ -69,14 +69,74 @@ export const ChronovaStore: React.FC = () => {
   // Modals & Drawers
   const [selectedProduct, setSelectedProduct] = useState<ChronovaProduct | null>(null)
   const [quickViewProduct, setQuickViewProduct] = useState<ChronovaProduct | null>(null)
-  const [cartItems, setCartItems] = useState<CartItem[]>([])
-  const [appliedCoupon, setAppliedCoupon] = useState<AppliedCoupon | null>({
-    code: 'CHRONOVA10',
-    discountPercent: 10,
-    description: '10% Welcome Discount',
+
+  // Persisted Cart State
+  const [cartItems, setCartItems] = useState<CartItem[]>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('chronova_cart')
+      if (saved) {
+        try {
+          return JSON.parse(saved)
+        } catch (e) {}
+      }
+    }
+    return []
   })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('chronova_cart', JSON.stringify(cartItems))
+    }
+  }, [cartItems])
+
+  // Persisted Coupon State
+  const [appliedCoupon, setAppliedCoupon] = useState<AppliedCoupon | null>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('chronova_coupon')
+      if (saved) {
+        try {
+          return JSON.parse(saved)
+        } catch (e) {}
+      }
+    }
+    return {
+      code: 'CHRONOVA10',
+      discountPercent: 10,
+      description: '10% Welcome Discount',
+    }
+  })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (appliedCoupon) {
+        localStorage.setItem('chronova_coupon', JSON.stringify(appliedCoupon))
+      } else {
+        localStorage.removeItem('chronova_coupon')
+      }
+    }
+  }, [appliedCoupon])
+
   const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState<boolean>(false)
-  const [wishlistIds, setWishlistIds] = useState<Set<string>>(new Set())
+
+  // Persisted Wishlist State
+  const [wishlistIds, setWishlistIds] = useState<Set<string>>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('chronova_wishlist')
+      if (saved) {
+        try {
+          return new Set(JSON.parse(saved))
+        } catch (e) {}
+      }
+    }
+    return new Set()
+  })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('chronova_wishlist', JSON.stringify(Array.from(wishlistIds)))
+    }
+  }, [wishlistIds])
+
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false)
   const [isCheckoutOpen, setIsCheckoutOpen] = useState<boolean>(false)
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false)
@@ -656,7 +716,7 @@ export const ChronovaStore: React.FC = () => {
       {showPromoBar && (
         <div className="bg-slate-900 px-4 py-2 text-center text-xs font-semibold text-white tracking-wider flex items-center justify-between">
           <div className="flex-1 text-center">
-            ⭐ <strong className="text-amber-300">5 CURATED BRANDS ONLY</strong>: TITAN · FASTRACK · CASIO · NOISE · FOSSIL · EXTRA 10% OFF CODE <strong className="text-amber-400 font-mono">CHRONOVA10</strong> · FREE INSURED SHIPPING
+            TIMELESS LUXURY · 75 EXCLUSIVE TIMEPIECES · EXTRA 10% OFF WITH CODE <strong className="text-amber-400 font-mono">CHRONOVA10</strong> · FREE INSURED SHIPPING ACROSS INDIA
           </div>
           <button
             onClick={() => setShowPromoBar(false)}
@@ -687,8 +747,8 @@ export const ChronovaStore: React.FC = () => {
                 <span className="text-xl sm:text-2xl font-black tracking-widest text-slate-900 leading-none">
                   CHRONOVA
                 </span>
-                <span className="text-[8.5px] font-black tracking-wider text-blue-700 uppercase">
-                  5 Approved Brands Only
+                <span className="text-[9px] font-bold tracking-widest text-blue-700 uppercase">
+                  Find Your Time.
                 </span>
               </div>
             </div>
@@ -702,7 +762,7 @@ export const ChronovaStore: React.FC = () => {
                   setSearchQuery(e.target.value)
                   if (e.target.value) setCurrentView('catalog')
                 }}
-                placeholder="Search 5 Approved Brands: Titan, Fastrack, Casio, Noise & Fossil (e.g. Grant, Machine, Raquel, CasiOak)..."
+                placeholder="Search 75 luxury watches & collections (e.g. Edge, Stunners, CasiOak, Origin, Grant)..."
                 className="w-full pl-11 pr-10 py-2.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:bg-white transition shadow-xs"
               />
               <span className="absolute left-4 top-3 text-slate-400 text-xs">🔍</span>
@@ -912,7 +972,7 @@ export const ChronovaStore: React.FC = () => {
             setSearchQuery(e.target.value)
             if (e.target.value) setCurrentView('catalog')
           }}
-          placeholder="Search 190+ watches & brands..."
+          placeholder="Search 75+ watches & brands..."
           className="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900"
         />
       </div>
@@ -953,7 +1013,7 @@ export const ChronovaStore: React.FC = () => {
                     }}
                     className="px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 text-xs font-extrabold uppercase tracking-widest transition shadow-sm cursor-pointer"
                   >
-                    VIEW ALL 190 WATCHES
+                    VIEW ALL 75 WATCHES
                   </button>
                 </div>
 
@@ -1245,7 +1305,7 @@ export const ChronovaStore: React.FC = () => {
                   🔥 GRAND WATCH FESTIVAL SALE
                 </div>
                 <h2 className="text-2xl sm:text-4xl font-black tracking-tight uppercase">
-                  UP TO 60% OFF ON 190+ TIMEPIECES
+                  UP TO 60% OFF ON 75+ TIMEPIECES
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-300 max-w-2xl font-medium">
                   Extra 10% instant checkout discount with coupon code <strong className="text-amber-400 font-mono">CHRONOVA10</strong> or flat ₹500 off with <strong className="text-amber-400 font-mono">WELCOME500</strong>.

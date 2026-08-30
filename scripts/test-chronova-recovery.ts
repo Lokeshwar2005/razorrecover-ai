@@ -25,7 +25,7 @@ async function runChronovaRecoveryE2ETest() {
   const sampleWatch = CHRONOVA_CATALOG.find((w) => w.brand === 'Fastrack' && w.price_rupees > 2000) || CHRONOVA_CATALOG[0]
   console.log(`✓ Selected Watch: ${sampleWatch.name} (₹${sampleWatch.price_rupees.toLocaleString('en-IN')})`)
 
-  const testTxnId = `TXN-CN-190-${Date.now().toString(36).toUpperCase()}`
+  const testTxnId = `TXN-CN-75-${Date.now().toString(36).toUpperCase()}`
   const orderAmountRupees = sampleWatch.price_rupees
   const orderAmountMinor = orderAmountRupees * 100
 

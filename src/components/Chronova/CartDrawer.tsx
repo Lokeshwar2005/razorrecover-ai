@@ -126,7 +126,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <div className="text-5xl">⌚</div>
                 <div className="text-base font-black text-slate-800">Your shopping bag is empty</div>
                 <p className="text-xs text-slate-500 max-w-xs mx-auto">
-                  Browse our authentic 190-watch collection across 15 official brands to discover your next signature timepiece.
+                  Browse our authentic 75-watch collection across official brands to discover your next signature timepiece.
                 </p>
                 <button
                   onClick={onClose}

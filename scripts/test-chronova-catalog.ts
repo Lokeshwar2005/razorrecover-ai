@@ -76,7 +76,7 @@ function validateChronovaCatalog() {
       }
     }
   }
-  console.log('✓ All 190 products have verified, consistent primary & gallery watch photos.')
+  console.log('✓ All 75 products have verified, consistent primary & gallery watch photos.')
 
   // 5. Specifications & Price Sanity Checks
   console.log('\n✓ Verifying Specifications & Pricing Sanity:')
@@ -87,7 +87,7 @@ function validateChronovaCatalog() {
     if (!p.specs.water_resistance) throw new Error(`Missing water resistance for ${p.id}`)
     if (!p.reviews || p.reviews.length === 0) throw new Error(`Missing reviews for ${p.id}`)
   }
-  console.log('✓ All 190 products have complete technical specifications and verified reviews.')
+  console.log('✓ All 75 products have complete technical specifications and verified reviews.')
 
   console.log('\n====================================================================')
   console.log('🎉 100% CHRONOVA CATALOG VALIDATION TESTS PASSED!')
