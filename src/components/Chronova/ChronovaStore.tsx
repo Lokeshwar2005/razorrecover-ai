@@ -341,7 +341,7 @@ export const ChronovaStore: React.FC = () => {
   // Circular Category Strip Config
   const categoryStrips = [
     { label: 'Men Watches', cat: 'Men', img: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedGenders(['Men']); setCurrentView('catalog'); } },
-    { label: 'Women Watches', cat: 'Women', img: 'https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedGenders(['Women']); setCurrentView('catalog'); } },
+    { label: 'Women Watches', cat: 'Women', img: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedGenders(['Women']); setCurrentView('catalog'); } },
     { label: 'Smartwatches', cat: 'Smart', img: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Smart Watches']); setCurrentView('catalog'); } },
     { label: 'Automatic', cat: 'Automatic', img: 'https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Automatic Watches']); setCurrentView('catalog'); } },
     { label: 'Chronographs', cat: 'Chrono', img: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Chronograph']); setCurrentView('catalog'); } },
@@ -1318,7 +1318,7 @@ export const ChronovaStore: React.FC = () => {
                 </div>
               ) : (
                 <div className="space-y-8">
-                  <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 sm:gap-7">
                     {paginatedProducts.map((product) => (
                       <ProductCard
                         key={product.id}
