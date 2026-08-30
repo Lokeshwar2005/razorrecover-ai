@@ -161,8 +161,11 @@ export const OpportunityQueue: React.FC = () => {
           opp.priority.toLowerCase().includes(q) ||
           opp.policy_status.toLowerCase().includes(q) ||
           (opp.status ? opp.status.toLowerCase().includes(q) : false) ||
+          (opp.failure_signature && opp.failure_signature.toLowerCase().includes(q)) ||
           (parentTxn?.provider_payment_id && parentTxn.provider_payment_id.toLowerCase().includes(q)) ||
           (parentTxn?.provider_order_id && parentTxn.provider_order_id.toLowerCase().includes(q)) ||
+          (parentTxn?.recovery_operation_id && parentTxn.recovery_operation_id.toLowerCase().includes(q)) ||
+          (parentTxn?.merchant_id && parentTxn.merchant_id.toLowerCase().includes(q)) ||
           (parentTxn?.direction && parentTxn.direction.toLowerCase().includes(q)) ||
           (parentTxn?.source && parentTxn.source.toLowerCase().includes(q))
 
@@ -482,31 +485,42 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       )}
 
-      {/* Filter, Search and Sort Control Bar */}
+      {/* Global Canonical Transaction Search & Filter Control Bar */}
       <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-3 text-xs font-mono">
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
-          {/* Prominent Search Box */}
+          {/* Prominent Global Search Box */}
           <div className="w-full md:flex-1 relative">
-            <input
-              type="text"
-              placeholder="Search by transaction ID, payment ID, reason, action, or status..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-8 py-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] placeholder:text-[#7a7164] focus:outline-none focus:border-[#e5a944] text-xs"
-            />
-            <span className="absolute left-3 top-2.5 text-[#7a7164]">🔎</span>
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-2.5 text-[#7a7164] hover:text-[#f4ede2]"
-              >
-                ✕
-              </button>
-            )}
+            <div className="relative flex items-center">
+              <span className="absolute left-3 text-[#7a7164] pointer-events-none">🔎</span>
+              <input
+                type="text"
+                placeholder="Search all transactions..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-9 pr-8 py-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] placeholder:text-[#7a7164] focus:outline-none focus:border-[#e5a944] text-xs transition"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  aria-label="Clear search"
+                  className="absolute right-3 text-[#7a7164] hover:text-[#f4ede2] p-1 cursor-pointer"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+            <div className="text-[11px] text-[#7a7164] mt-1.5 flex flex-wrap items-center justify-between gap-2">
+              <span>Search by transaction ID, payment ID, order ID, recovery ID, or failure reason</span>
+              {searchQuery && (
+                <span className="text-[#e5a944] font-bold">
+                  {filteredOpportunities.length} of {allOpportunities.length} matches
+                </span>
+              )}
+            </div>
           </div>
 
           {/* Sort Selector */}
-          <div className="flex items-center gap-2 w-full md:w-auto">
+          <div className="flex items-center gap-2 w-full md:w-auto self-start md:self-center">
             <span className="text-[#7a7164]">SORT:</span>
             <select
               value={sortBy}
@@ -638,23 +652,27 @@ export const OpportunityQueue: React.FC = () => {
                         
                         {isRecovered ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
-                            ✓ RECOVERED
+                            🔵 RECOVERED
                           </span>
                         ) : isInProgress ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
                             ⚡ IN PROGRESS
                           </span>
+                        ) : isBlocked ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
+                            🔴 POLICY BLOCKED
+                          </span>
+                        ) : opp.status === 'STOPPED' || parentTxn?.status === 'STOPPED' ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#7a7164]/20 text-[#a89f91] border border-[#7a7164]/40 font-bold ml-auto md:ml-0">
+                            ⚪ STOPPED
+                          </span>
+                        ) : opp.status === 'PENDING' || parentTxn?.status === 'PENDING' ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#fcd34d]/20 text-[#fcd34d] border border-[#fcd34d]/40 font-bold ml-auto md:ml-0">
+                            🟡 PENDING
+                          </span>
                         ) : (
-                          <span
-                            className={`px-1.5 py-0.2 text-[10px] font-mono rounded border ml-auto md:ml-0 ${
-                              opp.policy_status === 'Approved'
-                                ? 'bg-[#10b981]/10 text-[#10b981] border-[#10b981]/30'
-                                : opp.policy_status === 'Blocked'
-                                ? 'bg-[#ef4444]/10 text-[#ef4444] border-[#ef4444]/30'
-                                : 'bg-[#e5a944]/10 text-[#e5a944] border-[#e5a944]/30'
-                            }`}
-                          >
-                            {opp.policy_status}
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
+                            🟢 ACTIVE / ELIGIBLE
                           </span>
                         )}
                       </div>
