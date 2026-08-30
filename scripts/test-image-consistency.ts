@@ -10,19 +10,6 @@ function testImageConsistency() {
   const brandsToSample = [
     'Titan',
     'Fastrack',
-    'Casio',
-    'Timex',
-    'Fossil',
-    'Sonata',
-    'Seiko',
-    'Citizen',
-    'Chronova Signature',
-    'Garmin',
-    'Amazfit',
-    'Noise',
-    'boAt',
-    'Samsung',
-    'Apple Watch',
   ]
 
   // 1. Check all 190 products
@@ -53,7 +40,7 @@ function testImageConsistency() {
   }
 
   console.log('\n====================================================================')
-  console.log('🎉 ALL 15 BRANDS & 190 PRODUCTS PASSED IMAGE CONSISTENCY TEST!')
+  console.log('🎉 ALL APPROVED BRANDS & 30 PRODUCTS PASSED IMAGE CONSISTENCY TEST!')
   console.log('====================================================================\n')
 }
 

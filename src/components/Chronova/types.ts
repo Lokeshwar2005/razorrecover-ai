@@ -1,19 +1,6 @@
 export type WatchBrand =
   | 'Titan'
   | 'Fastrack'
-  | 'Casio'
-  | 'Timex'
-  | 'Fossil'
-  | 'Sonata'
-  | 'Seiko'
-  | 'Citizen'
-  | 'Chronova Signature'
-  | 'Garmin'
-  | 'Amazfit'
-  | 'Noise'
-  | 'boAt'
-  | 'Samsung'
-  | 'Apple Watch'
 
 export type WatchCategory =
   | 'Analog Watches'

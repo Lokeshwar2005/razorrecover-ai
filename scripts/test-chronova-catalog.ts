@@ -7,13 +7,13 @@ import {
 
 function validateChronovaCatalog() {
   console.log('====================================================================')
-  console.log('🔍 CHRONOVA 190-PRODUCT CANONICAL DATA INTEGRITY VALIDATION')
+  console.log('🔍 CHRONOVA 30-PRODUCT APPROVED DATASET INTEGRITY VALIDATION')
   console.log('====================================================================\n')
 
   // 1. Total Product Count
   console.log(`✓ Total Products in Catalog: ${CHRONOVA_CATALOG.length}`)
-  if (CHRONOVA_CATALOG.length < 190) {
-    throw new Error(`Expected at least 190 products, got ${CHRONOVA_CATALOG.length}`)
+  if (CHRONOVA_CATALOG.length !== 30) {
+    throw new Error(`Expected exactly 30 approved products, got ${CHRONOVA_CATALOG.length}`)
   }
 
   // 2. Unique Product IDs
@@ -32,30 +32,24 @@ function validateChronovaCatalog() {
     brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1
   }
 
-  console.log('\n✓ Brand Target Verification:')
+  console.log('\n✓ Approved Brand Verification:')
   const requiredTargets: Record<string, number> = {
-    Titan: 14,
-    Fastrack: 14,
-    Casio: 14,
-    Timex: 14,
-    Fossil: 14,
-    Sonata: 14,
-    Seiko: 14,
-    Citizen: 14,
-    'Chronova Signature': 18,
-    Garmin: 10,
-    Amazfit: 10,
-    Noise: 10,
-    boAt: 10,
-    Samsung: 10,
-    'Apple Watch': 10,
+    Titan: 15,
+    Fastrack: 15,
   }
 
   for (const [brand, expected] of Object.entries(requiredTargets)) {
     const actual = brandCounts[brand] || 0
     console.log(`   • ${brand.padEnd(20)}: ${actual} models (Expected: ${expected})`)
-    if (actual < expected) {
+    if (actual !== expected) {
       throw new Error(`Brand ${brand} has ${actual} models, expected ${expected}`)
+    }
+  }
+
+  // Ensure no other brands exist
+  for (const brand of Object.keys(brandCounts)) {
+    if (!['Titan', 'Fastrack'].includes(brand)) {
+      throw new Error(`Non-approved brand detected in catalog: ${brand}`)
     }
   }
 

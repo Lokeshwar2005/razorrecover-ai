@@ -112,33 +112,33 @@ export const ChronovaStore: React.FC = () => {
     },
     {
       id: 'slide-2',
-      badge: '⚡ CONNECTED INTELLIGENCE',
-      title: 'SMART. SLEEK. POWERFUL.',
-      subtitle: 'Ultra AMOLED Displays, Multi-Band GPS & Crystal Clear Bluetooth Calling on your wrist.',
-      cta: 'DISCOVER SMARTWATCHES',
+      badge: '⚡ YOUTH & STREET CULTURE',
+      title: 'FASTRACK STUNNERS & AUTOMATICS',
+      subtitle: 'Bold geometries, skeletal automatic calibres & durable multifunction steel straps.',
+      cta: 'DISCOVER FASTRACK',
       action: () => {
         handleClearAllFilters()
-        setSelectedCategories(['Smart Watches'])
+        setSelectedBrands(['Fastrack'])
         setCurrentView('catalog')
       },
-      image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=1200&auto=format&fit=crop&q=80',
-      featuredWatch: 'Apple Watch Ultra 2 Titanium',
-      price: '₹89,900',
+      image: 'https://images.unsplash.com/photo-1544117519-31a4b719223d?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'Fastrack Automatics Skeleton Dial',
+      price: '₹12,495',
     },
     {
       id: 'slide-3',
-      badge: '🏎️ PRECISION RACING TACHYMETERS',
-      title: 'URBAN CHRONOGRAPH SERIES',
-      subtitle: 'Split-second timing, aerospace titanium casing, and iconic sunray dial geometry.',
+      badge: '🏎️ PRECISION CHRONOGRAPH SERIES',
+      title: 'TITAN MARITIME & NEO DIVER',
+      subtitle: 'Split-second timing, 100M marine diver rating, and iconic sunray dial geometry.',
       cta: 'SHOP CHRONOGRAPHS',
       action: () => {
         handleClearAllFilters()
-        setSelectedCategories(['Chronograph'])
+        setSelectedCategories(['Chronograph', 'Sports Watches'])
         setCurrentView('catalog')
       },
       image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=1200&auto=format&fit=crop&q=80',
-      featuredWatch: 'Seiko Speedtimer Solar Chrono',
-      price: '₹48,995',
+      featuredWatch: 'Titan Maritime Chronograph',
+      price: '₹14,636',
     },
   ]
 
@@ -657,7 +657,7 @@ export const ChronovaStore: React.FC = () => {
                   setSearchQuery(e.target.value)
                   if (e.target.value) setCurrentView('catalog')
                 }}
-                placeholder="Search 190+ watches, smartwatches & brands (e.g. Titan, AMOLED, Seiko)..."
+                placeholder="Search Titan & Fastrack watches, models & styles (e.g. Edge, Stunners, Maritime, UFO)..."
                 className="w-full pl-11 pr-10 py-2.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:bg-white transition shadow-xs"
               />
               <span className="absolute left-4 top-3 text-slate-400 text-xs">🔍</span>
@@ -783,15 +783,15 @@ export const ChronovaStore: React.FC = () => {
                   >
                     <span className="text-lg">👑</span>
                     <div>
-                      <div className="text-xs font-bold text-slate-900">Luxury Automatics</div>
-                      <div className="text-[10px] text-slate-500">Seiko, Titan Grandmaster & Skeleton</div>
+                      <div className="text-xs font-bold text-slate-900">Luxury & Automatics</div>
+                      <div className="text-[10px] text-slate-500">Titan Edge Ceramic & Fastrack Automatics</div>
                     </div>
                   </button>
 
                   <button
                     onClick={() => {
                       handleClearAllFilters()
-                      setSelectedCategories(['Sports Watches', 'Outdoor Watches'])
+                      setSelectedCategories(['Sports Watches', 'Outdoor Watches', 'Chronograph'])
                       setIsMoreDropdownOpen(false)
                       setCurrentView('catalog')
                     }}
@@ -799,15 +799,15 @@ export const ChronovaStore: React.FC = () => {
                   >
                     <span className="text-lg">🏊</span>
                     <div>
-                      <div className="text-xs font-bold text-slate-900">Diver 200M & Sports</div>
-                      <div className="text-[10px] text-slate-500">Casio G-Shock, Citizen Promaster</div>
+                      <div className="text-xs font-bold text-slate-900">Diver 100M & Sports</div>
+                      <div className="text-[10px] text-slate-500">Titan Maritime & Zero Hour Diver</div>
                     </div>
                   </button>
 
                   <button
                     onClick={() => {
                       handleClearAllFilters()
-                      setSelectedCategories(['Dress Watches'])
+                      setSelectedCategories(['Dress Watches', 'Analog Watches'])
                       setIsMoreDropdownOpen(false)
                       setCurrentView('catalog')
                     }}
@@ -815,8 +815,8 @@ export const ChronovaStore: React.FC = () => {
                   >
                     <span className="text-lg">🎁</span>
                     <div>
-                      <div className="text-xs font-bold text-slate-900">Couple & Wedding Sets</div>
-                      <div className="text-[10px] text-slate-500">Titan Bandhan & Sonata Gold</div>
+                      <div className="text-xs font-bold text-slate-900">Classics & Everyday</div>
+                      <div className="text-[10px] text-slate-500">Titan Karishma & Fastrack Stunners</div>
                     </div>
                   </button>
 
@@ -1438,13 +1438,13 @@ export const ChronovaStore: React.FC = () => {
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-white font-bold uppercase tracking-wider font-mono">Popular Brands</h4>
+            <h4 className="text-white font-bold uppercase tracking-wider font-mono">Approved Brands</h4>
             <ul className="space-y-2">
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan Regalia & Ceramic</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio G-Shock & Edifice</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Stunners</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Seiko']); setCurrentView('catalog'); }}>Seiko 5 Sports & Presage</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Apple Watch']); setCurrentView('catalog'); }}>Apple Watch Series 9 & Ultra</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan Edge & Maritime</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan Karishma & Neo</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Stunners & UFO</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Thor & Kronos</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Automatics</li>
             </ul>
           </div>
 
