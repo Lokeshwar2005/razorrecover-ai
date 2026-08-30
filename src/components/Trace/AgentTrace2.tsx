@@ -13,8 +13,22 @@ export interface TraceStep {
 
 export const AgentTrace2: React.FC = () => {
   const selectedTxn = useTransactionStore((s) => s.getSelectedTransaction())
+  const setSelectedTransactionId = useTransactionStore((s) => s.setSelectedTransactionId)
+  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
   const [activeStep, setActiveStep] = useState<number>(6) // Default to step 6 (Verify completed)
   const [isPlaying, setIsPlaying] = useState<boolean>(false)
+
+  // URL Deep-linking & Mount Feed Rehydration
+  useEffect(() => {
+    refreshProviderFeed()
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const txnParam = params.get('transaction') || params.get('txn') || params.get('id')
+      if (txnParam) {
+        setSelectedTransactionId(txnParam.toUpperCase())
+      }
+    }
+  }, [setSelectedTransactionId, refreshProviderFeed])
 
   const steps: TraceStep[] = useMemo(() => {
     if (!selectedTxn) {
@@ -22,6 +36,7 @@ export const AgentTrace2: React.FC = () => {
     }
 
     const amtFormatted = `₹${selectedTxn.amount.toLocaleString('en-IN')}`
+    const verifiedAmtFormatted = `₹${(selectedTxn.verified_amount_minor ? selectedTxn.verified_amount_minor / 100 : selectedTxn.amount).toLocaleString('en-IN')}`
     const expValFormatted = `₹${Math.floor((selectedTxn.amount * selectedTxn.recovery_probability) / 100).toLocaleString('en-IN')}`
     const isRecovered = selectedTxn.status === 'RECOVERED'
     const isBlocked = selectedTxn.policy === 'Blocked'
@@ -68,7 +83,7 @@ export const AgentTrace2: React.FC = () => {
         status: 'DONE',
         detail: isBlocked
           ? `Action halted by safety gate. Escalated to human operator.`
-          : `Bounded recovery playbook executed: ${selectedTxn.action} via Razorpay Test Mode.`,
+          : `Bounded recovery playbook executed: ${selectedTxn.action} [${selectedTxn.recovery_operation_id || 'REC-ACTIVE'}]. Order: ${selectedTxn.provider_order_id || 'order_pending'}.`,
         decision: isBlocked ? 'ESCALATED' : 'ACTION DISPATCHED',
       },
       {
@@ -76,7 +91,7 @@ export const AgentTrace2: React.FC = () => {
         name: '07 VERIFY',
         status: 'DONE',
         detail: isRecovered
-          ? `Payment Verification Bridge confirmed Razorpay captured status for ${selectedTxn.id}. Verified revenue credited.`
+          ? `Payment Verification Bridge confirmed Razorpay captured status for ${selectedTxn.id} [${selectedTxn.provider_payment_id || 'pay_verified'}]. Verified revenue credited: ${verifiedAmtFormatted}.`
           : `Awaiting captured payment confirmation from Razorpay webhook/verification gate.`,
         decision: isRecovered ? 'VERIFIED CAPTURED' : 'PENDING CAPTURE',
       },
