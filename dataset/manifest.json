@@ -1,5 +1,5 @@
 {
-  "total_images": 45,
+  "total_images": 60,
   "titan_count": 15,
   "fastrack_count": 15,
   "other_brands_count": 0,
@@ -305,7 +305,128 @@
       "style": "Iconic Ultra-Compact Black Resin Digital Timepiece",
       "file": "dataset/casio/15_casio_vintage_f91w_1.jpg",
       "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise Pro 6R Smartwatch",
+      "category": "Smart Watches",
+      "style": "AMOLED ROUND",
+      "file": "dataset/noise/01_noise_pro_6r.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise ColorFit Pro 6 Max Smart Watch",
+      "category": "Smart Watches",
+      "style": "1.96\" AMOLED MAX",
+      "file": "dataset/noise/02_noise_colorfit_pro_6_max.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise ColorFit Pro 6 Smart Watch",
+      "category": "Smart Watches",
+      "style": "AMOLED PRO",
+      "file": "dataset/noise/03_noise_colorfit_pro_6.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Endeavour Pro Smartwatch",
+      "category": "Outdoor Watches",
+      "style": "RUGGED OUTDOOR",
+      "file": "dataset/noise/04_noisefit_endeavour_pro.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Endeavour 2 Smartwatch",
+      "category": "Sports Watches",
+      "style": "TACTICAL SPORT",
+      "file": "dataset/noise/05_noisefit_endeavour_2.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Diva Araya Smartwatch",
+      "category": "Dress Watches",
+      "style": "CRYSTAL BEZEL",
+      "file": "dataset/noise/06_noisefit_diva_araya.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Diva 2 Smartwatch",
+      "category": "Dress Watches",
+      "style": "ELEGANT SLIM",
+      "file": "dataset/noise/07_noisefit_diva_2.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Halo 3 Smartwatch",
+      "category": "Smart Watches",
+      "style": "SUPER AMOLED",
+      "file": "dataset/noise/08_noisefit_halo_3.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Halo 2 Smartwatch",
+      "category": "Smart Watches",
+      "style": "ROTATING BEZEL",
+      "file": "dataset/noise/09_noisefit_halo_2.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Twist 2 Smartwatch",
+      "category": "Smart Watches",
+      "style": "BEST VALUE ROUND",
+      "file": "dataset/noise/10_noisefit_twist_2.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise ColorFit Icon 5 Smartwatch",
+      "category": "Smart Watches",
+      "style": "ICONIC RECTANGULAR",
+      "file": "dataset/noise/11_noise_colorfit_icon_5.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise ColorFit Victor 2 Smartwatch",
+      "category": "Sports Watches",
+      "style": "VICTOR SPORT",
+      "file": "dataset/noise/12_noise_colorfit_victor_2.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise ColorFit Pulse 4 Max Smart Watch",
+      "category": "Smart Watches",
+      "style": "PULSE MAX",
+      "file": "dataset/noise/13_noise_colorfit_pulse_4_max.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "Noise ColorFit Ultra 3 Smartwatch",
+      "category": "Smart Watches",
+      "style": "ULTRA VALUE",
+      "file": "dataset/noise/14_noise_colorfit_ultra_3.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Noise",
+      "model": "NoiseFit Origin Smartwatch",
+      "category": "Luxury Watches",
+      "style": "FLAGSHIP EN1 CHIP",
+      "file": "dataset/noise/15_noisefit_origin.jpg",
+      "status": "KEEP"
     }
   ],
-  "casio_count": 15
+  "casio_count": 15,
+  "noise_count": 15
 }

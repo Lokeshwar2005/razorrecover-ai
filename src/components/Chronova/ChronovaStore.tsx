@@ -672,7 +672,7 @@ export const ChronovaStore: React.FC = () => {
                   setSearchQuery(e.target.value)
                   if (e.target.value) setCurrentView('catalog')
                 }}
-                placeholder="Search Titan, Fastrack & Casio watches, models & styles (e.g. Edge, Stunners, G-Shock, Vintage, CasiOak)..."
+                placeholder="Search Titan, Fastrack, Casio & Noise smartwatches & watches (e.g. Edge, Stunners, G-Shock, ColorFit, Pro 6R, Halo)..."
                 className="w-full pl-11 pr-10 py-2.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:bg-white transition shadow-xs"
               />
               <span className="absolute left-4 top-3 text-slate-400 text-xs">🔍</span>
@@ -1458,8 +1458,8 @@ export const ChronovaStore: React.FC = () => {
               <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan (Edge, Maritime, Karishma)</li>
               <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack (Stunners, UFO, Thor)</li>
               <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio (G-Shock, Vintage, Edifice)</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedCategories(['Digital Watches']); setCurrentView('catalog'); }}>Casio Vintage A168 & F-91W</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedCategories(['Sports Watches']); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>G-Shock GA-2100 CasiOak</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Noise']); setCurrentView('catalog'); }}>Noise (ColorFit, Diva, Halo, Origin)</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedCategories(['Smart Watches']); setCurrentView('catalog'); }}>AMOLED Calling Smartwatches</li>
             </ul>
           </div>
 

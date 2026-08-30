@@ -403,5 +403,140 @@
     "gallery": [
       "/products/casio/chronova-045/primary.jpg"
     ]
+  },
+  "chronova-046": {
+    "id": "chronova-046",
+    "brand": "Noise",
+    "name": "Noise Pro 6R Smartwatch",
+    "primaryImage": "/products/noise/chronova-046/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-046/primary.jpg"
+    ]
+  },
+  "chronova-047": {
+    "id": "chronova-047",
+    "brand": "Noise",
+    "name": "Noise ColorFit Pro 6 Max Smart Watch",
+    "primaryImage": "/products/noise/chronova-047/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-047/primary.jpg"
+    ]
+  },
+  "chronova-048": {
+    "id": "chronova-048",
+    "brand": "Noise",
+    "name": "Noise ColorFit Pro 6 Smart Watch",
+    "primaryImage": "/products/noise/chronova-048/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-048/primary.jpg"
+    ]
+  },
+  "chronova-049": {
+    "id": "chronova-049",
+    "brand": "Noise",
+    "name": "NoiseFit Endeavour Pro Smartwatch",
+    "primaryImage": "/products/noise/chronova-049/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-049/primary.jpg"
+    ]
+  },
+  "chronova-050": {
+    "id": "chronova-050",
+    "brand": "Noise",
+    "name": "NoiseFit Endeavour 2 Smartwatch",
+    "primaryImage": "/products/noise/chronova-050/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-050/primary.jpg"
+    ]
+  },
+  "chronova-051": {
+    "id": "chronova-051",
+    "brand": "Noise",
+    "name": "NoiseFit Diva Araya Smartwatch",
+    "primaryImage": "/products/noise/chronova-051/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-051/primary.jpg"
+    ]
+  },
+  "chronova-052": {
+    "id": "chronova-052",
+    "brand": "Noise",
+    "name": "NoiseFit Diva 2 Smartwatch",
+    "primaryImage": "/products/noise/chronova-052/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-052/primary.jpg"
+    ]
+  },
+  "chronova-053": {
+    "id": "chronova-053",
+    "brand": "Noise",
+    "name": "NoiseFit Halo 3 Smartwatch",
+    "primaryImage": "/products/noise/chronova-053/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-053/primary.jpg"
+    ]
+  },
+  "chronova-054": {
+    "id": "chronova-054",
+    "brand": "Noise",
+    "name": "NoiseFit Halo 2 Smartwatch",
+    "primaryImage": "/products/noise/chronova-054/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-054/primary.jpg"
+    ]
+  },
+  "chronova-055": {
+    "id": "chronova-055",
+    "brand": "Noise",
+    "name": "NoiseFit Twist 2 Smartwatch",
+    "primaryImage": "/products/noise/chronova-055/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-055/primary.jpg"
+    ]
+  },
+  "chronova-056": {
+    "id": "chronova-056",
+    "brand": "Noise",
+    "name": "Noise ColorFit Icon 5 Smartwatch",
+    "primaryImage": "/products/noise/chronova-056/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-056/primary.jpg"
+    ]
+  },
+  "chronova-057": {
+    "id": "chronova-057",
+    "brand": "Noise",
+    "name": "Noise ColorFit Victor 2 Smartwatch",
+    "primaryImage": "/products/noise/chronova-057/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-057/primary.jpg"
+    ]
+  },
+  "chronova-058": {
+    "id": "chronova-058",
+    "brand": "Noise",
+    "name": "Noise ColorFit Pulse 4 Max Smart Watch",
+    "primaryImage": "/products/noise/chronova-058/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-058/primary.jpg"
+    ]
+  },
+  "chronova-059": {
+    "id": "chronova-059",
+    "brand": "Noise",
+    "name": "Noise ColorFit Ultra 3 Smartwatch",
+    "primaryImage": "/products/noise/chronova-059/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-059/primary.jpg"
+    ]
+  },
+  "chronova-060": {
+    "id": "chronova-060",
+    "brand": "Noise",
+    "name": "NoiseFit Origin Smartwatch",
+    "primaryImage": "/products/noise/chronova-060/primary.jpg",
+    "gallery": [
+      "/products/noise/chronova-060/primary.jpg"
+    ]
   }
 }

@@ -2835,6 +2835,951 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "verified_purchase": true
       }
     ]
+  },
+  {
+    "id": "chronova-046",
+    "name": "Noise Pro 6R Smartwatch",
+    "brand": "Noise",
+    "model": "Pro 6R",
+    "series": "Pro Series",
+    "price_rupees": 6999,
+    "original_price_rupees": 9999,
+    "discount_percent": 30,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.8,
+    "review_count": 310,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "AMOLED ROUND",
+    "is_bestseller": true,
+    "description": "Round premium smartwatch with 1.43-inch HD AMOLED display, metallic chassis, functional rotating crown, BT calling with TruSync, and 7-day battery life.",
+    "specs": {
+      "movement": "Noise Smart OS / Bluetooth v5.3",
+      "case_size": "46 mm Round",
+      "case_thickness": "11.2 mm",
+      "case_material": "Zinc Alloy Metallic Finish",
+      "dial_color": "1.43-inch AMOLED Always-On Display",
+      "strap_material": "Premium Silicone / Leather Hybrid",
+      "strap_color": "Classic Black",
+      "glass": "2.5D Curved Tempered Glass",
+      "water_resistance": "IP68 Water & Dust Resistant",
+      "battery_life": "Up to 7 Days (300mAh)",
+      "warranty": "1 Year Noise Official India Warranty"
+    },
+    "highlights": [
+      "1.43-inch AMOLED Always-On Display (466x466 px)",
+      "TruSync Bluetooth Calling with quick dial pad",
+      "Advanced health suite: 24/7 Heart Rate, SpO2 & Sleep Tracker"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-046/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-046/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-1",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Pro 6R",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-047",
+    "name": "Noise ColorFit Pro 6 Max Smart Watch",
+    "brand": "Noise",
+    "model": "ColorFit Pro 6 Max",
+    "series": "ColorFit Pro",
+    "price_rupees": 7999,
+    "original_price_rupees": 11999,
+    "discount_percent": 33,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Office",
+    "rating": 4.9,
+    "review_count": 480,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "1.96\" AMOLED MAX",
+    "is_bestseller": true,
+    "description": "Flagship 1.96-inch curved AMOLED display with stainless steel finish, metallic rotating crown, AI voice assistant, and comprehensive fitness tracking.",
+    "specs": {
+      "movement": "NoiseFit OS / Dual-Mode Bluetooth v5.3",
+      "case_size": "45 \u00d7 39 mm Rectangular",
+      "case_thickness": "10.8 mm",
+      "case_material": "Stainless Steel Luster Alloy",
+      "dial_color": "1.96-inch AMOLED Curved Display",
+      "strap_material": "Magnetic Mesh / Silicone",
+      "strap_color": "Space Black",
+      "glass": "Scratch-Resistant Sapphire-Coated Glass",
+      "water_resistance": "IP68 Resistant",
+      "battery_life": "Up to 8 Days",
+      "warranty": "1 Year Noise Official India Warranty"
+    },
+    "highlights": [
+      "Ultra-large 1.96\" AMOLED screen with 600 nits brightness",
+      "Functional stainless steel rotating crown",
+      "150+ Sports modes with automated workout detection"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-047/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-047/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-2",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise ColorFit Pro 6 Max",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-048",
+    "name": "Noise ColorFit Pro 6 Smart Watch",
+    "brand": "Noise",
+    "model": "ColorFit Pro 6",
+    "series": "ColorFit Pro",
+    "price_rupees": 5499,
+    "original_price_rupees": 7999,
+    "discount_percent": 31,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.8,
+    "review_count": 620,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "AMOLED PRO",
+    "is_bestseller": true,
+    "description": "1.85-inch AMOLED display with sleek metallic frame, functional navigation crown, rapid charging, and single-chip Bluetooth calling.",
+    "specs": {
+      "movement": "NoiseFit Single-Chip BT Calling",
+      "case_size": "43 \u00d7 37 mm Rectangular",
+      "case_thickness": "10.5 mm",
+      "case_material": "Metallic Alloy",
+      "dial_color": "1.85-inch AMOLED 390x450 px",
+      "strap_material": "Silicone Strap",
+      "strap_color": "Jet Black",
+      "glass": "2.5D Curved Glass",
+      "water_resistance": "IP68",
+      "battery_life": "7 Days Typical Usage",
+      "warranty": "1 Year Noise Official Warranty"
+    },
+    "highlights": [
+      "1.85\" vibrant AMOLED panel",
+      "Seamless single-chip Bluetooth calling with noise cancellation",
+      "Noise Health Suite with stress & SpO2 tracking"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-048/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-048/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-3",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise ColorFit Pro 6",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-049",
+    "name": "NoiseFit Endeavour Pro Smartwatch",
+    "brand": "Noise",
+    "model": "Endeavour Pro",
+    "series": "Endeavour Rugged",
+    "price_rupees": 9999,
+    "original_price_rupees": 14999,
+    "discount_percent": 33,
+    "currency": "INR",
+    "category": "Outdoor Watches",
+    "gender": "Men",
+    "vibe": "Sport",
+    "rating": 4.9,
+    "review_count": 290,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "RUGGED OUTDOOR",
+    "is_bestseller": true,
+    "description": "Heavy-duty outdoor tactical smartwatch with shock-resistant armored bezel, dual pushers, SOS emergency calling, built-in flashlight, and multi-band GPS tracking.",
+    "specs": {
+      "movement": "NoiseFit Outdoor Engine with Dual-Band GPS",
+      "case_size": "48 mm Rugged Round",
+      "case_thickness": "13.5 mm",
+      "case_material": "Reinforced Polycarbonate & Steel Bezel",
+      "dial_color": "1.46-inch High-Brightness Outdoor AMOLED",
+      "strap_material": "Textured Tactical Silicone",
+      "strap_color": "Camouflage Black",
+      "glass": "Impact-Resistant Gorilla Glass",
+      "water_resistance": "3ATM + IP68 Water Proof",
+      "battery_life": "10 Days Extreme Battery Life",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Military-grade shock and drop resistance (MIL-STD)",
+      "Built-in standalone dual-band GPS navigation",
+      "Integrated tactical LED flashlight and SOS beacon"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-049/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-049/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-4",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Endeavour Pro",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-050",
+    "name": "NoiseFit Endeavour 2 Smartwatch",
+    "brand": "Noise",
+    "model": "Endeavour 2",
+    "series": "Endeavour",
+    "price_rupees": 5499,
+    "original_price_rupees": 7999,
+    "discount_percent": 31,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Travel",
+    "rating": 4.7,
+    "review_count": 210,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "TACTICAL SPORT",
+    "is_bestseller": false,
+    "description": "Sporty outdoor smartwatch with rugged round case, tactile multi-function buttons, 100+ sport profiles, and rapid Bluetooth sync.",
+    "specs": {
+      "movement": "NoiseFit Sports OS v2",
+      "case_size": "47 mm Round",
+      "case_thickness": "12.8 mm",
+      "case_material": "Zinc Alloy & Rugged Polymer",
+      "dial_color": "1.39-inch HD Round Display",
+      "strap_material": "Durable Silicone",
+      "strap_color": "Forest Green / Black",
+      "glass": "Tough Mineral Glass",
+      "water_resistance": "IP68 Water Resistance",
+      "battery_life": "Up to 7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Rugged sport chassis with protective bezel",
+      "100+ outdoor and indoor sports modes",
+      "Bluetooth calling with loud and clear speaker"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-050/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-050/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-5",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Endeavour 2",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-051",
+    "name": "NoiseFit Diva Araya Smartwatch",
+    "brand": "Noise",
+    "model": "Diva Araya",
+    "series": "Diva Collection",
+    "price_rupees": 4999,
+    "original_price_rupees": 6999,
+    "discount_percent": 28,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Party",
+    "rating": 4.9,
+    "review_count": 340,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "CRYSTAL BEZEL",
+    "is_bestseller": true,
+    "description": "Exquisite women's jewelry smartwatch featuring crystal-studded luxury bezel, rose gold finish, AMOLED dial, and magnetic Milanese mesh strap.",
+    "specs": {
+      "movement": "NoiseFit Female Wellness OS",
+      "case_size": "39 mm Slim Round",
+      "case_thickness": "9.5 mm",
+      "case_material": "Rose Gold Ion-Plated Metal with Crystals",
+      "dial_color": "1.2-inch HD AMOLED Display",
+      "strap_material": "Magnetic Stainless Steel Mesh",
+      "strap_color": "Rose Gold",
+      "glass": "2.5D Curved Glass",
+      "water_resistance": "IP67 Water Resistant",
+      "battery_life": "4-5 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Brilliant crystal-embellished luxury bezel",
+      "Compact 39mm ultra-slim jewelry profile",
+      "Dedicated female cycle & wellness companion"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-051/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-051/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-6",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Diva Araya",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-052",
+    "name": "NoiseFit Diva 2 Smartwatch",
+    "brand": "Noise",
+    "model": "Diva 2",
+    "series": "Diva Collection",
+    "price_rupees": 3999,
+    "original_price_rupees": 5499,
+    "discount_percent": 27,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Minimal",
+    "rating": 4.8,
+    "review_count": 270,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ELEGANT SLIM",
+    "is_bestseller": false,
+    "description": "Understated feminine smartwatch with slim 8.9mm case, crisp round display, Bluetooth calling, and leather-finish pastel strap.",
+    "specs": {
+      "movement": "NoiseFit Smart Module",
+      "case_size": "38 mm Round",
+      "case_thickness": "8.9 mm",
+      "case_material": "Polished Alloy",
+      "dial_color": "1.19-inch Round AMOLED",
+      "strap_material": "Vegan Leather Strap",
+      "strap_color": "Pearl White / Rose Gold",
+      "glass": "Tempered Glass",
+      "water_resistance": "IP68",
+      "battery_life": "5 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Featherlight 8.9mm slim aesthetic",
+      "Crystal-clear Bluetooth calling",
+      "Custom customizable designer watch faces"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-052/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-052/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-7",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Diva 2",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-053",
+    "name": "NoiseFit Halo 3 Smartwatch",
+    "brand": "Noise",
+    "model": "Halo 3",
+    "series": "Halo Series",
+    "price_rupees": 5499,
+    "original_price_rupees": 7999,
+    "discount_percent": 31,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Men",
+    "vibe": "Premium",
+    "rating": 4.9,
+    "review_count": 450,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "SUPER AMOLED",
+    "is_bestseller": true,
+    "description": "Round luxury smartwatch with 1.43-inch Super AMOLED screen, polished metal case, mechanical rotating crown, and dual-tone leather strap.",
+    "specs": {
+      "movement": "NoiseFit Premium OS",
+      "case_size": "46 mm Round",
+      "case_thickness": "10.9 mm",
+      "case_material": "Brushed & Polished Stainless Steel Alloy",
+      "dial_color": "1.43-inch Super AMOLED (466x466 px)",
+      "strap_material": "Genuine Leather / Silicone",
+      "strap_color": "Cognac Brown",
+      "glass": "Curved Sapphire-Coated Glass",
+      "water_resistance": "IP68 Water Resistant",
+      "battery_life": "7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "1.43\" Super AMOLED display with 700 nits peak brightness",
+      "Rotatable mechanical crown with haptic feedback",
+      "TruSync Bluetooth v5.3 calling"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-053/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-053/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-8",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Halo 3",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-054",
+    "name": "NoiseFit Halo 2 Smartwatch",
+    "brand": "Noise",
+    "model": "Halo 2",
+    "series": "Halo Series",
+    "price_rupees": 3999,
+    "original_price_rupees": 5999,
+    "discount_percent": 33,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Men",
+    "vibe": "Office",
+    "rating": 4.7,
+    "review_count": 380,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ROTATING BEZEL",
+    "is_bestseller": false,
+    "description": "Classic timepiece silhouette with functional rotating outer bezel ring, AMOLED display, metal link bracelet, and AI voice assistance.",
+    "specs": {
+      "movement": "NoiseFit OS",
+      "case_size": "45.5 mm Round",
+      "case_thickness": "11.5 mm",
+      "case_material": "Metallic Alloy with Rotating Bezel",
+      "dial_color": "1.43-inch Round AMOLED",
+      "strap_material": "Stainless Steel Link Strap",
+      "strap_color": "Silver / Gunmetal",
+      "glass": "Mineral Glass",
+      "water_resistance": "IP68",
+      "battery_life": "6-7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Mechanical rotating outer bezel for tactile navigation",
+      "Solid metal link bracelet",
+      "Always-On display with analogue & digital watch faces"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-054/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-054/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-9",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Halo 2",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-055",
+    "name": "NoiseFit Twist 2 Smartwatch",
+    "brand": "Noise",
+    "model": "Twist 2",
+    "series": "Twist Series",
+    "price_rupees": 2499,
+    "original_price_rupees": 3999,
+    "discount_percent": 37,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.6,
+    "review_count": 510,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "BEST VALUE ROUND",
+    "is_bestseller": true,
+    "description": "Vibrant round smartwatch with TruSync BT calling, 1.38-inch TFT display, ergonomic case, 100+ sports modes, and sleep monitoring.",
+    "specs": {
+      "movement": "NoiseFit Core OS",
+      "case_size": "44 mm Round",
+      "case_thickness": "11 mm",
+      "case_material": "Durable Polycarbonate & Metal Bezel",
+      "dial_color": "1.38-inch HD TFT Display",
+      "strap_material": "Comfort Silicone",
+      "strap_color": "Midnight Black",
+      "glass": "2.5D Curved Glass",
+      "water_resistance": "IP68",
+      "battery_life": "7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Affordable round smartwatch with TruSync calling",
+      "Lightweight 38g ergonomic body",
+      "100+ cloud-based watch faces"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-055/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-055/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-10",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Twist 2",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-056",
+    "name": "Noise ColorFit Icon 5 Smartwatch",
+    "brand": "Noise",
+    "model": "ColorFit Icon 5",
+    "series": "Icon Series",
+    "price_rupees": 2499,
+    "original_price_rupees": 3999,
+    "discount_percent": 37,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Street",
+    "rating": 4.7,
+    "review_count": 420,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ICONIC RECTANGULAR",
+    "is_bestseller": true,
+    "description": "1.91-inch large rectangular display, functional side crown, Bluetooth calling with noise reduction, and custom watch face creator.",
+    "specs": {
+      "movement": "NoiseFit OS with BT v5.3",
+      "case_size": "45 \u00d7 38 mm",
+      "case_thickness": "10.4 mm",
+      "case_material": "Metallic Finish Composite",
+      "dial_color": "1.91-inch HD LCD (500 nits)",
+      "strap_material": "Silicone Strap",
+      "strap_color": "Olive Green / Black",
+      "glass": "Curved Glass",
+      "water_resistance": "IP68",
+      "battery_life": "7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "1.91\" expansive display with vibrant colors",
+      "AI Voice Assistant (Siri / Google Assistant integration)",
+      "Productivity tools: Calculator, Weather, Music Control"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-056/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-056/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-11",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise ColorFit Icon 5",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-057",
+    "name": "Noise ColorFit Victor 2 Smartwatch",
+    "brand": "Noise",
+    "model": "Victor 2",
+    "series": "Victor Sport",
+    "price_rupees": 2999,
+    "original_price_rupees": 4499,
+    "discount_percent": 33,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Sport",
+    "rating": 4.7,
+    "review_count": 280,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "VICTOR SPORT",
+    "is_bestseller": false,
+    "description": "Sporty rectangular smartwatch with reinforced shock corners, athletic dual-tone strap, heart rate & SpO2 tracking, and 120+ sport modes.",
+    "specs": {
+      "movement": "NoiseFit Athletic Engine",
+      "case_size": "46 \u00d7 39 mm",
+      "case_thickness": "11.2 mm",
+      "case_material": "Impact-Resistant Polymer & Metal Trim",
+      "dial_color": "1.85-inch HD Display",
+      "strap_material": "Breathable Perforated Silicone",
+      "strap_color": "Black / Red Sport",
+      "glass": "Tough Mineral Glass",
+      "water_resistance": "IP68",
+      "battery_life": "7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "Perforated athletic silicone strap for sweat ventilation",
+      "120+ sports tracking profiles with auto-pause",
+      "Crystal clear Bluetooth calling"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-057/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-057/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-12",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Victor 2",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-058",
+    "name": "Noise ColorFit Pulse 4 Max Smart Watch",
+    "brand": "Noise",
+    "model": "Pulse 4 Max",
+    "series": "Pulse Series",
+    "price_rupees": 2299,
+    "original_price_rupees": 3499,
+    "discount_percent": 34,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.6,
+    "review_count": 590,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "PULSE MAX",
+    "is_bestseller": true,
+    "description": "1.96-inch curved AMOLED display with ultra-thin metallic case, 150+ watch faces, single-chip BT calling, and 7-day battery endurance.",
+    "specs": {
+      "movement": "NoiseFit Pulse Core OS",
+      "case_size": "45 \u00d7 38.5 mm",
+      "case_thickness": "10.2 mm",
+      "case_material": "Metallic Alloy",
+      "dial_color": "1.96-inch AMOLED Display",
+      "strap_material": "Liquid Silicone",
+      "strap_color": "Carbon Black",
+      "glass": "2.5D Curved Glass",
+      "water_resistance": "IP68",
+      "battery_life": "7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "1.96\" AMOLED screen with vibrant 60Hz refresh",
+      "Fast magnetic charging (0 to 100% in 60 mins)",
+      "Complete health suite with 24h SpO2 & sleep stages"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-058/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-058/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-13",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Pulse 4 Max",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-059",
+    "name": "Noise ColorFit Ultra 3 Smartwatch",
+    "brand": "Noise",
+    "model": "Ultra 3",
+    "series": "Ultra Series",
+    "price_rupees": 1799,
+    "original_price_rupees": 2999,
+    "discount_percent": 40,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Office",
+    "rating": 4.8,
+    "review_count": 920,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ULTRA VALUE",
+    "is_bestseller": true,
+    "description": "1.96-inch AMOLED display with brushed metallic chassis, functional crown navigation, gesture control, and premium metal mesh bracelet.",
+    "specs": {
+      "movement": "NoiseFit Ultra Core OS",
+      "case_size": "45.5 \u00d7 39 mm",
+      "case_thickness": "10.5 mm",
+      "case_material": "Brushed Metallic Alloy",
+      "dial_color": "1.96-inch AMOLED (410x502 px)",
+      "strap_material": "Stainless Steel Mesh",
+      "strap_color": "Metallic Silver / Black",
+      "glass": "2.5D Curved Glass",
+      "water_resistance": "IP68",
+      "battery_life": "7 Days",
+      "warranty": "1 Year Official Warranty"
+    },
+    "highlights": [
+      "1.96\" AMOLED display with 410x502 resolution",
+      "Brushed metallic frame with steel mesh strap",
+      "Smart DND, stock market tracker & world clock"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-059/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-059/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-14",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Ultra 3",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-060",
+    "name": "NoiseFit Origin Smartwatch",
+    "brand": "Noise",
+    "model": "Origin",
+    "series": "Origin Flagship",
+    "price_rupees": 6499,
+    "original_price_rupees": 9999,
+    "discount_percent": 35,
+    "currency": "INR",
+    "category": "Luxury Watches",
+    "gender": "Men",
+    "vibe": "Premium",
+    "rating": 4.9,
+    "review_count": 360,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "FLAGSHIP EN1 CHIP",
+    "is_bestseller": true,
+    "description": "Flagship smartwatch powered by the all-new EN1 processor and Nebula UI. 1.46-inch Apex AMOLED display, stainless steel contours, biometric health engine, and rapid response haptics.",
+    "specs": {
+      "movement": "Noise EN1 Processor with Nebula UI",
+      "case_size": "46.5 mm Round",
+      "case_thickness": "11.0 mm",
+      "case_material": "Solid 316L Stainless Steel & Ceramic Bezel",
+      "dial_color": "1.46-inch Apex AMOLED (466x466 px, 60fps)",
+      "strap_material": "Genuine Leather / Premium Fluoroelastomer",
+      "strap_color": "Obsidian Black",
+      "glass": "Sapphire Coated Crystal Glass",
+      "water_resistance": "3ATM (30m) Water Resistant",
+      "battery_life": "7 Days Typical, Up to 14 Days Saver",
+      "warranty": "1 Year Official India Warranty"
+    },
+    "highlights": [
+      "Powered by custom EN1 processor & ultra-smooth Nebula UI (60 FPS)",
+      "3ATM water resistance with 316L stainless steel build",
+      "Biometric health engine with continuous fitness readiness score"
+    ],
+    "images": {
+      "primary": "/products/noise/chronova-060/primary.jpg",
+      "gallery": [
+        "/products/noise/chronova-060/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#0f172a"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-noise-15",
+        "reviewer_name": "Kiran S.",
+        "rating": 5,
+        "date": "2026-08-26",
+        "title": "Outstanding performance by Noise Origin",
+        "comment": "Screen is brilliant, battery lasts all week, and calling is crystal clear.",
+        "helpful_votes": 35,
+        "verified_purchase": true
+      }
+    ]
   }
 ]
 
@@ -2842,6 +3787,7 @@ export const ALL_BRANDS: WatchBrand[] = [
   'Titan',
   'Fastrack',
   'Casio',
+  'Noise',
 ]
 
 export const ALL_CATEGORIES: WatchCategory[] = [
