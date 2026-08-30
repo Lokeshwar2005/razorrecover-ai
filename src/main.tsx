@@ -16,6 +16,7 @@ import { PolicySettingsView } from './components/Settings/PolicySettingsView'
 import { AuditComplianceCenter } from './components/Audit/AuditComplianceCenter'
 import { AgentTrace2 } from './components/Trace/AgentTrace2'
 import { AcmeMerchantPortal } from './components/MerchantPortal/AcmeMerchantPortal'
+import { ChronoSphereStore } from './components/ChronoSphere/ChronoSphereStore'
 import { DualSandboxView } from './components/MerchantPortal/DualSandboxView'
 import { GraphTransactionContext } from './types/graph'
 import { createTransaction, type RecoveryDirection } from './recoveryEngine'
@@ -188,6 +189,7 @@ const detectViewFromUrl = (): string => {
   if (full.includes('audit')) return 'Audit'
   if (full.includes('simulation')) return 'Simulation'
   if (full.includes('agent-trace') || full.includes('trace')) return 'Agent trace'
+  if (full.includes('chronosphere') || full.includes('watches') || full.includes('store')) return 'ChronoSphere Store'
   if (full.includes('merchant-portal') || full.includes('acme-store') || full.includes('acme')) return 'Merchant Portal'
   if (full.includes('dual-sandbox') || full.includes('sandbox')) return 'Dual Sandbox'
   return 'Overview'
@@ -554,6 +556,7 @@ function App() {
       Overview: '',
       Simulation: 'simulation',
       'Agent trace': 'agent-trace',
+      'ChronoSphere Store': 'chronosphere',
       'Merchant Portal': 'merchant-portal',
       'Dual Sandbox': 'dual-sandbox',
     }
@@ -585,6 +588,7 @@ function App() {
     { label: 'Opportunities', tab: 'Opportunities' },
     { label: 'Transactions', tab: 'Transactions' },
     { label: 'Audit', tab: 'Audit' },
+    { label: '⌚ ChronoSphere (Website A)', tab: 'ChronoSphere Store' },
   ]
 
   const advancedNavItems = [
@@ -726,6 +730,15 @@ function App() {
 
       {tab === 'Merchant Portal' && (
         <AcmeMerchantPortal
+          onNavigateToRazorRecover={(targetTab, txnId) => {
+            if (targetTab) navigateToTab(targetTab)
+            if (txnId) useTransactionStore.getState().setSelectedTransactionId(txnId)
+          }}
+        />
+      )}
+
+      {tab === 'ChronoSphere Store' && (
+        <ChronoSphereStore
           onNavigateToRazorRecover={(targetTab, txnId) => {
             if (targetTab) navigateToTab(targetTab)
             if (txnId) useTransactionStore.getState().setSelectedTransactionId(txnId)

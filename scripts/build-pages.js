@@ -33,6 +33,9 @@ const routes = [
   'merchant-portal',
   'acme-store',
   'dual-sandbox',
+  'chronosphere',
+  'watches',
+  'store',
 ]
 
 // 1. Create 404.html for GitHub Pages SPA fallback

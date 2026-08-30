@@ -401,6 +401,7 @@ export function launchRazorpayCheckout(options: {
   name?: string
   description?: string
   notes?: Record<string, string>
+  prefill?: { name?: string; email?: string; contact?: string }
   onSuccess: (response: { razorpay_payment_id: string; razorpay_order_id?: string; razorpay_signature?: string }) => void
   onFailure?: (error: any) => void
 }): Promise<void> {
@@ -438,6 +439,7 @@ export function launchRazorpayCheckout(options: {
             description: options.description || 'Test Mode Recovery Payment',
             order_id: options.order_id,
             notes: options.notes,
+            prefill: options.prefill,
             handler: (response: any) => {
               unlockPageScroll()
               options.onSuccess({
