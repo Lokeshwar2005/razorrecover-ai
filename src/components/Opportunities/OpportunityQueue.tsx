@@ -59,6 +59,18 @@ export const OpportunityQueue: React.FC = () => {
   const [verifying, setVerifying] = useState(false)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
 
+  // URL Deep-linking support & Mount Feed Rehydration
+  useEffect(() => {
+    refreshProviderFeed()
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const txnParam = params.get('opportunity') || params.get('transaction') || params.get('txn') || params.get('id')
+      if (txnParam) {
+        setSelectedTransactionId(txnParam.toUpperCase())
+      }
+    }
+  }, [setSelectedTransactionId, refreshProviderFeed])
+
   // Map for O(1) canonical transaction lookup
   const transactionMap = useMemo(() => {
     const map = new Map<string, CanonicalTransaction>()
