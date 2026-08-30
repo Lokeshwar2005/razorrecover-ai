@@ -986,13 +986,13 @@ footer {
   top: 100%;
   right: 0;
   margin-top: 6px;
-  min-width: 170px;
+  min-width: 175px;
   background: #0f0c08;
   border: 1px solid #2e271c;
   border-radius: 10px;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.85);
   padding: 6px;
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -1012,7 +1012,8 @@ footer {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  transition: background .15s, color .15s;
+  user-select: none;
+  transition: background .15s, color .15s, border-color .15s;
 }
 
 .navDropdownItem:hover,

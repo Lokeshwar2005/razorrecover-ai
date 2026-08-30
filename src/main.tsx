@@ -558,6 +558,21 @@ function App() {
   }
 
   const [advancedOpen, setAdvancedOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setAdvancedOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('touchstart', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('touchstart', handleClickOutside)
+    }
+  }, [])
 
   const primaryNavItems = [
     { label: 'Overview', tab: 'Overview' },
@@ -600,7 +615,7 @@ function App() {
             ))}
 
             {/* Secondary / Advanced Dropdown */}
-            <div className="navDropdownContainer" onMouseLeave={() => setAdvancedOpen(false)}>
+            <div className="navDropdownContainer" ref={dropdownRef}>
               <button
                 className={`navDropdownToggle ${isAdvancedActive ? 'active' : ''}`}
                 onClick={() => setAdvancedOpen((prev) => !prev)}
