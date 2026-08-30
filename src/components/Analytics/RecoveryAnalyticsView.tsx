@@ -1,18 +1,23 @@
 'use client'
 
 import React, { useEffect, useState, useMemo } from 'react'
-import { useTransactionStore } from '../../services/canonicalTransactionStore'
+import { useTransactionStore, computeMetricsFromTransactions } from '../../services/canonicalTransactionStore'
 import { fetchAnalytics, type AnalyticsData, type ActionPerformance, type FailureDistribution } from '../../services/backendApi'
 
 export const RecoveryAnalyticsView: React.FC = () => {
   const transactions = useTransactionStore((s) => s.transactions)
+  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
   const [backendData, setBackendData] = useState<AnalyticsData | null>(null)
 
   useEffect(() => {
+    // Reconcile with canonical feed and backend on mount
+    refreshProviderFeed()
     fetchAnalytics().then((res) => {
       if (res) setBackendData(res)
     })
-  }, [])
+  }, [refreshProviderFeed])
+
+  const metrics = useMemo(() => computeMetricsFromTransactions(transactions), [transactions])
 
   // Single Source of Truth: Calculate analytics directly from canonical store
   const data: AnalyticsData = useMemo(() => {
@@ -85,11 +90,14 @@ export const RecoveryAnalyticsView: React.FC = () => {
       {/* Header */}
       <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="text-lg">📊</span>
             <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Historical Recovery Effectiveness</h1>
             <span className="px-2 py-0.5 text-xs font-mono rounded bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30">
-              Verified Payment Captures Only
+              CANONICAL LEDGER · VERIFIED CAPTURES
+            </span>
+            <span className="px-2 py-0.5 text-xs font-mono rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
+              {metrics.recoveredCount} Verified Recoveries
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
