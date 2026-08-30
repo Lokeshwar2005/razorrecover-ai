@@ -32,12 +32,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -132,12 +127,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -232,12 +222,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg/960px-2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg/960px-2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/201210301_Glashuette_Spezichron-11-27_2012.jpg/960px-201210301_Glashuette_Spezichron-11-27_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Alpha_analog_automatic_watch_%28cropped%29.jpg/960px-Alpha_analog_automatic_watch_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Alpha_analog_automatic_watch.jpg/960px-Alpha_analog_automatic_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alpha_automatic_men%27s_watch_on_keypad_of_Sony_Vaio_laptop.jpg/960px-Alpha_automatic_men%27s_watch_on_keypad_of_Sony_Vaio_laptop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Alpha_watches_-_analog_automatic_watch%2C_edited_without_background.jpg/960px-Alpha_watches_-_analog_automatic_watch%2C_edited_without_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg/960px-2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -332,12 +317,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -432,12 +412,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -532,12 +507,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -632,12 +602,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -732,12 +697,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -832,12 +792,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Modell_Argonautic_%282014%29.jpg/960px-Modell_Argonautic_%282014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Modell_Argonautic_%282014%29.jpg/960px-Modell_Argonautic_%282014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Modell_Diver_2_%28Taucheruhr%29.jpg/960px-Modell_Diver_2_%28Taucheruhr%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nachsichtbarkeit_der_Argonautic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Objets_symboles_du_survivalisme_louis_maitrier3.jpg/960px-Objets_symboles_du_survivalisme_louis_maitrier3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Polshorloges_te_koop_in_de_BEAMS_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-Polshorloges_te_koop_in_de_BEAMS_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Qimei_watch_on_Zulu_strap.jpg/960px-Qimei_watch_on_Zulu_strap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Modell_Argonautic_%282014%29.jpg/960px-Modell_Argonautic_%282014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -932,12 +887,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -1032,12 +982,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg/960px-A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg/960px-A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/AERO_Friedrichshafen_2018%2C_Friedrichshafen_%281X7A4790%29.jpg/960px-AERO_Friedrichshafen_2018%2C_Friedrichshafen_%281X7A4790%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/AGENT_smartwatch_prototype_by_Secret_Labs_-_WP_20130627_031_%2815837480416%29.jpg/960px-AGENT_smartwatch_prototype_by_Secret_Labs_-_WP_20130627_031_%2815837480416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/AmazfitBand7.jpg/960px-AmazfitBand7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg/960px-A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -1132,12 +1077,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -1232,12 +1172,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -1332,12 +1267,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -1432,12 +1362,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -1532,12 +1457,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -1632,12 +1552,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -1732,12 +1647,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -1832,12 +1742,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -1932,12 +1837,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -2032,12 +1932,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -2132,12 +2027,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -2232,12 +2122,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -2332,12 +2217,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -2432,12 +2312,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -2532,12 +2407,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -2632,12 +2502,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -2732,12 +2597,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
@@ -2832,12 +2692,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Casio_WQV-1_Captured_Photo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Casio_WQV-1_Captured_Photo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Casio_WQV-1_Captured_Photo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -2932,12 +2787,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -3032,12 +2882,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
@@ -3132,12 +2977,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -3232,12 +3072,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -3332,12 +3167,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -3432,12 +3262,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -3532,12 +3357,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -3632,12 +3452,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -3732,12 +3547,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -3832,12 +3642,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -3932,12 +3737,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg/960px-Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
@@ -4032,12 +3832,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg/960px-Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Man_what_the_hell_happen_to_my_watch.jpg/960px-Man_what_the_hell_happen_to_my_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -4132,12 +3927,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg/960px-Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Man_what_the_hell_happen_to_my_watch.jpg/960px-Man_what_the_hell_happen_to_my_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/MTP4500back.jpg/960px-MTP4500back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -4232,12 +4022,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mondaine_model_30332.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mondaine_model_30332.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Montre-p1020676.jpg/960px-Montre-p1020676.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg/960px-Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mondaine_model_30332.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -4332,12 +4117,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Montre-p1020676.jpg/960px-Montre-p1020676.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg/960px-Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -4432,12 +4212,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -4532,12 +4307,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg/960px-Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -4632,12 +4402,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -4732,12 +4497,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
@@ -4832,12 +4592,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -4932,12 +4687,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Audemars-Piguet-img_0324.jpg/960px-Audemars-Piguet-img_0324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Audemars-Piguet-img_0324.jpg/960px-Audemars-Piguet-img_0324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Automatic_skeleton_watch.jpg/960px-Automatic_skeleton_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/4/45/Balance_of_a_wristwatch_Jaeger-LeCoultre_Master_Eight_Days_Perpetual_Squelette.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BRM_BIROTOR.jpg/960px-BRM_BIROTOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Audemars-Piguet-img_0324.jpg/960px-Audemars-Piguet-img_0324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
@@ -5032,12 +4782,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -5132,12 +4877,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -5232,12 +4972,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -5332,12 +5067,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -5432,12 +5162,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -5532,12 +5257,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -5632,12 +5352,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -5732,12 +5447,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -5832,12 +5542,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/HMTSkeleton.jpg/960px-HMTSkeleton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_cropped.png/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_cropped.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette.jpg/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Magicbands_and_Disney_Watch_%2815806457300%29.jpg/960px-Magicbands_and_Disney_Watch_%2815806457300%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -5932,12 +5637,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -6032,12 +5732,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -6132,12 +5827,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -6232,12 +5922,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg/960px-Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg/960px-Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fa/ZJx3ZZfqZ0o_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg/960px-Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
@@ -6332,12 +6017,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
@@ -6432,12 +6112,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Meistersinger_fond_transparent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Meistersinger_fond_transparent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MIH-film104jpg.jpg/960px-MIH-film104jpg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Montre_squelette.jpg/960px-Montre_squelette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Papillon_d%27Or_Gold_front.jpg/960px-Papillon_d%27Or_Gold_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rel%C3%B3gio_Masculino_Constantim_Skeleton.jpg/960px-Rel%C3%B3gio_Masculino_Constantim_Skeleton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skeletttaschenuhr_10456.jpg/960px-Skeletttaschenuhr_10456.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Meistersinger_fond_transparent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
@@ -6532,12 +6207,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -6632,12 +6302,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -6732,12 +6397,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -6832,12 +6492,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -6932,12 +6587,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -7032,12 +6682,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -7132,12 +6777,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -7232,12 +6872,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -7332,12 +6967,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -7432,12 +7062,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -7532,12 +7157,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -7632,12 +7252,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -7732,12 +7347,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -7832,12 +7442,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
@@ -7932,12 +7537,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -8032,12 +7632,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -8132,12 +7727,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -8232,12 +7822,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HMT_quartz_wrist_watch.jpg/960px-HMT_quartz_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -8332,12 +7917,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HMT_quartz_wrist_watch.jpg/960px-HMT_quartz_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Invicta_Herren-Armbanduhr_XL_Chronograph_Quarz_Edelstahl.jpg/960px-Invicta_Herren-Armbanduhr_XL_Chronograph_Quarz_Edelstahl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -8432,12 +8012,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BRM_BIROTOR.jpg/960px-BRM_BIROTOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chronoswiss_Tourbillon.JPG/960px-Chronoswiss_Tourbillon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG/960px-Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
@@ -8532,12 +8107,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BRM_BIROTOR.jpg/960px-BRM_BIROTOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chronoswiss_Tourbillon.JPG/960px-Chronoswiss_Tourbillon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG/960px-Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
@@ -8632,12 +8202,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg/960px-2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg/960px-2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2023030106_Seiko_SUR_450P1_Seiko-Schriftzug_Zeiger_und_Wochentagsanzeige_2023.jpg/960px-2023030106_Seiko_SUR_450P1_Seiko-Schriftzug_Zeiger_und_Wochentagsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Aristocrat_Red_%2835551930105%29.jpg/960px-Aristocrat_Red_%2835551930105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bb-clockface.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Black_Seiko_watch_close-up_%28detail%29.jpg/960px-Black_Seiko_watch_close-up_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg/960px-2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -8732,12 +8297,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chronoswiss_Tourbillon.JPG/960px-Chronoswiss_Tourbillon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG/960px-Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/HMTSkeleton.jpg/960px-HMTSkeleton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -8832,12 +8392,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dive_timing_140626-N-LL043-111.jpg/960px-Dive_timing_140626-N-LL043-111.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Elix.JPG/960px-Elix.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/EU_Luxembourg_field_fatigues_%2833138986363%29.jpg/960px-EU_Luxembourg_field_fatigues_%2833138986363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kander_diver_wristwatch.jpg/960px-Kander_diver_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -8932,12 +8487,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dive_timing_140626-N-LL043-111.jpg/960px-Dive_timing_140626-N-LL043-111.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Elix.JPG/960px-Elix.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/EU_Luxembourg_field_fatigues_%2833138986363%29.jpg/960px-EU_Luxembourg_field_fatigues_%2833138986363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kander_diver_wristwatch.jpg/960px-Kander_diver_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/50/Luminox_Navy_Seals_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -9032,12 +8582,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -9132,12 +8677,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -9232,12 +8772,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -9332,12 +8867,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -9432,12 +8962,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -9532,12 +9057,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -9632,12 +9152,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b6/MCFobWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Melbourne_Central_clock.jpg/960px-Melbourne_Central_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Melbourne_Central_Fob_Watch_Active.JPG/960px-Melbourne_Central_Fob_Watch_Active.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Middle_part_of_dial_of_wristwatch_Seiko_Sportura.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Minute_hands_and_date_of_Seiko_chronograph_watch_%28detail%29.jpg/960px-Minute_hands_and_date_of_Seiko_chronograph_watch_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -9732,12 +9247,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b6/MCFobWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Melbourne_Central_clock.jpg/960px-Melbourne_Central_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -9832,12 +9342,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/2009-365-67_AT%26T_Can%27t_Tell_Time_%283340381556%29.jpg/960px-2009-365-67_AT%26T_Can%27t_Tell_Time_%283340381556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2015-365-19_It_is_Time_to_Write_%2816323898735%29.jpg/960px-2015-365-19_It_is_Time_to_Write_%2816323898735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%40dailyshoot-_2010-05-28-_Clocks_are_omnipresent_in_modern_life._Make_a_photo_of_the_clock%2C_watch%2C_or_other_device_that_you_use_most_to_tell_time._-ds194_%284649118680%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -9932,12 +9437,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
@@ -10032,12 +9532,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -10132,12 +9627,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -10232,12 +9722,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg/960px-Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg/960px-Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg/960px-Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -10332,12 +9817,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -10432,12 +9912,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -10532,12 +10007,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_watch_21_jewels.jpg/960px-Citizen_watch_21_jewels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7d/JayanCitizenWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Movimento_Citizen_6501.jpg/960px-Movimento_Citizen_6501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -10632,12 +10102,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -10732,12 +10197,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -10832,12 +10292,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7d/JayanCitizenWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Movimento_Citizen_6501.jpg/960px-Movimento_Citizen_6501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Reloj_de_Evangelion_%2851136106192%29.jpg/960px-Reloj_de_Evangelion_%2851136106192%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Three_quartz_wristwatches_-_Kalbor%2C_Citizen%2C_and_Global_Fashion.jpg/960px-Three_quartz_wristwatches_-_Kalbor%2C_Citizen%2C_and_Global_Fashion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Time_%283366371485%29.jpg/960px-Time_%283366371485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -10932,12 +10387,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -11032,12 +10482,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_watch_21_jewels.jpg/960px-Citizen_watch_21_jewels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7d/JayanCitizenWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Movimento_Citizen_6501.jpg/960px-Movimento_Citizen_6501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Reloj_de_Evangelion_%2851136106192%29.jpg/960px-Reloj_de_Evangelion_%2851136106192%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -11132,12 +10577,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_watch_21_jewels.jpg/960px-Citizen_watch_21_jewels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -11232,12 +10672,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -11332,12 +10767,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -11432,12 +10862,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -11532,12 +10957,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -11632,12 +11052,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -11732,12 +11147,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -11832,12 +11242,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -11932,12 +11337,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -12032,12 +11432,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -12132,12 +11527,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -12232,12 +11622,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -12332,12 +11717,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -12432,12 +11812,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -12532,12 +11907,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -12632,12 +12002,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -12732,12 +12097,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -12832,12 +12192,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -12932,12 +12287,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -13032,12 +12382,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -13132,12 +12477,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -13232,12 +12572,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -13332,12 +12667,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -13432,12 +12762,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -13532,12 +12857,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -13632,12 +12952,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -13732,12 +13047,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -13832,12 +13142,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -13932,12 +13237,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -14032,12 +13332,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -14132,12 +13427,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -14232,12 +13522,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -14332,12 +13617,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -14432,12 +13712,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -14532,12 +13807,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -14632,12 +13902,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -14732,12 +13997,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -14832,12 +14092,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -14932,12 +14187,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -15032,12 +14282,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -15132,12 +14377,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -15232,12 +14472,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -15332,12 +14567,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -15432,12 +14662,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -15532,12 +14757,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -15632,12 +14852,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -15732,12 +14947,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -15832,12 +15042,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -15932,12 +15137,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -16032,12 +15232,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -16132,12 +15327,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -16232,12 +15422,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -16332,12 +15517,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -16432,12 +15612,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -16532,12 +15707,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -16632,12 +15802,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -16732,12 +15897,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IWatch.png/960px-IWatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -16832,12 +15992,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IWatch.png/960px-IWatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Smart_watches.png/960px-Smart_watches.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -16932,12 +16087,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IWatch.png/960px-IWatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Smart_watches.png/960px-Smart_watches.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Smart_Watches.png/960px-Smart_Watches.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -17032,12 +16182,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -17132,12 +16277,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -17232,12 +16372,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -17332,12 +16467,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -17432,12 +16562,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -17532,12 +16657,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -17632,12 +16752,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -17732,12 +16847,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -17832,12 +16942,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -17932,12 +17037,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -18032,12 +17132,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -18132,12 +17227,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -18232,12 +17322,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -18332,12 +17417,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -18432,12 +17512,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -18532,12 +17607,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -18632,12 +17702,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -18732,12 +17797,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -18832,12 +17892,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -18932,12 +17987,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "images": {
       "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Apple_S2_in_watch.jpg/960px-Apple_S2_in_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",

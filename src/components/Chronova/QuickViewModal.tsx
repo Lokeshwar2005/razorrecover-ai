@@ -51,8 +51,8 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
         </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 sm:p-8">
-          {/* Media Area */}
-          <div className="flex flex-col items-center justify-center space-y-3">
+          {/* Media Area (Exact Same Image as Outside Card) */}
+          <div className="flex flex-col items-center justify-center">
             <div className="relative w-full aspect-square bg-slate-50 border border-slate-200 rounded-2xl p-6 flex items-center justify-center overflow-hidden">
               {product.badge && (
                 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-slate-900 text-white text-[11px] font-black uppercase font-mono shadow-xs">
@@ -60,27 +60,10 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 </span>
               )}
               <img
-                src={getAssetUrl(currentImage)}
+                src={getAssetUrl(product.images.primary)}
                 alt={product.name}
                 className="max-h-full max-w-full object-contain filter drop-shadow-md"
               />
-            </div>
-
-            {/* Gallery Thumbnails */}
-            <div className="flex gap-2">
-              {product.images.gallery.map((img, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => setActiveImageIndex(idx)}
-                  className={`w-14 h-14 rounded-xl border-2 bg-slate-50 p-1 overflow-hidden transition cursor-pointer ${
-                    activeImageIndex === idx
-                      ? 'border-slate-900 shadow-xs'
-                      : 'border-slate-200 hover:border-slate-400'
-                  }`}
-                >
-                  <img src={getAssetUrl(img)} alt="Thumbnail" className="w-full h-full object-contain" />
-                </button>
-              ))}
             </div>
           </div>
 

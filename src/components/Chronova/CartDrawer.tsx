@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import type { CartItem, AppliedCoupon } from './types'
+import { getAssetUrl } from './utils'
 
 interface CartDrawerProps {
   isOpen: boolean
@@ -144,7 +145,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   {/* Thumbnail */}
                   <div className="w-24 h-24 rounded-xl bg-white p-2 border border-slate-200 shrink-0 flex items-center justify-center">
                     <img
-                      src={item.product.images.primary}
+                      src={getAssetUrl(item.product.images.primary)}
                       alt={item.product.name}
                       className="max-h-full max-w-full object-contain"
                     />

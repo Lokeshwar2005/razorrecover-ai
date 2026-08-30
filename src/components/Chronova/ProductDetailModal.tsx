@@ -68,35 +68,9 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
         <div className="p-6 sm:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-            {/* LEFT COLUMN: Gallery Thumbnails + Large Studio Image */}
-            <div className="lg:col-span-6 flex flex-col-reverse sm:flex-row gap-4 items-start">
-              {/* Vertical Thumbnail List (11 Photographic Views) */}
-              <div className="flex sm:flex-col gap-2.5 overflow-x-auto sm:overflow-y-auto max-h-[560px] pb-2 sm:pb-0 scrollbar-thin scrollbar-thumb-slate-300 shrink-0">
-                {product.images.gallery.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveImageIndex(idx)}
-                    className={`relative w-18 h-18 sm:w-20 sm:h-20 rounded-2xl border-2 bg-slate-50 p-2 overflow-hidden transition-all duration-200 cursor-pointer shrink-0 ${
-                      activeImageIndex === idx
-                        ? 'border-blue-600 shadow-md ring-2 ring-blue-500/20'
-                        : 'border-slate-200 hover:border-slate-400 opacity-75 hover:opacity-100'
-                    }`}
-                    title={angleLabels[idx] || `View ${idx + 1}`}
-                  >
-                    <img
-                      src={getAssetUrl(img)}
-                      alt={`${product.name} View ${idx + 1}`}
-                      className="w-full h-full object-contain filter drop-shadow-xs"
-                    />
-                    <span className="absolute bottom-1 right-1 text-[8px] font-mono font-bold px-1 rounded bg-slate-900/80 text-white">
-                      {idx + 1}
-                    </span>
-                  </button>
-                ))}
-              </div>
-
-              {/* Main Large Image Container */}
-              <div className="relative flex-1 aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 flex flex-col items-center justify-between overflow-hidden shadow-inner min-h-[340px] sm:min-h-[440px]">
+            {/* LEFT COLUMN: Large Studio Image (Exact Same Image as Outside Card) */}
+            <div className="lg:col-span-6 flex flex-col items-center justify-center">
+              <div className="relative aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 sm:p-10 flex flex-col items-center justify-between overflow-hidden shadow-inner min-h-[380px] sm:min-h-[480px]">
                 {/* Badge (Top-Left) */}
                 <div className="w-full flex items-center justify-between z-10">
                   {product.badge ? (
@@ -106,7 +80,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   ) : <span />}
 
                   <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-slate-200 text-slate-700 text-[11px] font-mono font-bold shadow-xs">
-                    {angleLabels[activeImageIndex] || `View ${activeImageIndex + 1}`}
+                    ★ {product.rating} Verified Studio
                   </span>
                 </div>
 
@@ -116,17 +90,17 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   title="Click to zoom"
                 >
                   <img
-                    src={getAssetUrl(currentImage)}
+                    src={getAssetUrl(product.images.primary)}
                     alt={product.name}
                     className={`max-h-full max-w-full object-contain filter drop-shadow-xl transition-all duration-300 ${
-                      isZoomed ? 'scale-130' : 'hover:scale-105'
+                      isZoomed ? 'scale-135' : 'hover:scale-105'
                     }`}
                   />
                 </div>
 
                 <div className="w-full text-center z-10">
-                  <span className="text-[10px] font-mono text-slate-400 uppercase tracking-widest">
-                    High-Resolution Studio Photograph · {activeImageIndex + 1} of {product.images.gallery.length}
+                  <span className="text-[11px] font-mono text-slate-400 font-bold uppercase tracking-wider">
+                    {product.brand} Official Studio Photograph
                   </span>
                 </div>
               </div>
