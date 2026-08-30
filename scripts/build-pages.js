@@ -34,6 +34,7 @@ const routes = [
   'acme-store',
   'dual-sandbox',
   'chronosphere',
+  'chronova',
   'watches',
   'store',
 ]
