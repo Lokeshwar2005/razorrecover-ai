@@ -16,12 +16,16 @@ html {
   background: #080705;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: auto !important;
+  overscroll-behavior-y: auto;
 }
 
 body {
   margin: 0;
   background: radial-gradient(1100px 650px at 82% -12%, rgba(232, 170, 69, .14), transparent 58%), radial-gradient(700px 500px at 0 55%, rgba(90, 100, 130, .07), transparent 60%), #080705;
   overflow-x: hidden;
+  overflow-y: auto !important;
+  overscroll-behavior-y: auto;
   width: 100%;
 }
 

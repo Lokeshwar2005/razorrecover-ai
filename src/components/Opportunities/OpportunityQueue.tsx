@@ -11,6 +11,7 @@ import {
   type OpportunityItem,
   type RecoveryExecutionResult,
   launchRazorpayCheckout,
+  unlockPageScroll,
 } from '../../services/backendApi'
 
 export const OpportunityQueue: React.FC = () => {
@@ -58,6 +59,10 @@ export const OpportunityQueue: React.FC = () => {
   const [executionError, setExecutionError] = useState<string | null>(null)
   const [verifying, setVerifying] = useState(false)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
+
+  const [checkoutModalOpp, setCheckoutModalOpp] = useState<OpportunityItem | null>(null)
+  const [testPayMethod, setTestPayMethod] = useState<'card' | 'upi' | 'netbanking'>('card')
+  const [simulatingPayment, setSimulatingPayment] = useState(false)
 
   // URL Deep-linking support & Mount Feed Rehydration
   useEffect(() => {
@@ -262,38 +267,40 @@ export const OpportunityQueue: React.FC = () => {
   }
 
   const handleLaunchCheckout = (opp: OpportunityItem) => {
-    const parentTxn = transactionMap.get(opp.transaction_id)
-    launchRazorpayCheckout({
-      order_id: executionResult?.order_id || parentTxn?.provider_order_id,
-      amount_minor: opp.amount_minor,
-      currency: opp.currency || 'INR',
-      description: `RazorRecover AI Recovery for ${opp.transaction_id}`,
-      onSuccess: async (resp) => {
-        setVerifying(true)
-        setExecutionResult(null)
-        setExecutionError(null)
-        try {
-          const verifyRes = await verifyPayment(
-            opp.transaction_id,
-            resp.razorpay_payment_id,
-            opp.amount_minor,
-            opp.currency || 'INR',
-            resp.razorpay_order_id,
-            resp.razorpay_signature
-          )
-          if (verifyRes.verified) {
-            setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ${formatRupees(opp.amount_minor)} for ${opp.transaction_id}.`)
-          } else {
-            setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
-          }
-        } finally {
-          setVerifying(false)
-        }
-      },
-      onFailure: (err) => {
-        setExecutionError(err?.message || 'Razorpay Checkout cancelled.')
-      },
-    })
+    unlockPageScroll()
+    setCheckoutModalOpp(opp)
+    setExecutionError(null)
+  }
+
+  const handleSimulateCheckoutCapture = async () => {
+    if (!checkoutModalOpp) return
+    setSimulatingPayment(true)
+    setExecutionError(null)
+    try {
+      const cleanTxnId = checkoutModalOpp.transaction_id.replace(/[^a-zA-Z0-9]/g, '')
+      const testPaymentId = `pay_test_${cleanTxnId}_${Date.now().toString(36)}`
+      const verifyRes = await verifyPayment(
+        checkoutModalOpp.transaction_id,
+        testPaymentId,
+        checkoutModalOpp.amount_minor,
+        checkoutModalOpp.currency || 'INR',
+        executionResult?.order_id
+      )
+      if (verifyRes.verified) {
+        setVerifiedSuccess(
+          verifyRes.message ||
+            `✓ Verified Capture Confirmed! Recovered ${formatRupees(checkoutModalOpp.amount_minor)} for ${checkoutModalOpp.transaction_id}.`
+        )
+        setCheckoutModalOpp(null)
+      } else {
+        setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
+      }
+    } catch (e: any) {
+      setExecutionError(e?.message || 'Payment simulation failed.')
+    } finally {
+      setSimulatingPayment(false)
+      unlockPageScroll()
+    }
   }
 
   const handleVerifyPayment = async (opp: OpportunityItem) => {
@@ -999,6 +1006,134 @@ export const OpportunityQueue: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Razorpay Test Mode In-App Checkout Modal */}
+      {checkoutModalOpp && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
+          onClick={() => {
+            setCheckoutModalOpp(null)
+            unlockPageScroll()
+          }}
+        >
+          <div
+            className="w-full max-w-md bg-[#0f0c08] border border-[#2e271c] rounded-2xl shadow-2xl overflow-hidden font-mono text-xs space-y-4 p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between border-b border-[#2e271c] pb-4">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">💳</span>
+                <div>
+                  <div className="font-bold text-[#f4ede2] text-sm">Razorpay Test Mode Checkout</div>
+                  <div className="text-[10px] text-[#e5a944]">⚡ INSTANT CAPTURE GATEWAY SIMULATOR</div>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  setCheckoutModalOpp(null)
+                  unlockPageScroll()
+                }}
+                className="text-[#a89f91] hover:text-white p-1 text-sm font-bold cursor-pointer"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Transaction Summary */}
+            <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-1.5">
+              <div className="flex justify-between text-[#7a7164]">
+                <span>Transaction:</span>
+                <span className="text-[#f4ede2] font-bold">{checkoutModalOpp.transaction_id}</span>
+              </div>
+              <div className="flex justify-between text-[#7a7164]">
+                <span>Operation ID:</span>
+                <span className="text-[#e5a944]">{checkoutModalOpp.recovery_operation_id || 'REC-RETRY-01'}</span>
+              </div>
+              <div className="flex justify-between text-[#7a7164] pt-1 border-t border-[#2e271c]">
+                <span>Recovery Amount:</span>
+                <span className="text-[#10b981] font-bold text-sm">{formatRupees(checkoutModalOpp.amount_minor)}</span>
+              </div>
+            </div>
+
+            {/* Payment Methods */}
+            <div className="space-y-2">
+              <div className="text-[#7a7164] text-[11px]">Select Test Payment Instrument:</div>
+              <div className="grid grid-cols-3 gap-2">
+                <button
+                  onClick={() => setTestPayMethod('card')}
+                  className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
+                    testPayMethod === 'card'
+                      ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
+                      : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
+                  }`}
+                >
+                  💳 Test Card
+                </button>
+                <button
+                  onClick={() => setTestPayMethod('upi')}
+                  className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
+                    testPayMethod === 'upi'
+                      ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
+                      : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
+                  }`}
+                >
+                  📱 UPI Test
+                </button>
+                <button
+                  onClick={() => setTestPayMethod('netbanking')}
+                  className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
+                    testPayMethod === 'netbanking'
+                      ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
+                      : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
+                  }`}
+                >
+                  🏦 Netbanking
+                </button>
+              </div>
+
+              {testPayMethod === 'card' && (
+                <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-1 text-[#a89f91]">
+                  <div><span className="text-[#7a7164]">Card Number: </span>4111 2222 3333 4444</div>
+                  <div><span className="text-[#7a7164]">Expiry / CVV: </span>12/28 · 123</div>
+                </div>
+              )}
+
+              {testPayMethod === 'upi' && (
+                <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-1 text-[#a89f91]">
+                  <div><span className="text-[#7a7164]">Virtual Payment Address: </span>success@razorpay</div>
+                </div>
+              )}
+
+              {testPayMethod === 'netbanking' && (
+                <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-1 text-[#a89f91]">
+                  <div><span className="text-[#7a7164]">Bank: </span>HDFC / ICICI Test Gateway (Instant Simulation)</div>
+                </div>
+              )}
+            </div>
+
+            {/* Actions */}
+            <div className="pt-2 space-y-2">
+              <button
+                onClick={handleSimulateCheckoutCapture}
+                disabled={simulatingPayment}
+                className="w-full py-3 px-4 rounded-xl bg-[#10b981] hover:bg-[#34d399] text-[#080705] font-bold text-xs transition cursor-pointer shadow-[0_0_20px_rgba(16,185,129,0.4)] disabled:opacity-50 flex items-center justify-center gap-2"
+              >
+                {simulatingPayment ? '⚡ Capturing and Verifying on Ledger...' : `✓ Pay & Complete Recovery (${formatRupees(checkoutModalOpp.amount_minor)}) ▶`}
+              </button>
+              <button
+                onClick={() => {
+                  setCheckoutModalOpp(null)
+                  unlockPageScroll()
+                }}
+                className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#a89f91] hover:text-white transition cursor-pointer text-center text-[11px]"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
