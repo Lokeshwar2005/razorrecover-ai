@@ -1,0 +1,15 @@
+<!-- Chronova Asset ID: chronova-005 | Brand: Titan | Model: 1805NM01 | SKU: titan-neo-splash-blue-dial -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect width="600" height="600" fill="#0f172a" />
+  <circle cx="300" cy="300" r="220" fill="none" stroke="#0ea5e9" stroke-width="2" opacity="0.3" />
+  <circle cx="300" cy="300" r="180" fill="#0369a1" opacity="0.2" />
+  
+  <circle cx="300" cy="300" r="140" fill="#0284c7" stroke="#38bdf8" stroke-width="4" />
+  
+  <text x="300" y="240" font-family="monospace" font-size="16" font-weight="900" fill="#ffffff" letter-spacing="2" text-anchor="middle">PRESSURE TESTED</text>
+  <text x="300" y="295" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="900" fill="#ffffff" text-anchor="middle">50M (5 ATM)</text>
+  <text x="300" y="340" font-family="monospace" font-size="12" font-weight="bold" fill="#bae6fd" letter-spacing="2" text-anchor="middle">ISO 6425 COMPLIANT</text>
+  <text x="300" y="375" font-family="monospace" font-size="10" fill="#ffffff" opacity="0.8" text-anchor="middle">DOUBLE GASKET HERMETIC SEAL</text>
+
+  <text x="30" y="560" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8">VIEW 11 // WATER-RESIST SEAL CERTIFICATION</text>
+</svg>

@@ -1,0 +1,22 @@
+<!-- Chronova Asset ID: chronova-066 | Brand: Fossil | Model: ES5155 | SKU: fossil-stella-multifunction-crystal -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect width="600" height="600" fill="#f8fafc" />
+  <line x1="50" y1="300" x2="550" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="300" y1="50" x2="300" y2="550" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4" />
+
+  <path d="M 120 280 L 50 250 L 50 350 L 120 320 Z" fill="#78350f" />
+  <path d="M 480 280 L 550 250 L 550 350 L 480 320 Z" fill="#78350f" />
+
+  <path d="M 140 270 Q 300 250 460 270 L 470 330 Q 300 350 130 330 Z" fill="#94a3b8" />
+  <path d="M 170 270 Q 300 230 430 270 Z" fill="#38bdf8" opacity="0.3" stroke="#e2e8f0" />
+  <rect x="160" y="265" width="280" height="15" rx="3" fill="#cbd5e1" />
+
+  <rect x="285" y="335" width="30" height="40" rx="4" fill="#f8fafc" stroke="#0f172a" stroke-width="1" />
+  <line x1="290" y1="345" x2="310" y2="345" stroke="#334155" stroke-width="2" />
+  <line x1="290" y1="355" x2="310" y2="355" stroke="#334155" stroke-width="2" />
+  <line x1="290" y1="365" x2="310" y2="365" stroke="#334155" stroke-width="2" />
+
+  <line x1="490" y1="230" x2="490" y2="370" stroke="#2563eb" stroke-width="2" />
+  <text x="500" y="305" font-family="monospace" font-size="12" font-weight="bold" fill="#2563eb">11.8 mm THIN</text>
+  <text x="30" y="560" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b">VIEW 03 // LATERAL PROFILE & CROWN GEOMETRY</text>
+</svg>

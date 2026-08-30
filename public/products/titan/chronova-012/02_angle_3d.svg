@@ -1,0 +1,26 @@
+<!-- Chronova Asset ID: chronova-012 | Brand: Titan | Model: 90160AP01 | SKU: titan-evoke-gps-smart -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect width="600" height="600" fill="#f1f5f9" />
+  <circle cx="300" cy="300" r="260" fill="#ffffff" />
+  <ellipse cx="330" cy="460" rx="190" ry="45" fill="#0f172a" opacity="0.15" />
+
+  <path d="M 210 400 L 260 540 L 370 510 L 330 380 Z" fill="#0f172a" />
+  <path d="M 180 120 L 240 70 L 350 100 L 290 160 Z" fill="#0f172a" />
+
+  <ellipse cx="300" cy="300" rx="160" ry="130" fill="#94a3b8" transform="rotate(-15 300 300)" />
+  <ellipse cx="300" cy="290" rx="155" ry="125" fill="#f8fafc" transform="rotate(-15 300 300)" />
+  <ellipse cx="300" cy="285" rx="145" ry="115" fill="#cbd5e1" transform="rotate(-15 300 300)" />
+  <ellipse cx="300" cy="285" rx="130" ry="105" fill="#064e3b" transform="rotate(-15 300 300)" />
+
+  <ellipse cx="445" cy="245" rx="12" ry="20" fill="#f8fafc" transform="rotate(-15 445 245)" />
+
+  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" transform="rotate(-15 300 285)">
+    <text x="300" y="240" font-size="14" font-weight="900" fill="#ffffff" letter-spacing="3">TITAN</text>
+    <text x="300" y="260" font-size="9" font-weight="700" fill="#34d399">90160AP01</text>
+    <line x1="300" y1="285" x2="300" y2="215" stroke="#ecfdf5" stroke-width="5" stroke-linecap="round" />
+    <line x1="300" y1="285" x2="365" y2="285" stroke="#ecfdf5" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <path d="M 210 240 Q 300 300 390 220 Q 360 200 210 240 Z" fill="#ffffff" opacity="0.25" />
+  <text x="30" y="560" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b">VIEW 02 // 45° ISOMETRIC PERSPECTIVE</text>
+</svg>

@@ -1,0 +1,16 @@
+<!-- Chronova Asset ID: chronova-083 | Brand: Sonata | Model: 77034PP01 | SKU: sonata-super-fibre-water-resist -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <rect width="600" height="600" fill="#f8fafc" />
+  <rect x="180" y="40" width="240" height="520" rx="12" fill="#1e293b" />
+  <rect x="200" y="40" width="200" height="520" fill="#334155" opacity="0.5" />
+
+  <g stroke="#475569" stroke-width="3" stroke-dasharray="8,6">
+    <line x1="205" y1="40" x2="205" y2="560" />
+    <line x1="395" y1="40" x2="395" y2="560" />
+  </g>
+  
+  <rect x="150" y="240" width="300" height="120" rx="10" fill="#cbd5e1" stroke="#f8fafc" stroke-width="3" />
+  <rect x="220" y="270" width="160" height="60" rx="6" fill="#94a3b8" />
+  <text x="300" y="306" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="900" fill="#ffffff" letter-spacing="3" text-anchor="middle">SONATA</text>
+  <text x="30" y="560" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b">VIEW 06 // BRACELET CRAFT & ENGRAVED CLASP</text>
+</svg>

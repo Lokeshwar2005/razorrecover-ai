@@ -1,0 +1,70 @@
+<!-- Chronova Asset ID: chronova-090 | Brand: Seiko | Model: SRPE35K1 | SKU: seiko-prospex-king-samurai-srpe35k1 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="dialGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f2937" />
+      <stop offset="100%" stop-color="#111827" />
+    </radialGradient>
+    <linearGradient id="caseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="50%" stop-color="#92400e" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="#f8fafc" />
+  <circle cx="300" cy="300" r="280" fill="#ffffff" />
+
+  <rect x="220" y="30" width="160" height="150" rx="8" fill="url(#strapGrad)" filter="url(#dropShadow)" />
+  <rect x="220" y="420" width="160" height="150" rx="8" fill="url(#strapGrad)" filter="url(#dropShadow)" />
+  <line x1="230" y1="30" x2="230" y2="180" stroke="#fef3c7" stroke-width="2" stroke-dasharray="6,4" />
+  <line x1="370" y1="30" x2="370" y2="180" stroke="#fef3c7" stroke-width="2" stroke-dasharray="6,4" />
+  <line x1="230" y1="420" x2="230" y2="570" stroke="#fef3c7" stroke-width="2" stroke-dasharray="6,4" />
+  <line x1="370" y1="420" x2="370" y2="570" stroke="#fef3c7" stroke-width="2" stroke-dasharray="6,4" />
+
+  <rect x="475" y="285" width="25" height="30" rx="4" fill="url(#caseGrad)" />
+  
+
+  <circle cx="300" cy="300" r="180" fill="url(#caseGrad)" filter="url(#dropShadow)" />
+  <circle cx="300" cy="300" r="162" fill="#0f172a" /><circle cx="300" cy="300" r="158" fill="none" stroke="#f8fafc" stroke-width="2" />
+  <circle cx="300" cy="300" r="148" fill="url(#dialGrad)" />
+  
+  <g stroke="#f3f4f6" stroke-width="2" opacity="0.6">
+    <line x1="300" y1="158" x2="300" y2="168" stroke-width="4" />
+    <line x1="442" y1="300" x2="432" y2="300" stroke-width="4" />
+    <line x1="300" y1="442" x2="300" y2="432" stroke-width="4" />
+    <line x1="158" y1="300" x2="168" y2="300" stroke-width="4" />
+    <circle cx="300" cy="180" r="2" />
+    <circle cx="385" cy="215" r="2" />
+    <circle cx="420" cy="300" r="2" />
+    <circle cx="385" cy="385" r="2" />
+    <circle cx="300" cy="420" r="2" />
+    <circle cx="215" cy="385" r="2" />
+    <circle cx="180" cy="300" r="2" />
+    <circle cx="215" cy="215" r="2" />
+  </g>
+  
+  
+  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    <text x="300" y="235" font-size="15" font-weight="900" fill="#f3f4f6" letter-spacing="3">SEIKO</text>
+    <text x="300" y="252" font-size="9" font-weight="700" fill="#f59e0b" letter-spacing="1">SRPE35K1</text>
+    <text x="300" y="380" font-size="9" font-weight="800" fill="#f3f4f6" opacity="0.8" letter-spacing="2">200M DIVER · 4R35</text>
+  </g>
+  <g filter="url(#dropShadow)">
+    <line x1="300" y1="300" x2="300" y2="210" stroke="#f9fafb" stroke-width="6" stroke-linecap="round" />
+    <line x1="300" y1="300" x2="380" y2="300" stroke="#f9fafb" stroke-width="4" stroke-linecap="round" />
+    <line x1="300" y1="320" x2="300" y2="175" stroke="#ef4444" stroke-width="2" stroke-linecap="round" />
+    <circle cx="300" cy="300" r="7" fill="#cbd5e1" />
+    <circle cx="300" cy="300" r="3" fill="#ef4444" />
+  </g>
+
+  <path d="M 200 170 Q 300 230 400 170 Q 350 150 200 170 Z" fill="#ffffff" opacity="0.15" />
+</svg>

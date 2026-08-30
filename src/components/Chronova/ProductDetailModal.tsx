@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import type { ChronovaProduct } from './types'
+import { getAssetUrl } from './utils'
 
 interface ProductDetailModalProps {
   product: ChronovaProduct | null
@@ -67,7 +68,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     }`}
                   >
                     <img
-                      src={img}
+                      src={getAssetUrl(img)}
                       alt={`${product.name} View ${idx + 1}`}
                       className="w-full h-full object-contain filter drop-shadow-xs"
                     />
@@ -83,7 +84,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   </span>
                 )}
                 <img
-                  src={currentImage}
+                  src={getAssetUrl(currentImage)}
                   alt={product.name}
                   className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-all duration-300 hover:scale-105"
                 />

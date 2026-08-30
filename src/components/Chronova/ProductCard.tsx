@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import type { ChronovaProduct } from './types'
+import { getAssetUrl } from './utils'
 
 interface ProductCardProps {
   product: ChronovaProduct
@@ -60,7 +61,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </div>
           ) : (
             <img
-              src={imgSrc}
+              src={getAssetUrl(imgSrc)}
               alt={product.name}
               loading="lazy"
               onError={() => setHasError(true)}

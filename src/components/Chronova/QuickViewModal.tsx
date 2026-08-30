@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import type { ChronovaProduct } from './types'
+import { getAssetUrl } from './utils'
 
 interface QuickViewModalProps {
   product: ChronovaProduct | null
@@ -59,7 +60,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 </span>
               )}
               <img
-                src={currentImage}
+                src={getAssetUrl(currentImage)}
                 alt={product.name}
                 className="max-h-full max-w-full object-contain filter drop-shadow-md"
               />
@@ -77,7 +78,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                       : 'border-slate-200 hover:border-slate-400'
                   }`}
                 >
-                  <img src={img} alt="Thumbnail" className="w-full h-full object-contain" />
+                  <img src={getAssetUrl(img)} alt="Thumbnail" className="w-full h-full object-contain" />
                 </button>
               ))}
             </div>
