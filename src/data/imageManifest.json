@@ -3,117 +3,117 @@
     "id": "chronova-001",
     "brand": "Titan",
     "name": "Titan Edge Ceramic Slim",
-    "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-001/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-001/primary.jpg"
     ]
   },
   "chronova-002": {
     "id": "chronova-002",
     "brand": "Titan",
     "name": "Titan Octane Chronograph",
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-002/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-002/primary.jpg"
     ]
   },
   "chronova-003": {
     "id": "chronova-003",
     "brand": "Titan",
     "name": "Titan Grandmaster Automatic",
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-003/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-003/primary.jpg"
     ]
   },
   "chronova-004": {
     "id": "chronova-004",
     "brand": "Titan",
     "name": "Titan Raga Viva Rose Gold",
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-004/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-004/primary.jpg"
     ]
   },
   "chronova-005": {
     "id": "chronova-005",
     "brand": "Titan",
     "name": "Titan Neo Splash Blue Dial",
-    "primaryImage": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-005/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-005/primary.jpg"
     ]
   },
   "chronova-006": {
     "id": "chronova-006",
     "brand": "Titan",
     "name": "Titan Workwear White Dial",
-    "primaryImage": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-006/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-006/primary.jpg"
     ]
   },
   "chronova-007": {
     "id": "chronova-007",
     "brand": "Titan",
     "name": "Titan Regalia Gold Tone",
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-007/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-007/primary.jpg"
     ]
   },
   "chronova-008": {
     "id": "chronova-008",
     "brand": "Titan",
     "name": "Titan Karishma Classic Black",
-    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-008/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-008/primary.jpg"
     ]
   },
   "chronova-009": {
     "id": "chronova-009",
     "brand": "Titan",
     "name": "Titan Maritime Diver 200m",
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-009/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-009/primary.jpg"
     ]
   },
   "chronova-010": {
     "id": "chronova-010",
     "brand": "Titan",
     "name": "Titan Celestial Moonphase",
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-010/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-010/primary.jpg"
     ]
   },
   "chronova-011": {
     "id": "chronova-011",
     "brand": "Titan",
     "name": "Titan Talk Touch AMOLED",
-    "primaryImage": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-011/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-011/primary.jpg"
     ]
   },
   "chronova-012": {
     "id": "chronova-012",
     "brand": "Titan",
     "name": "Titan Evoke GPS Smart",
-    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-012/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-012/primary.jpg"
     ]
   },
   "chronova-013": {
     "id": "chronova-013",
     "brand": "Titan",
     "name": "Titan Bandhan Couple Pair",
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+    "primaryImage": "/products/titan/chronova-013/primary.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85"
+      "/products/titan/chronova-013/primary.jpg"
     ]
   },
   "chronova-014": {
@@ -128,127 +128,136 @@
   "chronova-015": {
     "id": "chronova-015",
     "brand": "Fastrack",
-    "name": "Fastrack Stunners Chronograph",
-    "primaryImage": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack Stunners White Dial Metal Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-016": {
     "id": "chronova-016",
     "brand": "Fastrack",
-    "name": "Fastrack Limitless FS1 Pro AMOLED",
-    "primaryImage": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-    "gallery": [
-      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
-    ]
-  },
-  "chronova-017": {
-    "id": "chronova-017",
-    "brand": "Fastrack",
-    "name": "Fastrack Tees Casual Black",
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
-    "gallery": [
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
-    ]
-  },
-  "chronova-018": {
-    "id": "chronova-018",
-    "brand": "Fastrack",
-    "name": "Fastrack Vyb Urban Stainless",
-    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-    "gallery": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
-    ]
-  },
-  "chronova-019": {
-    "id": "chronova-019",
-    "brand": "Fastrack",
-    "name": "Fastrack Reflex Beat Plus",
-    "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85",
-    "gallery": [
-      "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85"
-    ]
-  },
-  "chronova-020": {
-    "id": "chronova-020",
-    "brand": "Fastrack",
-    "name": "Fastrack Casuals Denim Strap",
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-    "gallery": [
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
-    ]
-  },
-  "chronova-021": {
-    "id": "chronova-021",
-    "brand": "Fastrack",
-    "name": "Fastrack Streetwear Multi-Dial",
+    "name": "Fastrack Stunners X Quartz Analog Beige Dial Leather Strap",
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
     "gallery": [
       "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85"
     ]
   },
-  "chronova-022": {
-    "id": "chronova-022",
+  "chronova-017": {
+    "id": "chronova-017",
     "brand": "Fastrack",
-    "name": "Fastrack Monochrome Minimal",
+    "name": "Fastrack Fastfit Quartz Analog Grey Dial Grey Silicone Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
+    ]
+  },
+  "chronova-018": {
+    "id": "chronova-018",
+    "brand": "Fastrack",
+    "name": "Fastrack Vyb Maverick Quartz Analog Brown Dial Metal Strap",
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
     "gallery": [
       "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85"
     ]
   },
+  "chronova-019": {
+    "id": "chronova-019",
+    "brand": "Fastrack",
+    "name": "Fastrack Hype Adventure Green Dial Green Silicone Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
+    ]
+  },
+  "chronova-020": {
+    "id": "chronova-020",
+    "brand": "Fastrack",
+    "name": "Fastrack UFO Quartz Multifunction Green Dial Stainless Steel",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
+    ]
+  },
+  "chronova-021": {
+    "id": "chronova-021",
+    "brand": "Fastrack",
+    "name": "Fastrack Thor Quartz Multifunction Red Dial Metal Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
+    ]
+  },
+  "chronova-022": {
+    "id": "chronova-022",
+    "brand": "Fastrack",
+    "name": "Fastrack Groove Multifunction Anthracite Dial Metal Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
+    ]
+  },
   "chronova-023": {
     "id": "chronova-023",
     "brand": "Fastrack",
-    "name": "Fastrack All-Nighter Leather",
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack Kronos Chronograph Black Dial Brown Leather Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-024": {
     "id": "chronova-024",
     "brand": "Fastrack",
-    "name": "Fastrack Optimus BT Calling",
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack Pulse IV Dual Time Teal Green Sunray Dial",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-025": {
     "id": "chronova-025",
     "brand": "Fastrack",
-    "name": "Fastrack Hypersport Silicone",
-    "primaryImage": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack StreetStyle Analog Digital Black Dial Green Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-026": {
     "id": "chronova-026",
     "brand": "Fastrack",
-    "name": "Fastrack Play Round Smartwatch",
-    "primaryImage": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack Overdrive Quartz Round Dial Watch for Men",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-027": {
     "id": "chronova-027",
     "brand": "Fastrack",
-    "name": "Fastrack Glitch Geometric Dial",
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack Tik Tok 5.0 Quartz Brown Shaped Dial Watch",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-028": {
     "id": "chronova-028",
     "brand": "Fastrack",
-    "name": "Fastrack Surge Rugged Outdoor",
-    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+    "name": "Fastrack Automatics Dial Metal Strap Automatic Watch",
+    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85",
     "gallery": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
+      "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85"
+    ]
+  },
+  "chronova-028-b": {
+    "id": "chronova-028-b",
+    "brand": "Fastrack",
+    "name": "Fastrack Stunners Green Dial Silver Stainless Steel Strap",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85"
     ]
   },
   "chronova-029": {

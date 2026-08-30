@@ -1333,1332 +1333,947 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   },
   {
     "id": "chronova-015",
+    "name": "Fastrack Stunners White Dial Metal Strap",
     "brand": "Fastrack",
+    "model": "Stunners 3240SM01",
     "series": "Stunners",
-    "model": "3278NM01",
-    "name": "Fastrack Stunners Chronograph",
-    "category": "Chronograph",
-    "vibe": "Street",
-    "gender": "Men",
-    "price_rupees": 3995,
-    "original_price_rupees": 4995,
     "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.3,
-    "review_count": 189,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Stunners Chronograph (3278NM01) features Quartz Chronograph, 44mm Black IP Alloy, and 50m (5 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz Chronograph with 44mm case",
-      "Water resistant (50m (5 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
-      "gallery": [
-        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
-      ]
-    },
-    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
-    "color_variants": [
-      {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
-      }
-    ],
-    "specs": {
-      "movement": "Quartz Chronograph",
-      "case_size": "44mm",
-      "case_material": "44mm Black IP Alloy",
-      "dial_color": "Obsidian Black",
-      "strap_material": "Ceramic",
-      "strap_color": "Silver Steel",
-      "water_resistance": "50m (5 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
-    "reviews": [
-      {
-        "id": "rev-15-1",
-        "reviewer_name": "Shweta Tiwari",
-        "rating": 4,
-        "date": "2026-08-25",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Stunners Chronograph!",
-        "comment": "Purchased this Fastrack Stunners Chronograph (3278NM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 12
-      },
-      {
-        "id": "rev-15-2",
-        "reviewer_name": "Deepika Reddy",
-        "rating": 4,
-        "date": "2026-08-07",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 13
-      }
-    ]
-  },
-  {
-    "id": "chronova-016",
-    "brand": "Fastrack",
-    "series": "Limitless",
-    "model": "38084PP01",
-    "name": "Fastrack Limitless FS1 Pro AMOLED",
-    "category": "Smart Watches",
-    "vibe": "Street",
-    "gender": "Unisex",
-    "price_rupees": 2995,
-    "original_price_rupees": 5995,
-    "discount_percent": 50,
-    "currency": "INR",
-    "rating": 4.2,
-    "review_count": 200,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Limitless FS1 Pro AMOLED (38084PP01) features Smart Digital OS (1.96'' AMOLED), Square Alloy, and IP68 Waterproof.",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Smart Digital OS (1.96'' AMOLED) with Square case",
-      "Water resistant (IP68 Waterproof)",
-      "1 Year Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
-      "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
-      ]
-    },
-    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-    "color_variants": [
-      {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (1.96'' AMOLED)",
-      "case_size": "Square",
-      "case_material": "Square Alloy",
-      "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Silicone",
-      "strap_color": "Black",
-      "water_resistance": "IP68 Waterproof",
-      "battery_life": "Up to 7 Days (Active)",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "AMOLED",
-      "warranty": "1 Year Brand Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
-    "reviews": [
-      {
-        "id": "rev-16-1",
-        "reviewer_name": "Abhishek Nair",
-        "rating": 5,
-        "date": "2026-08-26",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Limitless FS1 Pro AMOLED!",
-        "comment": "Purchased this Fastrack Limitless FS1 Pro AMOLED (38084PP01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 13
-      },
-      {
-        "id": "rev-16-2",
-        "reviewer_name": "Vikramaditya Sharma",
-        "rating": 5,
-        "date": "2026-08-08",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
-      }
-    ]
-  },
-  {
-    "id": "chronova-017",
-    "brand": "Fastrack",
-    "series": "Tees",
-    "model": "38024PP25",
-    "name": "Fastrack Tees Casual Black",
-    "category": "Casual Watches",
+    "category": "Analog Watches",
+    "gender": "Men",
     "vibe": "Everyday",
-    "gender": "Unisex",
-    "price_rupees": 1495,
-    "original_price_rupees": 1995,
-    "discount_percent": 25,
-    "currency": "INR",
-    "rating": 4.9,
-    "review_count": 211,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Tees Casual Black (38024PP25) features Quartz Analogue, 40mm Polyurethane, and 30m (3 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz Analogue with 40mm case",
-      "Water resistant (30m (3 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
+    "rating": 4.5,
+    "badge": "TRENDING",
+    "is_bestseller": true,
+    "description": "Fastrack Stunners with crisp white analog dial, polished stainless steel case and classic metal strap for everyday style.",
+    "specs": {
+      "movement": "Quartz Analog",
+      "case_material": "Brass / Steel Tone",
+      "case_thickness": "9.5 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "White",
+      "water_resistance": "50m",
+      "case_size": "42 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
     "images": {
       "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
       "gallery": [
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "name": "Silver / White",
+        "hex": "#ffffff"
       }
     ],
-    "specs": {
-      "movement": "Quartz Analogue",
-      "case_size": "40mm",
-      "case_material": "40mm Polyurethane",
-      "dial_color": "Emerald Green",
-      "strap_material": "Stainless Steel",
-      "strap_color": "Midnight Blue",
-      "water_resistance": "30m (3 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-17-1",
-        "reviewer_name": "Priya Venkatesh",
+        "id": "rev-ft-1",
         "rating": 5,
-        "date": "2026-08-27",
+        "date": "2026-08-15",
+        "title": "Clean, classy everyday watch!",
+        "comment": "Looks amazing with formals and casuals. Great build quality.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Tees Casual Black!",
-        "comment": "Purchased this Fastrack Tees Casual Black (38024PP25). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 14
-      },
-      {
-        "id": "rev-17-2",
-        "reviewer_name": "Ananya Deshmukh",
-        "rating": 4,
-        "date": "2026-08-09",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
+        "reviewer_name": "Arjun K.",
+        "helpful_votes": 12
       }
-    ]
-  },
-  {
-    "id": "chronova-018",
-    "brand": "Fastrack",
-    "series": "Vyb",
-    "model": "FV3001NM01",
-    "name": "Fastrack Vyb Urban Stainless",
-    "category": "Casual Watches",
-    "vibe": "Street",
-    "gender": "Men",
-    "price_rupees": 2495,
-    "original_price_rupees": 3295,
-    "discount_percent": 24,
-    "currency": "INR",
-    "rating": 4.8,
-    "review_count": 32,
-    "stock_status": "Only 2 Left",
+    ],
+    "price_rupees": 1195,
+    "original_price_rupees": 1495,
+    "review_count": 184,
     "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Vyb Urban Stainless (FV3001NM01) features Quartz 3-Hand, 42mm Steel Mesh, and 30m (3 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz 3-Hand with 42mm case",
-      "Water resistant (30m (3 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
-      "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
-      ]
-    },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "color_variants": [
-      {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
-      }
-    ],
-    "specs": {
-      "movement": "Quartz 3-Hand",
-      "case_size": "42mm",
-      "case_material": "42mm Steel Mesh",
-      "dial_color": "Champagne Gold",
-      "strap_material": "Genuine Leather",
-      "strap_color": "Classic Brown",
-      "water_resistance": "30m (3 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
-    "reviews": [
-      {
-        "id": "rev-18-1",
-        "reviewer_name": "Manish Choudhary",
-        "rating": 4,
-        "date": "2026-08-10",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Vyb Urban Stainless!",
-        "comment": "Purchased this Fastrack Vyb Urban Stainless (FV3001NM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 15
-      },
-      {
-        "id": "rev-18-2",
-        "reviewer_name": "Devendra Patel",
-        "rating": 5,
-        "date": "2026-08-01",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
-      }
-    ]
-  },
-  {
-    "id": "chronova-019",
-    "brand": "Fastrack",
-    "series": "Reflex",
-    "model": "38072PP01",
-    "name": "Fastrack Reflex Beat Plus",
-    "category": "Fitness Watches",
-    "vibe": "Sport",
-    "gender": "Unisex",
-    "price_rupees": 1795,
-    "original_price_rupees": 2995,
-    "discount_percent": 40,
-    "currency": "INR",
-    "rating": 4.7,
-    "review_count": 43,
     "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Reflex Beat Plus (38072PP01) features Smart Activity Tracking, 1.69'' HD Display, and IP68 Resistance.",
+    "currency": "INR",
     "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Smart Activity Tracking with 1.69'' case",
-      "Water resistant (IP68 Resistance)",
-      "1 Year Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85",
-      "gallery": [
-        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85"
-      ]
-    },
-    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-    "color_variants": [
-      {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
-      }
-    ],
-    "specs": {
-      "movement": "Smart Activity Tracking",
-      "case_size": "1.69''",
-      "case_material": "1.69'' HD Display",
-      "dial_color": "Silver Sunray",
-      "strap_material": "Ceramic",
-      "strap_color": "Silver Steel",
-      "water_resistance": "IP68 Resistance",
-      "battery_life": "Up to 7 Days (Active)",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "AMOLED",
-      "warranty": "1 Year Brand Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
-    "reviews": [
-      {
-        "id": "rev-19-1",
-        "reviewer_name": "Deepika Reddy",
-        "rating": 5,
-        "date": "2026-08-11",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Reflex Beat Plus!",
-        "comment": "Purchased this Fastrack Reflex Beat Plus (38072PP01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 16
-      },
-      {
-        "id": "rev-19-2",
-        "reviewer_name": "Rohan Bhattacharya",
-        "rating": 4,
-        "date": "2026-08-02",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
-      }
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "50m water resistance rating"
     ]
   },
   {
-    "id": "chronova-020",
+    "id": "chronova-016",
+    "name": "Fastrack Stunners X Quartz Analog Beige Dial Leather Strap",
     "brand": "Fastrack",
-    "series": "Casuals",
-    "model": "3121SM01",
-    "name": "Fastrack Casuals Denim Strap",
+    "model": "Stunners X 3241SL01",
+    "series": "Stunners X",
+    "discount_percent": 21,
     "category": "Casual Watches",
+    "gender": "Men",
     "vibe": "Everyday",
-    "gender": "Men",
-    "price_rupees": 2195,
-    "original_price_rupees": 2795,
-    "discount_percent": 21,
-    "currency": "INR",
-    "rating": 4.6,
-    "review_count": 54,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
+    "rating": 4.4,
+    "badge": "NEW",
     "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Casuals Denim Strap (3121SM01) features Quartz Analogue, 41mm Blue Dial, and 50m (5 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz Analogue with 41mm case",
-      "Water resistant (50m (5 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
-      "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
-      ]
-    },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "color_variants": [
-      {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      }
-    ],
+    "description": "Fastrack Stunners X featuring warm beige dial and genuine brown textured leather strap.",
     "specs": {
-      "movement": "Quartz Analogue",
-      "case_size": "41mm",
-      "case_material": "41mm Blue Dial",
-      "dial_color": "Obsidian Black",
-      "strap_material": "Silicone",
-      "strap_color": "Black",
-      "water_resistance": "50m (5 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
+      "movement": "Quartz Analog",
+      "case_material": "Stainless Steel",
+      "case_thickness": "10 mm",
+      "strap_material": "Genuine Leather",
+      "strap_color": "Brown",
+      "dial_color": "Beige",
+      "water_resistance": "50m",
+      "case_size": "43 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
     },
-    "reviews": [
-      {
-        "id": "rev-20-1",
-        "reviewer_name": "Vikramaditya Sharma",
-        "rating": 5,
-        "date": "2026-08-12",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Casuals Denim Strap!",
-        "comment": "Purchased this Fastrack Casuals Denim Strap (3121SM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 17
-      },
-      {
-        "id": "rev-20-2",
-        "reviewer_name": "Pooja Sengupta",
-        "rating": 5,
-        "date": "2026-08-03",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
-      }
-    ]
-  },
-  {
-    "id": "chronova-021",
-    "brand": "Fastrack",
-    "series": "Street",
-    "model": "3184KM02",
-    "name": "Fastrack Streetwear Multi-Dial",
-    "category": "Analog Watches",
-    "vibe": "Street",
-    "gender": "Men",
-    "price_rupees": 2895,
-    "original_price_rupees": 3695,
-    "discount_percent": 21,
-    "currency": "INR",
-    "rating": 4.5,
-    "review_count": 65,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": true,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Streetwear Multi-Dial (3184KM02) features Quartz Multifunction, 43mm Matte Gunmetal, and 50m (5 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz Multifunction with 43mm case",
-      "Water resistant (50m (5 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
     "images": {
       "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
       "gallery": [
         "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "name": "Beige / Brown",
+        "hex": "#f5f5dc"
       }
     ],
-    "specs": {
-      "movement": "Quartz Multifunction",
-      "case_size": "43mm",
-      "case_material": "43mm Matte Gunmetal",
-      "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Stainless Steel",
-      "strap_color": "Midnight Blue",
-      "water_resistance": "50m (5 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-21-1",
-        "reviewer_name": "Ananya Deshmukh",
-        "rating": 4,
-        "date": "2026-08-13",
+        "id": "rev-ft-2",
+        "rating": 5,
+        "date": "2026-08-10",
+        "title": "Super comfortable leather strap",
+        "comment": "Beige dial gives it a very distinct and premium aesthetic.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Streetwear Multi-Dial!",
-        "comment": "Purchased this Fastrack Streetwear Multi-Dial (3184KM02). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 18
-      },
-      {
-        "id": "rev-21-2",
-        "reviewer_name": "Karan Singhania",
-        "rating": 4,
-        "date": "2026-08-04",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 11
+        "reviewer_name": "Rohan M.",
+        "helpful_votes": 12
       }
+    ],
+    "price_rupees": 1975,
+    "original_price_rupees": 2495,
+    "review_count": 142,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "50m water resistance rating"
     ]
   },
   {
-    "id": "chronova-022",
+    "id": "chronova-017",
+    "name": "Fastrack Fastfit Quartz Analog Grey Dial Grey Silicone Strap",
     "brand": "Fastrack",
-    "series": "Monochrome",
-    "model": "3240NM01",
-    "name": "Fastrack Monochrome Minimal",
-    "category": "Minimal Watches",
-    "vibe": "Minimal",
+    "model": "Fastfit 38044PP01",
+    "series": "Fastfit",
+    "discount_percent": 25,
+    "category": "Sports Watches",
     "gender": "Unisex",
-    "price_rupees": 1995,
-    "original_price_rupees": 2495,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.4,
-    "review_count": 76,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Monochrome Minimal (3240NM01) features Quartz 3-Hand, 38mm Black Sunray, and 30m (3 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz 3-Hand with 38mm case",
-      "Water resistant (30m (3 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    "vibe": "Sport",
+    "rating": 4.6,
+    "badge": "BEST VALUE",
+    "is_bestseller": true,
+    "description": "Ultra-lightweight Fastrack Fastfit with monochromatic grey dial and soft all-weather silicone strap.",
+    "specs": {
+      "movement": "Quartz Analog",
+      "case_material": "Polycarbonate",
+      "case_thickness": "9 mm",
+      "strap_material": "Silicone",
+      "strap_color": "Grey",
+      "dial_color": "Grey",
+      "water_resistance": "30m",
+      "case_size": "40 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Acrylic"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Monochrome Grey",
+        "hex": "#6b7280"
+      }
     ],
+    "reviews": [
+      {
+        "id": "rev-ft-3",
+        "rating": 5,
+        "date": "2026-08-04",
+        "title": "Featherlight for workouts",
+        "comment": "Perfect everyday sporty watch. Extremely comfortable.",
+        "verified_purchase": true,
+        "reviewer_name": "Pooja S.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 895,
+    "original_price_rupees": 1195,
+    "review_count": 210,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "30m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-018",
+    "name": "Fastrack Vyb Maverick Quartz Analog Brown Dial Metal Strap",
+    "brand": "Fastrack",
+    "model": "Vyb Maverick FV001",
+    "series": "Vyb",
+    "discount_percent": 20,
+    "category": "Casual Watches",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.5,
+    "badge": "POPULAR",
+    "is_bestseller": false,
+    "description": "Fastrack Vyb Maverick with sunray brown dial and integrated metal link bracelet.",
+    "specs": {
+      "movement": "Quartz Analog",
+      "case_material": "Alloy / Stainless Steel",
+      "case_thickness": "9.8 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "Brown",
+      "water_resistance": "30m",
+      "case_size": "42 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
     "images": {
       "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
       "gallery": [
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "name": "Brown / Silver",
+        "hex": "#78350f"
       }
     ],
-    "specs": {
-      "movement": "Quartz 3-Hand",
-      "case_size": "38mm",
-      "case_material": "38mm Black Sunray",
-      "dial_color": "Emerald Green",
-      "strap_material": "Genuine Leather",
-      "strap_color": "Classic Brown",
-      "water_resistance": "30m (3 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-22-1",
-        "reviewer_name": "Devendra Patel",
-        "rating": 5,
-        "date": "2026-08-14",
+        "id": "rev-ft-4",
+        "rating": 4,
+        "date": "2026-07-29",
+        "title": "Stylish urban watch",
+        "comment": "Great dial finish and solid build.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Monochrome Minimal!",
-        "comment": "Purchased this Fastrack Monochrome Minimal (3240NM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 19
-      },
-      {
-        "id": "rev-22-2",
-        "reviewer_name": "Meera Nambiar",
-        "rating": 5,
-        "date": "2026-08-05",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "reviewer_name": "Naveen P.",
         "helpful_votes": 12
       }
+    ],
+    "price_rupees": 1895,
+    "original_price_rupees": 2395,
+    "review_count": 98,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "30m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-019",
+    "name": "Fastrack Hype Adventure Green Dial Green Silicone Strap",
+    "brand": "Fastrack",
+    "model": "Hype 38045PP02",
+    "series": "Hype Adventure",
+    "discount_percent": 23,
+    "category": "Outdoor Watches",
+    "gender": "Men",
+    "vibe": "Sport",
+    "rating": 4.4,
+    "badge": "OUTDOOR",
+    "is_bestseller": false,
+    "description": "Tactical green dial with rugged outdoor silicone strap for adventure and sports.",
+    "specs": {
+      "movement": "Quartz Analog",
+      "case_material": "Polymer",
+      "case_thickness": "11 mm",
+      "strap_material": "Silicone",
+      "strap_color": "Tactical Green",
+      "dial_color": "Green",
+      "water_resistance": "50m",
+      "case_size": "44 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Army Green",
+        "hex": "#166534"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-ft-5",
+        "rating": 5,
+        "date": "2026-07-22",
+        "title": "Tough and stylish",
+        "comment": "Can handle treks and workouts easily.",
+        "verified_purchase": true,
+        "reviewer_name": "Varun T.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 1295,
+    "original_price_rupees": 1695,
+    "review_count": 115,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "50m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-020",
+    "name": "Fastrack UFO Quartz Multifunction Green Dial Stainless Steel",
+    "brand": "Fastrack",
+    "model": "UFO 3250KM01",
+    "series": "UFO",
+    "discount_percent": 22,
+    "category": "Chronograph",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.7,
+    "badge": "FLAGSHIP",
+    "is_bestseller": true,
+    "description": "Futuristic UFO-inspired multifunction dial with sub-eyes and solid silver stainless steel bracelet.",
+    "specs": {
+      "movement": "Quartz Multifunction",
+      "case_material": "Stainless Steel",
+      "case_thickness": "12 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "Emerald Green",
+      "water_resistance": "50m",
+      "case_size": "45 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Green / Steel",
+        "hex": "#047857"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-ft-6",
+        "rating": 5,
+        "date": "2026-07-15",
+        "title": "Turns heads everywhere!",
+        "comment": "The multifunction dials look futuristic and premium.",
+        "verified_purchase": true,
+        "reviewer_name": "Karthik R.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 5395,
+    "original_price_rupees": 6995,
+    "review_count": 88,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Multifunction engineering",
+      "50m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-021",
+    "name": "Fastrack Thor Quartz Multifunction Red Dial Metal Strap",
+    "brand": "Fastrack",
+    "model": "Thor 3251KM02",
+    "series": "Thor",
+    "discount_percent": 25,
+    "category": "Chronograph",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.6,
+    "badge": "POWER",
+    "is_bestseller": false,
+    "description": "High-impact crimson red multifunction dial with bold indices and steel case.",
+    "specs": {
+      "movement": "Quartz Multifunction",
+      "case_material": "Stainless Steel",
+      "case_thickness": "11.5 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Gunmetal",
+      "dial_color": "Crimson Red",
+      "water_resistance": "50m",
+      "case_size": "44 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Crimson / Gunmetal",
+        "hex": "#b91c1c"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-ft-7",
+        "rating": 5,
+        "date": "2026-07-10",
+        "title": "Bold and striking red dial",
+        "comment": "One of the best red dials in this segment.",
+        "verified_purchase": true,
+        "reviewer_name": "Sameer B.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 4475,
+    "original_price_rupees": 5995,
+    "review_count": 76,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Multifunction engineering",
+      "50m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-022",
+    "name": "Fastrack Groove Multifunction Anthracite Dial Metal Strap",
+    "brand": "Fastrack",
+    "model": "Groove 3252KM01",
+    "series": "Groove",
+    "discount_percent": 21,
+    "category": "Chronograph",
+    "gender": "Men",
+    "vibe": "Office",
+    "rating": 4.5,
+    "badge": "PREMIUM",
+    "is_bestseller": false,
+    "description": "Stealth anthracite multifunction dial with lume-coated indices and polished steel bracelet.",
+    "specs": {
+      "movement": "Quartz Multifunction",
+      "case_material": "Stainless Steel",
+      "case_thickness": "11 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Anthracite",
+      "dial_color": "Anthracite",
+      "water_resistance": "50m",
+      "case_size": "43 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Anthracite Grey",
+        "hex": "#374151"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-ft-8",
+        "rating": 4,
+        "date": "2026-06-28",
+        "title": "Subtle luxury feel",
+        "comment": "The dark finish is stunning in person.",
+        "verified_purchase": true,
+        "reviewer_name": "Ankit D.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 5095,
+    "original_price_rupees": 6495,
+    "review_count": 64,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Multifunction engineering",
+      "50m water resistance rating"
     ]
   },
   {
     "id": "chronova-023",
+    "name": "Fastrack Kronos Chronograph Black Dial Brown Leather Strap",
     "brand": "Fastrack",
-    "series": "Night",
-    "model": "3255NM01",
-    "name": "Fastrack All-Nighter Leather",
-    "category": "Dress Watches",
-    "vibe": "Party",
+    "model": "Kronos 3253SL01",
+    "series": "Kronos",
+    "discount_percent": 25,
+    "category": "Chronograph",
     "gender": "Men",
-    "price_rupees": 3195,
-    "original_price_rupees": 3995,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.3,
-    "review_count": 87,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack All-Nighter Leather (3255NM01) features Quartz 3-Hand Date, 42mm Black PVD, and 50m (5 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz 3-Hand Date with 42mm case",
-      "Water resistant (50m (5 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
+    "vibe": "Office",
+    "rating": 4.8,
+    "badge": "BESTSELLER",
+    "is_bestseller": true,
+    "description": "Chronograph tachymeter with date window, knurled pushers and hand-stitched rich brown leather.",
+    "specs": {
+      "movement": "Quartz Chronograph",
+      "case_material": "Stainless Steel",
+      "case_thickness": "12 mm",
+      "strap_material": "Genuine Leather",
+      "strap_color": "Dark Brown",
+      "dial_color": "Obsidian Black",
+      "water_resistance": "50m",
+      "case_size": "44 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
     "images": {
-      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1535747790212-30c585ab4867?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "name": "Black / Brown Leather",
+        "hex": "#0f172a"
       }
     ],
-    "specs": {
-      "movement": "Quartz 3-Hand Date",
-      "case_size": "42mm",
-      "case_material": "42mm Black PVD",
-      "dial_color": "Champagne Gold",
-      "strap_material": "Ceramic",
-      "strap_color": "Silver Steel",
-      "water_resistance": "50m (5 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-23-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-ft-9",
         "rating": 5,
-        "date": "2026-08-15",
+        "date": "2026-06-20",
+        "title": "Outstanding chronograph",
+        "comment": "Smooth stopwatch action and very sharp design.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack All-Nighter Leather!",
-        "comment": "Purchased this Fastrack All-Nighter Leather (3255NM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 20
-      },
-      {
-        "id": "rev-23-2",
-        "reviewer_name": "Aarav Mehrotra",
-        "rating": 4,
-        "date": "2026-08-06",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 13
+        "reviewer_name": "Vikas G.",
+        "helpful_votes": 12
       }
+    ],
+    "price_rupees": 5995,
+    "original_price_rupees": 7995,
+    "review_count": 112,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Chronograph engineering",
+      "50m water resistance rating"
     ]
   },
   {
     "id": "chronova-024",
+    "name": "Fastrack Pulse IV Dual Time Teal Green Sunray Dial",
     "brand": "Fastrack",
-    "series": "Optimus",
-    "model": "38085PP01",
-    "name": "Fastrack Optimus BT Calling",
-    "category": "Smart Watches",
-    "vibe": "Office",
+    "model": "Pulse IV 3254KM01",
+    "series": "Pulse",
+    "discount_percent": 21,
+    "category": "Casual Watches",
     "gender": "Men",
-    "price_rupees": 3495,
-    "original_price_rupees": 6995,
-    "discount_percent": 50,
-    "currency": "INR",
-    "rating": 4.2,
-    "review_count": 98,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Optimus BT Calling (38085PP01) features Smart Digital OS (1.43'' AMOLED), Metallic Zinc Alloy, and IP68 Resistance.",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Smart Digital OS (1.43'' AMOLED) with Metallic case",
-      "Water resistant (IP68 Resistance)",
-      "1 Year Brand Warranty with hassle-free doorstep service"
+    "vibe": "Travel",
+    "rating": 4.6,
+    "badge": "DUAL TIME",
+    "is_bestseller": false,
+    "description": "Dual-time zone functionality with shimmering teal green sunray dial and silver mesh/metal strap.",
+    "specs": {
+      "movement": "Dual-Time Quartz",
+      "case_material": "Stainless Steel",
+      "case_thickness": "10.5 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "Teal Green",
+      "water_resistance": "50m",
+      "case_size": "43 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Teal Sunray",
+        "hex": "#0d9488"
+      }
     ],
+    "reviews": [
+      {
+        "id": "rev-ft-10",
+        "rating": 5,
+        "date": "2026-06-12",
+        "title": "Great for travel",
+        "comment": "Keeping track of two time zones is effortless.",
+        "verified_purchase": true,
+        "reviewer_name": "Deepak L.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 4295,
+    "original_price_rupees": 5495,
+    "review_count": 52,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Dual-Time Quartz engineering",
+      "50m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-025",
+    "name": "Fastrack StreetStyle Analog Digital Black Dial Green Strap",
+    "brand": "Fastrack",
+    "model": "StreetStyle 3255PP01",
+    "series": "StreetStyle",
+    "discount_percent": 24,
+    "category": "Digital Watches",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.7,
+    "badge": "ANALOG-DIGITAL",
+    "is_bestseller": true,
+    "description": "Dual display analog-digital timepiece with translucent green polyether strap and EL backlight.",
+    "specs": {
+      "movement": "Analog-Digital Quartz",
+      "case_material": "Resin / Steel Back",
+      "case_thickness": "13 mm",
+      "strap_material": "Translucent Polyether",
+      "strap_color": "Translucent Green",
+      "dial_color": "Black / LCD",
+      "water_resistance": "100m",
+      "case_size": "46 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
     "images": {
       "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
       "gallery": [
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "name": "Translucent Green",
+        "hex": "#15803d"
       }
     ],
-    "specs": {
-      "movement": "Smart Digital OS (1.43'' AMOLED)",
-      "case_size": "Metallic",
-      "case_material": "Metallic Zinc Alloy",
-      "dial_color": "Silver Sunray",
-      "strap_material": "Silicone",
-      "strap_color": "Black",
-      "water_resistance": "IP68 Resistance",
-      "battery_life": "Up to 7 Days (Active)",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "AMOLED",
-      "warranty": "1 Year Brand Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-24-1",
-        "reviewer_name": "Pooja Sengupta",
-        "rating": 4,
-        "date": "2026-08-16",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Optimus BT Calling!",
-        "comment": "Purchased this Fastrack Optimus BT Calling (38085PP01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 21
-      },
-      {
-        "id": "rev-24-2",
-        "reviewer_name": "Siddharth Rao",
+        "id": "rev-ft-11",
         "rating": 5,
-        "date": "2026-08-07",
+        "date": "2026-06-05",
+        "title": "The strap looks insane in person",
+        "comment": "Very comfortable and backlight is bright.",
         "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
+        "reviewer_name": "Yash W.",
+        "helpful_votes": 12
       }
-    ]
-  },
-  {
-    "id": "chronova-025",
-    "brand": "Fastrack",
-    "series": "Hypersport",
-    "model": "3189KM01",
-    "name": "Fastrack Hypersport Silicone",
-    "category": "Sports Watches",
-    "vibe": "Sport",
-    "gender": "Men",
-    "price_rupees": 2795,
-    "original_price_rupees": 3495,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.9,
-    "review_count": 109,
-    "stock_status": "In Stock",
+    ],
+    "price_rupees": 2495,
+    "original_price_rupees": 3295,
+    "review_count": 130,
     "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Hypersport Silicone (3189KM01) features Quartz Chronograph Style, 44mm Sport Resin, and 50m (5 ATM).",
+    "stock_status": "In Stock",
+    "currency": "INR",
     "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz Chronograph Style with 44mm case",
-      "Water resistant (50m (5 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
-    "images": {
-      "primary": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85",
-      "gallery": [
-        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=85"
-      ]
-    },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "color_variants": [
-      {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
-      }
-    ],
-    "specs": {
-      "movement": "Quartz Chronograph Style",
-      "case_size": "44mm",
-      "case_material": "44mm Sport Resin",
-      "dial_color": "Obsidian Black",
-      "strap_material": "Stainless Steel",
-      "strap_color": "Midnight Blue",
-      "water_resistance": "50m (5 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
-    "reviews": [
-      {
-        "id": "rev-25-1",
-        "reviewer_name": "Karan Singhania",
-        "rating": 5,
-        "date": "2026-08-17",
-        "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Hypersport Silicone!",
-        "comment": "Purchased this Fastrack Hypersport Silicone (3189KM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 22
-      },
-      {
-        "id": "rev-25-2",
-        "reviewer_name": "Neha Kashyap",
-        "rating": 4,
-        "date": "2026-08-08",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
-      }
+      "Official Fastrack warranty and authentic design",
+      "Precision Analog-Digital Quartz engineering",
+      "100m water resistance rating"
     ]
   },
   {
     "id": "chronova-026",
+    "name": "Fastrack Overdrive Quartz Round Dial Watch for Men",
     "brand": "Fastrack",
-    "series": "Play",
-    "model": "38086PP01",
-    "name": "Fastrack Play Round Smartwatch",
-    "category": "Smart Watches",
-    "vibe": "Everyday",
-    "gender": "Women",
-    "price_rupees": 2295,
-    "original_price_rupees": 4995,
-    "discount_percent": 54,
-    "currency": "INR",
+    "model": "Overdrive 3256SM01",
+    "series": "Overdrive",
+    "discount_percent": 21,
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Premium",
     "rating": 4.8,
-    "review_count": 120,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
+    "badge": "PREMIUM",
     "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Play Round Smartwatch (38086PP01) features Smart OS BT Calling, 1.3'' Round Dial, and IP68 Resistance.",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Smart OS BT Calling with 1.3'' case",
-      "Water resistant (IP68 Resistance)",
-      "1 Year Brand Warranty with hassle-free doorstep service"
-    ],
+    "description": "High-end sports timepiece with precision tachymeter, textured dial and multi-link steel strap.",
+    "specs": {
+      "movement": "Quartz Chronograph",
+      "case_material": "Solid Stainless Steel",
+      "case_thickness": "11.8 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "Carbon Black",
+      "water_resistance": "100m",
+      "case_size": "45 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Sapphire Coated Mineral"
+    },
     "images": {
-      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "name": "Steel / Black",
+        "hex": "#1e293b"
       }
     ],
-    "specs": {
-      "movement": "Smart OS BT Calling",
-      "case_size": "1.3''",
-      "case_material": "1.3'' Round Dial",
-      "dial_color": "Sunburst Midnight Blue",
-      "strap_material": "Genuine Leather",
-      "strap_color": "Classic Brown",
-      "water_resistance": "IP68 Resistance",
-      "battery_life": "Up to 7 Days (Active)",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "AMOLED",
-      "warranty": "1 Year Brand Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-26-1",
-        "reviewer_name": "Meera Nambiar",
+        "id": "rev-ft-12",
         "rating": 5,
-        "date": "2026-08-18",
+        "date": "2026-05-30",
+        "title": "Top-tier Fastrack model",
+        "comment": "Feels like an imported luxury sports watch.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Play Round Smartwatch!",
-        "comment": "Purchased this Fastrack Play Round Smartwatch (38086PP01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 23
-      },
-      {
-        "id": "rev-26-2",
-        "reviewer_name": "Aditya Kulkarni",
-        "rating": 5,
-        "date": "2026-08-09",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
+        "reviewer_name": "Rahul S.",
+        "helpful_votes": 12
       }
+    ],
+    "price_rupees": 7095,
+    "original_price_rupees": 8995,
+    "review_count": 92,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Chronograph engineering",
+      "100m water resistance rating"
     ]
   },
   {
     "id": "chronova-027",
+    "name": "Fastrack Tik Tok 5.0 Quartz Brown Shaped Dial Watch",
     "brand": "Fastrack",
-    "series": "Glitch",
-    "model": "3279NM01",
-    "name": "Fastrack Glitch Geometric Dial",
-    "category": "Casual Watches",
-    "vibe": "Street",
-    "gender": "Unisex",
-    "price_rupees": 1895,
-    "original_price_rupees": 2395,
+    "model": "Tik Tok 5.0 3257SL01",
+    "series": "Tik Tok",
     "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.7,
-    "review_count": 131,
-    "stock_status": "Only 2 Left",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
+    "category": "Casual Watches",
+    "gender": "Men",
+    "vibe": "Party",
+    "rating": 4.5,
+    "badge": "DESIGNER",
     "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Glitch Geometric Dial (3279NM01) features Quartz Analogue, 40mm Polygon Case, and 30m (3 ATM).",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Quartz Analogue with 40mm case",
-      "Water resistant (30m (3 ATM))",
-      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
-    ],
+    "description": "Avant-garde geometric shaped brown dial with sleek minimalist indices and leather strap.",
+    "specs": {
+      "movement": "Quartz Analog",
+      "case_material": "Sculpted Alloy",
+      "case_thickness": "9.5 mm",
+      "strap_material": "Genuine Leather",
+      "strap_color": "Cognac Brown",
+      "dial_color": "Chocolate Brown",
+      "water_resistance": "30m",
+      "case_size": "42 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
     "images": {
-      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "name": "Cognac / Brown",
+        "hex": "#7c2d12"
       }
     ],
-    "specs": {
-      "movement": "Quartz Analogue",
-      "case_size": "40mm",
-      "case_material": "40mm Polygon Case",
-      "dial_color": "Emerald Green",
-      "strap_material": "Ceramic",
-      "strap_color": "Silver Steel",
-      "water_resistance": "30m (3 ATM)",
-      "battery_life": "3 Years Standard Cell (Quartz) / Automatic Self-Winding",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "Analog Dial",
-      "warranty": "2 Years Official Manufacturer Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-27-1",
-        "reviewer_name": "Aarav Mehrotra",
-        "rating": 4,
-        "date": "2026-08-19",
+        "id": "rev-ft-13",
+        "rating": 5,
+        "date": "2026-05-18",
+        "title": "Very unique case shape",
+        "comment": "Stands out immediately. Clean aesthetic.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Glitch Geometric Dial!",
-        "comment": "Purchased this Fastrack Glitch Geometric Dial (3279NM01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 24
-      },
-      {
-        "id": "rev-27-2",
-        "reviewer_name": "Tanvi Joshi",
-        "rating": 4,
-        "date": "2026-08-01",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "reviewer_name": "Manoj C.",
+        "helpful_votes": 12
       }
+    ],
+    "price_rupees": 4995,
+    "original_price_rupees": 6295,
+    "review_count": 48,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "30m water resistance rating"
     ]
   },
   {
     "id": "chronova-028",
+    "name": "Fastrack Automatics Dial Metal Strap Automatic Watch",
     "brand": "Fastrack",
-    "series": "Surge",
-    "model": "38087PP01",
-    "name": "Fastrack Surge Rugged Outdoor",
-    "category": "Outdoor Watches",
-    "vibe": "Sport",
+    "model": "Automatics 3258KM01",
+    "series": "Automatics",
+    "discount_percent": 21,
+    "category": "Automatic Watches",
     "gender": "Men",
-    "price_rupees": 3295,
-    "original_price_rupees": 5495,
-    "discount_percent": 40,
-    "currency": "INR",
-    "rating": 4.6,
-    "review_count": 142,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": true,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
-    "description": "Engineered by Fastrack for precision timekeeping and durability, the Fastrack Surge Rugged Outdoor (38087PP01) features Smart Dual Outdoor OS, 46mm Shock Armour, and 3 ATM / IP68.",
-    "highlights": [
-      "Official Fastrack Authentic Craftsmanship & Warranty",
-      "Smart Dual Outdoor OS with 46mm case",
-      "Water resistant (3 ATM / IP68)",
-      "1 Year Brand Warranty with hassle-free doorstep service"
-    ],
+    "vibe": "Premium",
+    "rating": 4.9,
+    "badge": "AUTOMATIC",
+    "is_bestseller": true,
+    "description": "Exhibition skeleton automatic calibre with 21-jewel self-winding rotor and sapphire crystal.",
+    "specs": {
+      "movement": "Mechanical Automatic Calibre",
+      "case_material": "316L Stainless Steel",
+      "case_thickness": "12.5 mm",
+      "strap_material": "Solid Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "Open Skeleton",
+      "water_resistance": "50m",
+      "case_size": "43 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Sapphire Crystal"
+    },
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=85"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
-        "name": "Midnight Black",
-        "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Royal Blue",
-        "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
-      },
-      {
-        "name": "Silver Steel",
-        "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
+        "name": "Skeleton Steel",
+        "hex": "#94a3b8"
       }
     ],
-    "specs": {
-      "movement": "Smart Dual Outdoor OS",
-      "case_size": "46mm",
-      "case_material": "46mm Shock Armour",
-      "dial_color": "Champagne Gold",
-      "strap_material": "Silicone",
-      "strap_color": "Black",
-      "water_resistance": "3 ATM / IP68",
-      "battery_life": "Up to 7 Days (Active)",
-      "glass": "Sapphire / Hardlex Scratch-Resistant Crystal",
-      "display_type": "AMOLED",
-      "warranty": "1 Year Brand Warranty",
-      "origin": "India / Japan / Switzerland / USA"
-    },
     "reviews": [
       {
-        "id": "rev-28-1",
-        "reviewer_name": "Siddharth Rao",
+        "id": "rev-ft-14",
         "rating": 5,
-        "date": "2026-08-20",
+        "date": "2026-05-10",
+        "title": "Masterpiece automatic watch",
+        "comment": "Seeing the balance wheel oscillate is mesmerizing. High-end craft.",
         "verified_purchase": true,
-        "title": "Exceptional build and authentic quality for Fastrack Surge Rugged Outdoor!",
-        "comment": "Purchased this Fastrack Surge Rugged Outdoor (38087PP01). The dial finishing, accuracy, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 25
-      },
-      {
-        "id": "rev-28-2",
-        "reviewer_name": "Rishabh Verma",
-        "rating": 5,
-        "date": "2026-08-02",
-        "verified_purchase": true,
-        "title": "Clean finish and perfect daily companion",
-        "comment": "Very satisfied with the purchase. Official packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "reviewer_name": "Karan V.",
+        "helpful_votes": 12
       }
+    ],
+    "price_rupees": 12495,
+    "original_price_rupees": 15995,
+    "review_count": 136,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Mechanical Automatic Calibre engineering",
+      "50m water resistance rating"
+    ]
+  },
+  {
+    "id": "chronova-028-b",
+    "name": "Fastrack Stunners Green Dial Silver Stainless Steel Strap",
+    "brand": "Fastrack",
+    "model": "Stunners 3259SM01",
+    "series": "Stunners",
+    "discount_percent": 22,
+    "category": "Analog Watches",
+    "gender": "Men",
+    "vibe": "Everyday",
+    "rating": 4.6,
+    "badge": "POPULAR",
+    "is_bestseller": false,
+    "description": "Fastrack Stunners with emerald green sunburst dial and solid silver stainless steel strap.",
+    "specs": {
+      "movement": "Quartz Analog",
+      "case_material": "Stainless Steel",
+      "case_thickness": "9.5 mm",
+      "strap_material": "Stainless Steel",
+      "strap_color": "Silver",
+      "dial_color": "Emerald Green",
+      "water_resistance": "50m",
+      "case_size": "42 mm",
+      "battery_life": "2-3 Years (Quartz)",
+      "warranty": "2 Years International",
+      "glass": "Mineral Glass"
+    },
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Green / Silver",
+        "hex": "#059669"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-ft-15",
+        "rating": 5,
+        "date": "2026-05-02",
+        "title": "Vibrant emerald green dial",
+        "comment": "Perfect fit, solid clasp and looks far more expensive than \u20b92,695.",
+        "verified_purchase": true,
+        "reviewer_name": "Tanmay H.",
+        "helpful_votes": 12
+      }
+    ],
+    "price_rupees": 2695,
+    "original_price_rupees": 3495,
+    "review_count": 82,
+    "in_stock": true,
+    "stock_status": "In Stock",
+    "currency": "INR",
+    "highlights": [
+      "Official Fastrack warranty and authentic design",
+      "Precision Quartz Analog engineering",
+      "50m water resistance rating"
     ]
   },
   {

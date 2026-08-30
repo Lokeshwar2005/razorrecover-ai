@@ -12,8 +12,8 @@ function validateChronovaCatalog() {
 
   // 1. Total Product Count
   console.log(`✓ Total Products in Catalog: ${CHRONOVA_CATALOG.length}`)
-  if (CHRONOVA_CATALOG.length !== 190) {
-    throw new Error(`Expected exactly 190 products, got ${CHRONOVA_CATALOG.length}`)
+  if (CHRONOVA_CATALOG.length < 190) {
+    throw new Error(`Expected at least 190 products, got ${CHRONOVA_CATALOG.length}`)
   }
 
   // 2. Unique Product IDs

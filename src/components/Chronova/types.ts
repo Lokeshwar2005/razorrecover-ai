@@ -53,6 +53,7 @@ export interface WatchReview {
 export interface WatchSpecs {
   movement: string
   case_size: string
+  case_thickness?: string
   case_material: string
   dial_color: string
   strap_material: string
