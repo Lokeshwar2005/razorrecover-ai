@@ -15,6 +15,8 @@ import { RecoveryAnalyticsView } from './components/Analytics/RecoveryAnalyticsV
 import { PolicySettingsView } from './components/Settings/PolicySettingsView'
 import { AuditComplianceCenter } from './components/Audit/AuditComplianceCenter'
 import { AgentTrace2 } from './components/Trace/AgentTrace2'
+import { AcmeMerchantPortal } from './components/MerchantPortal/AcmeMerchantPortal'
+import { DualSandboxView } from './components/MerchantPortal/DualSandboxView'
 import { GraphTransactionContext } from './types/graph'
 import { createTransaction, type RecoveryDirection } from './recoveryEngine'
 import { useTransactionStore } from './services/canonicalTransactionStore'
@@ -186,6 +188,8 @@ const detectViewFromUrl = (): string => {
   if (full.includes('audit')) return 'Audit'
   if (full.includes('simulation')) return 'Simulation'
   if (full.includes('agent-trace') || full.includes('trace')) return 'Agent trace'
+  if (full.includes('merchant-portal') || full.includes('acme-store') || full.includes('acme')) return 'Merchant Portal'
+  if (full.includes('dual-sandbox') || full.includes('sandbox')) return 'Dual Sandbox'
   return 'Overview'
 }
 
@@ -550,6 +554,8 @@ function App() {
       Overview: '',
       Simulation: 'simulation',
       'Agent trace': 'agent-trace',
+      'Merchant Portal': 'merchant-portal',
+      'Dual Sandbox': 'dual-sandbox',
     }
     const slug = slugMap[newTab] ?? ''
     const basePath = window.location.pathname.includes('/razorrecover-ai') ? '/razorrecover-ai/' : '/'
@@ -644,6 +650,29 @@ function App() {
               )}
             </div>
 
+            {/* Website A / Dual Sandbox Live Demo Button */}
+            <button
+              className={`dualSandboxNav ${tab === 'Dual Sandbox' || tab === 'Merchant Portal' ? 'active' : ''}`}
+              onClick={() => navigateToTab('Dual Sandbox')}
+              style={{
+                background: 'linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%)',
+                color: '#ffffff',
+                border: '1px solid #38bdf8',
+                borderRadius: '8px',
+                padding: '7px 12px',
+                fontSize: '12px',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                boxShadow: '0 0 12px rgba(56, 189, 248, 0.25)',
+              }}
+            >
+              <span>⚡</span>
+              <span>Dual Sandbox (Live Demo)</span>
+            </button>
+
             <button className={`judgeNav ${judgeMode ? 'active' : ''}`} onClick={startJudgeDemo}>
               ▶ Judge Demo
             </button>
@@ -668,6 +697,12 @@ function App() {
                 {item.label}
               </button>
             ))}
+            <button
+              className={tab === 'Dual Sandbox' || tab === 'Merchant Portal' ? 'active' : ''}
+              onClick={() => navigateToTab('Dual Sandbox')}
+            >
+              ⚡ Dual Sandbox
+            </button>
             {advancedNavItems.map((item) => (
               <button className={tab === item.tab ? 'active' : ''} onClick={() => navigateToTab(item.tab)} key={item.tab}>
                 {item.label}
@@ -688,6 +723,30 @@ function App() {
       {tab === 'Policies' && <PolicySettingsView />}
       {tab === 'Audit' && <AuditComplianceCenter />}
       {tab === 'Agent trace' && <AgentTrace2 />}
+
+      {tab === 'Merchant Portal' && (
+        <AcmeMerchantPortal
+          onNavigateToRazorRecover={(targetTab, txnId) => {
+            if (targetTab) navigateToTab(targetTab)
+            if (txnId) useTransactionStore.getState().setSelectedTransactionId(txnId)
+          }}
+        />
+      )}
+
+      {tab === 'Dual Sandbox' && (
+        <DualSandboxView
+          renderRazorRecover={(targetTab, txnId) => {
+            if (txnId && useTransactionStore.getState().selectedTransactionId !== txnId) {
+              useTransactionStore.getState().setSelectedTransactionId(txnId)
+            }
+            if (targetTab === 'Opportunities') return <OpportunityQueue />
+            if (targetTab === 'Transactions') return <TransactionExplorer />
+            if (targetTab === 'Audit') return <AuditComplianceCenter />
+            if (targetTab === 'Analytics') return <RecoveryAnalyticsView />
+            return <MerchantDashboard />
+          }}
+        />
+      )}
 
       {/* Main Core View (Overview / Simulation) */}
       {(tab === 'Overview' || tab === 'Simulation') && (

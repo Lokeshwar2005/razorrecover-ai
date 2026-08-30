@@ -30,6 +30,9 @@ const routes = [
   'agent-trace',
   'judge-demo',
   'overview',
+  'merchant-portal',
+  'acme-store',
+  'dual-sandbox',
 ]
 
 // 1. Create 404.html for GitHub Pages SPA fallback

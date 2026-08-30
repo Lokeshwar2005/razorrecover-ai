@@ -493,6 +493,7 @@ export interface CanonicalStoreState {
   setScenario: (scenario: 'balanced' | 'checkout' | 'degradation') => void
   setSelectedTransactionId: (id: string | null) => void
   ingestProviderPayments: (payments: RawProviderPayment[], isLive?: boolean) => void
+  ingestTransaction: (txn: CanonicalTransaction) => void
   refreshProviderFeed: () => Promise<void>
   updateTransactionStatus: (
     id: string,
@@ -809,6 +810,13 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         transactions: merged,
         providerFeedStatus: 'connected',
       })
+    },
+
+    ingestTransaction: (txn: CanonicalTransaction) => {
+      const existingMap = new Map(get().transactions.map((t) => [t.id, t]))
+      existingMap.set(txn.id, txn)
+      set({ transactions: Array.from(existingMap.values()) })
+      savePersistedTransactionState(txn.id, txn)
     },
 
     refreshProviderFeed: async () => {
