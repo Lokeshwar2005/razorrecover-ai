@@ -13,6 +13,7 @@ import type {
   WatchBrand,
   WatchCategory,
   WatchVibe,
+  AppliedCoupon,
 } from './types'
 import { ProductCard } from './ProductCard'
 import { ProductDetailModal } from './ProductDetailModal'
@@ -69,6 +70,12 @@ export const ChronovaStore: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState<ChronovaProduct | null>(null)
   const [quickViewProduct, setQuickViewProduct] = useState<ChronovaProduct | null>(null)
   const [cartItems, setCartItems] = useState<CartItem[]>([])
+  const [appliedCoupon, setAppliedCoupon] = useState<AppliedCoupon | null>({
+    code: 'CHRONOVA10',
+    discountPercent: 10,
+    description: '10% Welcome Discount',
+  })
+  const [isMoreDropdownOpen, setIsMoreDropdownOpen] = useState<boolean>(false)
   const [wishlistIds, setWishlistIds] = useState<Set<string>>(new Set())
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false)
   const [isCheckoutOpen, setIsCheckoutOpen] = useState<boolean>(false)
@@ -692,35 +699,144 @@ export const ChronovaStore: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation Bar with Category Mega Menu */}
-          <nav className="flex items-center justify-center gap-6 sm:gap-8 py-2.5 border-t border-slate-100 text-xs font-bold tracking-wider uppercase text-slate-700 overflow-x-auto scrollbar-none">
+          {/* Navigation Bar with Category Mega Menu & More Dropdown */}
+          <nav className="relative flex items-center justify-center gap-4 sm:gap-8 py-3 border-t border-slate-100 text-xs sm:text-sm font-black tracking-wider uppercase text-slate-700 overflow-visible">
             {[
               { id: 'WATCHES', label: 'WATCHES' },
               { id: 'SMART WATCHES', label: 'SMART WATCHES' },
               { id: 'NEW ARRIVALS', label: 'NEW ARRIVALS' },
               { id: 'BESTSELLERS', label: 'BESTSELLERS' },
               { id: 'COLLECTIONS', label: 'COLLECTIONS' },
-              { id: 'SALE', label: 'SALE', highlight: true },
-              { id: 'MORE', label: 'MORE' },
+              { id: 'SALE', label: '🔥 SALE (UP TO 60% OFF)', highlight: true },
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => {
                   setActiveNavTab(tab.id)
                   setWishlistOpenOnly(false)
+                  setIsMoreDropdownOpen(false)
+                  if (tab.id === 'SALE') {
+                    setSelectedDiscounts([20])
+                  }
                   setCurrentView('catalog')
                 }}
-                className={`transition cursor-pointer pb-1 whitespace-nowrap border-b-2 ${
+                className={`transition cursor-pointer pb-1.5 whitespace-nowrap border-b-2 ${
                   activeNavTab === tab.id
                     ? 'text-slate-900 border-slate-900 font-black'
                     : tab.highlight
-                    ? 'text-rose-600 border-transparent hover:border-rose-600'
+                    ? 'text-rose-600 border-transparent hover:border-rose-600 font-black'
                     : 'text-slate-600 border-transparent hover:text-slate-900 hover:border-slate-300'
                 }`}
               >
                 {tab.label}
               </button>
             ))}
+
+            {/* MORE DROPDOWN MENU */}
+            <div className="relative">
+              <button
+                onClick={() => setIsMoreDropdownOpen((prev) => !prev)}
+                className={`flex items-center gap-1.5 transition cursor-pointer pb-1.5 whitespace-nowrap border-b-2 ${
+                  isMoreDropdownOpen
+                    ? 'text-blue-700 border-blue-700 font-black'
+                    : 'text-slate-600 border-transparent hover:text-slate-900 hover:border-slate-300'
+                }`}
+              >
+                <span>MORE</span>
+                <span className="text-xs">{isMoreDropdownOpen ? '▲' : '▼'}</span>
+              </button>
+
+              {isMoreDropdownOpen && (
+                <div
+                  onMouseLeave={() => setIsMoreDropdownOpen(false)}
+                  className="absolute right-0 top-full mt-2 w-72 bg-white rounded-2xl border border-slate-200 shadow-2xl p-3 z-50 text-left normal-case space-y-1"
+                >
+                  <div className="px-3 py-1.5 text-[11px] font-mono font-bold uppercase text-slate-400">
+                    CURATED EXPLORATIONS
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setSelectedCategories(['Automatic Watches'])
+                      setIsMoreDropdownOpen(false)
+                      setCurrentView('catalog')
+                    }}
+                    className="w-full p-2.5 rounded-xl hover:bg-slate-50 flex items-center gap-3 transition cursor-pointer text-left"
+                  >
+                    <span className="text-lg">👑</span>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900">Luxury Automatics</div>
+                      <div className="text-[10px] text-slate-500">Seiko, Titan Grandmaster & Skeleton</div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setSelectedCategories(['Sports Watches', 'Outdoor Watches'])
+                      setIsMoreDropdownOpen(false)
+                      setCurrentView('catalog')
+                    }}
+                    className="w-full p-2.5 rounded-xl hover:bg-slate-50 flex items-center gap-3 transition cursor-pointer text-left"
+                  >
+                    <span className="text-lg">🏊</span>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900">Diver 200M & Sports</div>
+                      <div className="text-[10px] text-slate-500">Casio G-Shock, Citizen Promaster</div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setSelectedCategories(['Dress Watches'])
+                      setIsMoreDropdownOpen(false)
+                      setCurrentView('catalog')
+                    }}
+                    className="w-full p-2.5 rounded-xl hover:bg-slate-50 flex items-center gap-3 transition cursor-pointer text-left"
+                  >
+                    <span className="text-lg">🎁</span>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900">Couple & Wedding Sets</div>
+                      <div className="text-[10px] text-slate-500">Titan Bandhan & Sonata Gold</div>
+                    </div>
+                  </button>
+
+                  <div className="pt-2 border-t border-slate-100 px-3 py-1 text-[11px] font-mono font-bold uppercase text-slate-400">
+                    BENEFITS & DISCOUNTS
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      setIsMoreDropdownOpen(false)
+                      setIsCartOpen(true)
+                    }}
+                    className="w-full p-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 flex items-center gap-3 transition cursor-pointer border border-amber-200 text-left"
+                  >
+                    <span className="text-lg">🎟️</span>
+                    <div>
+                      <div className="text-xs font-bold text-amber-950">Active Promo Coupons</div>
+                      <div className="text-[10px] text-amber-800">Use CHRONOVA10 or WELCOME500</div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setIsMoreDropdownOpen(false)
+                      setIsAuthModalOpen(true)
+                    }}
+                    className="w-full p-2.5 rounded-xl hover:bg-slate-50 flex items-center gap-3 transition cursor-pointer text-left"
+                  >
+                    <span className="text-lg">🛡️</span>
+                    <div>
+                      <div className="text-xs font-bold text-slate-900">2-Year Doorstep Warranty</div>
+                      <div className="text-[10px] text-slate-500">Official Brand Service & Pickups</div>
+                    </div>
+                  </button>
+                </div>
+              )}
+            </div>
           </nav>
         </div>
       </header>
@@ -1059,6 +1175,37 @@ export const ChronovaStore: React.FC = () => {
             </button>
           </div>
 
+          {/* Sale Promotion Banner if on Sale Tab */}
+          {activeNavTab === 'SALE' && (
+            <div className="mb-6 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-rose-950 via-slate-900 to-amber-950 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-rose-800/40">
+              <div className="space-y-2 text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-600 text-white text-xs font-black uppercase font-mono tracking-wider">
+                  🔥 GRAND WATCH FESTIVAL SALE
+                </div>
+                <h2 className="text-2xl sm:text-4xl font-black tracking-tight uppercase">
+                  UP TO 60% OFF ON 190+ TIMEPIECES
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-2xl font-medium">
+                  Extra 10% instant checkout discount with coupon code <strong className="text-amber-400 font-mono">CHRONOVA10</strong> or flat ₹500 off with <strong className="text-amber-400 font-mono">WELCOME500</strong>.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2.5 shrink-0">
+                <button
+                  onClick={() => setSelectedDiscounts([20])}
+                  className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-black uppercase tracking-wider border border-white/20 transition cursor-pointer"
+                >
+                  20%+ OFF DEALS
+                </button>
+                <button
+                  onClick={() => setSelectedDiscounts([30])}
+                  className="px-5 py-3 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-black uppercase tracking-wider transition cursor-pointer shadow-md"
+                >
+                  30%+ MEGA SAVERS
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Catalog Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-200 gap-4">
             <div>
@@ -1338,6 +1485,8 @@ export const ChronovaStore: React.FC = () => {
           setCartItems((prev) => prev.filter((i) => i.product.id !== id))
         }}
         onProceedToCheckout={() => setIsCheckoutOpen(true)}
+        appliedCoupon={appliedCoupon}
+        onApplyCoupon={setAppliedCoupon}
       />
 
       <CheckoutModal
@@ -1345,6 +1494,8 @@ export const ChronovaStore: React.FC = () => {
         onClose={() => setIsCheckoutOpen(false)}
         items={cartItems}
         onClearCart={() => setCartItems([])}
+        appliedCoupon={appliedCoupon}
+        onApplyCoupon={setAppliedCoupon}
       />
 
       <CustomerAuthModal

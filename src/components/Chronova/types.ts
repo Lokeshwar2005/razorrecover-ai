@@ -127,3 +127,11 @@ export interface ShippingAddress {
   state: string
   pincode: string
 }
+
+export interface AppliedCoupon {
+  code: string
+  discountPercent?: number
+  flatDiscount?: number
+  description: string
+}
+

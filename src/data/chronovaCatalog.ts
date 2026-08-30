@@ -30,20 +30,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -53,12 +53,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -127,35 +127,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -224,35 +224,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -321,35 +321,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -418,35 +418,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -515,35 +515,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -615,8 +615,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -630,12 +630,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -709,35 +709,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -806,35 +806,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -903,35 +903,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1000,35 +1000,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1097,35 +1097,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1194,35 +1194,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1291,35 +1291,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1388,35 +1388,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1485,20 +1485,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -1508,12 +1508,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1582,35 +1582,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1679,35 +1679,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1779,8 +1779,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -1794,12 +1794,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -1873,35 +1873,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1970,25 +1970,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -1998,7 +1998,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2067,35 +2067,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2164,35 +2164,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2261,35 +2261,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2358,35 +2358,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2455,35 +2455,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2552,35 +2552,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2649,35 +2649,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2746,35 +2746,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CASIO_G-Shock.jpg/960px-CASIO_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CASIO_G-Shock.jpg/960px-CASIO_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CASIO_G-Shock.jpg/960px-CASIO_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CASIO_G-Shock.jpg/960px-CASIO_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CASIO_G-Shock.jpg/960px-CASIO_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/CASIO_G-Shock.jpg/960px-CASIO_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2843,35 +2843,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/CASIO_G-Shock_GW-M5610U.jpg/960px-CASIO_G-Shock_GW-M5610U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2940,35 +2940,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/CASIO_G-Shock_red_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3037,35 +3037,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG/960px-Casio_G-SHOCK_FROGMAN_GWF-1000BP-1JF_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3134,35 +3134,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Casio_G-Shock_DW-5600E_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3231,35 +3231,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg/960px-Casio_G-Shock_GA-100%2C_digital_and_analog_watch_%28from_2010%2C_photographed_in_2023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3328,35 +3328,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg/960px-Casio_G-Shock_GW-9400-1ER_%27Rangeman%27_-_triple_sensor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3425,35 +3425,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Casio_G-Shock_analog-digital_watch.jpeg/960px-Casio_G-Shock_analog-digital_watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3522,35 +3522,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casio_G-Shock_first_model.jpg/960px-Casio_G-Shock_first_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3619,35 +3619,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg/960px-Casio_G-Shock_watches_in_a_shop_display_in_Germany_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3716,35 +3716,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/CASIO_EDFICE_WR_100M_%283%29.jpg/960px-CASIO_EDFICE_WR_100M_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3813,35 +3813,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Casio_Edifice_EFR-529_%281%29.jpg/960px-Casio_Edifice_EFR-529_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3910,35 +3910,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg/960px-Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg/960px-Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Casio_Edifice_EFR-529_%282%29.jpg/960px-Casio_Edifice_EFR-529_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4007,35 +4007,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg/960px-Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Casio_Edifice_WR100M%2C_1811051918%2C_ako.jpg/960px-Casio_Edifice_WR100M%2C_1811051918%2C_ako.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg/960px-Casio_Edifice_EQB-1100D-1A_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Casio_Edifice_WR100M%2C_1811051918%2C_ako.jpg/960px-Casio_Edifice_WR100M%2C_1811051918%2C_ako.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg/960px-Casio_Edifice_EFR-529_%282%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4104,35 +4104,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg/960px-1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg/960px-1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg/960px-1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg/960px-1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg/960px-1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg/960px-1976_Timex_SSQ_LED_Watch_%28Montgomery_Ward%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4201,35 +4201,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg/960px-Timex_Ironman_Triathlon_Watch_-_1st_Generation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4298,35 +4298,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Timex_Triathlon_Watch.jpg/960px-Timex_Triathlon_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4395,35 +4395,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Timex_Wrist_Watch.jpg/960px-Timex_Wrist_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4492,35 +4492,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Timex_watch_disassembly_03504.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4589,35 +4589,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg/960px-Vintage_Timex_Electric_Watch%2C_Model_67%2C_Made_in_West_Germany_%288663522689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4686,35 +4686,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810798545406%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4783,35 +4783,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg/960px-Vintage_Timex_Men%27s_Electronic_LED_Watch%2C_Red_Face%2C_Goldtone_Finish%2C_Circa_1970s_%2810798553975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4880,35 +4880,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601016653%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4977,35 +4977,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg/960px-Vintage_Timex_Woman%27s_Electronic_LED_Watch%2C_Circa_1970s_%2810601030783%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5074,35 +5074,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TIMEX_IRONMAN_%22coen%22.jpg/960px-TIMEX_IRONMAN_%22coen%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5171,35 +5171,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Timex_20thaniv_watch2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5268,35 +5268,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Timex_Ironman_Triathlon_Datalink.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Timex_Ironman_Triathlon_Datalink.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Timex_Ironman.jpg/960px-Timex_Ironman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5365,35 +5365,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Timex_Ironman_Triathlon_Datalink.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/3/3b/Timex_Ironman_Triathlon_Datalink_velcro_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Timex_Ironman_Triathlon_Datalink.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Timex_Ironman_Triathlon_Datalink_velcro_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Timex_Ironman_Indiglo_backlight.jpg/960px-Timex_Ironman_Indiglo_backlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5462,35 +5462,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG/960px-Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG/960px-Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG/960px-Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG/960px-Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG/960px-Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG/960px-Adidas_ADH-9047_Stan_Smith_Limited_Edition_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5559,35 +5559,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Adidas_HSD-602.jpg/960px-Adidas_HSD-602.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5656,35 +5656,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Fossil_Blue.jpg/960px-Fossil_Blue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5753,35 +5753,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fossil_Wrist_PDA_on_wrist.JPG/960px-Fossil_Wrist_PDA_on_wrist.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5850,35 +5850,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fossil_men.jpg/960px-Fossil_men.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5947,35 +5947,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Fossil_wrist_watch_2022.jpg/960px-Fossil_wrist_watch_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6044,35 +6044,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Fossil_wristwatch_with_white_background.jpg/960px-Fossil_wristwatch_with_white_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6141,35 +6141,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Skagen_Denmark.jpg/960px-Skagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6238,35 +6238,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wristwatch_on_hand.JPG/960px-Wristwatch_on_hand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6335,35 +6335,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf/page1-500px-Cornell_University_Library_digitization_%28IA_cu31924029283863%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6432,35 +6432,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Fossilch2356.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6529,35 +6529,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf/page1-500px-President%27s_anniversary_address_for_1864_%28IA_Presidentquotsa00McCo%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6626,35 +6626,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf/page1-960px-The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf/page1-960px-The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf/page1-500px-Proceedings_of_the_Royal_Society_of_Victoria_%28IA_proceedingsofroy07roya%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6723,35 +6723,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf/page1-960px-The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_American_journal_of_science_%28IA_americanjourna3481894newh%29.pdf/page1-500px-The_American_journal_of_science_%28IA_americanjourna3481894newh%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf/page1-960px-The_American_journal_of_science._%28IA_mobot31753002152806%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_American_journal_of_science_%28IA_americanjourna3481894newh%29.pdf/page1-500px-The_American_journal_of_science_%28IA_americanjourna3481894newh%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf/page1-960px-Report_of_commissioner_to_attend_the_Universal_Exposition_of_1867%2C_at_Paris%2C_France_%28IA_reportcommissio00hage%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6820,35 +6820,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6917,35 +6917,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7014,35 +7014,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7111,35 +7111,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7208,35 +7208,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7305,35 +7305,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7402,35 +7402,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7499,35 +7499,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7596,35 +7596,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7693,35 +7693,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7790,35 +7790,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7887,35 +7887,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7984,35 +7984,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8081,35 +8081,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8178,35 +8178,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Blue_Seiko_5_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/c/c9/Blue_Seiko_5_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Blue_Seiko_5_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Blue_Seiko_5_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Blue_Seiko_5_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Blue_Seiko_5_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8275,35 +8275,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Seiko-5-blue-gold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8372,35 +8372,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Seiko_5.jpg/960px-Seiko_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8469,35 +8469,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Seiko_5_%2832249505%29.jpeg/960px-Seiko_5_%2832249505%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8566,35 +8566,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Seiko_5_2_%2833116381%29.jpeg/960px-Seiko_5_2_%2833116381%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8663,35 +8663,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seiko_5_Atlas.JPG/960px-Seiko_5_Atlas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8760,35 +8760,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seiko_5_Introduction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8857,35 +8857,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Seiko_5_SNKA23_watch.JPG/960px-Seiko_5_SNKA23_watch.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8954,35 +8954,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Seiko_5_Sports_SNZH53K1.jpg/960px-Seiko_5_Sports_SNZH53K1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9051,35 +9051,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Seiko_stopwatch_at_Suginami_Animation_Museum.jpg/960px-Seiko_stopwatch_at_Suginami_Animation_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9148,35 +9148,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/SBDX001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9245,35 +9245,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Saint_Peter%27s_Parish%2C_Keokuk%2C_Iowa%2C_1832-1929._A_history%2C_dedicated_to_The_Right_Reverend_Monsignor_James_W._Gillespie%2C_D.P.V.F.%2C_October_27%2C_1929_%28IA_saintpetersparis00grif%29.pdf/page1-960px-thumbnail.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9342,35 +9342,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg/960px-Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg/960px-Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Seiko-skx013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9439,35 +9439,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg/960px-Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seiko_Automatic_Diver%27s_200m.jpg/960px-Seiko_Automatic_Diver%27s_200m.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg/960px-Seiko_AGS_SCUBA_Diver_200m_5M23-6A60%2C_1993.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seiko_Automatic_Diver%27s_200m.jpg/960px-Seiko_Automatic_Diver%27s_200m.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG/960px-Seiko_7002-7020_Diver%27s_200_m_on_a_4-ring_NATO_style_strap.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9536,35 +9536,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9633,35 +9633,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9730,35 +9730,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_01_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9827,35 +9827,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG/960px-Citizen_Attesa_Eco-Drive_ATV53-3023_02.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9924,35 +9924,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg/960px-Citizen_Diver%27s_200m_Eco_Drive_-_Diving_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10021,35 +10021,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28cropped_to_watch_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10118,35 +10118,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg/960px-Citizen_Eco-Drive_Diver%27s_200m_-_Diving_watch_%28without_background%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10215,35 +10215,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Citizen_Eco-Drive_Titanium_Sapphire.jpg/960px-Citizen_Eco-Drive_Titanium_Sapphire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10312,35 +10312,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Citizen_EcoDrive_RC_noBg.jpg/960px-Citizen_EcoDrive_RC_noBg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10409,35 +10409,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg/960px-Citizen_Promaster_Eco-Drive_AP0440-14F_Diver%27s_200_m_%28edited%2C_cropped_to_casing%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10506,35 +10506,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg/960px-2005111503_Citizen_Promaster_3510-353056_seitliche_Ansicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10603,35 +10603,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg/960px-2005111504_Citizen_Promaster_3510-353056_schraege_Draufsicht_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10700,35 +10700,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg/960px-Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg/960px-Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg/960px-2007111501_Citizen_Promaster_3510-353056_liegend_dunkler_Hintergrund_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10797,35 +10797,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg/960px-Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Citizen_Promaster_3510-353056_analog_chronograph_watch_made_from_titanium%2C_2007_%28turned_upright_and_cropped%29.jpg/960px-Citizen_Promaster_3510-353056_analog_chronograph_watch_made_from_titanium%2C_2007_%28turned_upright_and_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg/960px-Citizen_Aqualand_Promaster_JP1010_diving_watch_with_depth_gauge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Citizen_Promaster_3510-353056_analog_chronograph_watch_made_from_titanium%2C_2007_%28turned_upright_and_cropped%29.jpg/960px-Citizen_Promaster_3510-353056_analog_chronograph_watch_made_from_titanium%2C_2007_%28turned_upright_and_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg/960px-CitizenTitan-Chronograf_Promaster_3510-353056_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10894,25 +10894,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -10922,7 +10922,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10991,35 +10991,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11088,35 +11088,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11185,35 +11185,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11282,35 +11282,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11382,7 +11382,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
@@ -11397,12 +11397,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -11476,35 +11476,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11576,8 +11576,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -11591,12 +11591,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -11670,35 +11670,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11767,35 +11767,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11864,35 +11864,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11961,35 +11961,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12058,35 +12058,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12155,35 +12155,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12252,35 +12252,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12349,35 +12349,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12446,35 +12446,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1524805444758-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12543,35 +12543,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12640,35 +12640,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Forerunner_265.jpg/960px-Forerunner_265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Forerunner_265.jpg/960px-Forerunner_265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Forerunner_265.jpg/960px-Forerunner_265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Forerunner_265.jpg/960px-Forerunner_265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Forerunner_265.jpg/960px-Forerunner_265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Forerunner_265.jpg/960px-Forerunner_265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12737,35 +12737,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forerunner_945_Music.jpg/960px-Forerunner_945_Music.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12834,35 +12834,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Garmin_Forerunner_101-1862.jpg/960px-Garmin_Forerunner_101-1862.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12931,35 +12931,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Garmin_Forerunner_101-1863.jpg/960px-Garmin_Forerunner_101-1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13028,35 +13028,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Garmin_Forerunner_101-1864.jpg/960px-Garmin_Forerunner_101-1864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13125,35 +13125,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Garmin_Forerunner_101-92243.jpg/960px-Garmin_Forerunner_101-92243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13222,35 +13222,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Garmin_Forerunner_101-92244.jpg/960px-Garmin_Forerunner_101-92244.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13319,35 +13319,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Garmin_Forerunner_101_-_case_opened-92618.jpg/960px-Garmin_Forerunner_101_-_case_opened-92618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13416,35 +13416,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Garmin_GPS_Watch_%284184448251%29.jpg/960px-Garmin_GPS_Watch_%284184448251%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Garmin_GPS_Watch_%284184448251%29.jpg/960px-Garmin_GPS_Watch_%284184448251%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Garmin_Forerunner_265_musicG.jpg/960px-Garmin_Forerunner_265_musicG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13513,35 +13513,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Garmin_GPS_Watch_%284184448251%29.jpg/960px-Garmin_GPS_Watch_%284184448251%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Garmin_GPS_Watch_%284185094760%29.jpg/960px-Garmin_GPS_Watch_%284185094760%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Garmin_GPS_Watch_%284184448251%29.jpg/960px-Garmin_GPS_Watch_%284184448251%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Garmin_GPS_Watch_%284185094760%29.jpg/960px-Garmin_GPS_Watch_%284185094760%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13610,35 +13610,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13707,35 +13707,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg/960px-Back_side_Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13804,35 +13804,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/OJ_L_202400964_of_2024_-_DE_German.pdf/page1-960px-OJ_L_202400964_of_2024_-_DE_German.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13901,35 +13901,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OJ_L_202400964_of_2024_-_PL_Polish.pdf/page1-960px-OJ_L_202400964_of_2024_-_PL_Polish.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13998,35 +13998,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14095,35 +14095,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg/960px-Samsung_Galaxy_Z_Fold8_Ultra_5G_2026-08-09_Samsung_Galaxy_Watch_Ultra_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14192,35 +14192,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/AndroidWearSmartWatch.jpg/960px-AndroidWearSmartWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14289,35 +14289,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14386,35 +14386,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf/page1-500px-Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf/page1-500px-Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Android_Wear_on_the_plane_%2815756566911%29.jpg/960px-Android_Wear_on_the_plane_%2815756566911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14483,35 +14483,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf/page1-500px-Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Football_and_how_to_watch_it_%28IA_footballhowtowat00haug%29.pdf/page1-500px-Football_and_how_to_watch_it_%28IA_footballhowtowat00haug%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf/page1-500px-Football_and_how_to_watch_it_%28IA_cu31924029901992%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Football_and_how_to_watch_it_%28IA_footballhowtowat00haug%29.pdf/page1-500px-Football_and_how_to_watch_it_%28IA_footballhowtowat00haug%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf/page1-960px-Catalogue_of_Waltham_watch_material_%28IA_catalogueofwalth00walt%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14580,35 +14580,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu/page1-960px-Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu/page1-960px-Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu/page1-960px-Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu/page1-960px-Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu/page1-960px-Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu/page1-960px-Os_Lus%C3%ADadas_%28Cam%C3%B5es%2C_tr._Burton%2C_1880%29%2C_Volume_1.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14677,35 +14677,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf/page1-960px-Scotch_all-wool_unshrinkable_under_wear_%28IA_b33415213%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14774,35 +14774,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Swr50.png/960px-Swr50.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14871,35 +14871,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/What_to_wear%3F_%28IA_whattowear00phel%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -14968,35 +14968,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf/page1-500px-What_to_wear%3F_%28IA_whattowear00phel_0%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15065,35 +15065,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/What_to_wear_%28IA_whattowear00phel_1%29.pdf/page1-500px-What_to_wear_%28IA_whattowear00phel_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15162,35 +15162,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Android_Wear_Ekran_G%C3%B6r%C3%BCnt%C3%BCs%C3%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15259,35 +15259,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2814865176408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15356,35 +15356,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg/960px-Android_Wear_Smartwatch-_LG_G_Watch_and_Samsung_Gear_Live_%2815048710851%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15453,35 +15453,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108990%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108990%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108510%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108990%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865108990%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg/960px-Android_Wear_Smartwatch-_Samsung_Gear_Live_%2814865042019%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15550,35 +15550,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15647,35 +15647,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf/page1-960px-Human-centred_artificial_intelligence_for_mobile_health_sensing_-_challenges_and_opportunities.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15744,35 +15744,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Samsung_Galaxy_Watch_Active2.jpg/960px-Samsung_Galaxy_Watch_Active2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15841,35 +15841,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Samsung_Galaxy_Watch_Active2_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15938,35 +15938,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Smartwatch.png/960px-Smartwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16035,35 +16035,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Smartwatch_%26_Smartphone.jpeg/960px-Smartwatch_%26_Smartphone.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16132,35 +16132,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Smartwatch_%26_Smartphone.jpg/960px-Smartwatch_%26_Smartphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16229,35 +16229,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/The_Black_Cat_v04no09_%281899-06%29.djvu/page1-500px-The_Black_Cat_v04no09_%281899-06%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16326,35 +16326,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/The_Black_Cat_v21no07_%281916-04%29.djvu/page1-500px-The_Black_Cat_v21no07_%281916-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/The_Black_Cat_v21no07_%281916-04%29.djvu/page1-500px-The_Black_Cat_v21no07_%281916-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/The_Black_Cat_v10no08_%281905-05%29.djvu/page1-500px-The_Black_Cat_v10no08_%281905-05%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16423,35 +16423,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/The_Black_Cat_v21no07_%281916-04%29.djvu/page1-500px-The_Black_Cat_v21no07_%281916-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Smart_Set_%28Volume_14%29.djvu/page1-960px-The_Smart_Set_%28Volume_14%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/The_Black_Cat_v21no07_%281916-04%29.djvu/page1-500px-The_Black_Cat_v21no07_%281916-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Smart_Set_%28Volume_14%29.djvu/page1-960px-The_Smart_Set_%28Volume_14%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/The_Black_Cat_v19no07_%281914-04%29.djvu/page1-500px-The_Black_Cat_v19no07_%281914-04%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16520,35 +16520,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg/960px-LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg/960px-LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg/960px-LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg/960px-LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg/960px-LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg/960px-LG_G6%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16617,35 +16617,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg/960px-SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_S22_Ultra%2C_SAMSUNG_Galaxy_S10_5G.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16714,35 +16714,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg/960px-SAMSUNG_Galaxy_Watch%2C_SAMSUNG_Galaxy_Buds%2B%2C_SAMSUNG_Galaxy_S10_5G%2C_SAMSUNG_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16811,35 +16811,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/SAMSUNG_Galaxy_Watch_%282%29.jpg/960px-SAMSUNG_Galaxy_Watch_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16908,35 +16908,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/SAMSUNG_Galaxy_Watch_%283%29.jpg/960px-SAMSUNG_Galaxy_Watch_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17005,35 +17005,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SAMSUNG_Galaxy_Watch_%284%29.jpg/960px-SAMSUNG_Galaxy_Watch_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17102,35 +17102,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/SAMSUNG_Galaxy_Watch_%285%29.jpg/960px-SAMSUNG_Galaxy_Watch_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17199,35 +17199,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SAMSUNG_Galaxy_Watch_%286%29.jpg/960px-SAMSUNG_Galaxy_Watch_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17296,35 +17296,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png/960px-Samsung_Galaxy_A34_5G_20231122_HOF01948-HDR_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17393,35 +17393,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/SAMSUNG_Galaxy_Watch.jpg/960px-SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/SAMSUNG_Galaxy_Watch.jpg/960px-SAMSUNG_Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samsung_Galaxy_Watch_3.jpg/960px-Samsung_Galaxy_Watch_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17490,35 +17490,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Apple_Watch-.jpg/960px-Apple_Watch-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Apple_Watch-.jpg/960px-Apple_Watch-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Apple_Watch-.jpg/960px-Apple_Watch-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Apple_Watch-.jpg/960px-Apple_Watch-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Apple_Watch-.jpg/960px-Apple_Watch-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Apple_Watch-.jpg/960px-Apple_Watch-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17587,35 +17587,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Apple_Watch_8_with_Box.jpg/960px-Apple_Watch_8_with_Box.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17684,35 +17684,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg/960px-Apple_Watch_Series_4_40mm_space_gray_Aluminum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17781,35 +17781,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17878,35 +17878,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg/960px-Apple_Watch_Series_7%3B_January_2022_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17975,35 +17975,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apple_Watch_Series_7_Black_45mm.jpg/960px-Apple_Watch_Series_7_Black_45mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -18072,35 +18072,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Apple_Watch_Series_8.jpg/960px-Apple_Watch_Series_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -18169,35 +18169,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg/960px-Apple_Watch_Series_8_Midnight_Aluminium_Case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -18266,35 +18266,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf/page1-500px-Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf/page1-500px-Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Close_Up_of_Apple_Watch_8.jpg/960px-Close_Up_of_Apple_Watch_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -18363,35 +18363,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf/page1-500px-Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/AppleWatch_Series_4_Nike_40mm.jpg/960px-AppleWatch_Series_4_Nike_40mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "thumbnailImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf/page1-500px-Advanced_normal_course_syllabus%3B_%28IA_advancednormalco00clem%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/AppleWatch_Series_4_Nike_40mm.jpg/960px-AppleWatch_Series_4_Nike_40mm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg/960px-IPhone_11_Pro_%26_Apple_Watch_Series_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {

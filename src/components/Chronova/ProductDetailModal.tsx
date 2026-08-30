@@ -18,7 +18,6 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 }) => {
   if (!product) return null
 
-  // Ensure initial active image is strictly gallery[0] === primaryImage
   const [activeImageIndex, setActiveImageIndex] = useState<number>(0)
   const [selectedColor, setSelectedColor] = useState<string>(
     product.color_variants?.[0]?.name || 'Standard'
@@ -36,7 +35,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
       setDeliveryStatus('Please enter a valid 6-digit Indian PIN code.')
       return
     }
-    setDeliveryStatus(`✓ Express Delivery available to ${pincode} by Tomorrow, 5 PM. Free courier delivery.`)
+    setDeliveryStatus(`✓ Express Delivery available to ${pincode} by Tomorrow, 5 PM. Free insured courier delivery.`)
   }
 
   return (
@@ -45,7 +44,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         {/* Sticky Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center font-bold text-base transition shadow-sm cursor-pointer"
+          className="absolute top-5 right-5 z-20 w-11 h-11 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center font-bold text-base transition shadow-sm cursor-pointer"
           title="Close Product View"
         >
           ✕
@@ -56,12 +55,12 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             {/* LEFT COLUMN: Gallery Thumbnails + Large Studio Image */}
             <div className="lg:col-span-6 flex flex-col-reverse sm:flex-row gap-4 items-start">
               {/* Vertical Thumbnail List */}
-              <div className="flex sm:flex-col gap-2.5 overflow-x-auto sm:overflow-y-auto max-h-[460px] pb-2 sm:pb-0 scrollbar-none shrink-0">
+              <div className="flex sm:flex-col gap-3 overflow-x-auto sm:overflow-y-auto max-h-[500px] pb-2 sm:pb-0 scrollbar-none shrink-0">
                 {product.images.gallery.map((img, idx) => (
                   <button
                     key={idx}
                     onClick={() => setActiveImageIndex(idx)}
-                    className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border-2 bg-slate-50 p-1.5 overflow-hidden transition-all duration-200 cursor-pointer ${
+                    className={`w-20 h-20 rounded-2xl border-2 bg-slate-50 p-2 overflow-hidden transition-all duration-200 cursor-pointer ${
                       activeImageIndex === idx
                         ? 'border-slate-900 shadow-md ring-2 ring-slate-900/10'
                         : 'border-slate-200 hover:border-slate-400'
@@ -77,9 +76,9 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               </div>
 
               {/* Main Large Image Container */}
-              <div className="relative flex-1 aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-inner">
+              <div className="relative flex-1 aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-inner min-h-[320px] sm:min-h-[420px]">
                 {product.badge && (
-                  <span className="absolute top-4 left-4 z-10 px-3 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-black uppercase tracking-wider font-mono shadow-md">
+                  <span className="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-black uppercase tracking-wider font-mono shadow-md">
                     {product.badge}
                   </span>
                 )}
@@ -95,8 +94,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             <div className="lg:col-span-6 space-y-6">
               {/* Header Info */}
               <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 rounded-md bg-blue-50 text-blue-800 border border-blue-200 text-xs font-black font-mono uppercase tracking-wider">
+                <div className="flex items-center gap-2.5">
+                  <span className="px-3.5 py-1 rounded-lg bg-blue-50 text-blue-800 border border-blue-200 text-xs font-black font-mono uppercase tracking-wider">
                     {product.brand} Official
                   </span>
                   <span className="text-xs font-bold text-slate-500 font-mono">
@@ -109,69 +108,70 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 </h1>
 
                 <div className="flex items-center gap-3 pt-1">
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold font-mono">
+                  <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-50 text-amber-900 border border-amber-200 text-xs font-black font-mono">
                     <span>★ {product.rating}</span>
                   </div>
-                  <span className="text-xs font-semibold text-slate-500">
+                  <span className="text-xs font-bold text-slate-500">
                     ({product.review_count} Verified Customer Reviews)
                   </span>
-                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                  <span className="text-xs font-black text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
                     {product.stock_status}
                   </span>
                 </div>
               </div>
 
               {/* Pricing Section */}
-              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-1.5">
                 <div className="flex items-baseline gap-3">
-                  <span className="text-3xl font-black text-slate-900">
+                  <span className="text-3xl sm:text-4xl font-black text-slate-900">
                     ₹{product.price_rupees.toLocaleString('en-IN')}
                   </span>
                   {product.discount_percent > 0 && (
                     <>
-                      <span className="text-base text-slate-400 line-through font-semibold">
+                      <span className="text-lg text-slate-400 line-through font-semibold">
                         ₹{product.original_price_rupees.toLocaleString('en-IN')}
                       </span>
-                      <span className="text-sm font-black text-rose-600 font-mono">
+                      <span className="text-sm font-black text-rose-600 font-mono bg-rose-50 px-2 py-0.5 rounded border border-rose-200">
                         ({product.discount_percent}% OFF)
                       </span>
                     </>
                   )}
                 </div>
-                <div className="text-[11px] font-medium text-slate-500">
-                  Inclusive of all taxes · Free pan-India express courier shipping
+                <div className="text-xs font-semibold text-slate-500">
+                  Inclusive of all taxes · Free pan-India insured express delivery
                 </div>
               </div>
 
               {/* Bank & Coupon Offers Box */}
-              <div className="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 space-y-1.5 text-xs text-amber-900">
-                <div className="font-bold flex items-center gap-1.5">
-                  <span>🏷️ Special Bank & Promo Offers:</span>
+              <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200 space-y-2 text-xs text-amber-950">
+                <div className="font-black flex items-center gap-2 text-sm">
+                  <span>🏷️ Special Bank & Promo Coupons:</span>
                 </div>
-                <ul className="space-y-1 pl-4 list-disc text-[11px]">
-                  <li>Use code <strong className="font-mono bg-white px-1.5 py-0.5 rounded border border-amber-300">CHRONOVA10</strong> for extra 10% instant discount at checkout.</li>
-                  <li>Flat ₹500 off on all major Credit/Debit Cards & UPI via Razorpay.</li>
+                <ul className="space-y-1.5 pl-4 list-disc text-xs font-medium">
+                  <li>Use code <strong className="font-mono font-bold bg-white px-2 py-0.5 rounded border border-amber-300">CHRONOVA10</strong> for extra 10% instant discount at checkout.</li>
+                  <li>Use code <strong className="font-mono font-bold bg-white px-2 py-0.5 rounded border border-amber-300">WELCOME500</strong> for flat ₹500 off.</li>
+                  <li>Flat ₹500 instant cashback on all UPI & Credit Cards via Razorpay.</li>
                 </ul>
               </div>
 
               {/* Colorways Selector */}
               {product.color_variants && product.color_variants.length > 0 && (
-                <div className="space-y-2">
+                <div className="space-y-2.5">
                   <span className="text-xs font-bold text-slate-800">
-                    Selected Dial/Strap Finish: <strong className="text-slate-900 font-black">{selectedColor}</strong>
+                    Dial/Strap Finish: <strong className="text-slate-900 font-black">{selectedColor}</strong>
                   </span>
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-3">
                     {product.color_variants.map((c) => (
                       <button
                         key={c.name}
                         onClick={() => setSelectedColor(c.name)}
-                        className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-bold transition cursor-pointer ${
+                        className={`flex items-center gap-2 px-3.5 py-2 rounded-xl border text-xs font-bold transition cursor-pointer ${
                           selectedColor === c.name
                             ? 'border-slate-900 bg-slate-900 text-white shadow-xs'
                             : 'border-slate-300 bg-white text-slate-700 hover:border-slate-500'
                         }`}
                       >
-                        <span className="w-3.5 h-3.5 rounded-full border border-white" style={{ backgroundColor: c.hex }} />
+                        <span className="w-4 h-4 rounded-full border border-white" style={{ backgroundColor: c.hex }} />
                         <span>{c.name}</span>
                       </button>
                     ))}
@@ -185,16 +185,16 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   <div className="flex items-center border border-slate-300 rounded-xl bg-white overflow-hidden shadow-xs">
                     <button
                       onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                      className="px-3.5 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                      className="px-4 py-3 text-xs font-black text-slate-600 hover:bg-slate-100 transition cursor-pointer"
                     >
                       −
                     </button>
-                    <span className="px-4 py-2.5 text-xs font-black text-slate-900 font-mono">
+                    <span className="px-4 py-3 text-sm font-black text-slate-900 font-mono">
                       {quantity}
                     </span>
                     <button
                       onClick={() => setQuantity((q) => Math.min(5, q + 1))}
-                      className="px-3.5 py-2.5 text-xs font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                      className="px-4 py-3 text-xs font-black text-slate-600 hover:bg-slate-100 transition cursor-pointer"
                     >
                       +
                     </button>
@@ -205,7 +205,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       onAddToCart(product, quantity, selectedColor)
                       onClose()
                     }}
-                    className="flex-1 py-3.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer"
+                    className="flex-1 py-4 rounded-2xl bg-slate-900 hover:bg-blue-600 text-white text-xs sm:text-sm font-black uppercase tracking-wider transition shadow-md cursor-pointer"
                     style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                   >
                     ADD TO BAG
@@ -216,172 +216,158 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       onInstantBuy(product, quantity, selectedColor)
                       onClose()
                     }}
-                    className="flex-1 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer"
+                    className="flex-1 py-4 rounded-2xl bg-blue-700 hover:bg-blue-800 text-white text-xs sm:text-sm font-black uppercase tracking-wider transition shadow-md cursor-pointer"
                     style={{ color: "#ffffff", backgroundColor: "#1d4ed8" }}
                   >
-                    BUY NOW WITH RAZORPAY
+                    BUY NOW
                   </button>
                 </div>
               </div>
 
               {/* Pincode Delivery Check */}
-              <div className="pt-2">
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                <span className="text-xs font-bold text-slate-800">Check Delivery Timeline & COD:</span>
                 <form onSubmit={handleCheckDelivery} className="flex gap-2">
                   <input
                     type="text"
-                    maxLength={6}
                     value={pincode}
-                    onChange={(e) => setPincode(e.target.value)}
-                    placeholder="Enter 6-digit Pincode (e.g. 560001)"
-                    className="flex-1 px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-xs font-bold text-slate-900 focus:outline-none focus:border-slate-900"
+                    onChange={(e) => setPincode(e.target.value.replace(/\D/g, '').slice(0, 6))}
+                    placeholder="Enter 6-digit Indian PIN Code"
+                    className="flex-1 px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-xs font-mono text-slate-900 focus:outline-none focus:border-slate-900"
                   />
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold uppercase transition cursor-pointer"
+                    className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition cursor-pointer"
+                    style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                   >
-                    CHECK
+                    Check
                   </button>
                 </form>
                 {deliveryStatus && (
-                  <p className="text-xs text-slate-700 font-medium mt-2">
+                  <div className="text-xs font-bold text-emerald-800 bg-emerald-50 p-2.5 rounded-xl border border-emerald-200">
                     {deliveryStatus}
-                  </p>
+                  </div>
                 )}
               </div>
             </div>
           </div>
 
-          {/* LOWER SECTION: Full Specifications & Verified Reviews Accordions */}
+          {/* LOWER SECTION: Technical Specifications Tabs */}
           <div className="mt-12 pt-8 border-t border-slate-200">
-            {/* Tabs */}
-            <div className="flex items-center gap-4 sm:gap-8 border-b border-slate-200 overflow-x-auto pb-1 text-xs font-bold uppercase tracking-wider text-slate-500">
-              <button
-                onClick={() => setActiveTab('specs')}
-                className={`pb-2.5 transition cursor-pointer border-b-2 ${
-                  activeTab === 'specs' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
-                }`}
-              >
-                Specifications
-              </button>
-              <button
-                onClick={() => setActiveTab('features')}
-                className={`pb-2.5 transition cursor-pointer border-b-2 ${
-                  activeTab === 'features' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
-                }`}
-              >
-                Key Features
-              </button>
-              <button
-                onClick={() => setActiveTab('warranty')}
-                className={`pb-2.5 transition cursor-pointer border-b-2 ${
-                  activeTab === 'warranty' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
-                }`}
-              >
-                Warranty & Shipping
-              </button>
-              <button
-                onClick={() => setActiveTab('reviews')}
-                className={`pb-2.5 transition cursor-pointer border-b-2 ${
-                  activeTab === 'reviews' ? 'text-slate-900 border-slate-900 font-black' : 'border-transparent hover:text-slate-900'
-                }`}
-              >
-                Verified Customer Reviews ({product.reviews.length})
-              </button>
+            {/* Tabs Header */}
+            <div className="flex border-b border-slate-200 gap-4 sm:gap-8 overflow-x-auto scrollbar-none">
+              {[
+                { id: 'specs', label: 'SPECIFICATIONS' },
+                { id: 'features', label: 'HIGHLIGHTS & CRAFT' },
+                { id: 'warranty', label: '2-YEAR WARRANTY' },
+                { id: 'reviews', label: `REVIEWS (${product.reviews.length})` },
+                { id: 'faq', label: 'FAQS' },
+              ].map((t) => (
+                <button
+                  key={t.id}
+                  onClick={() => setActiveTab(t.id as any)}
+                  className={`pb-3 text-xs sm:text-sm font-black uppercase tracking-wider border-b-2 transition cursor-pointer whitespace-nowrap ${
+                    activeTab === t.id
+                      ? 'border-slate-900 text-slate-900'
+                      : 'border-transparent text-slate-500 hover:text-slate-900'
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
             </div>
 
             {/* Tab Contents */}
-            <div className="py-6 text-xs text-slate-700">
+            <div className="py-6">
               {activeTab === 'specs' && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-3">
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Movement Calibre:</span>
-                      <span className="font-black text-slate-900">{product.specs.movement}</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {Object.entries(product.specs).map(([key, val]) => (
+                    <div key={key} className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                      <span className="text-xs font-bold uppercase font-mono text-slate-500">
+                        {key.replace(/_/g, ' ')}
+                      </span>
+                      <p className="text-sm font-black text-slate-900">{val ? String(val) : 'N/A'}</p>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Case Dimension:</span>
-                      <span className="font-black text-slate-900">{product.specs.case_size}</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Case Material:</span>
-                      <span className="font-black text-slate-900">{product.specs.case_material}</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Dial Color:</span>
-                      <span className="font-black text-slate-900">{product.specs.dial_color}</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Water Resistance:</span>
-                      <span className="font-black text-slate-900">{product.specs.water_resistance}</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Strap Material:</span>
-                      <span className="font-black text-slate-900">{product.specs.strap_material}</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Glass Crystal:</span>
-                      <span className="font-black text-slate-900">{product.specs.glass || 'Sapphire Crystal'}</span>
-                    </div>
-                    <div className="flex justify-between py-2 border-b border-slate-100">
-                      <span className="font-semibold text-slate-500">Warranty:</span>
-                      <span className="font-black text-slate-900">{product.specs.warranty}</span>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               )}
 
               {activeTab === 'features' && (
                 <div className="space-y-4">
-                  <p className="leading-relaxed text-slate-600">{product.description}</p>
-                  <div className="space-y-2 pt-2">
-                    <h4 className="font-black text-slate-900 uppercase">Product Highlights</h4>
-                    <ul className="list-disc pl-5 space-y-1.5 text-slate-600">
-                      {product.highlights.map((h, i) => (
-                        <li key={i}>{h}</li>
-                      ))}
-                    </ul>
+                  <p className="text-sm text-slate-700 leading-relaxed font-medium">{product.description}</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    {product.highlights.map((h, i) => (
+                      <div key={i} className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <span className="text-emerald-700 font-bold text-base">✓</span>
+                        <span className="text-xs sm:text-sm font-bold text-slate-800">{h}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
 
               {activeTab === 'warranty' && (
-                <div className="space-y-4 leading-relaxed text-slate-600">
-                  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                    <h4 className="font-black text-slate-900 uppercase">100% Genuine Brand Warranty</h4>
-                    <p>All timepieces purchased through CHRONOVA include an official stamped manufacturer warranty card with pan-India authorized service centre coverage.</p>
-                  </div>
-                  <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                    <h4 className="font-black text-slate-900 uppercase">Free 7-Day Doorstep Replacement</h4>
-                    <p>If your watch arrives damaged or defective, request a free doorstep reverse pickup and replacement within 7 days of delivery.</p>
+                <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-4 text-xs sm:text-sm text-slate-700">
+                  <h4 className="text-base font-black text-slate-900">
+                    Official {product.brand} Doorstep Warranty & Protection
+                  </h4>
+                  <p className="font-medium">
+                    Every timepiece sold on Chronova is 100% genuine and comes directly with official manufacturer warranty coverage.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                    <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+                      <span className="text-xl">🛡️</span>
+                      <h5 className="font-black text-slate-900">2 Years Coverage</h5>
+                      <p className="text-xs text-slate-500">Complete internal movement and dial calibration warranty.</p>
+                    </div>
+                    <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+                      <span className="text-xl">🏡</span>
+                      <h5 className="font-black text-slate-900">Doorstep Pickup</h5>
+                      <p className="text-xs text-slate-500">Free courier pickup from your home for any service claims.</p>
+                    </div>
+                    <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+                      <span className="text-xl">📜</span>
+                      <h5 className="font-black text-slate-900">Official Certificate</h5>
+                      <p className="text-xs text-slate-500">Includes stamped warranty card and serialized authenticity seal.</p>
+                    </div>
                   </div>
                 </div>
               )}
 
               {activeTab === 'reviews' && (
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {product.reviews.map((rev) => (
-                    <div key={rev.id} className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <div key={rev.id} className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <span className="font-black text-slate-900">{rev.reviewer_name}</span>
-                          {rev.verified_purchase && (
-                            <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                              ✓ Verified Buyer
-                            </span>
-                          )}
+                          <span className="font-black text-sm text-slate-900">{rev.reviewer_name}</span>
+                          <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">
+                            Verified Buyer
+                          </span>
                         </div>
-                        <span className="text-slate-400 text-[11px]">{rev.date}</span>
+                        <span className="text-xs font-mono text-slate-400">{rev.date}</span>
                       </div>
-                      <div className="text-amber-500 font-bold">
-                        {'★'.repeat(rev.rating)}{'☆'.repeat(5 - rev.rating)}
+                      <div className="flex items-center gap-1 text-amber-500 text-sm">
+                        {'★'.repeat(rev.rating)}
+                        {'☆'.repeat(5 - rev.rating)}
                       </div>
-                      <h5 className="font-black text-slate-900">{rev.title}</h5>
-                      <p className="text-slate-600 leading-relaxed">{rev.comment}</p>
+                      <h5 className="font-black text-sm text-slate-900">{rev.title}</h5>
+                      <p className="text-xs sm:text-sm text-slate-600 font-medium">{rev.comment}</p>
                     </div>
                   ))}
+                </div>
+              )}
+
+              {activeTab === 'faq' && (
+                <div className="space-y-3">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                    <h5 className="font-black text-sm text-slate-900">Is this watch 100% genuine and original?</h5>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium">Yes, Chronova is an authorized retailer for {product.brand}. Every watch is shipped in original retail box with stamped manufacturer warranty.</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+                    <h5 className="font-black text-sm text-slate-900">What is the return and replacement policy?</h5>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium">We provide a 7-day hassle-free doorstep replacement or full refund policy in case of any sizing or manufacturing defect.</p>
+                  </div>
                 </div>
               )}
             </div>
