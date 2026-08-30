@@ -13,7 +13,7 @@ interface ProductCardProps {
   isWishlisted: boolean
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({
+export const ProductCard: React.FC<ProductCardProps> = React.memo(({
   product,
   onSelectProduct,
   onAddToCart,
@@ -21,16 +21,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onQuickView,
   isWishlisted,
 }) => {
-  const [imgSrc, setImgSrc] = useState<string>(product.images.primary)
   const [hasError, setHasError] = useState<boolean>(false)
+  const imgSrc = product.images.primary
 
   return (
-    <div className="group relative flex flex-col justify-between rounded-2xl bg-white border border-slate-200 hover:border-slate-400 hover:shadow-xl transition-all duration-300 overflow-hidden text-left shadow-xs">
+    <div className="group relative flex flex-col justify-between rounded-2xl bg-white border border-slate-200 hover:border-slate-400 hover:shadow-xl transition-all duration-300 overflow-hidden text-left shadow-xs will-change-transform">
       {/* Top Media Area */}
-      <div className="relative w-full h-64 sm:h-72 bg-gradient-to-b from-slate-50 to-white border-b border-slate-100 p-5 sm:p-6 flex items-center justify-center overflow-hidden">
+      <div className="relative w-full h-60 sm:h-72 bg-gradient-to-b from-slate-50 to-white border-b border-slate-100 p-4 sm:p-6 flex items-center justify-center overflow-hidden">
         {/* Badge (Top-Left) */}
         {product.badge && (
-          <span className="absolute top-3.5 left-3.5 z-10 px-3 py-1 rounded-md bg-slate-900 text-white text-xs font-black uppercase tracking-wider font-mono shadow-xs">
+          <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-slate-900 text-white text-[11px] font-black uppercase tracking-wider font-mono shadow-xs">
             {product.badge}
           </span>
         )}
@@ -41,7 +41,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             e.stopPropagation()
             onToggleWishlist(product)
           }}
-          className={`absolute top-3.5 right-3.5 z-10 w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-base shadow-xs transition hover:scale-110 cursor-pointer ${
+          className={`absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/95 backdrop-blur-xs border border-slate-200 flex items-center justify-center text-base shadow-xs transition hover:scale-110 cursor-pointer ${
             isWishlisted ? 'text-rose-600 bg-rose-50 border-rose-200' : 'text-slate-500 hover:text-rose-600'
           }`}
           title={isWishlisted ? 'Remove from Wishlist' : 'Add to Wishlist'}
@@ -64,6 +64,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               src={getAssetUrl(imgSrc)}
               alt={product.name}
               loading="lazy"
+              decoding="async"
               onError={() => setHasError(true)}
               className="max-h-full max-w-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300"
             />
@@ -144,4 +145,4 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       </div>
     </div>
   )
-}
+})
