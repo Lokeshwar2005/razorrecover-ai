@@ -872,6 +872,27 @@ export const OpportunityQueue: React.FC = () => {
               </div>
             )}
 
+            {/* Inline Feedback inside Inspector Drawer */}
+            {executionError && (
+              <div className="p-3 rounded-lg bg-[#ef4444]/15 border border-[#ef4444]/50 text-[#ef4444] text-xs font-mono flex items-center justify-between shadow-[0_0_15px_rgba(239,68,68,0.2)] animate-fade-in">
+                <div className="flex items-center gap-2">
+                  <span>⛔</span>
+                  <span>{executionError}</span>
+                </div>
+                <button onClick={() => setExecutionError(null)} className="text-xs text-[#a89f91] hover:text-white p-1">✕</button>
+              </div>
+            )}
+
+            {verifiedSuccess && (
+              <div className="p-3 rounded-lg bg-[#10b981]/20 border border-[#10b981]/60 text-[#10b981] text-xs font-mono flex items-center justify-between shadow-[0_0_20px_rgba(16,185,129,0.3)] animate-fade-in">
+                <div className="flex items-center gap-2">
+                  <span className="text-base">💰</span>
+                  <span className="font-bold">{verifiedSuccess}</span>
+                </div>
+                <button onClick={() => setVerifiedSuccess(null)} className="text-xs text-[#a89f91] hover:text-white p-1">✕</button>
+              </div>
+            )}
+
             {/* Action Execution Section */}
             {selectedOpp.status === 'RECOVERED' ? (
               <div className="space-y-2">
@@ -915,24 +936,54 @@ export const OpportunityQueue: React.FC = () => {
               >
                 ⛔ Recovery Blocked by Deterministic Safety Gate
               </button>
+            ) : selectedOpp.status === 'IN_PROGRESS' || selectedOpp.recovery_operation_id ? (
+              <div className="space-y-2.5">
+                <div className="p-3.5 rounded-lg bg-[#10b981]/10 border border-[#10b981]/40 space-y-2 font-mono">
+                  <div className="flex items-center justify-between text-[#10b981] font-bold text-xs">
+                    <span>⚡ RECOVERY OPERATION ACTIVE</span>
+                    <span className="text-[11px] text-[#e5a944]">{selectedOpp.recovery_operation_id || 'IN PROGRESS'}</span>
+                  </div>
+                  <p className="text-[11px] text-[#e5e7eb] leading-relaxed">
+                    {executionResult?.workflow_message || 'Recovery action initiated. Complete test payment via Razorpay checkout, or verify captured gateway status.'}
+                  </p>
+                  <div className="flex flex-col gap-2 pt-1">
+                    <button
+                      onClick={() => handleLaunchCheckout(selectedOpp)}
+                      disabled={verifying}
+                      className="w-full py-2.5 px-3 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer shadow-[0_0_15px_rgba(16,185,129,0.3)] disabled:opacity-50"
+                    >
+                      <span>💳 Complete Test Pay with Razorpay Checkout</span>
+                      <span>▶</span>
+                    </button>
+                    {(executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_link_id) && (
+                      <a
+                        href={executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_link_id}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs text-center transition flex items-center justify-center gap-1.5"
+                      >
+                        Open Razorpay Payment Link ↗
+                      </a>
+                    )}
+                    <button
+                      onClick={() => handleVerifyPayment(selectedOpp)}
+                      disabled={verifying}
+                      className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs transition cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
+                    >
+                      {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
+                    </button>
+                  </div>
+                </div>
+              </div>
             ) : (
               <div className="space-y-2">
-                {selectedOpp.recovery_operation_id && (
-                  <div className="flex items-center justify-between px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[11px] font-mono text-[#7a7164]">
-                    <span>RECOVERY OPERATION:</span>
-                    <span className="text-[#e5a944] font-bold">{selectedOpp.recovery_operation_id}</span>
-                  </div>
-                )}
-
                 <button
                   onClick={() => handleExecute(selectedOpp)}
-                  disabled={executing || selectedOpp.status === 'IN_PROGRESS'}
+                  disabled={executing}
                   className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer font-mono"
                 >
                   {executing
                     ? '⚡ Contacting Razorpay Orchestrator...'
-                    : selectedOpp.status === 'IN_PROGRESS'
-                    ? `⚡ Recovery In Progress (${selectedOpp.recovery_operation_id || 'ACTIVE'})`
                     : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
                 </button>
 
