@@ -8,6 +8,7 @@ interface ProductCardProps {
   onSelectProduct: (product: ChronovaProduct) => void
   onAddToCart: (product: ChronovaProduct) => void
   onToggleWishlist: (product: ChronovaProduct) => void
+  onQuickView?: (product: ChronovaProduct) => void
   isWishlisted: boolean
 }
 
@@ -16,134 +17,133 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onSelectProduct,
   onAddToCart,
   onToggleWishlist,
+  onQuickView,
   isWishlisted,
 }) => {
-  const [hovered, setHovered] = useState(false)
-  const [imgError, setImgError] = useState(false)
-
-  const formatINR = (amt: number) => `₹${amt.toLocaleString('en-IN')}`
-
-  const primaryImg = product.images.primary
-  const secondaryImg = product.images.gallery[1] || primaryImg
+  const [imgSrc, setImgSrc] = useState<string>(product.images.primary)
+  const [hasError, setHasError] = useState<boolean>(false)
+  const [isHovered, setIsHovered] = useState<boolean>(false)
 
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="group relative bg-white border border-slate-200 hover:border-slate-400 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="group relative flex flex-col justify-between rounded-2xl bg-white border border-slate-200 hover:border-slate-400 hover:shadow-lg transition-all duration-300 overflow-hidden text-left"
     >
-      {/* Badges & Wishlist */}
-      <div className="absolute top-3 left-3 right-3 z-10 flex items-center justify-between pointer-events-none">
-        <div className="flex flex-col gap-1">
-          {product.badge && (
-            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold tracking-wider bg-slate-900 text-white shadow-sm">
-              {product.badge.toUpperCase()}
-            </span>
-          )}
-          {product.discount_percent > 0 && (
-            <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-rose-600 text-white shadow-sm">
-              {product.discount_percent}% OFF
-            </span>
-          )}
-        </div>
+      {/* Top Media Area */}
+      <div className="relative w-full aspect-square bg-slate-50 border-b border-slate-100 p-4 flex items-center justify-center overflow-hidden">
+        {/* Badge (Top-Left) */}
+        {product.badge && (
+          <span className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-slate-900 text-white text-[10px] font-black uppercase tracking-wider font-mono shadow-xs">
+            {product.badge}
+          </span>
+        )}
 
+        {/* Wishlist Heart Button (Top-Right) */}
         <button
           onClick={(e) => {
             e.stopPropagation()
             onToggleWishlist(product)
           }}
-          className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 flex items-center justify-center transition-transform hover:scale-110 shadow-sm pointer-events-auto cursor-pointer"
+          className={`absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/90 backdrop-blur-xs border border-slate-200 flex items-center justify-center text-sm shadow-xs transition hover:scale-110 cursor-pointer ${
+            isWishlisted ? 'text-rose-600 bg-rose-50 border-rose-200' : 'text-slate-500 hover:text-rose-600'
+          }`}
           title={isWishlisted ? 'Remove from Wishlist' : 'Add to Wishlist'}
         >
-          <span className={isWishlisted ? 'text-rose-600' : 'text-slate-400'}>
-            {isWishlisted ? '❤️' : '🤍'}
-          </span>
+          {isWishlisted ? '❤️' : '🤍'}
         </button>
-      </div>
 
-      {/* Product Photographic Thumbnail (1:1 Aspect Ratio, Clean Off-White Background) */}
-      <div
-        onClick={() => onSelectProduct(product)}
-        className="relative w-full aspect-square bg-[#f8fafc] p-6 flex items-center justify-center overflow-hidden cursor-pointer"
-      >
-        {imgError ? (
-          <div className="w-full h-full flex flex-col items-center justify-center text-slate-400 space-y-1">
-            <span className="text-3xl">⌚</span>
-            <span className="text-[10px] font-mono">Image preview</span>
-          </div>
-        ) : (
-          <img
-            src={hovered ? secondaryImg : primaryImg}
-            alt={`${product.brand} ${product.name}`}
-            loading="lazy"
-            onError={() => setImgError(true)}
-            className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
-          />
-        )}
+        {/* Product Image */}
+        <div
+          onClick={() => onSelectProduct(product)}
+          className="w-full h-full flex items-center justify-center cursor-pointer"
+        >
+          {hasError ? (
+            <div className="text-center p-4 text-slate-400">
+              <span className="text-3xl block mb-1">⌚</span>
+              <span className="text-[10px] font-mono font-bold uppercase">Image Unavailable</span>
+            </div>
+          ) : (
+            <img
+              src={imgSrc}
+              alt={product.name}
+              loading="lazy"
+              onError={() => {
+                setHasError(true)
+              }}
+              className="max-h-full max-w-full object-contain filter drop-shadow-xs group-hover:scale-105 transition-transform duration-300"
+            />
+          )}
+        </div>
 
-        {/* Quick View Button on Hover */}
-        <div className="absolute inset-x-4 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        {/* Quick View Floating Button on Desktop Hover */}
+        {onQuickView && (
           <button
             onClick={(e) => {
               e.stopPropagation()
-              onSelectProduct(product)
+              onQuickView(product)
             }}
-            className="w-full py-2 bg-white/95 backdrop-blur-md hover:bg-slate-900 hover:text-white text-slate-900 border border-slate-300 rounded-xl text-xs font-bold transition shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
+            className="absolute bottom-2 left-2 right-2 py-2 rounded-xl bg-white/95 backdrop-blur-md border border-slate-300 text-slate-900 text-[11px] font-extrabold uppercase tracking-wider shadow-md opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-slate-900 hover:text-white cursor-pointer hidden sm:block"
           >
-            <span>👁️ Quick View</span>
+            QUICK VIEW 👁️
           </button>
-        </div>
+        )}
       </div>
 
-      {/* Product Details */}
-      <div className="p-4 flex-1 flex flex-col justify-between space-y-3 bg-white">
+      {/* Product Information Area */}
+      <div className="p-3.5 sm:p-4 flex flex-col flex-1 justify-between gap-3">
         <div onClick={() => onSelectProduct(product)} className="cursor-pointer space-y-1">
-          <div className="flex items-center justify-between text-[11px] font-mono">
-            <span className="text-blue-700 font-bold tracking-wider uppercase">{product.brand}</span>
-            <span className="text-slate-500">{product.category}</span>
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-bold font-mono text-blue-700 uppercase tracking-wide">
+              {product.brand}
+            </span>
+            <span className="text-[10px] text-slate-500 font-medium">
+              {product.gender}
+            </span>
           </div>
 
-          <h3 className="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1 group-hover:text-blue-600 transition-colors">
+          <h3 className="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1 group-hover:text-blue-700 transition">
             {product.name}
           </h3>
 
-          {/* Rating & Gender */}
-          <div className="flex items-center gap-1.5 text-xs pt-0.5">
-            <span className="px-1.5 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 font-bold text-[10px] flex items-center gap-0.5">
-              <span>★</span>
-              <span>{product.rating.toFixed(1)}</span>
+          <div className="flex items-center gap-1.5 pt-0.5">
+            <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 text-[10px] font-bold font-mono">
+              ★ {product.rating}
             </span>
-            <span className="text-[11px] text-slate-500">({product.review_count})</span>
-            <span className="text-slate-300 text-[10px]">·</span>
-            <span className="text-[11px] text-slate-600 font-medium">{product.gender}</span>
+            <span className="text-[10px] text-slate-500">
+              ({product.review_count})
+            </span>
           </div>
         </div>
 
-        {/* Price & Add to Cart */}
-        <div className="pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
-          <div>
+        {/* Pricing & Add to Cart */}
+        <div className="space-y-2.5 pt-1 border-t border-slate-100">
+          <div className="flex items-baseline justify-between">
             <div className="flex items-baseline gap-1.5">
               <span className="text-sm sm:text-base font-black text-slate-900">
-                {formatINR(product.price_rupees)}
+                ₹{product.price_rupees.toLocaleString('en-IN')}
               </span>
-              {product.original_price_rupees > product.price_rupees && (
-                <span className="text-[11px] text-slate-400 line-through font-mono">
-                  {formatINR(product.original_price_rupees)}
+              {product.discount_percent > 0 && (
+                <span className="text-[11px] text-slate-400 line-through font-semibold">
+                  ₹{product.original_price_rupees.toLocaleString('en-IN')}
                 </span>
               )}
             </div>
-            <div className="text-[10px] text-emerald-600 font-semibold">
-              ✓ Free Express Shipping
-            </div>
+            {product.discount_percent > 0 && (
+              <span className="text-[10px] font-black text-rose-600 font-mono">
+                {product.discount_percent}% OFF
+              </span>
+            )}
           </div>
 
           <button
-            onClick={() => onAddToCart(product)}
-            className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition shadow-sm flex items-center gap-1 cursor-pointer shrink-0"
-            title="Add to Bag"
+            onClick={(e) => {
+              e.stopPropagation()
+              onAddToCart(product)
+            }}
+            className="w-full py-2 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-[11px] font-extrabold uppercase tracking-wider transition shadow-xs cursor-pointer flex items-center justify-center gap-1"
           >
-            <span>+</span>
-            <span className="hidden sm:inline">Add</span>
+            <span>+</span> ADD TO BAG
           </button>
         </div>
       </div>

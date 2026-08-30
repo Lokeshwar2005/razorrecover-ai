@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useMemo, useRef } from 'react'
+import React, { useState, useMemo, useEffect, useRef } from 'react'
 import {
   CHRONOVA_CATALOG,
   ALL_BRANDS,
@@ -16,13 +16,19 @@ import type {
 } from './types'
 import { ProductCard } from './ProductCard'
 import { ProductDetailModal } from './ProductDetailModal'
+import { QuickViewModal } from './QuickViewModal'
 import { CartDrawer } from './CartDrawer'
 import { CheckoutModal } from './CheckoutModal'
 
 export const ChronovaStore: React.FC = () => {
-  // Navigation & Filter States
+  // Navigation & View Mode
   const [activeNavTab, setActiveNavTab] = useState<string>('WATCHES')
+  const [currentView, setCurrentView] = useState<'home' | 'catalog'>('home')
   const [searchQuery, setSearchQuery] = useState<string>('')
+  const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null)
+  const [showPromoBar, setShowPromoBar] = useState<boolean>(true)
+
+  // Filter States
   const [selectedBrands, setSelectedBrands] = useState<string[]>([])
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [selectedGenders, setSelectedGenders] = useState<string[]>([])
@@ -37,7 +43,10 @@ export const ChronovaStore: React.FC = () => {
     'relevance' | 'newest' | 'bestsellers' | 'popularity' | 'discount' | 'price_desc' | 'price_asc' | 'rating'
   >('relevance')
 
-  // Filter Accordion Expand/Collapse States
+  // Pagination / Load More
+  const [visibleProductCount, setVisibleProductCount] = useState<number>(16)
+
+  // Filter Accordions
   const [openAccordions, setOpenAccordions] = useState<Record<string, boolean>>({
     brand: true,
     category: true,
@@ -64,16 +73,73 @@ export const ChronovaStore: React.FC = () => {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState<boolean>(false)
   const [wishlistOpenOnly, setWishlistOpenOnly] = useState<boolean>(false)
   const [mobileFilterOpen, setMobileFilterOpen] = useState<boolean>(false)
-  const [mobileSortOpen, setMobileSortOpen] = useState<boolean>(false)
-  const [showPromoBar, setShowPromoBar] = useState<boolean>(true)
 
-  // Toggle Selection Helper
+  // Hero Carousel State
+  const [currentHeroSlide, setCurrentHeroSlide] = useState<number>(0)
+  const heroSlides = [
+    {
+      id: 'slide-1',
+      badge: '⌚ THE 2026 HOROLOGY REVOLUTION',
+      title: 'FIND YOUR TIME.',
+      subtitle: 'Precision Mechanical & Swiss Automatic Collections engineered for the discerning collector.',
+      cta: 'EXPLORE AUTOMATICS',
+      action: () => {
+        handleClearAllFilters()
+        setSelectedCategories(['Automatic Watches'])
+        setCurrentView('catalog')
+      },
+      image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'Titan Edge Ceramic Edition',
+      price: '₹18,995',
+    },
+    {
+      id: 'slide-2',
+      badge: '⚡ CONNECTED INTELLIGENCE',
+      title: 'SMART. SLEEK. POWERFUL.',
+      subtitle: 'Ultra AMOLED Displays, Multi-Band GPS & Crystal Clear Bluetooth Calling on your wrist.',
+      cta: 'DISCOVER SMARTWATCHES',
+      action: () => {
+        handleClearAllFilters()
+        setSelectedCategories(['Smart Watches'])
+        setCurrentView('catalog')
+      },
+      image: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'Apple Watch Ultra 2 Titanium',
+      price: '₹89,900',
+    },
+    {
+      id: 'slide-3',
+      badge: '🏎️ PRECISION RACING TACHYMETERS',
+      title: 'URBAN CHRONOGRAPH SERIES',
+      subtitle: 'Split-second timing, aerospace titanium casing, and iconic sunray dial geometry.',
+      cta: 'SHOP CHRONOGRAPHS',
+      action: () => {
+        handleClearAllFilters()
+        setSelectedCategories(['Chronograph'])
+        setCurrentView('catalog')
+      },
+      image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'Seiko Speedtimer Solar Chrono',
+      price: '₹48,995',
+    },
+  ]
+
+  // Hero Autoplay
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentHeroSlide((prev) => (prev + 1) % heroSlides.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [heroSlides.length])
+
+  // Filter Helper
   const toggleArrayItem = <T,>(arr: T[], item: T, setter: (val: T[]) => void) => {
     if (arr.includes(item)) {
       setter(arr.filter((i) => i !== item))
     } else {
       setter([...arr, item])
     }
+    setCurrentView('catalog')
   }
 
   const handleClearAllFilters = () => {
@@ -90,6 +156,7 @@ export const ChronovaStore: React.FC = () => {
     setSearchQuery('')
     setWishlistOpenOnly(false)
     setSortBy('relevance')
+    setVisibleProductCount(16)
   }
 
   // Filter List Definitions
@@ -197,9 +264,18 @@ export const ChronovaStore: React.FC = () => {
     wishlistIds,
   ])
 
+  // Paginated View
+  const paginatedProducts = useMemo(() => {
+    return filteredProducts.slice(0, visibleProductCount)
+  }, [filteredProducts, visibleProductCount])
+
+  // Featured Homepage Curations
+  const featuredWatches = useMemo(() => CHRONOVA_CATALOG.filter((p) => p.featured || p.is_bestseller).slice(0, 8), [])
+  const trendingWatches = useMemo(() => CHRONOVA_CATALOG.filter((p) => p.badge === 'Trending' || p.is_new_arrival).slice(0, 8), [])
+  const newArrivals = useMemo(() => CHRONOVA_CATALOG.filter((p) => p.is_new_arrival).slice(0, 8), [])
+
   const totalCartCount = cartItems.reduce((acc, i) => acc + i.quantity, 0)
 
-  // Total active filter count
   const activeFilterCount =
     selectedBrands.length +
     selectedCategories.length +
@@ -213,7 +289,7 @@ export const ChronovaStore: React.FC = () => {
     (inStockOnly ? 1 : 0) +
     (searchQuery ? 1 : 0)
 
-  // Handlers for cart
+  // Cart & Wishlist Handlers
   const handleAddToCart = (product: ChronovaProduct, qty = 1, color?: string) => {
     setCartItems((prev) => {
       const idx = prev.findIndex((i) => i.product.id === product.id)
@@ -244,7 +320,19 @@ export const ChronovaStore: React.FC = () => {
     })
   }
 
-  // Reusable Filter Sidebar Content
+  // Circular Category Strip Config
+  const categoryStrips = [
+    { label: 'Men Watches', cat: 'Men', img: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedGenders(['Men']); setCurrentView('catalog'); } },
+    { label: 'Women Watches', cat: 'Women', img: 'https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedGenders(['Women']); setCurrentView('catalog'); } },
+    { label: 'Smartwatches', cat: 'Smart', img: 'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Smart Watches']); setCurrentView('catalog'); } },
+    { label: 'Automatic', cat: 'Automatic', img: 'https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Automatic Watches']); setCurrentView('catalog'); } },
+    { label: 'Chronographs', cat: 'Chrono', img: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Chronograph']); setCurrentView('catalog'); } },
+    { label: 'Sports & Diver', cat: 'Sport', img: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedCategories(['Sports Watches']); setCurrentView('catalog'); } },
+    { label: 'Bestsellers', cat: 'Best', img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setActiveNavTab('BESTSELLERS'); setCurrentView('catalog'); } },
+    { label: 'Sale Flat 30%', cat: 'Sale', img: 'https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=400&auto=format&fit=crop&q=80', action: () => { handleClearAllFilters(); setSelectedDiscounts([30]); setCurrentView('catalog'); } },
+  ]
+
+  // Filter Sidebar Renderer
   const renderFilterSidebar = () => (
     <div className="space-y-4 text-xs">
       <div className="flex items-center justify-between pb-3 border-b border-slate-200">
@@ -484,7 +572,7 @@ export const ChronovaStore: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans antialiased selection:bg-slate-900 selection:text-white">
-      {/* 1. Top Promotional Bar (Dismissible) */}
+      {/* 1. Top Promotional Strip */}
       {showPromoBar && (
         <div className="bg-slate-900 px-4 py-2 text-center text-xs font-semibold text-white tracking-wider flex items-center justify-between">
           <div className="flex-1 text-center">
@@ -507,7 +595,7 @@ export const ChronovaStore: React.FC = () => {
             {/* Logo */}
             <div
               onClick={() => {
-                setActiveNavTab('WATCHES')
+                setCurrentView('home')
                 handleClearAllFilters()
               }}
               className="flex items-center gap-2.5 cursor-pointer shrink-0"
@@ -525,20 +613,23 @@ export const ChronovaStore: React.FC = () => {
               </div>
             </div>
 
-            {/* Main Search Bar (Center / Large with Instant Autocomplete) */}
+            {/* Main Search Bar */}
             <div className="flex-1 max-w-2xl relative hidden md:block">
               <input
                 type="text"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search watches, smartwatches & brands..."
+                onChange={(e) => {
+                  setSearchQuery(e.target.value)
+                  if (e.target.value) setCurrentView('catalog')
+                }}
+                placeholder="Search 190+ watches, smartwatches & brands (e.g. Titan, AMOLED, Seiko)..."
                 className="w-full pl-11 pr-10 py-2.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:bg-white transition shadow-xs"
               />
               <span className="absolute left-4 top-3 text-slate-400 text-xs">🔍</span>
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-3.5 top-2.5 text-xs text-slate-400 hover:text-slate-700 p-1"
+                  className="absolute right-3.5 top-2.5 text-xs text-slate-400 hover:text-slate-700 p-1 cursor-pointer"
                 >
                   ✕
                 </button>
@@ -556,7 +647,10 @@ export const ChronovaStore: React.FC = () => {
               </button>
 
               <button
-                onClick={() => setWishlistOpenOnly((prev) => !prev)}
+                onClick={() => {
+                  setWishlistOpenOnly((prev) => !prev)
+                  setCurrentView('catalog')
+                }}
                 className={`flex flex-col items-center p-1 rounded-xl transition cursor-pointer relative ${
                   wishlistOpenOnly ? 'text-rose-600 font-bold' : 'text-slate-700 hover:text-slate-900'
                 }`}
@@ -584,7 +678,7 @@ export const ChronovaStore: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation Bar */}
+          {/* Navigation Bar with Category Mega Menu */}
           <nav className="flex items-center justify-center gap-6 sm:gap-8 py-2.5 border-t border-slate-100 text-xs font-bold tracking-wider uppercase text-slate-700 overflow-x-auto scrollbar-none">
             {[
               { id: 'WATCHES', label: 'WATCHES' },
@@ -600,6 +694,7 @@ export const ChronovaStore: React.FC = () => {
                 onClick={() => {
                   setActiveNavTab(tab.id)
                   setWishlistOpenOnly(false)
+                  setCurrentView('catalog')
                 }}
                 className={`transition cursor-pointer pb-1 whitespace-nowrap border-b-2 ${
                   activeNavTab === tab.id
@@ -621,145 +716,480 @@ export const ChronovaStore: React.FC = () => {
         <input
           type="text"
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search watches, smartwatches & brands..."
+          onChange={(e) => {
+            setSearchQuery(e.target.value)
+            if (e.target.value) setCurrentView('catalog')
+          }}
+          placeholder="Search 190+ watches & brands..."
           className="w-full px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900"
         />
       </div>
 
-      {/* 3. PRODUCT LISTING AREA (TWO-COLUMN E-COMMERCE LAYOUT) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Catalog Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-200 gap-4">
-          <div>
-            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-tight">
-              {activeNavTab === 'SMART WATCHES' ? 'Smart Watches' : 'Watches'}
-            </h1>
-            <p className="text-xs text-slate-500 font-medium mt-0.5">
-              {filteredProducts.length} Watches Found · Authentic Indian & International Horology
-            </p>
-          </div>
+      {/* ========================================================================= */}
+      {/* HOMEPAGE VIEW (Hero Carousel, Category Carousel, Curated Rails, Banners) */}
+      {/* ========================================================================= */}
+      {currentView === 'home' && (
+        <>
+          {/* 3. Hero Carousel (Multi-slide, Autoplay, Indicators, CTAs) */}
+          <section className="relative overflow-hidden bg-gradient-to-r from-slate-100 via-slate-50 to-amber-50/30 border-b border-slate-200 py-12 sm:py-20 transition-all">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="lg:col-span-7 space-y-6 text-left">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-slate-900 text-white text-xs font-bold font-mono tracking-wider">
+                  <span>{heroSlides[currentHeroSlide].badge}</span>
+                </div>
 
-          {/* Controls: Mobile Filter Buttons + Desktop Sort */}
-          <div className="flex items-center gap-3">
-            {/* Mobile Filter & Sort Buttons */}
-            <button
-              onClick={() => setMobileFilterOpen(true)}
-              className="lg:hidden flex-1 py-2 px-4 bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-xl text-xs font-bold text-slate-900 flex items-center justify-center gap-1.5 cursor-pointer"
-            >
-              <span>⚙️ Filters</span>
-              {activeFilterCount > 0 && (
-                <span className="w-4 h-4 rounded-full bg-slate-900 text-white text-[10px] font-mono flex items-center justify-center">
-                  {activeFilterCount}
-                </span>
-              )}
-            </button>
+                <h1 className="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight uppercase leading-none">
+                  {heroSlides[currentHeroSlide].title}
+                </h1>
 
-            {/* Desktop Sort Dropdown */}
-            <div className="flex items-center gap-2 text-xs">
-              <span className="text-slate-500 font-semibold hidden sm:inline">Sort By:</span>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as any)}
-                className="px-3.5 py-2 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold focus:outline-none focus:border-slate-900 cursor-pointer"
-              >
-                <option value="relevance">Relevance</option>
-                <option value="newest">New Arrivals</option>
-                <option value="bestsellers">Best Sellers</option>
-                <option value="popularity">Popularity</option>
-                <option value="discount">Discount</option>
-                <option value="price_desc">Price: High To Low</option>
-                <option value="price_asc">Price: Low To High</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        {/* Applied Filter Chips Bar */}
-        {activeFilterCount > 0 && (
-          <div className="flex flex-wrap items-center gap-2 py-4 border-b border-slate-100">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider font-mono">Applied:</span>
-            {selectedBrands.map((b) => (
-              <span key={b} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
-                Brand: {b}
-                <button onClick={() => toggleArrayItem(selectedBrands, b, setSelectedBrands)} className="text-slate-500 hover:text-slate-900 ml-1">✕</button>
-              </span>
-            ))}
-            {selectedCategories.map((c) => (
-              <span key={c} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
-                Category: {c}
-                <button onClick={() => toggleArrayItem(selectedCategories, c, setSelectedCategories)} className="text-slate-500 hover:text-slate-900 ml-1">✕</button>
-              </span>
-            ))}
-            {selectedGenders.map((g) => (
-              <span key={g} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
-                Gender: {g}
-                <button onClick={() => toggleArrayItem(selectedGenders, g, setSelectedGenders)} className="text-slate-500 hover:text-slate-900 ml-1">✕</button>
-              </span>
-            ))}
-            {selectedPriceRanges.map((prId) => (
-              <span key={prId} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
-                Price: {priceRanges.find((r) => r.id === prId)?.label}
-                <button onClick={() => toggleArrayItem(selectedPriceRanges, prId, setSelectedPriceRanges)} className="text-slate-500 hover:text-slate-900 ml-1">✕</button>
-              </span>
-            ))}
-            {searchQuery && (
-              <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-medium text-blue-800">
-                Search: "{searchQuery}"
-                <button onClick={() => setSearchQuery('')} className="text-blue-600 hover:text-blue-900 ml-1">✕</button>
-              </span>
-            )}
-            <button
-              onClick={handleClearAllFilters}
-              className="text-xs font-bold text-rose-600 hover:underline ml-2 cursor-pointer"
-            >
-              CLEAR ALL
-            </button>
-          </div>
-        )}
-
-        {/* TWO-COLUMN GRID: LEFT FILTER SIDEBAR + RIGHT PRODUCT GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6 items-start">
-          {/* LEFT: FILTER SIDEBAR (DESKTOP) */}
-          <aside className="hidden lg:block lg:col-span-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-xs sticky top-32">
-            {renderFilterSidebar()}
-          </aside>
-
-          {/* RIGHT: PRODUCT GRID */}
-          <section className="lg:col-span-9">
-            {filteredProducts.length === 0 ? (
-              <div className="py-24 text-center space-y-4 bg-slate-50 rounded-2xl border border-slate-200">
-                <div className="text-5xl">⌚</div>
-                <h3 className="text-xl font-bold text-slate-900">No matching watches found</h3>
-                <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                  No timepieces match all of your selected filters. Try removing filters or clearing all options.
+                <p className="text-base sm:text-lg text-slate-600 max-w-xl font-medium leading-relaxed">
+                  {heroSlides[currentHeroSlide].subtitle}
                 </p>
+
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <button
+                    onClick={heroSlides[currentHeroSlide].action}
+                    className="px-8 py-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-extrabold uppercase tracking-widest transition shadow-lg shadow-slate-900/10 cursor-pointer"
+                  >
+                    {heroSlides[currentHeroSlide].cta} →
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setCurrentView('catalog')
+                    }}
+                    className="px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 text-xs font-extrabold uppercase tracking-widest transition shadow-sm cursor-pointer"
+                  >
+                    VIEW ALL 190 WATCHES
+                  </button>
+                </div>
+
+                {/* Carousel Dots & Controls */}
+                <div className="flex items-center gap-3 pt-4">
+                  {heroSlides.map((slide, idx) => (
+                    <button
+                      key={slide.id}
+                      onClick={() => setCurrentHeroSlide(idx)}
+                      className={`h-2.5 rounded-full transition-all cursor-pointer ${
+                        currentHeroSlide === idx ? 'w-8 bg-slate-900' : 'w-2.5 bg-slate-300 hover:bg-slate-400'
+                      }`}
+                      title={`Slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Hero Studio Shot */}
+              <div className="lg:col-span-5 relative">
+                <div className="relative w-full aspect-square rounded-3xl bg-white border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-xl">
+                  <img
+                    src={heroSlides[currentHeroSlide].image}
+                    alt={heroSlides[currentHeroSlide].featuredWatch}
+                    className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute bottom-4 left-4 right-4 p-3 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 flex items-center justify-between shadow-md">
+                    <div>
+                      <div className="text-[10px] font-mono font-bold text-blue-700 uppercase">
+                        {heroSlides[currentHeroSlide].featuredWatch}
+                      </div>
+                      <div className="text-sm font-black text-slate-900">
+                        {heroSlides[currentHeroSlide].price}
+                      </div>
+                    </div>
+                    <span className="px-2.5 py-1 rounded bg-amber-50 text-amber-800 border border-amber-200 text-xs font-bold font-mono">
+                      ★ 4.9 · Verified
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* 4. Circular Category Navigation Strip */}
+          <section className="py-8 bg-white border-b border-slate-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4 font-mono">
+                SHOP BY CATEGORY
+              </div>
+              <div className="grid grid-cols-4 sm:grid-cols-8 gap-4 text-center">
+                {categoryStrips.map((cat, idx) => (
+                  <div
+                    key={idx}
+                    onClick={cat.action}
+                    className="group flex flex-col items-center gap-2 cursor-pointer"
+                  >
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 border-2 border-slate-200 group-hover:border-slate-900 p-2 overflow-hidden flex items-center justify-center transition-all duration-300 shadow-xs group-hover:shadow-md">
+                      <img src={cat.img} alt={cat.label} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+                    </div>
+                    <span className="text-[11px] sm:text-xs font-bold text-slate-700 group-hover:text-slate-900">
+                      {cat.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* 5. Brand Partner Discovery Strip (15 Official Brands) */}
+          <section className="py-8 bg-slate-50 border-b border-slate-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-bold text-slate-500 uppercase tracking-wider font-mono">
+                  OFFICIAL BRAND PARTNERS (15 BRANDS)
+                </span>
                 <button
-                  onClick={handleClearAllFilters}
-                  className="px-6 py-2.5 rounded-full bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition cursor-pointer"
+                  onClick={() => {
+                    handleClearAllFilters()
+                    setCurrentView('catalog')
+                  }}
+                  className="text-xs text-blue-700 font-bold hover:underline cursor-pointer"
                 >
-                  Clear All Filters
+                  View All Brands →
                 </button>
               </div>
-            ) : (
-              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-                {filteredProducts.map((product) => (
+
+              <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+                {ALL_BRANDS.map((brand) => (
+                  <button
+                    key={brand}
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setSelectedBrands([brand])
+                      setCurrentView('catalog')
+                    }}
+                    className="px-5 py-2.5 rounded-2xl text-xs font-bold whitespace-nowrap transition cursor-pointer border shadow-xs bg-white text-slate-700 border-slate-200 hover:border-slate-400 hover:text-slate-900 hover:bg-slate-50"
+                  >
+                    {brand}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* 6. Featured Watches Rail / Carousel */}
+          <section className="py-12 bg-white border-b border-slate-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <span className="text-xs font-bold font-mono text-blue-700 uppercase tracking-wider">CURATED PICKS</span>
+                  <h2 className="text-2xl font-black text-slate-900">Featured Watches of the Season</h2>
+                </div>
+                <button
+                  onClick={() => {
+                    handleClearAllFilters()
+                    setCurrentView('catalog')
+                  }}
+                  className="text-xs text-blue-700 font-bold hover:underline cursor-pointer"
+                >
+                  Explore All →
+                </button>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                {featuredWatches.slice(0, 4).map((product) => (
                   <ProductCard
                     key={product.id}
                     product={product}
                     onSelectProduct={(p) => setSelectedProduct(p)}
                     onAddToCart={(p) => handleAddToCart(p, 1)}
                     onToggleWishlist={(p) => handleToggleWishlist(p)}
+                    onQuickView={(p) => setQuickViewProduct(p)}
                     isWishlisted={wishlistIds.has(product.id)}
                   />
                 ))}
               </div>
-            )}
+            </div>
           </section>
-        </div>
-      </div>
 
-      {/* Mobile Filter Drawer / Bottom Sheet */}
+          {/* 7. Promotional Editorial Banner */}
+          <section className="py-12 bg-slate-900 text-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <span className="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase">
+                  SWISS & JAPANESE HOROLOGY
+                </span>
+                <h3 className="text-3xl font-black uppercase">
+                  Engineered For Extremes. Built For Life.
+                </h3>
+                <p className="text-sm text-slate-400 leading-relaxed">
+                  Every Chronova timepiece undergoes rigid 50m to 200m depth pressure testing, surgical stainless steel polishing, and precision movement calibration before reaching your wrist.
+                </p>
+                <div className="pt-2">
+                  <button
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setSelectedCategories(['Automatic Watches', 'Chronograph', 'Luxury Watches'])
+                      setCurrentView('catalog')
+                    }}
+                    className="px-6 py-3 rounded-xl bg-white text-slate-900 hover:bg-blue-600 hover:text-white text-xs font-black uppercase tracking-wider transition cursor-pointer"
+                  >
+                    DISCOVER LUXURY SERIES →
+                  </button>
+                </div>
+              </div>
+
+              <div className="relative aspect-video rounded-2xl overflow-hidden border border-slate-800 bg-slate-800 flex items-center justify-center p-6">
+                <img
+                  src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+                  alt="Automatic Movement"
+                  className="max-h-full max-w-full object-contain filter drop-shadow-2xl hover:scale-105 transition duration-500"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* 8. Trending Watches Rail */}
+          <section className="py-12 bg-slate-50 border-b border-slate-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <span className="text-xs font-bold font-mono text-blue-700 uppercase tracking-wider">WHAT'S HOT</span>
+                  <h2 className="text-2xl font-black text-slate-900">Trending Watches</h2>
+                </div>
+                <button
+                  onClick={() => {
+                    handleClearAllFilters()
+                    setCurrentView('catalog')
+                  }}
+                  className="text-xs text-blue-700 font-bold hover:underline cursor-pointer"
+                >
+                  View All Trending →
+                </button>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                {trendingWatches.slice(0, 4).map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    onSelectProduct={(p) => setSelectedProduct(p)}
+                    onAddToCart={(p) => handleAddToCart(p, 1)}
+                    onToggleWishlist={(p) => handleToggleWishlist(p)}
+                    onQuickView={(p) => setQuickViewProduct(p)}
+                    isWishlisted={wishlistIds.has(product.id)}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* 9. Shop by Vibe Mood Grid */}
+          <section className="py-12 bg-white border-b border-slate-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <span className="text-xs font-bold font-mono text-blue-700 uppercase tracking-wider">LIFESTYLE CURATIONS</span>
+                  <h2 className="text-2xl font-black text-slate-900">Shop By Vibe & Occasion</h2>
+                </div>
+                <span className="text-xs text-slate-500 font-medium">8 Style Vibes</span>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+                {ALL_VIBES.map((vibe) => (
+                  <button
+                    key={vibe}
+                    onClick={() => {
+                      handleClearAllFilters()
+                      setCurrentView('catalog')
+                    }}
+                    className="p-3 rounded-2xl border text-center transition cursor-pointer bg-slate-50 text-slate-700 border-slate-200 hover:bg-white hover:border-slate-400 hover:shadow-xs"
+                  >
+                    <span className="block text-sm mb-1">
+                      {vibe === 'Everyday' && '☕'}
+                      {vibe === 'Office' && '💼'}
+                      {vibe === 'Street' && '🛹'}
+                      {vibe === 'Sport' && '⚡'}
+                      {vibe === 'Party' && '✨'}
+                      {vibe === 'Travel' && '✈️'}
+                      {vibe === 'Minimal' && '⚪'}
+                      {vibe === 'Premium' && '👑'}
+                    </span>
+                    <span className="text-xs font-bold">{vibe}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* ========================================================================= */}
+      {/* CATALOG VIEW (Two-Column Layout: Left Filter Sidebar + Right Product Grid) */}
+      {/* ========================================================================= */}
+      {currentView === 'catalog' && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* Breadcrumbs & View Switch */}
+          <div className="flex items-center justify-between pb-4 text-xs font-medium text-slate-500">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => {
+                  setCurrentView('home')
+                  handleClearAllFilters()
+                }}
+                className="hover:text-slate-900 cursor-pointer"
+              >
+                Home
+              </button>
+              <span>/</span>
+              <span className="text-slate-900 font-bold">
+                {activeNavTab === 'SMART WATCHES' ? 'Smart Watches' : 'Watches'}
+              </span>
+            </div>
+
+            <button
+              onClick={() => setCurrentView('home')}
+              className="text-xs text-blue-700 font-bold hover:underline cursor-pointer"
+            >
+              ← Back to Homepage
+            </button>
+          </div>
+
+          {/* Catalog Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-200 gap-4">
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-tight">
+                {activeNavTab === 'SMART WATCHES' ? 'Smart Watches' : 'All Watches'}
+              </h1>
+              <p className="text-xs text-slate-500 font-medium mt-0.5">
+                Showing {filteredProducts.length} of {CHRONOVA_CATALOG.length} Watches Found
+              </p>
+            </div>
+
+            {/* Controls: Mobile Filter Buttons + Desktop Sort */}
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => setMobileFilterOpen(true)}
+                className="lg:hidden flex-1 py-2 px-4 bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-xl text-xs font-bold text-slate-900 flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                <span>⚙️ Filters</span>
+                {activeFilterCount > 0 && (
+                  <span className="w-4 h-4 rounded-full bg-slate-900 text-white text-[10px] font-mono flex items-center justify-center">
+                    {activeFilterCount}
+                  </span>
+                )}
+              </button>
+
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-slate-500 font-semibold hidden sm:inline">Sort By:</span>
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value as any)}
+                  className="px-3.5 py-2 rounded-xl bg-white border border-slate-300 text-slate-900 font-bold focus:outline-none focus:border-slate-900 cursor-pointer"
+                >
+                  <option value="relevance">Featured & Relevance</option>
+                  <option value="newest">New Arrivals</option>
+                  <option value="bestsellers">Best Sellers</option>
+                  <option value="popularity">Popularity</option>
+                  <option value="discount">Discount</option>
+                  <option value="price_desc">Price: High To Low</option>
+                  <option value="price_asc">Price: Low To High</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          {/* Applied Filter Chips Bar */}
+          {activeFilterCount > 0 && (
+            <div className="flex flex-wrap items-center gap-2 py-4 border-b border-slate-100">
+              <span className="text-xs font-bold text-slate-400 uppercase tracking-wider font-mono">Applied:</span>
+              {selectedBrands.map((b) => (
+                <span key={b} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
+                  Brand: {b}
+                  <button onClick={() => toggleArrayItem(selectedBrands, b, setSelectedBrands)} className="text-slate-500 hover:text-slate-900 ml-1 cursor-pointer">✕</button>
+                </span>
+              ))}
+              {selectedCategories.map((c) => (
+                <span key={c} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
+                  Category: {c}
+                  <button onClick={() => toggleArrayItem(selectedCategories, c, setSelectedCategories)} className="text-slate-500 hover:text-slate-900 ml-1 cursor-pointer">✕</button>
+                </span>
+              ))}
+              {selectedGenders.map((g) => (
+                <span key={g} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
+                  Gender: {g}
+                  <button onClick={() => toggleArrayItem(selectedGenders, g, setSelectedGenders)} className="text-slate-500 hover:text-slate-900 ml-1 cursor-pointer">✕</button>
+                </span>
+              ))}
+              {selectedPriceRanges.map((prId) => (
+                <span key={prId} className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-800">
+                  Price: {priceRanges.find((r) => r.id === prId)?.label}
+                  <button onClick={() => toggleArrayItem(selectedPriceRanges, prId, setSelectedPriceRanges)} className="text-slate-500 hover:text-slate-900 ml-1 cursor-pointer">✕</button>
+                </span>
+              ))}
+              {searchQuery && (
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-medium text-blue-800">
+                  Search: "{searchQuery}"
+                  <button onClick={() => setSearchQuery('')} className="text-blue-600 hover:text-blue-900 ml-1 cursor-pointer">✕</button>
+                </span>
+              )}
+              <button
+                onClick={handleClearAllFilters}
+                className="text-xs font-bold text-rose-600 hover:underline ml-2 cursor-pointer"
+              >
+                CLEAR ALL
+              </button>
+            </div>
+          )}
+
+          {/* TWO-COLUMN GRID: LEFT FILTER SIDEBAR + RIGHT PRODUCT GRID */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6 items-start">
+            {/* LEFT: FILTER SIDEBAR (DESKTOP) */}
+            <aside className="hidden lg:block lg:col-span-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-xs sticky top-32">
+              {renderFilterSidebar()}
+            </aside>
+
+            {/* RIGHT: PRODUCT GRID */}
+            <section className="lg:col-span-9">
+              {filteredProducts.length === 0 ? (
+                <div className="py-24 text-center space-y-4 bg-slate-50 rounded-2xl border border-slate-200">
+                  <div className="text-5xl">⌚</div>
+                  <h3 className="text-xl font-bold text-slate-900">No matching watches found</h3>
+                  <p className="text-xs text-slate-500 max-w-sm mx-auto">
+                    No timepieces match all of your selected filters. Try removing filters or clearing all options.
+                  </p>
+                  <button
+                    onClick={handleClearAllFilters}
+                    className="px-6 py-2.5 rounded-full bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition cursor-pointer"
+                  >
+                    Clear All Filters
+                  </button>
+                </div>
+              ) : (
+                <div className="space-y-8">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+                    {paginatedProducts.map((product) => (
+                      <ProductCard
+                        key={product.id}
+                        product={product}
+                        onSelectProduct={(p) => setSelectedProduct(p)}
+                        onAddToCart={(p) => handleAddToCart(p, 1)}
+                        onToggleWishlist={(p) => handleToggleWishlist(p)}
+                        onQuickView={(p) => setQuickViewProduct(p)}
+                        isWishlisted={wishlistIds.has(product.id)}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Load More Button for 60fps Smooth Pagination */}
+                  {visibleProductCount < filteredProducts.length && (
+                    <div className="text-center pt-4">
+                      <button
+                        onClick={() => setVisibleProductCount((prev) => prev + 16)}
+                        className="px-8 py-3 rounded-full bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-sm cursor-pointer"
+                      >
+                        LOAD MORE WATCHES ({filteredProducts.length - visibleProductCount} REMAINING) ↓
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
+            </section>
+          </div>
+        </div>
+      )}
+
+      {/* Mobile Filter Drawer */}
       {mobileFilterOpen && (
         <div className="fixed inset-0 z-50 overflow-hidden lg:hidden">
           <div
@@ -773,7 +1203,7 @@ export const ChronovaStore: React.FC = () => {
                   <span className="text-base font-black text-slate-900">FILTERS</span>
                   <button
                     onClick={() => setMobileFilterOpen(false)}
-                    className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600"
+                    className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 cursor-pointer"
                   >
                     ✕
                   </button>
@@ -784,13 +1214,13 @@ export const ChronovaStore: React.FC = () => {
               <div className="pt-6 mt-6 border-t border-slate-200 flex gap-3">
                 <button
                   onClick={handleClearAllFilters}
-                  className="flex-1 py-3 bg-slate-100 text-slate-800 rounded-xl text-xs font-bold"
+                  className="flex-1 py-3 bg-slate-100 text-slate-800 rounded-xl text-xs font-bold cursor-pointer"
                 >
                   Clear
                 </button>
                 <button
                   onClick={() => setMobileFilterOpen(false)}
-                  className="flex-1 py-3 bg-slate-900 text-white rounded-xl text-xs font-bold"
+                  className="flex-1 py-3 bg-slate-900 text-white rounded-xl text-xs font-bold cursor-pointer"
                 >
                   Apply ({filteredProducts.length})
                 </button>
@@ -800,7 +1230,7 @@ export const ChronovaStore: React.FC = () => {
         </div>
       )}
 
-      {/* 4. Multi-Column Footer */}
+      {/* 10. Multi-Column Footer */}
       <footer className="bg-slate-900 text-slate-400 py-16 mt-20 text-xs border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="space-y-4">
@@ -832,11 +1262,11 @@ export const ChronovaStore: React.FC = () => {
           <div className="space-y-3">
             <h4 className="text-white font-bold uppercase tracking-wider font-mono">Popular Brands</h4>
             <ul className="space-y-2">
-              <li className="hover:text-white cursor-pointer" onClick={() => { setSelectedBrands(['Titan']); }}>Titan Regalia & Ceramic</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { setSelectedBrands(['Casio']); }}>Casio G-Shock & Edifice</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { setSelectedBrands(['Fastrack']); }}>Fastrack Stunners</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { setSelectedBrands(['Seiko']); }}>Seiko 5 Sports & Presage</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { setSelectedBrands(['Apple Watch']); }}>Apple Watch Series 9 & Ultra</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan Regalia & Ceramic</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio G-Shock & Edifice</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack Stunners</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Seiko']); setCurrentView('catalog'); }}>Seiko 5 Sports & Presage</li>
+              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Apple Watch']); setCurrentView('catalog'); }}>Apple Watch Series 9 & Ultra</li>
             </ul>
           </div>
 
@@ -864,6 +1294,20 @@ export const ChronovaStore: React.FC = () => {
           onClose={() => setSelectedProduct(null)}
           onAddToCart={(p, qty, color) => handleAddToCart(p, qty, color)}
           onInstantBuy={(p, qty, color) => handleInstantBuy(p, qty, color)}
+        />
+      )}
+
+      {quickViewProduct && (
+        <QuickViewModal
+          product={quickViewProduct}
+          onClose={() => setQuickViewProduct(null)}
+          onAddToCart={(p, qty, color) => handleAddToCart(p, qty, color)}
+          onOpenFullDetail={(p) => {
+            setQuickViewProduct(null)
+            setSelectedProduct(p)
+          }}
+          onToggleWishlist={(p) => handleToggleWishlist(p)}
+          isWishlisted={wishlistIds.has(quickViewProduct.id)}
         />
       )}
 
