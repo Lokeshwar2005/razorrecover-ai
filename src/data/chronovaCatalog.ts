@@ -3780,6 +3780,951 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "verified_purchase": true
       }
     ]
+  },
+  {
+    "id": "chronova-061",
+    "name": "Fossil Grant Chronograph FS5061",
+    "brand": "Fossil",
+    "model": "Grant FS5061",
+    "series": "Grant Collection",
+    "price_rupees": 12495,
+    "original_price_rupees": 14995,
+    "discount_percent": 17,
+    "currency": "INR",
+    "category": "Chronograph",
+    "gender": "Men",
+    "vibe": "Office",
+    "rating": 4.8,
+    "review_count": 320,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "ICONIC CHRONO",
+    "is_bestseller": true,
+    "description": "44mm chronograph featuring smoke stainless-steel case, rich black dial with three sub-dials, dark blue genuine leather strap, and classic Roman numeral hour markers.",
+    "specs": {
+      "movement": "Quartz Chronograph",
+      "case_size": "44 mm",
+      "case_thickness": "12 mm",
+      "case_material": "Smoke Grey Ion-Plated Stainless Steel",
+      "dial_color": "Satin Black with Roman Numerals",
+      "strap_material": "Genuine Leather",
+      "strap_color": "Midnight Blue",
+      "glass": "Scratch-Resistant Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "SR621SW (Approx. 2 Years)",
+      "warranty": "2 Years Official Fossil International Warranty"
+    },
+    "highlights": [
+      "Iconic vintage Roman numeral indices",
+      "Precision 1/10-sec stopwatch chronograph",
+      "Supple interchange-compatible genuine leather strap"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-061/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-061/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-1",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Grant Chronograph FS5061",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-062",
+    "name": "Fossil Neutra Chronograph FS5525",
+    "brand": "Fossil",
+    "model": "Neutra FS5525",
+    "series": "Neutra Collection",
+    "price_rupees": 13995,
+    "original_price_rupees": 16495,
+    "discount_percent": 15,
+    "currency": "INR",
+    "category": "Chronograph",
+    "gender": "Men",
+    "vibe": "Premium",
+    "rating": 4.9,
+    "review_count": 280,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "MID-CENTURY",
+    "is_bestseller": true,
+    "description": "Mid-century architectural styling with 44mm black stainless-steel case, amber crystal tint, black satin dial, three sub-dials, and matching black steel mesh/link bracelet.",
+    "specs": {
+      "movement": "Quartz Chronograph with Date",
+      "case_size": "44 mm",
+      "case_thickness": "12 mm",
+      "case_material": "Black Ion-Plated Stainless Steel",
+      "dial_color": "Satin Black with Amber Crystal Hue",
+      "strap_material": "Solid Stainless Steel Link Bracelet",
+      "strap_color": "Matte Black",
+      "glass": "Amber-Tinted Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "SR920SW (2 Years)",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Mid-century modern minimalist aesthetic",
+      "Amber crystal warmth over satin black dial",
+      "Integrated date window between 4 and 5 o'clock"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-062/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-062/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-2",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Neutra Chronograph FS5525",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-063",
+    "name": "Fossil Machine Industrial Chronograph FS4682",
+    "brand": "Fossil",
+    "model": "Machine FS4682",
+    "series": "Machine Platform",
+    "price_rupees": 14995,
+    "original_price_rupees": 17995,
+    "discount_percent": 17,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.8,
+    "review_count": 410,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "INDUSTRIAL HEAVY",
+    "is_bestseller": true,
+    "description": "Rugged aeronautical & industrial-inspired 45mm stainless-steel chronograph featuring a diamond-knurled textured bezel, dark dial, and solid steel bracelet.",
+    "specs": {
+      "movement": "Heavy-Duty Quartz Chronograph",
+      "case_size": "45 mm",
+      "case_thickness": "13 mm",
+      "case_material": "Diamond-Pattern Knurled Stainless Steel",
+      "dial_color": "Textured Black / Gunmetal",
+      "strap_material": "Stainless Steel Bracelet with Foldover Clasp",
+      "strap_color": "Gunmetal Black",
+      "glass": "Hardened Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Signature diamond-knurled industrial bezel",
+      "High-contrast luminescent hands and indices",
+      "Oversized heavy-duty crown and pushers"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-063/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-063/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-3",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Machine Industrial Chronograph FS4682",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-064",
+    "name": "Fossil Townsman Automatic ME3171",
+    "brand": "Fossil",
+    "model": "Townsman ME3171",
+    "series": "Townsman Mechanical",
+    "price_rupees": 19995,
+    "original_price_rupees": 24995,
+    "discount_percent": 20,
+    "currency": "INR",
+    "category": "Automatic Watches",
+    "gender": "Men",
+    "vibe": "Everyday",
+    "rating": 4.9,
+    "review_count": 350,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "OPEN HEART SKELETON",
+    "is_bestseller": true,
+    "description": "Classic mechanical watch architecture with self-winding automatic caliber, open-heart dial revealing the oscillating balance wheel, and supple amber leather strap.",
+    "specs": {
+      "movement": "Automatic Self-Winding (21 Jewels)",
+      "case_size": "44 mm",
+      "case_thickness": "12 mm",
+      "case_material": "Polished Stainless Steel",
+      "dial_color": "Silver-White with Dual Open-Heart Apertures",
+      "strap_material": "Genuine Calfskin Leather",
+      "strap_color": "Rich Amber Brown",
+      "glass": "Domed Scratch-Resistant Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "Automatic Mechanical (40-Hour Power Reserve)",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "No battery needed \u2014 powered naturally by wrist motion",
+      "Exhibition caseback showing mechanical movement rotor",
+      "Dual open-heart skeleton balance apertures"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-064/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-064/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-4",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Townsman Automatic ME3171",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-065",
+    "name": "Fossil Everett Three-Hand Date FS6169",
+    "brand": "Fossil",
+    "model": "Everett FS6169",
+    "series": "Everett Collection",
+    "price_rupees": 11995,
+    "original_price_rupees": 13995,
+    "discount_percent": 14,
+    "currency": "INR",
+    "category": "Casual Watches",
+    "gender": "Men",
+    "vibe": "Office",
+    "rating": 4.7,
+    "review_count": 190,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "INTEGRATED BRACELET",
+    "is_bestseller": false,
+    "description": "42mm integrated bracelet timepiece with deep navy sunray dial, baton indices, date window at 3 o'clock, and sculpted stainless-steel H-link bracelet.",
+    "specs": {
+      "movement": "Three-Hand Quartz with Date",
+      "case_size": "42 mm",
+      "case_thickness": "11 mm",
+      "case_material": "Brushed & Polished Stainless Steel",
+      "dial_color": "Sunray Navy Blue",
+      "strap_material": "Integrated Stainless Steel H-Link Bracelet",
+      "strap_color": "Silver / Steel",
+      "glass": "Flat Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "Approx. 3 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Seamless integrated sports bracelet silhouette",
+      "Captivating navy sunray dial with polished bevels",
+      "Quick-set calendar date window"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-065/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-065/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-5",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Everett Three-Hand Date FS6169",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-066",
+    "name": "Fossil Raquel Rectangular Analog ES5399",
+    "brand": "Fossil",
+    "model": "Raquel ES5399",
+    "series": "Raquel Tank",
+    "price_rupees": 10995,
+    "original_price_rupees": 12995,
+    "discount_percent": 15,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Minimal",
+    "rating": 4.9,
+    "review_count": 270,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "VINTAGE TANK",
+    "is_bestseller": true,
+    "description": "Slim rectangular vintage silhouette featuring mother-of-pearl dial, Roman numeral hour track, fluted crown with cabochon, and jewelry stainless-steel bracelet.",
+    "specs": {
+      "movement": "Slim Three-Hand Quartz",
+      "case_size": "26 \u00d7 35 mm Rectangular",
+      "case_thickness": "7.5 mm",
+      "case_material": "Polished Stainless Steel",
+      "dial_color": "Iridescent Mother-of-Pearl",
+      "strap_material": "Jewelry Link Stainless Steel Bracelet",
+      "strap_color": "Polished Silver",
+      "glass": "Beveled Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Art-Deco rectangular tank silhouette",
+      "Natural shimmering mother-of-pearl dial",
+      "Ultra-slim 7.5mm wrist profile"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-066/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-066/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-6",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Raquel Rectangular Analog ES5399",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-067",
+    "name": "Fossil Jacqueline Classic Round ES3546",
+    "brand": "Fossil",
+    "model": "Jacqueline ES3546",
+    "series": "Jacqueline Classic",
+    "price_rupees": 9495,
+    "original_price_rupees": 11495,
+    "discount_percent": 17,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Party",
+    "rating": 4.8,
+    "review_count": 390,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "CLASSIC SLIM",
+    "is_bestseller": true,
+    "description": "Classic 36mm round dress watch with clean cream dial, slender Roman numeral markers, rose gold-tone stainless-steel case, and delicate link bracelet.",
+    "specs": {
+      "movement": "Three-Hand Quartz with Date",
+      "case_size": "36 mm",
+      "case_thickness": "8 mm",
+      "case_material": "Rose Gold Ion-Plated Stainless Steel",
+      "dial_color": "Silvery White / Cream",
+      "strap_material": "Rose Gold Stainless Steel Bracelet",
+      "strap_color": "Rose Gold",
+      "glass": "Mineral Crystal",
+      "water_resistance": "3 ATM (30m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Featherlight 8mm slim profile",
+      "Warm rose gold-tone jewelry luster",
+      "Circular date window at 6 o'clock"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-067/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-067/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-7",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Jacqueline Classic Round ES3546",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-068",
+    "name": "Fossil Riley Crystal Bezel Multifunction ES2811",
+    "brand": "Fossil",
+    "model": "Riley ES2811",
+    "series": "Riley Collection",
+    "price_rupees": 11995,
+    "original_price_rupees": 13995,
+    "discount_percent": 14,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Party",
+    "rating": 4.8,
+    "review_count": 440,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "CRYSTAL BEZEL",
+    "is_bestseller": true,
+    "description": "38mm multifunction watch encircled by sparkling pave crystal bezel, sunray silver dial with 24-hour and day-date subdials, and stainless-steel bracelet.",
+    "specs": {
+      "movement": "Multifunction Quartz (Day, Date, 24-Hour)",
+      "case_size": "38 mm",
+      "case_thickness": "11 mm",
+      "case_material": "Stainless Steel with Crystal-Pave Bezel",
+      "dial_color": "Sunray Silver with Crystal Accents",
+      "strap_material": "Solid Stainless Steel Link Bracelet",
+      "strap_color": "Polished Silver",
+      "glass": "Mineral Crystal",
+      "water_resistance": "10 ATM (100m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "45+ precision-set sparkling crystal stones around bezel",
+      "Three multifunction sub-dials (Day, Date, 24h)",
+      "100M water resistance suitable for swimming"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-068/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-068/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-8",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Riley Crystal Bezel Multifunction ES2811",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-069",
+    "name": "Fossil Scarlette Two-Tone Date ES4319",
+    "brand": "Fossil",
+    "model": "Scarlette ES4319",
+    "series": "Scarlette",
+    "price_rupees": 10495,
+    "original_price_rupees": 12495,
+    "discount_percent": 16,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Office",
+    "rating": 4.9,
+    "review_count": 310,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "TWO-TONE LUXE",
+    "is_bestseller": true,
+    "description": "32mm elegant timepiece featuring a fluted crystal-accented bezel, silver sunray dial with Roman numerals, magnifier date cyclops, and two-tone gold/silver bracelet.",
+    "specs": {
+      "movement": "Three-Hand Quartz with Date Magnifier",
+      "case_size": "32 mm",
+      "case_thickness": "9 mm",
+      "case_material": "Two-Tone Stainless Steel & Gold Ion-Plate",
+      "dial_color": "Sunray Silver with Gold Hands",
+      "strap_material": "Two-Tone Stainless Steel Link Bracelet",
+      "strap_color": "Silver & Yellow Gold",
+      "glass": "Mineral Crystal with Date Cyclops Lens",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "Approx. 3 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Classic two-tone silver & gold versatility",
+      "Crystal fluted bezel catching light from every angle",
+      "Magnified cyclops date lens at 3 o'clock"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-069/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-069/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-9",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Scarlette Two-Tone Date ES4319",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-070",
+    "name": "Fossil Carlie Slim Analog ES4301",
+    "brand": "Fossil",
+    "model": "Carlie ES4301",
+    "series": "Carlie Collection",
+    "price_rupees": 8995,
+    "original_price_rupees": 10995,
+    "discount_percent": 18,
+    "currency": "INR",
+    "category": "Dress Watches",
+    "gender": "Women",
+    "vibe": "Minimal",
+    "rating": 4.7,
+    "review_count": 220,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "T-BAR SLIM",
+    "is_bestseller": false,
+    "description": "Minimalist 35mm round watch with distinctive architectural T-bar lugs, mother-of-pearl dial, rose gold hour markers, and fine mesh bracelet.",
+    "specs": {
+      "movement": "Three-Hand Quartz",
+      "case_size": "35 mm",
+      "case_thickness": "7.5 mm",
+      "case_material": "Rose Gold Ion-Plated Stainless Steel",
+      "dial_color": "White Mother-of-Pearl",
+      "strap_material": "Stainless Steel Milanese Mesh Strap",
+      "strap_color": "Rose Gold",
+      "glass": "Mineral Crystal",
+      "water_resistance": "3 ATM (30m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Iconic floating T-bar architectural lugs",
+      "Sleek adjustable Milanese mesh band",
+      "Subtle shimmer mother-of-pearl face"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-070/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-070/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-10",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Carlie Slim Analog ES4301",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-071",
+    "name": "Fossil Modern Courier Chronograph Gold BQ2400",
+    "brand": "Fossil",
+    "model": "Modern Courier BQ2400",
+    "series": "Modern Courier",
+    "price_rupees": 13495,
+    "original_price_rupees": 15995,
+    "discount_percent": 16,
+    "currency": "INR",
+    "category": "Chronograph",
+    "gender": "Unisex",
+    "vibe": "Party",
+    "rating": 4.8,
+    "review_count": 180,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "GOLD CHRONO",
+    "is_bestseller": true,
+    "description": "36mm gold-tone stainless-steel chronograph featuring dramatic black dial, Roman numeral hour markers, three subdials, and polished gold link bracelet.",
+    "specs": {
+      "movement": "Quartz Chronograph",
+      "case_size": "36 mm",
+      "case_thickness": "10 mm",
+      "case_material": "Yellow Gold Ion-Plated Stainless Steel",
+      "dial_color": "Sunray Jet Black with Gold Roman Numerals",
+      "strap_material": "Solid Gold-Tone Stainless Steel Bracelet",
+      "strap_color": "Yellow Gold",
+      "glass": "Hardened Mineral Crystal",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Bold contrast of black sunray dial against yellow gold case",
+      "Compact 36mm universal unisex profile",
+      "Precision 3-subdial stopwatch functionality"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-071/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-071/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-11",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Modern Courier Chronograph Gold BQ2400",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-072",
+    "name": "Fossil Nate Oversized Chronograph JR1354",
+    "brand": "Fossil",
+    "model": "Nate JR1354",
+    "series": "Nate Platform",
+    "price_rupees": 13995,
+    "original_price_rupees": 16995,
+    "discount_percent": 18,
+    "currency": "INR",
+    "category": "Sports Watches",
+    "gender": "Men",
+    "vibe": "Street",
+    "rating": 4.9,
+    "review_count": 520,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "50MM OVERSIZED",
+    "is_bestseller": true,
+    "description": "Massive 50mm military-inspired chronograph featuring matte black ion-plated case, stealth black dial with large Arabic numerals, and heavy black steel bracelet.",
+    "specs": {
+      "movement": "Quartz Chronograph with Date",
+      "case_size": "50 mm Oversized",
+      "case_thickness": "14 mm",
+      "case_material": "Matte Black Ion-Plated Stainless Steel",
+      "dial_color": "Matte Stealth Black",
+      "strap_material": "Solid Stainless Steel Link Bracelet",
+      "strap_color": "Matte Black",
+      "glass": "Tough Mineral Glass",
+      "water_resistance": "10 ATM (100m)",
+      "battery_life": "Approx. 2 Years",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Commanding 50mm oversized military presence",
+      "Stealth blackout aesthetics with high-contrast numerals",
+      "100M water resistance rating"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-072/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-072/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-12",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Nate Oversized Chronograph JR1354",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-073",
+    "name": "Fossil FB-01 Diver Automatic ME3190",
+    "brand": "Fossil",
+    "model": "FB-01 ME3190",
+    "series": "FB-01 Aquatic",
+    "price_rupees": 16995,
+    "original_price_rupees": 20995,
+    "discount_percent": 19,
+    "currency": "INR",
+    "category": "Automatic Watches",
+    "gender": "Unisex",
+    "vibe": "Travel",
+    "rating": 4.8,
+    "review_count": 240,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "AQUATIC SKELETON",
+    "is_bestseller": false,
+    "description": "42mm maritime diver-inspired automatic timepiece featuring rotating unidirectional elapsed-time bezel, skeleton open dial showing rotor and gears, and steel bracelet.",
+    "specs": {
+      "movement": "Automatic Skeleton Self-Winding",
+      "case_size": "42 mm",
+      "case_thickness": "12.5 mm",
+      "case_material": "Stainless Steel with Rotating Timing Bezel",
+      "dial_color": "Black Skeleton Exhibition Dial",
+      "strap_material": "Solid Stainless Steel 3-Link Bracelet",
+      "strap_color": "Brushed Silver",
+      "glass": "Mineral Crystal",
+      "water_resistance": "10 ATM (100m)",
+      "battery_life": "Self-Winding Mechanical (40h reserve)",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Rotating unidirectional diver timing bezel",
+      "Fully skeletonized mechanical movement view",
+      "100M swim and dive water resistance"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-073/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-073/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-13",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil FB-01 Diver Automatic ME3190",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-074",
+    "name": "Fossil Retro Digital Vintage Steel FS5846",
+    "brand": "Fossil",
+    "model": "Retro Digital FS5846",
+    "series": "Retro Digital",
+    "price_rupees": 7995,
+    "original_price_rupees": 9995,
+    "discount_percent": 20,
+    "currency": "INR",
+    "category": "Digital Watches",
+    "gender": "Unisex",
+    "vibe": "Street",
+    "rating": 4.7,
+    "review_count": 310,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "RETRO DIGITAL",
+    "is_bestseller": true,
+    "description": "Vintage 1980s nostalgia with stainless-steel rectangular case, multi-segment LCD digital display, stopwatch, daily alarm, electroluminescent backlight, and folded steel bracelet.",
+    "specs": {
+      "movement": "Digital Quartz Module",
+      "case_size": "36 \u00d7 40 mm Rectangular",
+      "case_thickness": "10 mm",
+      "case_material": "Polished Stainless Steel",
+      "dial_color": "Positive Digital LCD Screen",
+      "strap_material": "Adjustable Stainless Steel Link Bracelet",
+      "strap_color": "Silver",
+      "glass": "Mineral Glass",
+      "water_resistance": "5 ATM (50m)",
+      "battery_life": "CR2016 (Approx. 3 Years)",
+      "warranty": "2 Years Official Fossil Warranty"
+    },
+    "highlights": [
+      "Authentic retro 1980s digital heritage styling",
+      "Full digital chronograph, alarm, and hourly chime",
+      "Electroluminescent night backlight"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-074/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-074/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-14",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Retro Digital Vintage Steel FS5846",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
+  },
+  {
+    "id": "chronova-075",
+    "name": "Fossil Gen 5 Smartwatch FTW4025",
+    "brand": "Fossil",
+    "model": "Gen 5 FTW4025",
+    "series": "Gen 5 Touchscreen",
+    "price_rupees": 18495,
+    "original_price_rupees": 22995,
+    "discount_percent": 20,
+    "currency": "INR",
+    "category": "Smart Watches",
+    "gender": "Unisex",
+    "vibe": "Everyday",
+    "rating": 4.8,
+    "review_count": 640,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "badge": "TOUCHSCREEN SMART",
+    "is_bestseller": true,
+    "description": "44mm touchscreen smartwatch powered by Wear OS by Google, speaker for phone calls, heart-rate tracking, untethered GPS, Google Assistant, and customizable dials.",
+    "specs": {
+      "movement": "Wear OS by Google / Qualcomm Snapdragon Wear 3100",
+      "case_size": "44 mm",
+      "case_thickness": "12 mm",
+      "case_material": "Stainless Steel Case with Triple Side Buttons",
+      "dial_color": "1.28-inch Full Round AMOLED (416x416 px)",
+      "strap_material": "Interchangeable Silicone / Leather",
+      "strap_color": "Smoke Grey / Black",
+      "glass": "Gorilla Glass Touchscreen",
+      "water_resistance": "3 ATM (30m)",
+      "battery_life": "24hr + Multi-Day Extended Battery Modes",
+      "warranty": "2 Years Official Fossil International Warranty"
+    },
+    "highlights": [
+      "Built-in speaker to take phone calls on wrist",
+      "Google Assistant, Google Pay NFC, and standalone GPS",
+      "Heart rate tracking and Google Fit activity tracking"
+    ],
+    "images": {
+      "primary": "/products/fossil/chronova-075/primary.jpg",
+      "gallery": [
+        "/products/fossil/chronova-075/primary.jpg"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Standard Edition",
+        "hex": "#1e293b"
+      }
+    ],
+    "reviews": [
+      {
+        "id": "rev-fossil-15",
+        "reviewer_name": "Aditya V.",
+        "rating": 5,
+        "date": "2026-08-25",
+        "title": "Exceptional craftsmanship with Fossil Gen 5 Smartwatch FTW4025",
+        "comment": "The case finish is flawless and the proportions feel very premium on wrist.",
+        "helpful_votes": 28,
+        "verified_purchase": true
+      }
+    ]
   }
 ]
 
@@ -3788,6 +4733,7 @@ export const ALL_BRANDS: WatchBrand[] = [
   'Fastrack',
   'Casio',
   'Noise',
+  'Fossil',
 ]
 
 export const ALL_CATEGORIES: WatchCategory[] = [

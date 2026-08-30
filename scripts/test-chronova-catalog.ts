@@ -7,13 +7,13 @@ import {
 
 function validateChronovaCatalog() {
   console.log('====================================================================')
-  console.log('🔍 CHRONOVA 60-PRODUCT APPROVED DATASET INTEGRITY VALIDATION')
+  console.log('🔍 CHRONOVA 75-PRODUCT APPROVED DATASET INTEGRITY VALIDATION')
   console.log('====================================================================\n')
 
   // 1. Total Product Count
   console.log(`✓ Total Products in Catalog: ${CHRONOVA_CATALOG.length}`)
-  if (CHRONOVA_CATALOG.length !== 60) {
-    throw new Error(`Expected exactly 60 approved products, got ${CHRONOVA_CATALOG.length}`)
+  if (CHRONOVA_CATALOG.length !== 75) {
+    throw new Error(`Expected exactly 75 approved products, got ${CHRONOVA_CATALOG.length}`)
   }
 
   // 2. Unique Product IDs
@@ -38,6 +38,7 @@ function validateChronovaCatalog() {
     Fastrack: 15,
     Casio: 15,
     Noise: 15,
+    Fossil: 15,
   }
 
   for (const [brand, expected] of Object.entries(requiredTargets)) {
@@ -50,7 +51,7 @@ function validateChronovaCatalog() {
 
   // Ensure no other brands exist
   for (const brand of Object.keys(brandCounts)) {
-    if (!['Titan', 'Fastrack', 'Casio', 'Noise'].includes(brand)) {
+    if (!['Titan', 'Fastrack', 'Casio', 'Noise', 'Fossil'].includes(brand)) {
       throw new Error(`Non-approved brand detected in catalog: ${brand}`)
     }
   }

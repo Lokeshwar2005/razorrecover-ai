@@ -16,8 +16,8 @@ async function runChronovaRecoveryE2ETest() {
   // TEST 1: Catalog Integrity
   console.log('TEST 1: Validating Approved Watch Products & Canonical Schema')
   console.log(`✓ Total Products in Catalog: ${CHRONOVA_CATALOG.length}`)
-  if (CHRONOVA_CATALOG.length !== 60) {
-    throw new Error(`Expected exactly 60 approved watches, found ${CHRONOVA_CATALOG.length}`)
+  if (CHRONOVA_CATALOG.length !== 75) {
+    throw new Error(`Expected exactly 75 approved watches, found ${CHRONOVA_CATALOG.length}`)
   }
 
   // TEST 2: Customer Checkout & Server-to-Server Event Flow

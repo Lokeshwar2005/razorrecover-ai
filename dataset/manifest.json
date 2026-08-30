@@ -1,5 +1,5 @@
 {
-  "total_images": 60,
+  "total_images": 75,
   "titan_count": 15,
   "fastrack_count": 15,
   "other_brands_count": 0,
@@ -425,8 +425,129 @@
       "style": "FLAGSHIP EN1 CHIP",
       "file": "dataset/noise/15_noisefit_origin.jpg",
       "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Grant Chronograph FS5061",
+      "category": "Chronograph",
+      "style": "ICONIC CHRONO",
+      "file": "dataset/fossil/01_fossil_grant_fs5061.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Neutra Chronograph FS5525",
+      "category": "Chronograph",
+      "style": "MID-CENTURY",
+      "file": "dataset/fossil/02_fossil_neutra_fs5525.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Machine Industrial Chronograph FS4682",
+      "category": "Sports Watches",
+      "style": "INDUSTRIAL HEAVY",
+      "file": "dataset/fossil/03_fossil_machine_fs4682.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Townsman Automatic ME3171",
+      "category": "Automatic Watches",
+      "style": "OPEN HEART SKELETON",
+      "file": "dataset/fossil/04_fossil_townsman_me3171.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Everett Three-Hand Date FS6169",
+      "category": "Casual Watches",
+      "style": "INTEGRATED BRACELET",
+      "file": "dataset/fossil/05_fossil_everett_fs6169.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Raquel Rectangular Analog ES5399",
+      "category": "Dress Watches",
+      "style": "VINTAGE TANK",
+      "file": "dataset/fossil/06_fossil_raquel_es5399.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Jacqueline Classic Round ES3546",
+      "category": "Dress Watches",
+      "style": "CLASSIC SLIM",
+      "file": "dataset/fossil/07_fossil_jacqueline_es3546.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Riley Crystal Bezel Multifunction ES2811",
+      "category": "Dress Watches",
+      "style": "CRYSTAL BEZEL",
+      "file": "dataset/fossil/08_fossil_riley_es2811.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Scarlette Two-Tone Date ES4319",
+      "category": "Dress Watches",
+      "style": "TWO-TONE LUXE",
+      "file": "dataset/fossil/09_fossil_scarlette_es4319.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Carlie Slim Analog ES4301",
+      "category": "Dress Watches",
+      "style": "T-BAR SLIM",
+      "file": "dataset/fossil/10_fossil_carlie_es4301.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Modern Courier Chronograph Gold BQ2400",
+      "category": "Chronograph",
+      "style": "GOLD CHRONO",
+      "file": "dataset/fossil/11_fossil_modern_courier_gold.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Nate Oversized Chronograph JR1354",
+      "category": "Sports Watches",
+      "style": "50MM OVERSIZED",
+      "file": "dataset/fossil/12_fossil_nate_jr1354.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil FB-01 Diver Automatic ME3190",
+      "category": "Automatic Watches",
+      "style": "AQUATIC SKELETON",
+      "file": "dataset/fossil/13_fossil_fb01_me3190.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Retro Digital Vintage Steel FS5846",
+      "category": "Digital Watches",
+      "style": "RETRO DIGITAL",
+      "file": "dataset/fossil/14_fossil_retro_digital_fs5846.jpg",
+      "status": "KEEP"
+    },
+    {
+      "brand": "Fossil",
+      "model": "Fossil Gen 5 Smartwatch FTW4025",
+      "category": "Smart Watches",
+      "style": "TOUCHSCREEN SMART",
+      "file": "dataset/fossil/15_fossil_gen5_smartwatch.jpg",
+      "status": "KEEP"
     }
   ],
   "casio_count": 15,
-  "noise_count": 15
+  "noise_count": 15,
+  "fossil_count": 15
 }

@@ -12,6 +12,7 @@ function testImageConsistency() {
     'Fastrack',
     'Casio',
     'Noise',
+    'Fossil',
   ]
 
   // 1. Check all 190 products

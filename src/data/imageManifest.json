@@ -538,5 +538,140 @@
     "gallery": [
       "/products/noise/chronova-060/primary.jpg"
     ]
+  },
+  "chronova-061": {
+    "id": "chronova-061",
+    "brand": "Fossil",
+    "name": "Fossil Grant Chronograph FS5061",
+    "primaryImage": "/products/fossil/chronova-061/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-061/primary.jpg"
+    ]
+  },
+  "chronova-062": {
+    "id": "chronova-062",
+    "brand": "Fossil",
+    "name": "Fossil Neutra Chronograph FS5525",
+    "primaryImage": "/products/fossil/chronova-062/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-062/primary.jpg"
+    ]
+  },
+  "chronova-063": {
+    "id": "chronova-063",
+    "brand": "Fossil",
+    "name": "Fossil Machine Industrial Chronograph FS4682",
+    "primaryImage": "/products/fossil/chronova-063/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-063/primary.jpg"
+    ]
+  },
+  "chronova-064": {
+    "id": "chronova-064",
+    "brand": "Fossil",
+    "name": "Fossil Townsman Automatic ME3171",
+    "primaryImage": "/products/fossil/chronova-064/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-064/primary.jpg"
+    ]
+  },
+  "chronova-065": {
+    "id": "chronova-065",
+    "brand": "Fossil",
+    "name": "Fossil Everett Three-Hand Date FS6169",
+    "primaryImage": "/products/fossil/chronova-065/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-065/primary.jpg"
+    ]
+  },
+  "chronova-066": {
+    "id": "chronova-066",
+    "brand": "Fossil",
+    "name": "Fossil Raquel Rectangular Analog ES5399",
+    "primaryImage": "/products/fossil/chronova-066/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-066/primary.jpg"
+    ]
+  },
+  "chronova-067": {
+    "id": "chronova-067",
+    "brand": "Fossil",
+    "name": "Fossil Jacqueline Classic Round ES3546",
+    "primaryImage": "/products/fossil/chronova-067/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-067/primary.jpg"
+    ]
+  },
+  "chronova-068": {
+    "id": "chronova-068",
+    "brand": "Fossil",
+    "name": "Fossil Riley Crystal Bezel Multifunction ES2811",
+    "primaryImage": "/products/fossil/chronova-068/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-068/primary.jpg"
+    ]
+  },
+  "chronova-069": {
+    "id": "chronova-069",
+    "brand": "Fossil",
+    "name": "Fossil Scarlette Two-Tone Date ES4319",
+    "primaryImage": "/products/fossil/chronova-069/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-069/primary.jpg"
+    ]
+  },
+  "chronova-070": {
+    "id": "chronova-070",
+    "brand": "Fossil",
+    "name": "Fossil Carlie Slim Analog ES4301",
+    "primaryImage": "/products/fossil/chronova-070/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-070/primary.jpg"
+    ]
+  },
+  "chronova-071": {
+    "id": "chronova-071",
+    "brand": "Fossil",
+    "name": "Fossil Modern Courier Chronograph Gold BQ2400",
+    "primaryImage": "/products/fossil/chronova-071/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-071/primary.jpg"
+    ]
+  },
+  "chronova-072": {
+    "id": "chronova-072",
+    "brand": "Fossil",
+    "name": "Fossil Nate Oversized Chronograph JR1354",
+    "primaryImage": "/products/fossil/chronova-072/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-072/primary.jpg"
+    ]
+  },
+  "chronova-073": {
+    "id": "chronova-073",
+    "brand": "Fossil",
+    "name": "Fossil FB-01 Diver Automatic ME3190",
+    "primaryImage": "/products/fossil/chronova-073/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-073/primary.jpg"
+    ]
+  },
+  "chronova-074": {
+    "id": "chronova-074",
+    "brand": "Fossil",
+    "name": "Fossil Retro Digital Vintage Steel FS5846",
+    "primaryImage": "/products/fossil/chronova-074/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-074/primary.jpg"
+    ]
+  },
+  "chronova-075": {
+    "id": "chronova-075",
+    "brand": "Fossil",
+    "name": "Fossil Gen 5 Smartwatch FTW4025",
+    "primaryImage": "/products/fossil/chronova-075/primary.jpg",
+    "gallery": [
+      "/products/fossil/chronova-075/primary.jpg"
+    ]
   }
 }
