@@ -1,23 +1,23 @@
 <!-- Chronova Asset ID: chronova-085 | Brand: Seiko | Model: SRPD55K1 | SKU: seiko-5-sports-srpd55k1-automatic -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
-  <rect width="600" height="600" fill="#0f172a" />
-  <circle cx="300" cy="300" r="200" fill="#94a3b8" stroke="#f8fafc" stroke-width="4" />
-  <circle cx="300" cy="300" r="185" fill="#1e293b" />
-  <circle cx="300" cy="300" r="140" fill="#090d16" stroke="#cbd5e1" stroke-width="3" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#09090b" />
+  <circle cx="400" cy="400" r="270" fill="#cbd5e1" stroke="#ffffff" stroke-width="5" />
+  <circle cx="400" cy="400" r="250" fill="#18181b" />
+  <circle cx="400" cy="400" r="190" fill="#000000" stroke="#ffffff" stroke-width="4" />
 
-  <path d="M 300 300 L 200 240 A 120 120 0 0 1 400 240 Z" fill="#f8fafc" opacity="0.85" />
-  <circle cx="300" cy="300" r="40" fill="#cbd5e1" />
-  <circle cx="300" cy="300" r="15" fill="#ef4444" />
+  <path d="M 400 400 L 270 320 A 160 160 0 0 1 530 320 Z" fill="#ffffff" opacity="0.9" />
+  <circle cx="400" cy="400" r="55" fill="#cbd5e1" />
+  <circle cx="400" cy="400" r="20" fill="#ef4444" />
 
-  <path id="rotorArc_chronova-085" d="M 210 260 A 110 110 0 0 1 390 260" fill="none" />
-  <text font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="900" fill="#0f172a" letter-spacing="2">
+  <path id="rotorArc_chronova-085" d="M 280 350 A 150 150 0 0 1 520 350" fill="none" />
+  <text font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#000000" letter-spacing="3">
     <textPath href="#rotorArc_chronova-085" startOffset="50%" text-anchor="middle">CHRONOVA AUTOMATIC CALIBRE · 24 JEWELS</textPath>
   </text>
 
-  <path id="engraveArc_chronova-085" d="M 120 300 A 180 180 0 1 1 480 300" fill="none" />
-  <text font-family="monospace" font-size="10" font-weight="bold" fill="#94a3b8" letter-spacing="2">
-    <textPath href="#engraveArc_chronova-085" startOffset="50%" text-anchor="middle">SEIKO · SRPD55K1 · 100M (10 ATM) · STAINLESS STEEL</textPath>
+  <path id="caseBackArc_chronova-085" d="M 160 400 A 240 240 0 1 1 640 400" fill="none" />
+  <text font-family="monospace" font-size="13" font-weight="bold" fill="#94a3b8" letter-spacing="3">
+    <textPath href="#caseBackArc_chronova-085" startOffset="50%" text-anchor="middle">SEIKO · SRPD55K1 · 100M (10 ATM) · 316L STEEL</textPath>
   </text>
 
-  <text x="30" y="560" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b">VIEW 04 // SAPPHIRE EXHIBITION CASEBACK</text>
+  <text x="40" y="750" font-family="monospace" font-size="14" font-weight="bold" fill="#94a3b8">VIEW 04 // SAPPHIRE EXHIBITION CASEBACK</text>
 </svg>

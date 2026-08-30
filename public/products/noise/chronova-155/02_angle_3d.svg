@@ -1,26 +1,25 @@
 <!-- Chronova Asset ID: chronova-155 | Brand: Noise | Model: WRB-SW-EVOLVE4 | SKU: noise-evolve-4-premium-curved -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
-  <rect width="600" height="600" fill="#f1f5f9" />
-  <circle cx="300" cy="300" r="260" fill="#ffffff" />
-  <ellipse cx="330" cy="460" rx="190" ry="45" fill="#0f172a" opacity="0.15" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#f8fafc" />
+  <ellipse cx="430" cy="620" rx="240" ry="60" fill="#0f172a" opacity="0.18" />
 
-  <path d="M 210 400 L 260 540 L 370 510 L 330 380 Z" fill="#1e293b" />
-  <path d="M 180 120 L 240 70 L 350 100 L 290 160 Z" fill="#1e293b" />
+  <path d="M 270 540 L 330 720 L 480 680 L 430 500 Z" fill="#09090b" />
+  <path d="M 230 160 L 310 90 L 460 140 L 380 220 Z" fill="#09090b" />
 
-  <ellipse cx="300" cy="300" rx="160" ry="130" fill="#94a3b8" transform="rotate(-15 300 300)" />
-  <ellipse cx="300" cy="290" rx="155" ry="125" fill="#f8fafc" transform="rotate(-15 300 300)" />
-  <ellipse cx="300" cy="285" rx="145" ry="115" fill="#cbd5e1" transform="rotate(-15 300 300)" />
-  <ellipse cx="300" cy="285" rx="130" ry="105" fill="#111827" transform="rotate(-15 300 300)" />
+  <ellipse cx="400" cy="400" rx="220" ry="175" fill="#cbd5e1" transform="rotate(-15 400 400)" />
+  <ellipse cx="400" cy="385" rx="210" ry="165" fill="#ffffff" transform="rotate(-15 400 400)" />
+  <ellipse cx="400" cy="380" rx="195" ry="150" fill="#475569" transform="rotate(-15 400 400)" />
+  <ellipse cx="400" cy="380" rx="175" ry="135" fill="#18181b" transform="rotate(-15 400 400)" />
 
-  <ellipse cx="445" cy="245" rx="12" ry="20" fill="#f8fafc" transform="rotate(-15 445 245)" />
+  <ellipse cx="590" cy="325" rx="16" ry="26" fill="#ffffff" transform="rotate(-15 590 325)" />
 
-  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" transform="rotate(-15 300 285)">
-    <text x="300" y="240" font-size="14" font-weight="900" fill="#f3f4f6" letter-spacing="3">NOISE</text>
-    <text x="300" y="260" font-size="9" font-weight="700" fill="#f59e0b">WRB-SW-EVOLVE4</text>
-    <line x1="300" y1="285" x2="300" y2="215" stroke="#f9fafb" stroke-width="5" stroke-linecap="round" />
-    <line x1="300" y1="285" x2="365" y2="285" stroke="#f9fafb" stroke-width="4" stroke-linecap="round" />
+  <g text-anchor="middle" font-family="-apple-system, sans-serif" transform="rotate(-15 400 380)">
+    <text x="400" y="320" font-size="20" font-weight="900" fill="#ffffff" letter-spacing="4">NOISE</text>
+    <text x="400" y="348" font-size="12" font-weight="700" fill="#f59e0b">WRB-SW-EVOLVE4</text>
+    <line x1="400" y1="380" x2="400" y2="280" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+    <line x1="400" y1="380" x2="490" y2="380" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
   </g>
 
-  <path d="M 210 240 Q 300 300 390 220 Q 360 200 210 240 Z" fill="#ffffff" opacity="0.25" />
-  <text x="30" y="560" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b">VIEW 02 // 45° ISOMETRIC PERSPECTIVE</text>
+  <path d="M 270 320 Q 400 400 520 290 Q 480 260 270 320 Z" fill="#ffffff" opacity="0.3" />
+  <text x="40" y="750" font-family="monospace" font-size="14" font-weight="bold" fill="#64748b">VIEW 02 // 45° DYNAMIC PERSPECTIVE</text>
 </svg>

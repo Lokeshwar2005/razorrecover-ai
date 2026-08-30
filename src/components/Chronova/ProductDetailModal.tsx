@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import type { ChronovaProduct } from './types'
 import { getAssetUrl } from './utils'
+import { SplineWatchViewer } from './SplineWatchViewer'
 
 interface ProductDetailModalProps {
   product: ChronovaProduct | null
@@ -19,6 +20,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 }) => {
   if (!product) return null
 
+  const [viewMode, setViewMode] = useState<'2d' | '3d'>('2d')
   const [activeImageIndex, setActiveImageIndex] = useState<number>(0)
   const [selectedColor, setSelectedColor] = useState<string>(
     product.color_variants?.[0]?.name || 'Standard'
@@ -53,42 +55,82 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
         <div className="p-6 sm:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-            {/* LEFT COLUMN: Gallery Thumbnails + Large Studio Image */}
-            <div className="lg:col-span-6 flex flex-col-reverse sm:flex-row gap-4 items-start">
-              {/* Vertical Thumbnail List */}
-              <div className="flex sm:flex-col gap-3 overflow-x-auto sm:overflow-y-auto max-h-[500px] pb-2 sm:pb-0 scrollbar-none shrink-0">
-                {product.images.gallery.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveImageIndex(idx)}
-                    className={`w-20 h-20 rounded-2xl border-2 bg-slate-50 p-2 overflow-hidden transition-all duration-200 cursor-pointer ${
-                      activeImageIndex === idx
-                        ? 'border-slate-900 shadow-md ring-2 ring-slate-900/10'
-                        : 'border-slate-200 hover:border-slate-400'
-                    }`}
-                  >
-                    <img
-                      src={getAssetUrl(img)}
-                      alt={`${product.name} View ${idx + 1}`}
-                      className="w-full h-full object-contain filter drop-shadow-xs"
-                    />
-                  </button>
-                ))}
+            {/* LEFT COLUMN: Gallery Thumbnails + Large Studio Image / 3D Spline Experience */}
+            <div className="lg:col-span-6 space-y-4">
+              {/* 2D / 3D Spline Mode Switcher */}
+              <div className="flex items-center gap-2 p-1.5 bg-slate-100 rounded-2xl w-fit">
+                <button
+                  onClick={() => setViewMode('2d')}
+                  className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition cursor-pointer ${
+                    viewMode === '2d'
+                      ? 'bg-white text-slate-900 shadow-xs'
+                      : 'text-slate-500 hover:text-slate-900'
+                  }`}
+                >
+                  🖼️ Studio Photos ({product.images.gallery.length})
+                </button>
+                <button
+                  onClick={() => setViewMode('3d')}
+                  className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition cursor-pointer flex items-center gap-1.5 ${
+                    viewMode === '3d'
+                      ? 'bg-blue-600 text-white shadow-md'
+                      : 'text-slate-500 hover:text-blue-600'
+                  }`}
+                >
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  🎮 Spline 3D (360°)
+                </button>
               </div>
 
-              {/* Main Large Image Container */}
-              <div className="relative flex-1 aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-inner min-h-[320px] sm:min-h-[420px]">
-                {product.badge && (
-                  <span className="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-black uppercase tracking-wider font-mono shadow-md">
-                    {product.badge}
-                  </span>
-                )}
-                <img
-                  src={getAssetUrl(currentImage)}
-                  alt={product.name}
-                  className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-all duration-300 hover:scale-105"
-                />
-              </div>
+              {viewMode === '3d' ? (
+                <div className="w-full aspect-square rounded-3xl overflow-hidden shadow-xl">
+                  <SplineWatchViewer
+                    dialColor={product.specs.dial_color || 'Black'}
+                    caseMaterial={product.specs.case_material || 'Stainless Steel'}
+                    strapMaterial={product.specs.strap_material || 'Leather'}
+                    brand={product.brand}
+                    model={product.model}
+                    className="w-full h-full min-h-[380px] sm:min-h-[440px]"
+                  />
+                </div>
+              ) : (
+                <div className="flex flex-col-reverse sm:flex-row gap-4 items-start">
+                  {/* Vertical Thumbnail List */}
+                  <div className="flex sm:flex-col gap-3 overflow-x-auto sm:overflow-y-auto max-h-[500px] pb-2 sm:pb-0 scrollbar-none shrink-0">
+                    {product.images.gallery.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setActiveImageIndex(idx)}
+                        className={`w-20 h-20 rounded-2xl border-2 bg-slate-50 p-2 overflow-hidden transition-all duration-200 cursor-pointer ${
+                          activeImageIndex === idx
+                            ? 'border-slate-900 shadow-md ring-2 ring-slate-900/10'
+                            : 'border-slate-200 hover:border-slate-400'
+                        }`}
+                      >
+                        <img
+                          src={getAssetUrl(img)}
+                          alt={`${product.name} View ${idx + 1}`}
+                          className="w-full h-full object-contain filter drop-shadow-xs"
+                        />
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Main Large Image Container */}
+                  <div className="relative flex-1 aspect-square w-full rounded-3xl bg-slate-50 border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-inner min-h-[320px] sm:min-h-[420px]">
+                    {product.badge && (
+                      <span className="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-black uppercase tracking-wider font-mono shadow-md">
+                        {product.badge}
+                      </span>
+                    )}
+                    <img
+                      src={getAssetUrl(currentImage)}
+                      alt={product.name}
+                      className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-all duration-300 hover:scale-105"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* RIGHT COLUMN: Product Details & Buying Actions */}
