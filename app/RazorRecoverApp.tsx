@@ -480,8 +480,11 @@ export function RazorRecoverApp() {
     }
     if (activeDirection === 'Payment degradation' || activeDirection === 'Checkout drop-off') {
       const action = activeDirection === 'Checkout drop-off' ? 'Payment link' : 'Retry payment'
+      const actionUrl =
+        (typeof import.meta !== 'undefined' && import.meta.env?.VITE_RAZORPAY_ACTION_URL) ||
+        'https://razorrecover-ai-teal.vercel.app/api/razorpay/action'
       try {
-        const r = await fetch('/api/razorpay/action', {
+        const r = await fetch(actionUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ action, transactionId: id, amount: sample.amount }),

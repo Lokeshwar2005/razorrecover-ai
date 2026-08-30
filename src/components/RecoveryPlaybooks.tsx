@@ -97,10 +97,14 @@ export default function RecoveryPlaybooks({ scenario, onSelectTransaction }: Pro
       return
     }
 
+const RAZORPAY_ACTION_URL =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_RAZORPAY_ACTION_URL) ||
+  'https://razorrecover-ai-teal.vercel.app/api/razorpay/action'
+
     if (activeData.id === 'Payment degradation' || activeData.id === 'Checkout drop-off') {
       const action = activeData.id === 'Checkout drop-off' ? 'Payment link' : 'Retry payment'
       try {
-        const response = await fetch('/api/razorpay/action', {
+        const response = await fetch(RAZORPAY_ACTION_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ action, transactionId: sample.id, amount: sample.amount }),

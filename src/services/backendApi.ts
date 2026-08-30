@@ -449,16 +449,30 @@ export interface RazorpayFeedResponse {
 }
 
 export async function fetchRazorpayFeed(): Promise<RazorpayFeedResponse | null> {
+  const feedUrl =
+    (typeof process !== 'undefined' && (process.env?.NEXT_PUBLIC_RAZORPAY_API_URL || process.env?.VITE_RAZORPAY_API_URL)) ||
+    (typeof import.meta !== 'undefined' && (import.meta as any)?.env?.VITE_RAZORPAY_API_URL) ||
+    'https://razorrecover-ai-teal.vercel.app/api/razorpay/feed'
+
   // 1. Try Vercel/Next.js API route
   try {
-    const res = await fetch('/api/razorpay/feed', { signal: AbortSignal.timeout(3000) })
-    if (res.ok) return await res.json()
+    const res = await fetch(feedUrl, {
+      headers: { Accept: 'application/json' },
+      signal: AbortSignal.timeout(4000),
+    })
+    const contentType = res.headers.get('content-type') || ''
+    if (res.ok && contentType.includes('application/json')) {
+      return await res.json()
+    }
   } catch (e) {}
 
   // 2. Try FastAPI backend route
   try {
     const res = await fetch(`${API_BASE}/recovery/razorpay/payments`, { signal: AbortSignal.timeout(3000) })
-    if (res.ok) return await res.json()
+    const contentType = res.headers.get('content-type') || ''
+    if (res.ok && contentType.includes('application/json')) {
+      return await res.json()
+    }
   } catch (e) {}
 
   // 3. Fallback high-fidelity realistic test payments

@@ -10,6 +10,10 @@ type RazorpayPayment = {
   error_description?: string
 }
 
+const RAZORPAY_FEED_URL =
+  (typeof import.meta !== 'undefined' && import.meta.env?.VITE_RAZORPAY_API_URL) ||
+  'https://razorrecover-ai-teal.vercel.app/api/razorpay/feed'
+
 const rootId = 'razorrecover-live-feed'
 
 function money(amount: number, currency = 'INR') {
@@ -80,12 +84,18 @@ function mount() {
 
     state.textContent = 'syncing'
     try {
-      const response = await fetch('/api/razorpay/feed', {
+      const response = await fetch(RAZORPAY_FEED_URL, {
         headers: { Accept: 'application/json' },
         signal: controller.signal,
       })
+
+      const contentType = response.headers.get('content-type') || ''
+      if (!contentType.includes('application/json')) {
+        throw new Error('Razorpay API returned HTML instead of JSON. Check the configured production API URL.')
+      }
+
       const data = await response.json()
-      if (!response.ok) throw new Error(data?.error || 'Feed unavailable')
+      if (!response.ok) throw new Error(data?.error || 'Razorpay payment feed unavailable')
       
       const items = (data.items || []) as RazorpayPayment[]
       const fingerprint = computeFeedFingerprint(items)

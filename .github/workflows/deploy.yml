@@ -40,6 +40,8 @@ jobs:
         env:
           VITE_BASE_PATH: /razorrecover-ai/
           VITE_AI_API_URL: https://razorrecover-ai-teal.vercel.app/api/ai/recovery
+          VITE_RAZORPAY_API_URL: https://razorrecover-ai-teal.vercel.app/api/razorpay/feed
+          VITE_RAZORPAY_ACTION_URL: https://razorrecover-ai-teal.vercel.app/api/razorpay/action
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
