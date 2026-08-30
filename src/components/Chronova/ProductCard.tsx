@@ -135,6 +135,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               onAddToCart(product)
             }}
             className="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-extrabold uppercase tracking-wider transition shadow-xs cursor-pointer flex items-center justify-center gap-1.5 active:scale-98"
+            style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
           >
             <span>+</span> ADD TO BAG
           </button>

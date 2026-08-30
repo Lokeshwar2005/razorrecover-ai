@@ -31,6 +31,7 @@ function computeFeedFingerprint(items: RazorpayPayment[]): string {
 function mount() {
   if (typeof document === 'undefined') return
   if (document.getElementById(rootId)) return
+  if (typeof window !== 'undefined' && (window.location.pathname.includes('/chronova') || window.location.pathname.includes('/watches') || window.location.pathname.includes('/store'))) return
 
   const host = document.createElement('div')
   host.id = rootId

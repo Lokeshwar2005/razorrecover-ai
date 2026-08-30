@@ -19,6 +19,7 @@ import { ProductDetailModal } from './ProductDetailModal'
 import { QuickViewModal } from './QuickViewModal'
 import { CartDrawer } from './CartDrawer'
 import { CheckoutModal } from './CheckoutModal'
+import { CustomerAuthModal, CustomerUser } from './CustomerAuthModal'
 
 export const ChronovaStore: React.FC = () => {
   // Navigation & View Mode
@@ -71,6 +72,16 @@ export const ChronovaStore: React.FC = () => {
   const [wishlistIds, setWishlistIds] = useState<Set<string>>(new Set())
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false)
   const [isCheckoutOpen, setIsCheckoutOpen] = useState<boolean>(false)
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false)
+  const [customerUser, setCustomerUser] = useState<CustomerUser>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('chronova_user')
+      if (saved) {
+        try { return JSON.parse(saved) } catch (e) {}
+      }
+    }
+    return { name: 'Guest', email: '', phone: '', isLoggedIn: false }
+  })
   const [wishlistOpenOnly, setWishlistOpenOnly] = useState<boolean>(false)
   const [mobileFilterOpen, setMobileFilterOpen] = useState<boolean>(false)
 
@@ -639,11 +650,14 @@ export const ChronovaStore: React.FC = () => {
             {/* Header Right Actions */}
             <div className="flex items-center gap-3 sm:gap-5 shrink-0">
               <button
-                onClick={() => alert('Customer Portal: 100% Genuine Certified & Doorstep Warranty Assistance.')}
+                onClick={() => setIsAuthModalOpen(true)}
                 className="hidden sm:flex flex-col items-center text-slate-700 hover:text-slate-900 cursor-pointer"
+                title={customerUser.isLoggedIn ? `Logged in as ${customerUser.name}` : 'Sign In / Register'}
               >
                 <span className="text-lg">👤</span>
-                <span className="text-[10px] font-bold">Account</span>
+                <span className="text-[10px] font-bold whitespace-nowrap">
+                  {customerUser.isLoggedIn ? customerUser.name.split(' ')[0] : 'Sign In'}
+                </span>
               </button>
 
               <button
@@ -1331,6 +1345,25 @@ export const ChronovaStore: React.FC = () => {
         onClose={() => setIsCheckoutOpen(false)}
         items={cartItems}
         onClearCart={() => setCartItems([])}
+      />
+
+      <CustomerAuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        user={customerUser}
+        onLogin={(u) => {
+          setCustomerUser(u)
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('chronova_user', JSON.stringify(u))
+          }
+        }}
+        onLogout={() => {
+          const guest = { name: 'Guest', email: '', phone: '', isLoggedIn: false }
+          setCustomerUser(guest)
+          if (typeof window !== 'undefined') {
+            localStorage.removeItem('chronova_user')
+          }
+        }}
       />
     </div>
   )

@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@source "../src";
+@source "../app";
+@source "./src";
+@source "./app";
+@source "..";
 
 /* RazorRecover AI Fintech Theme */
 :root {

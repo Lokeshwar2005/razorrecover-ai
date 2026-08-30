@@ -206,6 +206,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       onClose()
                     }}
                     className="flex-1 py-3.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer"
+                    style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                   >
                     ADD TO BAG
                   </button>
@@ -216,6 +217,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       onClose()
                     }}
                     className="flex-1 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer"
+                    style={{ color: "#ffffff", backgroundColor: "#1d4ed8" }}
                   >
                     BUY NOW WITH RAZORPAY
                   </button>

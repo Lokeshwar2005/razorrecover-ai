@@ -177,6 +177,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                     onClose()
                   }}
                   className="flex-1 py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-sm cursor-pointer"
+                  style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                 >
                   ADD TO BAG
                 </button>

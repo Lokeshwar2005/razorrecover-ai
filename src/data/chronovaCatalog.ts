@@ -34,7 +34,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -53,7 +53,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -127,35 +127,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -227,8 +227,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -242,12 +242,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -324,8 +324,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -339,12 +339,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -418,35 +418,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -515,35 +515,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -612,20 +612,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -640,7 +640,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -709,35 +709,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -806,20 +806,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -829,12 +829,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -903,20 +903,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -931,7 +931,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1194,25 +1194,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -1222,7 +1222,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1291,20 +1291,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -1319,7 +1319,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1388,35 +1388,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1582,35 +1582,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1679,25 +1679,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -1707,7 +1707,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1970,35 +1970,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2071,7 +2071,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -2090,7 +2090,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -2164,35 +2164,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2358,20 +2358,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -2381,12 +2381,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2552,35 +2552,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2649,25 +2649,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -2677,7 +2677,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2746,20 +2746,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -2769,12 +2769,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2846,8 +2846,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -2861,12 +2861,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -2940,35 +2940,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3037,35 +3037,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3134,35 +3134,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3231,35 +3231,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3328,35 +3328,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3429,7 +3429,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -3448,7 +3448,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -3522,20 +3522,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -3545,12 +3545,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3622,8 +3622,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -3637,12 +3637,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -3716,20 +3716,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -3744,7 +3744,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3813,25 +3813,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -3841,7 +3841,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4007,20 +4007,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -4035,7 +4035,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4104,35 +4104,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4201,35 +4201,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4298,35 +4298,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4398,8 +4398,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -4413,12 +4413,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -4492,35 +4492,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4589,35 +4589,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4686,20 +4686,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -4709,12 +4709,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4783,20 +4783,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -4811,7 +4811,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4880,35 +4880,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4977,35 +4977,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5074,20 +5074,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -5097,12 +5097,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5174,8 +5174,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -5189,12 +5189,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -5268,35 +5268,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5365,20 +5365,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -5393,7 +5393,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5462,35 +5462,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5559,35 +5559,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5656,25 +5656,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -5684,7 +5684,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5756,8 +5756,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -5771,12 +5771,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -5850,35 +5850,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5947,35 +5947,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6044,35 +6044,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6141,35 +6141,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6238,20 +6238,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -6266,7 +6266,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6335,20 +6335,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -6358,12 +6358,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6432,35 +6432,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6529,35 +6529,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6626,25 +6626,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -6654,7 +6654,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6723,20 +6723,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -6751,7 +6751,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6820,35 +6820,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6917,35 +6917,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7014,20 +7014,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -7037,12 +7037,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7111,35 +7111,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7208,35 +7208,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7305,25 +7305,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -7333,7 +7333,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7402,35 +7402,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
       "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7502,8 +7502,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -7517,12 +7517,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -7596,35 +7596,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7693,20 +7693,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -7716,12 +7716,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7887,35 +7887,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7984,35 +7984,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8081,20 +8081,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -8109,7 +8109,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8178,20 +8178,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -8206,7 +8206,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8376,7 +8376,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
@@ -8395,7 +8395,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -8472,8 +8472,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -8487,12 +8487,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -8566,20 +8566,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -8589,12 +8589,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8666,8 +8666,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -8681,12 +8681,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -8760,35 +8760,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8861,7 +8861,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -8880,7 +8880,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -8957,8 +8957,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -8972,12 +8972,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -9051,35 +9051,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9148,20 +9148,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -9176,7 +9176,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9342,35 +9342,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9439,35 +9439,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9536,25 +9536,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -9564,7 +9564,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9633,25 +9633,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -9661,7 +9661,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9730,20 +9730,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -9753,12 +9753,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9830,8 +9830,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -9845,12 +9845,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -9924,35 +9924,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10021,25 +10021,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -10049,7 +10049,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10118,35 +10118,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10218,8 +10218,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -10233,12 +10233,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -10312,35 +10312,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10412,8 +10412,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -10427,12 +10427,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -10506,20 +10506,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -10529,12 +10529,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10603,35 +10603,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10700,35 +10700,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10801,7 +10801,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
@@ -10820,7 +10820,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -10897,8 +10897,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -10912,12 +10912,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -10991,25 +10991,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -11019,7 +11019,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11088,35 +11088,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11282,35 +11282,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11379,35 +11379,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11476,20 +11476,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -11504,7 +11504,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11577,7 +11577,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -11596,7 +11596,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -11670,35 +11670,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11771,7 +11771,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -11790,7 +11790,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -11867,8 +11867,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
         "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -11882,12 +11882,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -11961,25 +11961,25 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
@@ -11989,7 +11989,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12058,35 +12058,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12155,20 +12155,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -12183,7 +12183,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12256,7 +12256,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "gallery": [
         "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -12275,7 +12275,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
@@ -12349,35 +12349,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12446,35 +12446,35 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
         "hex": "#1e3a8a",
-        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12543,20 +12543,20 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
       "gallery": [
-        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       ]
     },
-    "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
-    "thumbnailImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+    "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+    "thumbnailImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
     "color_variants": [
       {
         "name": "Midnight Black",
         "hex": "#111827",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Blue",
@@ -12571,7 +12571,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       {
         "name": "Silver Steel",
         "hex": "#64748b",
-        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
