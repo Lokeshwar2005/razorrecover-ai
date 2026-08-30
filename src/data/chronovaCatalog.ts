@@ -29,31 +29,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -120,31 +123,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -211,31 +217,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -302,31 +311,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -393,31 +405,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -484,31 +499,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -575,31 +593,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -666,31 +687,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -732,9 +756,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-009",
     "brand": "Titan",
-    "series": "Edge Ceramic",
+    "series": "Neo Classic",
     "model": "TIT-1009",
-    "name": "Titan Edge Ceramic Titanium",
+    "name": "Titan Neo Classic Titanium",
     "category": "Analog Watches",
     "vibe": "Office",
     "gender": "Unisex",
@@ -750,38 +774,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Edge Ceramic Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Neo Classic Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Titan Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -805,7 +832,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-19",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Titan!",
-        "comment": "Bought this Titan Edge Ceramic Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Titan Neo Classic Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 17
       },
       {
@@ -823,9 +850,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-010",
     "brand": "Titan",
-    "series": "Grandmaster",
+    "series": "Bandhan Pair",
     "model": "TIT-1010",
-    "name": "Titan Grandmaster Carbon",
+    "name": "Titan Bandhan Pair Carbon",
     "category": "Minimal Watches",
     "vibe": "Sport",
     "gender": "Women",
@@ -841,38 +868,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Grandmaster Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Bandhan Pair Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Titan Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -896,7 +926,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Titan!",
-        "comment": "Bought this Titan Grandmaster Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Titan Bandhan Pair Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 18
       },
       {
@@ -914,9 +944,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-011",
     "brand": "Titan",
-    "series": "Octane Chrono",
+    "series": "Edge Ceramic",
     "model": "TIT-1011",
-    "name": "Titan Octane Chrono Edition",
+    "name": "Titan Edge Ceramic Signature",
     "category": "Luxury Watches",
     "vibe": "Travel",
     "gender": "Men",
@@ -932,38 +962,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Octane Chrono Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Edge Ceramic Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Titan Craftsmanship & Heritage",
       "Precision Japanese Quartz with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -987,7 +1020,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-21",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Titan!",
-        "comment": "Bought this Titan Octane Chrono Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Titan Edge Ceramic Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 19
       },
       {
@@ -1005,9 +1038,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-012",
     "brand": "Titan",
-    "series": "Stellar Space",
+    "series": "Grandmaster",
     "model": "TIT-1012",
-    "name": "Titan Stellar Space Chronograph",
+    "name": "Titan Grandmaster Prime",
     "category": "Chronograph",
     "vibe": "Premium",
     "gender": "Unisex",
@@ -1023,38 +1056,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Stellar Space Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Grandmaster Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Titan Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1078,7 +1114,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-22",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Titan!",
-        "comment": "Bought this Titan Stellar Space Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Titan Grandmaster Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 20
       },
       {
@@ -1096,9 +1132,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-013",
     "brand": "Titan",
-    "series": "Raga Aurora",
+    "series": "Octane Chrono",
     "model": "TIT-1013",
-    "name": "Titan Raga Aurora Pro",
+    "name": "Titan Octane Chrono Edition",
     "category": "Dress Watches",
     "vibe": "Office",
     "gender": "Women",
@@ -1114,38 +1150,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Raga Aurora Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Octane Chrono Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Titan Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1169,12 +1208,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-23",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Titan!",
-        "comment": "Bought this Titan Raga Aurora Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Titan Octane Chrono Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 21
       },
       {
         "id": "rev-13-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -1187,9 +1226,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-014",
     "brand": "Titan",
-    "series": "Maritime Diver",
+    "series": "Stellar Space",
     "model": "TIT-1014",
-    "name": "Titan Maritime Diver Automatic",
+    "name": "Titan Stellar Space Chronograph",
     "category": "Analog Watches",
     "vibe": "Sport",
     "gender": "Men",
@@ -1205,38 +1244,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Maritime Diver Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Titan Stellar Space Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Titan Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1260,12 +1302,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-24",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Titan!",
-        "comment": "Bought this Titan Maritime Diver Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Titan Stellar Space Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 22
       },
       {
         "id": "rev-14-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -1303,31 +1345,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1356,7 +1401,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-15-2",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -1394,31 +1439,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1437,7 +1485,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-16-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-26",
         "verified_purchase": true,
@@ -1447,7 +1495,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-16-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -1485,31 +1533,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1528,7 +1579,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-17-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 5,
         "date": "2026-08-27",
         "verified_purchase": true,
@@ -1538,7 +1589,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-17-2",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -1576,31 +1627,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1619,7 +1673,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-18-1",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Manish Choudhary",
         "rating": 4,
         "date": "2026-08-10",
         "verified_purchase": true,
@@ -1629,7 +1683,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-18-2",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -1667,31 +1721,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1710,7 +1767,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-19-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Deepika Reddy",
         "rating": 5,
         "date": "2026-08-11",
         "verified_purchase": true,
@@ -1720,7 +1777,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-19-2",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -1758,31 +1815,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1801,7 +1861,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-20-1",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-12",
         "verified_purchase": true,
@@ -1811,7 +1871,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-20-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -1849,31 +1909,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1892,7 +1955,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-21-1",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-13",
         "verified_purchase": true,
@@ -1902,7 +1965,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-21-2",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -1915,9 +1978,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-022",
     "brand": "Fastrack",
-    "series": "Limitless",
+    "series": "All-Nighter",
     "model": "FAS-1022",
-    "name": "Fastrack Limitless Elite",
+    "name": "Fastrack All-Nighter Elite",
     "category": "Minimal Watches",
     "vibe": "Travel",
     "gender": "Unisex",
@@ -1933,38 +1996,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Limitless Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack All-Nighter Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -1983,17 +2049,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-22-1",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-14",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Limitless Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack All-Nighter Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
         "id": "rev-22-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -2006,9 +2072,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-023",
     "brand": "Fastrack",
-    "series": "Stunners",
+    "series": "Hypersport",
     "model": "FAS-1023",
-    "name": "Fastrack Stunners Titanium",
+    "name": "Fastrack Hypersport Titanium",
     "category": "Analog Watches",
     "vibe": "Premium",
     "gender": "Women",
@@ -2024,38 +2090,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Stunners Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Hypersport Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2074,17 +2143,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-23-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 5,
         "date": "2026-08-15",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Stunners Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack Hypersport Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 16
       },
       {
         "id": "rev-23-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -2097,9 +2166,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-024",
     "brand": "Fastrack",
-    "series": "Tees Casual",
+    "series": "Limitless",
     "model": "FAS-1024",
-    "name": "Fastrack Tees Casual Carbon",
+    "name": "Fastrack Limitless Carbon",
     "category": "Digital Watches",
     "vibe": "Office",
     "gender": "Men",
@@ -2115,38 +2184,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Tees Casual Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Limitless Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2165,17 +2237,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-24-1",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 4,
         "date": "2026-08-16",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Tees Casual Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack Limitless Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 17
       },
       {
         "id": "rev-24-2",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -2188,9 +2260,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-025",
     "brand": "Fastrack",
-    "series": "Vyb Urban",
+    "series": "Stunners",
     "model": "FAS-1025",
-    "name": "Fastrack Vyb Urban Edition",
+    "name": "Fastrack Stunners Signature",
     "category": "Casual Watches",
     "vibe": "Sport",
     "gender": "Unisex",
@@ -2206,38 +2278,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Vyb Urban Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Stunners Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2256,17 +2331,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-25-1",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Karan Singhania",
         "rating": 5,
         "date": "2026-08-17",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Vyb Urban Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack Stunners Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 18
       },
       {
         "id": "rev-25-2",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -2279,9 +2354,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-026",
     "brand": "Fastrack",
-    "series": "Casuals Denim",
+    "series": "Tees Casual",
     "model": "FAS-1026",
-    "name": "Fastrack Casuals Denim Chronograph",
+    "name": "Fastrack Tees Casual Prime",
     "category": "Sports Watches",
     "vibe": "Travel",
     "gender": "Women",
@@ -2297,38 +2372,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Casuals Denim Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Tees Casual Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2347,17 +2425,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-26-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
         "date": "2026-08-18",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Casuals Denim Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack Tees Casual Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 19
       },
       {
         "id": "rev-26-2",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -2370,9 +2448,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-027",
     "brand": "Fastrack",
-    "series": "Street Rebel",
+    "series": "Vyb Urban",
     "model": "FAS-1027",
-    "name": "Fastrack Street Rebel Pro",
+    "name": "Fastrack Vyb Urban Edition",
     "category": "Minimal Watches",
     "vibe": "Premium",
     "gender": "Men",
@@ -2388,38 +2466,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Street Rebel Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Vyb Urban Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2438,17 +2519,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-27-1",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
         "date": "2026-08-19",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Street Rebel Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack Vyb Urban Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 20
       },
       {
         "id": "rev-27-2",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -2461,9 +2542,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-028",
     "brand": "Fastrack",
-    "series": "Monochrome",
+    "series": "Casuals Denim",
     "model": "FAS-1028",
-    "name": "Fastrack Monochrome Automatic",
+    "name": "Fastrack Casuals Denim Chronograph",
     "category": "Analog Watches",
     "vibe": "Office",
     "gender": "Unisex",
@@ -2479,38 +2560,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Monochrome Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fastrack Casuals Denim Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fastrack Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2529,17 +2613,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-28-1",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fastrack!",
-        "comment": "Bought this Fastrack Monochrome Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fastrack Casuals Denim Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 21
       },
       {
         "id": "rev-28-2",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -2577,31 +2661,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2620,7 +2707,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-29-1",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-21",
         "verified_purchase": true,
@@ -2630,7 +2717,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-29-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -2668,31 +2755,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2711,7 +2801,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-30-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-22",
         "verified_purchase": true,
@@ -2721,7 +2811,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-30-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 4,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -2759,31 +2849,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2802,7 +2895,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-31-1",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 5,
         "date": "2026-08-23",
         "verified_purchase": true,
@@ -2812,7 +2905,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-31-2",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -2850,31 +2943,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2893,7 +2989,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-32-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Rishabh Verma",
         "rating": 4,
         "date": "2026-08-24",
         "verified_purchase": true,
@@ -2903,7 +2999,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-32-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -2941,31 +3037,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -2984,7 +3083,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-33-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 5,
         "date": "2026-08-25",
         "verified_purchase": true,
@@ -2994,7 +3093,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-33-2",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -3032,31 +3131,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3075,7 +3177,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-34-1",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-26",
         "verified_purchase": true,
@@ -3085,7 +3187,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-34-2",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -3098,9 +3200,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-035",
     "brand": "Casio",
-    "series": "G-Shock Mudmaster",
+    "series": "Youth Digital",
     "model": "CAS-1035",
-    "name": "Casio G-Shock Mudmaster Ultra",
+    "name": "Casio Youth Digital Ultra",
     "category": "Outdoor Watches",
     "vibe": "Office",
     "gender": "Unisex",
@@ -3116,38 +3218,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio G-Shock Mudmaster Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Youth Digital Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3166,17 +3271,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-35-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
         "date": "2026-08-27",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio G-Shock Mudmaster Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio Youth Digital Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
         "id": "rev-35-2",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -3189,9 +3294,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-036",
     "brand": "Casio",
-    "series": "Edifice Chronograph",
+    "series": "Illuminator Sport",
     "model": "CAS-1036",
-    "name": "Casio Edifice Chronograph Elite",
+    "name": "Casio Illuminator Sport Elite",
     "category": "Sports Watches",
     "vibe": "Sport",
     "gender": "Women",
@@ -3207,38 +3312,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Edifice Chronograph Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Illuminator Sport Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3257,17 +3365,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-36-1",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-10",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio Edifice Chronograph Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio Illuminator Sport Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 14
       },
       {
         "id": "rev-36-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -3280,9 +3388,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-037",
     "brand": "Casio",
-    "series": "Vintage Digital Gold",
+    "series": "G-Shock Mudmaster",
     "model": "CAS-1037",
-    "name": "Casio Vintage Digital Gold Titanium",
+    "name": "Casio G-Shock Mudmaster Titanium",
     "category": "Chronograph",
     "vibe": "Travel",
     "gender": "Men",
@@ -3298,38 +3406,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Vintage Digital Gold Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio G-Shock Mudmaster Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3348,17 +3459,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-37-1",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 5,
         "date": "2026-08-11",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio Vintage Digital Gold Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio G-Shock Mudmaster Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
         "id": "rev-37-2",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -3371,9 +3482,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-038",
     "brand": "Casio",
-    "series": "Enticer Classic",
+    "series": "Edifice Chronograph",
     "model": "CAS-1038",
-    "name": "Casio Enticer Classic Carbon",
+    "name": "Casio Edifice Chronograph Carbon",
     "category": "Analog Watches",
     "vibe": "Premium",
     "gender": "Unisex",
@@ -3389,38 +3500,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Enticer Classic Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Edifice Chronograph Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3439,17 +3553,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-38-1",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Manish Choudhary",
         "rating": 4,
         "date": "2026-08-12",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio Enticer Classic Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio Edifice Chronograph Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 16
       },
       {
         "id": "rev-38-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -3462,9 +3576,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-039",
     "brand": "Casio",
-    "series": "Pro Trek Solar",
+    "series": "Vintage Digital Gold",
     "model": "CAS-1039",
-    "name": "Casio Pro Trek Solar Edition",
+    "name": "Casio Vintage Digital Gold Signature",
     "category": "Digital Watches",
     "vibe": "Office",
     "gender": "Women",
@@ -3480,38 +3594,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Pro Trek Solar Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Vintage Digital Gold Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3530,17 +3647,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-39-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Deepika Reddy",
         "rating": 5,
         "date": "2026-08-13",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio Pro Trek Solar Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio Vintage Digital Gold Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 17
       },
       {
         "id": "rev-39-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -3553,9 +3670,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-040",
     "brand": "Casio",
-    "series": "G-Shock 2100 CasiOak",
+    "series": "Enticer Classic",
     "model": "CAS-1040",
-    "name": "Casio G-Shock 2100 CasiOak Chronograph",
+    "name": "Casio Enticer Classic Prime",
     "category": "Outdoor Watches",
     "vibe": "Sport",
     "gender": "Men",
@@ -3571,38 +3688,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio G-Shock 2100 CasiOak Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Enticer Classic Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3621,17 +3741,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-40-1",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-14",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio G-Shock 2100 CasiOak Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio Enticer Classic Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 18
       },
       {
         "id": "rev-40-2",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -3644,9 +3764,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-041",
     "brand": "Casio",
-    "series": "G-Shock Mudmaster",
+    "series": "Pro Trek Solar",
     "model": "CAS-1041",
-    "name": "Casio G-Shock Mudmaster Pro",
+    "name": "Casio Pro Trek Solar Edition",
     "category": "Sports Watches",
     "vibe": "Travel",
     "gender": "Unisex",
@@ -3662,38 +3782,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio G-Shock Mudmaster Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Pro Trek Solar Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3712,17 +3835,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-41-1",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-15",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio G-Shock Mudmaster Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio Pro Trek Solar Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 19
       },
       {
         "id": "rev-41-2",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -3735,9 +3858,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-042",
     "brand": "Casio",
-    "series": "Edifice Chronograph",
+    "series": "G-Shock 2100 CasiOak",
     "model": "CAS-1042",
-    "name": "Casio Edifice Chronograph Automatic",
+    "name": "Casio G-Shock 2100 CasiOak Chronograph",
     "category": "Chronograph",
     "vibe": "Premium",
     "gender": "Women",
@@ -3753,38 +3876,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio Edifice Chronograph Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Casio G-Shock 2100 CasiOak Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Casio Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3803,17 +3929,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-42-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-16",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Casio!",
-        "comment": "Bought this Casio Edifice Chronograph Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Casio G-Shock 2100 CasiOak Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 20
       },
       {
         "id": "rev-42-2",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -3851,31 +3977,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3894,7 +4023,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-43-1",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-17",
         "verified_purchase": true,
@@ -3904,7 +4033,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-43-2",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -3942,31 +4071,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -3985,7 +4117,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-44-1",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-18",
         "verified_purchase": true,
@@ -3995,7 +4127,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-44-2",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -4033,31 +4165,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4076,7 +4211,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-45-1",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Karan Singhania",
         "rating": 5,
         "date": "2026-08-19",
         "verified_purchase": true,
@@ -4086,7 +4221,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-45-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -4124,31 +4259,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4167,7 +4305,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-46-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Meera Nambiar",
         "rating": 4,
         "date": "2026-08-20",
         "verified_purchase": true,
@@ -4177,7 +4315,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-46-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -4215,31 +4353,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4258,7 +4399,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-47-1",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 5,
         "date": "2026-08-21",
         "verified_purchase": true,
@@ -4268,7 +4409,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-47-2",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -4306,31 +4447,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4349,7 +4493,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-48-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-22",
         "verified_purchase": true,
@@ -4359,7 +4503,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-48-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -4372,9 +4516,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-049",
     "brand": "Timex",
-    "series": "Waterbury Traditional",
+    "series": "Weekender Slip-Thru",
     "model": "TIM-1049",
-    "name": "Timex Waterbury Traditional Ultra",
+    "name": "Timex Weekender Slip-Thru Ultra",
     "category": "Outdoor Watches",
     "vibe": "Premium",
     "gender": "Women",
@@ -4390,38 +4534,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Waterbury Traditional Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Weekender Slip-Thru Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4440,17 +4587,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-49-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-23",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Waterbury Traditional Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Weekender Slip-Thru Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 12
       },
       {
         "id": "rev-49-2",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -4463,9 +4610,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-050",
     "brand": "Timex",
-    "series": "Marlin Automatic",
+    "series": "Waterbury Traditional",
     "model": "TIM-1050",
-    "name": "Timex Marlin Automatic Elite",
+    "name": "Timex Waterbury Traditional Elite",
     "category": "Casual Watches",
     "vibe": "Office",
     "gender": "Men",
@@ -4481,38 +4628,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Marlin Automatic Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Waterbury Traditional Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4531,17 +4681,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-50-1",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-24",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Marlin Automatic Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Waterbury Traditional Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
         "id": "rev-50-2",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 4,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -4554,9 +4704,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-051",
     "brand": "Timex",
-    "series": "Expedition Scout",
+    "series": "Marlin Automatic",
     "model": "TIM-1051",
-    "name": "Timex Expedition Scout Titanium",
+    "name": "Timex Marlin Automatic Titanium",
     "category": "Dress Watches",
     "vibe": "Sport",
     "gender": "Unisex",
@@ -4572,38 +4722,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Expedition Scout Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Marlin Automatic Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4622,17 +4775,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-51-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 5,
         "date": "2026-08-25",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Expedition Scout Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Marlin Automatic Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 14
       },
       {
         "id": "rev-51-2",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -4645,9 +4798,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-052",
     "brand": "Timex",
-    "series": "Q Timex Reissue",
+    "series": "Expedition Scout",
     "model": "TIM-1052",
-    "name": "Timex Q Timex Reissue Carbon",
+    "name": "Timex Expedition Scout Carbon",
     "category": "Analog Watches",
     "vibe": "Travel",
     "gender": "Women",
@@ -4663,38 +4816,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Q Timex Reissue Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Expedition Scout Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4713,17 +4869,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-52-1",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Rishabh Verma",
         "rating": 4,
         "date": "2026-08-26",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Q Timex Reissue Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Expedition Scout Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
         "id": "rev-52-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -4736,9 +4892,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-053",
     "brand": "Timex",
-    "series": "Command Shock",
+    "series": "Q Timex Reissue",
     "model": "TIM-1053",
-    "name": "Timex Command Shock Edition",
+    "name": "Timex Q Timex Reissue Signature",
     "category": "Automatic Watches",
     "vibe": "Premium",
     "gender": "Men",
@@ -4754,38 +4910,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Command Shock Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Q Timex Reissue Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4804,17 +4963,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-53-1",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 5,
         "date": "2026-08-27",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Command Shock Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Q Timex Reissue Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 16
       },
       {
         "id": "rev-53-2",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -4827,9 +4986,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-054",
     "brand": "Timex",
-    "series": "Easy Reader",
+    "series": "Command Shock",
     "model": "TIM-1054",
-    "name": "Timex Easy Reader Chronograph",
+    "name": "Timex Command Shock Prime",
     "category": "Outdoor Watches",
     "vibe": "Office",
     "gender": "Unisex",
@@ -4845,38 +5004,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Easy Reader Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Command Shock Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4895,17 +5057,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-54-1",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-10",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Easy Reader Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Command Shock Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 17
       },
       {
         "id": "rev-54-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -4918,9 +5080,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-055",
     "brand": "Timex",
-    "series": "Waterbury Traditional",
+    "series": "Easy Reader",
     "model": "TIM-1055",
-    "name": "Timex Waterbury Traditional Pro",
+    "name": "Timex Easy Reader Edition",
     "category": "Casual Watches",
     "vibe": "Sport",
     "gender": "Women",
@@ -4936,38 +5098,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Waterbury Traditional Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Easy Reader Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -4986,17 +5151,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-55-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
         "date": "2026-08-11",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Waterbury Traditional Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Easy Reader Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 18
       },
       {
         "id": "rev-55-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -5009,9 +5174,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-056",
     "brand": "Timex",
-    "series": "Marlin Automatic",
+    "series": "Weekender Slip-Thru",
     "model": "TIM-1056",
-    "name": "Timex Marlin Automatic Automatic",
+    "name": "Timex Weekender Slip-Thru Chronograph",
     "category": "Dress Watches",
     "vibe": "Travel",
     "gender": "Men",
@@ -5027,38 +5192,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Marlin Automatic Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Timex Weekender Slip-Thru Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Timex Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5077,17 +5245,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-56-1",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-12",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Timex!",
-        "comment": "Bought this Timex Marlin Automatic Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Timex Weekender Slip-Thru Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 19
       },
       {
         "id": "rev-56-2",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -5125,31 +5293,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5168,7 +5339,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-57-1",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-13",
         "verified_purchase": true,
@@ -5178,7 +5349,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-57-2",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -5216,31 +5387,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5259,7 +5433,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-58-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-14",
         "verified_purchase": true,
@@ -5269,7 +5443,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-58-2",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -5307,31 +5481,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5350,7 +5527,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-59-1",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Deepika Reddy",
         "rating": 5,
         "date": "2026-08-15",
         "verified_purchase": true,
@@ -5360,7 +5537,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-59-2",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -5398,31 +5575,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5441,7 +5621,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-60-1",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 4,
         "date": "2026-08-16",
         "verified_purchase": true,
@@ -5451,7 +5631,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-60-2",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -5489,31 +5669,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5532,7 +5715,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-61-1",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 5,
         "date": "2026-08-17",
         "verified_purchase": true,
@@ -5542,7 +5725,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-61-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -5580,31 +5763,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5623,7 +5809,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-62-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-18",
         "verified_purchase": true,
@@ -5633,7 +5819,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-62-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -5646,9 +5832,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-063",
     "brand": "Fossil",
-    "series": "Grant Chronograph",
+    "series": "Minimalist 3H",
     "model": "FOS-1063",
-    "name": "Fossil Grant Chronograph Ultra",
+    "name": "Fossil Minimalist 3H Ultra",
     "category": "Automatic Watches",
     "vibe": "Travel",
     "gender": "Men",
@@ -5664,38 +5850,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Grant Chronograph Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Minimalist 3H Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Mechanical Automatic 24-Jewel (41h Reserve) with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5714,17 +5903,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-63-1",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-19",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Grant Chronograph Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Minimalist 3H Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 11
       },
       {
         "id": "rev-63-2",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -5737,9 +5926,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-064",
     "brand": "Fossil",
-    "series": "Neutra Minimalist",
+    "series": "Grant Chronograph",
     "model": "FOS-1064",
-    "name": "Fossil Neutra Minimalist Elite",
+    "name": "Fossil Grant Chronograph Elite",
     "category": "Dress Watches",
     "vibe": "Premium",
     "gender": "Unisex",
@@ -5755,38 +5944,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Neutra Minimalist Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Grant Chronograph Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5805,17 +5997,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-64-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Neutra Minimalist Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Grant Chronograph Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 12
       },
       {
         "id": "rev-64-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -5828,9 +6020,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-065",
     "brand": "Fossil",
-    "series": "Jacqueline Sunray",
+    "series": "Neutra Minimalist",
     "model": "FOS-1065",
-    "name": "Fossil Jacqueline Sunray Titanium",
+    "name": "Fossil Neutra Minimalist Titanium",
     "category": "Minimal Watches",
     "vibe": "Office",
     "gender": "Women",
@@ -5846,38 +6038,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Jacqueline Sunray Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Neutra Minimalist Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5896,17 +6091,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-65-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Karan Singhania",
         "rating": 5,
         "date": "2026-08-21",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Jacqueline Sunray Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Neutra Minimalist Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
         "id": "rev-65-2",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -5919,9 +6114,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-066",
     "brand": "Fossil",
-    "series": "Machine Industrial",
+    "series": "Jacqueline Sunray",
     "model": "FOS-1066",
-    "name": "Fossil Machine Industrial Carbon",
+    "name": "Fossil Jacqueline Sunray Carbon",
     "category": "Luxury Watches",
     "vibe": "Sport",
     "gender": "Men",
@@ -5937,38 +6132,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Machine Industrial Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Jacqueline Sunray Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -5987,17 +6185,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-66-1",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Meera Nambiar",
         "rating": 4,
         "date": "2026-08-22",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Machine Industrial Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Jacqueline Sunray Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 14
       },
       {
         "id": "rev-66-2",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -6010,9 +6208,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-067",
     "brand": "Fossil",
-    "series": "Townsman Automatic",
+    "series": "Machine Industrial",
     "model": "FOS-1067",
-    "name": "Fossil Townsman Automatic Edition",
+    "name": "Fossil Machine Industrial Signature",
     "category": "Chronograph",
     "vibe": "Travel",
     "gender": "Unisex",
@@ -6028,38 +6226,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Townsman Automatic Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Machine Industrial Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Precision Japanese Quartz with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6078,17 +6279,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-67-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 5,
         "date": "2026-08-23",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Townsman Automatic Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Machine Industrial Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
         "id": "rev-67-2",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -6101,9 +6302,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-068",
     "brand": "Fossil",
-    "series": "FB-01 Diver",
+    "series": "Townsman Automatic",
     "model": "FOS-1068",
-    "name": "Fossil FB-01 Diver Chronograph",
+    "name": "Fossil Townsman Automatic Prime",
     "category": "Automatic Watches",
     "vibe": "Premium",
     "gender": "Women",
@@ -6119,38 +6320,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil FB-01 Diver Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Townsman Automatic Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Mechanical Automatic 24-Jewel (41h Reserve) with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6169,17 +6373,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-68-1",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-24",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil FB-01 Diver Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Townsman Automatic Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 16
       },
       {
         "id": "rev-68-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -6192,9 +6396,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-069",
     "brand": "Fossil",
-    "series": "Grant Chronograph",
+    "series": "FB-01 Diver",
     "model": "FOS-1069",
-    "name": "Fossil Grant Chronograph Pro",
+    "name": "Fossil FB-01 Diver Edition",
     "category": "Dress Watches",
     "vibe": "Office",
     "gender": "Men",
@@ -6210,38 +6414,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Grant Chronograph Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil FB-01 Diver Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6260,17 +6467,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-69-1",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-25",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Grant Chronograph Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil FB-01 Diver Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 17
       },
       {
         "id": "rev-69-2",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -6283,9 +6490,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-070",
     "brand": "Fossil",
-    "series": "Neutra Minimalist",
+    "series": "Minimalist 3H",
     "model": "FOS-1070",
-    "name": "Fossil Neutra Minimalist Automatic",
+    "name": "Fossil Minimalist 3H Chronograph",
     "category": "Minimal Watches",
     "vibe": "Sport",
     "gender": "Unisex",
@@ -6301,38 +6508,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Neutra Minimalist Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Fossil Minimalist 3H Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Fossil Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6351,17 +6561,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-70-1",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-26",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Fossil!",
-        "comment": "Bought this Fossil Neutra Minimalist Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Fossil Minimalist 3H Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 18
       },
       {
         "id": "rev-70-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 4,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -6399,31 +6609,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6442,7 +6655,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-71-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
         "date": "2026-08-27",
         "verified_purchase": true,
@@ -6452,7 +6665,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-71-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -6490,31 +6703,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6533,7 +6749,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-72-1",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
         "date": "2026-08-10",
         "verified_purchase": true,
@@ -6543,7 +6759,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-72-2",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -6581,31 +6797,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6624,7 +6843,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-73-1",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 5,
         "date": "2026-08-11",
         "verified_purchase": true,
@@ -6634,7 +6853,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-73-2",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -6672,31 +6891,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6715,7 +6937,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-74-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 4,
         "date": "2026-08-12",
         "verified_purchase": true,
@@ -6725,7 +6947,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-74-2",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -6763,31 +6985,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6806,7 +7031,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-75-1",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 5,
         "date": "2026-08-13",
         "verified_purchase": true,
@@ -6816,7 +7041,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-75-2",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -6829,9 +7054,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-076",
     "brand": "Sonata",
-    "series": "Volt Digital",
+    "series": "Sleek Steel",
     "model": "SON-1076",
-    "name": "Sonata Volt Digital Heritage",
+    "name": "Sonata Sleek Steel Heritage",
     "category": "Digital Watches",
     "vibe": "Office",
     "gender": "Men",
@@ -6847,38 +7072,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Volt Digital Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Sleek Steel Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6897,17 +7125,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-76-1",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-14",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Volt Digital Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Sleek Steel Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 9
       },
       {
         "id": "rev-76-2",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -6920,9 +7148,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-077",
     "brand": "Sonata",
-    "series": "Everyday Classic",
+    "series": "Utsav Special",
     "model": "SON-1077",
-    "name": "Sonata Everyday Classic Ultra",
+    "name": "Sonata Utsav Special Ultra",
     "category": "Dress Watches",
     "vibe": "Sport",
     "gender": "Unisex",
@@ -6938,38 +7166,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Everyday Classic Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Utsav Special Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -6988,12 +7219,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-77-1",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-15",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Everyday Classic Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Utsav Special Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 10
       },
       {
@@ -7011,9 +7242,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-078",
     "brand": "Sonata",
-    "series": "Wedding Collection",
+    "series": "Volt Digital",
     "model": "SON-1078",
-    "name": "Sonata Wedding Collection Elite",
+    "name": "Sonata Volt Digital Elite",
     "category": "Analog Watches",
     "vibe": "Travel",
     "gender": "Women",
@@ -7029,38 +7260,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Wedding Collection Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Volt Digital Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7079,12 +7313,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-78-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-16",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Wedding Collection Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Volt Digital Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 11
       },
       {
@@ -7102,9 +7336,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-079",
     "brand": "Sonata",
-    "series": "Activa Sport",
+    "series": "Everyday Classic",
     "model": "SON-1079",
-    "name": "Sonata Activa Sport Titanium",
+    "name": "Sonata Everyday Classic Titanium",
     "category": "Casual Watches",
     "vibe": "Premium",
     "gender": "Men",
@@ -7120,38 +7354,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Activa Sport Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Everyday Classic Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7170,12 +7407,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-79-1",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Deepika Reddy",
         "rating": 5,
         "date": "2026-08-17",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Activa Sport Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Everyday Classic Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 12
       },
       {
@@ -7193,9 +7430,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-080",
     "brand": "Sonata",
-    "series": "Gold Heritage",
+    "series": "Wedding Collection",
     "model": "SON-1080",
-    "name": "Sonata Gold Heritage Carbon",
+    "name": "Sonata Wedding Collection Carbon",
     "category": "Digital Watches",
     "vibe": "Office",
     "gender": "Unisex",
@@ -7211,38 +7448,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Gold Heritage Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Wedding Collection Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7266,7 +7506,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-18",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Gold Heritage Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Wedding Collection Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
@@ -7284,9 +7524,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-081",
     "brand": "Sonata",
-    "series": "Volt Digital",
+    "series": "Activa Sport",
     "model": "SON-1081",
-    "name": "Sonata Volt Digital Edition",
+    "name": "Sonata Activa Sport Signature",
     "category": "Dress Watches",
     "vibe": "Sport",
     "gender": "Women",
@@ -7302,38 +7542,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Volt Digital Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Activa Sport Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7357,7 +7600,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-19",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Volt Digital Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Activa Sport Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 14
       },
       {
@@ -7375,9 +7618,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-082",
     "brand": "Sonata",
-    "series": "Everyday Classic",
+    "series": "Gold Heritage",
     "model": "SON-1082",
-    "name": "Sonata Everyday Classic Chronograph",
+    "name": "Sonata Gold Heritage Prime",
     "category": "Analog Watches",
     "vibe": "Travel",
     "gender": "Men",
@@ -7393,38 +7636,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Everyday Classic Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Gold Heritage Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7448,7 +7694,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Everyday Classic Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Gold Heritage Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
@@ -7466,9 +7712,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-083",
     "brand": "Sonata",
-    "series": "Wedding Collection",
+    "series": "Sleek Steel",
     "model": "SON-1083",
-    "name": "Sonata Wedding Collection Pro",
+    "name": "Sonata Sleek Steel Edition",
     "category": "Casual Watches",
     "vibe": "Premium",
     "gender": "Unisex",
@@ -7484,38 +7730,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Wedding Collection Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Sleek Steel Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7539,7 +7788,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-21",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Wedding Collection Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Sleek Steel Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 16
       },
       {
@@ -7557,9 +7806,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-084",
     "brand": "Sonata",
-    "series": "Activa Sport",
+    "series": "Utsav Special",
     "model": "SON-1084",
-    "name": "Sonata Activa Sport Automatic",
+    "name": "Sonata Utsav Special Chronograph",
     "category": "Digital Watches",
     "vibe": "Office",
     "gender": "Women",
@@ -7575,38 +7824,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Activa Sport Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Sonata Utsav Special Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Sonata Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7630,7 +7882,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-22",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Sonata!",
-        "comment": "Bought this Sonata Activa Sport Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Sonata Utsav Special Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 17
       },
       {
@@ -7673,31 +7925,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7764,31 +8019,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7855,31 +8113,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -7946,31 +8207,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8037,31 +8301,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8128,31 +8395,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8194,9 +8464,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-091",
     "brand": "Seiko",
-    "series": "Presage Cocktail Time",
+    "series": "Alpinist Explorer",
     "model": "SEI-1091",
-    "name": "Seiko Presage Cocktail Time Ultra",
+    "name": "Seiko Alpinist Explorer Ultra",
     "category": "Luxury Watches",
     "vibe": "Office",
     "gender": "Women",
@@ -8212,38 +8482,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Presage Cocktail Time Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Alpinist Explorer Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8267,7 +8540,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-11",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Presage Cocktail Time Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Alpinist Explorer Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 9
       },
       {
@@ -8285,9 +8558,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-092",
     "brand": "Seiko",
-    "series": "Prospex Diver 200m",
+    "series": "Presage Cocktail Time",
     "model": "SEI-1092",
-    "name": "Seiko Prospex Diver 200m Elite",
+    "name": "Seiko Presage Cocktail Time Elite",
     "category": "Sports Watches",
     "vibe": "Sport",
     "gender": "Men",
@@ -8303,38 +8576,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Prospex Diver 200m Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Presage Cocktail Time Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8358,7 +8634,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-12",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Prospex Diver 200m Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Presage Cocktail Time Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 10
       },
       {
@@ -8376,9 +8652,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-093",
     "brand": "Seiko",
-    "series": "Seiko 5 Sports",
+    "series": "Prospex Diver 200m",
     "model": "SEI-1093",
-    "name": "Seiko Seiko 5 Sports Titanium",
+    "name": "Seiko Prospex Diver 200m Titanium",
     "category": "Chronograph",
     "vibe": "Travel",
     "gender": "Unisex",
@@ -8394,38 +8670,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Seiko 5 Sports Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Prospex Diver 200m Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8449,12 +8728,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-13",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Seiko 5 Sports Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Prospex Diver 200m Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 11
       },
       {
         "id": "rev-93-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -8467,9 +8746,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-094",
     "brand": "Seiko",
-    "series": "Astron GPS Solar",
+    "series": "Seiko 5 Sports",
     "model": "SEI-1094",
-    "name": "Seiko Astron GPS Solar Carbon",
+    "name": "Seiko Seiko 5 Sports Carbon",
     "category": "Dress Watches",
     "vibe": "Premium",
     "gender": "Women",
@@ -8485,38 +8764,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Astron GPS Solar Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Seiko 5 Sports Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8540,12 +8822,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-14",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Astron GPS Solar Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Seiko 5 Sports Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 12
       },
       {
         "id": "rev-94-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -8558,9 +8840,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-095",
     "brand": "Seiko",
-    "series": "King Seiko Reissue",
+    "series": "Astron GPS Solar",
     "model": "SEI-1095",
-    "name": "Seiko King Seiko Reissue Edition",
+    "name": "Seiko Astron GPS Solar Signature",
     "category": "Automatic Watches",
     "vibe": "Office",
     "gender": "Men",
@@ -8576,38 +8858,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko King Seiko Reissue Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Astron GPS Solar Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8631,12 +8916,12 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
         "date": "2026-08-15",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko King Seiko Reissue Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Astron GPS Solar Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
         "id": "rev-95-2",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -8649,9 +8934,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-096",
     "brand": "Seiko",
-    "series": "Speedtimer Solar Chrono",
+    "series": "King Seiko Reissue",
     "model": "SEI-1096",
-    "name": "Seiko Speedtimer Solar Chrono Chronograph",
+    "name": "Seiko King Seiko Reissue Prime",
     "category": "Luxury Watches",
     "vibe": "Sport",
     "gender": "Unisex",
@@ -8667,38 +8952,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Speedtimer Solar Chrono Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko King Seiko Reissue Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8717,17 +9005,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-96-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-16",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Speedtimer Solar Chrono Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko King Seiko Reissue Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 14
       },
       {
         "id": "rev-96-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -8740,9 +9028,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-097",
     "brand": "Seiko",
-    "series": "Presage Cocktail Time",
+    "series": "Speedtimer Solar Chrono",
     "model": "SEI-1097",
-    "name": "Seiko Presage Cocktail Time Pro",
+    "name": "Seiko Speedtimer Solar Chrono Edition",
     "category": "Sports Watches",
     "vibe": "Travel",
     "gender": "Women",
@@ -8758,38 +9046,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Presage Cocktail Time Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Speedtimer Solar Chrono Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8808,17 +9099,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-97-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-17",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Presage Cocktail Time Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Speedtimer Solar Chrono Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
         "id": "rev-97-2",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -8831,9 +9122,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-098",
     "brand": "Seiko",
-    "series": "Prospex Diver 200m",
+    "series": "Alpinist Explorer",
     "model": "SEI-1098",
-    "name": "Seiko Prospex Diver 200m Automatic",
+    "name": "Seiko Alpinist Explorer Chronograph",
     "category": "Chronograph",
     "vibe": "Premium",
     "gender": "Men",
@@ -8849,38 +9140,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Prospex Diver 200m Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Seiko Alpinist Explorer Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Seiko Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8899,17 +9193,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-98-1",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-18",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Seiko!",
-        "comment": "Bought this Seiko Prospex Diver 200m Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Seiko Alpinist Explorer Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 16
       },
       {
         "id": "rev-98-2",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -8947,31 +9241,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -8990,7 +9287,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-99-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-19",
         "verified_purchase": true,
@@ -9000,7 +9297,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-99-2",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -9038,31 +9335,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9081,7 +9381,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-100-1",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-20",
         "verified_purchase": true,
@@ -9091,7 +9391,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-100-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -9129,31 +9429,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9172,7 +9475,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-101-1",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 5,
         "date": "2026-08-21",
         "verified_purchase": true,
@@ -9182,7 +9485,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-101-2",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -9220,31 +9523,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9263,7 +9569,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-102-1",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Devendra Patel",
         "rating": 4,
         "date": "2026-08-22",
         "verified_purchase": true,
@@ -9273,7 +9579,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-102-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -9311,31 +9617,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9354,7 +9663,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-103-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 5,
         "date": "2026-08-23",
         "verified_purchase": true,
@@ -9364,7 +9673,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-103-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -9377,9 +9686,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-104",
     "brand": "Citizen",
-    "series": "Eco-Drive Titanium",
+    "series": "Chrono Eco-Drive",
     "model": "CIT-1104",
-    "name": "Citizen Eco-Drive Titanium Heritage",
+    "name": "Citizen Chrono Eco-Drive Heritage",
     "category": "Automatic Watches",
     "vibe": "Travel",
     "gender": "Women",
@@ -9395,38 +9704,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Eco-Drive Titanium Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Chrono Eco-Drive Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9445,17 +9757,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-104-1",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-24",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Eco-Drive Titanium Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Chrono Eco-Drive Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 22
       },
       {
         "id": "rev-104-2",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -9468,9 +9780,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-105",
     "brand": "Citizen",
-    "series": "Promaster Diver",
+    "series": "Eco-Drive Titanium",
     "model": "CIT-1105",
-    "name": "Citizen Promaster Diver Ultra",
+    "name": "Citizen Eco-Drive Titanium Ultra",
     "category": "Luxury Watches",
     "vibe": "Premium",
     "gender": "Men",
@@ -9486,38 +9798,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Promaster Diver Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Eco-Drive Titanium Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9536,17 +9851,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-105-1",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-25",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Promaster Diver Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Eco-Drive Titanium Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 8
       },
       {
         "id": "rev-105-2",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -9559,9 +9874,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-106",
     "brand": "Citizen",
-    "series": "Tsuyosa Automatic",
+    "series": "Promaster Diver",
     "model": "CIT-1106",
-    "name": "Citizen Tsuyosa Automatic Elite",
+    "name": "Citizen Promaster Diver Elite",
     "category": "Outdoor Watches",
     "vibe": "Office",
     "gender": "Unisex",
@@ -9577,38 +9892,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Tsuyosa Automatic Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Promaster Diver Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9627,17 +9945,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-106-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
         "date": "2026-08-26",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Tsuyosa Automatic Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Promaster Diver Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 9
       },
       {
         "id": "rev-106-2",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -9650,9 +9968,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-107",
     "brand": "Citizen",
-    "series": "Attesa Super Titanium",
+    "series": "Tsuyosa Automatic",
     "model": "CIT-1107",
-    "name": "Citizen Attesa Super Titanium Titanium",
+    "name": "Citizen Tsuyosa Automatic Titanium",
     "category": "Dress Watches",
     "vibe": "Sport",
     "gender": "Women",
@@ -9668,38 +9986,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Attesa Super Titanium Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Tsuyosa Automatic Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9718,17 +10039,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-107-1",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 5,
         "date": "2026-08-27",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Attesa Super Titanium Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Tsuyosa Automatic Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 10
       },
       {
         "id": "rev-107-2",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -9741,9 +10062,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-108",
     "brand": "Citizen",
-    "series": "Classic Corso",
+    "series": "Attesa Super Titanium",
     "model": "CIT-1108",
-    "name": "Citizen Classic Corso Carbon",
+    "name": "Citizen Attesa Super Titanium Carbon",
     "category": "Analog Watches",
     "vibe": "Travel",
     "gender": "Men",
@@ -9759,38 +10080,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Classic Corso Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Attesa Super Titanium Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9809,17 +10133,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-108-1",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Siddharth Rao",
         "rating": 4,
         "date": "2026-08-10",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Classic Corso Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Attesa Super Titanium Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 11
       },
       {
         "id": "rev-108-2",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -9832,9 +10156,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-109",
     "brand": "Citizen",
-    "series": "Eco-Drive Titanium",
+    "series": "Classic Corso",
     "model": "CIT-1109",
-    "name": "Citizen Eco-Drive Titanium Edition",
+    "name": "Citizen Classic Corso Signature",
     "category": "Automatic Watches",
     "vibe": "Premium",
     "gender": "Unisex",
@@ -9850,38 +10174,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Eco-Drive Titanium Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Classic Corso Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9900,17 +10227,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-109-1",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Neha Kashyap",
         "rating": 5,
         "date": "2026-08-11",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Eco-Drive Titanium Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Classic Corso Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 12
       },
       {
         "id": "rev-109-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -9923,9 +10250,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-110",
     "brand": "Citizen",
-    "series": "Promaster Diver",
+    "series": "Chrono Eco-Drive",
     "model": "CIT-1110",
-    "name": "Citizen Promaster Diver Chronograph",
+    "name": "Citizen Chrono Eco-Drive Prime",
     "category": "Luxury Watches",
     "vibe": "Office",
     "gender": "Women",
@@ -9941,38 +10268,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": false,
     "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Promaster Diver Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Chrono Eco-Drive Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -9991,17 +10321,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-110-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
         "date": "2026-08-12",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Promaster Diver Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Chrono Eco-Drive Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
         "id": "rev-110-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 4,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -10014,9 +10344,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-111",
     "brand": "Citizen",
-    "series": "Tsuyosa Automatic",
+    "series": "Eco-Drive Titanium",
     "model": "CIT-1111",
-    "name": "Citizen Tsuyosa Automatic Pro",
+    "name": "Citizen Eco-Drive Titanium Edition",
     "category": "Outdoor Watches",
     "vibe": "Sport",
     "gender": "Men",
@@ -10032,38 +10362,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Tsuyosa Automatic Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Eco-Drive Titanium Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10082,17 +10415,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-111-1",
-        "reviewer_name": "Shweta Tiwari",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
         "date": "2026-08-13",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Tsuyosa Automatic Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Eco-Drive Titanium Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 14
       },
       {
         "id": "rev-111-2",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -10105,9 +10438,9 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-112",
     "brand": "Citizen",
-    "series": "Attesa Super Titanium",
+    "series": "Promaster Diver",
     "model": "CIT-1112",
-    "name": "Citizen Attesa Super Titanium Automatic",
+    "name": "Citizen Promaster Diver Chronograph",
     "category": "Dress Watches",
     "vibe": "Travel",
     "gender": "Unisex",
@@ -10123,38 +10456,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Attesa Super Titanium Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Citizen Promaster Diver Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Citizen Craftsmanship & Heritage",
       "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10173,17 +10509,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-112-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
         "date": "2026-08-14",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Citizen!",
-        "comment": "Bought this Citizen Attesa Super Titanium Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Citizen Promaster Diver Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
         "id": "rev-112-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -10221,31 +10557,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10264,7 +10603,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-113-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 4,
         "date": "2026-08-15",
         "verified_purchase": true,
@@ -10274,7 +10613,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-113-2",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -10293,8 +10632,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "category": "Luxury Watches",
     "vibe": "Sport",
     "gender": "Women",
-    "price_rupees": 11883,
-    "original_price_rupees": 13203,
+    "price_rupees": 10524,
+    "original_price_rupees": 11693,
     "discount_percent": 10,
     "currency": "INR",
     "rating": 4.7,
@@ -10312,31 +10651,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10355,7 +10697,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-114-1",
-        "reviewer_name": "Devendra Patel",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
         "date": "2026-08-16",
         "verified_purchase": true,
@@ -10365,7 +10707,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-114-2",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
         "date": "2026-08-07",
         "verified_purchase": true,
@@ -10384,8 +10726,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "category": "Minimal Watches",
     "vibe": "Travel",
     "gender": "Men",
-    "price_rupees": 14772,
-    "original_price_rupees": 18465,
+    "price_rupees": 12053,
+    "original_price_rupees": 15066,
     "discount_percent": 20,
     "currency": "INR",
     "rating": 4.5,
@@ -10403,31 +10745,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10446,7 +10791,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-115-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 5,
         "date": "2026-08-17",
         "verified_purchase": true,
@@ -10456,7 +10801,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-115-2",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-08",
         "verified_purchase": true,
@@ -10475,8 +10820,8 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "category": "Dress Watches",
     "vibe": "Premium",
     "gender": "Unisex",
-    "price_rupees": 17661,
-    "original_price_rupees": 25230,
+    "price_rupees": 13583,
+    "original_price_rupees": 19404,
     "discount_percent": 30,
     "currency": "INR",
     "rating": 4.3,
@@ -10494,31 +10839,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10537,7 +10885,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-116-1",
-        "reviewer_name": "Pooja Sengupta",
+        "reviewer_name": "Abhishek Nair",
         "rating": 4,
         "date": "2026-08-18",
         "verified_purchase": true,
@@ -10547,7 +10895,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-116-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-09",
         "verified_purchase": true,
@@ -10563,11 +10911,11 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "series": "Eclipse Moonphase",
     "model": "CHR-1117",
     "name": "Chronova Signature Eclipse Moonphase Classic",
-    "category": "Automatic Watches",
+    "category": "Chronograph",
     "vibe": "Office",
     "gender": "Women",
-    "price_rupees": 20550,
-    "original_price_rupees": 22833,
+    "price_rupees": 15112,
+    "original_price_rupees": 16791,
     "discount_percent": 10,
     "currency": "INR",
     "rating": 4.1,
@@ -10581,39 +10929,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Eclipse Moonphase Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 46mm case",
+      "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Precision Japanese Quartz",
       "case_size": "46mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Silver Sunray",
@@ -10628,7 +10979,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-117-1",
-        "reviewer_name": "Karan Singhania",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 5,
         "date": "2026-08-19",
         "verified_purchase": true,
@@ -10638,7 +10989,7 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       },
       {
         "id": "rev-117-2",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-01",
         "verified_purchase": true,
@@ -10651,14 +11002,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-118",
     "brand": "Chronova Signature",
-    "series": "Aethelgard Skeleton",
+    "series": "Chronova Apex Chrono",
     "model": "CHR-1118",
-    "name": "Chronova Signature Aethelgard Skeleton Heritage",
-    "category": "Luxury Watches",
+    "name": "Chronova Signature Chronova Apex Chrono Heritage",
+    "category": "Automatic Watches",
     "vibe": "Sport",
     "gender": "Men",
-    "price_rupees": 23439,
-    "original_price_rupees": 29298,
+    "price_rupees": 16642,
+    "original_price_rupees": 20802,
     "discount_percent": 20,
     "currency": "INR",
     "rating": 4.8,
@@ -10669,42 +11020,45 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Aethelgard Skeleton Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Chronova Apex Chrono Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Precision Japanese Quartz with 38mm case",
+      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Precision Japanese Quartz",
+      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
       "case_size": "38mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Sunburst Midnight Blue",
@@ -10719,17 +11073,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-118-1",
-        "reviewer_name": "Meera Nambiar",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
         "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Chronova Signature!",
-        "comment": "Bought this Chronova Signature Aethelgard Skeleton Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Chronova Signature Chronova Apex Chrono Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 21
       },
       {
         "id": "rev-118-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
         "date": "2026-08-02",
         "verified_purchase": true,
@@ -10742,14 +11096,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-119",
     "brand": "Chronova Signature",
-    "series": "Horizon Tourbillon",
+    "series": "Sovereign Gold",
     "model": "CHR-1119",
-    "name": "Chronova Signature Horizon Tourbillon Ultra",
-    "category": "Minimal Watches",
+    "name": "Chronova Signature Sovereign Gold Ultra",
+    "category": "Luxury Watches",
     "vibe": "Travel",
     "gender": "Unisex",
-    "price_rupees": 26328,
-    "original_price_rupees": 37611,
+    "price_rupees": 18171,
+    "original_price_rupees": 25958,
     "discount_percent": 30,
     "currency": "INR",
     "rating": 4.6,
@@ -10760,38 +11114,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Horizon Tourbillon Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Sovereign Gold Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
       "Precision Japanese Quartz with 40mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10810,17 +11167,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-119-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
         "date": "2026-08-21",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Chronova Signature!",
-        "comment": "Bought this Chronova Signature Horizon Tourbillon Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Chronova Signature Sovereign Gold Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 22
       },
       {
         "id": "rev-119-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
         "date": "2026-08-03",
         "verified_purchase": true,
@@ -10833,14 +11190,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-120",
     "brand": "Chronova Signature",
-    "series": "Vanguard Heritage",
+    "series": "Nautilus Titanium",
     "model": "CHR-1120",
-    "name": "Chronova Signature Vanguard Heritage Elite",
-    "category": "Dress Watches",
+    "name": "Chronova Signature Nautilus Titanium Elite",
+    "category": "Minimal Watches",
     "vibe": "Premium",
     "gender": "Women",
-    "price_rupees": 29217,
-    "original_price_rupees": 32463,
+    "price_rupees": 19700,
+    "original_price_rupees": 21888,
     "discount_percent": 10,
     "currency": "INR",
     "rating": 4.4,
@@ -10851,38 +11208,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": true,
     "is_bestseller": true,
     "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Vanguard Heritage Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Nautilus Titanium Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
       "Precision Japanese Quartz with 42mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -10901,17 +11261,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-120-1",
-        "reviewer_name": "Siddharth Rao",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
         "date": "2026-08-22",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Chronova Signature!",
-        "comment": "Bought this Chronova Signature Vanguard Heritage Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Chronova Signature Nautilus Titanium Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 8
       },
       {
         "id": "rev-120-2",
-        "reviewer_name": "Tanvi Joshi",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
         "date": "2026-08-04",
         "verified_purchase": true,
@@ -10924,14 +11284,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-121",
     "brand": "Chronova Signature",
-    "series": "Astralis Open-Heart",
+    "series": "Aethelgard Skeleton",
     "model": "CHR-1121",
-    "name": "Chronova Signature Astralis Open-Heart Titanium",
-    "category": "Automatic Watches",
+    "name": "Chronova Signature Aethelgard Skeleton Titanium",
+    "category": "Dress Watches",
     "vibe": "Office",
     "gender": "Men",
-    "price_rupees": 32106,
-    "original_price_rupees": 40132,
+    "price_rupees": 21230,
+    "original_price_rupees": 26537,
     "discount_percent": 20,
     "currency": "INR",
     "rating": 4.2,
@@ -10942,42 +11302,45 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Astralis Open-Heart Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Aethelgard Skeleton Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
-      "Mechanical Automatic 24-Jewel (41h Reserve) with 44mm case",
+      "Precision Japanese Quartz with 44mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
-      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "movement": "Precision Japanese Quartz",
       "case_size": "44mm",
       "case_material": "316L Surgical Grade Stainless Steel",
       "dial_color": "Champagne Gold",
@@ -10992,17 +11355,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-121-1",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 5,
         "date": "2026-08-23",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Chronova Signature!",
-        "comment": "Bought this Chronova Signature Astralis Open-Heart Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Chronova Signature Aethelgard Skeleton Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 9
       },
       {
         "id": "rev-121-2",
-        "reviewer_name": "Rishabh Verma",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
         "date": "2026-08-05",
         "verified_purchase": true,
@@ -11015,14 +11378,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-122",
     "brand": "Chronova Signature",
-    "series": "Eclipse Moonphase",
+    "series": "Horizon Tourbillon",
     "model": "CHR-1122",
-    "name": "Chronova Signature Eclipse Moonphase Carbon",
-    "category": "Luxury Watches",
+    "name": "Chronova Signature Horizon Tourbillon Carbon",
+    "category": "Chronograph",
     "vibe": "Sport",
     "gender": "Unisex",
-    "price_rupees": 34995,
-    "original_price_rupees": 49992,
+    "price_rupees": 22759,
+    "original_price_rupees": 32512,
     "discount_percent": 30,
     "currency": "INR",
     "rating": 4.9,
@@ -11033,38 +11396,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Eclipse Moonphase Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Horizon Tourbillon Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Chronova Signature Craftsmanship & Heritage",
       "Precision Japanese Quartz with 46mm case",
       "Water resistant (50m (5 ATM) / 100m (10 ATM))",
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11083,17 +11449,17 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "reviews": [
       {
         "id": "rev-122-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "reviewer_name": "Devendra Patel",
         "rating": 4,
         "date": "2026-08-24",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Chronova Signature!",
-        "comment": "Bought this Chronova Signature Eclipse Moonphase Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Chronova Signature Horizon Tourbillon Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 10
       },
       {
         "id": "rev-122-2",
-        "reviewer_name": "Sneha Sundaram",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-06",
         "verified_purchase": true,
@@ -11105,19 +11471,771 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   },
   {
     "id": "chronova-123",
-    "brand": "Garmin",
-    "series": "Fenix 7 Pro Sapphire",
-    "model": "GAR-1123",
-    "name": "Garmin Fenix 7 Pro Sapphire Edition",
-    "category": "Fitness Watches",
-    "vibe": "Sport",
-    "gender": "Men",
-    "price_rupees": 32990,
-    "original_price_rupees": 41237,
-    "discount_percent": 20,
+    "brand": "Chronova Signature",
+    "series": "Vanguard Heritage",
+    "model": "CHR-1123",
+    "name": "Chronova Signature Vanguard Heritage Signature",
+    "category": "Automatic Watches",
+    "vibe": "Travel",
+    "gender": "Women",
+    "price_rupees": 24289,
+    "original_price_rupees": 26987,
+    "discount_percent": 10,
     "currency": "INR",
     "rating": 4.7,
     "review_count": 177,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Vanguard Heritage Signature delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "case_size": "38mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Sunburst Midnight Blue",
+      "strap_material": "Premium Silicone",
+      "strap_color": "Silver Steel",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-123-1",
+        "reviewer_name": "Rohan Bhattacharya",
+        "rating": 5,
+        "date": "2026-08-25",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Vanguard Heritage Signature last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 11
+      },
+      {
+        "id": "rev-123-2",
+        "reviewer_name": "Meera Nambiar",
+        "rating": 5,
+        "date": "2026-08-07",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 8
+      }
+    ]
+  },
+  {
+    "id": "chronova-124",
+    "brand": "Chronova Signature",
+    "series": "Astralis Open-Heart",
+    "model": "CHR-1124",
+    "name": "Chronova Signature Astralis Open-Heart Prime",
+    "category": "Luxury Watches",
+    "vibe": "Premium",
+    "gender": "Men",
+    "price_rupees": 25818,
+    "original_price_rupees": 32272,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.5,
+    "review_count": 190,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Astralis Open-Heart Prime delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Precision Japanese Quartz with 40mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Precision Japanese Quartz",
+      "case_size": "40mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Solid Oyster Bracelet",
+      "strap_color": "Gold PVD",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-124-1",
+        "reviewer_name": "Pooja Sengupta",
+        "rating": 5,
+        "date": "2026-08-26",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Astralis Open-Heart Prime last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 12
+      },
+      {
+        "id": "rev-124-2",
+        "reviewer_name": "Aarav Mehrotra",
+        "rating": 4,
+        "date": "2026-08-08",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 9
+      }
+    ]
+  },
+  {
+    "id": "chronova-125",
+    "brand": "Chronova Signature",
+    "series": "Eclipse Moonphase",
+    "model": "CHR-1125",
+    "name": "Chronova Signature Eclipse Moonphase Edition",
+    "category": "Minimal Watches",
+    "vibe": "Office",
+    "gender": "Unisex",
+    "price_rupees": 27347,
+    "original_price_rupees": 39067,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.3,
+    "review_count": 23,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Eclipse Moonphase Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Precision Japanese Quartz with 42mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Precision Japanese Quartz",
+      "case_size": "42mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Emerald Green",
+      "strap_material": "Full-Grain Italian Leather",
+      "strap_color": "Classic Brown",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-125-1",
+        "reviewer_name": "Karan Singhania",
+        "rating": 4,
+        "date": "2026-08-27",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Eclipse Moonphase Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 13
+      },
+      {
+        "id": "rev-125-2",
+        "reviewer_name": "Siddharth Rao",
+        "rating": 5,
+        "date": "2026-08-09",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 10
+      }
+    ]
+  },
+  {
+    "id": "chronova-126",
+    "brand": "Chronova Signature",
+    "series": "Chronova Apex Chrono",
+    "model": "CHR-1126",
+    "name": "Chronova Signature Chronova Apex Chrono Chronograph",
+    "category": "Dress Watches",
+    "vibe": "Sport",
+    "gender": "Women",
+    "price_rupees": 28877,
+    "original_price_rupees": 32085,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.1,
+    "review_count": 36,
+    "stock_status": "Only 3 Left",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": true,
+    "badge": "Bestseller",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Chronova Apex Chrono Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Precision Japanese Quartz with 44mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Precision Japanese Quartz",
+      "case_size": "44mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Champagne Gold",
+      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_color": "Midnight Black",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-126-1",
+        "reviewer_name": "Meera Nambiar",
+        "rating": 5,
+        "date": "2026-08-10",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Chronova Apex Chrono Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 14
+      },
+      {
+        "id": "rev-126-2",
+        "reviewer_name": "Neha Kashyap",
+        "rating": 4,
+        "date": "2026-08-01",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 4
+      }
+    ]
+  },
+  {
+    "id": "chronova-127",
+    "brand": "Chronova Signature",
+    "series": "Sovereign Gold",
+    "model": "CHR-1127",
+    "name": "Chronova Signature Sovereign Gold Pro",
+    "category": "Chronograph",
+    "vibe": "Travel",
+    "gender": "Men",
+    "price_rupees": 30406,
+    "original_price_rupees": 38007,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.8,
+    "review_count": 49,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Sovereign Gold Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Precision Japanese Quartz with 46mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Precision Japanese Quartz",
+      "case_size": "46mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Silver Sunray",
+      "strap_material": "Premium Silicone",
+      "strap_color": "Silver Steel",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-127-1",
+        "reviewer_name": "Aarav Mehrotra",
+        "rating": 5,
+        "date": "2026-08-11",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Sovereign Gold Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 15
+      },
+      {
+        "id": "rev-127-2",
+        "reviewer_name": "Aditya Kulkarni",
+        "rating": 5,
+        "date": "2026-08-02",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 5
+      }
+    ]
+  },
+  {
+    "id": "chronova-128",
+    "brand": "Chronova Signature",
+    "series": "Nautilus Titanium",
+    "model": "CHR-1128",
+    "name": "Chronova Signature Nautilus Titanium Automatic",
+    "category": "Automatic Watches",
+    "vibe": "Premium",
+    "gender": "Unisex",
+    "price_rupees": 31936,
+    "original_price_rupees": 45622,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.6,
+    "review_count": 62,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": true,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Nautilus Titanium Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Mechanical Automatic 24-Jewel (41h Reserve) with 38mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Mechanical Automatic 24-Jewel (41h Reserve)",
+      "case_size": "38mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Sunburst Midnight Blue",
+      "strap_material": "Solid Oyster Bracelet",
+      "strap_color": "Gold PVD",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-128-1",
+        "reviewer_name": "Siddharth Rao",
+        "rating": 4,
+        "date": "2026-08-12",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Nautilus Titanium Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 16
+      },
+      {
+        "id": "rev-128-2",
+        "reviewer_name": "Tanvi Joshi",
+        "rating": 4,
+        "date": "2026-08-03",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 6
+      }
+    ]
+  },
+  {
+    "id": "chronova-129",
+    "brand": "Chronova Signature",
+    "series": "Aethelgard Skeleton",
+    "model": "CHR-1129",
+    "name": "Chronova Signature Aethelgard Skeleton Classic",
+    "category": "Luxury Watches",
+    "vibe": "Office",
+    "gender": "Women",
+    "price_rupees": 33465,
+    "original_price_rupees": 37183,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.4,
+    "review_count": 75,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Aethelgard Skeleton Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Precision Japanese Quartz with 40mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1522273400909-fd1a8f77637e?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Precision Japanese Quartz",
+      "case_size": "40mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Obsidian Black",
+      "strap_material": "Full-Grain Italian Leather",
+      "strap_color": "Classic Brown",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-129-1",
+        "reviewer_name": "Neha Kashyap",
+        "rating": 5,
+        "date": "2026-08-13",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Aethelgard Skeleton Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 17
+      },
+      {
+        "id": "rev-129-2",
+        "reviewer_name": "Rishabh Verma",
+        "rating": 5,
+        "date": "2026-08-04",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 7
+      }
+    ]
+  },
+  {
+    "id": "chronova-130",
+    "brand": "Chronova Signature",
+    "series": "Horizon Tourbillon",
+    "model": "CHR-1130",
+    "name": "Chronova Signature Horizon Tourbillon Heritage",
+    "category": "Minimal Watches",
+    "vibe": "Sport",
+    "gender": "Men",
+    "price_rupees": 34995,
+    "original_price_rupees": 43743,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.2,
+    "review_count": 88,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Chronova Signature Horizon Tourbillon Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Chronova Signature Craftsmanship & Heritage",
+      "Precision Japanese Quartz with 42mm case",
+      "Water resistant (50m (5 ATM) / 100m (10 ATM))",
+      "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Precision Japanese Quartz",
+      "case_size": "42mm",
+      "case_material": "316L Surgical Grade Stainless Steel",
+      "dial_color": "Emerald Green",
+      "strap_material": "Solid Stainless Steel Mesh",
+      "strap_color": "Midnight Black",
+      "water_resistance": "50m (5 ATM) / 100m (10 ATM)",
+      "battery_life": "3 Years Standard Cell (Quartz) / Self-Winding Rotor (Automatic)",
+      "glass": "Sapphire Crystal with Anti-Reflective Undercoating",
+      "warranty": "2 Years Official Manufacturer Warranty",
+      "origin": "Japan / Switzerland / India"
+    },
+    "reviews": [
+      {
+        "id": "rev-130-1",
+        "reviewer_name": "Aditya Kulkarni",
+        "rating": 5,
+        "date": "2026-08-14",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Chronova Signature!",
+        "comment": "Bought this Chronova Signature Horizon Tourbillon Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 18
+      },
+      {
+        "id": "rev-130-2",
+        "reviewer_name": "Sneha Sundaram",
+        "rating": 4,
+        "date": "2026-08-05",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 8
+      }
+    ]
+  },
+  {
+    "id": "chronova-131",
+    "brand": "Garmin",
+    "series": "Fenix 7 Pro Sapphire",
+    "model": "GAR-1131",
+    "name": "Garmin Fenix 7 Pro Sapphire Edition",
+    "category": "Fitness Watches",
+    "vibe": "Sport",
+    "gender": "Unisex",
+    "price_rupees": 32990,
+    "original_price_rupees": 47128,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.9,
+    "review_count": 101,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -11131,31 +12249,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11186,48 +12307,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-123-1",
+        "id": "rev-131-1",
         "reviewer_name": "Tanvi Joshi",
         "rating": 4,
-        "date": "2026-08-25",
+        "date": "2026-08-15",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Fenix 7 Pro Sapphire Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 11
+        "helpful_votes": 19
       },
       {
-        "id": "rev-123-2",
+        "id": "rev-131-2",
         "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
-        "date": "2026-08-07",
+        "date": "2026-08-06",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
+        "helpful_votes": 9
       }
     ]
   },
   {
-    "id": "chronova-124",
+    "id": "chronova-132",
     "brand": "Garmin",
     "series": "Forerunner 965 AMOLED",
-    "model": "GAR-1124",
+    "model": "GAR-1132",
     "name": "Garmin Forerunner 965 AMOLED Chronograph",
     "category": "Outdoor Watches",
     "vibe": "Travel",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 40323,
-    "original_price_rupees": 57604,
-    "discount_percent": 30,
+    "original_price_rupees": 44803,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.5,
-    "review_count": 190,
+    "rating": 4.7,
+    "review_count": 114,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
+    "is_bestseller": true,
+    "badge": "Bestseller",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Garmin Forerunner 965 AMOLED Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Garmin Craftsmanship & Heritage",
@@ -11235,31 +12356,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11290,48 +12414,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-124-1",
+        "id": "rev-132-1",
         "reviewer_name": "Rishabh Verma",
         "rating": 5,
-        "date": "2026-08-26",
+        "date": "2026-08-16",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Forerunner 965 AMOLED Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 12
+        "helpful_votes": 20
       },
       {
-        "id": "rev-124-2",
+        "id": "rev-132-2",
         "reviewer_name": "Shweta Tiwari",
         "rating": 4,
-        "date": "2026-08-08",
+        "date": "2026-08-07",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "helpful_votes": 10
       }
     ]
   },
   {
-    "id": "chronova-125",
+    "id": "chronova-133",
     "brand": "Garmin",
     "series": "Venu 3 Voice",
-    "model": "GAR-1125",
+    "model": "GAR-1133",
     "name": "Garmin Venu 3 Voice Pro",
     "category": "Sports Watches",
     "vibe": "Premium",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 47656,
-    "original_price_rupees": 52951,
-    "discount_percent": 10,
+    "original_price_rupees": 59570,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.3,
-    "review_count": 23,
-    "stock_status": "In Stock",
+    "rating": 4.5,
+    "review_count": 127,
+    "stock_status": "Only 3 Left",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
+    "is_new_arrival": false,
     "is_bestseller": false,
-    "badge": "New",
+    "badge": null,
     "description": "Engineered for modern lifestyle and precision timekeeping, the Garmin Venu 3 Voice Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Garmin Craftsmanship & Heritage",
@@ -11339,31 +12463,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11394,48 +12521,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-125-1",
+        "id": "rev-133-1",
         "reviewer_name": "Sneha Sundaram",
         "rating": 5,
-        "date": "2026-08-27",
+        "date": "2026-08-17",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Venu 3 Voice Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 13
+        "helpful_votes": 21
       },
       {
-        "id": "rev-125-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "id": "rev-133-2",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
-        "date": "2026-08-09",
+        "date": "2026-08-08",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "helpful_votes": 4
       }
     ]
   },
   {
-    "id": "chronova-126",
+    "id": "chronova-134",
     "brand": "Garmin",
     "series": "Instinct 2 Solar",
-    "model": "GAR-1126",
+    "model": "GAR-1134",
     "name": "Garmin Instinct 2 Solar Automatic",
     "category": "Smart Watches",
     "vibe": "Office",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 54990,
-    "original_price_rupees": 68737,
-    "discount_percent": 20,
+    "original_price_rupees": 78557,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.1,
-    "review_count": 36,
-    "stock_status": "Only 3 Left",
+    "rating": 4.3,
+    "review_count": 140,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
+    "is_bestseller": false,
+    "badge": null,
     "description": "Engineered for modern lifestyle and precision timekeeping, the Garmin Instinct 2 Solar Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Garmin Craftsmanship & Heritage",
@@ -11443,31 +12570,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11498,48 +12628,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-126-1",
+        "id": "rev-134-1",
         "reviewer_name": "Gaurav Malhotra",
         "rating": 4,
-        "date": "2026-08-10",
+        "date": "2026-08-18",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Instinct 2 Solar Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 14
+        "helpful_votes": 22
       },
       {
-        "id": "rev-126-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-134-2",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
-        "date": "2026-08-01",
+        "date": "2026-08-09",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
+        "helpful_votes": 5
       }
     ]
   },
   {
-    "id": "chronova-127",
+    "id": "chronova-135",
     "brand": "Garmin",
     "series": "Epix Pro Gen 2",
-    "model": "GAR-1127",
+    "model": "GAR-1135",
     "name": "Garmin Epix Pro Gen 2 Classic",
     "category": "Fitness Watches",
     "vibe": "Sport",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 62323,
-    "original_price_rupees": 89032,
-    "discount_percent": 30,
+    "original_price_rupees": 69247,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.8,
-    "review_count": 49,
+    "rating": 4.1,
+    "review_count": 153,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
+    "is_new_arrival": true,
     "is_bestseller": false,
-    "badge": null,
+    "badge": "New",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Garmin Epix Pro Gen 2 Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Garmin Craftsmanship & Heritage",
@@ -11547,31 +12677,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11602,42 +12735,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-127-1",
+        "id": "rev-135-1",
         "reviewer_name": "Shweta Tiwari",
         "rating": 5,
-        "date": "2026-08-11",
+        "date": "2026-08-19",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Epix Pro Gen 2 Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 15
+        "helpful_votes": 8
       },
       {
-        "id": "rev-127-2",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-135-2",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
-        "date": "2026-08-02",
+        "date": "2026-08-01",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
+        "helpful_votes": 6
       }
     ]
   },
   {
-    "id": "chronova-128",
+    "id": "chronova-136",
     "brand": "Garmin",
     "series": "Tactix 7 AMOLED",
-    "model": "GAR-1128",
+    "model": "GAR-1136",
     "name": "Garmin Tactix 7 AMOLED Heritage",
     "category": "Outdoor Watches",
     "vibe": "Travel",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 69656,
-    "original_price_rupees": 77395,
-    "discount_percent": 10,
+    "original_price_rupees": 87070,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.6,
-    "review_count": 62,
+    "rating": 4.8,
+    "review_count": 166,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": true,
@@ -11651,31 +12784,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11706,42 +12842,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-128-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "id": "rev-136-1",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
-        "date": "2026-08-12",
+        "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Tactix 7 AMOLED Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 16
+        "helpful_votes": 9
       },
       {
-        "id": "rev-128-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-136-2",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
-        "date": "2026-08-03",
+        "date": "2026-08-02",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
+        "helpful_votes": 7
       }
     ]
   },
   {
-    "id": "chronova-129",
+    "id": "chronova-137",
     "brand": "Garmin",
     "series": "Fenix 7 Pro Sapphire",
-    "model": "GAR-1129",
+    "model": "GAR-1137",
     "name": "Garmin Fenix 7 Pro Sapphire Ultra",
     "category": "Sports Watches",
     "vibe": "Premium",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 76990,
-    "original_price_rupees": 96237,
-    "discount_percent": 20,
+    "original_price_rupees": 109985,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.4,
-    "review_count": 75,
+    "rating": 4.6,
+    "review_count": 179,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -11755,31 +12891,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11810,48 +12949,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-129-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-137-1",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
-        "date": "2026-08-13",
+        "date": "2026-08-21",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Fenix 7 Pro Sapphire Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 17
+        "helpful_votes": 10
       },
       {
-        "id": "rev-129-2",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-137-2",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
-        "date": "2026-08-04",
+        "date": "2026-08-03",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
+        "helpful_votes": 8
       }
     ]
   },
   {
-    "id": "chronova-130",
+    "id": "chronova-138",
     "brand": "Garmin",
     "series": "Forerunner 965 AMOLED",
-    "model": "GAR-1130",
+    "model": "GAR-1138",
     "name": "Garmin Forerunner 965 AMOLED Elite",
     "category": "Smart Watches",
     "vibe": "Office",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 84323,
-    "original_price_rupees": 120461,
-    "discount_percent": 30,
+    "original_price_rupees": 93692,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.2,
-    "review_count": 88,
+    "rating": 4.4,
+    "review_count": 192,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
+    "is_new_arrival": false,
+    "is_bestseller": true,
+    "badge": "Bestseller",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Garmin Forerunner 965 AMOLED Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Garmin Craftsmanship & Heritage",
@@ -11859,31 +12998,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -11914,42 +13056,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-130-1",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-138-1",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
-        "date": "2026-08-14",
+        "date": "2026-08-22",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Forerunner 965 AMOLED Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 18
+        "helpful_votes": 11
       },
       {
-        "id": "rev-130-2",
-        "reviewer_name": "Karan Singhania",
+        "id": "rev-138-2",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
-        "date": "2026-08-05",
+        "date": "2026-08-04",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
+        "helpful_votes": 9
       }
     ]
   },
   {
-    "id": "chronova-131",
+    "id": "chronova-139",
     "brand": "Garmin",
     "series": "Venu 3 Voice",
-    "model": "GAR-1131",
+    "model": "GAR-1139",
     "name": "Garmin Venu 3 Voice Titanium",
     "category": "Fitness Watches",
     "vibe": "Sport",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 91656,
-    "original_price_rupees": 101840,
-    "discount_percent": 10,
+    "original_price_rupees": 114570,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.9,
-    "review_count": 101,
+    "rating": 4.2,
+    "review_count": 25,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -11963,31 +13105,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12018,48 +13163,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-131-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-139-1",
+        "reviewer_name": "Deepika Reddy",
         "rating": 5,
-        "date": "2026-08-15",
+        "date": "2026-08-23",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Venu 3 Voice Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 19
+        "helpful_votes": 12
       },
       {
-        "id": "rev-131-2",
-        "reviewer_name": "Meera Nambiar",
+        "id": "rev-139-2",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
-        "date": "2026-08-06",
+        "date": "2026-08-05",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "helpful_votes": 10
       }
     ]
   },
   {
-    "id": "chronova-132",
+    "id": "chronova-140",
     "brand": "Garmin",
     "series": "Instinct 2 Solar",
-    "model": "GAR-1132",
+    "model": "GAR-1140",
     "name": "Garmin Instinct 2 Solar Carbon",
     "category": "Outdoor Watches",
     "vibe": "Travel",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 98990,
-    "original_price_rupees": 123737,
-    "discount_percent": 20,
+    "original_price_rupees": 141414,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.7,
-    "review_count": 114,
-    "stock_status": "In Stock",
+    "rating": 4.9,
+    "review_count": 38,
+    "stock_status": "Only 3 Left",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Garmin Instinct 2 Solar Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Garmin Craftsmanship & Heritage",
@@ -12067,31 +13212,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12122,43 +13270,43 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-132-1",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-140-1",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 4,
-        "date": "2026-08-16",
+        "date": "2026-08-24",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Garmin!",
         "comment": "Bought this Garmin Instinct 2 Solar Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 20
+        "helpful_votes": 13
       },
       {
-        "id": "rev-132-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "id": "rev-140-2",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 4,
-        "date": "2026-08-07",
+        "date": "2026-08-06",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "helpful_votes": 4
       }
     ]
   },
   {
-    "id": "chronova-133",
+    "id": "chronova-141",
     "brand": "Amazfit",
     "series": "Cheetah Pro",
-    "model": "AMA-1133",
+    "model": "AMA-1141",
     "name": "Amazfit Cheetah Pro Edition",
     "category": "Smart Watches",
     "vibe": "Travel",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 7999,
-    "original_price_rupees": 8887,
-    "discount_percent": 10,
+    "original_price_rupees": 9998,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.5,
-    "review_count": 127,
-    "stock_status": "Only 3 Left",
+    "rating": 4.7,
+    "review_count": 51,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
@@ -12171,31 +13319,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12226,42 +13377,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-133-1",
-        "reviewer_name": "Karan Singhania",
+        "id": "rev-141-1",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
-        "date": "2026-08-17",
+        "date": "2026-08-25",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit Cheetah Pro Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 21
+        "helpful_votes": 14
       },
       {
-        "id": "rev-133-2",
-        "reviewer_name": "Siddharth Rao",
+        "id": "rev-141-2",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 5,
-        "date": "2026-08-08",
+        "date": "2026-08-07",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
+        "helpful_votes": 5
       }
     ]
   },
   {
-    "id": "chronova-134",
+    "id": "chronova-142",
     "brand": "Amazfit",
     "series": "GTR 4 Luxury",
-    "model": "AMA-1134",
+    "model": "AMA-1142",
     "name": "Amazfit GTR 4 Luxury Chronograph",
     "category": "Fitness Watches",
     "vibe": "Premium",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 10443,
-    "original_price_rupees": 13053,
-    "discount_percent": 20,
+    "original_price_rupees": 14918,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.3,
-    "review_count": 140,
+    "rating": 4.5,
+    "review_count": 64,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -12275,31 +13426,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12330,48 +13484,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-134-1",
-        "reviewer_name": "Meera Nambiar",
+        "id": "rev-142-1",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
-        "date": "2026-08-18",
+        "date": "2026-08-26",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit GTR 4 Luxury Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 22
+        "helpful_votes": 15
       },
       {
-        "id": "rev-134-2",
-        "reviewer_name": "Neha Kashyap",
+        "id": "rev-142-2",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
-        "date": "2026-08-09",
+        "date": "2026-08-08",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
+        "helpful_votes": 6
       }
     ]
   },
   {
-    "id": "chronova-135",
+    "id": "chronova-143",
     "brand": "Amazfit",
     "series": "GTS 4 Slim",
-    "model": "AMA-1135",
+    "model": "AMA-1143",
     "name": "Amazfit GTS 4 Slim Pro",
     "category": "Sports Watches",
     "vibe": "Office",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 12887,
-    "original_price_rupees": 18410,
-    "discount_percent": 30,
+    "original_price_rupees": 14318,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.1,
-    "review_count": 153,
+    "rating": 4.3,
+    "review_count": 77,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
+    "is_new_arrival": false,
     "is_bestseller": false,
-    "badge": "New",
+    "badge": null,
     "description": "Engineered for modern lifestyle and precision timekeeping, the Amazfit GTS 4 Slim Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Amazfit Craftsmanship & Heritage",
@@ -12379,31 +13533,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12434,48 +13591,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-135-1",
-        "reviewer_name": "Aarav Mehrotra",
+        "id": "rev-143-1",
+        "reviewer_name": "Rohan Bhattacharya",
         "rating": 5,
-        "date": "2026-08-19",
+        "date": "2026-08-27",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit GTS 4 Slim Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 8
+        "helpful_votes": 16
       },
       {
-        "id": "rev-135-2",
-        "reviewer_name": "Aditya Kulkarni",
+        "id": "rev-143-2",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
-        "date": "2026-08-01",
+        "date": "2026-08-09",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
+        "helpful_votes": 7
       }
     ]
   },
   {
-    "id": "chronova-136",
+    "id": "chronova-144",
     "brand": "Amazfit",
     "series": "T-Rex Ultra",
-    "model": "AMA-1136",
+    "model": "AMA-1144",
     "name": "Amazfit T-Rex Ultra Automatic",
     "category": "Outdoor Watches",
     "vibe": "Sport",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 15332,
-    "original_price_rupees": 17035,
-    "discount_percent": 10,
+    "original_price_rupees": 19165,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.8,
-    "review_count": 166,
+    "rating": 4.1,
+    "review_count": 90,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": true,
     "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
+    "is_bestseller": true,
+    "badge": "Bestseller",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Amazfit T-Rex Ultra Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Amazfit Craftsmanship & Heritage",
@@ -12483,31 +13640,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12538,48 +13698,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-136-1",
-        "reviewer_name": "Siddharth Rao",
+        "id": "rev-144-1",
+        "reviewer_name": "Pooja Sengupta",
         "rating": 4,
-        "date": "2026-08-20",
+        "date": "2026-08-10",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit T-Rex Ultra Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 9
+        "helpful_votes": 17
       },
       {
-        "id": "rev-136-2",
-        "reviewer_name": "Tanvi Joshi",
+        "id": "rev-144-2",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
-        "date": "2026-08-02",
+        "date": "2026-08-01",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
+        "helpful_votes": 8
       }
     ]
   },
   {
-    "id": "chronova-137",
+    "id": "chronova-145",
     "brand": "Amazfit",
     "series": "Balance AI Coach",
-    "model": "AMA-1137",
+    "model": "AMA-1145",
     "name": "Amazfit Balance AI Coach Classic",
     "category": "Smart Watches",
     "vibe": "Travel",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 17776,
-    "original_price_rupees": 22220,
-    "discount_percent": 20,
+    "original_price_rupees": 25394,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.6,
-    "review_count": 179,
+    "rating": 4.8,
+    "review_count": 103,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
+    "is_new_arrival": true,
     "is_bestseller": false,
-    "badge": null,
+    "badge": "New",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Amazfit Balance AI Coach Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Amazfit Craftsmanship & Heritage",
@@ -12587,31 +13747,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12642,48 +13805,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-137-1",
-        "reviewer_name": "Neha Kashyap",
+        "id": "rev-145-1",
+        "reviewer_name": "Karan Singhania",
         "rating": 5,
-        "date": "2026-08-21",
+        "date": "2026-08-11",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit Balance AI Coach Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 10
+        "helpful_votes": 18
       },
       {
-        "id": "rev-137-2",
-        "reviewer_name": "Rishabh Verma",
+        "id": "rev-145-2",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
-        "date": "2026-08-03",
+        "date": "2026-08-02",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
+        "helpful_votes": 9
       }
     ]
   },
   {
-    "id": "chronova-138",
+    "id": "chronova-146",
     "brand": "Amazfit",
     "series": "Active Edge",
-    "model": "AMA-1138",
+    "model": "AMA-1146",
     "name": "Amazfit Active Edge Heritage",
     "category": "Fitness Watches",
     "vibe": "Premium",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 20221,
-    "original_price_rupees": 28887,
-    "discount_percent": 30,
+    "original_price_rupees": 22467,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.4,
-    "review_count": 192,
+    "rating": 4.6,
+    "review_count": 116,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
+    "is_bestseller": false,
+    "badge": null,
     "description": "Engineered for modern lifestyle and precision timekeeping, the Amazfit Active Edge Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Amazfit Craftsmanship & Heritage",
@@ -12691,31 +13854,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12746,43 +13912,43 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-138-1",
-        "reviewer_name": "Aditya Kulkarni",
+        "id": "rev-146-1",
+        "reviewer_name": "Meera Nambiar",
         "rating": 5,
-        "date": "2026-08-22",
+        "date": "2026-08-12",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit Active Edge Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 11
+        "helpful_votes": 19
       },
       {
-        "id": "rev-138-2",
-        "reviewer_name": "Sneha Sundaram",
+        "id": "rev-146-2",
+        "reviewer_name": "Neha Kashyap",
         "rating": 4,
-        "date": "2026-08-04",
+        "date": "2026-08-03",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "helpful_votes": 10
       }
     ]
   },
   {
-    "id": "chronova-139",
+    "id": "chronova-147",
     "brand": "Amazfit",
     "series": "Cheetah Pro",
-    "model": "AMA-1139",
+    "model": "AMA-1147",
     "name": "Amazfit Cheetah Pro Ultra",
     "category": "Sports Watches",
     "vibe": "Office",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 22665,
-    "original_price_rupees": 25183,
-    "discount_percent": 10,
+    "original_price_rupees": 28331,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.2,
-    "review_count": 25,
-    "stock_status": "In Stock",
+    "rating": 4.4,
+    "review_count": 129,
+    "stock_status": "Only 3 Left",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
@@ -12795,31 +13961,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12850,48 +14019,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-139-1",
-        "reviewer_name": "Tanvi Joshi",
+        "id": "rev-147-1",
+        "reviewer_name": "Aarav Mehrotra",
         "rating": 4,
-        "date": "2026-08-23",
+        "date": "2026-08-13",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit Cheetah Pro Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 12
+        "helpful_votes": 20
       },
       {
-        "id": "rev-139-2",
-        "reviewer_name": "Gaurav Malhotra",
+        "id": "rev-147-2",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 5,
-        "date": "2026-08-05",
+        "date": "2026-08-04",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "helpful_votes": 4
       }
     ]
   },
   {
-    "id": "chronova-140",
+    "id": "chronova-148",
     "brand": "Amazfit",
     "series": "GTR 4 Luxury",
-    "model": "AMA-1140",
+    "model": "AMA-1148",
     "name": "Amazfit GTR 4 Luxury Elite",
     "category": "Outdoor Watches",
     "vibe": "Sport",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 25110,
-    "original_price_rupees": 31387,
-    "discount_percent": 20,
+    "original_price_rupees": 35871,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.9,
-    "review_count": 38,
-    "stock_status": "Only 3 Left",
+    "rating": 4.2,
+    "review_count": 142,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
+    "is_new_arrival": false,
     "is_bestseller": false,
-    "badge": "New",
+    "badge": "Trending",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Amazfit GTR 4 Luxury Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Amazfit Craftsmanship & Heritage",
@@ -12899,31 +14068,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -12954,42 +14126,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-140-1",
-        "reviewer_name": "Rishabh Verma",
+        "id": "rev-148-1",
+        "reviewer_name": "Siddharth Rao",
         "rating": 5,
-        "date": "2026-08-24",
+        "date": "2026-08-14",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit GTR 4 Luxury Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 13
+        "helpful_votes": 21
       },
       {
-        "id": "rev-140-2",
-        "reviewer_name": "Shweta Tiwari",
+        "id": "rev-148-2",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
-        "date": "2026-08-06",
+        "date": "2026-08-05",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
+        "helpful_votes": 5
       }
     ]
   },
   {
-    "id": "chronova-141",
+    "id": "chronova-149",
     "brand": "Amazfit",
     "series": "GTS 4 Slim",
-    "model": "AMA-1141",
+    "model": "AMA-1149",
     "name": "Amazfit GTS 4 Slim Titanium",
     "category": "Smart Watches",
     "vibe": "Travel",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 27554,
-    "original_price_rupees": 39362,
-    "discount_percent": 30,
+    "original_price_rupees": 30615,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.7,
-    "review_count": 51,
+    "rating": 4.9,
+    "review_count": 155,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -13003,31 +14175,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13058,48 +14233,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-141-1",
-        "reviewer_name": "Sneha Sundaram",
+        "id": "rev-149-1",
+        "reviewer_name": "Neha Kashyap",
         "rating": 5,
-        "date": "2026-08-25",
+        "date": "2026-08-15",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit GTS 4 Slim Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 14
+        "helpful_votes": 22
       },
       {
-        "id": "rev-141-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "id": "rev-149-2",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
-        "date": "2026-08-07",
+        "date": "2026-08-06",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
+        "helpful_votes": 6
       }
     ]
   },
   {
-    "id": "chronova-142",
+    "id": "chronova-150",
     "brand": "Amazfit",
     "series": "T-Rex Ultra",
-    "model": "AMA-1142",
+    "model": "AMA-1150",
     "name": "Amazfit T-Rex Ultra Carbon",
     "category": "Fitness Watches",
     "vibe": "Premium",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 29999,
-    "original_price_rupees": 33332,
-    "discount_percent": 10,
+    "original_price_rupees": 37498,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.5,
-    "review_count": 64,
+    "rating": 4.7,
+    "review_count": 168,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
+    "is_new_arrival": true,
+    "is_bestseller": true,
+    "badge": "Bestseller",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Amazfit T-Rex Ultra Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Amazfit Craftsmanship & Heritage",
@@ -13107,31 +14282,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13162,42 +14340,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-142-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "id": "rev-150-1",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 4,
-        "date": "2026-08-26",
+        "date": "2026-08-16",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Amazfit!",
         "comment": "Bought this Amazfit T-Rex Ultra Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 15
+        "helpful_votes": 8
       },
       {
-        "id": "rev-142-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-150-2",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 4,
-        "date": "2026-08-08",
+        "date": "2026-08-07",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
+        "helpful_votes": 7
       }
     ]
   },
   {
-    "id": "chronova-143",
+    "id": "chronova-151",
     "brand": "Noise",
     "series": "ColorFit Pro 5 Max",
-    "model": "NOI-1143",
+    "model": "NOI-1151",
     "name": "Noise ColorFit Pro 5 Max Edition",
     "category": "Smart Watches",
     "vibe": "Premium",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 1999,
-    "original_price_rupees": 2855,
-    "discount_percent": 30,
+    "original_price_rupees": 2221,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.3,
-    "review_count": 77,
+    "rating": 4.5,
+    "review_count": 181,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -13211,31 +14389,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13266,48 +14447,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-143-1",
-        "reviewer_name": "Shweta Tiwari",
+        "id": "rev-151-1",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
-        "date": "2026-08-27",
+        "date": "2026-08-17",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise ColorFit Pro 5 Max Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 16
+        "helpful_votes": 9
       },
       {
-        "id": "rev-143-2",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-151-2",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
-        "date": "2026-08-09",
+        "date": "2026-08-08",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
+        "helpful_votes": 8
       }
     ]
   },
   {
-    "id": "chronova-144",
+    "id": "chronova-152",
     "brand": "Noise",
     "series": "Halo Plus AMOLED",
-    "model": "NOI-1144",
+    "model": "NOI-1152",
     "name": "Noise Halo Plus AMOLED Chronograph",
     "category": "Fitness Watches",
     "vibe": "Office",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 2554,
-    "original_price_rupees": 2837,
-    "discount_percent": 10,
+    "original_price_rupees": 3192,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.1,
-    "review_count": 90,
+    "rating": 4.3,
+    "review_count": 194,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": true,
     "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
+    "is_bestseller": false,
+    "badge": "Trending",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Halo Plus AMOLED Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Noise Craftsmanship & Heritage",
@@ -13315,31 +14496,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13370,48 +14554,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-144-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "id": "rev-152-1",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
-        "date": "2026-08-10",
+        "date": "2026-08-18",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise Halo Plus AMOLED Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 17
+        "helpful_votes": 10
       },
       {
-        "id": "rev-144-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-152-2",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
-        "date": "2026-08-01",
+        "date": "2026-08-09",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
+        "helpful_votes": 9
       }
     ]
   },
   {
-    "id": "chronova-145",
+    "id": "chronova-153",
     "brand": "Noise",
     "series": "Vortex Ultra",
-    "model": "NOI-1145",
+    "model": "NOI-1153",
     "name": "Noise Vortex Ultra Pro",
     "category": "Casual Watches",
     "vibe": "Sport",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 3110,
-    "original_price_rupees": 3887,
-    "discount_percent": 20,
+    "original_price_rupees": 4442,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.8,
-    "review_count": 103,
+    "rating": 4.1,
+    "review_count": 27,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
+    "is_new_arrival": false,
     "is_bestseller": false,
-    "badge": "New",
+    "badge": null,
     "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Vortex Ultra Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Noise Craftsmanship & Heritage",
@@ -13419,31 +14603,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13474,43 +14661,43 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-145-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-153-1",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 5,
-        "date": "2026-08-11",
+        "date": "2026-08-19",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise Vortex Ultra Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 18
+        "helpful_votes": 11
       },
       {
-        "id": "rev-145-2",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-153-2",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
-        "date": "2026-08-02",
+        "date": "2026-08-01",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "helpful_votes": 10
       }
     ]
   },
   {
-    "id": "chronova-146",
+    "id": "chronova-154",
     "brand": "Noise",
     "series": "Icon Buzz Bluetooth",
-    "model": "NOI-1146",
+    "model": "NOI-1154",
     "name": "Noise Icon Buzz Bluetooth Automatic",
     "category": "Smart Watches",
     "vibe": "Travel",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 3665,
-    "original_price_rupees": 5235,
-    "discount_percent": 30,
+    "original_price_rupees": 4072,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.6,
-    "review_count": 116,
-    "stock_status": "In Stock",
+    "rating": 4.8,
+    "review_count": 40,
+    "stock_status": "Only 3 Left",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
@@ -13523,31 +14710,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13578,48 +14768,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-146-1",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-154-1",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 4,
-        "date": "2026-08-12",
+        "date": "2026-08-20",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise Icon Buzz Bluetooth Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 19
+        "helpful_votes": 12
       },
       {
-        "id": "rev-146-2",
-        "reviewer_name": "Karan Singhania",
+        "id": "rev-154-2",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
-        "date": "2026-08-03",
+        "date": "2026-08-02",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "helpful_votes": 4
       }
     ]
   },
   {
-    "id": "chronova-147",
+    "id": "chronova-155",
     "brand": "Noise",
     "series": "Evolve 4 Metallic",
-    "model": "NOI-1147",
+    "model": "NOI-1155",
     "name": "Noise Evolve 4 Metallic Classic",
     "category": "Fitness Watches",
     "vibe": "Premium",
-    "gender": "Women",
+    "gender": "Men",
     "price_rupees": 4221,
-    "original_price_rupees": 4690,
-    "discount_percent": 10,
+    "original_price_rupees": 5276,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.4,
-    "review_count": 129,
-    "stock_status": "Only 3 Left",
+    "rating": 4.6,
+    "review_count": 53,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
+    "is_new_arrival": true,
     "is_bestseller": false,
-    "badge": null,
+    "badge": "New",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Evolve 4 Metallic Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Noise Craftsmanship & Heritage",
@@ -13627,31 +14817,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13682,48 +14875,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-147-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-155-1",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 5,
-        "date": "2026-08-13",
+        "date": "2026-08-21",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise Evolve 4 Metallic Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 20
+        "helpful_votes": 13
       },
       {
-        "id": "rev-147-2",
-        "reviewer_name": "Meera Nambiar",
+        "id": "rev-155-2",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
-        "date": "2026-08-04",
+        "date": "2026-08-03",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
+        "helpful_votes": 5
       }
     ]
   },
   {
-    "id": "chronova-148",
+    "id": "chronova-156",
     "brand": "Noise",
     "series": "Fit Pulse Go",
-    "model": "NOI-1148",
+    "model": "NOI-1156",
     "name": "Noise Fit Pulse Go Heritage",
     "category": "Casual Watches",
     "vibe": "Office",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 4776,
-    "original_price_rupees": 5970,
-    "discount_percent": 20,
+    "original_price_rupees": 6822,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.2,
-    "review_count": 142,
+    "rating": 4.4,
+    "review_count": 66,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
+    "is_bestseller": true,
+    "badge": "Bestseller",
     "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Fit Pulse Go Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Noise Craftsmanship & Heritage",
@@ -13731,31 +14924,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13786,42 +14982,42 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-148-1",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-156-1",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
-        "date": "2026-08-14",
+        "date": "2026-08-22",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise Fit Pulse Go Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 21
+        "helpful_votes": 14
       },
       {
-        "id": "rev-148-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "id": "rev-156-2",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
-        "date": "2026-08-05",
+        "date": "2026-08-04",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
+        "helpful_votes": 6
       }
     ]
   },
   {
-    "id": "chronova-149",
+    "id": "chronova-157",
     "brand": "Noise",
     "series": "ColorFit Pro 5 Max",
-    "model": "NOI-1149",
+    "model": "NOI-1157",
     "name": "Noise ColorFit Pro 5 Max Ultra",
     "category": "Smart Watches",
     "vibe": "Sport",
-    "gender": "Unisex",
+    "gender": "Women",
     "price_rupees": 5332,
-    "original_price_rupees": 7617,
-    "discount_percent": 30,
+    "original_price_rupees": 5924,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.9,
-    "review_count": 155,
+    "rating": 4.2,
+    "review_count": 79,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
@@ -13835,31 +15031,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -13890,845 +15089,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-149-1",
-        "reviewer_name": "Karan Singhania",
+        "id": "rev-157-1",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
-        "date": "2026-08-15",
+        "date": "2026-08-23",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Noise!",
         "comment": "Bought this Noise ColorFit Pro 5 Max Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 22
-      },
-      {
-        "id": "rev-149-2",
-        "reviewer_name": "Siddharth Rao",
-        "rating": 5,
-        "date": "2026-08-06",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
-      }
-    ]
-  },
-  {
-    "id": "chronova-150",
-    "brand": "Noise",
-    "series": "Halo Plus AMOLED",
-    "model": "NOI-1150",
-    "name": "Noise Halo Plus AMOLED Elite",
-    "category": "Fitness Watches",
-    "vibe": "Travel",
-    "gender": "Women",
-    "price_rupees": 5887,
-    "original_price_rupees": 6541,
-    "discount_percent": 10,
-    "currency": "INR",
-    "rating": 4.7,
-    "review_count": 168,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Halo Plus AMOLED Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Noise Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "42mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.60 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": false,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 120,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-150-1",
-        "reviewer_name": "Meera Nambiar",
-        "rating": 5,
-        "date": "2026-08-16",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Noise!",
-        "comment": "Bought this Noise Halo Plus AMOLED Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 8
-      },
-      {
-        "id": "rev-150-2",
-        "reviewer_name": "Neha Kashyap",
-        "rating": 4,
-        "date": "2026-08-07",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
-      }
-    ]
-  },
-  {
-    "id": "chronova-151",
-    "brand": "Noise",
-    "series": "Vortex Ultra",
-    "model": "NOI-1151",
-    "name": "Noise Vortex Ultra Titanium",
-    "category": "Casual Watches",
-    "vibe": "Premium",
-    "gender": "Men",
-    "price_rupees": 6443,
-    "original_price_rupees": 8053,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.5,
-    "review_count": 181,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Vortex Ultra Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Noise Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "44mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.30 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 130,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-151-1",
-        "reviewer_name": "Aarav Mehrotra",
-        "rating": 5,
-        "date": "2026-08-17",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Noise!",
-        "comment": "Bought this Noise Vortex Ultra Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 9
-      },
-      {
-        "id": "rev-151-2",
-        "reviewer_name": "Aditya Kulkarni",
-        "rating": 5,
-        "date": "2026-08-08",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
-      }
-    ]
-  },
-  {
-    "id": "chronova-152",
-    "brand": "Noise",
-    "series": "Icon Buzz Bluetooth",
-    "model": "NOI-1152",
-    "name": "Noise Icon Buzz Bluetooth Carbon",
-    "category": "Smart Watches",
-    "vibe": "Office",
-    "gender": "Unisex",
-    "price_rupees": 6999,
-    "original_price_rupees": 9998,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.3,
-    "review_count": 194,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": true,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Icon Buzz Bluetooth Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Noise Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "46mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.40 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": false,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 140,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-152-1",
-        "reviewer_name": "Siddharth Rao",
-        "rating": 4,
-        "date": "2026-08-18",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Noise!",
-        "comment": "Bought this Noise Icon Buzz Bluetooth Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 10
-      },
-      {
-        "id": "rev-152-2",
-        "reviewer_name": "Tanvi Joshi",
-        "rating": 4,
-        "date": "2026-08-09",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
-      }
-    ]
-  },
-  {
-    "id": "chronova-153",
-    "brand": "boAt",
-    "series": "Wave Elevate Pro",
-    "model": "BOA-1153",
-    "name": "boAt Wave Elevate Pro Edition",
-    "category": "Smart Watches",
-    "vibe": "Office",
-    "gender": "Men",
-    "price_rupees": 1499,
-    "original_price_rupees": 1873,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.1,
-    "review_count": 27,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Wave Elevate Pro Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "40mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.30 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 100,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-153-1",
-        "reviewer_name": "Neha Kashyap",
-        "rating": 4,
-        "date": "2026-08-19",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Wave Elevate Pro Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 11
-      },
-      {
-        "id": "rev-153-2",
-        "reviewer_name": "Rishabh Verma",
-        "rating": 5,
-        "date": "2026-08-01",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
-      }
-    ]
-  },
-  {
-    "id": "chronova-154",
-    "brand": "boAt",
-    "series": "Ultima Prism AMOLED",
-    "model": "BOA-1154",
-    "name": "boAt Ultima Prism AMOLED Chronograph",
-    "category": "Fitness Watches",
-    "vibe": "Sport",
-    "gender": "Unisex",
-    "price_rupees": 1887,
-    "original_price_rupees": 2695,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.8,
-    "review_count": 40,
-    "stock_status": "Only 3 Left",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Ultima Prism AMOLED Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "42mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.40 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": false,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 110,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-154-1",
-        "reviewer_name": "Aditya Kulkarni",
-        "rating": 5,
-        "date": "2026-08-20",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Ultima Prism AMOLED Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 12
-      },
-      {
-        "id": "rev-154-2",
-        "reviewer_name": "Sneha Sundaram",
-        "rating": 4,
-        "date": "2026-08-02",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
-      }
-    ]
-  },
-  {
-    "id": "chronova-155",
-    "brand": "boAt",
-    "series": "Lunar Orbit Bluetooth",
-    "model": "BOA-1155",
-    "name": "boAt Lunar Orbit Bluetooth Pro",
-    "category": "Casual Watches",
-    "vibe": "Travel",
-    "gender": "Women",
-    "price_rupees": 2276,
-    "original_price_rupees": 2528,
-    "discount_percent": 10,
-    "currency": "INR",
-    "rating": 4.6,
-    "review_count": 53,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Lunar Orbit Bluetooth Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "44mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.50 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 120,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-155-1",
-        "reviewer_name": "Tanvi Joshi",
-        "rating": 5,
-        "date": "2026-08-21",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Lunar Orbit Bluetooth Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 13
-      },
-      {
-        "id": "rev-155-2",
-        "reviewer_name": "Gaurav Malhotra",
-        "rating": 5,
-        "date": "2026-08-03",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
-      }
-    ]
-  },
-  {
-    "id": "chronova-156",
-    "brand": "boAt",
-    "series": "Enigma Gem Luxury",
-    "model": "BOA-1156",
-    "name": "boAt Enigma Gem Luxury Automatic",
-    "category": "Smart Watches",
-    "vibe": "Premium",
-    "gender": "Men",
-    "price_rupees": 2665,
-    "original_price_rupees": 3331,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.4,
-    "review_count": 66,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Enigma Gem Luxury Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "46mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.60 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": false,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 130,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-156-1",
-        "reviewer_name": "Rishabh Verma",
-        "rating": 4,
-        "date": "2026-08-22",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Enigma Gem Luxury Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 14
-      },
-      {
-        "id": "rev-156-2",
-        "reviewer_name": "Shweta Tiwari",
-        "rating": 4,
-        "date": "2026-08-04",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
-      }
-    ]
-  },
-  {
-    "id": "chronova-157",
-    "brand": "boAt",
-    "series": "Storm Call 3",
-    "model": "BOA-1157",
-    "name": "boAt Storm Call 3 Classic",
-    "category": "Fitness Watches",
-    "vibe": "Office",
-    "gender": "Unisex",
-    "price_rupees": 3054,
-    "original_price_rupees": 4362,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.2,
-    "review_count": 79,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Storm Call 3 Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 48mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "48mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.30 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 140,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-157-1",
-        "reviewer_name": "Sneha Sundaram",
-        "rating": 5,
-        "date": "2026-08-23",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Storm Call 3 Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 15
       },
       {
@@ -14745,16 +15112,16 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   },
   {
     "id": "chronova-158",
-    "brand": "boAt",
-    "series": "Xtend Plus",
-    "model": "BOA-1158",
-    "name": "boAt Xtend Plus Heritage",
-    "category": "Casual Watches",
-    "vibe": "Sport",
-    "gender": "Women",
-    "price_rupees": 3443,
-    "original_price_rupees": 3825,
-    "discount_percent": 10,
+    "brand": "Noise",
+    "series": "Halo Plus AMOLED",
+    "model": "NOI-1158",
+    "name": "Noise Halo Plus AMOLED Elite",
+    "category": "Fitness Watches",
+    "vibe": "Travel",
+    "gender": "Men",
+    "price_rupees": 5887,
+    "original_price_rupees": 7358,
+    "discount_percent": 20,
     "currency": "INR",
     "rating": 4.9,
     "review_count": 92,
@@ -14764,246 +15131,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Xtend Plus Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Halo Plus AMOLED Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 50mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "50mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.40 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": false,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 100,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-158-1",
-        "reviewer_name": "Gaurav Malhotra",
-        "rating": 5,
-        "date": "2026-08-24",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Xtend Plus Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 16
-      },
-      {
-        "id": "rev-158-2",
-        "reviewer_name": "Ananya Deshmukh",
-        "rating": 4,
-        "date": "2026-08-06",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
-      }
-    ]
-  },
-  {
-    "id": "chronova-159",
-    "brand": "boAt",
-    "series": "Wave Elevate Pro",
-    "model": "BOA-1159",
-    "name": "boAt Wave Elevate Pro Ultra",
-    "category": "Smart Watches",
-    "vibe": "Travel",
-    "gender": "Men",
-    "price_rupees": 3832,
-    "original_price_rupees": 4790,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.7,
-    "review_count": 105,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Wave Elevate Pro Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "40mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.50 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 110,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-159-1",
-        "reviewer_name": "Shweta Tiwari",
-        "rating": 4,
-        "date": "2026-08-25",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Wave Elevate Pro Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 17
-      },
-      {
-        "id": "rev-159-2",
-        "reviewer_name": "Devendra Patel",
-        "rating": 5,
-        "date": "2026-08-07",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
-      }
-    ]
-  },
-  {
-    "id": "chronova-160",
-    "brand": "boAt",
-    "series": "Ultima Prism AMOLED",
-    "model": "BOA-1160",
-    "name": "boAt Ultima Prism AMOLED Elite",
-    "category": "Fitness Watches",
-    "vibe": "Premium",
-    "gender": "Unisex",
-    "price_rupees": 4221,
-    "original_price_rupees": 6030,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.5,
-    "review_count": 118,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": true,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Ultima Prism AMOLED Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic boAt Craftsmanship & Heritage",
+      "Authentic Noise Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15034,13 +15196,227 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
+        "id": "rev-158-1",
+        "reviewer_name": "Manish Choudhary",
+        "rating": 5,
+        "date": "2026-08-24",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Noise!",
+        "comment": "Bought this Noise Halo Plus AMOLED Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 16
+      },
+      {
+        "id": "rev-158-2",
+        "reviewer_name": "Ananya Deshmukh",
+        "rating": 4,
+        "date": "2026-08-06",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 8
+      }
+    ]
+  },
+  {
+    "id": "chronova-159",
+    "brand": "Noise",
+    "series": "Vortex Ultra",
+    "model": "NOI-1159",
+    "name": "Noise Vortex Ultra Titanium",
+    "category": "Casual Watches",
+    "vibe": "Premium",
+    "gender": "Unisex",
+    "price_rupees": 6443,
+    "original_price_rupees": 9204,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.7,
+    "review_count": 105,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Vortex Ultra Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Noise Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "44mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Midnight Black",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.30 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 130,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-159-1",
+        "reviewer_name": "Deepika Reddy",
+        "rating": 5,
+        "date": "2026-08-25",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Noise!",
+        "comment": "Bought this Noise Vortex Ultra Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 17
+      },
+      {
+        "id": "rev-159-2",
+        "reviewer_name": "Devendra Patel",
+        "rating": 5,
+        "date": "2026-08-07",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 9
+      }
+    ]
+  },
+  {
+    "id": "chronova-160",
+    "brand": "Noise",
+    "series": "Icon Buzz Bluetooth",
+    "model": "NOI-1160",
+    "name": "Noise Icon Buzz Bluetooth Carbon",
+    "category": "Smart Watches",
+    "vibe": "Office",
+    "gender": "Women",
+    "price_rupees": 6999,
+    "original_price_rupees": 7776,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.5,
+    "review_count": 118,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": true,
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Noise Icon Buzz Bluetooth Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Noise Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "46mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Deep Navy",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.40 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": false,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 140,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
         "id": "rev-160-1",
         "reviewer_name": "Vikramaditya Sharma",
-        "rating": 5,
+        "rating": 4,
         "date": "2026-08-26",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from boAt!",
-        "comment": "Bought this boAt Ultima Prism AMOLED Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "title": "Exceptional build quality and accuracy from Noise!",
+        "comment": "Bought this Noise Icon Buzz Bluetooth Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 18
       },
       {
@@ -15058,19 +15434,875 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-161",
     "brand": "boAt",
-    "series": "Lunar Orbit Bluetooth",
+    "series": "Wave Elevate Pro",
     "model": "BOA-1161",
-    "name": "boAt Lunar Orbit Bluetooth Titanium",
-    "category": "Casual Watches",
+    "name": "boAt Wave Elevate Pro Edition",
+    "category": "Smart Watches",
     "vibe": "Office",
-    "gender": "Women",
-    "price_rupees": 4610,
-    "original_price_rupees": 5122,
-    "discount_percent": 10,
+    "gender": "Unisex",
+    "price_rupees": 1499,
+    "original_price_rupees": 2141,
+    "discount_percent": 30,
     "currency": "INR",
     "rating": 4.3,
     "review_count": 131,
     "stock_status": "Only 3 Left",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Wave Elevate Pro Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "40mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Midnight Black",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.30 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 100,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-161-1",
+        "reviewer_name": "Ananya Deshmukh",
+        "rating": 4,
+        "date": "2026-08-27",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Wave Elevate Pro Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 19
+      },
+      {
+        "id": "rev-161-2",
+        "reviewer_name": "Pooja Sengupta",
+        "rating": 5,
+        "date": "2026-08-09",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 4
+      }
+    ]
+  },
+  {
+    "id": "chronova-162",
+    "brand": "boAt",
+    "series": "Ultima Prism AMOLED",
+    "model": "BOA-1162",
+    "name": "boAt Ultima Prism AMOLED Chronograph",
+    "category": "Fitness Watches",
+    "vibe": "Sport",
+    "gender": "Women",
+    "price_rupees": 1887,
+    "original_price_rupees": 2096,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.1,
+    "review_count": 144,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": true,
+    "badge": "Bestseller",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Ultima Prism AMOLED Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "42mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Deep Navy",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.40 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": false,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 110,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-162-1",
+        "reviewer_name": "Devendra Patel",
+        "rating": 5,
+        "date": "2026-08-10",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Ultima Prism AMOLED Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 20
+      },
+      {
+        "id": "rev-162-2",
+        "reviewer_name": "Karan Singhania",
+        "rating": 4,
+        "date": "2026-08-01",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 5
+      }
+    ]
+  },
+  {
+    "id": "chronova-163",
+    "brand": "boAt",
+    "series": "Lunar Orbit Bluetooth",
+    "model": "BOA-1163",
+    "name": "boAt Lunar Orbit Bluetooth Pro",
+    "category": "Casual Watches",
+    "vibe": "Travel",
+    "gender": "Men",
+    "price_rupees": 2276,
+    "original_price_rupees": 2845,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.8,
+    "review_count": 157,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Lunar Orbit Bluetooth Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "44mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Starlight Silver",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.50 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 120,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-163-1",
+        "reviewer_name": "Rohan Bhattacharya",
+        "rating": 5,
+        "date": "2026-08-11",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Lunar Orbit Bluetooth Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 21
+      },
+      {
+        "id": "rev-163-2",
+        "reviewer_name": "Meera Nambiar",
+        "rating": 5,
+        "date": "2026-08-02",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 6
+      }
+    ]
+  },
+  {
+    "id": "chronova-164",
+    "brand": "boAt",
+    "series": "Enigma Gem Luxury",
+    "model": "BOA-1164",
+    "name": "boAt Enigma Gem Luxury Automatic",
+    "category": "Smart Watches",
+    "vibe": "Premium",
+    "gender": "Unisex",
+    "price_rupees": 2665,
+    "original_price_rupees": 3807,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.6,
+    "review_count": 170,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Enigma Gem Luxury Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "46mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Forest Green",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.60 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": false,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 130,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-164-1",
+        "reviewer_name": "Pooja Sengupta",
+        "rating": 4,
+        "date": "2026-08-12",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Enigma Gem Luxury Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 22
+      },
+      {
+        "id": "rev-164-2",
+        "reviewer_name": "Aarav Mehrotra",
+        "rating": 4,
+        "date": "2026-08-03",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 7
+      }
+    ]
+  },
+  {
+    "id": "chronova-165",
+    "brand": "boAt",
+    "series": "Storm Call 3",
+    "model": "BOA-1165",
+    "name": "boAt Storm Call 3 Classic",
+    "category": "Fitness Watches",
+    "vibe": "Office",
+    "gender": "Women",
+    "price_rupees": 3054,
+    "original_price_rupees": 3393,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.4,
+    "review_count": 183,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Storm Call 3 Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 48mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "48mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Midnight Black",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.30 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 140,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-165-1",
+        "reviewer_name": "Karan Singhania",
+        "rating": 5,
+        "date": "2026-08-13",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Storm Call 3 Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 8
+      },
+      {
+        "id": "rev-165-2",
+        "reviewer_name": "Siddharth Rao",
+        "rating": 5,
+        "date": "2026-08-04",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 8
+      }
+    ]
+  },
+  {
+    "id": "chronova-166",
+    "brand": "boAt",
+    "series": "Xtend Plus",
+    "model": "BOA-1166",
+    "name": "boAt Xtend Plus Heritage",
+    "category": "Casual Watches",
+    "vibe": "Sport",
+    "gender": "Men",
+    "price_rupees": 3443,
+    "original_price_rupees": 4303,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.2,
+    "review_count": 196,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Xtend Plus Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 50mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "50mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Deep Navy",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.40 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": false,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 100,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-166-1",
+        "reviewer_name": "Meera Nambiar",
+        "rating": 5,
+        "date": "2026-08-14",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Xtend Plus Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 9
+      },
+      {
+        "id": "rev-166-2",
+        "reviewer_name": "Neha Kashyap",
+        "rating": 4,
+        "date": "2026-08-05",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 9
+      }
+    ]
+  },
+  {
+    "id": "chronova-167",
+    "brand": "boAt",
+    "series": "Wave Elevate Pro",
+    "model": "BOA-1167",
+    "name": "boAt Wave Elevate Pro Ultra",
+    "category": "Smart Watches",
+    "vibe": "Travel",
+    "gender": "Unisex",
+    "price_rupees": 3832,
+    "original_price_rupees": 5474,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.9,
+    "review_count": 29,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Wave Elevate Pro Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "40mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Starlight Silver",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.50 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 110,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-167-1",
+        "reviewer_name": "Aarav Mehrotra",
+        "rating": 4,
+        "date": "2026-08-15",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Wave Elevate Pro Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 10
+      },
+      {
+        "id": "rev-167-2",
+        "reviewer_name": "Aditya Kulkarni",
+        "rating": 5,
+        "date": "2026-08-06",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 10
+      }
+    ]
+  },
+  {
+    "id": "chronova-168",
+    "brand": "boAt",
+    "series": "Ultima Prism AMOLED",
+    "model": "BOA-1168",
+    "name": "boAt Ultima Prism AMOLED Elite",
+    "category": "Fitness Watches",
+    "vibe": "Premium",
+    "gender": "Women",
+    "price_rupees": 4221,
+    "original_price_rupees": 4690,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.7,
+    "review_count": 42,
+    "stock_status": "Only 3 Left",
+    "in_stock": true,
+    "featured": true,
+    "is_new_arrival": false,
+    "is_bestseller": true,
+    "badge": "Bestseller",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Ultima Prism AMOLED Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic boAt Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "42mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Forest Green",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.60 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": false,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 120,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-168-1",
+        "reviewer_name": "Siddharth Rao",
+        "rating": 5,
+        "date": "2026-08-16",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from boAt!",
+        "comment": "Bought this boAt Ultima Prism AMOLED Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 11
+      },
+      {
+        "id": "rev-168-2",
+        "reviewer_name": "Tanvi Joshi",
+        "rating": 4,
+        "date": "2026-08-07",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 4
+      }
+    ]
+  },
+  {
+    "id": "chronova-169",
+    "brand": "boAt",
+    "series": "Lunar Orbit Bluetooth",
+    "model": "BOA-1169",
+    "name": "boAt Lunar Orbit Bluetooth Titanium",
+    "category": "Casual Watches",
+    "vibe": "Office",
+    "gender": "Men",
+    "price_rupees": 4610,
+    "original_price_rupees": 5762,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.5,
+    "review_count": 55,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
@@ -15083,31 +16315,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15138,48 +16373,48 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-161-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-169-1",
+        "reviewer_name": "Neha Kashyap",
         "rating": 5,
-        "date": "2026-08-27",
+        "date": "2026-08-17",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from boAt!",
         "comment": "Bought this boAt Lunar Orbit Bluetooth Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 19
+        "helpful_votes": 12
       },
       {
-        "id": "rev-161-2",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-169-2",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
-        "date": "2026-08-09",
+        "date": "2026-08-08",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
+        "helpful_votes": 5
       }
     ]
   },
   {
-    "id": "chronova-162",
+    "id": "chronova-170",
     "brand": "boAt",
     "series": "Enigma Gem Luxury",
-    "model": "BOA-1162",
+    "model": "BOA-1170",
     "name": "boAt Enigma Gem Luxury Carbon",
     "category": "Smart Watches",
     "vibe": "Sport",
-    "gender": "Men",
+    "gender": "Unisex",
     "price_rupees": 4999,
-    "original_price_rupees": 6248,
-    "discount_percent": 20,
+    "original_price_rupees": 7141,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.1,
-    "review_count": 144,
+    "rating": 4.3,
+    "review_count": 68,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
     "description": "Engineered for modern lifestyle and precision timekeeping, the boAt Enigma Gem Luxury Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic boAt Craftsmanship & Heritage",
@@ -15187,31 +16422,34 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -15242,845 +16480,13 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-162-1",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-170-1",
+        "reviewer_name": "Aditya Kulkarni",
         "rating": 4,
-        "date": "2026-08-10",
+        "date": "2026-08-18",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from boAt!",
         "comment": "Bought this boAt Enigma Gem Luxury Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 20
-      },
-      {
-        "id": "rev-162-2",
-        "reviewer_name": "Karan Singhania",
-        "rating": 4,
-        "date": "2026-08-01",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
-      }
-    ]
-  },
-  {
-    "id": "chronova-163",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 6 Classic",
-    "model": "SAM-1163",
-    "name": "Samsung Galaxy Watch 6 Classic Edition",
-    "category": "Smart Watches",
-    "vibe": "Sport",
-    "gender": "Women",
-    "price_rupees": 12999,
-    "original_price_rupees": 14443,
-    "discount_percent": 10,
-    "currency": "INR",
-    "rating": 4.8,
-    "review_count": 157,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 Classic Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "40mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.30 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 100,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-163-1",
-        "reviewer_name": "Rohan Bhattacharya",
-        "rating": 4,
-        "date": "2026-08-11",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 6 Classic Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 21
-      },
-      {
-        "id": "rev-163-2",
-        "reviewer_name": "Meera Nambiar",
-        "rating": 5,
-        "date": "2026-08-02",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
-      }
-    ]
-  },
-  {
-    "id": "chronova-164",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 6 BT",
-    "model": "SAM-1164",
-    "name": "Samsung Galaxy Watch 6 BT Chronograph",
-    "category": "Fitness Watches",
-    "vibe": "Travel",
-    "gender": "Men",
-    "price_rupees": 15999,
-    "original_price_rupees": 19998,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.6,
-    "review_count": 170,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 BT Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "42mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.40 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 110,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-164-1",
-        "reviewer_name": "Pooja Sengupta",
-        "rating": 5,
-        "date": "2026-08-12",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 6 BT Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 22
-      },
-      {
-        "id": "rev-164-2",
-        "reviewer_name": "Aarav Mehrotra",
-        "rating": 4,
-        "date": "2026-08-03",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
-      }
-    ]
-  },
-  {
-    "id": "chronova-165",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 5 Pro Titanium",
-    "model": "SAM-1165",
-    "name": "Samsung Galaxy Watch 5 Pro Titanium Pro",
-    "category": "Luxury Watches",
-    "vibe": "Premium",
-    "gender": "Unisex",
-    "price_rupees": 18999,
-    "original_price_rupees": 27141,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.4,
-    "review_count": 183,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 5 Pro Titanium Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "44mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.50 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 120,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-165-1",
-        "reviewer_name": "Karan Singhania",
-        "rating": 5,
-        "date": "2026-08-13",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 5 Pro Titanium Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 8
-      },
-      {
-        "id": "rev-165-2",
-        "reviewer_name": "Siddharth Rao",
-        "rating": 5,
-        "date": "2026-08-04",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
-      }
-    ]
-  },
-  {
-    "id": "chronova-166",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 4 LTE",
-    "model": "SAM-1166",
-    "name": "Samsung Galaxy Watch 4 LTE Automatic",
-    "category": "Smart Watches",
-    "vibe": "Office",
-    "gender": "Women",
-    "price_rupees": 21999,
-    "original_price_rupees": 24443,
-    "discount_percent": 10,
-    "currency": "INR",
-    "rating": 4.2,
-    "review_count": 196,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 4 LTE Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "46mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.60 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 130,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-166-1",
-        "reviewer_name": "Meera Nambiar",
-        "rating": 4,
-        "date": "2026-08-14",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 4 LTE Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 9
-      },
-      {
-        "id": "rev-166-2",
-        "reviewer_name": "Neha Kashyap",
-        "rating": 4,
-        "date": "2026-08-05",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
-      }
-    ]
-  },
-  {
-    "id": "chronova-167",
-    "brand": "Samsung",
-    "series": "Galaxy Watch FE",
-    "model": "SAM-1167",
-    "name": "Samsung Galaxy Watch FE Classic",
-    "category": "Fitness Watches",
-    "vibe": "Sport",
-    "gender": "Men",
-    "price_rupees": 24999,
-    "original_price_rupees": 31248,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.9,
-    "review_count": 29,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch FE Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 48mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "48mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.30 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 140,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-167-1",
-        "reviewer_name": "Aarav Mehrotra",
-        "rating": 5,
-        "date": "2026-08-15",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch FE Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 10
-      },
-      {
-        "id": "rev-167-2",
-        "reviewer_name": "Aditya Kulkarni",
-        "rating": 5,
-        "date": "2026-08-06",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
-      }
-    ]
-  },
-  {
-    "id": "chronova-168",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 6 Classic",
-    "model": "SAM-1168",
-    "name": "Samsung Galaxy Watch 6 Classic Heritage",
-    "category": "Luxury Watches",
-    "vibe": "Travel",
-    "gender": "Unisex",
-    "price_rupees": 27999,
-    "original_price_rupees": 39998,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.7,
-    "review_count": 42,
-    "stock_status": "Only 3 Left",
-    "in_stock": true,
-    "featured": true,
-    "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 Classic Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 50mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "50mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.40 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 100,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-168-1",
-        "reviewer_name": "Siddharth Rao",
-        "rating": 5,
-        "date": "2026-08-16",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 6 Classic Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 11
-      },
-      {
-        "id": "rev-168-2",
-        "reviewer_name": "Tanvi Joshi",
-        "rating": 4,
-        "date": "2026-08-07",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
-      }
-    ]
-  },
-  {
-    "id": "chronova-169",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 6 BT",
-    "model": "SAM-1169",
-    "name": "Samsung Galaxy Watch 6 BT Ultra",
-    "category": "Smart Watches",
-    "vibe": "Premium",
-    "gender": "Women",
-    "price_rupees": 30999,
-    "original_price_rupees": 34443,
-    "discount_percent": 10,
-    "currency": "INR",
-    "rating": 4.5,
-    "review_count": 55,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 BT Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "40mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Starlight Silver",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.50 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 110,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-169-1",
-        "reviewer_name": "Neha Kashyap",
-        "rating": 4,
-        "date": "2026-08-17",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 6 BT Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 12
-      },
-      {
-        "id": "rev-169-2",
-        "reviewer_name": "Rishabh Verma",
-        "rating": 5,
-        "date": "2026-08-08",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
-      }
-    ]
-  },
-  {
-    "id": "chronova-170",
-    "brand": "Samsung",
-    "series": "Galaxy Watch 5 Pro Titanium",
-    "model": "SAM-1170",
-    "name": "Samsung Galaxy Watch 5 Pro Titanium Elite",
-    "category": "Fitness Watches",
-    "vibe": "Office",
-    "gender": "Men",
-    "price_rupees": 33999,
-    "original_price_rupees": 42498,
-    "discount_percent": 20,
-    "currency": "INR",
-    "rating": 4.3,
-    "review_count": 68,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 5 Pro Titanium Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "42mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Forest Green",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.60 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 120,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-170-1",
-        "reviewer_name": "Aditya Kulkarni",
-        "rating": 5,
-        "date": "2026-08-18",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 5 Pro Titanium Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 13
       },
       {
@@ -16098,15 +16504,15 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
   {
     "id": "chronova-171",
     "brand": "Samsung",
-    "series": "Galaxy Watch 4 LTE",
+    "series": "Galaxy Watch 6 Classic",
     "model": "SAM-1171",
-    "name": "Samsung Galaxy Watch 4 LTE Titanium",
-    "category": "Luxury Watches",
+    "name": "Samsung Galaxy Watch 6 Classic Edition",
+    "category": "Smart Watches",
     "vibe": "Sport",
-    "gender": "Unisex",
-    "price_rupees": 36999,
-    "original_price_rupees": 52855,
-    "discount_percent": 30,
+    "gender": "Men",
+    "price_rupees": 12999,
+    "original_price_rupees": 16248,
+    "discount_percent": 20,
     "currency": "INR",
     "rating": 4.1,
     "review_count": 81,
@@ -16116,246 +16522,41 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 4 LTE Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 Classic Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
       "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "44mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Midnight Black",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.30 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 130,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-171-1",
-        "reviewer_name": "Tanvi Joshi",
-        "rating": 5,
-        "date": "2026-08-19",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch 4 LTE Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 14
-      },
-      {
-        "id": "rev-171-2",
-        "reviewer_name": "Gaurav Malhotra",
-        "rating": 5,
-        "date": "2026-08-01",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
-      }
-    ]
-  },
-  {
-    "id": "chronova-172",
-    "brand": "Samsung",
-    "series": "Galaxy Watch FE",
-    "model": "SAM-1172",
-    "name": "Samsung Galaxy Watch FE Carbon",
-    "category": "Smart Watches",
-    "vibe": "Travel",
-    "gender": "Women",
-    "price_rupees": 39999,
-    "original_price_rupees": 44443,
-    "discount_percent": 10,
-    "currency": "INR",
-    "rating": 4.8,
-    "review_count": 94,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch FE Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Samsung Craftsmanship & Heritage",
-      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
-      "Water resistant (5 ATM / IP68 (50m Swimproof))",
-      "1 Year Official Brand Warranty with hassle-free doorstep service"
-    ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
-    "color_variants": [
-      {
-        "name": "Midnight Obsidian",
-        "hex": "#111827",
-        "image_index": 0
-      },
-      {
-        "name": "Royal Sapphire",
-        "hex": "#1e3a8a",
-        "image_index": 1
-      },
-      {
-        "name": "Champagne Gold",
-        "hex": "#d97706",
-        "image_index": 2
-      },
-      {
-        "name": "Titanium Grey",
-        "hex": "#4b5563",
-        "image_index": 0
-      }
-    ],
-    "specs": {
-      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
-      "case_size": "46mm",
-      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
-      "dial_color": "High-Res AMOLED Touch Screen",
-      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
-      "strap_color": "Deep Navy",
-      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
-      "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
-      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
-      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
-      "display_size": "1.40 inches",
-      "resolution": "466 x 466 px (326 PPI)",
-      "bluetooth_calling": true,
-      "gps": true,
-      "sensors": [
-        "Continuous Heart Rate",
-        "SpO2 Oxygen Sensor",
-        "Sleep & Stress Monitoring",
-        "3-Axis Accelerometer",
-        "Barometric Altimeter"
-      ],
-      "sports_modes": 140,
-      "warranty": "1 Year Official Brand Warranty",
-      "origin": "India / International"
-    },
-    "reviews": [
-      {
-        "id": "rev-172-1",
-        "reviewer_name": "Rishabh Verma",
-        "rating": 4,
-        "date": "2026-08-20",
-        "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Samsung!",
-        "comment": "Bought this Samsung Galaxy Watch FE Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 15
-      },
-      {
-        "id": "rev-172-2",
-        "reviewer_name": "Shweta Tiwari",
-        "rating": 4,
-        "date": "2026-08-02",
-        "verified_purchase": true,
-        "title": "Clean luxury finish and great daily companion",
-        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
-      }
-    ]
-  },
-  {
-    "id": "chronova-173",
-    "brand": "Apple Watch",
-    "series": "Ultra 2 Titanium",
-    "model": "APP-1173",
-    "name": "Apple Watch Ultra 2 Titanium Edition",
-    "category": "Smart Watches",
-    "vibe": "Travel",
-    "gender": "Unisex",
-    "price_rupees": 29900,
-    "original_price_rupees": 42714,
-    "discount_percent": 30,
-    "currency": "INR",
-    "rating": 4.6,
-    "review_count": 107,
-    "stock_status": "In Stock",
-    "in_stock": true,
-    "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Ultra 2 Titanium Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
-    "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16386,80 +16587,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-173-1",
-        "reviewer_name": "Sneha Sundaram",
+        "id": "rev-171-1",
+        "reviewer_name": "Tanvi Joshi",
         "rating": 4,
-        "date": "2026-08-21",
+        "date": "2026-08-19",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Ultra 2 Titanium Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 16
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 6 Classic Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 14
       },
       {
-        "id": "rev-173-2",
-        "reviewer_name": "Vikramaditya Sharma",
+        "id": "rev-171-2",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 5,
-        "date": "2026-08-03",
+        "date": "2026-08-01",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "helpful_votes": 7
       }
     ]
   },
   {
-    "id": "chronova-174",
-    "brand": "Apple Watch",
-    "series": "Series 9 GPS+Cellular",
-    "model": "APP-1174",
-    "name": "Apple Watch Series 9 GPS+Cellular Chronograph",
-    "category": "Luxury Watches",
-    "vibe": "Premium",
-    "gender": "Women",
-    "price_rupees": 36566,
-    "original_price_rupees": 40628,
-    "discount_percent": 10,
+    "id": "chronova-172",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 6 BT",
+    "model": "SAM-1172",
+    "name": "Samsung Galaxy Watch 6 BT Chronograph",
+    "category": "Fitness Watches",
+    "vibe": "Travel",
+    "gender": "Unisex",
+    "price_rupees": 15999,
+    "original_price_rupees": 22855,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.4,
-    "review_count": 120,
+    "rating": 4.8,
+    "review_count": 94,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 GPS+Cellular Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "is_bestseller": false,
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 BT Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16490,80 +16694,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-174-1",
-        "reviewer_name": "Gaurav Malhotra",
+        "id": "rev-172-1",
+        "reviewer_name": "Rishabh Verma",
         "rating": 5,
-        "date": "2026-08-22",
+        "date": "2026-08-20",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Series 9 GPS+Cellular Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 17
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 6 BT Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 15
       },
       {
-        "id": "rev-174-2",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-172-2",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 4,
-        "date": "2026-08-04",
+        "date": "2026-08-02",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "helpful_votes": 8
       }
     ]
   },
   {
-    "id": "chronova-175",
-    "brand": "Apple Watch",
-    "series": "Series 9 Aluminium",
-    "model": "APP-1175",
-    "name": "Apple Watch Series 9 Aluminium Pro",
-    "category": "Fitness Watches",
-    "vibe": "Office",
-    "gender": "Men",
-    "price_rupees": 43233,
-    "original_price_rupees": 54041,
-    "discount_percent": 20,
+    "id": "chronova-173",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 5 Pro Titanium",
+    "model": "SAM-1173",
+    "name": "Samsung Galaxy Watch 5 Pro Titanium Pro",
+    "category": "Luxury Watches",
+    "vibe": "Premium",
+    "gender": "Women",
+    "price_rupees": 18999,
+    "original_price_rupees": 21110,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.2,
-    "review_count": 133,
-    "stock_status": "Only 3 Left",
+    "rating": 4.6,
+    "review_count": 107,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
+    "is_new_arrival": false,
     "is_bestseller": false,
-    "badge": "New",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 Aluminium Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 5 Pro Titanium Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16594,80 +16801,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-175-1",
-        "reviewer_name": "Shweta Tiwari",
+        "id": "rev-173-1",
+        "reviewer_name": "Sneha Sundaram",
         "rating": 5,
-        "date": "2026-08-23",
+        "date": "2026-08-21",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Series 9 Aluminium Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 18
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 5 Pro Titanium Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 16
       },
       {
-        "id": "rev-175-2",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-173-2",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
-        "date": "2026-08-05",
+        "date": "2026-08-03",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 4
+        "helpful_votes": 9
       }
     ]
   },
   {
-    "id": "chronova-176",
-    "brand": "Apple Watch",
-    "series": "SE 2nd Gen",
-    "model": "APP-1176",
-    "name": "Apple Watch SE 2nd Gen Automatic",
-    "category": "Sports Watches",
-    "vibe": "Sport",
-    "gender": "Unisex",
-    "price_rupees": 49900,
-    "original_price_rupees": 71285,
-    "discount_percent": 30,
+    "id": "chronova-174",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 4 LTE",
+    "model": "SAM-1174",
+    "name": "Samsung Galaxy Watch 4 LTE Automatic",
+    "category": "Smart Watches",
+    "vibe": "Office",
+    "gender": "Men",
+    "price_rupees": 21999,
+    "original_price_rupees": 27498,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.9,
-    "review_count": 146,
+    "rating": 4.4,
+    "review_count": 120,
     "stock_status": "In Stock",
     "in_stock": true,
-    "featured": true,
+    "featured": false,
     "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": "Trending",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch SE 2nd Gen Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "is_bestseller": true,
+    "badge": "Bestseller",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 4 LTE Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16698,80 +16908,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-176-1",
-        "reviewer_name": "Vikramaditya Sharma",
+        "id": "rev-174-1",
+        "reviewer_name": "Gaurav Malhotra",
         "rating": 4,
-        "date": "2026-08-24",
+        "date": "2026-08-22",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch SE 2nd Gen Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 19
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 4 LTE Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 17
       },
       {
-        "id": "rev-176-2",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-174-2",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
-        "date": "2026-08-06",
+        "date": "2026-08-04",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 5
+        "helpful_votes": 10
       }
     ]
   },
   {
-    "id": "chronova-177",
-    "brand": "Apple Watch",
-    "series": "Ultra 2 Ocean Band",
-    "model": "APP-1177",
-    "name": "Apple Watch Ultra 2 Ocean Band Classic",
-    "category": "Smart Watches",
-    "vibe": "Travel",
-    "gender": "Women",
-    "price_rupees": 56566,
-    "original_price_rupees": 62851,
-    "discount_percent": 10,
+    "id": "chronova-175",
+    "brand": "Samsung",
+    "series": "Galaxy Watch FE",
+    "model": "SAM-1175",
+    "name": "Samsung Galaxy Watch FE Classic",
+    "category": "Fitness Watches",
+    "vibe": "Sport",
+    "gender": "Unisex",
+    "price_rupees": 24999,
+    "original_price_rupees": 35712,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.7,
-    "review_count": 159,
-    "stock_status": "In Stock",
+    "rating": 4.2,
+    "review_count": 133,
+    "stock_status": "Only 3 Left",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
+    "is_new_arrival": true,
     "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Ultra 2 Ocean Band Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch FE Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 48mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16802,80 +17015,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-177-1",
-        "reviewer_name": "Ananya Deshmukh",
+        "id": "rev-175-1",
+        "reviewer_name": "Shweta Tiwari",
         "rating": 5,
-        "date": "2026-08-25",
+        "date": "2026-08-23",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Ultra 2 Ocean Band Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 20
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch FE Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 18
       },
       {
-        "id": "rev-177-2",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-175-2",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
-        "date": "2026-08-07",
+        "date": "2026-08-05",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 6
+        "helpful_votes": 4
       }
     ]
   },
   {
-    "id": "chronova-178",
-    "brand": "Apple Watch",
-    "series": "Hermes Edition",
-    "model": "APP-1178",
-    "name": "Apple Watch Hermes Edition Heritage",
+    "id": "chronova-176",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 6 Classic",
+    "model": "SAM-1176",
+    "name": "Samsung Galaxy Watch 6 Classic Heritage",
     "category": "Luxury Watches",
-    "vibe": "Premium",
-    "gender": "Men",
-    "price_rupees": 63233,
-    "original_price_rupees": 79041,
-    "discount_percent": 20,
+    "vibe": "Travel",
+    "gender": "Women",
+    "price_rupees": 27999,
+    "original_price_rupees": 31110,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.5,
-    "review_count": 172,
+    "rating": 4.9,
+    "review_count": 146,
     "stock_status": "In Stock",
     "in_stock": true,
-    "featured": false,
+    "featured": true,
     "is_new_arrival": false,
     "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Hermes Edition Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 Classic Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 50mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -16906,80 +17122,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-178-1",
-        "reviewer_name": "Devendra Patel",
+        "id": "rev-176-1",
+        "reviewer_name": "Abhishek Nair",
         "rating": 5,
-        "date": "2026-08-26",
+        "date": "2026-08-24",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Hermes Edition Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 21
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 6 Classic Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 19
       },
       {
-        "id": "rev-178-2",
-        "reviewer_name": "Karan Singhania",
+        "id": "rev-176-2",
+        "reviewer_name": "Deepika Reddy",
         "rating": 4,
-        "date": "2026-08-08",
+        "date": "2026-08-06",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 7
+        "helpful_votes": 5
       }
     ]
   },
   {
-    "id": "chronova-179",
-    "brand": "Apple Watch",
-    "series": "Ultra 2 Titanium",
-    "model": "APP-1179",
-    "name": "Apple Watch Ultra 2 Titanium Ultra",
-    "category": "Fitness Watches",
-    "vibe": "Office",
-    "gender": "Unisex",
-    "price_rupees": 69900,
-    "original_price_rupees": 99857,
-    "discount_percent": 30,
+    "id": "chronova-177",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 6 BT",
+    "model": "SAM-1177",
+    "name": "Samsung Galaxy Watch 6 BT Ultra",
+    "category": "Smart Watches",
+    "vibe": "Premium",
+    "gender": "Men",
+    "price_rupees": 30999,
+    "original_price_rupees": 38748,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.3,
-    "review_count": 185,
+    "rating": 4.7,
+    "review_count": 159,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Ultra 2 Titanium Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 6 BT Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17010,80 +17229,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-179-1",
-        "reviewer_name": "Rohan Bhattacharya",
+        "id": "rev-177-1",
+        "reviewer_name": "Priya Venkatesh",
         "rating": 4,
-        "date": "2026-08-27",
+        "date": "2026-08-25",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Ultra 2 Titanium Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 22
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 6 BT Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 20
       },
       {
-        "id": "rev-179-2",
-        "reviewer_name": "Meera Nambiar",
+        "id": "rev-177-2",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 5,
-        "date": "2026-08-09",
+        "date": "2026-08-07",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 8
+        "helpful_votes": 6
       }
     ]
   },
   {
-    "id": "chronova-180",
-    "brand": "Apple Watch",
-    "series": "Series 9 GPS+Cellular",
-    "model": "APP-1180",
-    "name": "Apple Watch Series 9 GPS+Cellular Elite",
-    "category": "Sports Watches",
-    "vibe": "Sport",
-    "gender": "Women",
-    "price_rupees": 76566,
-    "original_price_rupees": 85073,
-    "discount_percent": 10,
+    "id": "chronova-178",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 5 Pro Titanium",
+    "model": "SAM-1178",
+    "name": "Samsung Galaxy Watch 5 Pro Titanium Elite",
+    "category": "Fitness Watches",
+    "vibe": "Office",
+    "gender": "Unisex",
+    "price_rupees": 33999,
+    "original_price_rupees": 48570,
+    "discount_percent": 30,
     "currency": "INR",
-    "rating": 4.1,
-    "review_count": 18,
+    "rating": 4.5,
+    "review_count": 172,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": true,
-    "is_bestseller": true,
-    "badge": "Bestseller",
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 GPS+Cellular Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 5 Pro Titanium Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17114,80 +17336,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-180-1",
-        "reviewer_name": "Pooja Sengupta",
+        "id": "rev-178-1",
+        "reviewer_name": "Manish Choudhary",
         "rating": 5,
-        "date": "2026-08-10",
+        "date": "2026-08-26",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Series 9 GPS+Cellular Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 8
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 5 Pro Titanium Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 21
       },
       {
-        "id": "rev-180-2",
-        "reviewer_name": "Aarav Mehrotra",
+        "id": "rev-178-2",
+        "reviewer_name": "Ananya Deshmukh",
         "rating": 4,
-        "date": "2026-08-01",
+        "date": "2026-08-08",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 9
+        "helpful_votes": 7
       }
     ]
   },
   {
-    "id": "chronova-181",
-    "brand": "Apple Watch",
-    "series": "Series 9 Aluminium",
-    "model": "APP-1181",
-    "name": "Apple Watch Series 9 Aluminium Titanium",
-    "category": "Smart Watches",
-    "vibe": "Travel",
-    "gender": "Men",
-    "price_rupees": 83233,
-    "original_price_rupees": 104041,
-    "discount_percent": 20,
+    "id": "chronova-179",
+    "brand": "Samsung",
+    "series": "Galaxy Watch 4 LTE",
+    "model": "SAM-1179",
+    "name": "Samsung Galaxy Watch 4 LTE Titanium",
+    "category": "Luxury Watches",
+    "vibe": "Sport",
+    "gender": "Women",
+    "price_rupees": 36999,
+    "original_price_rupees": 41110,
+    "discount_percent": 10,
     "currency": "INR",
-    "rating": 4.8,
-    "review_count": 31,
+    "rating": 4.3,
+    "review_count": 185,
     "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
     "is_new_arrival": false,
     "is_bestseller": false,
     "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 Aluminium Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch 4 LTE Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17218,80 +17443,83 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-181-1",
-        "reviewer_name": "Karan Singhania",
+        "id": "rev-179-1",
+        "reviewer_name": "Deepika Reddy",
         "rating": 5,
-        "date": "2026-08-11",
+        "date": "2026-08-27",
         "verified_purchase": true,
-        "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch Series 9 Aluminium Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
-        "helpful_votes": 9
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch 4 LTE Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 22
       },
       {
-        "id": "rev-181-2",
-        "reviewer_name": "Siddharth Rao",
+        "id": "rev-179-2",
+        "reviewer_name": "Devendra Patel",
         "rating": 5,
-        "date": "2026-08-02",
+        "date": "2026-08-09",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
-        "helpful_votes": 10
+        "helpful_votes": 8
       }
     ]
   },
   {
-    "id": "chronova-182",
-    "brand": "Apple Watch",
-    "series": "SE 2nd Gen",
-    "model": "APP-1182",
-    "name": "Apple Watch SE 2nd Gen Carbon",
-    "category": "Luxury Watches",
-    "vibe": "Premium",
-    "gender": "Unisex",
-    "price_rupees": 89900,
-    "original_price_rupees": 128428,
-    "discount_percent": 30,
+    "id": "chronova-180",
+    "brand": "Samsung",
+    "series": "Galaxy Watch FE",
+    "model": "SAM-1180",
+    "name": "Samsung Galaxy Watch FE Carbon",
+    "category": "Smart Watches",
+    "vibe": "Travel",
+    "gender": "Men",
+    "price_rupees": 39999,
+    "original_price_rupees": 49998,
+    "discount_percent": 20,
     "currency": "INR",
-    "rating": 4.6,
-    "review_count": 44,
-    "stock_status": "Only 3 Left",
+    "rating": 4.1,
+    "review_count": 18,
+    "stock_status": "In Stock",
     "in_stock": true,
     "featured": false,
-    "is_new_arrival": false,
-    "is_bestseller": false,
-    "badge": null,
-    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch SE 2nd Gen Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "is_new_arrival": true,
+    "is_bestseller": true,
+    "badge": "Bestseller",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Samsung Galaxy Watch FE Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
     "highlights": [
-      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Authentic Samsung Craftsmanship & Heritage",
       "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
       "Water resistant (5 ATM / IP68 (50m Swimproof))",
       "1 Year Official Brand Warranty with hassle-free doorstep service"
     ],
-    "images": [
-      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1547996160-71dfabb1a3a4?w=800&auto=format&fit=crop&q=80"
-    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
     "color_variants": [
       {
         "name": "Midnight Obsidian",
         "hex": "#111827",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Royal Sapphire",
         "hex": "#1e3a8a",
-        "image_index": 1
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Champagne Gold",
         "hex": "#d97706",
-        "image_index": 2
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
       },
       {
         "name": "Titanium Grey",
         "hex": "#4b5563",
-        "image_index": 0
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
       }
     ],
     "specs": {
@@ -17322,24 +17550,1094 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
     },
     "reviews": [
       {
-        "id": "rev-182-1",
-        "reviewer_name": "Meera Nambiar",
+        "id": "rev-180-1",
+        "reviewer_name": "Vikramaditya Sharma",
         "rating": 4,
+        "date": "2026-08-10",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Samsung!",
+        "comment": "Bought this Samsung Galaxy Watch FE Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 8
+      },
+      {
+        "id": "rev-180-2",
+        "reviewer_name": "Rohan Bhattacharya",
+        "rating": 4,
+        "date": "2026-08-01",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 9
+      }
+    ]
+  },
+  {
+    "id": "chronova-181",
+    "brand": "Apple Watch",
+    "series": "Ultra 2 Titanium",
+    "model": "APP-1181",
+    "name": "Apple Watch Ultra 2 Titanium Edition",
+    "category": "Smart Watches",
+    "vibe": "Travel",
+    "gender": "Women",
+    "price_rupees": 29900,
+    "original_price_rupees": 33222,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.8,
+    "review_count": 31,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Ultra 2 Titanium Edition delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "40mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Midnight Black",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 5 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.30 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 100,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-181-1",
+        "reviewer_name": "Ananya Deshmukh",
+        "rating": 4,
+        "date": "2026-08-11",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Ultra 2 Titanium Edition last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 9
+      },
+      {
+        "id": "rev-181-2",
+        "reviewer_name": "Pooja Sengupta",
+        "rating": 5,
+        "date": "2026-08-02",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 10
+      }
+    ]
+  },
+  {
+    "id": "chronova-182",
+    "brand": "Apple Watch",
+    "series": "Series 9 GPS+Cellular",
+    "model": "APP-1182",
+    "name": "Apple Watch Series 9 GPS+Cellular Chronograph",
+    "category": "Luxury Watches",
+    "vibe": "Premium",
+    "gender": "Men",
+    "price_rupees": 36566,
+    "original_price_rupees": 45707,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.6,
+    "review_count": 44,
+    "stock_status": "Only 3 Left",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 GPS+Cellular Chronograph delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "42mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Deep Navy",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 6 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.40 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 110,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-182-1",
+        "reviewer_name": "Devendra Patel",
+        "rating": 5,
         "date": "2026-08-12",
         "verified_purchase": true,
         "title": "Exceptional build quality and accuracy from Apple Watch!",
-        "comment": "Bought this Apple Watch SE 2nd Gen Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "comment": "Bought this Apple Watch Series 9 GPS+Cellular Chronograph last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
         "helpful_votes": 10
       },
       {
         "id": "rev-182-2",
-        "reviewer_name": "Neha Kashyap",
+        "reviewer_name": "Karan Singhania",
         "rating": 4,
         "date": "2026-08-03",
         "verified_purchase": true,
         "title": "Clean luxury finish and great daily companion",
         "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
         "helpful_votes": 4
+      }
+    ]
+  },
+  {
+    "id": "chronova-183",
+    "brand": "Apple Watch",
+    "series": "Series 9 Aluminium",
+    "model": "APP-1183",
+    "name": "Apple Watch Series 9 Aluminium Pro",
+    "category": "Fitness Watches",
+    "vibe": "Office",
+    "gender": "Unisex",
+    "price_rupees": 43233,
+    "original_price_rupees": 61761,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.4,
+    "review_count": 57,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 Aluminium Pro delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "44mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Starlight Silver",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 7 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.50 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 120,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-183-1",
+        "reviewer_name": "Rohan Bhattacharya",
+        "rating": 5,
+        "date": "2026-08-13",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Series 9 Aluminium Pro last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 11
+      },
+      {
+        "id": "rev-183-2",
+        "reviewer_name": "Meera Nambiar",
+        "rating": 5,
+        "date": "2026-08-04",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 5
+      }
+    ]
+  },
+  {
+    "id": "chronova-184",
+    "brand": "Apple Watch",
+    "series": "SE 2nd Gen",
+    "model": "APP-1184",
+    "name": "Apple Watch SE 2nd Gen Automatic",
+    "category": "Sports Watches",
+    "vibe": "Sport",
+    "gender": "Women",
+    "price_rupees": 49900,
+    "original_price_rupees": 55444,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.2,
+    "review_count": 70,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": true,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch SE 2nd Gen Automatic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "46mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Forest Green",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 8 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.60 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 130,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-184-1",
+        "reviewer_name": "Pooja Sengupta",
+        "rating": 4,
+        "date": "2026-08-14",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch SE 2nd Gen Automatic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 12
+      },
+      {
+        "id": "rev-184-2",
+        "reviewer_name": "Aarav Mehrotra",
+        "rating": 4,
+        "date": "2026-08-05",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 6
+      }
+    ]
+  },
+  {
+    "id": "chronova-185",
+    "brand": "Apple Watch",
+    "series": "Ultra 2 Ocean Band",
+    "model": "APP-1185",
+    "name": "Apple Watch Ultra 2 Ocean Band Classic",
+    "category": "Smart Watches",
+    "vibe": "Travel",
+    "gender": "Men",
+    "price_rupees": 56566,
+    "original_price_rupees": 70707,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.9,
+    "review_count": 83,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Ultra 2 Ocean Band Classic delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 48mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "48mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Midnight Black",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 9 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.30 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 140,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-185-1",
+        "reviewer_name": "Karan Singhania",
+        "rating": 5,
+        "date": "2026-08-15",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Ultra 2 Ocean Band Classic last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 13
+      },
+      {
+        "id": "rev-185-2",
+        "reviewer_name": "Siddharth Rao",
+        "rating": 5,
+        "date": "2026-08-06",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 7
+      }
+    ]
+  },
+  {
+    "id": "chronova-186",
+    "brand": "Apple Watch",
+    "series": "Hermes Edition",
+    "model": "APP-1186",
+    "name": "Apple Watch Hermes Edition Heritage",
+    "category": "Luxury Watches",
+    "vibe": "Premium",
+    "gender": "Unisex",
+    "price_rupees": 63233,
+    "original_price_rupees": 90332,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.7,
+    "review_count": 96,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": true,
+    "badge": "Bestseller",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Hermes Edition Heritage delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 50mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "50mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Deep Navy",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 10 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.40 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 100,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-186-1",
+        "reviewer_name": "Meera Nambiar",
+        "rating": 5,
+        "date": "2026-08-16",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Hermes Edition Heritage last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 14
+      },
+      {
+        "id": "rev-186-2",
+        "reviewer_name": "Neha Kashyap",
+        "rating": 4,
+        "date": "2026-08-07",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 8
+      }
+    ]
+  },
+  {
+    "id": "chronova-187",
+    "brand": "Apple Watch",
+    "series": "Ultra 2 Titanium",
+    "model": "APP-1187",
+    "name": "Apple Watch Ultra 2 Titanium Ultra",
+    "category": "Fitness Watches",
+    "vibe": "Office",
+    "gender": "Women",
+    "price_rupees": 69900,
+    "original_price_rupees": 77666,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.5,
+    "review_count": 109,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Ultra 2 Titanium Ultra delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 40mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "40mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Starlight Silver",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 11 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.50 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 110,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-187-1",
+        "reviewer_name": "Aarav Mehrotra",
+        "rating": 4,
+        "date": "2026-08-17",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Ultra 2 Titanium Ultra last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 15
+      },
+      {
+        "id": "rev-187-2",
+        "reviewer_name": "Aditya Kulkarni",
+        "rating": 5,
+        "date": "2026-08-08",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 9
+      }
+    ]
+  },
+  {
+    "id": "chronova-188",
+    "brand": "Apple Watch",
+    "series": "Series 9 GPS+Cellular",
+    "model": "APP-1188",
+    "name": "Apple Watch Series 9 GPS+Cellular Elite",
+    "category": "Sports Watches",
+    "vibe": "Sport",
+    "gender": "Men",
+    "price_rupees": 76566,
+    "original_price_rupees": 95707,
+    "discount_percent": 20,
+    "currency": "INR",
+    "rating": 4.3,
+    "review_count": 122,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": "Trending",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 GPS+Cellular Elite delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 42mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "42mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Forest Green",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 12 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.60 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 120,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-188-1",
+        "reviewer_name": "Siddharth Rao",
+        "rating": 5,
+        "date": "2026-08-18",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Series 9 GPS+Cellular Elite last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 16
+      },
+      {
+        "id": "rev-188-2",
+        "reviewer_name": "Tanvi Joshi",
+        "rating": 4,
+        "date": "2026-08-09",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 10
+      }
+    ]
+  },
+  {
+    "id": "chronova-189",
+    "brand": "Apple Watch",
+    "series": "Series 9 Aluminium",
+    "model": "APP-1189",
+    "name": "Apple Watch Series 9 Aluminium Titanium",
+    "category": "Smart Watches",
+    "vibe": "Travel",
+    "gender": "Unisex",
+    "price_rupees": 83233,
+    "original_price_rupees": 118904,
+    "discount_percent": 30,
+    "currency": "INR",
+    "rating": 4.1,
+    "review_count": 135,
+    "stock_status": "Only 3 Left",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": false,
+    "is_bestseller": false,
+    "badge": null,
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch Series 9 Aluminium Titanium delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 44mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "44mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Midnight Black",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 13 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.30 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 130,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-189-1",
+        "reviewer_name": "Neha Kashyap",
+        "rating": 5,
+        "date": "2026-08-19",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch Series 9 Aluminium Titanium last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 17
+      },
+      {
+        "id": "rev-189-2",
+        "reviewer_name": "Rishabh Verma",
+        "rating": 5,
+        "date": "2026-08-01",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 4
+      }
+    ]
+  },
+  {
+    "id": "chronova-190",
+    "brand": "Apple Watch",
+    "series": "SE 2nd Gen",
+    "model": "APP-1190",
+    "name": "Apple Watch SE 2nd Gen Carbon",
+    "category": "Luxury Watches",
+    "vibe": "Premium",
+    "gender": "Women",
+    "price_rupees": 89900,
+    "original_price_rupees": 99888,
+    "discount_percent": 10,
+    "currency": "INR",
+    "rating": 4.8,
+    "review_count": 148,
+    "stock_status": "In Stock",
+    "in_stock": true,
+    "featured": false,
+    "is_new_arrival": true,
+    "is_bestseller": false,
+    "badge": "New",
+    "description": "Engineered for modern lifestyle and precision timekeeping, the Apple Watch SE 2nd Gen Carbon delivers flawless aesthetics, durable craftsmanship, and industry-leading performance.",
+    "highlights": [
+      "Authentic Apple Watch Craftsmanship & Heritage",
+      "Smart Digital OS (Multi-Core Dual Engine) with 46mm case",
+      "Water resistant (5 ATM / IP68 (50m Swimproof))",
+      "1 Year Official Brand Warranty with hassle-free doorstep service"
+    ],
+    "images": {
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      ]
+    },
+    "color_variants": [
+      {
+        "name": "Midnight Obsidian",
+        "hex": "#111827",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Royal Sapphire",
+        "hex": "#1e3a8a",
+        "image_url": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Champagne Gold",
+        "hex": "#d97706",
+        "image_url": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80"
+      },
+      {
+        "name": "Titanium Grey",
+        "hex": "#4b5563",
+        "image_url": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80"
+      }
+    ],
+    "specs": {
+      "movement": "Smart Digital OS (Multi-Core Dual Engine)",
+      "case_size": "46mm",
+      "case_material": "Aerospace Grade Aluminium / Reinforced Polymer",
+      "dial_color": "High-Res AMOLED Touch Screen",
+      "strap_material": "Liquid Silicone / Fast-Release Breathable Sport Band",
+      "strap_color": "Deep Navy",
+      "water_resistance": "5 ATM / IP68 (50m Swimproof)",
+      "battery_life": "Up to 14 Days Active Use / Fast Magnetic Charge",
+      "glass": "Sapphire / Dragontrail Scratch-Resistant Glass",
+      "display_type": "1.43\" Ultra AMOLED 466x466 (1000 Nits)",
+      "display_size": "1.40 inches",
+      "resolution": "466 x 466 px (326 PPI)",
+      "bluetooth_calling": true,
+      "gps": true,
+      "sensors": [
+        "Continuous Heart Rate",
+        "SpO2 Oxygen Sensor",
+        "Sleep & Stress Monitoring",
+        "3-Axis Accelerometer",
+        "Barometric Altimeter"
+      ],
+      "sports_modes": 140,
+      "warranty": "1 Year Official Brand Warranty",
+      "origin": "India / International"
+    },
+    "reviews": [
+      {
+        "id": "rev-190-1",
+        "reviewer_name": "Aditya Kulkarni",
+        "rating": 4,
+        "date": "2026-08-20",
+        "verified_purchase": true,
+        "title": "Exceptional build quality and accuracy from Apple Watch!",
+        "comment": "Bought this Apple Watch SE 2nd Gen Carbon last week. The finishing, dial readability, and comfort on the wrist are outstanding. Highly recommended!",
+        "helpful_votes": 18
+      },
+      {
+        "id": "rev-190-2",
+        "reviewer_name": "Sneha Sundaram",
+        "rating": 4,
+        "date": "2026-08-02",
+        "verified_purchase": true,
+        "title": "Clean luxury finish and great daily companion",
+        "comment": "Very satisfied with the purchase. Premium unboxing packaging with stamped warranty card. Fits perfectly under a shirt cuff.",
+        "helpful_votes": 5
       }
     ]
   }

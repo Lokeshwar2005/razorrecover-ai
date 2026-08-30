@@ -75,7 +75,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
           {/* Shipping Tracker */}
           <div className="bg-[#0b132b] px-5 py-2.5 border-b border-[#1e293b] text-xs font-mono">
             <div className="flex justify-between text-[11px] mb-1">
-              <span className="text-[#38bdf8] font-bold">✓ Premium Insured Shipping:</span>
+              <span className="text-[#38bdf8] font-bold">✓ Premium Insured Delivery:</span>
               <span className="text-[#34d399] font-bold">FREE</span>
             </div>
             <div className="w-full h-1.5 rounded-full bg-[#1e293b] overflow-hidden">
@@ -90,7 +90,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <div className="text-4xl">⌚</div>
                 <div className="text-sm font-semibold text-white">Your bag is currently empty</div>
                 <p className="text-xs text-[#94a3b8] max-w-xs mx-auto">
-                  Explore our catalog of 150+ timepieces to find your signature watch.
+                  Explore our catalog of 190 timepieces to find your signature watch.
                 </p>
                 <button
                   onClick={onClose}
@@ -108,7 +108,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   {/* Thumbnail */}
                   <div className="w-20 h-20 rounded-xl bg-[#040711] p-1.5 border border-[#1e293b] shrink-0 flex items-center justify-center">
                     <img
-                      src={item.product.images[0]}
+                      src={item.product.images.primary}
                       alt={item.product.name}
                       className="max-h-full max-w-full object-contain"
                     />

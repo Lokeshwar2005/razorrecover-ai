@@ -7,13 +7,13 @@ export type WatchBrand =
   | 'Sonata'
   | 'Seiko'
   | 'Citizen'
+  | 'Chronova Signature'
   | 'Garmin'
   | 'Amazfit'
   | 'Noise'
   | 'boAt'
   | 'Samsung'
   | 'Apple Watch'
-  | 'Chronova Signature'
 
 export type WatchCategory =
   | 'Analog Watches'
@@ -74,7 +74,7 @@ export interface WatchSpecs {
 export interface WatchColorVariant {
   name: string
   hex: string
-  image_index?: number
+  image_url?: string
 }
 
 export interface ChronovaProduct {
@@ -100,7 +100,10 @@ export interface ChronovaProduct {
   badge?: string | null
   description: string
   highlights: string[]
-  images: string[]
+  images: {
+    primary: string
+    gallery: string[]
+  }
   color_variants: WatchColorVariant[]
   specs: WatchSpecs
   reviews: WatchReview[]

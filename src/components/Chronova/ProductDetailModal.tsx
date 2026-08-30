@@ -23,7 +23,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
   const formatINR = (amt: number) => `₹${amt.toLocaleString('en-IN')}`
 
-  const currentImage = product.images[selectedImageIdx] || product.images[0]
+  const galleryImages = product.images.gallery && product.images.gallery.length > 0
+    ? product.images.gallery
+    : [product.images.primary]
+
+  const currentImage = galleryImages[selectedImageIdx] || product.images.primary
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/85 backdrop-blur-md overflow-y-auto">
@@ -47,14 +51,14 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           </button>
         </div>
 
-        {/* Modal Grid: Image Gallery Left, Product Info Right */}
+        {/* Modal Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 max-h-[80vh] overflow-y-auto">
-          {/* Left Column: Multi-Angle Photographic Gallery */}
+          {/* Left Column: Photographic Gallery with Zoom */}
           <div className="md:col-span-6 p-6 flex flex-col justify-between bg-[#050811] border-b md:border-b-0 md:border-r border-[#1e293b]">
             <div className="w-full aspect-square rounded-2xl bg-[#080d1a] border border-[#1e293b] p-6 flex items-center justify-center overflow-hidden relative">
               <img
                 src={currentImage}
-                alt={product.name}
+                alt={`${product.brand} ${product.name}`}
                 className="max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-110 cursor-zoom-in"
               />
               {product.badge && (
@@ -66,7 +70,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
             {/* Thumbnail Strip */}
             <div className="flex items-center gap-3 mt-4 overflow-x-auto pb-1">
-              {product.images.map((img, idx) => (
+              {galleryImages.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImageIdx(idx)}
@@ -76,7 +80,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                       : 'border-[#1e293b] opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <img src={img} alt="thumbnail" className="w-full h-full object-contain" />
+                  <img src={img} alt={`${product.name} view ${idx + 1}`} className="w-full h-full object-contain" />
                 </button>
               ))}
             </div>
@@ -138,13 +142,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   <span className="text-white font-bold">{selectedColor}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  {product.color_variants.map((c) => (
+                  {product.color_variants.map((c, idx) => (
                     <button
                       key={c.name}
                       onClick={() => {
                         setSelectedColor(c.name)
-                        if (c.image_index !== undefined && product.images[c.image_index]) {
-                          setSelectedImageIdx(c.image_index)
+                        if (idx < galleryImages.length) {
+                          setSelectedImageIdx(idx)
                         }
                       }}
                       className={`px-3 py-1.5 rounded-xl text-xs font-mono flex items-center gap-2 border transition cursor-pointer ${
@@ -241,7 +245,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               )}
             </div>
 
-            {/* Action Buttons: Add to Cart & Buy Now */}
+            {/* Actions */}
             <div className="pt-3 border-t border-[#1e293b] flex gap-3">
               <button
                 onClick={() => {
@@ -250,7 +254,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 }}
                 className="flex-1 py-3 px-4 rounded-xl bg-[#1e293b] hover:bg-[#334155] text-white font-bold text-xs transition cursor-pointer border border-[#334155]"
               >
-                Add to Cart
+                Add to Bag
               </button>
 
               <button

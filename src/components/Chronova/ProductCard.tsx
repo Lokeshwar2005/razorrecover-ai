@@ -19,10 +19,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   isWishlisted,
 }) => {
   const [hovered, setHovered] = useState(false)
+  const [imgError, setImgError] = useState(false)
+
   const formatINR = (amt: number) => `₹${amt.toLocaleString('en-IN')}`
 
-  const primaryImage = product.images[0] || 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=80'
-  const secondaryImage = product.images[1] || primaryImage
+  const primaryImg = product.images.primary
+  const secondaryImg = product.images.gallery[1] || primaryImg
 
   return (
     <div
@@ -30,7 +32,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       onMouseLeave={() => setHovered(false)}
       className="group relative bg-[#0b101d] border border-[#1e293b] hover:border-[#38bdf8]/50 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-sky-500/10"
     >
-      {/* Badges & Wishlist Trigger */}
+      {/* Badges & Wishlist */}
       <div className="absolute top-3 left-3 right-3 z-10 flex items-center justify-between pointer-events-none">
         <div className="flex flex-col gap-1">
           {product.badge && (
@@ -59,17 +61,25 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </button>
       </div>
 
-      {/* Product Photographic Thumbnail (Zero 3D) */}
+      {/* Product Photographic Thumbnail (1:1 Aspect Ratio, Zero Stretching) */}
       <div
         onClick={() => onSelectProduct(product)}
         className="relative w-full aspect-square bg-[#050811] p-4 flex items-center justify-center overflow-hidden cursor-pointer"
       >
-        <img
-          src={hovered ? secondaryImage : primaryImage}
-          alt={product.name}
-          loading="lazy"
-          className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
-        />
+        {imgError ? (
+          <div className="w-full h-full flex flex-col items-center justify-center text-[#64748b] space-y-1">
+            <span className="text-3xl">⌚</span>
+            <span className="text-[10px] font-mono">Image preview</span>
+          </div>
+        ) : (
+          <img
+            src={hovered ? secondaryImg : primaryImg}
+            alt={`${product.brand} ${product.name}`}
+            loading="lazy"
+            onError={() => setImgError(true)}
+            className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+          />
+        )}
 
         {/* Quick View Button on Hover */}
         <div className="absolute inset-x-4 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -97,7 +107,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             {product.name}
           </h3>
 
-          {/* Rating */}
+          {/* Rating & Gender */}
           <div className="flex items-center gap-1.5 text-xs">
             <span className="px-1.5 py-0.5 rounded bg-[#f59e0b]/20 text-[#f59e0b] font-bold text-[10px] flex items-center gap-0.5">
               <span>★</span>
@@ -123,14 +133,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               )}
             </div>
             <div className="text-[10px] text-[#10b981] font-medium font-mono">
-              Free Express Shipping
+              Free Express Delivery
             </div>
           </div>
 
           <button
             onClick={() => onAddToCart(product)}
             className="px-3 py-2 rounded-xl bg-[#2563eb] hover:bg-[#3b82f6] text-white text-xs font-bold transition shadow-md shadow-blue-500/20 flex items-center gap-1 cursor-pointer shrink-0"
-            title="Add to Cart"
+            title="Add to Bag"
           >
             <span>+</span>
             <span className="hidden sm:inline">Add</span>
