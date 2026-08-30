@@ -139,7 +139,7 @@ export const ProductCard: React.FC<ProductCardProps> = React.memo(({
             className="w-full py-3.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs sm:text-sm font-black uppercase tracking-wider transition shadow-sm cursor-pointer flex items-center justify-center gap-2 active:scale-98"
             style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
           >
-            <span className="text-base">+</span> ADD TO BAG
+            <span style={{ color: "#ffffff" }}>+ ADD TO BAG</span>
           </button>
         </div>
       </div>

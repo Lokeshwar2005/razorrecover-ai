@@ -811,9 +811,10 @@ export const ChronovaStore: React.FC = () => {
               <button
                 onClick={() => setIsCartOpen(true)}
                 className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900 hover:bg-blue-600 text-white transition shadow-sm cursor-pointer"
+                style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
               >
                 <span className="text-base">🛍️</span>
-                <span className="text-xs font-black tracking-wide hidden sm:inline">CART</span>
+                <span className="text-xs font-black tracking-wide hidden sm:inline" style={{ color: '#ffffff' }}>CART</span>
                 <span className="w-5 h-5 rounded-full bg-white text-slate-900 text-xs font-black font-mono flex items-center justify-center">
                   {totalCartCount}
                 </span>
@@ -1002,8 +1003,9 @@ export const ChronovaStore: React.FC = () => {
                   <button
                     onClick={heroSlides[currentHeroSlide].action}
                     className="px-8 py-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-extrabold uppercase tracking-widest transition shadow-lg shadow-slate-900/10 cursor-pointer"
+                    style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
                   >
-                    {heroSlides[currentHeroSlide].cta} →
+                    <span style={{ color: '#ffffff' }}>{heroSlides[currentHeroSlide].cta} →</span>
                   </button>
 
                   <button
@@ -1434,8 +1436,9 @@ export const ChronovaStore: React.FC = () => {
                   <button
                     onClick={handleClearAllFilters}
                     className="px-6 py-2.5 rounded-full bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold transition cursor-pointer"
+                    style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
                   >
-                    Clear All Filters
+                    <span style={{ color: '#ffffff' }}>Clear All Filters</span>
                   </button>
                 </div>
               ) : (
@@ -1460,8 +1463,11 @@ export const ChronovaStore: React.FC = () => {
                       <button
                         onClick={() => setVisibleProductCount((prev) => prev + 16)}
                         className="px-8 py-3 rounded-full bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-sm cursor-pointer"
+                        style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
                       >
-                        LOAD MORE WATCHES ({filteredProducts.length - visibleProductCount} REMAINING) ↓
+                        <span style={{ color: '#ffffff' }}>
+                          LOAD MORE WATCHES ({filteredProducts.length - visibleProductCount} REMAINING) ↓
+                        </span>
                       </button>
                     </div>
                   )}

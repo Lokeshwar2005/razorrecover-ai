@@ -226,8 +226,9 @@ export const CustomerAuthModal: React.FC<CustomerAuthModalProps> = ({
                 <button
                   type="submit"
                   className="w-full py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer active:scale-98"
+                  style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                 >
-                  SIGN IN TO CHRONOVA
+                  <span style={{ color: "#ffffff" }}>SIGN IN TO CHRONOVA</span>
                 </button>
 
                 <div className="text-center pt-2">
@@ -328,8 +329,9 @@ export const CustomerAuthModal: React.FC<CustomerAuthModalProps> = ({
                 <button
                   type="submit"
                   className="w-full py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition shadow-md cursor-pointer active:scale-98"
+                  style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                 >
-                  CREATE CHRONOVA ACCOUNT
+                  <span style={{ color: "#ffffff" }}>CREATE CHRONOVA ACCOUNT</span>
                 </button>
               </form>
             )}

@@ -29,11 +29,6 @@ body {
   width: 100%;
 }
 
-button {
-  font: inherit;
-  color: inherit;
-}
-
 .app {
   min-height: 100vh;
   background: linear-gradient(180deg, rgba(255, 255, 255, .018), transparent 18%);

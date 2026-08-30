@@ -224,7 +224,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     className="flex-1 py-4 rounded-2xl bg-slate-900 hover:bg-blue-600 text-white text-xs sm:text-sm font-black uppercase tracking-wider transition shadow-md cursor-pointer"
                     style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                   >
-                    ADD TO BAG
+                    <span style={{ color: "#ffffff" }}>ADD TO BAG</span>
                   </button>
 
                   <button
@@ -235,7 +235,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     className="flex-1 py-4 rounded-2xl bg-blue-700 hover:bg-blue-800 text-white text-xs sm:text-sm font-black uppercase tracking-wider transition shadow-md cursor-pointer"
                     style={{ color: "#ffffff", backgroundColor: "#1d4ed8" }}
                   >
-                    BUY NOW
+                    <span style={{ color: "#ffffff" }}>BUY NOW</span>
                   </button>
                 </div>
               </div>
