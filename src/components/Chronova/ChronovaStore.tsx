@@ -21,11 +21,9 @@ import { QuickViewModal } from './QuickViewModal'
 import { CartDrawer } from './CartDrawer'
 import { CheckoutModal } from './CheckoutModal'
 import { CustomerAuthModal, CustomerUser } from './CustomerAuthModal'
-import { SplineWatchViewer } from './SplineWatchViewer'
 
 export const ChronovaStore: React.FC = () => {
   // Navigation & View Mode
-  const [hero3dMode, setHero3dMode] = useState<boolean>(true)
   const [activeNavTab, setActiveNavTab] = useState<string>('WATCHES')
   const [currentView, setCurrentView] = useState<'home' | 'catalog'>('home')
   const [searchQuery, setSearchQuery] = useState<string>('')
@@ -205,17 +203,34 @@ export const ChronovaStore: React.FC = () => {
       if (activeNavTab === 'BESTSELLERS' && !p.is_bestseller) return false
       if (activeNavTab === 'SALE' && p.discount_percent <= 0) return false
 
-      // Search Query
+      // Search Query with Strict Brand Isolation
       if (searchQuery.trim()) {
-        const query = searchQuery.toLowerCase()
-        const matchName = p.name.toLowerCase().includes(query)
-        const matchBrand = p.brand.toLowerCase().includes(query)
-        const matchCat = p.category.toLowerCase().includes(query)
-        const matchSeries = p.series.toLowerCase().includes(query)
-        const matchVibe = p.vibe.toLowerCase().includes(query)
-        const matchMovement = p.specs.movement.toLowerCase().includes(query)
-        if (!matchName && !matchBrand && !matchCat && !matchSeries && !matchVibe && !matchMovement) {
-          return false
+        const query = searchQuery.trim().toLowerCase()
+        const targetedBrand = ALL_BRANDS.find((b) => {
+          const bLower = b.toLowerCase()
+          return query === bLower || query.startsWith(`${bLower} `) || query.endsWith(` ${bLower}`) || query.includes(` ${bLower} `)
+        })
+
+        if (targetedBrand) {
+          // Strict Brand Isolation
+          if (p.brand.toLowerCase() !== targetedBrand.toLowerCase()) {
+            return false
+          }
+        } else {
+          // Comprehensive keyword search across metadata
+          const matchName = p.name.toLowerCase().includes(query)
+          const matchBrand = p.brand.toLowerCase().includes(query)
+          const matchCat = p.category.toLowerCase().includes(query)
+          const matchSeries = p.series.toLowerCase().includes(query)
+          const matchModel = p.model.toLowerCase().includes(query)
+          const matchVibe = p.vibe.toLowerCase().includes(query)
+          const matchMovement = (p.specs.movement || '').toLowerCase().includes(query)
+          const matchDial = (p.specs.dial_color || '').toLowerCase().includes(query)
+          const matchStrap = (p.specs.strap_material || '').toLowerCase().includes(query)
+          const matchDesc = (p.description || '').toLowerCase().includes(query)
+          if (!matchName && !matchBrand && !matchCat && !matchSeries && !matchModel && !matchVibe && !matchMovement && !matchDial && !matchStrap && !matchDesc) {
+            return false
+          }
         }
       }
 
@@ -912,66 +927,28 @@ export const ChronovaStore: React.FC = () => {
                 </div>
               </div>
 
-              {/* Hero Showcase (Interactive Spline 3D / Studio Photography) */}
-              <div className="lg:col-span-5 relative space-y-3">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 p-1 bg-slate-200/80 rounded-xl">
-                    <button
-                      onClick={() => setHero3dMode(true)}
-                      className={`px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider transition cursor-pointer flex items-center gap-1.5 ${
-                        hero3dMode ? 'bg-blue-600 text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'
-                      }`}
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      🎮 Spline 3D Orbit
-                    </button>
-                    <button
-                      onClick={() => setHero3dMode(false)}
-                      className={`px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider transition cursor-pointer ${
-                        !hero3dMode ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'
-                      }`}
-                    >
-                      🖼️ Studio Shot
-                    </button>
-                  </div>
-                  <span className="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-widest hidden sm:inline">
-                    60 FPS WebGL Engine
-                  </span>
-                </div>
-
-                {hero3dMode ? (
-                  <div className="relative w-full aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                    <SplineWatchViewer
-                      dialColor="#1e3a8a"
-                      caseMaterial="Stainless Steel"
-                      strapMaterial="Leather"
-                      brand="CHRONOVA"
-                      model="CALIBRE 3D PRO"
-                      className="w-full h-full min-h-[340px] sm:min-h-[420px]"
-                    />
-                  </div>
-                ) : (
-                  <div className="relative w-full aspect-square rounded-3xl bg-white border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-xl">
-                    <img
-                      src={heroSlides[currentHeroSlide].image}
-                      alt={heroSlides[currentHeroSlide].featuredWatch}
-                      className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-transform duration-500 hover:scale-105"
-                    />
-                    <div className="absolute bottom-4 left-4 right-4 p-3 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 flex items-center justify-between shadow-md">
-                      <div>
-                        <div className="text-[10px] font-mono font-bold text-blue-700 uppercase">
-                          {heroSlides[currentHeroSlide].featuredWatch}
-                        </div>
-                        <div className="text-sm font-black text-slate-900">
-                          {heroSlides[currentHeroSlide].price}
-                        </div>
+              {/* Hero Showcase Studio Photography */}
+              <div className="lg:col-span-5 relative">
+                <div className="relative w-full aspect-square rounded-3xl bg-white border border-slate-200 p-8 flex items-center justify-center overflow-hidden shadow-xl">
+                  <img
+                    src={heroSlides[currentHeroSlide].image}
+                    alt={heroSlides[currentHeroSlide].featuredWatch}
+                    className="max-h-full max-w-full object-contain filter drop-shadow-xl transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 flex items-center justify-between shadow-md">
+                    <div>
+                      <div className="text-[10px] font-mono font-bold text-blue-700 uppercase">
+                        {heroSlides[currentHeroSlide].featuredWatch}
                       </div>
-                      <span className="px-2.5 py-1 rounded bg-amber-50 text-amber-800 border border-amber-200 text-xs font-bold font-mono">
-                        ★ 4.9 · Verified
-                      </span>
+                      <div className="text-base font-black text-slate-900">
+                        {heroSlides[currentHeroSlide].price}
+                      </div>
                     </div>
+                    <span className="px-3 py-1 rounded-lg bg-amber-50 text-amber-900 border border-amber-200 text-xs font-black font-mono">
+                      ★ 4.9 · Verified
+                    </span>
                   </div>
-                )}
+                </div>
               </div>
             </div>
           </section>

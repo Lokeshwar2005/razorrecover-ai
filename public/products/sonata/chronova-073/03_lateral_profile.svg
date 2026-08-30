@@ -1,0 +1,17 @@
+<!-- Chronova Asset ID: chronova-073 | Brand: Sonata | Model: 7135YM01 | SKU: sonata-wedding-collection-gold -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#f8fafc" />
+  <line x1="80" y1="400" x2="720" y2="400" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="6,6" />
+  <path d="M 160 370 L 60 330 L 60 470 L 160 430 Z" fill="#854d0e" />
+  <path d="M 640 370 L 740 330 L 740 470 L 640 430 Z" fill="#854d0e" />
+  <path d="M 180 360 Q 400 330 620 360 L 630 440 Q 400 470 170 440 Z" fill="#eab308" />
+  <path d="M 220 360 Q 400 310 580 360 Z" fill="#38bdf8" opacity="0.35" stroke="#e2e8f0" />
+  <rect x="210" y="355" width="380" height="20" rx="4" fill="#fef08a" />
+  <rect x="380" y="445" width="40" height="55" rx="6" fill="#fef08a" stroke="#854d0e" stroke-width="2" />
+  <line x1="385" y1="460" x2="415" y2="460" stroke="#854d0e" stroke-width="2.5" />
+  <line x1="385" y1="475" x2="415" y2="475" stroke="#854d0e" stroke-width="2.5" />
+  <line x1="385" y1="490" x2="415" y2="490" stroke="#854d0e" stroke-width="2.5" />
+  <line x1="660" y1="310" x2="660" y2="490" stroke="#2563eb" stroke-width="2.5" />
+  <text x="675" y="405" font-family="monospace" font-size="14" font-weight="900" fill="#2563eb">11.8 MM PROFILE</text>
+  <text x="40" y="750" font-family="monospace" font-size="14" font-weight="bold" fill="#64748b">VIEW 03 // LATERAL PROFILE & CROWN</text>
+</svg>

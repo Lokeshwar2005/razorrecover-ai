@@ -1,0 +1,27 @@
+<!-- Chronova Asset ID: chronova-092 | Brand: Seiko | Model: SSH003J1 | SKU: seiko-astron-gps-solar-ssh003j1 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#020617" />
+  <circle cx="400" cy="400" r="235" fill="none" stroke="#0f172a" stroke-width="4" />
+  <circle cx="400" cy="400" r="198" fill="#000000" />
+
+  <!-- Glowing Lume Indices with DropShadow Blur -->
+  <g fill="#10b981" filter="drop-shadow(0 0 10px #10b981)">
+    <rect x="393" y="220" width="6" height="32" rx="2" />
+    <rect x="401" y="220" width="6" height="32" rx="2" />
+    <rect x="548" y="396" width="32" height="8" rx="2" />
+    <rect x="396" y="548" width="8" height="32" rx="2" />
+    <rect x="220" y="396" width="32" height="8" rx="2" />
+
+    <circle cx="490" cy="245" r="7" /><circle cx="555" cy="310" r="7" />
+    <circle cx="555" cy="490" r="7" /><circle cx="490" cy="555" r="7" />
+    <circle cx="310" cy="555" r="7" /><circle cx="245" cy="490" r="7" />
+    <circle cx="245" cy="310" r="7" /><circle cx="310" cy="245" r="7" />
+
+    <!-- Glowing Hands -->
+    <polygon points="400,400 395,290 400,270 405,290" />
+    <polygon points="400,400 396,250 400,225 404,250" />
+    <circle cx="400" cy="400" r="5" />
+  </g>
+  <text x="400" y="340" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" fill="#10b981" opacity="0.6" letter-spacing="4" text-anchor="middle">SEIKO</text>
+  <text x="40" y="750" font-family="monospace" font-size="14" font-weight="bold" fill="#334155">VIEW 11 // DARKROOM SUPER-LUMINOVA</text>
+</svg>

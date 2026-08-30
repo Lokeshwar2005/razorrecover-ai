@@ -1,0 +1,99 @@
+<!-- Chronova Asset ID: chronova-105 | Brand: Citizen | Model: AN8190-51L | SKU: citizen-classic-chronograph-silver -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bgLight_chronova-105" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </radialGradient>
+    <radialGradient id="dialSunburst_chronova-105" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="65%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+    <linearGradient id="bezelBrushed_chronova-105" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="75%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="strapGrad_chronova-105" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="30%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <filter id="watchShadow_chronova-105" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="35" stdDeviation="30" flood-color="#0f172a" flood-opacity="0.22" />
+    </filter>
+    <filter id="handShadow_chronova-105" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgLight_chronova-105)" />
+
+  <g filter="url(#watchShadow_chronova-105)">
+    <rect x="290" y="40" width="220" height="200" rx="16" fill="url(#strapGrad_chronova-105)" />
+    <line x1="305" y1="40" x2="305" y2="240" stroke="#e2e8f0" stroke-width="2.5" stroke-dasharray="8,6" opacity="0.9" />
+    <line x1="495" y1="40" x2="495" y2="240" stroke="#e2e8f0" stroke-width="2.5" stroke-dasharray="8,6" opacity="0.9" />
+
+    <rect x="290" y="560" width="220" height="200" rx="16" fill="url(#strapGrad_chronova-105)" />
+    <line x1="305" y1="560" x2="305" y2="760" stroke="#e2e8f0" stroke-width="2.5" stroke-dasharray="8,6" opacity="0.9" />
+    <line x1="495" y1="560" x2="495" y2="760" stroke="#e2e8f0" stroke-width="2.5" stroke-dasharray="8,6" opacity="0.9" />
+  </g>
+
+  <g filter="url(#watchShadow_chronova-105)">
+    <path d="M 270 200 L 290 120 L 350 120 L 320 220 Z" fill="#cbd5e1" />
+    <path d="M 530 200 L 510 120 L 450 120 L 480 220 Z" fill="#cbd5e1" />
+    <path d="M 270 600 L 290 680 L 350 680 L 320 580 Z" fill="#cbd5e1" />
+    <path d="M 530 600 L 510 680 L 450 680 L 480 580 Z" fill="#cbd5e1" />
+
+    <rect x="630" y="380" width="30" height="40" rx="6" fill="url(#bezelBrushed_chronova-105)" stroke="#475569" stroke-width="1.5" />
+    <line x1="635" y1="390" x2="655" y2="390" stroke="#475569" stroke-width="2" />
+    <line x1="635" y1="400" x2="655" y2="400" stroke="#475569" stroke-width="2" />
+    <line x1="635" y1="410" x2="655" y2="410" stroke="#475569" stroke-width="2" />
+
+    <circle cx="400" cy="400" r="235" fill="url(#bezelBrushed_chronova-105)" />
+    <circle cx="400" cy="400" r="215" fill="#475569" /><circle cx="400" cy="400" r="212" fill="none" stroke="#ffffff" stroke-width="2.5" />
+    <circle cx="400" cy="400" r="198" fill="url(#dialSunburst_chronova-105)" />
+  </g>
+
+  
+  <g fill="#ffffff" stroke="#475569" stroke-width="1.5">
+    <rect x="393" y="220" width="6" height="32" rx="2" /><rect x="401" y="220" width="6" height="32" rx="2" />
+    <rect x="395" y="224" width="2" height="24" fill="#4ade80" /><rect x="403" y="224" width="2" height="24" fill="#4ade80" />
+    <rect x="548" y="396" width="32" height="8" rx="2" /><rect x="552" y="398" width="24" height="4" fill="#4ade80" />
+    <rect x="396" y="548" width="8" height="32" rx="2" /><rect x="398" y="552" width="4" height="24" fill="#4ade80" />
+    <rect x="220" y="396" width="32" height="8" rx="2" /><rect x="224" y="398" width="24" height="4" fill="#4ade80" />
+    <circle cx="490" cy="245" r="7" /><circle cx="490" cy="245" r="4" fill="#4ade80" />
+    <circle cx="555" cy="310" r="7" /><circle cx="555" cy="310" r="4" fill="#4ade80" />
+    <circle cx="555" cy="490" r="7" /><circle cx="555" cy="490" r="4" fill="#4ade80" />
+    <circle cx="490" cy="555" r="7" /><circle cx="490" cy="555" r="4" fill="#4ade80" />
+    <circle cx="310" cy="555" r="7" /><circle cx="310" cy="555" r="4" fill="#4ade80" />
+    <circle cx="245" cy="490" r="7" /><circle cx="245" cy="490" r="4" fill="#4ade80" />
+    <circle cx="245" cy="310" r="7" /><circle cx="245" cy="310" r="4" fill="#4ade80" />
+    <circle cx="310" cy="245" r="7" /><circle cx="310" cy="245" r="4" fill="#4ade80" />
+  </g>
+  <rect x="495" y="388" width="42" height="24" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <text x="516" y="405" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle">31</text>
+  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <text x="400" y="315" font-size="20" font-weight="900" fill="#ffffff" letter-spacing="5">CITIZEN</text>
+    <text x="400" y="338" font-size="11" font-weight="700" fill="#f59e0b" letter-spacing="2">AN8190-51L</text>
+    <text x="400" y="500" font-size="11" font-weight="800" fill="#ffffff" opacity="0.85" letter-spacing="3">100M (10 ATM) · 0510</text>
+  </g>
+  <g filter="url(#handShadow_chronova-105)">
+    <polygon points="400,400 393,310 400,270 407,310" fill="#ffffff" stroke="#475569" stroke-width="1.5" />
+    <polygon points="400,380 396,310 400,285 404,310" fill="#4ade80" />
+    <polygon points="400,400 395,280 400,230 405,280" fill="#ffffff" stroke="#475569" stroke-width="1.5" />
+    <polygon points="400,370 397,280 400,245 403,280" fill="#4ade80" />
+    <line x1="400" y1="430" x2="400" y2="220" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="400" cy="430" r="5" fill="#ef4444" />
+    <circle cx="400" cy="400" r="9" fill="#ffffff" stroke="#475569" stroke-width="2" />
+    <circle cx="400" cy="400" r="4" fill="#ef4444" />
+  </g>
+
+  <path d="M 260 220 Q 400 300 540 220 Q 480 190 260 220 Z" fill="#ffffff" opacity="0.18" />
+  <path d="M 230 400 Q 400 520 570 400 Q 520 440 230 400 Z" fill="#ffffff" opacity="0.08" />
+</svg>

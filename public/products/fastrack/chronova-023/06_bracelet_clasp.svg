@@ -1,0 +1,14 @@
+<!-- Chronova Asset ID: chronova-023 | Brand: Fastrack | Model: 3255NM01 | SKU: fastrack-all-nighter-leather -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#f8fafc" />
+  <rect x="240" y="60" width="320" height="680" rx="16" fill="#09090b" />
+  <rect x="270" y="60" width="260" height="680" fill="#18181b" opacity="0.6" />
+  <g stroke="#3f3f46" stroke-width="4" stroke-dasharray="10,8">
+    <line x1="275" y1="60" x2="275" y2="740" />
+    <line x1="525" y1="60" x2="525" y2="740" />
+  </g>
+  <rect x="200" y="320" width="400" height="160" rx="14" fill="#3f3f46" stroke="#09090b" stroke-width="4" />
+  <rect x="290" y="360" width="220" height="80" rx="8" fill="#18181b" />
+  <text x="400" y="410" font-family="-apple-system, sans-serif" font-size="22" font-weight="900" fill="#ffffff" letter-spacing="4" text-anchor="middle">FASTRACK</text>
+  <text x="40" y="750" font-family="monospace" font-size="14" font-weight="bold" fill="#64748b">VIEW 06 // SOLID STEEL CLASP & GRAIN</text>
+</svg>

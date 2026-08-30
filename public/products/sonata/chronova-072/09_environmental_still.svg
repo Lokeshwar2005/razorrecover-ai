@@ -1,0 +1,23 @@
+<!-- Chronova Asset ID: chronova-072 | Brand: Sonata | Model: 7924SM01 | SKU: sonata-everyday-classic-white -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#1e293b" />
+  <!-- Wooden grain / slate textures -->
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#334155" stroke-width="1.5" />
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#334155" stroke-width="1.5" />
+  <line x1="0" y1="600" x2="800" y2="600" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Shadow -->
+  <ellipse cx="430" cy="440" rx="220" ry="110" fill="#000000" opacity="0.45" />
+
+  <!-- Watch Laid at Slanted Angle -->
+  <g transform="rotate(25 400 400)">
+    <rect x="330" y="100" width="140" height="600" rx="14" fill="#09090b" />
+    <circle cx="400" cy="400" r="160" fill="#cbd5e1" stroke="#ffffff" stroke-width="4" />
+    <circle cx="400" cy="400" r="135" fill="#047857" />
+    <text x="400" y="360" font-family="-apple-system, sans-serif" font-size="16" font-weight="900" fill="#ffffff" letter-spacing="3" text-anchor="middle">SONATA</text>
+    <text x="400" y="380" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#6ee7b7" text-anchor="middle">7924SM01</text>
+    <line x1="400" y1="400" x2="400" y2="310" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <line x1="400" y1="400" x2="470" y2="400" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
+  <text x="40" y="750" font-family="monospace" font-size="14" font-weight="bold" fill="#94a3b8">VIEW 09 // EDITORIAL TABLETOP STILL LIFE</text>
+</svg>
