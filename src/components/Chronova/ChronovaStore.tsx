@@ -155,6 +155,36 @@ export const ChronovaStore: React.FC = () => {
       featuredWatch: 'Casio G-SHOCK GA-2100 CasiOak',
       price: '₹9,195',
     },
+    {
+      id: 'slide-5',
+      badge: '📱 SMARTWEAR INNOVATION',
+      title: 'NOISE AMOLED & ORIGIN SERIES',
+      subtitle: 'Apex 1.96" AMOLED curved displays, EN1 processor, TruSync calling & comprehensive fitness telemetry.',
+      cta: 'DISCOVER NOISE',
+      action: () => {
+        handleClearAllFilters()
+        setSelectedBrands(['Noise'])
+        setCurrentView('catalog')
+      },
+      image: 'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'NoiseFit Origin Smartwatch',
+      price: '₹6,499',
+    },
+    {
+      id: 'slide-6',
+      badge: '🏛️ VINTAGE AMERICAN HERITAGE',
+      title: 'FOSSIL GRANT & TOWNSMAN AUTOMATICS',
+      subtitle: 'Mid-century industrial knurling, mechanical open-heart calibres & genuine smoke leather straps.',
+      cta: 'SHOP FOSSIL',
+      action: () => {
+        handleClearAllFilters()
+        setSelectedBrands(['Fossil'])
+        setCurrentView('catalog')
+      },
+      image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=1200&auto=format&fit=crop&q=80',
+      featuredWatch: 'Fossil Townsman Automatic',
+      price: '₹19,995',
+    },
   ]
 
   // Hero Autoplay
@@ -626,7 +656,7 @@ export const ChronovaStore: React.FC = () => {
       {showPromoBar && (
         <div className="bg-slate-900 px-4 py-2 text-center text-xs font-semibold text-white tracking-wider flex items-center justify-between">
           <div className="flex-1 text-center">
-            TIMELESS STYLE. NEW ARRIVALS ARE HERE. · EXTRA 10% OFF WITH CODE <strong className="text-amber-400 font-mono">CHRONOVA10</strong> · FREE SHIPPING ACROSS INDIA
+            ⭐ <strong className="text-amber-300">5 CURATED BRANDS ONLY</strong>: TITAN · FASTRACK · CASIO · NOISE · FOSSIL · EXTRA 10% OFF CODE <strong className="text-amber-400 font-mono">CHRONOVA10</strong> · FREE INSURED SHIPPING
           </div>
           <button
             onClick={() => setShowPromoBar(false)}
@@ -657,8 +687,8 @@ export const ChronovaStore: React.FC = () => {
                 <span className="text-xl sm:text-2xl font-black tracking-widest text-slate-900 leading-none">
                   CHRONOVA
                 </span>
-                <span className="text-[9px] font-bold tracking-widest text-blue-700 uppercase">
-                  Find Your Time.
+                <span className="text-[8.5px] font-black tracking-wider text-blue-700 uppercase">
+                  5 Approved Brands Only
                 </span>
               </div>
             </div>
@@ -672,7 +702,7 @@ export const ChronovaStore: React.FC = () => {
                   setSearchQuery(e.target.value)
                   if (e.target.value) setCurrentView('catalog')
                 }}
-                placeholder="Search Titan, Fastrack, Casio, Noise & Fossil watches (e.g. Grant, Machine, Raquel, Neutra, Edge)..."
+                placeholder="Search 5 Approved Brands: Titan, Fastrack, Casio, Noise & Fossil (e.g. Grant, Machine, Raquel, CasiOak)..."
                 className="w-full pl-11 pr-10 py-2.5 rounded-full bg-slate-100 border border-slate-300 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 focus:bg-white transition shadow-xs"
               />
               <span className="absolute left-4 top-3 text-slate-400 text-xs">🔍</span>

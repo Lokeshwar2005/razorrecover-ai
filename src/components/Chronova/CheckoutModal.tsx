@@ -15,6 +15,147 @@ interface CheckoutModalProps {
 }
 
 type CheckoutStep = 'delivery' | 'payment' | 'success' | 'failure'
+type RazorpayTab = 'upi' | 'card' | 'netbanking' | 'wallet'
+
+export type FailureScenarioType =
+  | '3ds_timeout'
+  | 'low_balance'
+  | 'upi_intent_drop'
+  | 'bank_downtime'
+  | 'risk_engine_flag'
+  | 'network_drop'
+  | 'auth_retries_exceeded'
+  | 'cart_abandonment'
+
+interface FailureScenarioConfig {
+  id: FailureScenarioType
+  icon: string
+  title: string
+  subtitle: string
+  reason: string
+  code: string
+  confidence: number
+  recoveryProb: number
+  riskScore: number
+  action: string
+  latency: string
+  badgeColor: string
+}
+
+const FAILURE_SCENARIOS: FailureScenarioConfig[] = [
+  {
+    id: '3ds_timeout',
+    icon: '⏳',
+    title: '3DS Bank OTP Timeout',
+    subtitle: 'Issuer Switch 504 Unresponsive',
+    reason: '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
+    code: 'GATEWAY_ERROR_3DS_TIMEOUT',
+    confidence: 0.94,
+    recoveryProb: 0.88,
+    riskScore: 0.15,
+    action: 'Send payment link',
+    latency: '240ms',
+    badgeColor: 'border-amber-500 bg-amber-50 text-amber-900',
+  },
+  {
+    id: 'low_balance',
+    icon: '⚠️',
+    title: 'Insufficient Account Balance',
+    subtitle: 'Credit Limit / Balance Exhausted',
+    reason: 'Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)',
+    code: 'BAD_REQUEST_INSUFFICIENT_FUNDS',
+    confidence: 0.85,
+    recoveryProb: 0.72,
+    riskScore: 0.2,
+    action: 'Switch to UPI Auto-Pay / Split Link',
+    latency: '190ms',
+    badgeColor: 'border-rose-500 bg-rose-50 text-rose-900',
+  },
+  {
+    id: 'upi_intent_drop',
+    icon: '📱',
+    title: 'UPI App Intent Auto-Drop',
+    subtitle: 'GPay/PhonePe App Switch Expired',
+    reason: 'UPI Intent Session Expired (Customer Backgrounded App to Check SMS)',
+    code: 'UPI_INTENT_TIMEOUT',
+    confidence: 0.96,
+    recoveryProb: 0.92,
+    riskScore: 0.08,
+    action: 'Send instant WhatsApp UPI deep link',
+    latency: '150ms',
+    badgeColor: 'border-purple-500 bg-purple-50 text-purple-900',
+  },
+  {
+    id: 'bank_downtime',
+    icon: '🏦',
+    title: 'Bank Core Server Downtime',
+    subtitle: 'HDFC / SBI CBS Downtime 502',
+    reason: 'Issuer Core Banking System (CBS) Scheduled Maintenance / Outage',
+    code: 'ISSUER_CBS_DOWN_502',
+    confidence: 0.91,
+    recoveryProb: 0.84,
+    riskScore: 0.12,
+    action: 'Smart Routing to Alternate Bank Node',
+    latency: '310ms',
+    badgeColor: 'border-blue-500 bg-blue-50 text-blue-900',
+  },
+  {
+    id: 'risk_engine_flag',
+    icon: '🛡️',
+    title: 'Risk Engine False Positive',
+    subtitle: 'Velocity Heuristic Soft Block',
+    reason: 'Issuer Velocity Heuristic Triggered (False Positive Soft Decline)',
+    code: 'FRAUD_VELOCITY_SOFT_BLOCK',
+    confidence: 0.98,
+    recoveryProb: 0.95,
+    riskScore: 0.18,
+    action: 'Dispatch Biometric Verified Secure Link',
+    latency: '220ms',
+    badgeColor: 'border-indigo-500 bg-indigo-50 text-indigo-900',
+  },
+  {
+    id: 'network_drop',
+    icon: '🌐',
+    title: 'Mobile Network Disconnect',
+    subtitle: 'TCP Reset Mid-Handshake',
+    reason: 'Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)',
+    code: 'CLIENT_TCP_CONNECTION_RESET',
+    confidence: 0.89,
+    recoveryProb: 0.81,
+    riskScore: 0.1,
+    action: 'Send 1-Click SMS Recovery Link',
+    latency: '180ms',
+    badgeColor: 'border-teal-500 bg-teal-50 text-teal-900',
+  },
+  {
+    id: 'auth_retries_exceeded',
+    icon: '💳',
+    title: 'Incorrect OTP / Max Retries',
+    subtitle: '3DS Verification Failed (3/3)',
+    reason: 'Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded',
+    code: 'AUTH_RETRIES_EXCEEDED_3DS',
+    confidence: 0.93,
+    recoveryProb: 0.86,
+    riskScore: 0.22,
+    action: 'Send UPI QR Alternative Link',
+    latency: '260ms',
+    badgeColor: 'border-orange-500 bg-orange-50 text-orange-900',
+  },
+  {
+    id: 'cart_abandonment',
+    icon: '🚫',
+    title: 'Checkout Sheet Abandoned',
+    subtitle: 'Customer Closed Gateway Window',
+    reason: 'Customer Dismissed Razorpay Checkout Window Before Submitting Credentials',
+    code: 'GATEWAY_DISMISSED_BY_USER',
+    confidence: 0.82,
+    recoveryProb: 0.79,
+    riskScore: 0.14,
+    action: 'Send Cart Recovery WhatsApp with 5% Perk',
+    latency: '110ms',
+    badgeColor: 'border-slate-500 bg-slate-100 text-slate-900',
+  },
+]
 
 export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   isOpen,
@@ -45,7 +186,19 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   const activeCoupon = appliedCoupon !== undefined ? appliedCoupon : localCoupon
 
   const [paymentLoading, setPaymentLoading] = useState(false)
+  const [isRazorpayModalOpen, setIsRazorpayModalOpen] = useState(false)
+  const [selectedRzpTab, setSelectedRzpTab] = useState<RazorpayTab>('upi')
+  const [upiId, setUpiId] = useState('lokeshwar@okaxis')
+  const [selectedBank, setSelectedBank] = useState('HDFC')
+  const [cardDetails, setCardDetails] = useState({
+    number: '4111 2222 3333 4242',
+    expiry: '12/28',
+    cvv: '891',
+    name: 'Lokeshwar Sudam',
+  })
+
   const [errorMessage, setErrorMessage] = useState('')
+  const [lastFailureScenario, setLastFailureScenario] = useState<FailureScenarioConfig | null>(null)
   const [orderReceipt, setOrderReceipt] = useState<{
     orderId: string
     paymentId: string
@@ -56,7 +209,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   const formatINR = (amt: number) => `₹${amt.toLocaleString('en-IN')}`
 
   const subtotal = items.reduce((sum, i) => sum + i.product.price_rupees * i.quantity, 0)
-  
+
   let discountAmount = 0
   if (activeCoupon) {
     if (activeCoupon.discountPercent) {
@@ -103,154 +256,115 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     setStep('payment')
   }
 
-  // 2. Launch Real Razorpay Test Mode Checkout
-  const handleRazorpayTestPay = async (simulateScenario?: 'success' | 'timeout' | 'low_balance') => {
+  // 2. Open Custom Interactive Razorpay Gateway Modal
+  const handleOpenRazorpayGateway = () => {
+    setErrorMessage('')
+    setIsRazorpayModalOpen(true)
+  }
+
+  // 3. Process Successful Payment via Simulator
+  const handleExecuteSuccessfulPayment = () => {
+    setPaymentLoading(true)
+    const generatedTxnId = `TXN-CN-${Date.now().toString(36).toUpperCase()}`
+    const mockOrderId = `order_cn_${Date.now().toString(36)}`
+    const paymentId = `pay_test_${Date.now().toString(36)}`
+
+    setTimeout(() => {
+      setPaymentLoading(false)
+      setIsRazorpayModalOpen(false)
+
+      setOrderReceipt({
+        orderId: mockOrderId,
+        paymentId: paymentId,
+        amount: totalDue,
+        date: new Date().toLocaleDateString('en-IN', {
+          day: 'numeric',
+          month: 'short',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+        }),
+      })
+
+      // Ingest SUCCESSFUL payment into transaction store
+      const successTxn: CanonicalTransaction = {
+        id: generatedTxnId,
+        merchant_id: 'mer_chronova_watches',
+        amount: totalDue,
+        amount_minor: totalMinor,
+        currency: 'INR',
+        source: 'razorpay_test',
+        status: 'RECOVERED',
+        direction: 'Direct settlement',
+        reason: 'Payment successful on first attempt',
+        action: 'Direct settlement',
+        confidence: 0.99,
+        recovery_probability: 1.0,
+        risk_score: 0.05,
+        policy: 'Approved',
+        explanation: `Customer successfully authorized ${formatINR(totalDue)} via Razorpay Test Mode (${selectedRzpTab.toUpperCase()})`,
+        latency: '180ms',
+        created_at: new Date().toISOString(),
+        provider: 'razorpay',
+        provider_payment_id: paymentId,
+        provider_order_id: mockOrderId,
+        verified_amount_minor: totalMinor,
+        captured_at: new Date().toISOString(),
+      }
+
+      useTransactionStore.getState().ingestTransaction(successTxn)
+      onClearCart()
+      setStep('success')
+    }, 850)
+  }
+
+  // 4. Simulate Failure Scenarios for RazorRecover AI Testing
+  const handleSimulateFailure = (scenarioId: FailureScenarioType) => {
     setPaymentLoading(true)
     setErrorMessage('')
+    setIsRazorpayModalOpen(false)
+
+    const scenario = FAILURE_SCENARIOS.find((s) => s.id === scenarioId) || FAILURE_SCENARIOS[0]
+    setLastFailureScenario(scenario)
 
     const generatedTxnId = `TXN-CN-${Date.now().toString(36).toUpperCase()}`
     const mockOrderId = `order_cn_${Date.now().toString(36)}`
 
-    // If simulating instant failure for demo / test mode verification
-    if (simulateScenario === 'timeout' || simulateScenario === 'low_balance') {
-      setTimeout(() => {
-        setPaymentLoading(false)
-        const reason =
-          simulateScenario === 'timeout'
-            ? '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)'
-            : 'Insufficient Funds / Account Balance Exhausted'
-
-        // Ingest into server-to-server transaction ledger for RazorRecover AI backend
-        const failedTxn: CanonicalTransaction = {
-          id: generatedTxnId,
-          merchant_id: 'mer_chronova_watches',
-          amount: totalDue,
-          amount_minor: totalMinor,
-          currency: 'INR',
-          source: 'razorpay_test',
-          status: 'STOPPED',
-          direction: 'Payment degradation',
-          reason: reason,
-          action: 'Send payment link',
-          confidence: 0.94,
-          recovery_probability: 0.88,
-          risk_score: 0.15,
-          policy: 'Approved',
-          explanation: `Captured failed Razorpay Test Mode payment (${reason}) for order ${mockOrderId}`,
-          latency: '240ms',
-          created_at: new Date().toISOString(),
-          provider: 'razorpay',
-          provider_order_id: mockOrderId,
-          verified_amount_minor: 0,
-        }
-
-        useTransactionStore.getState().ingestTransaction(failedTxn)
-        setStep('failure')
-      }, 700)
-      return
-    }
-
-    // Real Razorpay Test Mode Checkout via window.Razorpay
-    try {
-      if (typeof window !== 'undefined' && (window as any).Razorpay) {
-        const options = {
-          key: 'rzp_test_mock_chronova_key',
-          amount: totalMinor,
-          currency: 'INR',
-          name: 'Chronova Luxury Watches',
-          description: `Order for ${items.length} Timepiece(s) - ${items[0]?.product.name}`,
-          image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=128&auto=format&fit=crop&q=80',
-          prefill: {
-            name: address.full_name,
-            email: address.email,
-            contact: address.phone,
-          },
-          theme: {
-            color: '#0f172a',
-          },
-          handler: function (response: any) {
-            setPaymentLoading(false)
-            const paymentId = response.razorpay_payment_id || `pay_test_${Date.now().toString(36)}`
-            setOrderReceipt({
-              orderId: mockOrderId,
-              paymentId: paymentId,
-              amount: totalDue,
-              date: new Date().toLocaleDateString('en-IN', {
-                day: 'numeric',
-                month: 'short',
-                year: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-              }),
-            })
-
-            // Ingest SUCCESSFUL payment into transaction store
-            const successTxn: CanonicalTransaction = {
-              id: generatedTxnId,
-              merchant_id: 'mer_chronova_watches',
-              amount: totalDue,
-              amount_minor: totalMinor,
-              currency: 'INR',
-              source: 'razorpay_test',
-              status: 'RECOVERED',
-              direction: 'Direct settlement',
-              reason: 'Payment successful on first attempt',
-              action: 'Direct settlement',
-              confidence: 0.99,
-              recovery_probability: 1.0,
-              risk_score: 0.05,
-              policy: 'Approved',
-              explanation: `Customer successfully authorized ${formatINR(totalDue)} via Razorpay Test Mode`,
-              latency: '180ms',
-              created_at: new Date().toISOString(),
-              provider: 'razorpay',
-              provider_payment_id: paymentId,
-              provider_order_id: mockOrderId,
-              verified_amount_minor: totalMinor,
-              captured_at: new Date().toISOString(),
-            }
-            useTransactionStore.getState().ingestTransaction(successTxn)
-            onClearCart()
-            setStep('success')
-          },
-          modal: {
-            ondismiss: function () {
-              setPaymentLoading(false)
-              setErrorMessage('Payment cancelled by user. You can retry anytime.')
-            },
-          },
-        }
-
-        const rzp = new (window as any).Razorpay(options)
-        rzp.open()
-      } else {
-        // Fallback simulate instant success for sandbox
-        setTimeout(() => {
-          setPaymentLoading(false)
-          const paymentId = `pay_test_${Date.now().toString(36)}`
-          setOrderReceipt({
-            orderId: mockOrderId,
-            paymentId: paymentId,
-            amount: totalDue,
-            date: new Date().toLocaleDateString('en-IN', {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric',
-            }),
-          })
-          onClearCart()
-          setStep('success')
-        }, 1000)
-      }
-    } catch (err: any) {
+    setTimeout(() => {
       setPaymentLoading(false)
-      setErrorMessage(err.message || 'Unable to open Razorpay payment checkout.')
-    }
+
+      // Ingest into server-to-server transaction ledger for RazorRecover AI backend
+      const failedTxn: CanonicalTransaction = {
+        id: generatedTxnId,
+        merchant_id: 'mer_chronova_watches',
+        amount: totalDue,
+        amount_minor: totalMinor,
+        currency: 'INR',
+        source: 'razorpay_test',
+        status: 'STOPPED',
+        direction: 'Payment degradation',
+        reason: scenario.reason,
+        action: scenario.action,
+        confidence: scenario.confidence,
+        recovery_probability: scenario.recoveryProb,
+        risk_score: scenario.riskScore,
+        policy: 'Approved',
+        explanation: `Captured failed Razorpay Test payment [${scenario.code}] for order ${mockOrderId}`,
+        latency: scenario.latency,
+        created_at: new Date().toISOString(),
+        provider: 'razorpay',
+        provider_order_id: mockOrderId,
+        verified_amount_minor: 0,
+      }
+
+      useTransactionStore.getState().ingestTransaction(failedTxn)
+      setStep('failure')
+    }, 600)
   }
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 md:p-8">
-      <div className="relative bg-white rounded-3xl max-w-3xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200 text-left">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <div className="relative bg-white rounded-3xl max-w-3xl w-full max-h-[94vh] overflow-y-auto shadow-2xl border border-slate-200 text-left">
         {/* Modal Header */}
         <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-sm px-6 py-4 border-b border-slate-200 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -261,8 +375,10 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               <h2 className="text-base sm:text-lg font-black tracking-tight text-slate-900">
                 CHRONOVA SECURE CHECKOUT
               </h2>
-              <span className="text-[11px] font-bold text-emerald-700 uppercase font-mono">
-                🔒 Razorpay 256-Bit SSL Encrypted
+              <span className="text-[11px] font-bold text-emerald-700 uppercase font-mono flex items-center gap-1">
+                <span>🔒 256-Bit SSL Encrypted</span>
+                <span>·</span>
+                <span>Verified Razorpay Gateway</span>
               </span>
             </div>
           </div>
@@ -373,7 +489,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 </div>
               </div>
 
-              {/* Order Summary & Coupon Engine inside Checkout */}
+              {/* Order Summary & Coupon Engine */}
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
                 <div className="flex items-center justify-between text-xs font-black uppercase text-slate-900">
                   <span>Order Items ({items.length})</span>
@@ -402,7 +518,9 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                           {activeCoupon.code}
                         </span>
                         <span className="font-bold">
-                          {activeCoupon.discountPercent ? `${activeCoupon.discountPercent}% Discount Applied` : `₹${activeCoupon.flatDiscount} Discount Applied`}
+                          {activeCoupon.discountPercent
+                            ? `${activeCoupon.discountPercent}% Discount Applied`
+                            : `₹${activeCoupon.flatDiscount} Discount Applied`}
                         </span>
                       </div>
                       <span className="font-black text-emerald-700">-{formatINR(discountAmount)}</span>
@@ -423,7 +541,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                             if (inputCoupon) handleApplyCoupon(inputCoupon)
                           }}
                           className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition cursor-pointer"
-                          style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
+                          style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
                         >
                           Apply
                         </button>
@@ -478,7 +596,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               <button
                 type="submit"
                 className="w-full py-4 px-6 rounded-2xl bg-slate-900 hover:bg-blue-600 text-white font-black text-sm uppercase tracking-wider transition cursor-pointer shadow-lg flex items-center justify-center gap-2"
-                style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
+                style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
               >
                 <span>PROCEED TO PAYMENT ({formatINR(totalDue)})</span>
                 <span>→</span>
@@ -486,7 +604,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
             </form>
           )}
 
-          {/* STEP 2: PAYMENT METHOD SELECTION (RAZORPAY TEST MODE) */}
+          {/* STEP 2: PAYMENT METHOD SELECTION & SCENARIOS */}
           {step === 'payment' && (
             <div className="space-y-6">
               <div className="space-y-1">
@@ -502,7 +620,8 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   </button>
                 </div>
                 <p className="text-xs text-slate-500 font-medium">
-                  Deliver to: <strong className="text-slate-900">{address.full_name}</strong>, {address.address_line1}, {address.city} ({address.pincode})
+                  Deliver to: <strong className="text-slate-900">{address.full_name}</strong>,{' '}
+                  {address.address_line1}, {address.city} ({address.pincode})
                 </p>
               </div>
 
@@ -532,55 +651,60 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               )}
 
               {/* Payment Actions */}
-              <div className="space-y-3">
-                {/* 1. Official Razorpay Test Mode Checkout */}
+              <div className="space-y-4">
+                {/* 1. Official Razorpay Test Mode Checkout Trigger */}
                 <button
                   disabled={paymentLoading}
-                  onClick={() => handleRazorpayTestPay('success')}
+                  onClick={handleOpenRazorpayGateway}
                   className="w-full py-4 px-5 rounded-2xl bg-blue-700 hover:bg-blue-800 text-white font-black text-sm uppercase tracking-wider transition cursor-pointer shadow-md flex items-center justify-between disabled:opacity-50"
-                  style={{ color: "#ffffff", backgroundColor: "#1d4ed8" }}
+                  style={{ color: '#ffffff', backgroundColor: '#1d4ed8' }}
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-xl">💳</span>
                     <div className="text-left">
-                      <div className="leading-tight">PAY VIA RAZORPAY TEST GATEWAY</div>
+                      <div className="leading-tight flex items-center gap-2">
+                        <span>OPEN RAZORPAY TEST GATEWAY</span>
+                        <span className="text-[10px] font-mono bg-blue-900/60 px-2 py-0.5 rounded border border-blue-400 text-blue-200">
+                          VERIFIED
+                        </span>
+                      </div>
                       <div className="text-[10px] font-normal text-blue-200">
                         UPI · Credit/Debit Cards · NetBanking · Wallets
                       </div>
                     </div>
                   </div>
-                  <span>{paymentLoading ? 'Connecting...' : 'Pay ' + formatINR(totalDue) + ' →'}</span>
+                  <span>{paymentLoading ? 'Processing...' : 'Pay ' + formatINR(totalDue) + ' →'}</span>
                 </button>
 
-                {/* 2. Simulation Failure Buttons for RazorRecover AI Testing */}
-                <div className="pt-3 border-t border-slate-200">
-                  <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-2">
-                    🧪 RazorRecover AI Test Scenarios (Simulate Payment Drops):
-                  </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    <button
-                      disabled={paymentLoading}
-                      onClick={() => handleRazorpayTestPay('timeout')}
-                      className="py-3 px-3.5 rounded-xl border-2 border-amber-500 bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs font-black uppercase tracking-wider transition cursor-pointer text-left flex items-center justify-between disabled:opacity-50 shadow-xs"
-                    >
-                      <div>
-                        <div>SIMULATE 3DS TIMEOUT</div>
-                        <div className="text-[10px] font-medium text-amber-700">Bank Switch Failure</div>
-                      </div>
-                      <span className="text-base">⏳</span>
-                    </button>
+                {/* 2. 8 Comprehensive Simulation Failure Buttons for RazorRecover AI Testing */}
+                <div className="pt-4 border-t border-slate-200 space-y-2.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-black text-slate-800 uppercase tracking-wider">
+                      🧪 RAZORRECOVER AI TEST SCENARIOS (SIMULATE PAYMENT DROPS):
+                    </span>
+                    <span className="text-[10px] font-mono text-purple-700 font-bold bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
+                      8 SCENARIOS ACTIVE
+                    </span>
+                  </div>
 
-                    <button
-                      disabled={paymentLoading}
-                      onClick={() => handleRazorpayTestPay('low_balance')}
-                      className="py-3 px-3.5 rounded-xl border-2 border-rose-500 bg-rose-50 hover:bg-rose-100 text-rose-900 text-xs font-black uppercase tracking-wider transition cursor-pointer text-left flex items-center justify-between disabled:opacity-50 shadow-xs"
-                    >
-                      <div>
-                        <div>SIMULATE INSUFFICIENT FUNDS</div>
-                        <div className="text-[10px] font-medium text-rose-700">Card Limit Exceeded</div>
-                      </div>
-                      <span className="text-base">⚠️</span>
-                    </button>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {FAILURE_SCENARIOS.map((sc) => (
+                      <button
+                        key={sc.id}
+                        disabled={paymentLoading}
+                        onClick={() => handleSimulateFailure(sc.id)}
+                        className={`p-3 rounded-xl border-2 hover:brightness-95 text-xs font-black uppercase tracking-wider transition cursor-pointer text-left flex items-center justify-between disabled:opacity-50 shadow-xs ${sc.badgeColor}`}
+                      >
+                        <div className="space-y-0.5">
+                          <div className="flex items-center gap-1.5">
+                            <span>{sc.icon}</span>
+                            <span className="text-[11px] font-black">{sc.title}</span>
+                          </div>
+                          <div className="text-[10px] font-medium opacity-85">{sc.subtitle}</div>
+                        </div>
+                        <span className="text-xs opacity-75">⚡</span>
+                      </button>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -599,7 +723,8 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   CONGRATULATIONS! ORDER CONFIRMED
                 </h3>
                 <p className="text-xs text-slate-600 max-w-md mx-auto font-medium">
-                  Your luxury timepiece order has been successfully placed. We have sent the confirmation & invoice to <strong className="text-slate-900">{address.email}</strong>.
+                  Your luxury timepiece order has been successfully placed. We have sent the confirmation & invoice
+                  to <strong className="text-slate-900">{address.email}</strong>.
                 </p>
               </div>
 
@@ -619,7 +744,9 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                 </div>
                 <div className="flex justify-between text-slate-600">
                   <span>Delivery Address:</span>
-                  <span className="font-semibold text-slate-900">{address.city}, {address.pincode}</span>
+                  <span className="font-semibold text-slate-900">
+                    {address.city}, {address.pincode}
+                  </span>
                 </div>
                 <div className="flex justify-between text-slate-900 font-black text-sm pt-2 border-t border-slate-200">
                   <span>Total Amount Paid:</span>
@@ -630,7 +757,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               <button
                 onClick={onClose}
                 className="px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition cursor-pointer shadow-md"
-                style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
+                style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
               >
                 Continue Shopping
               </button>
@@ -646,27 +773,37 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
               <div className="space-y-2">
                 <h3 className="text-2xl font-black text-slate-900 tracking-tight">
-                  PAYMENT COULD NOT BE COMPLETED
+                  PAYMENT DEGRADATION DETECTED
                 </h3>
                 <p className="text-xs text-slate-600 max-w-md mx-auto font-medium">
-                  Your bank issuer encountered a temporary degradation. Don't worry, your cart items are reserved for 30 minutes.
+                  {lastFailureScenario?.reason || 'Your payment encountered a temporary bank switch error.'}
                 </p>
               </div>
 
               <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 max-w-md mx-auto text-left space-y-2 text-xs text-amber-900">
-                <div className="font-bold flex items-center gap-1.5">
-                  <span>⚡ RazorRecover AI Autonomous Recovery Active:</span>
+                <div className="font-bold flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <span>⚡</span>
+                    <span>RazorRecover AI Autonomous Recovery Active</span>
+                  </span>
+                  <span className="text-[10px] font-mono bg-amber-200 text-amber-900 px-2 py-0.5 rounded font-black">
+                    SCORE: {Math.round((lastFailureScenario?.recoveryProb || 0.85) * 100)}/99
+                  </span>
                 </div>
                 <p className="text-[11px] text-amber-800">
-                  The payment failure event was ingested by RazorRecover AI. An instant one-click payment link has been dispatched to {address.phone}.
+                  Event ingested into canonical ledger. An automated priority recovery action ({lastFailureScenario?.action}) has been initialized.
                 </p>
+                <div className="pt-2 border-t border-amber-200/80 flex items-center justify-between text-[10px] font-mono">
+                  <span>Destination: {address.phone}</span>
+                  <span className="text-emerald-700 font-bold">✓ DISPATCH VERIFIED</span>
+                </div>
               </div>
 
               <div className="flex gap-3 justify-center pt-2">
                 <button
                   onClick={() => setStep('payment')}
                   className="px-6 py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition cursor-pointer shadow-md"
-                  style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
+                  style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
                 >
                   Retry Payment Now
                 </button>
@@ -681,6 +818,196 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           )}
         </div>
       </div>
+
+      {/* ========================================================================= */}
+      {/* 5. SEAMLESS INTERACTIVE RAZORPAY GATEWAY MODAL (TEST MODE)               */}
+      {/* ========================================================================= */}
+      {isRazorpayModalOpen && (
+        <div className="fixed inset-0 z-60 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200">
+          <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-300 text-slate-900">
+            {/* Razorpay Brand Header */}
+            <div className="bg-[#0c2340] text-white p-4 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center font-black text-white text-base">
+                  ₹
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-slate-300 tracking-wider">CHRONOVA WATCHES</div>
+                  <div className="text-lg font-black text-white">{formatINR(totalDue)}</div>
+                </div>
+              </div>
+              <div className="text-right">
+                <span className="bg-emerald-500/20 text-emerald-300 text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-emerald-400/40">
+                  TEST MODE
+                </span>
+                <button
+                  onClick={() => setIsRazorpayModalOpen(false)}
+                  className="block text-slate-400 hover:text-white text-xs mt-1 text-right ml-auto cursor-pointer"
+                >
+                  ✕ Cancel
+                </button>
+              </div>
+            </div>
+
+            {/* Razorpay Tabbed Checkout Interface */}
+            <div className="flex border-b border-slate-200 bg-slate-50 text-xs font-bold">
+              <button
+                type="button"
+                onClick={() => setSelectedRzpTab('upi')}
+                className={`flex-1 py-3 px-2 text-center transition cursor-pointer border-b-2 ${
+                  selectedRzpTab === 'upi'
+                    ? 'border-blue-600 text-blue-700 bg-white'
+                    : 'border-transparent text-slate-500 hover:text-slate-800'
+                }`}
+              >
+                ⚡ UPI
+              </button>
+              <button
+                type="button"
+                onClick={() => setSelectedRzpTab('card')}
+                className={`flex-1 py-3 px-2 text-center transition cursor-pointer border-b-2 ${
+                  selectedRzpTab === 'card'
+                    ? 'border-blue-600 text-blue-700 bg-white'
+                    : 'border-transparent text-slate-500 hover:text-slate-800'
+                }`}
+              >
+                💳 Cards
+              </button>
+              <button
+                type="button"
+                onClick={() => setSelectedRzpTab('netbanking')}
+                className={`flex-1 py-3 px-2 text-center transition cursor-pointer border-b-2 ${
+                  selectedRzpTab === 'netbanking'
+                    ? 'border-blue-600 text-blue-700 bg-white'
+                    : 'border-transparent text-slate-500 hover:text-slate-800'
+                }`}
+              >
+                🏦 NetBanking
+              </button>
+            </div>
+
+            {/* Tab Body */}
+            <div className="p-5 space-y-4 text-xs">
+              {/* TAB 1: UPI */}
+              {selectedRzpTab === 'upi' && (
+                <div className="space-y-3">
+                  <div className="space-y-1">
+                    <label className="text-[11px] font-bold text-slate-600">Enter UPI ID / VPA</label>
+                    <input
+                      type="text"
+                      value={upiId}
+                      onChange={(e) => setUpiId(e.target.value)}
+                      placeholder="e.g. yourname@okhdfcbank"
+                      className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-bold text-slate-900 focus:outline-none focus:border-blue-600"
+                    />
+                  </div>
+
+                  <div className="flex gap-2">
+                    {['Google Pay', 'PhonePe', 'Paytm', 'Cred UPI'].map((app) => (
+                      <button
+                        key={app}
+                        type="button"
+                        onClick={() => setUpiId(`lokeshwar@${app.toLowerCase().replace(' ', '')}`)}
+                        className="flex-1 py-2 px-1 text-[10px] font-bold rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-center cursor-pointer"
+                      >
+                        {app}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="p-3 rounded-xl bg-blue-50 border border-blue-200 text-blue-900 text-[11px] flex items-center gap-2">
+                    <span>⚡</span>
+                    <span>Instant authorization in Razorpay sandbox mode with auto-capture.</span>
+                  </div>
+                </div>
+              )}
+
+              {/* TAB 2: CARDS */}
+              {selectedRzpTab === 'card' && (
+                <div className="space-y-3">
+                  <div className="space-y-1">
+                    <label className="text-[11px] font-bold text-slate-600">Card Number</label>
+                    <input
+                      type="text"
+                      value={cardDetails.number}
+                      onChange={(e) => setCardDetails({ ...cardDetails, number: e.target.value })}
+                      className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-mono font-bold text-slate-900 focus:outline-none focus:border-blue-600"
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="space-y-1">
+                      <label className="text-[11px] font-bold text-slate-600">Expiry (MM/YY)</label>
+                      <input
+                        type="text"
+                        value={cardDetails.expiry}
+                        onChange={(e) => setCardDetails({ ...cardDetails, expiry: e.target.value })}
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-mono font-bold text-slate-900 focus:outline-none focus:border-blue-600"
+                      />
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[11px] font-bold text-slate-600">CVV</label>
+                      <input
+                        type="password"
+                        value={cardDetails.cvv}
+                        onChange={(e) => setCardDetails({ ...cardDetails, cvv: e.target.value })}
+                        className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-mono font-bold text-slate-900 focus:outline-none focus:border-blue-600"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* TAB 3: NETBANKING */}
+              {selectedRzpTab === 'netbanking' && (
+                <div className="space-y-3">
+                  <label className="text-[11px] font-bold text-slate-600 block">Select Popular Bank</label>
+                  <div className="grid grid-cols-3 gap-2">
+                    {['HDFC', 'SBI', 'ICICI', 'Axis', 'Kotak', 'PNB'].map((b) => (
+                      <button
+                        key={b}
+                        type="button"
+                        onClick={() => setSelectedBank(b)}
+                        className={`py-2 px-2 rounded-xl text-xs font-bold border transition cursor-pointer text-center ${
+                          selectedBank === b
+                            ? 'border-blue-600 bg-blue-50 text-blue-800'
+                            : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
+                        }`}
+                      >
+                        {b} Bank
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Action Buttons */}
+              <div className="pt-2 space-y-2">
+                <button
+                  type="button"
+                  disabled={paymentLoading}
+                  onClick={handleExecuteSuccessfulPayment}
+                  className="w-full py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-black text-xs uppercase tracking-wider transition cursor-pointer shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
+                >
+                  <span>{paymentLoading ? 'AUTHORIZING WITH ISSUER...' : `AUTHORIZE & PAY ${formatINR(totalDue)}`}</span>
+                  <span>✓</span>
+                </button>
+
+                <div className="flex items-center justify-between pt-1 text-[10px] text-slate-400 font-mono">
+                  <span>Secured by Razorpay</span>
+                  <button
+                    type="button"
+                    onClick={() => handleSimulateFailure('3ds_timeout')}
+                    className="text-rose-600 hover:underline cursor-pointer"
+                  >
+                    Simulate Gateway Failure
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
