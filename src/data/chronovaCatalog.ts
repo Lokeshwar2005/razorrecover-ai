@@ -30,19 +30,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-001/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-001/01_hero_studio.svg",
-        "products/titan/chronova-001/02_perspective_45.svg",
-        "products/titan/chronova-001/03_lateral_profile.svg",
-        "products/titan/chronova-001/04_sapphire_caseback.svg",
-        "products/titan/chronova-001/05_dial_macro_10x.svg",
-        "products/titan/chronova-001/06_bracelet_clasp.svg",
-        "products/titan/chronova-001/07_crown_buttons_detail.svg",
-        "products/titan/chronova-001/08_wrist_lifestyle.svg",
-        "products/titan/chronova-001/09_environmental_still.svg",
-        "products/titan/chronova-001/10_packaging_box.svg",
-        "products/titan/chronova-001/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -135,19 +130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-002/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-002/01_hero_studio.svg",
-        "products/titan/chronova-002/02_perspective_45.svg",
-        "products/titan/chronova-002/03_lateral_profile.svg",
-        "products/titan/chronova-002/04_sapphire_caseback.svg",
-        "products/titan/chronova-002/05_dial_macro_10x.svg",
-        "products/titan/chronova-002/06_bracelet_clasp.svg",
-        "products/titan/chronova-002/07_crown_buttons_detail.svg",
-        "products/titan/chronova-002/08_wrist_lifestyle.svg",
-        "products/titan/chronova-002/09_environmental_still.svg",
-        "products/titan/chronova-002/10_packaging_box.svg",
-        "products/titan/chronova-002/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -240,19 +230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-003/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg/960px-2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-003/01_hero_studio.svg",
-        "products/titan/chronova-003/02_perspective_45.svg",
-        "products/titan/chronova-003/03_lateral_profile.svg",
-        "products/titan/chronova-003/04_sapphire_caseback.svg",
-        "products/titan/chronova-003/05_dial_macro_10x.svg",
-        "products/titan/chronova-003/06_bracelet_clasp.svg",
-        "products/titan/chronova-003/07_crown_buttons_detail.svg",
-        "products/titan/chronova-003/08_wrist_lifestyle.svg",
-        "products/titan/chronova-003/09_environmental_still.svg",
-        "products/titan/chronova-003/10_packaging_box.svg",
-        "products/titan/chronova-003/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg/960px-2012012801_Zifferblatt_Automatkuhr_Attache-2459_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/201210301_Glashuette_Spezichron-11-27_2012.jpg/960px-201210301_Glashuette_Spezichron-11-27_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Alpha_analog_automatic_watch_%28cropped%29.jpg/960px-Alpha_analog_automatic_watch_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Alpha_analog_automatic_watch.jpg/960px-Alpha_analog_automatic_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alpha_automatic_men%27s_watch_on_keypad_of_Sony_Vaio_laptop.jpg/960px-Alpha_automatic_men%27s_watch_on_keypad_of_Sony_Vaio_laptop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Alpha_watches_-_analog_automatic_watch%2C_edited_without_background.jpg/960px-Alpha_watches_-_analog_automatic_watch%2C_edited_without_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -345,19 +330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-004/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-004/01_hero_studio.svg",
-        "products/titan/chronova-004/02_perspective_45.svg",
-        "products/titan/chronova-004/03_lateral_profile.svg",
-        "products/titan/chronova-004/04_sapphire_caseback.svg",
-        "products/titan/chronova-004/05_dial_macro_10x.svg",
-        "products/titan/chronova-004/06_bracelet_clasp.svg",
-        "products/titan/chronova-004/07_crown_buttons_detail.svg",
-        "products/titan/chronova-004/08_wrist_lifestyle.svg",
-        "products/titan/chronova-004/09_environmental_still.svg",
-        "products/titan/chronova-004/10_packaging_box.svg",
-        "products/titan/chronova-004/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -450,19 +430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-005/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-005/01_hero_studio.svg",
-        "products/titan/chronova-005/02_perspective_45.svg",
-        "products/titan/chronova-005/03_lateral_profile.svg",
-        "products/titan/chronova-005/04_sapphire_caseback.svg",
-        "products/titan/chronova-005/05_dial_macro_10x.svg",
-        "products/titan/chronova-005/06_bracelet_clasp.svg",
-        "products/titan/chronova-005/07_crown_buttons_detail.svg",
-        "products/titan/chronova-005/08_wrist_lifestyle.svg",
-        "products/titan/chronova-005/09_environmental_still.svg",
-        "products/titan/chronova-005/10_packaging_box.svg",
-        "products/titan/chronova-005/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -555,19 +530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-006/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-006/01_hero_studio.svg",
-        "products/titan/chronova-006/02_perspective_45.svg",
-        "products/titan/chronova-006/03_lateral_profile.svg",
-        "products/titan/chronova-006/04_sapphire_caseback.svg",
-        "products/titan/chronova-006/05_dial_macro_10x.svg",
-        "products/titan/chronova-006/06_bracelet_clasp.svg",
-        "products/titan/chronova-006/07_crown_buttons_detail.svg",
-        "products/titan/chronova-006/08_wrist_lifestyle.svg",
-        "products/titan/chronova-006/09_environmental_still.svg",
-        "products/titan/chronova-006/10_packaging_box.svg",
-        "products/titan/chronova-006/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -660,19 +630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-007/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/titan/chronova-007/01_hero_studio.svg",
-        "products/titan/chronova-007/02_perspective_45.svg",
-        "products/titan/chronova-007/03_lateral_profile.svg",
-        "products/titan/chronova-007/04_sapphire_caseback.svg",
-        "products/titan/chronova-007/05_dial_macro_10x.svg",
-        "products/titan/chronova-007/06_bracelet_clasp.svg",
-        "products/titan/chronova-007/07_crown_buttons_detail.svg",
-        "products/titan/chronova-007/08_wrist_lifestyle.svg",
-        "products/titan/chronova-007/09_environmental_still.svg",
-        "products/titan/chronova-007/10_packaging_box.svg",
-        "products/titan/chronova-007/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -765,19 +730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-008/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/titan/chronova-008/01_hero_studio.svg",
-        "products/titan/chronova-008/02_perspective_45.svg",
-        "products/titan/chronova-008/03_lateral_profile.svg",
-        "products/titan/chronova-008/04_sapphire_caseback.svg",
-        "products/titan/chronova-008/05_dial_macro_10x.svg",
-        "products/titan/chronova-008/06_bracelet_clasp.svg",
-        "products/titan/chronova-008/07_crown_buttons_detail.svg",
-        "products/titan/chronova-008/08_wrist_lifestyle.svg",
-        "products/titan/chronova-008/09_environmental_still.svg",
-        "products/titan/chronova-008/10_packaging_box.svg",
-        "products/titan/chronova-008/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -870,19 +830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-009/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Modell_Argonautic_%282014%29.jpg/960px-Modell_Argonautic_%282014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-009/01_hero_studio.svg",
-        "products/titan/chronova-009/02_perspective_45.svg",
-        "products/titan/chronova-009/03_lateral_profile.svg",
-        "products/titan/chronova-009/04_sapphire_caseback.svg",
-        "products/titan/chronova-009/05_dial_macro_10x.svg",
-        "products/titan/chronova-009/06_bracelet_clasp.svg",
-        "products/titan/chronova-009/07_crown_buttons_detail.svg",
-        "products/titan/chronova-009/08_wrist_lifestyle.svg",
-        "products/titan/chronova-009/09_environmental_still.svg",
-        "products/titan/chronova-009/10_packaging_box.svg",
-        "products/titan/chronova-009/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Modell_Argonautic_%282014%29.jpg/960px-Modell_Argonautic_%282014%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Modell_Diver_2_%28Taucheruhr%29.jpg/960px-Modell_Diver_2_%28Taucheruhr%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nachsichtbarkeit_der_Argonautic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Objets_symboles_du_survivalisme_louis_maitrier3.jpg/960px-Objets_symboles_du_survivalisme_louis_maitrier3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Polshorloges_te_koop_in_de_BEAMS_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-Polshorloges_te_koop_in_de_BEAMS_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Qimei_watch_on_Zulu_strap.jpg/960px-Qimei_watch_on_Zulu_strap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -975,19 +930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-010/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-010/01_hero_studio.svg",
-        "products/titan/chronova-010/02_perspective_45.svg",
-        "products/titan/chronova-010/03_lateral_profile.svg",
-        "products/titan/chronova-010/04_sapphire_caseback.svg",
-        "products/titan/chronova-010/05_dial_macro_10x.svg",
-        "products/titan/chronova-010/06_bracelet_clasp.svg",
-        "products/titan/chronova-010/07_crown_buttons_detail.svg",
-        "products/titan/chronova-010/08_wrist_lifestyle.svg",
-        "products/titan/chronova-010/09_environmental_still.svg",
-        "products/titan/chronova-010/10_packaging_box.svg",
-        "products/titan/chronova-010/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -1080,19 +1030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-011/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg/960px-A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-011/01_hero_studio.svg",
-        "products/titan/chronova-011/02_perspective_45.svg",
-        "products/titan/chronova-011/03_lateral_profile.svg",
-        "products/titan/chronova-011/04_sapphire_caseback.svg",
-        "products/titan/chronova-011/05_dial_macro_10x.svg",
-        "products/titan/chronova-011/06_bracelet_clasp.svg",
-        "products/titan/chronova-011/07_crown_buttons_detail.svg",
-        "products/titan/chronova-011/08_wrist_lifestyle.svg",
-        "products/titan/chronova-011/09_environmental_still.svg",
-        "products/titan/chronova-011/10_packaging_box.svg",
-        "products/titan/chronova-011/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg/960px-A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/AERO_Friedrichshafen_2018%2C_Friedrichshafen_%281X7A4790%29.jpg/960px-AERO_Friedrichshafen_2018%2C_Friedrichshafen_%281X7A4790%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/AGENT_smartwatch_prototype_by_Secret_Labs_-_WP_20130627_031_%2815837480416%29.jpg/960px-AGENT_smartwatch_prototype_by_Secret_Labs_-_WP_20130627_031_%2815837480416%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/AmazfitBand7.jpg/960px-AmazfitBand7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Android_Wear_Isn%27t_Responding.jpg/960px-Android_Wear_Isn%27t_Responding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -1185,19 +1130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-012/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/titan/chronova-012/01_hero_studio.svg",
-        "products/titan/chronova-012/02_perspective_45.svg",
-        "products/titan/chronova-012/03_lateral_profile.svg",
-        "products/titan/chronova-012/04_sapphire_caseback.svg",
-        "products/titan/chronova-012/05_dial_macro_10x.svg",
-        "products/titan/chronova-012/06_bracelet_clasp.svg",
-        "products/titan/chronova-012/07_crown_buttons_detail.svg",
-        "products/titan/chronova-012/08_wrist_lifestyle.svg",
-        "products/titan/chronova-012/09_environmental_still.svg",
-        "products/titan/chronova-012/10_packaging_box.svg",
-        "products/titan/chronova-012/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -1290,19 +1230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-013/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/titan/chronova-013/01_hero_studio.svg",
-        "products/titan/chronova-013/02_perspective_45.svg",
-        "products/titan/chronova-013/03_lateral_profile.svg",
-        "products/titan/chronova-013/04_sapphire_caseback.svg",
-        "products/titan/chronova-013/05_dial_macro_10x.svg",
-        "products/titan/chronova-013/06_bracelet_clasp.svg",
-        "products/titan/chronova-013/07_crown_buttons_detail.svg",
-        "products/titan/chronova-013/08_wrist_lifestyle.svg",
-        "products/titan/chronova-013/09_environmental_still.svg",
-        "products/titan/chronova-013/10_packaging_box.svg",
-        "products/titan/chronova-013/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -1395,19 +1330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/titan/chronova-014/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/titan/chronova-014/01_hero_studio.svg",
-        "products/titan/chronova-014/02_perspective_45.svg",
-        "products/titan/chronova-014/03_lateral_profile.svg",
-        "products/titan/chronova-014/04_sapphire_caseback.svg",
-        "products/titan/chronova-014/05_dial_macro_10x.svg",
-        "products/titan/chronova-014/06_bracelet_clasp.svg",
-        "products/titan/chronova-014/07_crown_buttons_detail.svg",
-        "products/titan/chronova-014/08_wrist_lifestyle.svg",
-        "products/titan/chronova-014/09_environmental_still.svg",
-        "products/titan/chronova-014/10_packaging_box.svg",
-        "products/titan/chronova-014/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -1500,19 +1430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-015/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/fastrack/chronova-015/01_hero_studio.svg",
-        "products/fastrack/chronova-015/02_perspective_45.svg",
-        "products/fastrack/chronova-015/03_lateral_profile.svg",
-        "products/fastrack/chronova-015/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-015/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-015/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-015/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-015/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-015/09_environmental_still.svg",
-        "products/fastrack/chronova-015/10_packaging_box.svg",
-        "products/fastrack/chronova-015/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -1605,19 +1530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-016/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-016/01_hero_studio.svg",
-        "products/fastrack/chronova-016/02_perspective_45.svg",
-        "products/fastrack/chronova-016/03_lateral_profile.svg",
-        "products/fastrack/chronova-016/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-016/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-016/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-016/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-016/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-016/09_environmental_still.svg",
-        "products/fastrack/chronova-016/10_packaging_box.svg",
-        "products/fastrack/chronova-016/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816243425443%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -1710,19 +1630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-017/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fastrack/chronova-017/01_hero_studio.svg",
-        "products/fastrack/chronova-017/02_perspective_45.svg",
-        "products/fastrack/chronova-017/03_lateral_profile.svg",
-        "products/fastrack/chronova-017/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-017/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-017/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-017/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-017/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-017/09_environmental_still.svg",
-        "products/fastrack/chronova-017/10_packaging_box.svg",
-        "products/fastrack/chronova-017/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -1815,19 +1730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-018/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-018/01_hero_studio.svg",
-        "products/fastrack/chronova-018/02_perspective_45.svg",
-        "products/fastrack/chronova-018/03_lateral_profile.svg",
-        "products/fastrack/chronova-018/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-018/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-018/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-018/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-018/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-018/09_environmental_still.svg",
-        "products/fastrack/chronova-018/10_packaging_box.svg",
-        "products/fastrack/chronova-018/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -1920,19 +1830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-019/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-019/01_hero_studio.svg",
-        "products/fastrack/chronova-019/02_perspective_45.svg",
-        "products/fastrack/chronova-019/03_lateral_profile.svg",
-        "products/fastrack/chronova-019/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-019/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-019/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-019/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-019/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-019/09_environmental_still.svg",
-        "products/fastrack/chronova-019/10_packaging_box.svg",
-        "products/fastrack/chronova-019/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -2025,19 +1930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-020/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fastrack/chronova-020/01_hero_studio.svg",
-        "products/fastrack/chronova-020/02_perspective_45.svg",
-        "products/fastrack/chronova-020/03_lateral_profile.svg",
-        "products/fastrack/chronova-020/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-020/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-020/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-020/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-020/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-020/09_environmental_still.svg",
-        "products/fastrack/chronova-020/10_packaging_box.svg",
-        "products/fastrack/chronova-020/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -2130,19 +2030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-021/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fastrack/chronova-021/01_hero_studio.svg",
-        "products/fastrack/chronova-021/02_perspective_45.svg",
-        "products/fastrack/chronova-021/03_lateral_profile.svg",
-        "products/fastrack/chronova-021/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-021/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-021/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-021/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-021/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-021/09_environmental_still.svg",
-        "products/fastrack/chronova-021/10_packaging_box.svg",
-        "products/fastrack/chronova-021/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -2235,19 +2130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-022/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fastrack/chronova-022/01_hero_studio.svg",
-        "products/fastrack/chronova-022/02_perspective_45.svg",
-        "products/fastrack/chronova-022/03_lateral_profile.svg",
-        "products/fastrack/chronova-022/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-022/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-022/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-022/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-022/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-022/09_environmental_still.svg",
-        "products/fastrack/chronova-022/10_packaging_box.svg",
-        "products/fastrack/chronova-022/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -2340,19 +2230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-023/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-023/01_hero_studio.svg",
-        "products/fastrack/chronova-023/02_perspective_45.svg",
-        "products/fastrack/chronova-023/03_lateral_profile.svg",
-        "products/fastrack/chronova-023/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-023/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-023/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-023/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-023/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-023/09_environmental_still.svg",
-        "products/fastrack/chronova-023/10_packaging_box.svg",
-        "products/fastrack/chronova-023/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -2445,19 +2330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-024/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-024/01_hero_studio.svg",
-        "products/fastrack/chronova-024/02_perspective_45.svg",
-        "products/fastrack/chronova-024/03_lateral_profile.svg",
-        "products/fastrack/chronova-024/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-024/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-024/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-024/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-024/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-024/09_environmental_still.svg",
-        "products/fastrack/chronova-024/10_packaging_box.svg",
-        "products/fastrack/chronova-024/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -2550,19 +2430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-025/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-025/01_hero_studio.svg",
-        "products/fastrack/chronova-025/02_perspective_45.svg",
-        "products/fastrack/chronova-025/03_lateral_profile.svg",
-        "products/fastrack/chronova-025/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-025/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-025/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-025/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-025/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-025/09_environmental_still.svg",
-        "products/fastrack/chronova-025/10_packaging_box.svg",
-        "products/fastrack/chronova-025/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -2655,19 +2530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-026/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-026/01_hero_studio.svg",
-        "products/fastrack/chronova-026/02_perspective_45.svg",
-        "products/fastrack/chronova-026/03_lateral_profile.svg",
-        "products/fastrack/chronova-026/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-026/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-026/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-026/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-026/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-026/09_environmental_still.svg",
-        "products/fastrack/chronova-026/10_packaging_box.svg",
-        "products/fastrack/chronova-026/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -2760,19 +2630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-027/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-027/01_hero_studio.svg",
-        "products/fastrack/chronova-027/02_perspective_45.svg",
-        "products/fastrack/chronova-027/03_lateral_profile.svg",
-        "products/fastrack/chronova-027/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-027/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-027/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-027/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-027/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-027/09_environmental_still.svg",
-        "products/fastrack/chronova-027/10_packaging_box.svg",
-        "products/fastrack/chronova-027/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -2865,19 +2730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fastrack/chronova-028/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fastrack/chronova-028/01_hero_studio.svg",
-        "products/fastrack/chronova-028/02_perspective_45.svg",
-        "products/fastrack/chronova-028/03_lateral_profile.svg",
-        "products/fastrack/chronova-028/04_sapphire_caseback.svg",
-        "products/fastrack/chronova-028/05_dial_macro_10x.svg",
-        "products/fastrack/chronova-028/06_bracelet_clasp.svg",
-        "products/fastrack/chronova-028/07_crown_buttons_detail.svg",
-        "products/fastrack/chronova-028/08_wrist_lifestyle.svg",
-        "products/fastrack/chronova-028/09_environmental_still.svg",
-        "products/fastrack/chronova-028/10_packaging_box.svg",
-        "products/fastrack/chronova-028/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
@@ -2970,19 +2830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-029/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Casio_WQV-1_Captured_Photo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/casio/chronova-029/01_hero_studio.svg",
-        "products/casio/chronova-029/02_perspective_45.svg",
-        "products/casio/chronova-029/03_lateral_profile.svg",
-        "products/casio/chronova-029/04_sapphire_caseback.svg",
-        "products/casio/chronova-029/05_dial_macro_10x.svg",
-        "products/casio/chronova-029/06_bracelet_clasp.svg",
-        "products/casio/chronova-029/07_crown_buttons_detail.svg",
-        "products/casio/chronova-029/08_wrist_lifestyle.svg",
-        "products/casio/chronova-029/09_environmental_still.svg",
-        "products/casio/chronova-029/10_packaging_box.svg",
-        "products/casio/chronova-029/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/d/d7/Casio_WQV-1_Captured_Photo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -3075,19 +2930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-030/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-030/01_hero_studio.svg",
-        "products/casio/chronova-030/02_perspective_45.svg",
-        "products/casio/chronova-030/03_lateral_profile.svg",
-        "products/casio/chronova-030/04_sapphire_caseback.svg",
-        "products/casio/chronova-030/05_dial_macro_10x.svg",
-        "products/casio/chronova-030/06_bracelet_clasp.svg",
-        "products/casio/chronova-030/07_crown_buttons_detail.svg",
-        "products/casio/chronova-030/08_wrist_lifestyle.svg",
-        "products/casio/chronova-030/09_environmental_still.svg",
-        "products/casio/chronova-030/10_packaging_box.svg",
-        "products/casio/chronova-030/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Casio_WQV-1_IR_Receiver.JPG/960px-Casio_WQV-1_IR_Receiver.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -3180,19 +3030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-031/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-031/01_hero_studio.svg",
-        "products/casio/chronova-031/02_perspective_45.svg",
-        "products/casio/chronova-031/03_lateral_profile.svg",
-        "products/casio/chronova-031/04_sapphire_caseback.svg",
-        "products/casio/chronova-031/05_dial_macro_10x.svg",
-        "products/casio/chronova-031/06_bracelet_clasp.svg",
-        "products/casio/chronova-031/07_crown_buttons_detail.svg",
-        "products/casio/chronova-031/08_wrist_lifestyle.svg",
-        "products/casio/chronova-031/09_environmental_still.svg",
-        "products/casio/chronova-031/10_packaging_box.svg",
-        "products/casio/chronova-031/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Casio_Wrist_Watch_01.jpg/960px-Casio_Wrist_Watch_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
@@ -3285,19 +3130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-032/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-032/01_hero_studio.svg",
-        "products/casio/chronova-032/02_perspective_45.svg",
-        "products/casio/chronova-032/03_lateral_profile.svg",
-        "products/casio/chronova-032/04_sapphire_caseback.svg",
-        "products/casio/chronova-032/05_dial_macro_10x.svg",
-        "products/casio/chronova-032/06_bracelet_clasp.svg",
-        "products/casio/chronova-032/07_crown_buttons_detail.svg",
-        "products/casio/chronova-032/08_wrist_lifestyle.svg",
-        "products/casio/chronova-032/09_environmental_still.svg",
-        "products/casio/chronova-032/10_packaging_box.svg",
-        "products/casio/chronova-032/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Casio_Wrist_Watches_%28432832763%29.jpg/960px-Casio_Wrist_Watches_%28432832763%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -3390,19 +3230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-033/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-033/01_hero_studio.svg",
-        "products/casio/chronova-033/02_perspective_45.svg",
-        "products/casio/chronova-033/03_lateral_profile.svg",
-        "products/casio/chronova-033/04_sapphire_caseback.svg",
-        "products/casio/chronova-033/05_dial_macro_10x.svg",
-        "products/casio/chronova-033/06_bracelet_clasp.svg",
-        "products/casio/chronova-033/07_crown_buttons_detail.svg",
-        "products/casio/chronova-033/08_wrist_lifestyle.svg",
-        "products/casio/chronova-033/09_environmental_still.svg",
-        "products/casio/chronova-033/10_packaging_box.svg",
-        "products/casio/chronova-033/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg/960px-Casio%2C_IFA_2018%2C_Berlin_%28P1070132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -3495,19 +3330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-034/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-034/01_hero_studio.svg",
-        "products/casio/chronova-034/02_perspective_45.svg",
-        "products/casio/chronova-034/03_lateral_profile.svg",
-        "products/casio/chronova-034/04_sapphire_caseback.svg",
-        "products/casio/chronova-034/05_dial_macro_10x.svg",
-        "products/casio/chronova-034/06_bracelet_clasp.svg",
-        "products/casio/chronova-034/07_crown_buttons_detail.svg",
-        "products/casio/chronova-034/08_wrist_lifestyle.svg",
-        "products/casio/chronova-034/09_environmental_still.svg",
-        "products/casio/chronova-034/10_packaging_box.svg",
-        "products/casio/chronova-034/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Casio._5071_MTD_1060._Face.jpg/960px-Casio._5071_MTD_1060._Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -3600,19 +3430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-035/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/casio/chronova-035/01_hero_studio.svg",
-        "products/casio/chronova-035/02_perspective_45.svg",
-        "products/casio/chronova-035/03_lateral_profile.svg",
-        "products/casio/chronova-035/04_sapphire_caseback.svg",
-        "products/casio/chronova-035/05_dial_macro_10x.svg",
-        "products/casio/chronova-035/06_bracelet_clasp.svg",
-        "products/casio/chronova-035/07_crown_buttons_detail.svg",
-        "products/casio/chronova-035/08_wrist_lifestyle.svg",
-        "products/casio/chronova-035/09_environmental_still.svg",
-        "products/casio/chronova-035/10_packaging_box.svg",
-        "products/casio/chronova-035/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/0/09/CasiOak_GA-2100_MOD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -3705,19 +3530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-036/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-036/01_hero_studio.svg",
-        "products/casio/chronova-036/02_perspective_45.svg",
-        "products/casio/chronova-036/03_lateral_profile.svg",
-        "products/casio/chronova-036/04_sapphire_caseback.svg",
-        "products/casio/chronova-036/05_dial_macro_10x.svg",
-        "products/casio/chronova-036/06_bracelet_clasp.svg",
-        "products/casio/chronova-036/07_crown_buttons_detail.svg",
-        "products/casio/chronova-036/08_wrist_lifestyle.svg",
-        "products/casio/chronova-036/09_environmental_still.svg",
-        "products/casio/chronova-036/10_packaging_box.svg",
-        "products/casio/chronova-036/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Doma%C4%8Di_predmeti.jpg/960px-Doma%C4%8Di_predmeti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -3810,19 +3630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-037/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-037/01_hero_studio.svg",
-        "products/casio/chronova-037/02_perspective_45.svg",
-        "products/casio/chronova-037/03_lateral_profile.svg",
-        "products/casio/chronova-037/04_sapphire_caseback.svg",
-        "products/casio/chronova-037/05_dial_macro_10x.svg",
-        "products/casio/chronova-037/06_bracelet_clasp.svg",
-        "products/casio/chronova-037/07_crown_buttons_detail.svg",
-        "products/casio/chronova-037/08_wrist_lifestyle.svg",
-        "products/casio/chronova-037/09_environmental_still.svg",
-        "products/casio/chronova-037/10_packaging_box.svg",
-        "products/casio/chronova-037/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Don%27t_Waste_Time.JPG/960px-Don%27t_Waste_Time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -3915,19 +3730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-038/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-038/01_hero_studio.svg",
-        "products/casio/chronova-038/02_perspective_45.svg",
-        "products/casio/chronova-038/03_lateral_profile.svg",
-        "products/casio/chronova-038/04_sapphire_caseback.svg",
-        "products/casio/chronova-038/05_dial_macro_10x.svg",
-        "products/casio/chronova-038/06_bracelet_clasp.svg",
-        "products/casio/chronova-038/07_crown_buttons_detail.svg",
-        "products/casio/chronova-038/08_wrist_lifestyle.svg",
-        "products/casio/chronova-038/09_environmental_still.svg",
-        "products/casio/chronova-038/10_packaging_box.svg",
-        "products/casio/chronova-038/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg/960px-Emilia_Roig_von_Antira_spricht_beim_Klimastreik_von_Fridays_For_Future_%2851519159485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -4020,19 +3830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-039/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-039/01_hero_studio.svg",
-        "products/casio/chronova-039/02_perspective_45.svg",
-        "products/casio/chronova-039/03_lateral_profile.svg",
-        "products/casio/chronova-039/04_sapphire_caseback.svg",
-        "products/casio/chronova-039/05_dial_macro_10x.svg",
-        "products/casio/chronova-039/06_bracelet_clasp.svg",
-        "products/casio/chronova-039/07_crown_buttons_detail.svg",
-        "products/casio/chronova-039/08_wrist_lifestyle.svg",
-        "products/casio/chronova-039/09_environmental_still.svg",
-        "products/casio/chronova-039/10_packaging_box.svg",
-        "products/casio/chronova-039/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/EQW-T650DB-1AJF_Feb._2023.jpg/960px-EQW-T650DB-1AJF_Feb._2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -4125,19 +3930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-040/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-040/01_hero_studio.svg",
-        "products/casio/chronova-040/02_perspective_45.svg",
-        "products/casio/chronova-040/03_lateral_profile.svg",
-        "products/casio/chronova-040/04_sapphire_caseback.svg",
-        "products/casio/chronova-040/05_dial_macro_10x.svg",
-        "products/casio/chronova-040/06_bracelet_clasp.svg",
-        "products/casio/chronova-040/07_crown_buttons_detail.svg",
-        "products/casio/chronova-040/08_wrist_lifestyle.svg",
-        "products/casio/chronova-040/09_environmental_still.svg",
-        "products/casio/chronova-040/10_packaging_box.svg",
-        "products/casio/chronova-040/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FKT-100.jpg/960px-FKT-100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg/960px-Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
@@ -4230,19 +4030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-041/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-041/01_hero_studio.svg",
-        "products/casio/chronova-041/02_perspective_45.svg",
-        "products/casio/chronova-041/03_lateral_profile.svg",
-        "products/casio/chronova-041/04_sapphire_caseback.svg",
-        "products/casio/chronova-041/05_dial_macro_10x.svg",
-        "products/casio/chronova-041/06_bracelet_clasp.svg",
-        "products/casio/chronova-041/07_crown_buttons_detail.svg",
-        "products/casio/chronova-041/08_wrist_lifestyle.svg",
-        "products/casio/chronova-041/09_environmental_still.svg",
-        "products/casio/chronova-041/10_packaging_box.svg",
-        "products/casio/chronova-041/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/G-Shock_GA-2000_Carbon_Core_Guard.jpg/960px-G-Shock_GA-2000_Carbon_Core_Guard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg/960px-Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Man_what_the_hell_happen_to_my_watch.jpg/960px-Man_what_the_hell_happen_to_my_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -4335,19 +4130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/casio/chronova-042/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/casio/chronova-042/01_hero_studio.svg",
-        "products/casio/chronova-042/02_perspective_45.svg",
-        "products/casio/chronova-042/03_lateral_profile.svg",
-        "products/casio/chronova-042/04_sapphire_caseback.svg",
-        "products/casio/chronova-042/05_dial_macro_10x.svg",
-        "products/casio/chronova-042/06_bracelet_clasp.svg",
-        "products/casio/chronova-042/07_crown_buttons_detail.svg",
-        "products/casio/chronova-042/08_wrist_lifestyle.svg",
-        "products/casio/chronova-042/09_environmental_still.svg",
-        "products/casio/chronova-042/10_packaging_box.svg",
-        "products/casio/chronova-042/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hand_watch-Casio_G-Shock.jpg/960px-Hand_watch-Casio_G-Shock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hinnerk_Koehn_Pressefoto.jpg/960px-Hinnerk_Koehn_Pressefoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/98/Jony95.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg/960px-Lascar_...of_350_m._in_just_67_minutes_%284461146435%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Man_what_the_hell_happen_to_my_watch.jpg/960px-Man_what_the_hell_happen_to_my_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/MTP4500back.jpg/960px-MTP4500back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -4440,19 +4230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-043/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mondaine_model_30332.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/timex/chronova-043/01_hero_studio.svg",
-        "products/timex/chronova-043/02_perspective_45.svg",
-        "products/timex/chronova-043/03_lateral_profile.svg",
-        "products/timex/chronova-043/04_sapphire_caseback.svg",
-        "products/timex/chronova-043/05_dial_macro_10x.svg",
-        "products/timex/chronova-043/06_bracelet_clasp.svg",
-        "products/timex/chronova-043/07_crown_buttons_detail.svg",
-        "products/timex/chronova-043/08_wrist_lifestyle.svg",
-        "products/timex/chronova-043/09_environmental_still.svg",
-        "products/timex/chronova-043/10_packaging_box.svg",
-        "products/timex/chronova-043/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mondaine_model_30332.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Montre-p1020676.jpg/960px-Montre-p1020676.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg/960px-Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -4545,19 +4330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-044/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/timex/chronova-044/01_hero_studio.svg",
-        "products/timex/chronova-044/02_perspective_45.svg",
-        "products/timex/chronova-044/03_lateral_profile.svg",
-        "products/timex/chronova-044/04_sapphire_caseback.svg",
-        "products/timex/chronova-044/05_dial_macro_10x.svg",
-        "products/timex/chronova-044/06_bracelet_clasp.svg",
-        "products/timex/chronova-044/07_crown_buttons_detail.svg",
-        "products/timex/chronova-044/08_wrist_lifestyle.svg",
-        "products/timex/chronova-044/09_environmental_still.svg",
-        "products/timex/chronova-044/10_packaging_box.svg",
-        "products/timex/chronova-044/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1b/Montinari_Milano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Montre-p1020676.jpg/960px-Montre-p1020676.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg/960px-Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -4650,19 +4430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-045/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/timex/chronova-045/01_hero_studio.svg",
-        "products/timex/chronova-045/02_perspective_45.svg",
-        "products/timex/chronova-045/03_lateral_profile.svg",
-        "products/timex/chronova-045/04_sapphire_caseback.svg",
-        "products/timex/chronova-045/05_dial_macro_10x.svg",
-        "products/timex/chronova-045/06_bracelet_clasp.svg",
-        "products/timex/chronova-045/07_crown_buttons_detail.svg",
-        "products/timex/chronova-045/08_wrist_lifestyle.svg",
-        "products/timex/chronova-045/09_environmental_still.svg",
-        "products/timex/chronova-045/10_packaging_box.svg",
-        "products/timex/chronova-045/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -4755,19 +4530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-046/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/timex/chronova-046/01_hero_studio.svg",
-        "products/timex/chronova-046/02_perspective_45.svg",
-        "products/timex/chronova-046/03_lateral_profile.svg",
-        "products/timex/chronova-046/04_sapphire_caseback.svg",
-        "products/timex/chronova-046/05_dial_macro_10x.svg",
-        "products/timex/chronova-046/06_bracelet_clasp.svg",
-        "products/timex/chronova-046/07_crown_buttons_detail.svg",
-        "products/timex/chronova-046/08_wrist_lifestyle.svg",
-        "products/timex/chronova-046/09_environmental_still.svg",
-        "products/timex/chronova-046/10_packaging_box.svg",
-        "products/timex/chronova-046/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Montre-p1020677.jpg/960px-Montre-p1020677.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg/960px-Nov%C3%A9_m%C4%9Bsto_nad_Metuj%C3%AD%2C_muzeum%2C_Prim_kalibr_200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -4860,19 +4630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-047/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/timex/chronova-047/01_hero_studio.svg",
-        "products/timex/chronova-047/02_perspective_45.svg",
-        "products/timex/chronova-047/03_lateral_profile.svg",
-        "products/timex/chronova-047/04_sapphire_caseback.svg",
-        "products/timex/chronova-047/05_dial_macro_10x.svg",
-        "products/timex/chronova-047/06_bracelet_clasp.svg",
-        "products/timex/chronova-047/07_crown_buttons_detail.svg",
-        "products/timex/chronova-047/08_wrist_lifestyle.svg",
-        "products/timex/chronova-047/09_environmental_still.svg",
-        "products/timex/chronova-047/10_packaging_box.svg",
-        "products/timex/chronova-047/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -4965,19 +4730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-048/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/timex/chronova-048/01_hero_studio.svg",
-        "products/timex/chronova-048/02_perspective_45.svg",
-        "products/timex/chronova-048/03_lateral_profile.svg",
-        "products/timex/chronova-048/04_sapphire_caseback.svg",
-        "products/timex/chronova-048/05_dial_macro_10x.svg",
-        "products/timex/chronova-048/06_bracelet_clasp.svg",
-        "products/timex/chronova-048/07_crown_buttons_detail.svg",
-        "products/timex/chronova-048/08_wrist_lifestyle.svg",
-        "products/timex/chronova-048/09_environmental_still.svg",
-        "products/timex/chronova-048/10_packaging_box.svg",
-        "products/timex/chronova-048/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b1/OperatingInstructionsSynchronar2100_CoverPage_1976.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
@@ -5070,19 +4830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-049/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/timex/chronova-049/01_hero_studio.svg",
-        "products/timex/chronova-049/02_perspective_45.svg",
-        "products/timex/chronova-049/03_lateral_profile.svg",
-        "products/timex/chronova-049/04_sapphire_caseback.svg",
-        "products/timex/chronova-049/05_dial_macro_10x.svg",
-        "products/timex/chronova-049/06_bracelet_clasp.svg",
-        "products/timex/chronova-049/07_crown_buttons_detail.svg",
-        "products/timex/chronova-049/08_wrist_lifestyle.svg",
-        "products/timex/chronova-049/09_environmental_still.svg",
-        "products/timex/chronova-049/10_packaging_box.svg",
-        "products/timex/chronova-049/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg/960px-Orient_Capital_FUG1R003W9_wrist_watch_back_bright.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -5175,19 +4930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-050/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Audemars-Piguet-img_0324.jpg/960px-Audemars-Piguet-img_0324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/timex/chronova-050/01_hero_studio.svg",
-        "products/timex/chronova-050/02_perspective_45.svg",
-        "products/timex/chronova-050/03_lateral_profile.svg",
-        "products/timex/chronova-050/04_sapphire_caseback.svg",
-        "products/timex/chronova-050/05_dial_macro_10x.svg",
-        "products/timex/chronova-050/06_bracelet_clasp.svg",
-        "products/timex/chronova-050/07_crown_buttons_detail.svg",
-        "products/timex/chronova-050/08_wrist_lifestyle.svg",
-        "products/timex/chronova-050/09_environmental_still.svg",
-        "products/timex/chronova-050/10_packaging_box.svg",
-        "products/timex/chronova-050/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Audemars-Piguet-img_0324.jpg/960px-Audemars-Piguet-img_0324.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Automatic_skeleton_watch.jpg/960px-Automatic_skeleton_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/4/45/Balance_of_a_wristwatch_Jaeger-LeCoultre_Master_Eight_Days_Perpetual_Squelette.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BRM_BIROTOR.jpg/960px-BRM_BIROTOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
@@ -5280,19 +5030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-051/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/timex/chronova-051/01_hero_studio.svg",
-        "products/timex/chronova-051/02_perspective_45.svg",
-        "products/timex/chronova-051/03_lateral_profile.svg",
-        "products/timex/chronova-051/04_sapphire_caseback.svg",
-        "products/timex/chronova-051/05_dial_macro_10x.svg",
-        "products/timex/chronova-051/06_bracelet_clasp.svg",
-        "products/timex/chronova-051/07_crown_buttons_detail.svg",
-        "products/timex/chronova-051/08_wrist_lifestyle.svg",
-        "products/timex/chronova-051/09_environmental_still.svg",
-        "products/timex/chronova-051/10_packaging_box.svg",
-        "products/timex/chronova-051/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -5385,19 +5130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-052/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/timex/chronova-052/01_hero_studio.svg",
-        "products/timex/chronova-052/02_perspective_45.svg",
-        "products/timex/chronova-052/03_lateral_profile.svg",
-        "products/timex/chronova-052/04_sapphire_caseback.svg",
-        "products/timex/chronova-052/05_dial_macro_10x.svg",
-        "products/timex/chronova-052/06_bracelet_clasp.svg",
-        "products/timex/chronova-052/07_crown_buttons_detail.svg",
-        "products/timex/chronova-052/08_wrist_lifestyle.svg",
-        "products/timex/chronova-052/09_environmental_still.svg",
-        "products/timex/chronova-052/10_packaging_box.svg",
-        "products/timex/chronova-052/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -5490,19 +5230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-053/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/timex/chronova-053/01_hero_studio.svg",
-        "products/timex/chronova-053/02_perspective_45.svg",
-        "products/timex/chronova-053/03_lateral_profile.svg",
-        "products/timex/chronova-053/04_sapphire_caseback.svg",
-        "products/timex/chronova-053/05_dial_macro_10x.svg",
-        "products/timex/chronova-053/06_bracelet_clasp.svg",
-        "products/timex/chronova-053/07_crown_buttons_detail.svg",
-        "products/timex/chronova-053/08_wrist_lifestyle.svg",
-        "products/timex/chronova-053/09_environmental_still.svg",
-        "products/timex/chronova-053/10_packaging_box.svg",
-        "products/timex/chronova-053/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -5595,19 +5330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-054/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/timex/chronova-054/01_hero_studio.svg",
-        "products/timex/chronova-054/02_perspective_45.svg",
-        "products/timex/chronova-054/03_lateral_profile.svg",
-        "products/timex/chronova-054/04_sapphire_caseback.svg",
-        "products/timex/chronova-054/05_dial_macro_10x.svg",
-        "products/timex/chronova-054/06_bracelet_clasp.svg",
-        "products/timex/chronova-054/07_crown_buttons_detail.svg",
-        "products/timex/chronova-054/08_wrist_lifestyle.svg",
-        "products/timex/chronova-054/09_environmental_still.svg",
-        "products/timex/chronova-054/10_packaging_box.svg",
-        "products/timex/chronova-054/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -5700,19 +5430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-055/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/timex/chronova-055/01_hero_studio.svg",
-        "products/timex/chronova-055/02_perspective_45.svg",
-        "products/timex/chronova-055/03_lateral_profile.svg",
-        "products/timex/chronova-055/04_sapphire_caseback.svg",
-        "products/timex/chronova-055/05_dial_macro_10x.svg",
-        "products/timex/chronova-055/06_bracelet_clasp.svg",
-        "products/timex/chronova-055/07_crown_buttons_detail.svg",
-        "products/timex/chronova-055/08_wrist_lifestyle.svg",
-        "products/timex/chronova-055/09_environmental_still.svg",
-        "products/timex/chronova-055/10_packaging_box.svg",
-        "products/timex/chronova-055/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=80",
@@ -5805,19 +5530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/timex/chronova-056/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/timex/chronova-056/01_hero_studio.svg",
-        "products/timex/chronova-056/02_perspective_45.svg",
-        "products/timex/chronova-056/03_lateral_profile.svg",
-        "products/timex/chronova-056/04_sapphire_caseback.svg",
-        "products/timex/chronova-056/05_dial_macro_10x.svg",
-        "products/timex/chronova-056/06_bracelet_clasp.svg",
-        "products/timex/chronova-056/07_crown_buttons_detail.svg",
-        "products/timex/chronova-056/08_wrist_lifestyle.svg",
-        "products/timex/chronova-056/09_environmental_still.svg",
-        "products/timex/chronova-056/10_packaging_box.svg",
-        "products/timex/chronova-056/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -5910,19 +5630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-057/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fossil/chronova-057/01_hero_studio.svg",
-        "products/fossil/chronova-057/02_perspective_45.svg",
-        "products/fossil/chronova-057/03_lateral_profile.svg",
-        "products/fossil/chronova-057/04_sapphire_caseback.svg",
-        "products/fossil/chronova-057/05_dial_macro_10x.svg",
-        "products/fossil/chronova-057/06_bracelet_clasp.svg",
-        "products/fossil/chronova-057/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-057/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-057/09_environmental_still.svg",
-        "products/fossil/chronova-057/10_packaging_box.svg",
-        "products/fossil/chronova-057/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -6015,19 +5730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-058/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/fossil/chronova-058/01_hero_studio.svg",
-        "products/fossil/chronova-058/02_perspective_45.svg",
-        "products/fossil/chronova-058/03_lateral_profile.svg",
-        "products/fossil/chronova-058/04_sapphire_caseback.svg",
-        "products/fossil/chronova-058/05_dial_macro_10x.svg",
-        "products/fossil/chronova-058/06_bracelet_clasp.svg",
-        "products/fossil/chronova-058/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-058/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-058/09_environmental_still.svg",
-        "products/fossil/chronova-058/10_packaging_box.svg",
-        "products/fossil/chronova-058/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -6120,19 +5830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-059/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fossil/chronova-059/01_hero_studio.svg",
-        "products/fossil/chronova-059/02_perspective_45.svg",
-        "products/fossil/chronova-059/03_lateral_profile.svg",
-        "products/fossil/chronova-059/04_sapphire_caseback.svg",
-        "products/fossil/chronova-059/05_dial_macro_10x.svg",
-        "products/fossil/chronova-059/06_bracelet_clasp.svg",
-        "products/fossil/chronova-059/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-059/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-059/09_environmental_still.svg",
-        "products/fossil/chronova-059/10_packaging_box.svg",
-        "products/fossil/chronova-059/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/HMTSkeleton.jpg/960px-HMTSkeleton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_cropped.png/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_cropped.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette.jpg/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Magicbands_and_Disney_Watch_%2815806457300%29.jpg/960px-Magicbands_and_Disney_Watch_%2815806457300%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -6225,19 +5930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-060/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fossil/chronova-060/01_hero_studio.svg",
-        "products/fossil/chronova-060/02_perspective_45.svg",
-        "products/fossil/chronova-060/03_lateral_profile.svg",
-        "products/fossil/chronova-060/04_sapphire_caseback.svg",
-        "products/fossil/chronova-060/05_dial_macro_10x.svg",
-        "products/fossil/chronova-060/06_bracelet_clasp.svg",
-        "products/fossil/chronova-060/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-060/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-060/09_environmental_still.svg",
-        "products/fossil/chronova-060/10_packaging_box.svg",
-        "products/fossil/chronova-060/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -6330,19 +6030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-061/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/fossil/chronova-061/01_hero_studio.svg",
-        "products/fossil/chronova-061/02_perspective_45.svg",
-        "products/fossil/chronova-061/03_lateral_profile.svg",
-        "products/fossil/chronova-061/04_sapphire_caseback.svg",
-        "products/fossil/chronova-061/05_dial_macro_10x.svg",
-        "products/fossil/chronova-061/06_bracelet_clasp.svg",
-        "products/fossil/chronova-061/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-061/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-061/09_environmental_still.svg",
-        "products/fossil/chronova-061/10_packaging_box.svg",
-        "products/fossil/chronova-061/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -6435,19 +6130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-062/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fossil/chronova-062/01_hero_studio.svg",
-        "products/fossil/chronova-062/02_perspective_45.svg",
-        "products/fossil/chronova-062/03_lateral_profile.svg",
-        "products/fossil/chronova-062/04_sapphire_caseback.svg",
-        "products/fossil/chronova-062/05_dial_macro_10x.svg",
-        "products/fossil/chronova-062/06_bracelet_clasp.svg",
-        "products/fossil/chronova-062/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-062/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-062/09_environmental_still.svg",
-        "products/fossil/chronova-062/10_packaging_box.svg",
-        "products/fossil/chronova-062/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -6540,19 +6230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-063/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg/960px-Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fossil/chronova-063/01_hero_studio.svg",
-        "products/fossil/chronova-063/02_perspective_45.svg",
-        "products/fossil/chronova-063/03_lateral_profile.svg",
-        "products/fossil/chronova-063/04_sapphire_caseback.svg",
-        "products/fossil/chronova-063/05_dial_macro_10x.svg",
-        "products/fossil/chronova-063/06_bracelet_clasp.svg",
-        "products/fossil/chronova-063/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-063/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-063/09_environmental_still.svg",
-        "products/fossil/chronova-063/10_packaging_box.svg",
-        "products/fossil/chronova-063/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg/960px-Vintage_Wolbrook_Skindiver_Manual-Wind_Watch%2C_Made_in_France_%289722661011%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fa/ZJx3ZZfqZ0o_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=80",
@@ -6645,19 +6330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-064/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fossil/chronova-064/01_hero_studio.svg",
-        "products/fossil/chronova-064/02_perspective_45.svg",
-        "products/fossil/chronova-064/03_lateral_profile.svg",
-        "products/fossil/chronova-064/04_sapphire_caseback.svg",
-        "products/fossil/chronova-064/05_dial_macro_10x.svg",
-        "products/fossil/chronova-064/06_bracelet_clasp.svg",
-        "products/fossil/chronova-064/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-064/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-064/09_environmental_still.svg",
-        "products/fossil/chronova-064/10_packaging_box.svg",
-        "products/fossil/chronova-064/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=80",
@@ -6750,19 +6430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-065/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Meistersinger_fond_transparent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fossil/chronova-065/01_hero_studio.svg",
-        "products/fossil/chronova-065/02_perspective_45.svg",
-        "products/fossil/chronova-065/03_lateral_profile.svg",
-        "products/fossil/chronova-065/04_sapphire_caseback.svg",
-        "products/fossil/chronova-065/05_dial_macro_10x.svg",
-        "products/fossil/chronova-065/06_bracelet_clasp.svg",
-        "products/fossil/chronova-065/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-065/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-065/09_environmental_still.svg",
-        "products/fossil/chronova-065/10_packaging_box.svg",
-        "products/fossil/chronova-065/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/Meistersinger_fond_transparent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MIH-film104jpg.jpg/960px-MIH-film104jpg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Montre_squelette.jpg/960px-Montre_squelette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Papillon_d%27Or_Gold_front.jpg/960px-Papillon_d%27Or_Gold_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rel%C3%B3gio_Masculino_Constantim_Skeleton.jpg/960px-Rel%C3%B3gio_Masculino_Constantim_Skeleton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Skeletttaschenuhr_10456.jpg/960px-Skeletttaschenuhr_10456.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
@@ -6855,19 +6530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-066/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fossil/chronova-066/01_hero_studio.svg",
-        "products/fossil/chronova-066/02_perspective_45.svg",
-        "products/fossil/chronova-066/03_lateral_profile.svg",
-        "products/fossil/chronova-066/04_sapphire_caseback.svg",
-        "products/fossil/chronova-066/05_dial_macro_10x.svg",
-        "products/fossil/chronova-066/06_bracelet_clasp.svg",
-        "products/fossil/chronova-066/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-066/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-066/09_environmental_still.svg",
-        "products/fossil/chronova-066/10_packaging_box.svg",
-        "products/fossil/chronova-066/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -6960,19 +6630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-067/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/fossil/chronova-067/01_hero_studio.svg",
-        "products/fossil/chronova-067/02_perspective_45.svg",
-        "products/fossil/chronova-067/03_lateral_profile.svg",
-        "products/fossil/chronova-067/04_sapphire_caseback.svg",
-        "products/fossil/chronova-067/05_dial_macro_10x.svg",
-        "products/fossil/chronova-067/06_bracelet_clasp.svg",
-        "products/fossil/chronova-067/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-067/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-067/09_environmental_still.svg",
-        "products/fossil/chronova-067/10_packaging_box.svg",
-        "products/fossil/chronova-067/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -7065,19 +6730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-068/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/fossil/chronova-068/01_hero_studio.svg",
-        "products/fossil/chronova-068/02_perspective_45.svg",
-        "products/fossil/chronova-068/03_lateral_profile.svg",
-        "products/fossil/chronova-068/04_sapphire_caseback.svg",
-        "products/fossil/chronova-068/05_dial_macro_10x.svg",
-        "products/fossil/chronova-068/06_bracelet_clasp.svg",
-        "products/fossil/chronova-068/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-068/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-068/09_environmental_still.svg",
-        "products/fossil/chronova-068/10_packaging_box.svg",
-        "products/fossil/chronova-068/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -7170,19 +6830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-069/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/fossil/chronova-069/01_hero_studio.svg",
-        "products/fossil/chronova-069/02_perspective_45.svg",
-        "products/fossil/chronova-069/03_lateral_profile.svg",
-        "products/fossil/chronova-069/04_sapphire_caseback.svg",
-        "products/fossil/chronova-069/05_dial_macro_10x.svg",
-        "products/fossil/chronova-069/06_bracelet_clasp.svg",
-        "products/fossil/chronova-069/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-069/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-069/09_environmental_still.svg",
-        "products/fossil/chronova-069/10_packaging_box.svg",
-        "products/fossil/chronova-069/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -7275,19 +6930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/fossil/chronova-070/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/fossil/chronova-070/01_hero_studio.svg",
-        "products/fossil/chronova-070/02_perspective_45.svg",
-        "products/fossil/chronova-070/03_lateral_profile.svg",
-        "products/fossil/chronova-070/04_sapphire_caseback.svg",
-        "products/fossil/chronova-070/05_dial_macro_10x.svg",
-        "products/fossil/chronova-070/06_bracelet_clasp.svg",
-        "products/fossil/chronova-070/07_crown_buttons_detail.svg",
-        "products/fossil/chronova-070/08_wrist_lifestyle.svg",
-        "products/fossil/chronova-070/09_environmental_still.svg",
-        "products/fossil/chronova-070/10_packaging_box.svg",
-        "products/fossil/chronova-070/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Armbanduhr_Rueckseite.jpg/960px-Armbanduhr_Rueckseite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -7380,19 +7030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-071/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/sonata/chronova-071/01_hero_studio.svg",
-        "products/sonata/chronova-071/02_perspective_45.svg",
-        "products/sonata/chronova-071/03_lateral_profile.svg",
-        "products/sonata/chronova-071/04_sapphire_caseback.svg",
-        "products/sonata/chronova-071/05_dial_macro_10x.svg",
-        "products/sonata/chronova-071/06_bracelet_clasp.svg",
-        "products/sonata/chronova-071/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-071/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-071/09_environmental_still.svg",
-        "products/sonata/chronova-071/10_packaging_box.svg",
-        "products/sonata/chronova-071/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/7/79/Automatic_ANTI.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -7485,19 +7130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-072/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-072/01_hero_studio.svg",
-        "products/sonata/chronova-072/02_perspective_45.svg",
-        "products/sonata/chronova-072/03_lateral_profile.svg",
-        "products/sonata/chronova-072/04_sapphire_caseback.svg",
-        "products/sonata/chronova-072/05_dial_macro_10x.svg",
-        "products/sonata/chronova-072/06_bracelet_clasp.svg",
-        "products/sonata/chronova-072/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-072/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-072/09_environmental_still.svg",
-        "products/sonata/chronova-072/10_packaging_box.svg",
-        "products/sonata/chronova-072/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg/960px-Bulova_al_quarzo_placcato_oro%2C_met%C3%A0_anni_80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -7590,19 +7230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-073/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-073/01_hero_studio.svg",
-        "products/sonata/chronova-073/02_perspective_45.svg",
-        "products/sonata/chronova-073/03_lateral_profile.svg",
-        "products/sonata/chronova-073/04_sapphire_caseback.svg",
-        "products/sonata/chronova-073/05_dial_macro_10x.svg",
-        "products/sonata/chronova-073/06_bracelet_clasp.svg",
-        "products/sonata/chronova-073/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-073/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-073/09_environmental_still.svg",
-        "products/sonata/chronova-073/10_packaging_box.svg",
-        "products/sonata/chronova-073/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Casio_LTP-B165L-2BVEF_Tiffany_Tank.png/960px-Casio_LTP-B165L-2BVEF_Tiffany_Tank.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=80",
@@ -7695,19 +7330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-074/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/sonata/chronova-074/01_hero_studio.svg",
-        "products/sonata/chronova-074/02_perspective_45.svg",
-        "products/sonata/chronova-074/03_lateral_profile.svg",
-        "products/sonata/chronova-074/04_sapphire_caseback.svg",
-        "products/sonata/chronova-074/05_dial_macro_10x.svg",
-        "products/sonata/chronova-074/06_bracelet_clasp.svg",
-        "products/sonata/chronova-074/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-074/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-074/09_environmental_still.svg",
-        "products/sonata/chronova-074/10_packaging_box.svg",
-        "products/sonata/chronova-074/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Chameri_Quartz_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -7800,19 +7430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-075/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/sonata/chronova-075/01_hero_studio.svg",
-        "products/sonata/chronova-075/02_perspective_45.svg",
-        "products/sonata/chronova-075/03_lateral_profile.svg",
-        "products/sonata/chronova-075/04_sapphire_caseback.svg",
-        "products/sonata/chronova-075/05_dial_macro_10x.svg",
-        "products/sonata/chronova-075/06_bracelet_clasp.svg",
-        "products/sonata/chronova-075/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-075/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-075/09_environmental_still.svg",
-        "products/sonata/chronova-075/10_packaging_box.svg",
-        "products/sonata/chronova-075/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/6/61/Circuitboard_from_chronograph-watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -7905,19 +7530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-076/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/sonata/chronova-076/01_hero_studio.svg",
-        "products/sonata/chronova-076/02_perspective_45.svg",
-        "products/sonata/chronova-076/03_lateral_profile.svg",
-        "products/sonata/chronova-076/04_sapphire_caseback.svg",
-        "products/sonata/chronova-076/05_dial_macro_10x.svg",
-        "products/sonata/chronova-076/06_bracelet_clasp.svg",
-        "products/sonata/chronova-076/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-076/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-076/09_environmental_still.svg",
-        "products/sonata/chronova-076/10_packaging_box.svg",
-        "products/sonata/chronova-076/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -8010,19 +7630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-077/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-077/01_hero_studio.svg",
-        "products/sonata/chronova-077/02_perspective_45.svg",
-        "products/sonata/chronova-077/03_lateral_profile.svg",
-        "products/sonata/chronova-077/04_sapphire_caseback.svg",
-        "products/sonata/chronova-077/05_dial_macro_10x.svg",
-        "products/sonata/chronova-077/06_bracelet_clasp.svg",
-        "products/sonata/chronova-077/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-077/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-077/09_environmental_still.svg",
-        "products/sonata/chronova-077/10_packaging_box.svg",
-        "products/sonata/chronova-077/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg/960px-Commodoor_watch_alarm_chrono_50m_%2851884743937%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -8115,19 +7730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-078/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/sonata/chronova-078/01_hero_studio.svg",
-        "products/sonata/chronova-078/02_perspective_45.svg",
-        "products/sonata/chronova-078/03_lateral_profile.svg",
-        "products/sonata/chronova-078/04_sapphire_caseback.svg",
-        "products/sonata/chronova-078/05_dial_macro_10x.svg",
-        "products/sonata/chronova-078/06_bracelet_clasp.svg",
-        "products/sonata/chronova-078/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-078/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-078/09_environmental_still.svg",
-        "products/sonata/chronova-078/10_packaging_box.svg",
-        "products/sonata/chronova-078/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Csem-beta1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -8220,19 +7830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-079/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-079/01_hero_studio.svg",
-        "products/sonata/chronova-079/02_perspective_45.svg",
-        "products/sonata/chronova-079/03_lateral_profile.svg",
-        "products/sonata/chronova-079/04_sapphire_caseback.svg",
-        "products/sonata/chronova-079/05_dial_macro_10x.svg",
-        "products/sonata/chronova-079/06_bracelet_clasp.svg",
-        "products/sonata/chronova-079/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-079/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-079/09_environmental_still.svg",
-        "products/sonata/chronova-079/10_packaging_box.svg",
-        "products/sonata/chronova-079/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Daniel_wellington_classic.jpg/960px-Daniel_wellington_classic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=800&auto=format&fit=crop&q=80",
@@ -8325,19 +7930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-080/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-080/01_hero_studio.svg",
-        "products/sonata/chronova-080/02_perspective_45.svg",
-        "products/sonata/chronova-080/03_lateral_profile.svg",
-        "products/sonata/chronova-080/04_sapphire_caseback.svg",
-        "products/sonata/chronova-080/05_dial_macro_10x.svg",
-        "products/sonata/chronova-080/06_bracelet_clasp.svg",
-        "products/sonata/chronova-080/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-080/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-080/09_environmental_still.svg",
-        "products/sonata/chronova-080/10_packaging_box.svg",
-        "products/sonata/chronova-080/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dscf3841_Quarzuhr.jpg/960px-Dscf3841_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -8430,19 +8030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-081/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-081/01_hero_studio.svg",
-        "products/sonata/chronova-081/02_perspective_45.svg",
-        "products/sonata/chronova-081/03_lateral_profile.svg",
-        "products/sonata/chronova-081/04_sapphire_caseback.svg",
-        "products/sonata/chronova-081/05_dial_macro_10x.svg",
-        "products/sonata/chronova-081/06_bracelet_clasp.svg",
-        "products/sonata/chronova-081/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-081/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-081/09_environmental_still.svg",
-        "products/sonata/chronova-081/10_packaging_box.svg",
-        "products/sonata/chronova-081/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Dscf3843_Quarzuhr.jpg/960px-Dscf3843_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -8535,19 +8130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-082/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-082/01_hero_studio.svg",
-        "products/sonata/chronova-082/02_perspective_45.svg",
-        "products/sonata/chronova-082/03_lateral_profile.svg",
-        "products/sonata/chronova-082/04_sapphire_caseback.svg",
-        "products/sonata/chronova-082/05_dial_macro_10x.svg",
-        "products/sonata/chronova-082/06_bracelet_clasp.svg",
-        "products/sonata/chronova-082/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-082/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-082/09_environmental_still.svg",
-        "products/sonata/chronova-082/10_packaging_box.svg",
-        "products/sonata/chronova-082/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dscf3845_Quarzuhr.jpg/960px-Dscf3845_Quarzuhr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800&auto=format&fit=crop&q=80",
@@ -8640,19 +8230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-083/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-083/01_hero_studio.svg",
-        "products/sonata/chronova-083/02_perspective_45.svg",
-        "products/sonata/chronova-083/03_lateral_profile.svg",
-        "products/sonata/chronova-083/04_sapphire_caseback.svg",
-        "products/sonata/chronova-083/05_dial_macro_10x.svg",
-        "products/sonata/chronova-083/06_bracelet_clasp.svg",
-        "products/sonata/chronova-083/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-083/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-083/09_environmental_still.svg",
-        "products/sonata/chronova-083/10_packaging_box.svg",
-        "products/sonata/chronova-083/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph_%28cropped_and_turned_0.5%2APi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HMT_quartz_wrist_watch.jpg/960px-HMT_quartz_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -8745,19 +8330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/sonata/chronova-084/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/sonata/chronova-084/01_hero_studio.svg",
-        "products/sonata/chronova-084/02_perspective_45.svg",
-        "products/sonata/chronova-084/03_lateral_profile.svg",
-        "products/sonata/chronova-084/04_sapphire_caseback.svg",
-        "products/sonata/chronova-084/05_dial_macro_10x.svg",
-        "products/sonata/chronova-084/06_bracelet_clasp.svg",
-        "products/sonata/chronova-084/07_crown_buttons_detail.svg",
-        "products/sonata/chronova-084/08_wrist_lifestyle.svg",
-        "products/sonata/chronova-084/09_environmental_still.svg",
-        "products/sonata/chronova-084/10_packaging_box.svg",
-        "products/sonata/chronova-084/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Escapement_Time_Pilot_Flieger_Chronograph.jpg/960px-Escapement_Time_Pilot_Flieger_Chronograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Esprit_Schmuck_Uhr_1999.jpg/960px-Esprit_Schmuck_Uhr_1999.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gucci_Damenuhr_1998.jpg/960px-Gucci_Damenuhr_1998.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heuer_Monnin_844_1.jpg/960px-Heuer_Monnin_844_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HMT_quartz_wrist_watch.jpg/960px-HMT_quartz_wrist_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Invicta_Herren-Armbanduhr_XL_Chronograph_Quarz_Edelstahl.jpg/960px-Invicta_Herren-Armbanduhr_XL_Chronograph_Quarz_Edelstahl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -8850,19 +8430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-085/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-085/01_hero_studio.svg",
-        "products/seiko/chronova-085/02_perspective_45.svg",
-        "products/seiko/chronova-085/03_lateral_profile.svg",
-        "products/seiko/chronova-085/04_sapphire_caseback.svg",
-        "products/seiko/chronova-085/05_dial_macro_10x.svg",
-        "products/seiko/chronova-085/06_bracelet_clasp.svg",
-        "products/seiko/chronova-085/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-085/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-085/09_environmental_still.svg",
-        "products/seiko/chronova-085/10_packaging_box.svg",
-        "products/seiko/chronova-085/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Breguet_MG_2573.jpg/960px-Breguet_MG_2573.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BRM_BIROTOR.jpg/960px-BRM_BIROTOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chronoswiss_Tourbillon.JPG/960px-Chronoswiss_Tourbillon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG/960px-Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=80",
@@ -8955,19 +8530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-086/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-086/01_hero_studio.svg",
-        "products/seiko/chronova-086/02_perspective_45.svg",
-        "products/seiko/chronova-086/03_lateral_profile.svg",
-        "products/seiko/chronova-086/04_sapphire_caseback.svg",
-        "products/seiko/chronova-086/05_dial_macro_10x.svg",
-        "products/seiko/chronova-086/06_bracelet_clasp.svg",
-        "products/seiko/chronova-086/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-086/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-086/09_environmental_still.svg",
-        "products/seiko/chronova-086/10_packaging_box.svg",
-        "products/seiko/chronova-086/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Breguet_MG_2578.jpg/960px-Breguet_MG_2578.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BRM_BIROTOR.jpg/960px-BRM_BIROTOR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chronoswiss_Tourbillon.JPG/960px-Chronoswiss_Tourbillon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG/960px-Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&auto=format&fit=crop&q=80",
@@ -9060,19 +8630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-087/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg/960px-2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-087/01_hero_studio.svg",
-        "products/seiko/chronova-087/02_perspective_45.svg",
-        "products/seiko/chronova-087/03_lateral_profile.svg",
-        "products/seiko/chronova-087/04_sapphire_caseback.svg",
-        "products/seiko/chronova-087/05_dial_macro_10x.svg",
-        "products/seiko/chronova-087/06_bracelet_clasp.svg",
-        "products/seiko/chronova-087/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-087/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-087/09_environmental_still.svg",
-        "products/seiko/chronova-087/10_packaging_box.svg",
-        "products/seiko/chronova-087/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg/960px-2023030105_Seiko_SUR_450P1_Nightshot_%28Uhr_laeuft%29_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2023030106_Seiko_SUR_450P1_Seiko-Schriftzug_Zeiger_und_Wochentagsanzeige_2023.jpg/960px-2023030106_Seiko_SUR_450P1_Seiko-Schriftzug_Zeiger_und_Wochentagsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Aristocrat_Red_%2835551930105%29.jpg/960px-Aristocrat_Red_%2835551930105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bb-clockface.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Black_Seiko_watch_close-up_%28detail%29.jpg/960px-Black_Seiko_watch_close-up_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -9165,19 +8730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-088/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-088/01_hero_studio.svg",
-        "products/seiko/chronova-088/02_perspective_45.svg",
-        "products/seiko/chronova-088/03_lateral_profile.svg",
-        "products/seiko/chronova-088/04_sapphire_caseback.svg",
-        "products/seiko/chronova-088/05_dial_macro_10x.svg",
-        "products/seiko/chronova-088/06_bracelet_clasp.svg",
-        "products/seiko/chronova-088/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-088/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-088/09_environmental_still.svg",
-        "products/seiko/chronova-088/10_packaging_box.svg",
-        "products/seiko/chronova-088/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chronoswiss_Opus.JPG/960px-Chronoswiss_Opus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Chronoswiss_Tourbillon.JPG/960px-Chronoswiss_Tourbillon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG/960px-Chronoswiss_Zeitzeichen_V_By_Benzinger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Claude_Meylan_Skeleton_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/HMTSkeleton.jpg/960px-HMTSkeleton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png/960px-Jaeger-LeCoultre_MasterEightDaysPerpetualSquelette_%28cropped_twice%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -9270,19 +8830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-089/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-089/01_hero_studio.svg",
-        "products/seiko/chronova-089/02_perspective_45.svg",
-        "products/seiko/chronova-089/03_lateral_profile.svg",
-        "products/seiko/chronova-089/04_sapphire_caseback.svg",
-        "products/seiko/chronova-089/05_dial_macro_10x.svg",
-        "products/seiko/chronova-089/06_bracelet_clasp.svg",
-        "products/seiko/chronova-089/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-089/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-089/09_environmental_still.svg",
-        "products/seiko/chronova-089/10_packaging_box.svg",
-        "products/seiko/chronova-089/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg/960px-BEAMS_polshorloge_te_koop_in_de_winkel_te_Shinjuku%2C_-23_mei_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dive_timing_140626-N-LL043-111.jpg/960px-Dive_timing_140626-N-LL043-111.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Elix.JPG/960px-Elix.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/EU_Luxembourg_field_fatigues_%2833138986363%29.jpg/960px-EU_Luxembourg_field_fatigues_%2833138986363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kander_diver_wristwatch.jpg/960px-Kander_diver_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&auto=format&fit=crop&q=80",
@@ -9375,19 +8930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-090/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/seiko/chronova-090/01_hero_studio.svg",
-        "products/seiko/chronova-090/02_perspective_45.svg",
-        "products/seiko/chronova-090/03_lateral_profile.svg",
-        "products/seiko/chronova-090/04_sapphire_caseback.svg",
-        "products/seiko/chronova-090/05_dial_macro_10x.svg",
-        "products/seiko/chronova-090/06_bracelet_clasp.svg",
-        "products/seiko/chronova-090/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-090/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-090/09_environmental_still.svg",
-        "products/seiko/chronova-090/10_packaging_box.svg",
-        "products/seiko/chronova-090/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/1e/BellandRoss_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dive_timing_140626-N-LL043-111.jpg/960px-Dive_timing_140626-N-LL043-111.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Elix.JPG/960px-Elix.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/EU_Luxembourg_field_fatigues_%2833138986363%29.jpg/960px-EU_Luxembourg_field_fatigues_%2833138986363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Kander_diver_wristwatch.jpg/960px-Kander_diver_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/50/Luminox_Navy_Seals_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -9480,19 +9030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-091/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/seiko/chronova-091/01_hero_studio.svg",
-        "products/seiko/chronova-091/02_perspective_45.svg",
-        "products/seiko/chronova-091/03_lateral_profile.svg",
-        "products/seiko/chronova-091/04_sapphire_caseback.svg",
-        "products/seiko/chronova-091/05_dial_macro_10x.svg",
-        "products/seiko/chronova-091/06_bracelet_clasp.svg",
-        "products/seiko/chronova-091/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-091/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-091/09_environmental_still.svg",
-        "products/seiko/chronova-091/10_packaging_box.svg",
-        "products/seiko/chronova-091/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -9585,19 +9130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-092/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-092/01_hero_studio.svg",
-        "products/seiko/chronova-092/02_perspective_45.svg",
-        "products/seiko/chronova-092/03_lateral_profile.svg",
-        "products/seiko/chronova-092/04_sapphire_caseback.svg",
-        "products/seiko/chronova-092/05_dial_macro_10x.svg",
-        "products/seiko/chronova-092/06_bracelet_clasp.svg",
-        "products/seiko/chronova-092/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-092/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-092/09_environmental_still.svg",
-        "products/seiko/chronova-092/10_packaging_box.svg",
-        "products/seiko/chronova-092/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Black_Seiko_watch_close-up.jpg/960px-Black_Seiko_watch_close-up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -9690,19 +9230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-093/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/seiko/chronova-093/01_hero_studio.svg",
-        "products/seiko/chronova-093/02_perspective_45.svg",
-        "products/seiko/chronova-093/03_lateral_profile.svg",
-        "products/seiko/chronova-093/04_sapphire_caseback.svg",
-        "products/seiko/chronova-093/05_dial_macro_10x.svg",
-        "products/seiko/chronova-093/06_bracelet_clasp.svg",
-        "products/seiko/chronova-093/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-093/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-093/09_environmental_still.svg",
-        "products/seiko/chronova-093/10_packaging_box.svg",
-        "products/seiko/chronova-093/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/BwcDiafix477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -9795,19 +9330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-094/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/seiko/chronova-094/01_hero_studio.svg",
-        "products/seiko/chronova-094/02_perspective_45.svg",
-        "products/seiko/chronova-094/03_lateral_profile.svg",
-        "products/seiko/chronova-094/04_sapphire_caseback.svg",
-        "products/seiko/chronova-094/05_dial_macro_10x.svg",
-        "products/seiko/chronova-094/06_bracelet_clasp.svg",
-        "products/seiko/chronova-094/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-094/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-094/09_environmental_still.svg",
-        "products/seiko/chronova-094/10_packaging_box.svg",
-        "products/seiko/chronova-094/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/BwcMM_mvta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -9900,19 +9430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-095/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/seiko/chronova-095/01_hero_studio.svg",
-        "products/seiko/chronova-095/02_perspective_45.svg",
-        "products/seiko/chronova-095/03_lateral_profile.svg",
-        "products/seiko/chronova-095/04_sapphire_caseback.svg",
-        "products/seiko/chronova-095/05_dial_macro_10x.svg",
-        "products/seiko/chronova-095/06_bracelet_clasp.svg",
-        "products/seiko/chronova-095/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-095/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-095/09_environmental_still.svg",
-        "products/seiko/chronova-095/10_packaging_box.svg",
-        "products/seiko/chronova-095/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/84/BwcPresmatic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -10005,19 +9530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-096/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/seiko/chronova-096/01_hero_studio.svg",
-        "products/seiko/chronova-096/02_perspective_45.svg",
-        "products/seiko/chronova-096/03_lateral_profile.svg",
-        "products/seiko/chronova-096/04_sapphire_caseback.svg",
-        "products/seiko/chronova-096/05_dial_macro_10x.svg",
-        "products/seiko/chronova-096/06_bracelet_clasp.svg",
-        "products/seiko/chronova-096/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-096/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-096/09_environmental_still.svg",
-        "products/seiko/chronova-096/10_packaging_box.svg",
-        "products/seiko/chronova-096/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/BwcSeiko6309mvmnt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/d/df/BwcSeikoDiashock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -10110,19 +9630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-097/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-097/01_hero_studio.svg",
-        "products/seiko/chronova-097/02_perspective_45.svg",
-        "products/seiko/chronova-097/03_lateral_profile.svg",
-        "products/seiko/chronova-097/04_sapphire_caseback.svg",
-        "products/seiko/chronova-097/05_dial_macro_10x.svg",
-        "products/seiko/chronova-097/06_bracelet_clasp.svg",
-        "products/seiko/chronova-097/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-097/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-097/09_environmental_still.svg",
-        "products/seiko/chronova-097/10_packaging_box.svg",
-        "products/seiko/chronova-097/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/MCFobWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Melbourne_Central_clock.jpg/960px-Melbourne_Central_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Melbourne_Central_Fob_Watch_Active.JPG/960px-Melbourne_Central_Fob_Watch_Active.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Middle_part_of_dial_of_wristwatch_Seiko_Sportura.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Minute_hands_and_date_of_Seiko_chronograph_watch_%28detail%29.jpg/960px-Minute_hands_and_date_of_Seiko_chronograph_watch_%28detail%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -10215,19 +9730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/seiko/chronova-098/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/seiko/chronova-098/01_hero_studio.svg",
-        "products/seiko/chronova-098/02_perspective_45.svg",
-        "products/seiko/chronova-098/03_lateral_profile.svg",
-        "products/seiko/chronova-098/04_sapphire_caseback.svg",
-        "products/seiko/chronova-098/05_dial_macro_10x.svg",
-        "products/seiko/chronova-098/06_bracelet_clasp.svg",
-        "products/seiko/chronova-098/07_crown_buttons_detail.svg",
-        "products/seiko/chronova-098/08_wrist_lifestyle.svg",
-        "products/seiko/chronova-098/09_environmental_still.svg",
-        "products/seiko/chronova-098/10_packaging_box.svg",
-        "products/seiko/chronova-098/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chronograph_%2815101603556%29.jpg/960px-Chronograph_%2815101603556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG/960px-D-BW-Kressbronn_aB_-_alte_Festhalle_-_Uhr.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diafix2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Marygold_Clock_%40_Plaza_Senayan.jpg/960px-Marygold_Clock_%40_Plaza_Senayan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/MCFobWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Melbourne_Central_clock.jpg/960px-Melbourne_Central_clock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -10320,19 +9830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-099/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/citizen/chronova-099/01_hero_studio.svg",
-        "products/citizen/chronova-099/02_perspective_45.svg",
-        "products/citizen/chronova-099/03_lateral_profile.svg",
-        "products/citizen/chronova-099/04_sapphire_caseback.svg",
-        "products/citizen/chronova-099/05_dial_macro_10x.svg",
-        "products/citizen/chronova-099/06_bracelet_clasp.svg",
-        "products/citizen/chronova-099/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-099/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-099/09_environmental_still.svg",
-        "products/citizen/chronova-099/10_packaging_box.svg",
-        "products/citizen/chronova-099/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/2009-365-67_AT%26T_Can%27t_Tell_Time_%283340381556%29.jpg/960px-2009-365-67_AT%26T_Can%27t_Tell_Time_%283340381556%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2015-365-19_It_is_Time_to_Write_%2816323898735%29.jpg/960px-2015-365-19_It_is_Time_to_Write_%2816323898735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%40dailyshoot-_2010-05-28-_Clocks_are_omnipresent_in_modern_life._Make_a_photo_of_the_clock%2C_watch%2C_or_other_device_that_you_use_most_to_tell_time._-ds194_%284649118680%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg/960px-Citizen_%22Eco-Drive_METAL%22_solar_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=800&auto=format&fit=crop&q=80",
@@ -10425,19 +9930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-100/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/citizen/chronova-100/01_hero_studio.svg",
-        "products/citizen/chronova-100/02_perspective_45.svg",
-        "products/citizen/chronova-100/03_lateral_profile.svg",
-        "products/citizen/chronova-100/04_sapphire_caseback.svg",
-        "products/citizen/chronova-100/05_dial_macro_10x.svg",
-        "products/citizen/chronova-100/06_bracelet_clasp.svg",
-        "products/citizen/chronova-100/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-100/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-100/09_environmental_still.svg",
-        "products/citizen/chronova-100/10_packaging_box.svg",
-        "products/citizen/chronova-100/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?w=800&auto=format&fit=crop&q=80",
@@ -10530,19 +10030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-101/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-101/01_hero_studio.svg",
-        "products/citizen/chronova-101/02_perspective_45.svg",
-        "products/citizen/chronova-101/03_lateral_profile.svg",
-        "products/citizen/chronova-101/04_sapphire_caseback.svg",
-        "products/citizen/chronova-101/05_dial_macro_10x.svg",
-        "products/citizen/chronova-101/06_bracelet_clasp.svg",
-        "products/citizen/chronova-101/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-101/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-101/09_environmental_still.svg",
-        "products/citizen/chronova-101/10_packaging_box.svg",
-        "products/citizen/chronova-101/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg/960px-1970s_Advertising_for_Vintage_Electronic_LED_Watches_with_Red_Dials%2C_From_Genesis_Products_Division%2C_Genesis_Magazine_%2810537307225%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop&q=80",
@@ -10635,19 +10130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-102/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-102/01_hero_studio.svg",
-        "products/citizen/chronova-102/02_perspective_45.svg",
-        "products/citizen/chronova-102/03_lateral_profile.svg",
-        "products/citizen/chronova-102/04_sapphire_caseback.svg",
-        "products/citizen/chronova-102/05_dial_macro_10x.svg",
-        "products/citizen/chronova-102/06_bracelet_clasp.svg",
-        "products/citizen/chronova-102/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-102/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-102/09_environmental_still.svg",
-        "products/citizen/chronova-102/10_packaging_box.svg",
-        "products/citizen/chronova-102/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg/960px-2023011201_Hybridquarzuhr_Glashuette_Kaliber_04_liegend_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg/960px-2023011202_Uhrwerk_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -10740,19 +10230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-103/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg/960px-Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-103/01_hero_studio.svg",
-        "products/citizen/chronova-103/02_perspective_45.svg",
-        "products/citizen/chronova-103/03_lateral_profile.svg",
-        "products/citizen/chronova-103/04_sapphire_caseback.svg",
-        "products/citizen/chronova-103/05_dial_macro_10x.svg",
-        "products/citizen/chronova-103/06_bracelet_clasp.svg",
-        "products/citizen/chronova-103/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-103/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-103/09_environmental_still.svg",
-        "products/citizen/chronova-103/10_packaging_box.svg",
-        "products/citizen/chronova-103/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg/960px-Citizen_da_donna_al_quarzo_placcato_oro%2C_anni_80_circa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -10845,19 +10330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-104/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-104/01_hero_studio.svg",
-        "products/citizen/chronova-104/02_perspective_45.svg",
-        "products/citizen/chronova-104/03_lateral_profile.svg",
-        "products/citizen/chronova-104/04_sapphire_caseback.svg",
-        "products/citizen/chronova-104/05_dial_macro_10x.svg",
-        "products/citizen/chronova-104/06_bracelet_clasp.svg",
-        "products/citizen/chronova-104/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-104/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-104/09_environmental_still.svg",
-        "products/citizen/chronova-104/10_packaging_box.svg",
-        "products/citizen/chronova-104/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg/960px-2023011301_Zifferblatt_Glashuette_Kaliber_04_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg/960px-2023011601_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Sekundenanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg/960px-2023011602_Zifferblatt_Glashuette_Kaliber_04_neues_Armband_Datumsanzeige_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&auto=format&fit=crop&q=80",
@@ -10950,19 +10430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-105/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-105/01_hero_studio.svg",
-        "products/citizen/chronova-105/02_perspective_45.svg",
-        "products/citizen/chronova-105/03_lateral_profile.svg",
-        "products/citizen/chronova-105/04_sapphire_caseback.svg",
-        "products/citizen/chronova-105/05_dial_macro_10x.svg",
-        "products/citizen/chronova-105/06_bracelet_clasp.svg",
-        "products/citizen/chronova-105/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-105/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-105/09_environmental_still.svg",
-        "products/citizen/chronova-105/10_packaging_box.svg",
-        "products/citizen/chronova-105/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -11055,19 +10530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-106/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-106/01_hero_studio.svg",
-        "products/citizen/chronova-106/02_perspective_45.svg",
-        "products/citizen/chronova-106/03_lateral_profile.svg",
-        "products/citizen/chronova-106/04_sapphire_caseback.svg",
-        "products/citizen/chronova-106/05_dial_macro_10x.svg",
-        "products/citizen/chronova-106/06_bracelet_clasp.svg",
-        "products/citizen/chronova-106/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-106/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-106/09_environmental_still.svg",
-        "products/citizen/chronova-106/10_packaging_box.svg",
-        "products/citizen/chronova-106/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_watch_21_jewels.jpg/960px-Citizen_watch_21_jewels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/JayanCitizenWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Movimento_Citizen_6501.jpg/960px-Movimento_Citizen_6501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&auto=format&fit=crop&q=80",
@@ -11160,19 +10630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-107/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/citizen/chronova-107/01_hero_studio.svg",
-        "products/citizen/chronova-107/02_perspective_45.svg",
-        "products/citizen/chronova-107/03_lateral_profile.svg",
-        "products/citizen/chronova-107/04_sapphire_caseback.svg",
-        "products/citizen/chronova-107/05_dial_macro_10x.svg",
-        "products/citizen/chronova-107/06_bracelet_clasp.svg",
-        "products/citizen/chronova-107/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-107/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-107/09_environmental_still.svg",
-        "products/citizen/chronova-107/10_packaging_box.svg",
-        "products/citizen/chronova-107/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/6SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/b/b9/AdvertisementSynchronar2100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Aerowatch-chronograph-quartz-1942.jpg/960px-Aerowatch-chronograph-quartz-1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800&auto=format&fit=crop&q=80",
@@ -11265,19 +10730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-108/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/citizen/chronova-108/01_hero_studio.svg",
-        "products/citizen/chronova-108/02_perspective_45.svg",
-        "products/citizen/chronova-108/03_lateral_profile.svg",
-        "products/citizen/chronova-108/04_sapphire_caseback.svg",
-        "products/citizen/chronova-108/05_dial_macro_10x.svg",
-        "products/citizen/chronova-108/06_bracelet_clasp.svg",
-        "products/citizen/chronova-108/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-108/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-108/09_environmental_still.svg",
-        "products/citizen/chronova-108/10_packaging_box.svg",
-        "products/citizen/chronova-108/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/Citizen_Eco-Drive%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Citizen_Eco-Drive.jpg/960px-Citizen_Eco-Drive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Citizen_GN-4-S_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/3/34/Citizen_gn4ws.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&auto=format&fit=crop&q=80",
@@ -11370,19 +10830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-109/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-109/01_hero_studio.svg",
-        "products/citizen/chronova-109/02_perspective_45.svg",
-        "products/citizen/chronova-109/03_lateral_profile.svg",
-        "products/citizen/chronova-109/04_sapphire_caseback.svg",
-        "products/citizen/chronova-109/05_dial_macro_10x.svg",
-        "products/citizen/chronova-109/06_bracelet_clasp.svg",
-        "products/citizen/chronova-109/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-109/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-109/09_environmental_still.svg",
-        "products/citizen/chronova-109/10_packaging_box.svg",
-        "products/citizen/chronova-109/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/JayanCitizenWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Movimento_Citizen_6501.jpg/960px-Movimento_Citizen_6501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Reloj_de_Evangelion_%2851136106192%29.jpg/960px-Reloj_de_Evangelion_%2851136106192%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Three_quartz_wristwatches_-_Kalbor%2C_Citizen%2C_and_Global_Fashion.jpg/960px-Three_quartz_wristwatches_-_Kalbor%2C_Citizen%2C_and_Global_Fashion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Time_%283366371485%29.jpg/960px-Time_%283366371485%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=800&auto=format&fit=crop&q=80",
@@ -11475,19 +10930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-110/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-110/01_hero_studio.svg",
-        "products/citizen/chronova-110/02_perspective_45.svg",
-        "products/citizen/chronova-110/03_lateral_profile.svg",
-        "products/citizen/chronova-110/04_sapphire_caseback.svg",
-        "products/citizen/chronova-110/05_dial_macro_10x.svg",
-        "products/citizen/chronova-110/06_bracelet_clasp.svg",
-        "products/citizen/chronova-110/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-110/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-110/09_environmental_still.svg",
-        "products/citizen/chronova-110/10_packaging_box.svg",
-        "products/citizen/chronova-110/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Aivike-klocka.jpg/960px-Aivike-klocka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/fd/Analog_watch_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Anti_clock_watch_with_arabic_numbers.JPG/960px-Anti_clock_watch_with_arabic_numbers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/ANTI_M.No.-2SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Anticlock_watch_M.No-7SSA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Anticlockwatch_M.No.-1SCA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&auto=format&fit=crop&q=80",
@@ -11580,19 +11030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-111/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-111/01_hero_studio.svg",
-        "products/citizen/chronova-111/02_perspective_45.svg",
-        "products/citizen/chronova-111/03_lateral_profile.svg",
-        "products/citizen/chronova-111/04_sapphire_caseback.svg",
-        "products/citizen/chronova-111/05_dial_macro_10x.svg",
-        "products/citizen/chronova-111/06_bracelet_clasp.svg",
-        "products/citizen/chronova-111/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-111/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-111/09_environmental_still.svg",
-        "products/citizen/chronova-111/10_packaging_box.svg",
-        "products/citizen/chronova-111/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_watch_21_jewels.jpg/960px-Citizen_watch_21_jewels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/JayanCitizenWatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Movimento_Citizen_6501.jpg/960px-Movimento_Citizen_6501.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Reloj_de_Evangelion_%2851136106192%29.jpg/960px-Reloj_de_Evangelion_%2851136106192%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -11685,19 +11130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/citizen/chronova-112/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/citizen/chronova-112/01_hero_studio.svg",
-        "products/citizen/chronova-112/02_perspective_45.svg",
-        "products/citizen/chronova-112/03_lateral_profile.svg",
-        "products/citizen/chronova-112/04_sapphire_caseback.svg",
-        "products/citizen/chronova-112/05_dial_macro_10x.svg",
-        "products/citizen/chronova-112/06_bracelet_clasp.svg",
-        "products/citizen/chronova-112/07_crown_buttons_detail.svg",
-        "products/citizen/chronova-112/08_wrist_lifestyle.svg",
-        "products/citizen/chronova-112/09_environmental_still.svg",
-        "products/citizen/chronova-112/10_packaging_box.svg",
-        "products/citizen/chronova-112/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Citizen_hisonic_tuning_fork.jpg/960px-Citizen_hisonic_tuning_fork.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg/960px-Citizen_Pilot_Eco-Drive_con_cassa_e_bracciale_in_titanio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg/960px-Citizen_Promaster_automatico_con_quadrante_completamente_luminescente.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Citizen_timepiece.jpg/960px-Citizen_timepiece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Citizen_watch_21_jewels.jpg/960px-Citizen_watch_21_jewels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Citizen_wristwatch.jpg/960px-Citizen_wristwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop&q=80",
@@ -11790,19 +11230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-113/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-113/01_hero_studio.svg",
-        "products/chronova-signature/chronova-113/02_perspective_45.svg",
-        "products/chronova-signature/chronova-113/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-113/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-113/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-113/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-113/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-113/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-113/09_environmental_still.svg",
-        "products/chronova-signature/chronova-113/10_packaging_box.svg",
-        "products/chronova-signature/chronova-113/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -11895,19 +11330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-114/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-114/01_hero_studio.svg",
-        "products/chronova-signature/chronova-114/02_perspective_45.svg",
-        "products/chronova-signature/chronova-114/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-114/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-114/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-114/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-114/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-114/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-114/09_environmental_still.svg",
-        "products/chronova-signature/chronova-114/10_packaging_box.svg",
-        "products/chronova-signature/chronova-114/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -12000,19 +11430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-115/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-115/01_hero_studio.svg",
-        "products/chronova-signature/chronova-115/02_perspective_45.svg",
-        "products/chronova-signature/chronova-115/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-115/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-115/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-115/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-115/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-115/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-115/09_environmental_still.svg",
-        "products/chronova-signature/chronova-115/10_packaging_box.svg",
-        "products/chronova-signature/chronova-115/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -12105,19 +11530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-116/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-116/01_hero_studio.svg",
-        "products/chronova-signature/chronova-116/02_perspective_45.svg",
-        "products/chronova-signature/chronova-116/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-116/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-116/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-116/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-116/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-116/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-116/09_environmental_still.svg",
-        "products/chronova-signature/chronova-116/10_packaging_box.svg",
-        "products/chronova-signature/chronova-116/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -12210,19 +11630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-117/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-117/01_hero_studio.svg",
-        "products/chronova-signature/chronova-117/02_perspective_45.svg",
-        "products/chronova-signature/chronova-117/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-117/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-117/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-117/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-117/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-117/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-117/09_environmental_still.svg",
-        "products/chronova-signature/chronova-117/10_packaging_box.svg",
-        "products/chronova-signature/chronova-117/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -12315,19 +11730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-118/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/chronova-signature/chronova-118/01_hero_studio.svg",
-        "products/chronova-signature/chronova-118/02_perspective_45.svg",
-        "products/chronova-signature/chronova-118/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-118/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-118/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-118/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-118/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-118/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-118/09_environmental_still.svg",
-        "products/chronova-signature/chronova-118/10_packaging_box.svg",
-        "products/chronova-signature/chronova-118/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -12420,19 +11830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-119/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/chronova-signature/chronova-119/01_hero_studio.svg",
-        "products/chronova-signature/chronova-119/02_perspective_45.svg",
-        "products/chronova-signature/chronova-119/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-119/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-119/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-119/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-119/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-119/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-119/09_environmental_still.svg",
-        "products/chronova-signature/chronova-119/10_packaging_box.svg",
-        "products/chronova-signature/chronova-119/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -12525,19 +11930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-120/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/chronova-signature/chronova-120/01_hero_studio.svg",
-        "products/chronova-signature/chronova-120/02_perspective_45.svg",
-        "products/chronova-signature/chronova-120/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-120/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-120/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-120/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-120/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-120/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-120/09_environmental_still.svg",
-        "products/chronova-signature/chronova-120/10_packaging_box.svg",
-        "products/chronova-signature/chronova-120/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -12630,19 +12030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-121/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-121/01_hero_studio.svg",
-        "products/chronova-signature/chronova-121/02_perspective_45.svg",
-        "products/chronova-signature/chronova-121/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-121/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-121/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-121/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-121/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-121/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-121/09_environmental_still.svg",
-        "products/chronova-signature/chronova-121/10_packaging_box.svg",
-        "products/chronova-signature/chronova-121/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -12735,19 +12130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-122/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-122/01_hero_studio.svg",
-        "products/chronova-signature/chronova-122/02_perspective_45.svg",
-        "products/chronova-signature/chronova-122/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-122/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-122/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-122/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-122/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-122/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-122/09_environmental_still.svg",
-        "products/chronova-signature/chronova-122/10_packaging_box.svg",
-        "products/chronova-signature/chronova-122/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -12840,19 +12230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-123/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-123/01_hero_studio.svg",
-        "products/chronova-signature/chronova-123/02_perspective_45.svg",
-        "products/chronova-signature/chronova-123/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-123/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-123/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-123/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-123/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-123/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-123/09_environmental_still.svg",
-        "products/chronova-signature/chronova-123/10_packaging_box.svg",
-        "products/chronova-signature/chronova-123/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -12945,19 +12330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-124/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-124/01_hero_studio.svg",
-        "products/chronova-signature/chronova-124/02_perspective_45.svg",
-        "products/chronova-signature/chronova-124/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-124/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-124/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-124/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-124/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-124/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-124/09_environmental_still.svg",
-        "products/chronova-signature/chronova-124/10_packaging_box.svg",
-        "products/chronova-signature/chronova-124/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -13050,19 +12430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-125/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-125/01_hero_studio.svg",
-        "products/chronova-signature/chronova-125/02_perspective_45.svg",
-        "products/chronova-signature/chronova-125/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-125/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-125/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-125/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-125/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-125/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-125/09_environmental_still.svg",
-        "products/chronova-signature/chronova-125/10_packaging_box.svg",
-        "products/chronova-signature/chronova-125/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -13155,19 +12530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-126/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-126/01_hero_studio.svg",
-        "products/chronova-signature/chronova-126/02_perspective_45.svg",
-        "products/chronova-signature/chronova-126/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-126/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-126/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-126/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-126/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-126/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-126/09_environmental_still.svg",
-        "products/chronova-signature/chronova-126/10_packaging_box.svg",
-        "products/chronova-signature/chronova-126/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -13260,19 +12630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-127/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/chronova-signature/chronova-127/01_hero_studio.svg",
-        "products/chronova-signature/chronova-127/02_perspective_45.svg",
-        "products/chronova-signature/chronova-127/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-127/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-127/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-127/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-127/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-127/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-127/09_environmental_still.svg",
-        "products/chronova-signature/chronova-127/10_packaging_box.svg",
-        "products/chronova-signature/chronova-127/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/5/53/000_0387_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800&auto=format&fit=crop&q=80",
@@ -13365,19 +12730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-128/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/chronova-signature/chronova-128/01_hero_studio.svg",
-        "products/chronova-signature/chronova-128/02_perspective_45.svg",
-        "products/chronova-signature/chronova-128/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-128/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-128/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-128/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-128/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-128/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-128/09_environmental_still.svg",
-        "products/chronova-signature/chronova-128/10_packaging_box.svg",
-        "products/chronova-signature/chronova-128/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg/960px-2018-08-28_13-33-04_-_%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D1%87%D0%B0%D1%81%D1%8B_%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%91%D1%82%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800&auto=format&fit=crop&q=80",
@@ -13470,19 +12830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-129/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/chronova-signature/chronova-129/01_hero_studio.svg",
-        "products/chronova-signature/chronova-129/02_perspective_45.svg",
-        "products/chronova-signature/chronova-129/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-129/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-129/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-129/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-129/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-129/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-129/09_environmental_still.svg",
-        "products/chronova-signature/chronova-129/10_packaging_box.svg",
-        "products/chronova-signature/chronova-129/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg/960px-Stoppuhr-Made-in-USSR-der-1970er-u-80er-Jahre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80",
@@ -13575,19 +12930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/chronova-signature/chronova-130/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/chronova-signature/chronova-130/01_hero_studio.svg",
-        "products/chronova-signature/chronova-130/02_perspective_45.svg",
-        "products/chronova-signature/chronova-130/03_lateral_profile.svg",
-        "products/chronova-signature/chronova-130/04_sapphire_caseback.svg",
-        "products/chronova-signature/chronova-130/05_dial_macro_10x.svg",
-        "products/chronova-signature/chronova-130/06_bracelet_clasp.svg",
-        "products/chronova-signature/chronova-130/07_crown_buttons_detail.svg",
-        "products/chronova-signature/chronova-130/08_wrist_lifestyle.svg",
-        "products/chronova-signature/chronova-130/09_environmental_still.svg",
-        "products/chronova-signature/chronova-130/10_packaging_box.svg",
-        "products/chronova-signature/chronova-130/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=80",
@@ -13680,19 +13030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-131/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-131/01_hero_studio.svg",
-        "products/garmin/chronova-131/02_perspective_45.svg",
-        "products/garmin/chronova-131/03_lateral_profile.svg",
-        "products/garmin/chronova-131/04_sapphire_caseback.svg",
-        "products/garmin/chronova-131/05_dial_macro_10x.svg",
-        "products/garmin/chronova-131/06_bracelet_clasp.svg",
-        "products/garmin/chronova-131/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-131/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-131/09_environmental_still.svg",
-        "products/garmin/chronova-131/10_packaging_box.svg",
-        "products/garmin/chronova-131/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816656098547%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -13785,19 +13130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-132/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-132/01_hero_studio.svg",
-        "products/garmin/chronova-132/02_perspective_45.svg",
-        "products/garmin/chronova-132/03_lateral_profile.svg",
-        "products/garmin/chronova-132/04_sapphire_caseback.svg",
-        "products/garmin/chronova-132/05_dial_macro_10x.svg",
-        "products/garmin/chronova-132/06_bracelet_clasp.svg",
-        "products/garmin/chronova-132/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-132/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-132/09_environmental_still.svg",
-        "products/garmin/chronova-132/10_packaging_box.svg",
-        "products/garmin/chronova-132/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -13890,19 +13230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-133/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-133/01_hero_studio.svg",
-        "products/garmin/chronova-133/02_perspective_45.svg",
-        "products/garmin/chronova-133/03_lateral_profile.svg",
-        "products/garmin/chronova-133/04_sapphire_caseback.svg",
-        "products/garmin/chronova-133/05_dial_macro_10x.svg",
-        "products/garmin/chronova-133/06_bracelet_clasp.svg",
-        "products/garmin/chronova-133/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-133/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-133/09_environmental_still.svg",
-        "products/garmin/chronova-133/10_packaging_box.svg",
-        "products/garmin/chronova-133/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -13995,19 +13330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-134/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-134/01_hero_studio.svg",
-        "products/garmin/chronova-134/02_perspective_45.svg",
-        "products/garmin/chronova-134/03_lateral_profile.svg",
-        "products/garmin/chronova-134/04_sapphire_caseback.svg",
-        "products/garmin/chronova-134/05_dial_macro_10x.svg",
-        "products/garmin/chronova-134/06_bracelet_clasp.svg",
-        "products/garmin/chronova-134/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-134/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-134/09_environmental_still.svg",
-        "products/garmin/chronova-134/10_packaging_box.svg",
-        "products/garmin/chronova-134/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -14100,19 +13430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-135/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-135/01_hero_studio.svg",
-        "products/garmin/chronova-135/02_perspective_45.svg",
-        "products/garmin/chronova-135/03_lateral_profile.svg",
-        "products/garmin/chronova-135/04_sapphire_caseback.svg",
-        "products/garmin/chronova-135/05_dial_macro_10x.svg",
-        "products/garmin/chronova-135/06_bracelet_clasp.svg",
-        "products/garmin/chronova-135/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-135/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-135/09_environmental_still.svg",
-        "products/garmin/chronova-135/10_packaging_box.svg",
-        "products/garmin/chronova-135/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -14205,19 +13530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-136/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/garmin/chronova-136/01_hero_studio.svg",
-        "products/garmin/chronova-136/02_perspective_45.svg",
-        "products/garmin/chronova-136/03_lateral_profile.svg",
-        "products/garmin/chronova-136/04_sapphire_caseback.svg",
-        "products/garmin/chronova-136/05_dial_macro_10x.svg",
-        "products/garmin/chronova-136/06_bracelet_clasp.svg",
-        "products/garmin/chronova-136/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-136/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-136/09_environmental_still.svg",
-        "products/garmin/chronova-136/10_packaging_box.svg",
-        "products/garmin/chronova-136/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -14310,19 +13630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-137/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-137/01_hero_studio.svg",
-        "products/garmin/chronova-137/02_perspective_45.svg",
-        "products/garmin/chronova-137/03_lateral_profile.svg",
-        "products/garmin/chronova-137/04_sapphire_caseback.svg",
-        "products/garmin/chronova-137/05_dial_macro_10x.svg",
-        "products/garmin/chronova-137/06_bracelet_clasp.svg",
-        "products/garmin/chronova-137/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-137/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-137/09_environmental_still.svg",
-        "products/garmin/chronova-137/10_packaging_box.svg",
-        "products/garmin/chronova-137/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -14415,19 +13730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-138/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-138/01_hero_studio.svg",
-        "products/garmin/chronova-138/02_perspective_45.svg",
-        "products/garmin/chronova-138/03_lateral_profile.svg",
-        "products/garmin/chronova-138/04_sapphire_caseback.svg",
-        "products/garmin/chronova-138/05_dial_macro_10x.svg",
-        "products/garmin/chronova-138/06_bracelet_clasp.svg",
-        "products/garmin/chronova-138/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-138/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-138/09_environmental_still.svg",
-        "products/garmin/chronova-138/10_packaging_box.svg",
-        "products/garmin/chronova-138/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -14520,19 +13830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-139/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-139/01_hero_studio.svg",
-        "products/garmin/chronova-139/02_perspective_45.svg",
-        "products/garmin/chronova-139/03_lateral_profile.svg",
-        "products/garmin/chronova-139/04_sapphire_caseback.svg",
-        "products/garmin/chronova-139/05_dial_macro_10x.svg",
-        "products/garmin/chronova-139/06_bracelet_clasp.svg",
-        "products/garmin/chronova-139/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-139/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-139/09_environmental_still.svg",
-        "products/garmin/chronova-139/10_packaging_box.svg",
-        "products/garmin/chronova-139/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -14625,19 +13930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/garmin/chronova-140/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/garmin/chronova-140/01_hero_studio.svg",
-        "products/garmin/chronova-140/02_perspective_45.svg",
-        "products/garmin/chronova-140/03_lateral_profile.svg",
-        "products/garmin/chronova-140/04_sapphire_caseback.svg",
-        "products/garmin/chronova-140/05_dial_macro_10x.svg",
-        "products/garmin/chronova-140/06_bracelet_clasp.svg",
-        "products/garmin/chronova-140/07_crown_buttons_detail.svg",
-        "products/garmin/chronova-140/08_wrist_lifestyle.svg",
-        "products/garmin/chronova-140/09_environmental_still.svg",
-        "products/garmin/chronova-140/10_packaging_box.svg",
-        "products/garmin/chronova-140/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -14730,19 +14030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-141/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-141/01_hero_studio.svg",
-        "products/amazfit/chronova-141/02_perspective_45.svg",
-        "products/amazfit/chronova-141/03_lateral_profile.svg",
-        "products/amazfit/chronova-141/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-141/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-141/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-141/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-141/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-141/09_environmental_still.svg",
-        "products/amazfit/chronova-141/10_packaging_box.svg",
-        "products/amazfit/chronova-141/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -14835,19 +14130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-142/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-142/01_hero_studio.svg",
-        "products/amazfit/chronova-142/02_perspective_45.svg",
-        "products/amazfit/chronova-142/03_lateral_profile.svg",
-        "products/amazfit/chronova-142/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-142/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-142/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-142/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-142/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-142/09_environmental_still.svg",
-        "products/amazfit/chronova-142/10_packaging_box.svg",
-        "products/amazfit/chronova-142/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -14940,19 +14230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-143/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-143/01_hero_studio.svg",
-        "products/amazfit/chronova-143/02_perspective_45.svg",
-        "products/amazfit/chronova-143/03_lateral_profile.svg",
-        "products/amazfit/chronova-143/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-143/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-143/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-143/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-143/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-143/09_environmental_still.svg",
-        "products/amazfit/chronova-143/10_packaging_box.svg",
-        "products/amazfit/chronova-143/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -15045,19 +14330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-144/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/amazfit/chronova-144/01_hero_studio.svg",
-        "products/amazfit/chronova-144/02_perspective_45.svg",
-        "products/amazfit/chronova-144/03_lateral_profile.svg",
-        "products/amazfit/chronova-144/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-144/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-144/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-144/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-144/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-144/09_environmental_still.svg",
-        "products/amazfit/chronova-144/10_packaging_box.svg",
-        "products/amazfit/chronova-144/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -15150,19 +14430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-145/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-145/01_hero_studio.svg",
-        "products/amazfit/chronova-145/02_perspective_45.svg",
-        "products/amazfit/chronova-145/03_lateral_profile.svg",
-        "products/amazfit/chronova-145/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-145/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-145/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-145/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-145/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-145/09_environmental_still.svg",
-        "products/amazfit/chronova-145/10_packaging_box.svg",
-        "products/amazfit/chronova-145/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -15255,19 +14530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-146/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-146/01_hero_studio.svg",
-        "products/amazfit/chronova-146/02_perspective_45.svg",
-        "products/amazfit/chronova-146/03_lateral_profile.svg",
-        "products/amazfit/chronova-146/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-146/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-146/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-146/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-146/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-146/09_environmental_still.svg",
-        "products/amazfit/chronova-146/10_packaging_box.svg",
-        "products/amazfit/chronova-146/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -15360,19 +14630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-147/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-147/01_hero_studio.svg",
-        "products/amazfit/chronova-147/02_perspective_45.svg",
-        "products/amazfit/chronova-147/03_lateral_profile.svg",
-        "products/amazfit/chronova-147/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-147/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-147/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-147/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-147/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-147/09_environmental_still.svg",
-        "products/amazfit/chronova-147/10_packaging_box.svg",
-        "products/amazfit/chronova-147/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Garmin_Fenix_6x_Pro_Solar.jpg/960px-Garmin_Fenix_6x_Pro_Solar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -15465,19 +14730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-148/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-148/01_hero_studio.svg",
-        "products/amazfit/chronova-148/02_perspective_45.svg",
-        "products/amazfit/chronova-148/03_lateral_profile.svg",
-        "products/amazfit/chronova-148/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-148/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-148/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-148/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-148/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-148/09_environmental_still.svg",
-        "products/amazfit/chronova-148/10_packaging_box.svg",
-        "products/amazfit/chronova-148/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Garmin_Forerunner_55.jpg/960px-Garmin_Forerunner_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -15570,19 +14830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-149/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/amazfit/chronova-149/01_hero_studio.svg",
-        "products/amazfit/chronova-149/02_perspective_45.svg",
-        "products/amazfit/chronova-149/03_lateral_profile.svg",
-        "products/amazfit/chronova-149/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-149/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-149/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-149/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-149/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-149/09_environmental_still.svg",
-        "products/amazfit/chronova-149/10_packaging_box.svg",
-        "products/amazfit/chronova-149/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/2/27/GoGPS_K25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -15675,19 +14930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/amazfit/chronova-150/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/amazfit/chronova-150/01_hero_studio.svg",
-        "products/amazfit/chronova-150/02_perspective_45.svg",
-        "products/amazfit/chronova-150/03_lateral_profile.svg",
-        "products/amazfit/chronova-150/04_sapphire_caseback.svg",
-        "products/amazfit/chronova-150/05_dial_macro_10x.svg",
-        "products/amazfit/chronova-150/06_bracelet_clasp.svg",
-        "products/amazfit/chronova-150/07_crown_buttons_detail.svg",
-        "products/amazfit/chronova-150/08_wrist_lifestyle.svg",
-        "products/amazfit/chronova-150/09_environmental_still.svg",
-        "products/amazfit/chronova-150/10_packaging_box.svg",
-        "products/amazfit/chronova-150/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Google_Pixel_Watch_-_1_%28cropped%29.jpg/960px-Google_Pixel_Watch_-_1_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -15780,19 +15030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-151/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-151/01_hero_studio.svg",
-        "products/noise/chronova-151/02_perspective_45.svg",
-        "products/noise/chronova-151/03_lateral_profile.svg",
-        "products/noise/chronova-151/04_sapphire_caseback.svg",
-        "products/noise/chronova-151/05_dial_macro_10x.svg",
-        "products/noise/chronova-151/06_bracelet_clasp.svg",
-        "products/noise/chronova-151/07_crown_buttons_detail.svg",
-        "products/noise/chronova-151/08_wrist_lifestyle.svg",
-        "products/noise/chronova-151/09_environmental_still.svg",
-        "products/noise/chronova-151/10_packaging_box.svg",
-        "products/noise/chronova-151/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Google_Pixel_Watch_-_1.jpg/960px-Google_Pixel_Watch_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -15885,19 +15130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-152/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-152/01_hero_studio.svg",
-        "products/noise/chronova-152/02_perspective_45.svg",
-        "products/noise/chronova-152/03_lateral_profile.svg",
-        "products/noise/chronova-152/04_sapphire_caseback.svg",
-        "products/noise/chronova-152/05_dial_macro_10x.svg",
-        "products/noise/chronova-152/06_bracelet_clasp.svg",
-        "products/noise/chronova-152/07_crown_buttons_detail.svg",
-        "products/noise/chronova-152/08_wrist_lifestyle.svg",
-        "products/noise/chronova-152/09_environmental_still.svg",
-        "products/noise/chronova-152/10_packaging_box.svg",
-        "products/noise/chronova-152/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Google_Pixel_Watch_-_2.jpg/960px-Google_Pixel_Watch_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -15990,19 +15230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-153/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-153/01_hero_studio.svg",
-        "products/noise/chronova-153/02_perspective_45.svg",
-        "products/noise/chronova-153/03_lateral_profile.svg",
-        "products/noise/chronova-153/04_sapphire_caseback.svg",
-        "products/noise/chronova-153/05_dial_macro_10x.svg",
-        "products/noise/chronova-153/06_bracelet_clasp.svg",
-        "products/noise/chronova-153/07_crown_buttons_detail.svg",
-        "products/noise/chronova-153/08_wrist_lifestyle.svg",
-        "products/noise/chronova-153/09_environmental_still.svg",
-        "products/noise/chronova-153/10_packaging_box.svg",
-        "products/noise/chronova-153/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg/960px-HK_SKD_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_%E5%9D%91%E5%8F%A3_Hang_Hau_%E6%9D%B1%E6%B8%AF%E5%9F%8E_East_Point_City_mall_shop_%E5%B0%8F%E7%B1%B3_Xiaomi_electronic_products_June_2021_SS2_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -16095,19 +15330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-154/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-154/01_hero_studio.svg",
-        "products/noise/chronova-154/02_perspective_45.svg",
-        "products/noise/chronova-154/03_lateral_profile.svg",
-        "products/noise/chronova-154/04_sapphire_caseback.svg",
-        "products/noise/chronova-154/05_dial_macro_10x.svg",
-        "products/noise/chronova-154/06_bracelet_clasp.svg",
-        "products/noise/chronova-154/07_crown_buttons_detail.svg",
-        "products/noise/chronova-154/08_wrist_lifestyle.svg",
-        "products/noise/chronova-154/09_environmental_still.svg",
-        "products/noise/chronova-154/10_packaging_box.svg",
-        "products/noise/chronova-154/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/HOT_Watch_Directional_speaker_and_microphone_module.jpg/960px-HOT_Watch_Directional_speaker_and_microphone_module.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -16200,19 +15430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-155/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-155/01_hero_studio.svg",
-        "products/noise/chronova-155/02_perspective_45.svg",
-        "products/noise/chronova-155/03_lateral_profile.svg",
-        "products/noise/chronova-155/04_sapphire_caseback.svg",
-        "products/noise/chronova-155/05_dial_macro_10x.svg",
-        "products/noise/chronova-155/06_bracelet_clasp.svg",
-        "products/noise/chronova-155/07_crown_buttons_detail.svg",
-        "products/noise/chronova-155/08_wrist_lifestyle.svg",
-        "products/noise/chronova-155/09_environmental_still.svg",
-        "products/noise/chronova-155/10_packaging_box.svg",
-        "products/noise/chronova-155/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG/960px-HOT_Watch_Smart_Watch_from_Kickstarter_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -16305,19 +15530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-156/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-156/01_hero_studio.svg",
-        "products/noise/chronova-156/02_perspective_45.svg",
-        "products/noise/chronova-156/03_lateral_profile.svg",
-        "products/noise/chronova-156/04_sapphire_caseback.svg",
-        "products/noise/chronova-156/05_dial_macro_10x.svg",
-        "products/noise/chronova-156/06_bracelet_clasp.svg",
-        "products/noise/chronova-156/07_crown_buttons_detail.svg",
-        "products/noise/chronova-156/08_wrist_lifestyle.svg",
-        "products/noise/chronova-156/09_environmental_still.svg",
-        "products/noise/chronova-156/10_packaging_box.svg",
-        "products/noise/chronova-156/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/AMOLED_Screen_Smart_Watch.jpg/960px-AMOLED_Screen_Smart_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -16410,19 +15630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-157/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-157/01_hero_studio.svg",
-        "products/noise/chronova-157/02_perspective_45.svg",
-        "products/noise/chronova-157/03_lateral_profile.svg",
-        "products/noise/chronova-157/04_sapphire_caseback.svg",
-        "products/noise/chronova-157/05_dial_macro_10x.svg",
-        "products/noise/chronova-157/06_bracelet_clasp.svg",
-        "products/noise/chronova-157/07_crown_buttons_detail.svg",
-        "products/noise/chronova-157/08_wrist_lifestyle.svg",
-        "products/noise/chronova-157/09_environmental_still.svg",
-        "products/noise/chronova-157/10_packaging_box.svg",
-        "products/noise/chronova-157/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Huawei_Smartwatch_%28Band_4%29.jpg/960px-Huawei_Smartwatch_%28Band_4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -16515,19 +15730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-158/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-158/01_hero_studio.svg",
-        "products/noise/chronova-158/02_perspective_45.svg",
-        "products/noise/chronova-158/03_lateral_profile.svg",
-        "products/noise/chronova-158/04_sapphire_caseback.svg",
-        "products/noise/chronova-158/05_dial_macro_10x.svg",
-        "products/noise/chronova-158/06_bracelet_clasp.svg",
-        "products/noise/chronova-158/07_crown_buttons_detail.svg",
-        "products/noise/chronova-158/08_wrist_lifestyle.svg",
-        "products/noise/chronova-158/09_environmental_still.svg",
-        "products/noise/chronova-158/10_packaging_box.svg",
-        "products/noise/chronova-158/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -16620,19 +15830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-159/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-159/01_hero_studio.svg",
-        "products/noise/chronova-159/02_perspective_45.svg",
-        "products/noise/chronova-159/03_lateral_profile.svg",
-        "products/noise/chronova-159/04_sapphire_caseback.svg",
-        "products/noise/chronova-159/05_dial_macro_10x.svg",
-        "products/noise/chronova-159/06_bracelet_clasp.svg",
-        "products/noise/chronova-159/07_crown_buttons_detail.svg",
-        "products/noise/chronova-159/08_wrist_lifestyle.svg",
-        "products/noise/chronova-159/09_environmental_still.svg",
-        "products/noise/chronova-159/10_packaging_box.svg",
-        "products/noise/chronova-159/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -16725,19 +15930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/noise/chronova-160/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/noise/chronova-160/01_hero_studio.svg",
-        "products/noise/chronova-160/02_perspective_45.svg",
-        "products/noise/chronova-160/03_lateral_profile.svg",
-        "products/noise/chronova-160/04_sapphire_caseback.svg",
-        "products/noise/chronova-160/05_dial_macro_10x.svg",
-        "products/noise/chronova-160/06_bracelet_clasp.svg",
-        "products/noise/chronova-160/07_crown_buttons_detail.svg",
-        "products/noise/chronova-160/08_wrist_lifestyle.svg",
-        "products/noise/chronova-160/09_environmental_still.svg",
-        "products/noise/chronova-160/10_packaging_box.svg",
-        "products/noise/chronova-160/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -16830,19 +16030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-161/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/boat/chronova-161/01_hero_studio.svg",
-        "products/boat/chronova-161/02_perspective_45.svg",
-        "products/boat/chronova-161/03_lateral_profile.svg",
-        "products/boat/chronova-161/04_sapphire_caseback.svg",
-        "products/boat/chronova-161/05_dial_macro_10x.svg",
-        "products/boat/chronova-161/06_bracelet_clasp.svg",
-        "products/boat/chronova-161/07_crown_buttons_detail.svg",
-        "products/boat/chronova-161/08_wrist_lifestyle.svg",
-        "products/boat/chronova-161/09_environmental_still.svg",
-        "products/boat/chronova-161/10_packaging_box.svg",
-        "products/boat/chronova-161/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -16935,19 +16130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-162/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/boat/chronova-162/01_hero_studio.svg",
-        "products/boat/chronova-162/02_perspective_45.svg",
-        "products/boat/chronova-162/03_lateral_profile.svg",
-        "products/boat/chronova-162/04_sapphire_caseback.svg",
-        "products/boat/chronova-162/05_dial_macro_10x.svg",
-        "products/boat/chronova-162/06_bracelet_clasp.svg",
-        "products/boat/chronova-162/07_crown_buttons_detail.svg",
-        "products/boat/chronova-162/08_wrist_lifestyle.svg",
-        "products/boat/chronova-162/09_environmental_still.svg",
-        "products/boat/chronova-162/10_packaging_box.svg",
-        "products/boat/chronova-162/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -17040,19 +16230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-163/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/boat/chronova-163/01_hero_studio.svg",
-        "products/boat/chronova-163/02_perspective_45.svg",
-        "products/boat/chronova-163/03_lateral_profile.svg",
-        "products/boat/chronova-163/04_sapphire_caseback.svg",
-        "products/boat/chronova-163/05_dial_macro_10x.svg",
-        "products/boat/chronova-163/06_bracelet_clasp.svg",
-        "products/boat/chronova-163/07_crown_buttons_detail.svg",
-        "products/boat/chronova-163/08_wrist_lifestyle.svg",
-        "products/boat/chronova-163/09_environmental_still.svg",
-        "products/boat/chronova-163/10_packaging_box.svg",
-        "products/boat/chronova-163/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -17145,19 +16330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-164/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/boat/chronova-164/01_hero_studio.svg",
-        "products/boat/chronova-164/02_perspective_45.svg",
-        "products/boat/chronova-164/03_lateral_profile.svg",
-        "products/boat/chronova-164/04_sapphire_caseback.svg",
-        "products/boat/chronova-164/05_dial_macro_10x.svg",
-        "products/boat/chronova-164/06_bracelet_clasp.svg",
-        "products/boat/chronova-164/07_crown_buttons_detail.svg",
-        "products/boat/chronova-164/08_wrist_lifestyle.svg",
-        "products/boat/chronova-164/09_environmental_still.svg",
-        "products/boat/chronova-164/10_packaging_box.svg",
-        "products/boat/chronova-164/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -17250,19 +16430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-165/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/boat/chronova-165/01_hero_studio.svg",
-        "products/boat/chronova-165/02_perspective_45.svg",
-        "products/boat/chronova-165/03_lateral_profile.svg",
-        "products/boat/chronova-165/04_sapphire_caseback.svg",
-        "products/boat/chronova-165/05_dial_macro_10x.svg",
-        "products/boat/chronova-165/06_bracelet_clasp.svg",
-        "products/boat/chronova-165/07_crown_buttons_detail.svg",
-        "products/boat/chronova-165/08_wrist_lifestyle.svg",
-        "products/boat/chronova-165/09_environmental_still.svg",
-        "products/boat/chronova-165/10_packaging_box.svg",
-        "products/boat/chronova-165/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -17355,19 +16530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-166/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/boat/chronova-166/01_hero_studio.svg",
-        "products/boat/chronova-166/02_perspective_45.svg",
-        "products/boat/chronova-166/03_lateral_profile.svg",
-        "products/boat/chronova-166/04_sapphire_caseback.svg",
-        "products/boat/chronova-166/05_dial_macro_10x.svg",
-        "products/boat/chronova-166/06_bracelet_clasp.svg",
-        "products/boat/chronova-166/07_crown_buttons_detail.svg",
-        "products/boat/chronova-166/08_wrist_lifestyle.svg",
-        "products/boat/chronova-166/09_environmental_still.svg",
-        "products/boat/chronova-166/10_packaging_box.svg",
-        "products/boat/chronova-166/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -17460,19 +16630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-167/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/boat/chronova-167/01_hero_studio.svg",
-        "products/boat/chronova-167/02_perspective_45.svg",
-        "products/boat/chronova-167/03_lateral_profile.svg",
-        "products/boat/chronova-167/04_sapphire_caseback.svg",
-        "products/boat/chronova-167/05_dial_macro_10x.svg",
-        "products/boat/chronova-167/06_bracelet_clasp.svg",
-        "products/boat/chronova-167/07_crown_buttons_detail.svg",
-        "products/boat/chronova-167/08_wrist_lifestyle.svg",
-        "products/boat/chronova-167/09_environmental_still.svg",
-        "products/boat/chronova-167/10_packaging_box.svg",
-        "products/boat/chronova-167/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -17565,19 +16730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-168/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/boat/chronova-168/01_hero_studio.svg",
-        "products/boat/chronova-168/02_perspective_45.svg",
-        "products/boat/chronova-168/03_lateral_profile.svg",
-        "products/boat/chronova-168/04_sapphire_caseback.svg",
-        "products/boat/chronova-168/05_dial_macro_10x.svg",
-        "products/boat/chronova-168/06_bracelet_clasp.svg",
-        "products/boat/chronova-168/07_crown_buttons_detail.svg",
-        "products/boat/chronova-168/08_wrist_lifestyle.svg",
-        "products/boat/chronova-168/09_environmental_still.svg",
-        "products/boat/chronova-168/10_packaging_box.svg",
-        "products/boat/chronova-168/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IWatch.png/960px-IWatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -17670,19 +16830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-169/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/boat/chronova-169/01_hero_studio.svg",
-        "products/boat/chronova-169/02_perspective_45.svg",
-        "products/boat/chronova-169/03_lateral_profile.svg",
-        "products/boat/chronova-169/04_sapphire_caseback.svg",
-        "products/boat/chronova-169/05_dial_macro_10x.svg",
-        "products/boat/chronova-169/06_bracelet_clasp.svg",
-        "products/boat/chronova-169/07_crown_buttons_detail.svg",
-        "products/boat/chronova-169/08_wrist_lifestyle.svg",
-        "products/boat/chronova-169/09_environmental_still.svg",
-        "products/boat/chronova-169/10_packaging_box.svg",
-        "products/boat/chronova-169/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IWatch.png/960px-IWatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Smart_watches.png/960px-Smart_watches.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -17775,19 +16930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/boat/chronova-170/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/boat/chronova-170/01_hero_studio.svg",
-        "products/boat/chronova-170/02_perspective_45.svg",
-        "products/boat/chronova-170/03_lateral_profile.svg",
-        "products/boat/chronova-170/04_sapphire_caseback.svg",
-        "products/boat/chronova-170/05_dial_macro_10x.svg",
-        "products/boat/chronova-170/06_bracelet_clasp.svg",
-        "products/boat/chronova-170/07_crown_buttons_detail.svg",
-        "products/boat/chronova-170/08_wrist_lifestyle.svg",
-        "products/boat/chronova-170/09_environmental_still.svg",
-        "products/boat/chronova-170/10_packaging_box.svg",
-        "products/boat/chronova-170/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Iwatch.png/960px-Iwatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IWatch.png/960px-IWatch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Smart_watches.png/960px-Smart_watches.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Smart_Watches.png/960px-Smart_Watches.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -17880,19 +17030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-171/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-171/01_hero_studio.svg",
-        "products/samsung/chronova-171/02_perspective_45.svg",
-        "products/samsung/chronova-171/03_lateral_profile.svg",
-        "products/samsung/chronova-171/04_sapphire_caseback.svg",
-        "products/samsung/chronova-171/05_dial_macro_10x.svg",
-        "products/samsung/chronova-171/06_bracelet_clasp.svg",
-        "products/samsung/chronova-171/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-171/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-171/09_environmental_still.svg",
-        "products/samsung/chronova-171/10_packaging_box.svg",
-        "products/samsung/chronova-171/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg/960px-Audi-LG_WebOS_Smartwatch_Prototype_%2816837519286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -17985,19 +17130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-172/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-172/01_hero_studio.svg",
-        "products/samsung/chronova-172/02_perspective_45.svg",
-        "products/samsung/chronova-172/03_lateral_profile.svg",
-        "products/samsung/chronova-172/04_sapphire_caseback.svg",
-        "products/samsung/chronova-172/05_dial_macro_10x.svg",
-        "products/samsung/chronova-172/06_bracelet_clasp.svg",
-        "products/samsung/chronova-172/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-172/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-172/09_environmental_still.svg",
-        "products/samsung/chronova-172/10_packaging_box.svg",
-        "products/samsung/chronova-172/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/B.B_Govinda_Swami_21.jpg/960px-B.B_Govinda_Swami_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -18090,19 +17230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-173/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-173/01_hero_studio.svg",
-        "products/samsung/chronova-173/02_perspective_45.svg",
-        "products/samsung/chronova-173/03_lateral_profile.svg",
-        "products/samsung/chronova-173/04_sapphire_caseback.svg",
-        "products/samsung/chronova-173/05_dial_macro_10x.svg",
-        "products/samsung/chronova-173/06_bracelet_clasp.svg",
-        "products/samsung/chronova-173/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-173/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-173/09_environmental_still.svg",
-        "products/samsung/chronova-173/10_packaging_box.svg",
-        "products/samsung/chronova-173/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Black_Olio_Brown_Leather_Strap_Front.jpg/960px-Black_Olio_Brown_Leather_Strap_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -18195,19 +17330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-174/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-174/01_hero_studio.svg",
-        "products/samsung/chronova-174/02_perspective_45.svg",
-        "products/samsung/chronova-174/03_lateral_profile.svg",
-        "products/samsung/chronova-174/04_sapphire_caseback.svg",
-        "products/samsung/chronova-174/05_dial_macro_10x.svg",
-        "products/samsung/chronova-174/06_bracelet_clasp.svg",
-        "products/samsung/chronova-174/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-174/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-174/09_environmental_still.svg",
-        "products/samsung/chronova-174/10_packaging_box.svg",
-        "products/samsung/chronova-174/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bluetooth_Watch.jpg/960px-Bluetooth_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -18300,19 +17430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-175/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/samsung/chronova-175/01_hero_studio.svg",
-        "products/samsung/chronova-175/02_perspective_45.svg",
-        "products/samsung/chronova-175/03_lateral_profile.svg",
-        "products/samsung/chronova-175/04_sapphire_caseback.svg",
-        "products/samsung/chronova-175/05_dial_macro_10x.svg",
-        "products/samsung/chronova-175/06_bracelet_clasp.svg",
-        "products/samsung/chronova-175/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-175/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-175/09_environmental_still.svg",
-        "products/samsung/chronova-175/10_packaging_box.svg",
-        "products/samsung/chronova-175/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bracelets_plus_Galaxy_Gear_and_Casio_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -18405,19 +17530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-176/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-176/01_hero_studio.svg",
-        "products/samsung/chronova-176/02_perspective_45.svg",
-        "products/samsung/chronova-176/03_lateral_profile.svg",
-        "products/samsung/chronova-176/04_sapphire_caseback.svg",
-        "products/samsung/chronova-176/05_dial_macro_10x.svg",
-        "products/samsung/chronova-176/06_bracelet_clasp.svg",
-        "products/samsung/chronova-176/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-176/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-176/09_environmental_still.svg",
-        "products/samsung/chronova-176/10_packaging_box.svg",
-        "products/samsung/chronova-176/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg/960px-Charles_Cavanaugh_LGBTQ_Pride_Watch_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -18510,19 +17630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-177/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-177/01_hero_studio.svg",
-        "products/samsung/chronova-177/02_perspective_45.svg",
-        "products/samsung/chronova-177/03_lateral_profile.svg",
-        "products/samsung/chronova-177/04_sapphire_caseback.svg",
-        "products/samsung/chronova-177/05_dial_macro_10x.svg",
-        "products/samsung/chronova-177/06_bracelet_clasp.svg",
-        "products/samsung/chronova-177/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-177/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-177/09_environmental_still.svg",
-        "products/samsung/chronova-177/10_packaging_box.svg",
-        "products/samsung/chronova-177/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28boy%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -18615,19 +17730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-178/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-178/01_hero_studio.svg",
-        "products/samsung/chronova-178/02_perspective_45.svg",
-        "products/samsung/chronova-178/03_lateral_profile.svg",
-        "products/samsung/chronova-178/04_sapphire_caseback.svg",
-        "products/samsung/chronova-178/05_dial_macro_10x.svg",
-        "products/samsung/chronova-178/06_bracelet_clasp.svg",
-        "products/samsung/chronova-178/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-178/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-178/09_environmental_still.svg",
-        "products/samsung/chronova-178/10_packaging_box.svg",
-        "products/samsung/chronova-178/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg/960px-Child%27s_phone_watch_%28smartwatch%29_in_China_%28girl%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -18720,19 +17830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-179/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-179/01_hero_studio.svg",
-        "products/samsung/chronova-179/02_perspective_45.svg",
-        "products/samsung/chronova-179/03_lateral_profile.svg",
-        "products/samsung/chronova-179/04_sapphire_caseback.svg",
-        "products/samsung/chronova-179/05_dial_macro_10x.svg",
-        "products/samsung/chronova-179/06_bracelet_clasp.svg",
-        "products/samsung/chronova-179/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-179/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-179/09_environmental_still.svg",
-        "products/samsung/chronova-179/10_packaging_box.svg",
-        "products/samsung/chronova-179/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Couv-Tunivisions_Couv_Octobre_2014.jpg/960px-Couv-Tunivisions_Couv_Octobre_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -18825,19 +17930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/samsung/chronova-180/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/samsung/chronova-180/01_hero_studio.svg",
-        "products/samsung/chronova-180/02_perspective_45.svg",
-        "products/samsung/chronova-180/03_lateral_profile.svg",
-        "products/samsung/chronova-180/04_sapphire_caseback.svg",
-        "products/samsung/chronova-180/05_dial_macro_10x.svg",
-        "products/samsung/chronova-180/06_bracelet_clasp.svg",
-        "products/samsung/chronova-180/07_crown_buttons_detail.svg",
-        "products/samsung/chronova-180/08_wrist_lifestyle.svg",
-        "products/samsung/chronova-180/09_environmental_still.svg",
-        "products/samsung/chronova-180/10_packaging_box.svg",
-        "products/samsung/chronova-180/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Crew_2015-06-14_%28Unsplash%29.jpg/960px-Crew_2015-06-14_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Crew_2015-06-16_%28Unsplash%29.jpg/960px-Crew_2015-06-16_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/DZ09_smartwatch_with_home_screen_open.jpg/960px-DZ09_smartwatch_with_home_screen_open.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/Fitness_Tracking_Smartwatch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Galaxy_Watch.jpeg/960px-Galaxy_Watch.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Galaxy_Watch.jpg/960px-Galaxy_Watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -18930,19 +18030,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-181/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/apple-watch/chronova-181/01_hero_studio.svg",
-        "products/apple-watch/chronova-181/02_perspective_45.svg",
-        "products/apple-watch/chronova-181/03_lateral_profile.svg",
-        "products/apple-watch/chronova-181/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-181/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-181/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-181/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-181/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-181/09_environmental_still.svg",
-        "products/apple-watch/chronova-181/10_packaging_box.svg",
-        "products/apple-watch/chronova-181/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Huawei_Smartwatch_Fit_2_%281%29.jpg/960px-Huawei_Smartwatch_Fit_2_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -19035,19 +18130,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-182/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/apple-watch/chronova-182/01_hero_studio.svg",
-        "products/apple-watch/chronova-182/02_perspective_45.svg",
-        "products/apple-watch/chronova-182/03_lateral_profile.svg",
-        "products/apple-watch/chronova-182/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-182/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-182/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-182/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-182/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-182/09_environmental_still.svg",
-        "products/apple-watch/chronova-182/10_packaging_box.svg",
-        "products/apple-watch/chronova-182/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Huawei_Smartwatch_Fit_2.jpg/960px-Huawei_Smartwatch_Fit_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -19140,19 +18230,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-183/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/apple-watch/chronova-183/01_hero_studio.svg",
-        "products/apple-watch/chronova-183/02_perspective_45.svg",
-        "products/apple-watch/chronova-183/03_lateral_profile.svg",
-        "products/apple-watch/chronova-183/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-183/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-183/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-183/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-183/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-183/09_environmental_still.svg",
-        "products/apple-watch/chronova-183/10_packaging_box.svg",
-        "products/apple-watch/chronova-183/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Huawei_Talkband_B2.jpg/960px-Huawei_Talkband_B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -19245,19 +18330,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-184/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/apple-watch/chronova-184/01_hero_studio.svg",
-        "products/apple-watch/chronova-184/02_perspective_45.svg",
-        "products/apple-watch/chronova-184/03_lateral_profile.svg",
-        "products/apple-watch/chronova-184/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-184/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-184/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-184/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-184/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-184/09_environmental_still.svg",
-        "products/apple-watch/chronova-184/10_packaging_box.svg",
-        "products/apple-watch/chronova-184/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_mb-910.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
@@ -19350,19 +18430,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-185/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/apple-watch/chronova-185/01_hero_studio.svg",
-        "products/apple-watch/chronova-185/02_perspective_45.svg",
-        "products/apple-watch/chronova-185/03_lateral_profile.svg",
-        "products/apple-watch/chronova-185/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-185/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-185/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-185/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-185/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-185/09_environmental_still.svg",
-        "products/apple-watch/chronova-185/10_packaging_box.svg",
-        "products/apple-watch/chronova-185/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/I3A8640.jpg/960px-I3A8640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800&auto=format&fit=crop&q=80",
@@ -19455,19 +18530,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-186/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "gallery": [
-        "products/apple-watch/chronova-186/01_hero_studio.svg",
-        "products/apple-watch/chronova-186/02_perspective_45.svg",
-        "products/apple-watch/chronova-186/03_lateral_profile.svg",
-        "products/apple-watch/chronova-186/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-186/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-186/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-186/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-186/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-186/09_environmental_still.svg",
-        "products/apple-watch/chronova-186/10_packaging_box.svg",
-        "products/apple-watch/chronova-186/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/IBM_Prototype_Wristwatch_Computer.jpg/960px-IBM_Prototype_Wristwatch_Computer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&auto=format&fit=crop&q=80",
@@ -19560,19 +18630,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-187/01_hero_studio.svg",
+      "primary": "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "gallery": [
-        "products/apple-watch/chronova-187/01_hero_studio.svg",
-        "products/apple-watch/chronova-187/02_perspective_45.svg",
-        "products/apple-watch/chronova-187/03_lateral_profile.svg",
-        "products/apple-watch/chronova-187/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-187/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-187/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-187/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-187/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-187/09_environmental_still.svg",
-        "products/apple-watch/chronova-187/10_packaging_box.svg",
-        "products/apple-watch/chronova-187/11_night_lume.svg"
+        "https://upload.wikimedia.org/wikipedia/commons/f/f5/IIR_scalabilit%C3%A9_perpendiculaire.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=80",
@@ -19665,19 +18730,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-188/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/apple-watch/chronova-188/01_hero_studio.svg",
-        "products/apple-watch/chronova-188/02_perspective_45.svg",
-        "products/apple-watch/chronova-188/03_lateral_profile.svg",
-        "products/apple-watch/chronova-188/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-188/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-188/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-188/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-188/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-188/09_environmental_still.svg",
-        "products/apple-watch/chronova-188/10_packaging_box.svg",
-        "products/apple-watch/chronova-188/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&auto=format&fit=crop&q=80",
@@ -19770,19 +18830,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "2 Years Official Manufacturer Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-189/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/apple-watch/chronova-189/01_hero_studio.svg",
-        "products/apple-watch/chronova-189/02_perspective_45.svg",
-        "products/apple-watch/chronova-189/03_lateral_profile.svg",
-        "products/apple-watch/chronova-189/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-189/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-189/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-189/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-189/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-189/09_environmental_still.svg",
-        "products/apple-watch/chronova-189/10_packaging_box.svg",
-        "products/apple-watch/chronova-189/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&auto=format&fit=crop&q=80",
@@ -19875,19 +18930,14 @@ export const CHRONOVA_CATALOG: ChronovaProduct[] = [
       "1 Year Brand Warranty with hassle-free doorstep service"
     ],
     "images": {
-      "primary": "products/apple-watch/chronova-190/01_hero_studio.svg",
+      "primary": "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
       "gallery": [
-        "products/apple-watch/chronova-190/01_hero_studio.svg",
-        "products/apple-watch/chronova-190/02_perspective_45.svg",
-        "products/apple-watch/chronova-190/03_lateral_profile.svg",
-        "products/apple-watch/chronova-190/04_sapphire_caseback.svg",
-        "products/apple-watch/chronova-190/05_dial_macro_10x.svg",
-        "products/apple-watch/chronova-190/06_bracelet_clasp.svg",
-        "products/apple-watch/chronova-190/07_crown_buttons_detail.svg",
-        "products/apple-watch/chronova-190/08_wrist_lifestyle.svg",
-        "products/apple-watch/chronova-190/09_environmental_still.svg",
-        "products/apple-watch/chronova-190/10_packaging_box.svg",
-        "products/apple-watch/chronova-190/11_night_lume.svg"
+        "https://images.unsplash.com/photo-1549482199-bc1ca6f58502?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&auto=format&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&auto=format&fit=crop&q=85",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Apple_S2_in_watch.jpg/960px-Apple_S2_in_watch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
       ]
     },
     "primaryImage": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=800&auto=format&fit=crop&q=80",
