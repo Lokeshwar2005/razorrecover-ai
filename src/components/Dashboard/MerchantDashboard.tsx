@@ -11,13 +11,15 @@ import { fetchDashboardStats, type DashboardStats } from '../../services/backend
 
 export const MerchantDashboard: React.FC = () => {
   const transactions = useTransactionStore((s) => s.transactions)
+  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
   const [backendStats, setBackendStats] = useState<DashboardStats | null>(null)
 
   useEffect(() => {
+    refreshProviderFeed()
     fetchDashboardStats().then((data) => {
       if (data) setBackendStats(data)
     })
-  }, [])
+  }, [refreshProviderFeed])
 
   // Single Source of Truth metrics derived directly from canonical transactions
   const canonicalMetrics = useMemo(() => {
