@@ -203,16 +203,36 @@ export function mergeCanonicalTransactions(
   const seenPaymentIds = new Set<string>()
   const merged: CanonicalTransaction[] = []
 
-  // 1. Index synthetic transactions by ID
+  // 1. Index synthetic transactions by ID, provider_payment_id, and provider_order_id
   const syntheticMap = new Map<string, CanonicalTransaction>()
+  const paymentToSynthMap = new Map<string, string>()
+  const orderToSynthMap = new Map<string, string>()
+
   for (const s of synthetic) {
     syntheticMap.set(s.id, s)
+    if (s.provider_payment_id) {
+      paymentToSynthMap.set(s.provider_payment_id, s.id)
+    }
+    if (s.provider_order_id) {
+      orderToSynthMap.set(s.provider_order_id, s.id)
+    }
   }
 
   // 2. Reconcile provider transactions into matching synthetic records or add standalone
   for (const provTxn of provider) {
     const paymentId = provTxn.provider_payment_id
-    const targetSynth = syntheticMap.get(provTxn.id)
+    const orderId = provTxn.provider_order_id
+
+    const synthId =
+      syntheticMap.has(provTxn.id)
+        ? provTxn.id
+        : paymentId && paymentToSynthMap.get(paymentId)
+        ? paymentToSynthMap.get(paymentId)
+        : orderId && orderToSynthMap.get(orderId)
+        ? orderToSynthMap.get(orderId)
+        : undefined
+
+    const targetSynth = synthId ? syntheticMap.get(synthId) : undefined
 
     if (targetSynth) {
       // Reconcile into target synthetic transaction
@@ -229,7 +249,7 @@ export function mergeCanonicalTransactions(
         captured_at: provTxn.captured_at || targetSynth.captured_at,
         updated_at: provTxn.updated_at || targetSynth.updated_at,
       }
-      syntheticMap.set(provTxn.id, reconciled)
+      syntheticMap.set(targetSynth.id, reconciled)
       if (paymentId) seenPaymentIds.add(paymentId)
     } else {
       // Standalone provider payment (e.g. RZP-pay_TVWRbgbZZuldtX)
@@ -719,6 +739,19 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         const key = `${p.provider || 'prov'}_${p.provider_payment_id || p.id}`
         if (!seen.has(key)) {
           seen.add(key)
+          // If this payment matches an existing synthetic transaction, reconcile it directly rather than adding as a duplicate
+          const synthMatch = get().transactions.find(
+            (t) =>
+              t.source === 'synthetic' &&
+              (t.id === p.id ||
+                (p.provider_payment_id && t.provider_payment_id === p.provider_payment_id) ||
+                (p.provider_order_id && t.provider_order_id === p.provider_order_id))
+          )
+
+          if (synthMatch) {
+            continue
+          }
+
           const existing = currentTxnMap.get(p.id) || currentTxnMap.get(`RZP-${p.provider_payment_id}`)
           const saved = getPersistedStateForTransaction(p.id, p.provider_payment_id, p.provider_order_id)
 
@@ -894,11 +927,13 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
       let verifiedAmt: number | undefined
       let provId: string | undefined
       let provStatus: string | undefined
+      let orderId: string | undefined
 
       if (typeof verifiedAmountMinorOrOpts === 'object' && verifiedAmountMinorOrOpts !== null) {
         verifiedAmt = (verifiedAmountMinorOrOpts as any).verified_amount_minor
         provId = (verifiedAmountMinorOrOpts as any).provider_payment_id || (verifiedAmountMinorOrOpts as any).provider_id
         provStatus = (verifiedAmountMinorOrOpts as any).provider_status
+        orderId = (verifiedAmountMinorOrOpts as any).provider_order_id
       } else {
         verifiedAmt = verifiedAmountMinorOrOpts as number | undefined
         provId = providerId
@@ -911,6 +946,7 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
         status,
         ...(finalVerifiedAmt !== undefined ? { verified_amount_minor: finalVerifiedAmt } : {}),
         ...(provId !== undefined ? { provider_payment_id: provId, provider_id: provId } : {}),
+        ...(orderId !== undefined ? { provider_order_id: orderId } : {}),
         ...(finalProvStatus !== undefined ? { provider_status: finalProvStatus } : {}),
         ...(status === 'RECOVERED' ? { workflow_status: 'VERIFIED', captured_at: new Date().toISOString() } : {}),
         updated_at: new Date().toISOString(),
@@ -925,6 +961,7 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
                 verified_amount_minor: verifiedAmt !== undefined ? verifiedAmt : (status === 'RECOVERED' ? t.amount_minor : t.verified_amount_minor),
                 provider_id: provId !== undefined ? provId : t.provider_id,
                 provider_payment_id: provId !== undefined ? provId : t.provider_payment_id,
+                provider_order_id: orderId !== undefined ? orderId : t.provider_order_id,
                 provider_status: provStatus !== undefined ? provStatus : (status === 'RECOVERED' ? 'captured' : t.provider_status),
                 workflow_status: status === 'RECOVERED' ? 'VERIFIED' : t.workflow_status,
                 captured_at: status === 'RECOVERED' ? (t.captured_at || new Date().toISOString()) : t.captured_at,
