@@ -15,7 +15,7 @@ export interface VercelResponse extends ServerResponse {
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v10.json')
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
@@ -107,8 +107,8 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
   return result
 }
 
-async function updateGistTransactions(transactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
-  for (const [id, txn] of Object.entries(transactions)) {
+async function updateGistTransactions(newTransactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
+  for (const [id, txn] of Object.entries(newTransactions)) {
     inMemoryTransactions.set(id.toUpperCase(), txn)
   }
   saveLocalFileStore()
@@ -117,7 +117,39 @@ async function updateGistTransactions(transactions: Record<string, any>, req?: I
     const token = getGithubToken(req)
     if (!token) return
 
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+    let existingRemote: Record<string, any> = {}
+    try {
+      const getRes = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github.v3+json',
+          'User-Agent': 'RazorRecover-AI-Serverless',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          Pragma: 'no-cache',
+        },
+        signal: AbortSignal.timeout(3500),
+      })
+      if (getRes.ok) {
+        const d = await getRes.json()
+        const raw = d?.files?.[GIST_FILENAME]?.content
+        if (raw) {
+          const parsed = JSON.parse(raw)
+          if (parsed?.transactions && typeof parsed.transactions === 'object') {
+            existingRemote = parsed.transactions
+          }
+        }
+      }
+    } catch (e) {}
+
+    const merged: Record<string, any> = { ...existingRemote }
+    for (const [id, txn] of inMemoryTransactions.entries()) {
+      merged[id] = txn
+    }
+    for (const [id, txn] of Object.entries(newTransactions)) {
+      merged[id.toUpperCase()] = txn
+    }
+
+    await fetch(`https://api.github.com/gists/${GIST_ID}`, {
       method: 'PATCH',
       headers: {
         Authorization: `token ${token}`,
@@ -128,15 +160,12 @@ async function updateGistTransactions(transactions: Record<string, any>, req?: I
       body: JSON.stringify({
         files: {
           [GIST_FILENAME]: {
-            content: JSON.stringify({ transactions }, null, 2),
+            content: JSON.stringify({ transactions: merged }, null, 2),
           },
         },
       }),
       signal: AbortSignal.timeout(4000),
     })
-    if (res.ok) {
-      // successful patch
-    }
   } catch (e) {}
 }
 
