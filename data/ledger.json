@@ -8651,7 +8651,7 @@
       "amount_minor": 429500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded",
       "action": "Send UPI QR Alternative Link",
@@ -8662,13 +8662,13 @@
       "explanation": "Card OTP limit reached. Alternate dynamic UPI QR payment link provisioned.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:32:17.435Z",
-      "updated_at": "2026-08-31T14:32:20.032Z",
+      "updated_at": "2026-08-31T14:32:22.513Z",
       "provider": "razorpay",
-      "provider_id": "order_test_auth_retries_exceeded_1788186688278",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788186688278",
+      "provider_id": "pay_test_capture_auth_retries_exceeded_1788186688278",
+      "provider_payment_id": "pay_test_capture_auth_retries_exceeded_1788186688278",
       "provider_order_id": "order_test_auth_retries_exceeded_1788186688278",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 429500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -8691,8 +8691,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOAUTHRETRIESEXCEEDED1788186688278",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788186688278 [REC-20260831-TXNE2ESCENARIOAUTHRETRIESEXCEEDED1788186688278] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹4,295 for TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788186688278.",
+      "captured_at": "2026-08-31T14:32:22.513Z"
     }
   }
 }
