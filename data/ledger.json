@@ -10704,6 +10704,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹12,995 for TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788187229632.",
       "captured_at": "2026-08-31T14:41:11.381Z"
+    },
+    "TXN-E2E-SCENARIO-NETWORK_DROP-1788187229632": {
+      "id": "TXN-E2E-SCENARIO-NETWORK_DROP-1788187229632",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 5495,
+      "amount_minor": 549500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)",
+      "action": "Send 1-Click SMS Recovery Link",
+      "confidence": 96,
+      "recovery_probability": 92,
+      "risk_score": 15,
+      "policy": "Approved",
+      "explanation": "Customer network handshake dropped. Direct tokenized SMS retry link generated.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:41:14.127Z",
+      "updated_at": "2026-08-31T14:41:14.127Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_network_drop_1788187229632",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-NETWORK_DROP-1788187229632",
+      "provider_order_id": "order_test_network_drop_1788187229632",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "network_drop",
+        "test": "test_3_all_scenarios",
+        "failure_code": "CLIENT_TCP_CONNECTION_RESET",
+        "failure_reason": "Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-NETWORK_DROP-1788187229632-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)",
+          "timestamp": "2026-08-31T14:41:14.127Z"
+        }
+      ]
     }
   }
 }
