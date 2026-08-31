@@ -9304,7 +9304,7 @@
       "amount_minor": 549500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)",
       "action": "Send 1-Click SMS Recovery Link",
@@ -9315,7 +9315,7 @@
       "explanation": "Customer network handshake dropped. Direct tokenized SMS retry link generated.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:35:13.697Z",
-      "updated_at": "2026-08-31T14:35:13.697Z",
+      "updated_at": "2026-08-31T14:35:16.503Z",
       "provider": "razorpay",
       "provider_id": "order_test_network_drop_1788186869886",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-NETWORK_DROP-1788186869886",
@@ -9342,7 +9342,10 @@
           "reason": "Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)",
           "timestamp": "2026-08-31T14:35:13.697Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIONETWORKDROP1788186869886",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-NETWORK_DROP-1788186869886 [REC-20260831-TXNE2ESCENARIONETWORKDROP1788186869886] — awaiting Test Mode payment."
     }
   }
 }
