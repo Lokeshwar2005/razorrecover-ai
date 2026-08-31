@@ -6235,7 +6235,7 @@
       "amount_minor": 899500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
       "action": "Smart Routing to Alternate Bank Node",
@@ -6246,7 +6246,7 @@
       "explanation": "Issuer node 502 detected. Re-routed authorization through redundant bank gateway.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:21:48.397Z",
-      "updated_at": "2026-08-31T14:21:48.397Z",
+      "updated_at": "2026-08-31T14:21:50.744Z",
       "provider": "razorpay",
       "provider_id": "order_test_bank_downtime_1788186083371",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-BANK_DOWNTIME-1788186083371",
@@ -6273,7 +6273,10 @@
           "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
           "timestamp": "2026-08-31T14:21:48.397Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOBANKDOWNTIME1788186083371",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-BANK_DOWNTIME-1788186083371 [REC-20260831-TXNE2ESCENARIOBANKDOWNTIME1788186083371] — awaiting Test Mode payment."
     }
   }
 }
