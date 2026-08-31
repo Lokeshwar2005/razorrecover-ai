@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { loadStore } from '../store'
+import { loadStore } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>

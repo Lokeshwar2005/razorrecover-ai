@@ -5,7 +5,7 @@ import {
   saveStore,
   upsertTransaction,
   type ServerlessTransaction,
-} from '../store'
+} from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   body?: any

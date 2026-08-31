@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { getTransaction } from '../store'
+import { getTransaction } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>

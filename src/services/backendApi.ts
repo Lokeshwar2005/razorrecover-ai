@@ -24,7 +24,7 @@ const resolveApiBase = (): string => {
       return `${window.location.origin}/api/v1`
     }
   }
-  return 'https://razorrecover-8emq5g8nt-razor-recover-buildathon.vercel.app/api/v1'
+  return 'https://razorrecover-ai-teal.vercel.app/api/v1'
 }
 
 export const API_BASE = resolveApiBase()

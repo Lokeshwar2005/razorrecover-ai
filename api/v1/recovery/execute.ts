@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { getTransaction, upsertTransaction } from '../store'
+import { getTransaction, upsertTransaction } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   body?: any

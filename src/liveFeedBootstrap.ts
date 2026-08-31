@@ -30,7 +30,7 @@ function getFeedUrl(): string {
       return `${window.location.origin}/api/razorpay/feed`
     }
   }
-  return 'https://razorrecover-8emq5g8nt-razor-recover-buildathon.vercel.app/api/razorpay/feed'
+  return 'https://razorrecover-ai-teal.vercel.app/api/razorpay/feed'
 }
 
 const rootId = 'razorrecover-live-feed'
