@@ -38,24 +38,24 @@ function applyCors(req: VercelRequest, res: VercelResponse): boolean {
 }
 
 function getGithubToken(req?: IncomingMessage): string | null {
-  if (!req?.headers) {
-    return (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) ? process.env.GITHUB_TOKEN.trim() : null
-  }
-  const headers = req.headers
-  const customHeader =
-    headers['x-github-token'] ||
-    headers['X-GitHub-Token'] ||
-    headers['x-token'] ||
-    headers['authorization'] ||
-    headers['Authorization']
+  if (req?.headers) {
+    const headers = req.headers
+    const customHeader =
+      headers['x-github-token'] ||
+      headers['X-GitHub-Token'] ||
+      headers['x-token'] ||
+      headers['authorization'] ||
+      headers['Authorization']
 
-  if (customHeader) {
-    const raw = Array.isArray(customHeader) ? customHeader[0] : customHeader
-    const token = raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
-    if (token) return token
+    if (customHeader) {
+      const raw = Array.isArray(customHeader) ? customHeader[0] : customHeader
+      const token = raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+      if (token) return token
+    }
   }
-  if (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) {
-    return process.env.GITHUB_TOKEN.trim()
+  if (typeof process !== 'undefined') {
+    const envToken = process.env?.GIST_TOKEN || process.env?.GITHUB_TOKEN || process.env?.GH_TOKEN
+    if (envToken && envToken.trim()) return envToken.trim()
   }
   return null
 }

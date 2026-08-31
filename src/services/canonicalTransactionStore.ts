@@ -427,17 +427,20 @@ function computeMetricsRaw(transactions: CanonicalTransaction[]) {
     else if (t.source === 'razorpay_test') providerTestCount++
     else if (t.source === 'live') liveCount++
 
-    totalExposureMinor += t.amount_minor
+    const amtMinor = Number(t.amount_minor) || (Number(t.amount) ? Number(t.amount) * 100 : 0) || 0
+    const verMinor = Number(t.verified_amount_minor) || 0
 
-    if (t.status === 'RECOVERED' && (t.verified_amount_minor ?? 0) > 0) {
+    totalExposureMinor += amtMinor
+
+    if (t.status === 'RECOVERED' && verMinor > 0) {
       recoveredCount++
-      verifiedRecoveredMinor += t.verified_amount_minor || t.amount_minor
+      verifiedRecoveredMinor += verMinor || amtMinor
     } else if (t.status === 'STOPPED') {
       stoppedCount++
-      revenueAtRiskMinor += t.amount_minor
+      revenueAtRiskMinor += amtMinor
     } else {
       pendingCount++
-      revenueAtRiskMinor += t.amount_minor
+      revenueAtRiskMinor += amtMinor
     }
 
     if (t.policy === 'Blocked') blockedCount++

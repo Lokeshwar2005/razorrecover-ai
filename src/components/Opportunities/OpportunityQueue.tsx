@@ -212,15 +212,25 @@ export const OpportunityQueue: React.FC = () => {
           (parentTxn?.direction && parentTxn.direction.toLowerCase().includes(q)) ||
           (parentTxn?.source && parentTxn.source.toLowerCase().includes(q))
 
+        const isDirectIdSearch = Boolean(
+          q && (
+            opp.transaction_id.toLowerCase().includes(q) ||
+            (cleanNum && opp.transaction_id.replace('TXN-', '').toLowerCase().includes(cleanNum)) ||
+            opp.id.toLowerCase().includes(q)
+          )
+        )
+
         let matchesFilter = true
-        if (activeFilter === 'CRITICAL') matchesFilter = opp.priority === 'CRITICAL'
-        else if (activeFilter === 'HIGH') matchesFilter = opp.priority === 'HIGH'
-        else if (activeFilter === 'MEDIUM') matchesFilter = opp.priority === 'MEDIUM'
-        else if (activeFilter === 'LOW') matchesFilter = opp.priority === 'LOW'
-        else if (activeFilter === 'RECOVERED') matchesFilter = opp.status === 'RECOVERED' || parentTxn?.status === 'RECOVERED'
-        else if (activeFilter === 'PENDING') matchesFilter = opp.status === 'ELIGIBLE' || opp.status === 'PENDING' || parentTxn?.status === 'PENDING'
-        else if (activeFilter === 'FAILED') matchesFilter = opp.status === 'STOPPED' || parentTxn?.status === 'STOPPED'
-        else if (activeFilter === 'BLOCKED') matchesFilter = opp.policy_status === 'Blocked' || parentTxn?.policy === 'Blocked'
+        if (!isDirectIdSearch) {
+          if (activeFilter === 'CRITICAL') matchesFilter = opp.priority === 'CRITICAL'
+          else if (activeFilter === 'HIGH') matchesFilter = opp.priority === 'HIGH'
+          else if (activeFilter === 'MEDIUM') matchesFilter = opp.priority === 'MEDIUM'
+          else if (activeFilter === 'LOW') matchesFilter = opp.priority === 'LOW'
+          else if (activeFilter === 'RECOVERED') matchesFilter = opp.status === 'RECOVERED' || parentTxn?.status === 'RECOVERED'
+          else if (activeFilter === 'PENDING') matchesFilter = opp.status === 'ELIGIBLE' || opp.status === 'PENDING' || parentTxn?.status === 'PENDING'
+          else if (activeFilter === 'FAILED') matchesFilter = opp.status === 'STOPPED' || parentTxn?.status === 'STOPPED'
+          else if (activeFilter === 'BLOCKED') matchesFilter = opp.policy_status === 'Blocked' || parentTxn?.policy === 'Blocked'
+        }
 
         return matchesSearch && matchesFilter
       })

@@ -68,17 +68,20 @@ export const TransactionExplorer: React.FC = () => {
   // Filter & Search over the entire canonical dataset
   const filteredTransactions = useMemo(() => {
     return transactions.filter((txn) => {
-      // 1. Source filter match
-      if (sourceFilter !== 'all' && txn.source !== sourceFilter) {
+      // 1. Direct ID search flag
+      const q = search.trim().toLowerCase()
+      const cleanId = txn.id.toLowerCase()
+      const cleanRawNum = txn.id.replace(/^txn-?/i, '').toLowerCase()
+      const isDirectIdSearch = Boolean(q && (cleanId.includes(q) || (cleanRawNum && cleanRawNum.includes(q))))
+
+      // 2. Source filter match
+      if (!isDirectIdSearch && sourceFilter !== 'all' && txn.source !== sourceFilter) {
         return false
       }
 
-      // 2. Search match (Case-insensitive across ID, raw numeric, provider ID, order ID, recovery operation, reason, action, direction, status, merchant)
-      const q = search.trim().toLowerCase()
+      // 3. Search match (Case-insensitive across ID, raw numeric, provider ID, order ID, recovery operation, reason, action, direction, status, merchant)
       let matchesSearch = true
       if (q) {
-        const cleanId = txn.id.toLowerCase()
-        const cleanRawNum = txn.id.replace(/^txn-?/i, '').toLowerCase()
         const cleanReason = txn.reason.toLowerCase()
         const cleanAction = txn.action.toLowerCase()
         const cleanDirection = txn.direction.toLowerCase()
@@ -103,14 +106,16 @@ export const TransactionExplorer: React.FC = () => {
           cleanSource.includes(q)
       }
 
-      // 3. Category/Status filter match
+      // 4. Category/Status filter match
       let matchesFilter = true
-      if (filter === 'pending') matchesFilter = txn.status === 'PENDING' || txn.status === 'IN_PROGRESS'
-      else if (filter === 'recovered') matchesFilter = txn.status === 'RECOVERED'
-      else if (filter === 'failed') matchesFilter = txn.status === 'STOPPED'
-      else if (filter === 'blocked') matchesFilter = txn.policy === 'Blocked' || txn.policy === 'Escalated'
-      else if (filter === 'high_risk') matchesFilter = txn.risk_score >= 60
-      else if (filter === 'high_value') matchesFilter = txn.amount_minor >= 2000000
+      if (!isDirectIdSearch) {
+        if (filter === 'pending') matchesFilter = txn.status === 'PENDING' || txn.status === 'IN_PROGRESS'
+        else if (filter === 'recovered') matchesFilter = txn.status === 'RECOVERED'
+        else if (filter === 'failed') matchesFilter = txn.status === 'STOPPED'
+        else if (filter === 'blocked') matchesFilter = txn.policy === 'Blocked' || txn.policy === 'Escalated'
+        else if (filter === 'high_risk') matchesFilter = txn.risk_score >= 60
+        else if (filter === 'high_value') matchesFilter = txn.amount_minor >= 2000000
+      }
 
       return matchesSearch && matchesFilter
     })
