@@ -260,14 +260,31 @@ export async function executeRecoveryAction(
 }
 
 export async function verifyPaymentCapture(
-  param: string | { transaction_id: string; payment_id: string; order_id?: string; signature?: string; amount_minor?: number; currency?: string },
+  param: string | {
+    transaction_id: string
+    payment_id: string
+    order_id?: string
+    signature?: string
+    amount_minor?: number
+    currency?: string
+    customer?: any
+    items?: any[]
+    product_id?: string
+    product_name?: string
+    product_image?: string
+    product_brand?: string
+    product_category?: string
+    quantity?: number
+    unit_price?: number
+    [key: string]: any
+  },
   secondaryPaymentId?: string,
   secondaryAmountMinor?: number,
   secondaryCurrency?: string,
   secondaryOrderId?: string,
   secondarySignature?: string
 ): Promise<PaymentVerificationResult> {
-  const payload = typeof param === 'string'
+  const payload: any = typeof param === 'string'
     ? {
         transaction_id: param,
         payment_id: secondaryPaymentId || `pay_live_capture_${Date.now()}`,
@@ -283,14 +300,7 @@ export async function verifyPaymentCapture(
     const res = await fetch(`${API_BASE}/recovery/verify`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        transaction_id: payload.transaction_id,
-        payment_id: payload.payment_id,
-        order_id: payload.order_id,
-        signature: payload.signature,
-        amount_minor: payload.amount_minor,
-        currency: payload.currency || 'INR',
-      }),
+      body: JSON.stringify(payload),
       signal: AbortSignal.timeout(4000),
     })
     if (res.ok) {

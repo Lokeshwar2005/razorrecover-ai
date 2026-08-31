@@ -1,7 +1,6 @@
-'use client'
-
 import React, { useState, useEffect, useRef } from 'react'
-import type { CartItem, ShippingAddress, AppliedCoupon } from './types'
+import type { CartItem, ShippingAddress, AppliedCoupon, ChronovaOrderItem } from './types'
+import { resolveProductImageUrl } from './utils'
 import { useTransactionStore, type CanonicalTransaction } from '../../services/canonicalTransactionStore'
 import { AVAILABLE_COUPONS } from './CartDrawer'
 import { ingestPaymentEvent, fetchTransactionDetail, verifyPaymentCapture } from '../../services/backendApi'
@@ -326,11 +325,37 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     const paymentId = `pay_live_${Date.now().toString(36)}`
     const firstItem = items[0]
     const prod = firstItem?.product
-    const primaryImg = prod?.images?.primary || prod?.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+    const primaryImg = resolveProductImageUrl(prod?.images?.primary || prod?.primaryImage || prod?.thumbnailImage)
 
-    const mappedItems = items.map((item) => {
+    const fullAddressString = [
+      address.address_line1,
+      address.address_line2,
+      address.city,
+      address.state ? `${address.state} - ${address.pincode}` : address.pincode,
+    ]
+      .filter(Boolean)
+      .join(', ')
+
+    const customerPayload = {
+      name: address.full_name,
+      full_name: address.full_name,
+      email: address.email,
+      phone: address.phone,
+      address: fullAddressString,
+      address_line1: address.address_line1,
+      address_line2: address.address_line2,
+      city: address.city,
+      state: address.state,
+      pincode: address.pincode,
+    }
+
+    const mappedItems: ChronovaOrderItem[] = items.map((item) => {
       const p = item.product
-      const img = p.images?.primary || p.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+      const img = resolveProductImageUrl(p.images?.primary || p.primaryImage || p.thumbnailImage)
+      const uPrice = p.price_rupees
+      const qty = item.quantity
+      const lTotal = uPrice * qty
+      const pModel = p.model || p.name
       return {
         productId: p.id,
         product_id: p.id,
@@ -338,17 +363,26 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         product_name: p.name,
         productImage: img,
         product_image: img,
-        productCategory: p.category,
-        product_category: p.category,
+        imageUrl: img,
+        image_url: img,
         productBrand: p.brand,
         product_brand: p.brand,
-        quantity: item.quantity,
-        unitPrice: p.price_rupees,
-        unit_price: p.price_rupees,
-        unit_price_rupees: p.price_rupees,
-        totalPrice: p.price_rupees * item.quantity,
-        total_price: p.price_rupees * item.quantity,
-        total_price_rupees: p.price_rupees * item.quantity,
+        brand: p.brand,
+        productModel: pModel,
+        product_model: pModel,
+        model: pModel,
+        productCategory: p.category,
+        product_category: p.category,
+        category: p.category,
+        quantity: qty,
+        unitPrice: uPrice,
+        unit_price: uPrice,
+        unit_price_rupees: uPrice,
+        lineTotal: lTotal,
+        line_total: lTotal,
+        totalPrice: lTotal,
+        total_price: lTotal,
+        total_price_rupees: lTotal,
         selected_color: item.selected_color,
       }
     })
@@ -368,6 +402,15 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         order_id: currentOrderId,
         amount_minor: totalMinor,
         currency: 'INR',
+        customer: customerPayload,
+        items: mappedItems,
+        product_id: prod?.id,
+        product_name: prod?.name,
+        product_image: primaryImg,
+        product_brand: prod?.brand,
+        product_category: prod?.category,
+        quantity: firstItem?.quantity || 1,
+        unit_price: prod?.price_rupees || Math.round(totalDue),
       }).catch(() => {})
 
       // Update Order in Customer Order History
@@ -400,11 +443,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         quantity: firstItem?.quantity || 1,
         unit_price: prod?.price_rupees || Math.round(totalDue),
         items: mappedItems,
-        customer: {
-          name: address.full_name,
-          email: address.email,
-          phone: address.phone,
-        },
+        customer: customerPayload,
         metadata: {
           product_id: prod?.id,
           product_name: prod?.name,
@@ -425,16 +464,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         total_amount_rupees: totalDue,
         total_amount_minor: totalMinor,
         currency: 'INR',
-        customer: {
-          full_name: address.full_name,
-          email: address.email,
-          phone: address.phone,
-          address_line1: address.address_line1,
-          address_line2: address.address_line2,
-          city: address.city,
-          state: address.state,
-          pincode: address.pincode,
-        },
+        customer: customerPayload,
         payment_status: 'PAID',
         order_status: 'ORDER_CONFIRMED',
         recovery_status: 'NONE',
@@ -482,7 +512,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           direction: 'Direct settlement',
           reason: 'Payment completed successfully without degradation',
           action: 'None — Payment already successful',
-          confidence: 0.99,
+          confidence: 1.0,
           recovery_probability: 1.0,
           risk_score: 0.05,
           policy: 'Approved',
@@ -503,6 +533,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           unit_price: prod?.price_rupees || Math.round(totalDue),
           unit_price_rupees: prod?.price_rupees || Math.round(totalDue),
           items: mappedItems,
+          customer: customerPayload,
         }
         useTransactionStore.getState().ingestTransaction(successTxn)
         setOrderReceipt(receipt)
@@ -527,11 +558,37 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     const mockOrderId = `order_cn_${Date.now().toString(36)}`
     const firstItem = items[0]
     const prod = firstItem?.product
-    const primaryImg = prod?.images?.primary || prod?.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+    const primaryImg = resolveProductImageUrl(prod?.images?.primary || prod?.primaryImage || prod?.thumbnailImage)
 
-    const mappedItems = items.map((item) => {
+    const fullAddressString = [
+      address.address_line1,
+      address.address_line2,
+      address.city,
+      address.state ? `${address.state} - ${address.pincode}` : address.pincode,
+    ]
+      .filter(Boolean)
+      .join(', ')
+
+    const customerPayload = {
+      name: address.full_name,
+      full_name: address.full_name,
+      email: address.email,
+      phone: address.phone,
+      address: fullAddressString,
+      address_line1: address.address_line1,
+      address_line2: address.address_line2,
+      city: address.city,
+      state: address.state,
+      pincode: address.pincode,
+    }
+
+    const mappedItems: ChronovaOrderItem[] = items.map((item) => {
       const p = item.product
-      const img = p.images?.primary || p.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+      const img = resolveProductImageUrl(p.images?.primary || p.primaryImage || p.thumbnailImage)
+      const uPrice = p.price_rupees
+      const qty = item.quantity
+      const lTotal = uPrice * qty
+      const pModel = p.model || p.name
       return {
         productId: p.id,
         product_id: p.id,
@@ -539,17 +596,26 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         product_name: p.name,
         productImage: img,
         product_image: img,
-        productCategory: p.category,
-        product_category: p.category,
+        imageUrl: img,
+        image_url: img,
         productBrand: p.brand,
         product_brand: p.brand,
-        quantity: item.quantity,
-        unitPrice: p.price_rupees,
-        unit_price: p.price_rupees,
-        unit_price_rupees: p.price_rupees,
-        totalPrice: p.price_rupees * item.quantity,
-        total_price: p.price_rupees * item.quantity,
-        total_price_rupees: p.price_rupees * item.quantity,
+        brand: p.brand,
+        productModel: pModel,
+        product_model: pModel,
+        model: pModel,
+        productCategory: p.category,
+        product_category: p.category,
+        category: p.category,
+        quantity: qty,
+        unitPrice: uPrice,
+        unit_price: uPrice,
+        unit_price_rupees: uPrice,
+        lineTotal: lTotal,
+        line_total: lTotal,
+        totalPrice: lTotal,
+        total_price: lTotal,
+        total_price_rupees: lTotal,
         selected_color: item.selected_color,
       }
     })
@@ -567,16 +633,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       total_amount_rupees: totalDue,
       total_amount_minor: totalMinor,
       currency: 'INR',
-      customer: {
-        full_name: address.full_name,
-        email: address.email,
-        phone: address.phone,
-        address_line1: address.address_line1,
-        address_line2: address.address_line2,
-        city: address.city,
-        state: address.state,
-        pincode: address.pincode,
-      },
+      customer: customerPayload,
       payment_status: 'FAILED',
       order_status: 'PAYMENT_FAILED',
       recovery_status: 'ELIGIBLE',
@@ -608,11 +665,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       quantity: firstItem?.quantity || 1,
       unit_price: prod?.price_rupees || Math.round(totalDue),
       items: mappedItems,
-      customer: {
-        name: address.full_name,
-        email: address.email,
-        phone: address.phone,
-      },
+      customer: customerPayload,
       metadata: {
         product_id: prod?.id,
         product_name: prod?.name,
@@ -660,6 +713,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         unit_price: prod?.price_rupees || Math.round(totalDue),
         unit_price_rupees: prod?.price_rupees || Math.round(totalDue),
         items: mappedItems,
+        customer: customerPayload,
       }
 
       useTransactionStore.getState().ingestTransaction(failedTxn)

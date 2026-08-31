@@ -9,6 +9,7 @@ import {
   verifyPaymentCapture as verifyPayment,
   launchRazorpayCheckout,
 } from '../../services/backendApi'
+import { resolveProductImageUrl } from '../Chronova/utils'
 
 const PAGE_SIZE = 15
 
@@ -461,7 +462,7 @@ export const TransactionExplorer: React.FC = () => {
                     <div className="w-12 h-12 rounded-xl bg-[#15120c] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center relative">
                       {txn.product_image ? (
                         <img
-                          src={txn.product_image}
+                          src={resolveProductImageUrl(txn.product_image)}
                           alt={txn.product_name || 'Chronova Watch'}
                           className="w-full h-full object-cover"
                           onError={(e) => {
@@ -492,7 +493,7 @@ export const TransactionExplorer: React.FC = () => {
                         ) : isStopped ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
                             PAYMENT FAILED
-          </span>
+                          </span>
                         ) : (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
                             ⚡ RECOVERY IN PROGRESS
@@ -655,24 +656,33 @@ export const TransactionExplorer: React.FC = () => {
                       totalPrice: (selectedTxn.unit_price || selectedTxn.amount) * (selectedTxn.quantity || 1),
                     }
                   ]).map((item: any, idx: number) => {
-                    const img = item.productImage || item.product_image || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
-                    const pName = item.productName || item.product_name || 'Chronova Luxury Watch'
-                    const pBrand = item.productBrand || item.product_brand || 'Chronova'
-                    const pCat = item.productCategory || item.product_category || 'Automatic Watches'
+                    const img = resolveProductImageUrl(item.productImage || item.product_image || item.imageUrl || item.image_url)
+                    const pName = item.productName || item.product_name || 'Information unavailable'
+                    const pBrand = item.productBrand || item.product_brand || item.brand || 'Chronova'
+                    const pModel = item.productModel || item.product_model || item.model || pName
+                    const pCat = item.productCategory || item.product_category || item.category || 'Automatic Watches'
                     const qty = Number(item.quantity) || 1
                     const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(selectedTxn.amount / (selectedTxn.items?.length || 1))
-                    const lineTot = Number(item.totalPrice || item.total_price || item.total_price_rupees) || (qty * uPrice)
+                    const lineTot = Number(item.totalPrice || item.total_price || item.total_price_rupees || item.lineTotal || item.line_total) || (qty * uPrice)
 
                     return (
                       <div key={idx} className="flex items-center gap-3 p-2 rounded-lg bg-[#0f0c08] border border-[#2e271c]/60">
-                        <div className="w-12 h-12 rounded-lg bg-[#15120c] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center">
+                        <div className="w-12 h-12 rounded-lg bg-[#15120c] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center relative">
                           {img ? (
                             <img
                               src={img}
                               alt={pName}
                               className="w-full h-full object-cover"
                               onError={(e) => {
-                                (e.target as HTMLElement).style.display = 'none'
+                                const target = e.target as HTMLElement
+                                target.style.display = 'none'
+                                const parent = target.parentElement
+                                if (parent && !parent.querySelector('.img-fallback-text')) {
+                                  const span = document.createElement('span')
+                                  span.className = 'img-fallback-text text-[9px] font-mono text-slate-400 text-center p-1 leading-tight'
+                                  span.innerText = 'Product image unavailable'
+                                  parent.appendChild(span)
+                                }
                               }}
                             />
                           ) : (
@@ -684,9 +694,11 @@ export const TransactionExplorer: React.FC = () => {
                             {pName}
                           </div>
                           <div className="text-[10px] text-[#a89f91] font-mono truncate">
-                            {pBrand} · {pCat}
+                            {pBrand} · Model: {pModel}
+                            {pCat && <span> · {pCat}</span>}
+                            {item.selected_color && <span> · Color: {item.selected_color}</span>}
                           </div>
-                          <div className="text-[10px] text-[#7a7164] font-mono flex items-center justify-between">
+                          <div className="text-[10px] text-[#7a7164] font-mono flex items-center justify-between pt-0.5">
                             <span>Qty: <strong className="text-[#f4ede2]">{qty}</strong> × ₹{uPrice.toLocaleString('en-IN')}</span>
                             <span className="text-[#fcd34d] font-bold">₹{lineTot.toLocaleString('en-IN')}</span>
                           </div>
@@ -707,15 +719,19 @@ export const TransactionExplorer: React.FC = () => {
                 <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">2. CUSTOMER & SHIPPING</div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Customer Name:</span>
-                  <span className="text-[#f4ede2] font-bold">{selectedTxn.customer?.name || 'Chronova Customer'}</span>
+                  <span className="text-[#f4ede2] font-bold">{selectedTxn.customer?.full_name || selectedTxn.customer?.name || 'Information unavailable'}</span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Email Address:</span>
-                  <span className="text-[#a89f91]">{selectedTxn.customer?.email || 'customer@chronova.example.com'}</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.email || 'Information unavailable'}</span>
+                </div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Contact Phone:</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || 'Information unavailable'}</span>
                 </div>
                 <div className="flex justify-between py-0.5">
-                  <span className="text-[#7a7164]">Contact Phone:</span>
-                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || '+919876543210'}</span>
+                  <span className="text-[#7a7164]">Shipping Address:</span>
+                  <span className="text-[#a89f91] text-right truncate max-w-[220px]">{selectedTxn.customer?.address || 'Information unavailable'}</span>
                 </div>
               </div>
 
@@ -811,7 +827,7 @@ export const TransactionExplorer: React.FC = () => {
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Recommended Action:</span>
                   <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#e5a944] font-bold'}>
-                    {selectedTxn.status === 'RECOVERED' ? 'None — Direct payment successful' : selectedTxn.action}
+                    {selectedTxn.status === 'RECOVERED' ? (selectedTxn.action && !selectedTxn.action.includes('Send') ? selectedTxn.action : 'None — Recovery completed') : selectedTxn.action}
                   </span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">

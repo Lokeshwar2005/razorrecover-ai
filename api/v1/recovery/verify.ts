@@ -61,6 +61,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     amount,
     signature,
     razorpay_signature,
+    customer,
+    items,
+    product_id,
+    product_name,
+    product_image,
+    product_brand,
+    product_category,
+    quantity,
+    unit_price,
   } = req.body || {}
 
   const pId = razorpay_payment_id || payment_id
@@ -81,7 +90,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       oId,
       parsedMinor,
       signature || razorpay_signature,
-      req
+      req,
+      {
+        customer,
+        items,
+        product_id,
+        product_name,
+        product_image,
+        product_brand,
+        product_category,
+        quantity,
+        unit_price,
+      }
     )
 
     res.status(200).json({

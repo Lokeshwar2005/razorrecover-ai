@@ -16,9 +16,28 @@ import crypto from 'crypto'
 
 export interface ChronovaCustomer {
   name: string
+  full_name?: string
   email: string
   phone: string
+  address?: string
+  address_line1?: string
+  address_line2?: string
+  city?: string
+  state?: string
+  pincode?: string
   id?: string
+}
+
+export function resolveProductImageUrl(imgPath: string | undefined | null): string {
+  if (!imgPath || typeof imgPath !== 'string' || !imgPath.trim()) {
+    return 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+  }
+  const clean = imgPath.trim()
+  if (clean.startsWith('http://') || clean.startsWith('https://') || clean.startsWith('data:')) {
+    return clean
+  }
+  const relativePath = clean.replace(/^\/?(razorrecover-ai\/)?/, '').replace(/^\.?\//, '')
+  return `https://lokeshwar2005.github.io/razorrecover-ai/${relativePath}`
 }
 
 export interface ChronovaMetadata {
@@ -244,10 +263,64 @@ function normalizeTxn(t: any): ChronovaTransaction {
   const rawItems = Array.isArray(t.items) ? t.items : []
   const firstItem = rawItems[0]
 
+  const normalizedItems = rawItems.map((item: any) => {
+    const pImg = resolveProductImageUrl(item.productImage || item.product_image || item.imageUrl || item.image_url)
+    const pName = item.productName || item.product_name || 'Information unavailable'
+    const pBrand = item.productBrand || item.product_brand || item.brand || 'Information unavailable'
+    const pCat = item.productCategory || item.product_category || item.category || 'Information unavailable'
+    const pModel = item.productModel || item.product_model || item.model || pName
+    const pId = item.productId || item.product_id || 'Information unavailable'
+    const qty = Number(item.quantity) || 1
+    const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100)
+    const lTotal = Number(item.totalPrice || item.total_price || item.total_price_rupees || item.lineTotal || item.line_total) || (qty * uPrice)
+    return {
+      productId: pId,
+      product_id: pId,
+      productName: pName,
+      product_name: pName,
+      productImage: pImg,
+      product_image: pImg,
+      imageUrl: pImg,
+      image_url: pImg,
+      productBrand: pBrand,
+      product_brand: pBrand,
+      brand: pBrand,
+      productModel: pModel,
+      product_model: pModel,
+      model: pModel,
+      productCategory: pCat,
+      product_category: pCat,
+      category: pCat,
+      quantity: qty,
+      unitPrice: uPrice,
+      unit_price: uPrice,
+      unit_price_rupees: uPrice,
+      lineTotal: lTotal,
+      line_total: lTotal,
+      totalPrice: lTotal,
+      total_price: lTotal,
+      total_price_rupees: lTotal,
+      selected_color: item.selected_color,
+    }
+  })
+
+  const prodName = t.product_name || firstItem?.product_name || firstItem?.productName || 'Information unavailable'
+  const prodImg = resolveProductImageUrl(t.product_image || firstItem?.product_image || firstItem?.productImage || firstItem?.imageUrl || firstItem?.image_url)
+  const prodBrand = t.product_brand || firstItem?.product_brand || firstItem?.productBrand || firstItem?.brand || 'Information unavailable'
+  const prodCat = t.product_category || firstItem?.product_category || firstItem?.productCategory || firstItem?.category || 'Information unavailable'
+  const prodId = t.product_id || firstItem?.product_id || firstItem?.productId || 'Information unavailable'
+  const prodQty = Number(t.quantity || firstItem?.quantity) || 1
+  const prodUnitPrice = Number(t.unit_price || t.unit_price_rupees || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100)
+
+  const custName = t.customer?.full_name || t.customer?.name || 'Information unavailable'
+  const custEmail = t.customer?.email || 'Information unavailable'
+  const custPhone = t.customer?.phone || 'Information unavailable'
+  const custAddress = t.customer?.address || t.customer?.address_line1 || 'Information unavailable'
+
   return {
     id: String(t.id).toUpperCase(),
     chronova_order_id: t.chronova_order_id || t.order_id || t.provider_order_id || `order_cn_${t.id.toLowerCase()}`,
-    chronova_customer_id: t.chronova_customer_id || t.customer?.id || t.customer?.email || 'cust_chronova',
+    chronova_customer_id: t.chronova_customer_id || (custEmail !== 'Information unavailable' ? custEmail : undefined),
     razorpay_order_id: t.razorpay_order_id || t.provider_order_id || t.order_id,
     razorpay_payment_id: t.razorpay_payment_id || t.provider_payment_id || t.payment_id || t.provider_id,
     provider_id: t.razorpay_payment_id || t.provider_payment_id || t.payment_id || t.provider_id,
@@ -256,15 +329,15 @@ function normalizeTxn(t: any): ChronovaTransaction {
     amount: Math.round(amtMinor / 100),
     amount_minor: amtMinor,
     currency: (t.currency || 'INR').toUpperCase(),
-    product_id: t.product_id || firstItem?.product_id || firstItem?.productId || 'prod_chronova_seeker',
-    product_name: t.product_name || firstItem?.product_name || firstItem?.productName || 'Chronova Luxury Horizon Automatic',
-    product_image: t.product_image || firstItem?.product_image || firstItem?.productImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80',
-    product_brand: t.product_brand || firstItem?.product_brand || firstItem?.productBrand || 'Chronova',
-    product_category: t.product_category || firstItem?.product_category || firstItem?.productCategory || 'Automatic Watches',
-    quantity: Number(t.quantity || firstItem?.quantity) || 1,
-    unit_price: Number(t.unit_price || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100),
-    unit_price_rupees: Number(t.unit_price_rupees || firstItem?.unit_price_rupees || firstItem?.unitPrice) || Math.round(amtMinor / 100),
-    items: rawItems.length > 0 ? rawItems : undefined,
+    product_id: prodId,
+    product_name: prodName,
+    product_image: prodImg,
+    product_brand: prodBrand,
+    product_category: prodCat,
+    quantity: prodQty,
+    unit_price: prodUnitPrice,
+    unit_price_rupees: prodUnitPrice,
+    items: normalizedItems.length > 0 ? normalizedItems : undefined,
     subtotal: t.subtotal || Math.round(amtMinor / 100),
     subtotal_rupees: t.subtotal_rupees || Math.round(amtMinor / 100),
     totalAmount: t.totalAmount || Math.round(amtMinor / 100),
@@ -300,19 +373,21 @@ function normalizeTxn(t: any): ChronovaTransaction {
       recoveryOperationId: t.recovery_operation_id,
       recoveredAmount: isRec ? Math.round(amtMinor / 100) : 0,
     },
-    customer: t.customer || {
-      name: 'Chronova Customer',
-      email: 'customer@chronova.example.com',
-      phone: '+919876543210',
+    customer: {
+      name: custName,
+      full_name: custName,
+      email: custEmail,
+      phone: custPhone,
+      address: custAddress,
     },
     metadata: t.metadata || {
-      brand: 'Chronova',
+      brand: prodBrand,
       scenario_id: '3ds_timeout',
     },
     ai_diagnosis: t.ai_diagnosis || {
       transaction_id: String(t.id).toUpperCase(),
       root_cause: t.reason || '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
-      recommended_action: t.action || 'Send payment link',
+      recommended_action: isRec ? 'None — Recovery completed' : (t.action || 'Send payment link'),
       confidence_score: Number(t.confidence) || 95,
       recovery_probability: Number(t.recovery_probability) || 88,
       risk_score: Number(t.risk_score) || 20,
@@ -537,34 +612,54 @@ export async function upsertChronovaEvent(
     : []
 
   const firstItem = rawItems[0]
-  const prodId = (payload as any).product_id || payload.metadata?.product_id || firstItem?.product_id || firstItem?.productId || 'prod_chronova_seeker'
-  const prodName = (payload as any).product_name || payload.metadata?.product_name || firstItem?.product_name || firstItem?.productName || 'Chronova Luxury Horizon Automatic'
-  const prodImage = (payload as any).product_image || payload.metadata?.product_image || payload.metadata?.image || firstItem?.product_image || firstItem?.productImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
-  const prodBrand = (payload as any).product_brand || payload.metadata?.brand || firstItem?.product_brand || firstItem?.productBrand || 'Chronova'
-  const prodCat = (payload as any).product_category || payload.metadata?.category || firstItem?.product_category || firstItem?.productCategory || 'Automatic Watches'
+  const prodId = (payload as any).product_id || payload.metadata?.product_id || firstItem?.product_id || firstItem?.productId || 'Information unavailable'
+  const prodName = (payload as any).product_name || payload.metadata?.product_name || firstItem?.product_name || firstItem?.productName || 'Information unavailable'
+  const prodImage = resolveProductImageUrl((payload as any).product_image || payload.metadata?.product_image || payload.metadata?.image || firstItem?.product_image || firstItem?.productImage || firstItem?.imageUrl || firstItem?.image_url)
+  const prodBrand = (payload as any).product_brand || payload.metadata?.brand || firstItem?.product_brand || firstItem?.productBrand || firstItem?.brand || 'Information unavailable'
+  const prodCat = (payload as any).product_category || payload.metadata?.category || firstItem?.product_category || firstItem?.productCategory || firstItem?.category || 'Information unavailable'
   const prodQty = Number((payload as any).quantity || payload.metadata?.quantity || firstItem?.quantity) || 1
-  const prodUnitPrice = Number((payload as any).unit_price || payload.metadata?.unit_price || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100)
+  const prodUnitPrice = Number((payload as any).unit_price || (payload as any).unit_price_rupees || payload.metadata?.unit_price || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100)
 
-  const normalizedItems = rawItems.length > 0 ? rawItems.map((item: any) => ({
-    productId: item.productId || item.product_id,
-    product_id: item.product_id || item.productId,
-    productName: item.productName || item.product_name,
-    product_name: item.product_name || item.productName,
-    productImage: item.productImage || item.product_image || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80',
-    product_image: item.product_image || item.productImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80',
-    productBrand: item.productBrand || item.product_brand || 'Chronova',
-    product_brand: item.product_brand || item.productBrand || 'Chronova',
-    productCategory: item.productCategory || item.product_category || 'Automatic Watches',
-    product_category: item.product_category || item.productCategory || 'Automatic Watches',
-    quantity: Number(item.quantity) || 1,
-    unitPrice: Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100),
-    unit_price: Number(item.unit_price || item.unitPrice || item.unit_price_rupees) || Math.round(amtMinor / 100),
-    unit_price_rupees: Number(item.unit_price_rupees || item.unitPrice || item.unit_price) || Math.round(amtMinor / 100),
-    totalPrice: Number(item.totalPrice || item.total_price || item.total_price_rupees) || ((Number(item.quantity) || 1) * (Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100))),
-    total_price: Number(item.total_price || item.totalPrice || item.total_price_rupees) || ((Number(item.quantity) || 1) * (Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100))),
-    total_price_rupees: Number(item.total_price_rupees || item.totalPrice || item.total_price) || ((Number(item.quantity) || 1) * (Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100))),
-    selected_color: item.selected_color,
-  })) : [
+  const normalizedItems = rawItems.length > 0 ? rawItems.map((item: any) => {
+    const pImg = resolveProductImageUrl(item.productImage || item.product_image || item.imageUrl || item.image_url)
+    const pName = item.productName || item.product_name || 'Information unavailable'
+    const pBrand = item.productBrand || item.product_brand || item.brand || 'Information unavailable'
+    const pCat = item.productCategory || item.product_category || item.category || 'Information unavailable'
+    const pModel = item.productModel || item.product_model || item.model || pName
+    const pId = item.productId || item.product_id || 'Information unavailable'
+    const qty = Number(item.quantity) || 1
+    const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100)
+    const lTotal = Number(item.totalPrice || item.total_price || item.total_price_rupees || item.lineTotal || item.line_total) || (qty * uPrice)
+    return {
+      productId: pId,
+      product_id: pId,
+      productName: pName,
+      product_name: pName,
+      productImage: pImg,
+      product_image: pImg,
+      imageUrl: pImg,
+      image_url: pImg,
+      productBrand: pBrand,
+      product_brand: pBrand,
+      brand: pBrand,
+      productModel: pModel,
+      product_model: pModel,
+      model: pModel,
+      productCategory: pCat,
+      product_category: pCat,
+      category: pCat,
+      quantity: qty,
+      unitPrice: uPrice,
+      unit_price: uPrice,
+      unit_price_rupees: uPrice,
+      lineTotal: lTotal,
+      line_total: lTotal,
+      totalPrice: lTotal,
+      total_price: lTotal,
+      total_price_rupees: lTotal,
+      selected_color: item.selected_color,
+    }
+  }) : [
     {
       productId: prodId,
       product_id: prodId,
@@ -572,24 +667,38 @@ export async function upsertChronovaEvent(
       product_name: prodName,
       productImage: prodImage,
       product_image: prodImage,
+      imageUrl: prodImage,
+      image_url: prodImage,
       productBrand: prodBrand,
       product_brand: prodBrand,
+      brand: prodBrand,
+      productModel: prodName,
+      product_model: prodName,
+      model: prodName,
       productCategory: prodCat,
       product_category: prodCat,
+      category: prodCat,
       quantity: prodQty,
       unitPrice: prodUnitPrice,
       unit_price: prodUnitPrice,
       unit_price_rupees: prodUnitPrice,
+      lineTotal: prodUnitPrice * prodQty,
+      line_total: prodUnitPrice * prodQty,
       totalPrice: prodUnitPrice * prodQty,
       total_price: prodUnitPrice * prodQty,
       total_price_rupees: prodUnitPrice * prodQty,
     }
   ]
 
+  const custName = payload.customer?.full_name || payload.customer?.name || 'Information unavailable'
+  const custEmail = payload.customer?.email || 'Information unavailable'
+  const custPhone = payload.customer?.phone || 'Information unavailable'
+  const custAddress = payload.customer?.address || payload.customer?.address_line1 || 'Information unavailable'
+
   const newTxn: ChronovaTransaction = {
     id: id,
     chronova_order_id: orderId,
-    chronova_customer_id: payload.chronova_customer_id || payload.customer?.email || 'cust_chronova',
+    chronova_customer_id: payload.chronova_customer_id || (custEmail !== 'Information unavailable' ? custEmail : undefined),
     razorpay_order_id: payload.order_id || orderId,
     razorpay_payment_id: payload.payment_id,
     provider_id: payload.payment_id,
@@ -640,13 +749,15 @@ export async function upsertChronovaEvent(
       recoveryOperationId: undefined,
       recoveredAmount: 0,
     },
-    customer: payload.customer || {
-      name: 'Chronova Customer',
-      email: 'customer@chronova.example.com',
-      phone: '+919876543210',
+    customer: {
+      name: custName,
+      full_name: custName,
+      email: custEmail,
+      phone: custPhone,
+      address: custAddress,
     },
     metadata: payload.metadata || {
-      brand: 'Chronova',
+      brand: prodBrand,
       scenario_id: '3ds_timeout',
     },
     ai_diagnosis: {
@@ -756,7 +867,18 @@ export async function verifyChronovaPaymentCapture(
   orderId?: string,
   amountMinor?: number,
   signature?: string,
-  req?: IncomingMessage
+  req?: IncomingMessage,
+  extraMetadata?: {
+    customer?: ChronovaCustomer
+    items?: any[]
+    product_id?: string
+    product_name?: string
+    product_image?: string
+    product_brand?: string
+    product_category?: string
+    quantity?: number
+    unit_price?: number
+  }
 ): Promise<{ transaction: ChronovaTransaction; verified: boolean }> {
   const cleanId = (transactionId || '').trim().toUpperCase()
   const txn = await findChronovaTransaction(cleanId, req)
@@ -768,32 +890,107 @@ export async function verifyChronovaPaymentCapture(
 
   const wasPreviouslyFailed = txn && (txn.status === 'PAYMENT_FAILED' || txn.status === 'STOPPED' || txn.status === 'WAITING_FOR_RECOVERY' || txn.status === 'IN_PROGRESS')
 
+  const existingCustomer = txn?.customer
+  const extraCustomer = extraMetadata?.customer
+  const custName = extraCustomer?.full_name || extraCustomer?.name || existingCustomer?.full_name || existingCustomer?.name || 'Information unavailable'
+  const custEmail = extraCustomer?.email || existingCustomer?.email || 'Information unavailable'
+  const custPhone = extraCustomer?.phone || existingCustomer?.phone || 'Information unavailable'
+  const custAddress = extraCustomer?.address || extraCustomer?.address_line1 || existingCustomer?.address || existingCustomer?.address_line1 || 'Information unavailable'
+
+  const rawItems = (extraMetadata?.items && extraMetadata.items.length > 0)
+    ? extraMetadata.items
+    : (txn?.items && txn.items.length > 0)
+    ? txn.items
+    : []
+
+  const normalizedItems = rawItems.map((item: any) => {
+    const pImg = resolveProductImageUrl(item.productImage || item.product_image || item.imageUrl || item.image_url)
+    const pName = item.productName || item.product_name || 'Information unavailable'
+    const pBrand = item.productBrand || item.product_brand || item.brand || 'Information unavailable'
+    const pCat = item.productCategory || item.product_category || item.category || 'Information unavailable'
+    const pModel = item.productModel || item.product_model || item.model || pName
+    const pId = item.productId || item.product_id || 'Information unavailable'
+    const qty = Number(item.quantity) || 1
+    const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(verifiedAmt / 100)
+    const lTotal = Number(item.totalPrice || item.total_price || item.total_price_rupees || item.lineTotal || item.line_total) || (qty * uPrice)
+    return {
+      productId: pId,
+      product_id: pId,
+      productName: pName,
+      product_name: pName,
+      productImage: pImg,
+      product_image: pImg,
+      imageUrl: pImg,
+      image_url: pImg,
+      productBrand: pBrand,
+      product_brand: pBrand,
+      brand: pBrand,
+      productModel: pModel,
+      product_model: pModel,
+      model: pModel,
+      productCategory: pCat,
+      product_category: pCat,
+      category: pCat,
+      quantity: qty,
+      unitPrice: uPrice,
+      unit_price: uPrice,
+      unit_price_rupees: uPrice,
+      lineTotal: lTotal,
+      line_total: lTotal,
+      totalPrice: lTotal,
+      total_price: lTotal,
+      total_price_rupees: lTotal,
+      selected_color: item.selected_color,
+    }
+  })
+
+  const prodName = extraMetadata?.product_name || txn?.product_name || normalizedItems[0]?.product_name || 'Information unavailable'
+  const prodImg = resolveProductImageUrl(extraMetadata?.product_image || txn?.product_image || normalizedItems[0]?.product_image)
+  const prodBrand = extraMetadata?.product_brand || txn?.product_brand || normalizedItems[0]?.product_brand || 'Information unavailable'
+  const prodCat = extraMetadata?.product_category || txn?.product_category || normalizedItems[0]?.product_category || 'Information unavailable'
+  const prodId = extraMetadata?.product_id || txn?.product_id || normalizedItems[0]?.product_id || 'Information unavailable'
+  const prodQty = Number(extraMetadata?.quantity || txn?.quantity || normalizedItems[0]?.quantity) || 1
+  const prodUnitPrice = Number(extraMetadata?.unit_price || txn?.unit_price || normalizedItems[0]?.unit_price) || Math.round(verifiedAmt / 100)
+
   const updated: ChronovaTransaction = {
     ...(txn || {
       id: cleanId,
       chronova_order_id: orderId || `order_cn_${cleanId.toLowerCase()}`,
-      chronova_customer_id: 'cust_chronova',
+      chronova_customer_id: custEmail !== 'Information unavailable' ? custEmail : undefined,
       amount: Math.round(verifiedAmt / 100),
       amount_minor: verifiedAmt,
       currency: 'INR',
       direction: 'Direct settlement',
       reason: 'Direct payment completed successfully',
       action: 'None — Payment already successful',
-      confidence: 99,
+      confidence: 100,
       recovery_probability: 100,
       risk_score: 5,
       policy: 'Approved',
-      explanation: 'Customer completed payment directly via Razorpay Test Mode.',
+      explanation: `Payment completed successfully via Razorpay Test Mode (${paymentId}). No recovery intervention was required.`,
       latency: '180ms',
       source: 'CHRONOVA',
       provider: 'RAZORPAY',
       created_at: now,
     }),
+    product_id: prodId,
+    product_name: prodName,
+    product_image: prodImg,
+    product_brand: prodBrand,
+    product_category: prodCat,
+    quantity: prodQty,
+    unit_price: prodUnitPrice,
+    unit_price_rupees: prodUnitPrice,
+    items: normalizedItems.length > 0 ? normalizedItems : txn?.items,
+    subtotal: txn?.subtotal || Math.round(verifiedAmt / 100),
+    subtotal_rupees: txn?.subtotal_rupees || Math.round(verifiedAmt / 100),
+    totalAmount: Math.round(verifiedAmt / 100),
+    total_amount_rupees: Math.round(verifiedAmt / 100),
     status: 'RECOVERED',
     action: wasPreviouslyFailed ? 'None — Recovery completed' : 'None — Payment already successful',
     explanation: wasPreviouslyFailed
       ? `Payment successfully recovered via customer retry link and captured in Razorpay (Payment ID: ${paymentId}).`
-      : `Customer completed payment directly via Razorpay Test Mode (Payment ID: ${paymentId}). No recovery intervention was required.`,
+      : `Payment completed successfully via Razorpay Test Mode (Payment ID: ${paymentId}). No recovery intervention was required.`,
     razorpay_payment_id: paymentId,
     razorpay_order_id: orderId || txn?.razorpay_order_id || txn?.chronova_order_id,
     provider_id: paymentId,
@@ -817,9 +1014,16 @@ export async function verifyChronovaPaymentCapture(
       reason: wasPreviouslyFailed ? txn?.reason : undefined,
       diagnosis: wasPreviouslyFailed ? txn?.explanation : undefined,
       confidence: wasPreviouslyFailed ? (txn?.confidence || 95) : 100,
-      recommendedAction: wasPreviouslyFailed ? 'Recovery completed' : 'None — Payment already successful',
+      recommendedAction: wasPreviouslyFailed ? 'None — Recovery completed' : 'None — Payment already successful',
       recoveryOperationId: txn?.recovery_operation_id,
       recoveredAmount: wasPreviouslyFailed ? Math.round(verifiedAmt / 100) : 0,
+    },
+    customer: {
+      name: custName,
+      full_name: custName,
+      email: custEmail,
+      phone: custPhone,
+      address: custAddress,
     },
     captured_at: now,
     verified_at: now,

@@ -133,14 +133,23 @@ export interface ChronovaOrderItem {
   product_name: string
   productImage?: string
   product_image: string
+  imageUrl?: string
+  image_url?: string
   productCategory?: string
   product_category?: string
+  category?: string
   productBrand?: string
   product_brand?: string
+  brand?: string
+  productModel?: string
+  product_model?: string
+  model?: string
   quantity: number
   unitPrice?: number
   unit_price?: number
   unit_price_rupees: number
+  lineTotal?: number
+  line_total?: number
   totalPrice?: number
   total_price?: number
   total_price_rupees: number

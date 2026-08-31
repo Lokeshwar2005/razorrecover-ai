@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react'
 import type { ChronovaOrder } from './types'
+import { resolveProductImageUrl } from './utils'
 import { getStoredChronovaOrders } from '../../services/chronovaOrderStore'
 
 interface OrderHistoryModalProps {
@@ -203,7 +204,7 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
                       <div className="w-14 h-14 rounded-xl bg-slate-100 border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center relative">
                         {firstItem?.product_image ? (
                           <img
-                            src={firstItem.product_image}
+                            src={resolveProductImageUrl(firstItem.product_image)}
                             alt={firstItem.product_name || 'Chronova Watch'}
                             className="w-full h-full object-cover"
                             onError={(e) => {
@@ -301,37 +302,51 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
                           <span className="text-slate-900 font-bold font-mono">Total: {formatINR(order.total_amount_rupees)}</span>
                         </div>
                         <div className="space-y-2">
-                          {order.items.map((item, idx) => (
-                            <div key={idx} className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 border border-slate-100">
-                              <div className="w-12 h-12 rounded-lg bg-white border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center">
-                                {item.product_image ? (
-                                  <img
-                                    src={item.product_image}
-                                    alt={item.product_name}
-                                    className="w-full h-full object-cover"
-                                    onError={(e) => {
-                                      (e.target as HTMLElement).style.display = 'none'
-                                    }}
-                                  />
-                                ) : (
-                                  <span className="text-lg">⌚</span>
-                                )}
+                          {order.items.map((item, idx) => {
+                            const imgSrc = resolveProductImageUrl(item.product_image || item.productImage || item.imageUrl || item.image_url)
+                            const pBrand = item.product_brand || item.productBrand || item.brand || 'Chronova'
+                            const pModel = item.product_model || item.productModel || item.model || item.product_name
+                            return (
+                              <div key={idx} className="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                                <div className="w-14 h-14 rounded-lg bg-white border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center relative">
+                                  {imgSrc ? (
+                                    <img
+                                      src={imgSrc}
+                                      alt={item.product_name}
+                                      className="w-full h-full object-cover"
+                                      onError={(e) => {
+                                        const target = e.target as HTMLElement
+                                        target.style.display = 'none'
+                                        const parent = target.parentElement
+                                        if (parent && !parent.querySelector('.img-fallback-text')) {
+                                          const span = document.createElement('span')
+                                          span.className = 'img-fallback-text text-[9px] font-mono text-slate-400 text-center p-1 leading-tight'
+                                          span.innerText = 'Product image unavailable'
+                                          parent.appendChild(span)
+                                        }
+                                      }}
+                                    />
+                                  ) : (
+                                    <span className="text-xs font-mono text-slate-400 text-center p-1">Product image unavailable</span>
+                                  )}
+                                </div>
+                                <div className="flex-1 min-w-0 space-y-0.5">
+                                  <div className="font-bold text-slate-900 text-xs truncate">
+                                    {item.product_name}
+                                  </div>
+                                  <div className="text-[10px] text-slate-500 font-mono">
+                                    {pBrand} · Model: {pModel}
+                                    {item.product_category && <span> · {item.product_category}</span>}
+                                    {item.selected_color && <span> · Color: {item.selected_color}</span>}
+                                  </div>
+                                  <div className="text-[11px] text-slate-700 font-mono flex items-center justify-between pt-0.5">
+                                    <span>Qty: <strong>{item.quantity}</strong> × {formatINR(item.unit_price_rupees || item.unit_price || 0)}</span>
+                                    <span className="font-bold text-slate-900">{formatINR(item.total_price_rupees || (item.unit_price_rupees * item.quantity))}</span>
+                                  </div>
+                                </div>
                               </div>
-                              <div className="flex-1 min-w-0 space-y-0.5">
-                                <div className="font-bold text-slate-900 text-xs truncate">
-                                  {item.product_name}
-                                </div>
-                                <div className="text-[10px] text-slate-500 font-mono">
-                                  {item.product_brand || 'Chronova'} · {item.product_category || 'Automatic Watches'}
-                                  {item.selected_color && <span> · Color: {item.selected_color}</span>}
-                                </div>
-                                <div className="text-[11px] text-slate-700 font-mono flex items-center justify-between">
-                                  <span>Qty: <strong>{item.quantity}</strong> × {formatINR(item.unit_price_rupees)}</span>
-                                  <span className="font-bold text-slate-900">{formatINR(item.total_price_rupees || (item.unit_price_rupees * item.quantity))}</span>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
+                            )
+                          })}
                         </div>
                       </div>
 
@@ -339,13 +354,17 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 bg-white rounded-xl border border-slate-200">
                         <div>
                           <div className="text-[10px] font-mono text-slate-400 font-bold uppercase">Customer Information</div>
-                          <div className="font-bold text-slate-900 text-xs mt-0.5">{order.customer.full_name}</div>
-                          <div className="text-slate-500 text-[11px]">{order.customer.email} · {order.customer.phone}</div>
+                          <div className="font-bold text-slate-900 text-xs mt-0.5">
+                            {order.customer?.full_name || order.customer?.name || 'Information unavailable'}
+                          </div>
+                          <div className="text-slate-500 text-[11px]">
+                            {order.customer?.email || 'Information unavailable'} · {order.customer?.phone || 'Information unavailable'}
+                          </div>
                         </div>
                         <div>
                           <div className="text-[10px] font-mono text-slate-400 font-bold uppercase">Delivery Destination</div>
                           <div className="text-slate-800 text-xs mt-0.5 font-medium">
-                            {order.customer.address_line1 || 'Main Street'}, {order.customer.city || 'Mumbai'}, {order.customer.pincode || '400001'}
+                            {order.customer?.address || [order.customer?.address_line1, order.customer?.address_line2, order.customer?.city, order.customer?.state, order.customer?.pincode].filter(Boolean).join(', ') || 'Information unavailable'}
                           </div>
                         </div>
                       </div>

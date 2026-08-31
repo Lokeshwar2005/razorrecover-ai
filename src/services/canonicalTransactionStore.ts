@@ -101,9 +101,18 @@ export interface CanonicalTransaction {
   workflow_status?: string
   workflow_message?: string
   customer?: {
-    name: string
-    email: string
-    phone: string
+    name?: string
+    full_name?: string
+    email?: string
+    phone?: string
+    address?: string
+    address_line1?: string
+    address_line2?: string
+    city?: string
+    state?: string
+    pincode?: string
+    id?: string
+    [key: string]: any
   }
   metadata?: {
     brand?: string
