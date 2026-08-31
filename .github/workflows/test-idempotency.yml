@@ -2,8 +2,6 @@ name: Test #1 - Transaction & Recovery Idempotency
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
 
 concurrency:
   group: test-1-${{ github.ref }}
@@ -14,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for Vercel production deployment
-        run: sleep 35
+        run: sleep 5
 
       - name: Run duplicate transaction and recovery test
         env:
