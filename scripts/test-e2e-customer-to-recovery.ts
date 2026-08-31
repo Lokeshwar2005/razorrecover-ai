@@ -1,5 +1,8 @@
 async function runTest5() {
   const API_BASE = process.env.API_BASE || 'https://razorrecover-ai-teal.vercel.app'
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GIST_TOKEN || ''
+  const authHeaders: Record<string, string> = GITHUB_TOKEN ? { 'x-github-token': GITHUB_TOKEN } : {}
+
   const RUN_TIMESTAMP = Date.now()
   const txnId = `TXN-CN-PROD-${RUN_TIMESTAMP.toString(36).toUpperCase()}`
   const orderId = `order_cn_${RUN_TIMESTAMP.toString(36)}`
@@ -44,7 +47,7 @@ async function runTest5() {
 
   const res1 = await fetch(`${API_BASE}/api/v1/transactions/events`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
     body: JSON.stringify(step1Payload),
   })
   const body1 = await res1.json()
@@ -58,7 +61,7 @@ async function runTest5() {
   // Step 9 - 13: Website B (RazorRecover AI) Transaction Intelligence & Lifecycle Trace
   console.log('--- STEP 9-13: WEBSITE B (RAZORRECOVER AI) INTELLIGENCE & TRACE ---')
   const resDetail1 = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`, {
-    headers: { Accept: 'application/json' },
+    headers: { Accept: 'application/json', ...authHeaders },
   })
   const bodyDetail1 = await resDetail1.json()
   const txnDetail1 = bodyDetail1?.transaction
@@ -91,7 +94,7 @@ async function runTest5() {
   }
   const resRec1 = await fetch(`${API_BASE}/api/v1/recovery/execute`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
     body: JSON.stringify(recoveryPayload),
   })
   const bodyRec1 = await resRec1.json()
@@ -103,7 +106,9 @@ async function runTest5() {
   console.log(`✓ 3. Recovery operation created exactly once: [${recoveryOpId}].\n`)
 
   // Verify intermediate state invariant
-  const resDetail2 = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`)
+  const resDetail2 = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`, {
+    headers: { ...authHeaders },
+  })
   const bodyDetail2 = await resDetail2.json()
   console.log(`Intermediate Invariant: Status=${bodyDetail2?.transaction?.status}, VerifiedRevenue=₹${bodyDetail2?.transaction?.verified_amount_minor}`)
   if (bodyDetail2?.transaction?.status !== 'IN_PROGRESS' || bodyDetail2?.transaction?.verified_amount_minor !== 0) {
@@ -122,7 +127,7 @@ async function runTest5() {
   }
   const resVerify = await fetch(`${API_BASE}/api/v1/recovery/verify`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
     body: JSON.stringify(verifyPayload),
   })
   const bodyVerify = await resVerify.json()
@@ -134,7 +139,9 @@ async function runTest5() {
 
   // Step 19 - 24: Website A Real-Time Polling & Order Confirmation
   console.log('--- STEP 19-24: WEBSITE A POLLING DETECTION & ORDER CONFIRMATION ---')
-  const resPoll = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`)
+  const resPoll = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`, {
+    headers: { ...authHeaders },
+  })
   const bodyPoll = await resPoll.json()
   const txnPoll = bodyPoll?.transaction
 
@@ -162,7 +169,9 @@ async function runTest5() {
 
   // Cross-Origin & Refresh Invariance Check
   console.log('--- REFRESH & DUPLICATE SAFETY VALIDATION ---')
-  const resRefresh = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`)
+  const resRefresh = await fetch(`${API_BASE}/api/v1/transactions/${txnId}`, {
+    headers: { ...authHeaders },
+  })
   const bodyRefresh = await resRefresh.json()
   if (bodyRefresh?.transaction?.status !== 'RECOVERED' || bodyRefresh?.transaction?.verified_amount_minor !== amountMinor) {
     throw new Error(`Refresh Safety Failed: State was not preserved after simulated refresh!`)

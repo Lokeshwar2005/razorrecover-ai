@@ -1,5 +1,7 @@
 async function runSecurityAudit() {
   const API_BASE = process.env.API_BASE || 'https://razorrecover-ai-teal.vercel.app'
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GIST_TOKEN || ''
+  const authHeaders: Record<string, string> = GITHUB_TOKEN ? { 'x-github-token': GITHUB_TOKEN } : {}
   const RUN_TIMESTAMP = Date.now()
 
   console.log('====================================================================')
@@ -55,6 +57,7 @@ async function runSecurityAudit() {
       headers: {
         'Content-Type': 'application/json',
         Origin: 'https://lokeshwar2005.github.io',
+        ...authHeaders,
       },
       body: JSON.stringify({
         transaction_id: validTxnId,
@@ -78,7 +81,7 @@ async function runSecurityAudit() {
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
       body: JSON.stringify({
         transaction_id: validTxnId,
         amount_minor: 899500,
@@ -102,7 +105,7 @@ async function runSecurityAudit() {
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
       body: JSON.stringify({
         transaction_id: forgedTxnId,
         amount_minor: 899500,
@@ -126,7 +129,7 @@ async function runSecurityAudit() {
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...authHeaders },
       body: JSON.stringify({ transaction_id: '', amount_minor: 899500 }),
     })
     if (res.status === 422) {
@@ -142,7 +145,7 @@ async function runSecurityAudit() {
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...authHeaders },
       body: JSON.stringify({ transaction_id: `TXN-SEC-ZERO-${RUN_TIMESTAMP}`, amount_minor: 0 }),
     })
     if (res.status === 422) {
@@ -158,7 +161,7 @@ async function runSecurityAudit() {
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...authHeaders },
       body: JSON.stringify({ transaction_id: `TXN-SEC-NEG-${RUN_TIMESTAMP}`, amount_minor: -5000 }),
     })
     if (res.status === 422) {
@@ -175,7 +178,7 @@ async function runSecurityAudit() {
   try {
     const res1 = await fetch(`${API_BASE}/api/v1/recovery/execute`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
       body: JSON.stringify({ transaction_id: validTxnId, action_type: 'Send payment link' }),
     })
     const body1 = await res1.json()
@@ -183,7 +186,7 @@ async function runSecurityAudit() {
 
     const res2 = await fetch(`${API_BASE}/api/v1/recovery/execute`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
       body: JSON.stringify({ transaction_id: validTxnId, action_type: 'Send payment link' }),
     })
     const body2 = await res2.json()
@@ -204,7 +207,7 @@ async function runSecurityAudit() {
   // --- 10. PRE-SETTLEMENT INVARIANT GATE ---
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/${validTxnId}`, {
-      headers: { Origin: 'https://lokeshwar2005.github.io' },
+      headers: { Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
     })
     const body = await res.json()
     const t = body?.transaction
@@ -222,7 +225,7 @@ async function runSecurityAudit() {
   try {
     const res = await fetch(`${API_BASE}/api/v1/recovery/verify`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+      headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
       body: JSON.stringify({
         transaction_id: validTxnId,
         payment_id: paymentId,
@@ -243,7 +246,7 @@ async function runSecurityAudit() {
   // --- 12. FINAL RECOVERED STATE ---
   try {
     const res = await fetch(`${API_BASE}/api/v1/transactions/${validTxnId}`, {
-      headers: { Origin: 'https://lokeshwar2005.github.io' },
+      headers: { Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
     })
     const body = await res.json()
     const t = body?.transaction
@@ -262,7 +265,7 @@ async function runSecurityAudit() {
     const promises = Array.from({ length: 10 }).map(() =>
       fetch(`${API_BASE}/api/v1/transactions/events`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+        headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
         body: JSON.stringify({
           transaction_id: concurrentTxnId,
           amount_minor: 499500,
@@ -277,7 +280,7 @@ async function runSecurityAudit() {
 
     // Check that ledger contains exactly ONE record
     const checkRes = await fetch(`${API_BASE}/api/v1/transactions/${concurrentTxnId}`, {
-      headers: { Origin: 'https://lokeshwar2005.github.io' },
+      headers: { Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
     })
     const checkBody = await checkRes.json()
 
@@ -295,7 +298,7 @@ async function runSecurityAudit() {
     const promises = Array.from({ length: 5 }).map(() =>
       fetch(`${API_BASE}/api/v1/recovery/execute`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io' },
+        headers: { 'Content-Type': 'application/json', Origin: 'https://lokeshwar2005.github.io', ...authHeaders },
         body: JSON.stringify({ transaction_id: concurrentTxnId, action_type: 'Send payment link' }),
       }).then((r) => r.json())
     )

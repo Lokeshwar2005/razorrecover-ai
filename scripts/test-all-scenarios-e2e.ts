@@ -67,6 +67,8 @@ const SCENARIOS = [
 
 async function runAllScenariosTest() {
   const API_BASE = process.env.API_BASE || 'https://razorrecover-ai-teal.vercel.app'
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GIST_TOKEN || ''
+  const authHeaders: Record<string, string> = GITHUB_TOKEN ? { 'x-github-token': GITHUB_TOKEN } : {}
   const RUN_TIMESTAMP = Date.now()
 
   console.log('====================================================================')
@@ -105,7 +107,7 @@ async function runAllScenariosTest() {
 
     const res1 = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
       body: JSON.stringify(step1Payload),
     })
     const body1 = await res1.json()
@@ -117,7 +119,7 @@ async function runAllScenariosTest() {
     // 2. Duplicate Ingestion Idempotency
     const res2 = await fetch(`${API_BASE}/api/v1/transactions/events`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
       body: JSON.stringify(step1Payload),
     })
     const body2 = await res2.json()
@@ -128,7 +130,7 @@ async function runAllScenariosTest() {
 
     // 3. Detail & AI Diagnosis Verification
     const res3 = await fetch(`${API_BASE}/api/v1/transactions/${testId}`, {
-      headers: { Accept: 'application/json' },
+      headers: { Accept: 'application/json', ...authHeaders },
     })
     const body3 = await res3.json()
     const txn3 = body3?.transaction
@@ -158,7 +160,7 @@ async function runAllScenariosTest() {
     }
     const res4 = await fetch(`${API_BASE}/api/v1/recovery/execute`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
       body: JSON.stringify(step4Payload),
     })
     const body4 = await res4.json()
@@ -169,7 +171,10 @@ async function runAllScenariosTest() {
     console.log(`✓ 4. Recovery Execution: Operation created [${recoveryOpId}].`)
 
     // 5. Pre-Settlement Invariant Check
-    const res5 = await fetch(`${API_BASE}/api/v1/transactions/${testId}`)
+    await new Promise((r) => setTimeout(r, 500))
+    const res5 = await fetch(`${API_BASE}/api/v1/transactions/${testId}`, {
+      headers: { Accept: 'application/json', ...authHeaders },
+    })
     const body5 = await res5.json()
     if (body5?.transaction?.status !== 'IN_PROGRESS' || body5?.transaction?.verified_amount_minor !== 0) {
       throw new Error(`Scenario ${sc.id} Step 5 Failed: Pre-settlement invariant violated! Status=${body5?.transaction?.status}`)
@@ -186,7 +191,7 @@ async function runAllScenariosTest() {
     }
     const res6 = await fetch(`${API_BASE}/api/v1/recovery/verify`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
       body: JSON.stringify(step6Payload),
     })
     const body6 = await res6.json()
@@ -196,7 +201,10 @@ async function runAllScenariosTest() {
     console.log(`✓ 6. Payment Verification: Capture verified for ₹${(sc.amountMinor / 100).toLocaleString('en-IN')}.`)
 
     // 7. Final RECOVERED State Confirmation
-    const res7 = await fetch(`${API_BASE}/api/v1/transactions/${testId}`)
+    await new Promise((r) => setTimeout(r, 500))
+    const res7 = await fetch(`${API_BASE}/api/v1/transactions/${testId}`, {
+      headers: { Accept: 'application/json', ...authHeaders },
+    })
     const body7 = await res7.json()
     const txn7 = body7?.transaction
     if (
@@ -221,9 +229,10 @@ async function runAllScenariosTest() {
   }
 
   console.log('====================================================================')
-  console.log('🎉 ALL 8 PAYMENT FAILURE SCENARIOS VALIDATED SUCCESSFULLY (100% PASS)')
-  console.log('====================================================================\n')
+  console.log('📊 ALL 8 PAYMENT FAILURE SCENARIOS & RECOVERY REPORT')
+  console.log('====================================================================')
   console.table(resultsTable)
+  console.log('🎉 TEST #3: 100% OF ALL 8 SCENARIOS PASSED FULL LIFECYCLE VERIFICATION')
 }
 
 runAllScenariosTest().catch((err) => {

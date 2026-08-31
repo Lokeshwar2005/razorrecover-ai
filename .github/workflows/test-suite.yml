@@ -6,12 +6,15 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: e2e-test-suite-${{ github.ref }}
+  group: e2e-test-suite
   cancel-in-progress: false
 
 jobs:
   test_suite:
     runs-on: ubuntu-latest
+    env:
+      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -49,12 +52,12 @@ jobs:
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Content-Type: application/json' \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GIST_TOKEN }}" \
+                -H "x-github-token: $GIST_TOKEN" \
                 --data "$body")
             else
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GIST_TOKEN }}")
+                -H "x-github-token: $GIST_TOKEN")
             fi
 
             local response_body
@@ -90,33 +93,34 @@ jobs:
           )
 
           echo "=== 1. First transaction ingestion ==="
-          first=$(make_request "1. First transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
-          echo "$first" | jq -e '.success == true and .duplicate == false and .transaction_id == env.TEST_ID' >/dev/null
+          res1=$(make_request "1. First transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
+          echo "$res1" | jq -e '.success == true and .duplicate == false and .status == "STOPPED" and .transaction_id == env.TEST_ID' >/dev/null
 
           sleep 1
 
           echo "=== 2. Duplicate transaction ingestion ==="
-          second=$(make_request "2. Duplicate transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
-          echo "$second" | jq -e '.success == true and .duplicate == true and .transaction_id == env.TEST_ID' >/dev/null
+          res2=$(make_request "2. Duplicate transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
+          echo "$res2" | jq -e '.success == true and .duplicate == true and .status == "STOPPED" and .transaction_id == env.TEST_ID' >/dev/null
 
           sleep 1
 
           echo "=== 3. First recovery execution ==="
           recovery_payload=$(jq -n --arg id "$TEST_ID" '{transaction_id:$id, action_type:"Send payment link"}')
-          recovery_first=$(make_request "3. First recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
-          echo "$recovery_first" | jq -e '.success == true and .duplicate == false and (.recovery_operation_id | length > 0)' >/dev/null
-
-          RECOVERY_ID=$(echo "$recovery_first" | jq -r '.recovery_operation_id')
-          export RECOVERY_ID
+          res3=$(make_request "3. First recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
+          op_id1=$(echo "$res3" | jq -r '.recovery_operation_id')
+          echo "$res3" | jq -e '.success == true and .duplicate == false and .workflow_status == "COMPLETE" and (.recovery_operation_id | length > 0)' >/dev/null
 
           sleep 1
 
           echo "=== 4. Duplicate recovery execution ==="
-          recovery_second=$(make_request "4. Duplicate recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
-          echo "$recovery_second" | jq -e --arg rec_id "$RECOVERY_ID" '.success == true and .duplicate == true and .recovery_operation_id == $rec_id' >/dev/null
+          res4=$(make_request "4. Duplicate recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
+          op_id2=$(echo "$res4" | jq -r '.recovery_operation_id')
+          echo "$res4" | jq -e '.success == true and .duplicate == true and .workflow_status == "COMPLETE"' >/dev/null
 
-          second_recovery_id=$(echo "$recovery_second" | jq -r '.recovery_operation_id')
-          test "$RECOVERY_ID" = "$second_recovery_id"
+          if [ "$op_id1" != "$op_id2" ]; then
+            echo "❌ FAILED: Duplicate recovery produced a different operation ID" >&2
+            exit 1
+          fi
 
           sleep 1
 
@@ -154,12 +158,12 @@ jobs:
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Content-Type: application/json' \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GIST_TOKEN }}" \
+                -H "x-github-token: $GIST_TOKEN" \
                 --data "$body")
             else
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GIST_TOKEN }}")
+                -H "x-github-token: $GIST_TOKEN")
             fi
 
             local response_body
@@ -219,7 +223,14 @@ jobs:
           sleep 1
 
           echo "=== 5. Verify final ledger state ==="
-          step5_res=$(make_request "5. Verify final ledger state" "GET" "$API_BASE/api/v1/transactions/$TEST_ID")
+          step5_res=""
+          for i in {1..5}; do
+            step5_res=$(make_request "5. Verify final ledger state (attempt $i)" "GET" "$API_BASE/api/v1/transactions/$TEST_ID")
+            if echo "$step5_res" | jq -e '.transaction.status == "RECOVERED"' >/dev/null 2>&1; then
+              break
+            fi
+            sleep 1
+          done
           echo "$step5_res" | jq -e --arg pay_id "$PAYMENT_ID" --argjson amt "$AMOUNT_MINOR" '.transaction.id == env.TEST_ID and .transaction.status == "RECOVERED" and .transaction.verified_amount_minor == $amt and .transaction.provider_payment_id == $pay_id' >/dev/null
 
           echo "🎉 PASS: Test #2 — End-to-End Recovery & Verification Lifecycle"
@@ -227,17 +238,14 @@ jobs:
       - name: 3. Run Test #3 — All 8 Payment Failure Scenarios & AI Recovery
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
-          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: npx tsx scripts/test-all-scenarios-e2e.ts
 
       - name: 4. Run Test #5 — Full E2E Customer Storefront to Recovery Lifecycle
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
-          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: npx tsx scripts/test-e2e-customer-to-recovery.ts
 
       - name: 5. Run Test #6 — Security & Production Integrity Audit Suite
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
-          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: npx tsx scripts/test-security-integrity.ts
