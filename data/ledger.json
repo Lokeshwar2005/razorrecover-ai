@@ -3623,7 +3623,7 @@
       "amount_minor": 799500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "Customer Dismissed Razorpay Checkout Window Before Submitting Credentials",
       "action": "Send Cart Recovery WhatsApp with 5% Perk",
@@ -3634,13 +3634,13 @@
       "explanation": "High-intent cart abandonment detected. Automated promotional recovery link dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:09:35.926Z",
-      "updated_at": "2026-08-31T14:09:38.522Z",
+      "updated_at": "2026-08-31T14:09:41.663Z",
       "provider": "razorpay",
-      "provider_id": "order_test_cart_abandonment_1788185316793",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-CART_ABANDONMENT-1788185316793",
+      "provider_id": "pay_test_capture_cart_abandonment_1788185316793",
+      "provider_payment_id": "pay_test_capture_cart_abandonment_1788185316793",
       "provider_order_id": "order_test_cart_abandonment_1788185316793",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 799500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -3663,8 +3663,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOCARTABANDONMENT1788185316793",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-CART_ABANDONMENT-1788185316793 [REC-20260831-TXNE2ESCENARIOCARTABANDONMENT1788185316793] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹7,995 for TXN-E2E-SCENARIO-CART_ABANDONMENT-1788185316793.",
+      "captured_at": "2026-08-31T14:09:41.663Z"
     }
   }
 }
