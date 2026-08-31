@@ -693,3 +693,77 @@ export async function fetchDatabaseHealth(): Promise<DatabaseHealthData | null> 
   } catch (e) {}
   return null
 }
+
+export interface PaymentCustomerPayload {
+  name?: string
+  email?: string
+  phone?: string
+}
+
+export interface PaymentEventMetadataPayload {
+  product_id?: string
+  product_name?: string
+  brand?: string
+  scenario_id?: string
+  extra?: Record<string, any>
+}
+
+export interface PaymentEventPayload {
+  transaction_id: string
+  merchant_id?: string
+  order_id?: string
+  payment_id?: string
+  amount_minor: number
+  currency?: string
+  status?: 'failed' | 'captured' | 'recovered' | 'pending' | 'stopped' | string
+  provider?: string
+  method?: string
+  failure_code?: string
+  failure_reason?: string
+  customer?: PaymentCustomerPayload
+  metadata?: PaymentEventMetadataPayload
+}
+
+export interface PaymentEventResponse {
+  success: boolean
+  transaction_id: string
+  status: string
+  opportunity_id?: string
+  message: string
+  created_at: string
+}
+
+export async function ingestPaymentEvent(payload: PaymentEventPayload): Promise<PaymentEventResponse | null> {
+  try {
+    const res = await fetch(`${API_BASE}/transactions/events`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        ...payload,
+        merchant_id: payload.merchant_id || 'mer_chronova_watches',
+        currency: payload.currency || 'INR',
+        provider: payload.provider || 'razorpay',
+      }),
+      signal: AbortSignal.timeout(4500),
+    })
+    if (res.ok) {
+      return await res.json()
+    }
+  } catch (e) {
+    // Network or server unavailable - fallback gracefully
+  }
+  return null
+}
+
+export async function fetchTransactionDetail(transactionId: string): Promise<any | null> {
+  try {
+    const res = await fetch(`${API_BASE}/transactions/${encodeURIComponent(transactionId)}`, {
+      signal: AbortSignal.timeout(3500),
+    })
+    if (res.ok) {
+      return await res.json()
+    }
+  } catch (e) {}
+  return null
+}
+

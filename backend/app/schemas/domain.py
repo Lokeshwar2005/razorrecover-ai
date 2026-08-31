@@ -329,3 +329,47 @@ class CounterfactualResponse(BaseModel):
     deltas: List[VariableDelta]
     explanation: str
     simulated_at: datetime
+
+
+# ---------------------------------------------------------------------------
+# Payment Event Ingestion Schemas (Authoritative Storefront Integration)
+# ---------------------------------------------------------------------------
+
+class PaymentCustomerInfo(BaseModel):
+    name: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+
+
+class PaymentEventMetadata(BaseModel):
+    product_id: Optional[str] = None
+    product_name: Optional[str] = None
+    brand: Optional[str] = None
+    scenario_id: Optional[str] = None
+    extra: Optional[Dict[str, Any]] = None
+
+
+class PaymentEventIngestRequest(BaseModel):
+    transaction_id: str = Field(..., description="Unique transaction ID e.g. TXN-CN-XXXX")
+    merchant_id: str = Field(default="mer_chronova_watches", description="Merchant ID")
+    order_id: Optional[str] = Field(default=None, description="Storefront or Razorpay Order ID")
+    payment_id: Optional[str] = Field(default=None, description="Razorpay Payment ID")
+    amount_minor: int = Field(..., gt=0, description="Amount in paise")
+    currency: str = Field(default="INR", max_length=3)
+    status: str = Field(default="failed", description="failed | captured | recovered | pending | stopped")
+    provider: str = Field(default="razorpay", description="Payment provider")
+    method: Optional[str] = Field(default="card", description="Payment method: card | upi | netbanking | wallet")
+    failure_code: Optional[str] = Field(default=None, description="Gateway or error code e.g. GATEWAY_ERROR_3DS_TIMEOUT")
+    failure_reason: Optional[str] = Field(default=None, description="Descriptive failure reason")
+    customer: Optional[PaymentCustomerInfo] = None
+    metadata: Optional[PaymentEventMetadata] = None
+
+
+class PaymentEventIngestResponse(BaseModel):
+    success: bool
+    transaction_id: str
+    status: str
+    opportunity_id: Optional[str] = None
+    message: str
+    created_at: datetime
+

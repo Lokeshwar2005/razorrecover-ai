@@ -47,6 +47,13 @@ export const TransactionExplorer: React.FC = () => {
         setSelectedTransactionId(txnParam.toUpperCase())
       }
     }
+
+    // Poll backend every 3.5s to sync newly ingested transactions in real-time
+    const pollTimer = setInterval(() => {
+      refreshProviderFeed()
+    }, 3500)
+
+    return () => clearInterval(pollTimer)
   }, [setSelectedTransactionId, refreshProviderFeed])
 
   const handleRefreshFeed = async () => {

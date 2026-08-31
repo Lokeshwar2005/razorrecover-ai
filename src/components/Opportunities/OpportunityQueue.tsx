@@ -95,7 +95,7 @@ export const OpportunityQueue: React.FC = () => {
     return () => window.removeEventListener('razorrecover:payment-verified', handlePaymentVerifiedEvent)
   }, [transactions, selectedTransactionId, verifyPayment])
 
-  // URL Deep-linking support & Mount Feed Rehydration
+  // URL Deep-linking support & Periodic Real-Time Backend Feed Rehydration
   useEffect(() => {
     refreshProviderFeed()
     if (typeof window !== 'undefined') {
@@ -105,6 +105,13 @@ export const OpportunityQueue: React.FC = () => {
         setSelectedTransactionId(txnParam.toUpperCase())
       }
     }
+
+    // Poll backend every 3.5 seconds to ingest new events from Website A in real time
+    const pollTimer = setInterval(() => {
+      refreshProviderFeed()
+    }, 3500)
+
+    return () => clearInterval(pollTimer)
   }, [setSelectedTransactionId, refreshProviderFeed])
 
   // Map for O(1) canonical transaction lookup

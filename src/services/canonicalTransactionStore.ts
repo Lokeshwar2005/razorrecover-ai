@@ -847,19 +847,27 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
               const existing = existingMap.get(bt.id)
               const saved = getPersistedStateForTransaction(bt.id, bt.provider_id, bt.provider_order_id)
               const isRec = bt.status === 'RECOVERED' || (saved && saved.recovery_status === 'RECOVERED')
+              const resolvedStatus = isRec ? 'RECOVERED' : (bt.status || existing?.status || 'PENDING')
 
               if (existing) {
+                const updated: CanonicalTransaction = {
+                  ...existing,
+                  status: resolvedStatus,
+                  verified_amount_minor: isRec ? (bt.verified_amount_minor || saved?.verified_amount_minor || existing.amount_minor) : (bt.verified_amount_minor || 0),
+                  provider_payment_id: bt.provider_id || bt.provider_payment_id || saved?.razorpay_payment_id || existing.provider_payment_id,
+                  provider_order_id: bt.provider_order_id || saved?.razorpay_order_id || existing.provider_order_id,
+                  provider_status: isRec ? 'captured' : (bt.provider_status || existing.provider_status),
+                  workflow_status: isRec ? 'VERIFIED' : existing.workflow_status,
+                  reason: bt.reason || existing.reason,
+                  action: bt.action || existing.action,
+                  confidence: bt.confidence || existing.confidence,
+                  recovery_probability: bt.recovery_probability || existing.recovery_probability,
+                  risk_score: bt.risk_score || existing.risk_score,
+                  policy: bt.policy || existing.policy,
+                  updated_at: bt.updated_at || new Date().toISOString(),
+                }
+                existingMap.set(bt.id, updated)
                 if (isRec) {
-                  const updated: CanonicalTransaction = {
-                    ...existing,
-                    status: 'RECOVERED',
-                    verified_amount_minor: bt.verified_amount_minor || saved?.verified_amount_minor || existing.amount_minor,
-                    provider_payment_id: bt.provider_id || bt.provider_payment_id || saved?.razorpay_payment_id || existing.provider_payment_id,
-                    provider_order_id: bt.provider_order_id || saved?.razorpay_order_id || existing.provider_order_id,
-                    provider_status: 'captured',
-                    workflow_status: 'VERIFIED',
-                  }
-                  existingMap.set(bt.id, updated)
                   persistRecoveryState({
                     transaction_id: bt.id,
                     recovery_status: 'RECOVERED',
@@ -876,18 +884,18 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
               } else {
                 const newTxn: CanonicalTransaction = {
                   id: bt.id,
-                  merchant_id: bt.merchant_id || 'mer_default',
+                  merchant_id: bt.merchant_id || 'mer_chronova_watches',
                   amount: Math.round(bt.amount_minor / 100),
                   amount_minor: bt.amount_minor,
                   currency: bt.currency || 'INR',
-                  source: bt.source || 'synthetic',
-                  status: isRec ? 'RECOVERED' : (bt.status || 'PENDING'),
+                  source: bt.source || 'razorpay_test',
+                  status: resolvedStatus,
                   direction: bt.direction || 'Payment degradation',
-                  reason: bt.reason,
-                  action: bt.action,
+                  reason: bt.reason || 'Payment degradation',
+                  action: bt.action || 'Send payment link',
                   confidence: bt.confidence || 94,
-                  recovery_probability: bt.recovery_probability || 70,
-                  risk_score: bt.risk_score || 25,
+                  recovery_probability: bt.recovery_probability || 75,
+                  risk_score: bt.risk_score || 20,
                   policy: bt.policy || 'Approved',
                   explanation: bt.explanation || '',
                   latency: '85ms',

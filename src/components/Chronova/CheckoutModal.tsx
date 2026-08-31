@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import type { CartItem, ShippingAddress, AppliedCoupon } from './types'
 import { useTransactionStore, type CanonicalTransaction } from '../../services/canonicalTransactionStore'
 import { AVAILABLE_COUPONS } from './CartDrawer'
+import { ingestPaymentEvent, fetchTransactionDetail } from '../../services/backendApi'
 
 interface CheckoutModalProps {
   isOpen: boolean
@@ -199,6 +200,15 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
   const [errorMessage, setErrorMessage] = useState('')
   const [lastFailureScenario, setLastFailureScenario] = useState<FailureScenarioConfig | null>(null)
+  const [activeTxnId, setActiveTxnId] = useState<string | null>(null)
+  const [activeOrderId, setActiveOrderId] = useState<string | null>(null)
+  const [recoveryStatus, setRecoveryStatus] = useState<'idle' | 'in_progress' | 'recovered' | 'unavailable'>('idle')
+  const [recoveredReceipt, setRecoveredReceipt] = useState<{
+    orderId: string
+    paymentId: string
+    amount: number
+    date: string
+  } | null>(null)
   const [orderReceipt, setOrderReceipt] = useState<{
     orderId: string
     paymentId: string
@@ -220,6 +230,50 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   }
   const totalDue = Math.max(0, subtotal - discountAmount)
   const totalMinor = totalDue * 100
+
+  // Real-Time Recovery Polling: Listens for authoritative backend recovery verification from Website B
+  useEffect(() => {
+    if (step !== 'failure' || !activeTxnId || recoveryStatus === 'recovered') {
+      return
+    }
+
+    let isMounted = true
+    const pollInterval = setInterval(async () => {
+      try {
+        const detail = await fetchTransactionDetail(activeTxnId)
+        if (!isMounted) return
+        if (detail?.transaction) {
+          const t = detail.transaction
+          const isRec = t.status === 'RECOVERED' || t.verified_amount_minor > 0
+          if (isRec) {
+            setRecoveryStatus('recovered')
+            setRecoveredReceipt({
+              orderId: activeOrderId || t.provider_order_id || `order_cn_${activeTxnId}`,
+              paymentId: t.provider_id || t.provider_payment_id || `pay_rec_${activeTxnId}`,
+              amount: t.verified_amount_minor ? Math.round(t.verified_amount_minor / 100) : totalDue,
+              date: new Date().toLocaleDateString('en-IN', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+              }),
+            })
+            // Sync canonical store
+            useTransactionStore.getState().updateTransactionStatus(activeTxnId, 'RECOVERED', t.verified_amount_minor || totalMinor, t.provider_id)
+            onClearCart()
+          }
+        }
+      } catch (err) {
+        // Safe timeout handling
+      }
+    }, 2500)
+
+    return () => {
+      isMounted = false
+      clearInterval(pollInterval)
+    }
+  }, [step, activeTxnId, recoveryStatus, activeOrderId, totalDue, totalMinor, onClearCart])
 
   const handleApplyCoupon = (code: string) => {
     const found = AVAILABLE_COUPONS.find((c) => c.code.toUpperCase() === code.trim().toUpperCase())
@@ -268,6 +322,31 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     const generatedTxnId = `TXN-CN-${Date.now().toString(36).toUpperCase()}`
     const mockOrderId = `order_cn_${Date.now().toString(36)}`
     const paymentId = `pay_test_${Date.now().toString(36)}`
+    setActiveTxnId(generatedTxnId)
+    setActiveOrderId(mockOrderId)
+
+    // Authoritative Backend Event Ingestion (Fire & Forget with Fallback)
+    ingestPaymentEvent({
+      transaction_id: generatedTxnId,
+      merchant_id: 'mer_chronova_watches',
+      order_id: mockOrderId,
+      payment_id: paymentId,
+      amount_minor: totalMinor,
+      currency: 'INR',
+      status: 'captured',
+      provider: 'razorpay',
+      method: selectedRzpTab,
+      customer: {
+        name: address.full_name,
+        email: address.email,
+        phone: address.phone,
+      },
+      metadata: {
+        product_id: items[0]?.product.id,
+        product_name: items[0]?.product.name,
+        brand: items[0]?.product.brand,
+      },
+    }).catch(() => {})
 
     setTimeout(() => {
       setPaymentLoading(false)
@@ -286,7 +365,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         }),
       })
 
-      // Ingest SUCCESSFUL payment into transaction store
+      // Ingest SUCCESSFUL payment into canonical transaction store
       const successTxn: CanonicalTransaction = {
         id: generatedTxnId,
         merchant_id: 'mer_chronova_watches',
@@ -329,6 +408,34 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
     const generatedTxnId = `TXN-CN-${Date.now().toString(36).toUpperCase()}`
     const mockOrderId = `order_cn_${Date.now().toString(36)}`
+    setActiveTxnId(generatedTxnId)
+    setActiveOrderId(mockOrderId)
+    setRecoveryStatus('in_progress')
+
+    // Authoritative Backend Event Ingestion to Trigger AI & Recovery Pipeline
+    ingestPaymentEvent({
+      transaction_id: generatedTxnId,
+      merchant_id: 'mer_chronova_watches',
+      order_id: mockOrderId,
+      amount_minor: totalMinor,
+      currency: 'INR',
+      status: 'failed',
+      provider: 'razorpay',
+      method: selectedRzpTab,
+      failure_code: scenario.code,
+      failure_reason: scenario.reason,
+      customer: {
+        name: address.full_name,
+        email: address.email,
+        phone: address.phone,
+      },
+      metadata: {
+        product_id: items[0]?.product.id,
+        product_name: items[0]?.product.name,
+        brand: items[0]?.product.brand,
+        scenario_id: scenario.id,
+      },
+    }).catch(() => {})
 
     setTimeout(() => {
       setPaymentLoading(false)
@@ -764,57 +871,118 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
             </div>
           )}
 
-          {/* STEP 4: FAILURE DEMO (RAZORRECOVER INTEGRATION) */}
+          {/* STEP 4: FAILURE DEMO & AUTONOMOUS RECOVERY (RAZORRECOVER INTEGRATION) */}
           {step === 'failure' && (
-            <div className="py-6 text-center space-y-5">
-              <div className="w-16 h-16 rounded-full bg-rose-100 text-rose-600 text-3xl flex items-center justify-center mx-auto shadow-md">
-                ✕
-              </div>
-
-              <div className="space-y-2">
-                <h3 className="text-2xl font-black text-slate-900 tracking-tight">
-                  PAYMENT DEGRADATION DETECTED
-                </h3>
-                <p className="text-xs text-slate-600 max-w-md mx-auto font-medium">
-                  {lastFailureScenario?.reason || 'Your payment encountered a temporary bank switch error.'}
-                </p>
-              </div>
-
-              <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 max-w-md mx-auto text-left space-y-2 text-xs text-amber-900">
-                <div className="font-bold flex items-center justify-between">
-                  <span className="flex items-center gap-1.5">
-                    <span>⚡</span>
-                    <span>RazorRecover AI Autonomous Recovery Active</span>
-                  </span>
-                  <span className="text-[10px] font-mono bg-amber-200 text-amber-900 px-2 py-0.5 rounded font-black">
-                    SCORE: {Math.round((lastFailureScenario?.recoveryProb || 0.85) * 100)}/99
-                  </span>
+            recoveryStatus === 'recovered' && recoveredReceipt ? (
+              <div className="py-8 text-center space-y-6 animate-in fade-in zoom-in-95 duration-300">
+                <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 text-3xl flex items-center justify-center mx-auto shadow-md">
+                  ✓
                 </div>
-                <p className="text-[11px] text-amber-800">
-                  Event ingested into canonical ledger. An automated priority recovery action ({lastFailureScenario?.action}) has been initialized.
-                </p>
-                <div className="pt-2 border-t border-amber-200/80 flex items-center justify-between text-[10px] font-mono">
-                  <span>Destination: {address.phone}</span>
-                  <span className="text-emerald-700 font-bold">✓ DISPATCH VERIFIED</span>
-                </div>
-              </div>
 
-              <div className="flex gap-3 justify-center pt-2">
-                <button
-                  onClick={() => setStep('payment')}
-                  className="px-6 py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition cursor-pointer shadow-md"
-                  style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
-                >
-                  Retry Payment Now
-                </button>
+                <div className="space-y-2">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-300 text-xs font-black font-mono">
+                    <span>⚡ RAZORRECOVER AI</span>
+                    <span>·</span>
+                    <span>AUTONOMOUS RECOVERY VERIFIED</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    PAYMENT RECOVERED & ORDER CONFIRMED!
+                  </h3>
+                  <p className="text-xs text-slate-600 max-w-md mx-auto font-medium">
+                    Your dropped checkout was autonomously diagnosed, authorized, and verified through RazorRecover AI.
+                    Confirmation dispatched to <strong className="text-slate-900">{address.email}</strong>.
+                  </p>
+                </div>
+
+                {/* Receipt Summary Box */}
+                <div className="p-5 rounded-2xl bg-emerald-50/50 border border-emerald-200 max-w-md mx-auto text-left space-y-2 text-xs">
+                  <div className="flex justify-between text-slate-600">
+                    <span>Order Reference:</span>
+                    <span className="font-mono font-bold text-slate-900">{recoveredReceipt.orderId}</span>
+                  </div>
+                  <div className="flex justify-between text-slate-600">
+                    <span>Canonical Txn ID:</span>
+                    <span className="font-mono font-bold text-blue-700">{activeTxnId}</span>
+                  </div>
+                  <div className="flex justify-between text-slate-600">
+                    <span>Settlement Channel:</span>
+                    <span className="font-mono font-bold text-slate-900">{lastFailureScenario?.action || 'Razorpay Autonomous Recovery'}</span>
+                  </div>
+                  <div className="flex justify-between text-slate-600">
+                    <span>Verified Date:</span>
+                    <span className="font-semibold text-slate-900">{recoveredReceipt.date}</span>
+                  </div>
+                  <div className="flex justify-between text-slate-900 font-black text-sm pt-2 border-t border-emerald-200">
+                    <span>Recovered Amount:</span>
+                    <span className="text-emerald-700 font-black">{formatINR(recoveredReceipt.amount)}</span>
+                  </div>
+                </div>
+
                 <button
                   onClick={onClose}
-                  className="px-6 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 font-bold text-xs uppercase tracking-wider transition cursor-pointer"
+                  className="px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition cursor-pointer shadow-md"
+                  style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
                 >
-                  Close & Return
+                  Continue Shopping
                 </button>
               </div>
-            </div>
+            ) : (
+              <div className="py-6 text-center space-y-5">
+                <div className="w-16 h-16 rounded-full bg-rose-100 text-rose-600 text-3xl flex items-center justify-center mx-auto shadow-md">
+                  ✕
+                </div>
+
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-black text-slate-900 tracking-tight">
+                    PAYMENT DEGRADATION DETECTED
+                  </h3>
+                  <p className="text-xs text-slate-600 max-w-md mx-auto font-medium">
+                    {lastFailureScenario?.reason || 'Your payment encountered a temporary bank switch error.'}
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 max-w-md mx-auto text-left space-y-2.5 text-xs text-amber-900">
+                  <div className="font-bold flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <span className="animate-pulse">⚡</span>
+                      <span>RazorRecover AI Autonomous Recovery Active</span>
+                    </span>
+                    <span className="text-[10px] font-mono bg-amber-200 text-amber-900 px-2 py-0.5 rounded font-black">
+                      SCORE: {Math.round((lastFailureScenario?.recoveryProb || 0.85) * 100)}/99
+                    </span>
+                  </div>
+
+                  <p className="text-[11px] text-amber-800 leading-relaxed">
+                    Canonical transaction <strong className="font-mono font-bold text-slate-900">{activeTxnId}</strong> ingested into backend ledger.
+                    Automated priority recovery action (<strong className="text-slate-900">{lastFailureScenario?.action}</strong>) has been initialized.
+                  </p>
+
+                  <div className="pt-2 border-t border-amber-200/80 flex items-center justify-between text-[10px] font-mono">
+                    <div className="flex items-center gap-1 text-slate-700">
+                      <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping inline-block" />
+                      <span>Listening for recovery settlement...</span>
+                    </div>
+                    <span className="text-emerald-700 font-bold">✓ DISPATCH VERIFIED</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 justify-center pt-2">
+                  <button
+                    onClick={() => setStep('payment')}
+                    className="px-6 py-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs uppercase tracking-wider transition cursor-pointer shadow-md"
+                    style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
+                  >
+                    Retry Payment Now
+                  </button>
+                  <button
+                    onClick={onClose}
+                    className="px-6 py-3 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 font-bold text-xs uppercase tracking-wider transition cursor-pointer"
+                  >
+                    Close & Return
+                  </button>
+                </div>
+              </div>
+            )
           )}
         </div>
       </div>
