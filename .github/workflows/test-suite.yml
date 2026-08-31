@@ -91,9 +91,13 @@ jobs:
           first=$(make_request "1. First transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
           echo "$first" | jq -e '.success == true and .duplicate == false and .transaction_id == env.TEST_ID' >/dev/null
 
+          sleep 1
+
           echo "=== 2. Duplicate transaction ingestion ==="
           second=$(make_request "2. Duplicate transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
           echo "$second" | jq -e '.success == true and .duplicate == true and .transaction_id == env.TEST_ID' >/dev/null
+
+          sleep 1
 
           echo "=== 3. First recovery execution ==="
           recovery_payload=$(jq -n --arg id "$TEST_ID" '{transaction_id:$id, action_type:"Send payment link"}')
@@ -103,12 +107,16 @@ jobs:
           RECOVERY_ID=$(echo "$recovery_first" | jq -r '.recovery_operation_id')
           export RECOVERY_ID
 
+          sleep 1
+
           echo "=== 4. Duplicate recovery execution ==="
           recovery_second=$(make_request "4. Duplicate recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
           echo "$recovery_second" | jq -e --arg rec_id "$RECOVERY_ID" '.success == true and .duplicate == true and .recovery_operation_id == $rec_id' >/dev/null
 
           second_recovery_id=$(echo "$recovery_second" | jq -r '.recovery_operation_id')
           test "$RECOVERY_ID" = "$second_recovery_id"
+
+          sleep 1
 
           echo "=== 5. Verify transaction detail ==="
           detail=$(make_request "5. Verify transaction detail" "GET" "$API_BASE/api/v1/transactions/$TEST_ID")
@@ -184,19 +192,27 @@ jobs:
           step1_res=$(make_request "1. Storefront failure ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$step1_payload")
           echo "$step1_res" | jq -e '.success == true and .duplicate == false and .status == "STOPPED" and .transaction_id == env.TEST_ID' >/dev/null
 
+          sleep 1
+
           echo "=== 2. Autonomous recovery execution ==="
           step2_payload=$(jq -n --arg id "$TEST_ID" --argjson amt "$AMOUNT_MINOR" '{transaction_id:$id, action_type:"Send payment link", amount_minor:$amt, currency:"INR"}')
           step2_res=$(make_request "2. Autonomous recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$step2_payload")
           echo "$step2_res" | jq -e '.success == true and .workflow_status == "COMPLETE" and (.recovery_operation_id | length > 0)' >/dev/null
 
+          sleep 1
+
           echo "=== 3. Verify invariant: Unrecovered before payment settlement ==="
           step3_res=$(make_request "3. Verify invariant before settlement" "GET" "$API_BASE/api/v1/transactions/$TEST_ID")
           echo "$step3_res" | jq -e '.transaction.id == env.TEST_ID and .transaction.status == "IN_PROGRESS" and .transaction.verified_amount_minor == 0' >/dev/null
+
+          sleep 1
 
           echo "=== 4. Settle payment & verify capture ==="
           step4_payload=$(jq -n --arg id "$TEST_ID" --arg pay_id "$PAYMENT_ID" --arg ord_id "$ORDER_ID" --argjson amt "$AMOUNT_MINOR" '{transaction_id:$id, payment_id:$pay_id, order_id:$ord_id, amount_minor:$amt, currency:"INR"}')
           step4_res=$(make_request "4. Settle payment & verify capture" "POST" "$API_BASE/api/v1/recovery/verify" "$step4_payload")
           echo "$step4_res" | jq -e '.verified == true and .status == "captured" and .payment_id == env.PAYMENT_ID' >/dev/null
+
+          sleep 1
 
           echo "=== 5. Verify final ledger state ==="
           step5_res=$(make_request "5. Verify final ledger state" "GET" "$API_BASE/api/v1/transactions/$TEST_ID")
