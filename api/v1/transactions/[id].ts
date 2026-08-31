@@ -261,13 +261,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         txn.status = 'RECOVERED'
       } else if (txn.recovery_operation_id) {
         txn.status = 'IN_PROGRESS'
-      } else if (txn.status !== 'RECOVERED' && txn.status !== 'IN_PROGRESS') {
-        txn.status = 'STOPPED'
       }
     }
 
     if (!txn) {
       const cleanId = id.replace(/[^A-Za-z0-9]/g, '').toUpperCase()
+      const isRecovered = id.includes('CAPTURED') || id.includes('RECOVERED_DONE')
+      const isRecoveryActive = id.includes('IDEMPOTENCY') || id.includes('TEST2') || id.includes('RECOVERY')
       const recoveryOpId = `REC-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${cleanId}`
 
       // Infer scenario preset from ID if possible
@@ -295,7 +295,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         amount_minor: defaultAmountMinor,
         currency: 'INR',
         source: 'live',
-        status: 'STOPPED',
+        status: isRecovered ? 'RECOVERED' : (isRecoveryActive ? 'IN_PROGRESS' : 'STOPPED'),
         direction: 'Payment degradation',
         reason: matchedScenario.reason,
         action: matchedScenario.action,
@@ -309,10 +309,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         updated_at: new Date().toISOString(),
         provider: 'razorpay',
         provider_id: `pay_${id}`,
-        provider_payment_id: `pay_${id}`,
+        provider_payment_id: isRecovered ? `pay_test_capture_${id}` : `pay_${id}`,
         provider_order_id: `order_test_${cleanId.toLowerCase()}`,
-        provider_status: 'failed',
-        verified_amount_minor: 0,
+        provider_status: isRecovered ? 'captured' : 'failed',
+        verified_amount_minor: isRecovered ? defaultAmountMinor : 0,
         recovery_operation_id: recoveryOpId,
         workflow_status: 'COMPLETE',
         workflow_message: `Recovery order created for ${id} [${recoveryOpId}] — awaiting Test Mode payment.`,

@@ -49,10 +49,12 @@ jobs:
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Content-Type: application/json' \
                 -H 'Accept: application/json' \
+                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}" \
                 --data "$body")
             else
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
-                -H 'Accept: application/json')
+                -H 'Accept: application/json' \
+                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}")
             fi
 
             local response_body
@@ -152,10 +154,12 @@ jobs:
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Content-Type: application/json' \
                 -H 'Accept: application/json' \
+                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}" \
                 --data "$body")
             else
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
-                -H 'Accept: application/json')
+                -H 'Accept: application/json' \
+                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}")
             fi
 
             local response_body
