@@ -14,7 +14,38 @@ export interface VercelResponse extends ServerResponse {
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v10.json')
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
+
+const ALLOWED_ORIGINS = [
+  'https://lokeshwar2005.github.io',
+  'https://razorrecover-ai-teal.vercel.app',
+  'http://localhost:3000',
+  'http://localhost:5173',
+  'http://localhost:4173',
+  'http://localhost:8000',
+  'http://127.0.0.1:3000',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:4173',
+]
+
+function applyCors(req: VercelRequest, res: VercelResponse): boolean {
+  const origin = req.headers.origin
+  if (origin) {
+    const isAllowed = ALLOWED_ORIGINS.includes(origin) || origin.endsWith('.vercel.app') || origin.endsWith('github.io')
+    if (isAllowed) {
+      res.setHeader('Access-Control-Allow-Origin', origin)
+      res.setHeader('Access-Control-Allow-Credentials', 'true')
+    } else {
+      res.setHeader('Access-Control-Allow-Origin', 'null')
+      return false
+    }
+  } else {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
+  return true
+}
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
@@ -47,7 +78,7 @@ const SCENARIO_PRESETS: Record<string, { code: string; reason: string; action: s
     recoveryProb: 94,
     riskScore: 12,
     explanation: 'UPI app switch timeout detected. High-intent 1-click WhatsApp deep link activated.',
-    amountMinor: 349500,
+    amountMinor: 299500,
   },
   'bank_downtime': {
     code: 'ISSUER_CBS_DOWN_502',
@@ -67,7 +98,7 @@ const SCENARIO_PRESETS: Record<string, { code: string; reason: string; action: s
     recoveryProb: 82,
     riskScore: 40,
     explanation: 'False positive velocity flag. Cryptographic biometric challenge dispatched.',
-    amountMinor: 1299500,
+    amountMinor: 1249500,
   },
   'network_drop': {
     code: 'CLIENT_TCP_CONNECTION_RESET',
@@ -77,7 +108,7 @@ const SCENARIO_PRESETS: Record<string, { code: string; reason: string; action: s
     recoveryProb: 92,
     riskScore: 15,
     explanation: 'Customer network handshake dropped. Direct tokenized SMS retry link generated.',
-    amountMinor: 549500,
+    amountMinor: 399500,
   },
   'auth_retries_exceeded': {
     code: 'AUTH_RETRIES_EXCEEDED_3DS',
@@ -87,7 +118,7 @@ const SCENARIO_PRESETS: Record<string, { code: string; reason: string; action: s
     recoveryProb: 84,
     riskScore: 28,
     explanation: 'Card OTP limit reached. Alternate dynamic UPI QR payment link provisioned.',
-    amountMinor: 429500,
+    amountMinor: 549500,
   },
   'cart_abandonment': {
     code: 'GATEWAY_DISMISSED_BY_USER',
@@ -105,17 +136,13 @@ function getGithubToken(req?: IncomingMessage): string | null {
   const customHeader = req?.headers?.['x-github-token'] || req?.headers?.authorization
   if (customHeader) {
     const raw = Array.isArray(customHeader) ? customHeader[0] : customHeader
-    return raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+    const token = raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+    if (token) return token
   }
   if (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) {
-    return process.env.GITHUB_TOKEN
+    return process.env.GITHUB_TOKEN.trim()
   }
-  const parts = ['Z2hv', 'X0Nu', 'TEpUTk9Ed2pVYnZKdGRNNXEya0d2NEFEQ2NrbTFrR0JpRw==']
-  try {
-    return atob(parts.join(''))
-  } catch (e) {
-    return null
-  }
+  return null
 }
 
 function loadLocalFileStore(): Map<string, any> {
@@ -190,12 +217,19 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
+  const originAllowed = applyCors(req, res)
 
   if (req.method === 'OPTIONS') {
+    if (!originAllowed && req.headers.origin) {
+      res.status(403).json({ error: 'Origin not allowed by CORS' })
+      return
+    }
     res.status(204).end()
+    return
+  }
+
+  if (!originAllowed && req.headers.origin) {
+    res.status(403).json({ error: 'Origin not allowed by CORS' })
     return
   }
 
@@ -261,7 +295,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         amount_minor: defaultAmountMinor,
         currency: 'INR',
         source: 'live',
-        status: 'IN_PROGRESS',
+        status: 'STOPPED',
         direction: 'Payment degradation',
         reason: matchedScenario.reason,
         action: matchedScenario.action,
@@ -285,47 +319,43 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     }
 
+    const aiDiagnosis = {
+      transaction_id: txn.id,
+      root_cause: txn.reason || '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
+      recommended_action: txn.action || 'Send payment link',
+      confidence_score: txn.confidence || 95,
+      recovery_probability: txn.recovery_probability || 88,
+      risk_score: txn.risk_score || 20,
+      reasoning_summary: txn.explanation || '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+    }
+
+    const policyDecision = {
+      transaction_id: txn.id,
+      decision: txn.policy || 'Approved',
+      policy_rule_id: 'RULE-POL-GATE-01',
+      requires_human_approval: false,
+      reason: 'Deterministic risk threshold verification passed.',
+    }
+
+    const auditEvents = [
+      {
+        id: `audit-${txn.id}-01`,
+        event_type: 'FAILURE_INGESTED',
+        actor: 'RazorRecover Ingestion Gateway',
+        decision: txn.status,
+        reason: txn.reason,
+        timestamp: txn.created_at,
+      },
+    ]
+
     res.status(200).json({
       transaction: txn,
-      ai_diagnosis: {
-        transaction_id: txn.id,
-        root_cause: txn.reason || '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
-        recommended_action: txn.action || 'Send payment link',
-        confidence_score: txn.confidence || 95,
-        recovery_probability: txn.recovery_probability || 88,
-        risk_score: txn.risk_score || 20,
-        reasoning_summary: txn.explanation || 'Direct customer retry link dispatched.',
-      },
-      policy_decision: {
-        transaction_id: txn.id,
-        decision: txn.policy || 'Approved',
-        policy_rule_id: 'RULE-POL-GATE-01',
-        requires_human_approval: false,
-        reason: 'Deterministic risk threshold verification passed.',
-      },
-      verifications: txn.status === 'RECOVERED' ? [{
-        id: `verif-${txn.id}`,
-        transaction_id: txn.id,
-        payment_id: txn.provider_payment_id,
-        order_id: txn.provider_order_id,
-        amount_minor: txn.verified_amount_minor || txn.amount_minor,
-        currency: txn.currency || 'INR',
-        verified: true,
-        status: 'captured',
-        verified_at: txn.captured_at || txn.updated_at,
-      }] : [],
-      audit_events: [
-        {
-          id: `audit-${txn.id}-01`,
-          event_type: 'FAILURE_INGESTED',
-          actor: 'RazorRecover Ingestion Gateway',
-          decision: txn.status,
-          reason: txn.reason,
-          timestamp: txn.created_at,
-        },
-      ],
+      ai_diagnosis: aiDiagnosis,
+      policy_decision: policyDecision,
+      verifications: [],
+      audit_events: auditEvents,
     })
   } catch (err: any) {
-    res.status(500).json({ error: err?.message || 'Failed to fetch transaction' })
+    res.status(500).json({ error: err?.message || 'Failed to fetch transaction detail' })
   }
 }

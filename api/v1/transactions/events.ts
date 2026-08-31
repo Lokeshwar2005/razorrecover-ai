@@ -17,23 +17,50 @@ const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
 const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
 
+const ALLOWED_ORIGINS = [
+  'https://lokeshwar2005.github.io',
+  'https://razorrecover-ai-teal.vercel.app',
+  'http://localhost:3000',
+  'http://localhost:5173',
+  'http://localhost:4173',
+  'http://localhost:8000',
+  'http://127.0.0.1:3000',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:4173',
+]
+
+function applyCors(req: VercelRequest, res: VercelResponse): boolean {
+  const origin = req.headers.origin
+  if (origin) {
+    const isAllowed = ALLOWED_ORIGINS.includes(origin) || origin.endsWith('.vercel.app') || origin.endsWith('github.io')
+    if (isAllowed) {
+      res.setHeader('Access-Control-Allow-Origin', origin)
+      res.setHeader('Access-Control-Allow-Credentials', 'true')
+    } else {
+      res.setHeader('Access-Control-Allow-Origin', 'null')
+      return false
+    }
+  } else {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
+  return true
+}
+
 let inMemoryTransactions: Map<string, any> = new Map()
 
 function getGithubToken(req?: IncomingMessage): string | null {
   const customHeader = req?.headers?.['x-github-token'] || req?.headers?.authorization
   if (customHeader) {
     const raw = Array.isArray(customHeader) ? customHeader[0] : customHeader
-    return raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+    const token = raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+    if (token) return token
   }
   if (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) {
-    return process.env.GITHUB_TOKEN
+    return process.env.GITHUB_TOKEN.trim()
   }
-  const parts = ['Z2hv', 'X0Nu', 'TEpUTk9Ed2pVYnZKdGRNNXEya0d2NEFEQ2NrbTFrR0JpRw==']
-  try {
-    return atob(parts.join(''))
-  } catch (e) {
-    return null
-  }
+  return null
 }
 
 function loadLocalFileStore(): Map<string, any> {
@@ -107,17 +134,22 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
   return result
 }
 
-async function updateGistTransactions(newTransactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
-  for (const [id, txn] of Object.entries(newTransactions)) {
-    inMemoryTransactions.set(id.toUpperCase(), txn)
+async function updateGistTransactionsAtomic(
+  targetId: string,
+  newTxn: any,
+  req?: IncomingMessage
+): Promise<{ isDuplicate: boolean; existingRecord?: any }> {
+  const cleanTarget = targetId.toUpperCase()
+  loadLocalFileStore()
+
+  if (inMemoryTransactions.has(cleanTarget)) {
+    return { isDuplicate: true, existingRecord: inMemoryTransactions.get(cleanTarget) }
   }
-  saveLocalFileStore()
 
-  try {
-    const token = getGithubToken(req)
-    if (!token) return
+  const token = getGithubToken(req)
+  let existingRemote: Record<string, any> = {}
 
-    let existingRemote: Record<string, any> = {}
+  if (token) {
     try {
       const getRes = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
         headers: {
@@ -140,33 +172,46 @@ async function updateGistTransactions(newTransactions: Record<string, any>, req?
         }
       }
     } catch (e) {}
+  }
 
-    const merged: Record<string, any> = { ...existingRemote }
-    for (const [id, txn] of inMemoryTransactions.entries()) {
-      merged[id] = txn
-    }
-    for (const [id, txn] of Object.entries(newTransactions)) {
-      merged[id.toUpperCase()] = txn
-    }
+  if (existingRemote[cleanTarget]) {
+    inMemoryTransactions.set(cleanTarget, existingRemote[cleanTarget])
+    saveLocalFileStore()
+    return { isDuplicate: true, existingRecord: existingRemote[cleanTarget] }
+  }
 
-    await fetch(`https://api.github.com/gists/${GIST_ID}`, {
-      method: 'PATCH',
-      headers: {
-        Authorization: `token ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-        'User-Agent': 'RazorRecover-AI-Serverless',
-      },
-      body: JSON.stringify({
-        files: {
-          [GIST_FILENAME]: {
-            content: JSON.stringify({ transactions: merged }, null, 2),
-          },
+  inMemoryTransactions.set(cleanTarget, newTxn)
+  saveLocalFileStore()
+
+  const merged: Record<string, any> = { ...existingRemote }
+  for (const [id, txn] of inMemoryTransactions.entries()) {
+    merged[id] = txn
+  }
+  merged[cleanTarget] = newTxn
+
+  if (token) {
+    try {
+      await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+        method: 'PATCH',
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          'User-Agent': 'RazorRecover-AI-Serverless',
         },
-      }),
-      signal: AbortSignal.timeout(4000),
-    })
-  } catch (e) {}
+        body: JSON.stringify({
+          files: {
+            [GIST_FILENAME]: {
+              content: JSON.stringify({ transactions: merged }, null, 2),
+            },
+          },
+        }),
+        signal: AbortSignal.timeout(4000),
+      })
+    } catch (e) {}
+  }
+
+  return { isDuplicate: false, existingRecord: newTxn }
 }
 
 const FAILURE_SCENARIOS: Record<string, { code: string; reason: string; action: string; confidence: number; recoveryProb: number; riskScore: number; explanation: string }> = {
@@ -245,12 +290,19 @@ const FAILURE_SCENARIOS: Record<string, { code: string; reason: string; action: 
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
+  const originAllowed = applyCors(req, res)
 
   if (req.method === 'OPTIONS') {
+    if (!originAllowed && req.headers.origin) {
+      res.status(403).json({ error: 'Origin not allowed by CORS' })
+      return
+    }
     res.status(204).end()
+    return
+  }
+
+  if (!originAllowed && req.headers.origin) {
+    res.status(403).json({ error: 'Origin not allowed by CORS' })
     return
   }
 
@@ -271,7 +323,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       amount_minor,
       currency = 'INR',
       source = 'live',
-      status = 'failed',
       provider = 'razorpay',
       failure_code,
       failure_reason,
@@ -303,14 +354,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const normalizedStatus = String(status || 'failed').toLowerCase()
-    const isSuccess = normalizedStatus === 'captured' || normalizedStatus === 'recovered'
     const scenarioKey = metadata?.scenario_id || (failure_code ? Object.keys(FAILURE_SCENARIOS).find((k) => FAILURE_SCENARIOS[k].code === failure_code) : '3ds_timeout') || '3ds_timeout'
     const scenario = FAILURE_SCENARIOS[scenarioKey] || FAILURE_SCENARIOS['3ds_timeout']
 
     const now = new Date().toISOString()
     const amountRupees = Math.round(numericAmount / 100)
 
+    // Ingestion of payment degradation events always initializes strictly to STOPPED state
     const newTxn = {
       id: cleanId,
       merchant_id,
@@ -318,17 +368,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       amount_minor: numericAmount,
       currency: (currency || 'INR').toUpperCase(),
       source: source || 'live',
-      status: isSuccess ? 'RECOVERED' : 'STOPPED',
-      direction: isSuccess ? 'Direct settlement' : 'Payment degradation',
-      reason: isSuccess ? 'Payment successful on first attempt' : (failure_reason || scenario.reason),
-      action: isSuccess ? 'Direct settlement' : scenario.action,
-      confidence: isSuccess ? 99 : scenario.confidence,
-      recovery_probability: isSuccess ? 100 : scenario.recoveryProb,
-      risk_score: isSuccess ? 5 : scenario.riskScore,
+      status: 'STOPPED',
+      direction: 'Payment degradation',
+      reason: failure_reason || scenario.reason,
+      action: scenario.action,
+      confidence: scenario.confidence,
+      recovery_probability: scenario.recoveryProb,
+      risk_score: scenario.riskScore,
       policy: 'Approved',
-      explanation: isSuccess
-        ? `Customer authorized ₹${amountRupees.toLocaleString('en-IN')} via direct checkout.`
-        : (scenario.explanation || `Payment degradation detected: ${scenario.reason}. Automated recovery initialized.`),
+      explanation: scenario.explanation || `Payment degradation detected: ${scenario.reason}. Automated recovery initialized.`,
       latency: '180ms',
       created_at: now,
       updated_at: now,
@@ -336,9 +384,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       provider_id: payment_id || order_id,
       provider_payment_id: payment_id,
       provider_order_id: order_id,
-      provider_status: isSuccess ? 'captured' : 'failed',
-      verified_amount_minor: isSuccess ? numericAmount : 0,
-      workflow_status: isSuccess ? 'VERIFIED' : undefined,
+      provider_status: 'failed',
+      verified_amount_minor: 0,
       customer,
       metadata: {
         ...(metadata || {}),
@@ -347,8 +394,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       },
     }
 
-    currentMap[cleanId] = newTxn
-    await updateGistTransactions(currentMap, req)
+    const { isDuplicate, existingRecord } = await updateGistTransactionsAtomic(cleanId, newTxn, req)
+
+    if (isDuplicate && existingRecord) {
+      res.status(200).json({
+        success: true,
+        duplicate: true,
+        transaction_id: existingRecord.id,
+        status: existingRecord.status,
+        opportunity_id: `opp-${existingRecord.id}`,
+        message: `Transaction ${existingRecord.id} was already ingested; existing ledger record returned unchanged.`,
+        created_at: existingRecord.created_at,
+      })
+      return
+    }
 
     res.status(200).json({
       success: true,

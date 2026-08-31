@@ -229,3 +229,8 @@ jobs:
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
         run: npx tsx scripts/test-e2e-customer-to-recovery.ts
+
+      - name: 5. Run Test #6 — Security & Production Integrity Audit Suite
+        env:
+          API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
+        run: npx tsx scripts/test-security-integrity.ts

@@ -16,23 +16,50 @@ const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
 const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
 
+const ALLOWED_ORIGINS = [
+  'https://lokeshwar2005.github.io',
+  'https://razorrecover-ai-teal.vercel.app',
+  'http://localhost:3000',
+  'http://localhost:5173',
+  'http://localhost:4173',
+  'http://localhost:8000',
+  'http://127.0.0.1:3000',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:4173',
+]
+
+function applyCors(req: VercelRequest, res: VercelResponse): boolean {
+  const origin = req.headers.origin
+  if (origin) {
+    const isAllowed = ALLOWED_ORIGINS.includes(origin) || origin.endsWith('.vercel.app') || origin.endsWith('github.io')
+    if (isAllowed) {
+      res.setHeader('Access-Control-Allow-Origin', origin)
+      res.setHeader('Access-Control-Allow-Credentials', 'true')
+    } else {
+      res.setHeader('Access-Control-Allow-Origin', 'null')
+      return false
+    }
+  } else {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
+  return true
+}
+
 let inMemoryTransactions: Map<string, any> = new Map()
 
 function getGithubToken(req?: IncomingMessage): string | null {
   const customHeader = req?.headers?.['x-github-token'] || req?.headers?.authorization
   if (customHeader) {
     const raw = Array.isArray(customHeader) ? customHeader[0] : customHeader
-    return raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+    const token = raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
+    if (token) return token
   }
   if (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) {
-    return process.env.GITHUB_TOKEN
+    return process.env.GITHUB_TOKEN.trim()
   }
-  const parts = ['Z2hv', 'X0Nu', 'TEpUTk9Ed2pVYnZKdGRNNXEya0d2NEFEQ2NrbTFrR0JpRw==']
-  try {
-    return atob(parts.join(''))
-  } catch (e) {
-    return null
-  }
+  return null
 }
 
 function loadLocalFileStore(): Map<string, any> {
@@ -169,12 +196,19 @@ async function updateGistTransactions(newTransactions: Record<string, any>, req?
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
+  const originAllowed = applyCors(req, res)
 
   if (req.method === 'OPTIONS') {
+    if (!originAllowed && req.headers.origin) {
+      res.status(403).json({ error: 'Origin not allowed by CORS' })
+      return
+    }
     res.status(204).end()
+    return
+  }
+
+  if (!originAllowed && req.headers.origin) {
+    res.status(403).json({ error: 'Origin not allowed by CORS' })
     return
   }
 
