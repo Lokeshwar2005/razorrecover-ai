@@ -46,6 +46,14 @@ def test_all_8_failure_scenarios_ingestion(client, db):
 
     for scenario_id, code, expected_reason, expected_action in scenarios:
         txn_id = f"TXN-TEST-SCENARIO-{scenario_id.upper()}"
+        db.query(AgentTraceModel).filter(AgentTraceModel.transaction_id == txn_id).delete()
+        db.query(RecoveryOpportunityModel).filter(RecoveryOpportunityModel.transaction_id == txn_id).delete()
+        db.query(PolicyDecisionModel).filter(PolicyDecisionModel.transaction_id == txn_id).delete()
+        db.query(AIDiagnosisModel).filter(AIDiagnosisModel.transaction_id == txn_id).delete()
+        db.query(FailureEventModel).filter(FailureEventModel.transaction_id == txn_id).delete()
+        db.query(TransactionModel).filter(TransactionModel.id == txn_id).delete()
+        db.commit()
+
         payload = {
             "transaction_id": txn_id,
             "merchant_id": "mer_chronova_watches",

@@ -459,18 +459,28 @@ def ingest_payment_event(
 
     # Record Recovery Opportunity
     opp_id = f"opp-{txn_id}"
-    recovery_opp = RecoveryOpportunityModel(
-        id=opp_id,
-        transaction_id=txn_id,
-        amount_minor=event.amount_minor,
-        recovery_probability=scenario_info["recovery_probability"],
-        expected_value_minor=expected_value_minor,
-        priority=priority,
-        recommended_action=scenario_info["action"],
-        policy_status=scenario_info["policy"],
-        created_at=now,
-    )
-    db.add(recovery_opp)
+    recovery_opp = db.query(RecoveryOpportunityModel).filter(RecoveryOpportunityModel.transaction_id == txn_id).first()
+    if not recovery_opp:
+        recovery_opp = RecoveryOpportunityModel(
+            id=opp_id,
+            transaction_id=txn_id,
+            amount_minor=event.amount_minor,
+            recovery_probability=scenario_info["recovery_probability"],
+            expected_value_minor=expected_value_minor,
+            priority=priority,
+            recommended_action=scenario_info["action"],
+            policy_status=scenario_info["policy"],
+            created_at=now,
+        )
+        db.add(recovery_opp)
+    else:
+        opp_id = recovery_opp.id
+        recovery_opp.amount_minor = event.amount_minor
+        recovery_opp.recovery_probability = scenario_info["recovery_probability"]
+        recovery_opp.expected_value_minor = expected_value_minor
+        recovery_opp.priority = priority
+        recovery_opp.recommended_action = scenario_info["action"]
+        recovery_opp.policy_status = scenario_info["policy"]
 
     # Record Audit Events with Cryptographic Chaining
     AuditLedgerService.record_event(
@@ -511,6 +521,7 @@ def ingest_payment_event(
     )
 
     # Populate 8 Explainable Agent Trace Steps
+    db.query(AgentTraceModel).filter(AgentTraceModel.transaction_id == txn_id).delete()
     traces = [
         (0, "Ingestion & Telemetry", "DONE", f"Ingested {scenario_info['code']} from Chronova storefront.", "Telemetry validated", "INGESTED"),
         (1, "Failure Classification", "DONE", f"Signature: {scenario_info['reason']}", "Classified root cause", "CLASSIFIED"),
