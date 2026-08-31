@@ -9,6 +9,22 @@
 > **Autonomous, explainable, and policy-bounded revenue recovery intelligence for digital commerce.**  
 > Built for the **Razorpay AI Buildathon 2026 — Track 3: AI Revenue Recovery**.
 
+## 🌐 About / Quick Links
+
+**RazorRecover AI** detects failed payments, diagnoses root causes, executes bounded recovery actions, and measures verified revenue recovery in real time.
+
+| Experience | Live Link |
+| :--- | :--- |
+| 🛍️ **Chronova Customer Storefront** | **[Open Chronova →](https://lokeshwar2005.github.io/razorrecover-ai/chronova/)** |
+| 🤖 **RazorRecover AI — Merchant Platform** | **[Open RazorRecover AI →](https://razorrecover-ai-teal.vercel.app/)** |
+| 🔎 **Transaction Intelligence Explorer** | [Open Transactions →](https://lokeshwar2005.github.io/razorrecover-ai/transactions/) |
+| 📊 **Merchant Command Center** | [Open Dashboard →](https://lokeshwar2005.github.io/razorrecover-ai/dashboard/) |
+| 🎯 **Judge Demo Experience** | [Open Judge Demo →](https://lokeshwar2005.github.io/razorrecover-ai/judge-demo/) |
+| 🛡️ **Audit & Compliance Center** | [Open Audit Center →](https://lokeshwar2005.github.io/razorrecover-ai/audit/) |
+| ⚙️ **Serverless Production API** | [Open Production API →](https://razorrecover-ai-teal.vercel.app/api/v1/transactions) |
+
+**Recommended judge path:** **Chronova → payment failure → AI diagnosis → RazorRecover recovery → verified capture → recovered revenue.**
+
 ---
 
 ## 🌐 Live Production Deployments
@@ -114,9 +130,9 @@ The system has undergone rigorous automated end-to-end verification against the 
 | Test Scenario | Scope | Result | Key Verified Invariant |
 | :--- | :--- | :---: | :--- |
 | **Test #1** | Transaction & Recovery Idempotency | **PASS** | Duplicate transaction ingestion & duplicate recovery execution return deterministic identical IDs with `duplicate: true`. |
-| **Test #2** | End-to-End Recovery Lifecycle | **PASS** | `STOPPED` $\rightarrow$ `IN_PROGRESS` (₹0 verified) $\rightarrow$ Settlement Verification $\rightarrow$ `RECOVERED` (₹8,995 verified). |
+| **Test #2** | End-to-End Recovery Lifecycle | **PASS** | `STOPPED` → `IN_PROGRESS` (₹0 verified) → Settlement Verification → `RECOVERED` (₹8,995 verified). |
 | **Test #3** | All 8 Failure Scenarios & AI Recovery | **PASS** | 100% pass rate across 3DS Timeout, Low Balance, UPI Drop, Bank Downtime, Risk False Positive, Network Disconnect, Max Retries, and Cart Abandonment. |
-| **Test #5** | Full E2E Customer $\rightarrow$ AI $\rightarrow$ Recovery Flow | **PASS** | Customer checkout failure auto-triggers AI diagnosis; storefront polling auto-detects recovery and confirms order without page reload. |
+| **Test #5** | Full E2E Customer → AI → Recovery Flow | **PASS** | Customer checkout failure auto-triggers AI diagnosis; storefront polling auto-detects recovery and confirms order without page reload. |
 | **Test #6** | Security & Production Integrity Audit | **PASS** | 14/14 active security assertions passed: Origin-restricted CORS, zero client-side credentials, tamper protection, and concurrent race deduplication. |
 | **Test #7** | Final Production Smoke & Stability | **PASS** | Live deployment stability verified: 0 recursive workflows, 0 runtime git commits, and clean execution under load. |
 
@@ -129,7 +145,7 @@ Follow this deterministic flow to evaluate the live production system:
 1. **Open the Chronova Storefront**:
    Navigate to [https://lokeshwar2005.github.io/razorrecover-ai/chronova/](https://lokeshwar2005.github.io/razorrecover-ai/chronova/).
 2. **Select a Catalog Watch**:
-   Click on **Chronova Seeker 40** (₹8,995) $\rightarrow$ **Add to Cart** $\rightarrow$ **Proceed to Checkout**.
+   Click on **Chronova Seeker 40** (₹8,995) → **Add to Cart** → **Proceed to Checkout**.
 3. **Trigger Controlled Failure Scenario**:
    Select **3DS Bank OTP Timeout** and click **Simulate Order Payment Failure**.
 4. **Observe Autonomous AI Recovery**:
