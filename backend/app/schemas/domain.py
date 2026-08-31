@@ -248,6 +248,8 @@ class RecoveryExecutionRequest(BaseModel):
 
 
 class RecoveryExecutionResponse(BaseModel):
+    success: bool = True
+    duplicate: bool = False
     transaction_id: str
     action_type: str
     workflow_status: WorkflowStatusType
@@ -368,6 +370,7 @@ class PaymentEventIngestRequest(BaseModel):
 
 class PaymentEventIngestResponse(BaseModel):
     success: bool
+    duplicate: bool = False
     transaction_id: str
     status: str
     opportunity_id: Optional[str] = None

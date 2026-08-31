@@ -10,14 +10,53 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for Vercel production deployment
-        run: sleep 60
+        run: sleep 30
 
       - name: Run duplicate transaction and recovery test
         env:
-          API_BASE: https://razorrecover-8emq5g8nt-razor-recover-buildathon.vercel.app
+          API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
           TEST_ID: TXN-E2E-IDEMPOTENCY-${{ github.run_id }}
         run: |
           set -euo pipefail
+
+          function make_request() {
+            local step_name="$1"
+            local method="$2"
+            local url="$3"
+            local body="${4:-}"
+
+            echo "------------------------------------------------------------"
+            echo "[TEST #1] STEP: $step_name"
+            echo "[TEST #1] ENDPOINT: $method $url"
+
+            local response_file
+            response_file=$(mktemp)
+            local status_code
+
+            if [ -n "$body" ]; then
+              status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
+                -H 'Content-Type: application/json' \
+                -H 'Accept: application/json' \
+                --data "$body")
+            else
+              status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
+                -H 'Accept: application/json')
+            fi
+
+            local response_body
+            response_body=$(cat "$response_file")
+            rm -f "$response_file"
+
+            echo "[TEST #1] HTTP STATUS: $status_code"
+            echo "[TEST #1] RESPONSE: $response_body"
+
+            if [[ "$status_code" -lt 200 || "$status_code" -ge 300 ]]; then
+              echo "❌ FAILED: $step_name returned HTTP $status_code" >&2
+              return 1
+            fi
+
+            echo "$response_body"
+          }
 
           payload=$(cat <<JSON
           {
@@ -37,41 +76,31 @@ jobs:
           )
 
           echo "=== 1. First transaction ingestion ==="
-          first=$(curl -fsS -X POST "$API_BASE/api/v1/transactions/events" \
-            -H 'Content-Type: application/json' \
-            --data "$payload")
-          echo "$first"
-          echo "$first" | jq -e '.success == true and .duplicate == false' >/dev/null
+          first=$(make_request "1. First transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
+          echo "$first" | jq -e '.success == true and .duplicate == false and .transaction_id == env.TEST_ID' >/dev/null
 
           echo "=== 2. Duplicate transaction ingestion ==="
-          second=$(curl -fsS -X POST "$API_BASE/api/v1/transactions/events" \
-            -H 'Content-Type: application/json' \
-            --data "$payload")
-          echo "$second"
+          second=$(make_request "2. Duplicate transaction ingestion" "POST" "$API_BASE/api/v1/transactions/events" "$payload")
           echo "$second" | jq -e '.success == true and .duplicate == true and .transaction_id == env.TEST_ID' >/dev/null
 
           echo "=== 3. First recovery execution ==="
           recovery_payload=$(jq -n --arg id "$TEST_ID" '{transaction_id:$id, action_type:"Send payment link"}')
-          recovery_first=$(curl -fsS -X POST "$API_BASE/api/v1/recovery/execute" \
-            -H 'Content-Type: application/json' \
-            --data "$recovery_payload")
-          echo "$recovery_first"
+          recovery_first=$(make_request "3. First recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
           echo "$recovery_first" | jq -e '.success == true and .duplicate == false and (.recovery_operation_id | length > 0)' >/dev/null
 
-          echo "=== 4. Duplicate recovery execution ==="
-          recovery_second=$(curl -fsS -X POST "$API_BASE/api/v1/recovery/execute" \
-            -H 'Content-Type: application/json' \
-            --data "$recovery_payload")
-          echo "$recovery_second"
-          echo "$recovery_second" | jq -e '.success == true and .duplicate == true and .recovery_operation_id == env.RECOVERY_ID' 2>/dev/null || true
-
           RECOVERY_ID=$(echo "$recovery_first" | jq -r '.recovery_operation_id')
+          export RECOVERY_ID
+
+          echo "=== 4. Duplicate recovery execution ==="
+          recovery_second=$(make_request "4. Duplicate recovery execution" "POST" "$API_BASE/api/v1/recovery/execute" "$recovery_payload")
+          echo "$recovery_second" | jq -e --arg rec_id "$RECOVERY_ID" '.success == true and .duplicate == true and .recovery_operation_id == $rec_id' >/dev/null
+
           second_recovery_id=$(echo "$recovery_second" | jq -r '.recovery_operation_id')
           test "$RECOVERY_ID" = "$second_recovery_id"
 
           echo "=== 5. Verify transaction detail ==="
-          detail=$(curl -fsS "$API_BASE/api/v1/transactions/$TEST_ID")
-          echo "$detail"
+          detail=$(make_request "5. Verify transaction detail" "GET" "$API_BASE/api/v1/transactions/$TEST_ID")
           echo "$detail" | jq -e '.transaction.id == env.TEST_ID and .transaction.status == "IN_PROGRESS"' >/dev/null
 
-          echo "PASS: transaction ingestion is idempotent and recovery execution is idempotent."
+          echo "------------------------------------------------------------"
+          echo "🎉 PASS: Transaction ingestion is idempotent and recovery execution is idempotent."

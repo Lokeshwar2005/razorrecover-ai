@@ -236,6 +236,7 @@ def ingest_payment_event(
         if existing_txn.status == "RECOVERED":
             return PaymentEventIngestResponse(
                 success=True,
+                duplicate=True,
                 transaction_id=existing_txn.id,
                 status="RECOVERED",
                 opportunity_id=f"opp-{existing_txn.id}",
@@ -282,6 +283,7 @@ def ingest_payment_event(
 
             return PaymentEventIngestResponse(
                 success=True,
+                duplicate=True,
                 transaction_id=existing_txn.id,
                 status="RECOVERED",
                 opportunity_id=f"opp-{existing_txn.id}",
@@ -293,6 +295,7 @@ def ingest_payment_event(
         opp = db.query(RecoveryOpportunityModel).filter(RecoveryOpportunityModel.transaction_id == txn_id).first()
         return PaymentEventIngestResponse(
             success=True,
+            duplicate=True,
             transaction_id=existing_txn.id,
             status=existing_txn.status,
             opportunity_id=opp.id if opp else f"opp-{existing_txn.id}",

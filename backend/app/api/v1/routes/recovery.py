@@ -147,6 +147,8 @@ async def execute_recovery_action(
     # Idempotency check: if transaction is already recovered
     if txn and txn.status == "RECOVERED":
         return RecoveryExecutionResponse(
+            success=True,
+            duplicate=True,
             transaction_id=request.transaction_id,
             action_type=request.action_type,
             workflow_status="COMPLETE",
@@ -154,6 +156,21 @@ async def execute_recovery_action(
             recovery_operation_id=recovery_operation_id,
             provider_id=txn.provider_id,
             executed_at=now,
+        )
+
+    # Idempotency check: if recovery action was already completed
+    existing_action = db.query(RecoveryActionModel).filter(RecoveryActionModel.transaction_id == request.transaction_id).order_by(RecoveryActionModel.executed_at.desc()).first()
+    if existing_action and existing_action.workflow_status == "COMPLETE":
+        return RecoveryExecutionResponse(
+            success=True,
+            duplicate=True,
+            transaction_id=request.transaction_id,
+            action_type=existing_action.action_type,
+            workflow_status="COMPLETE",
+            workflow_message=existing_action.workflow_message or f"Recovery already initialized for {request.transaction_id}.",
+            recovery_operation_id=recovery_operation_id,
+            provider_id=txn.provider_id if txn else None,
+            executed_at=existing_action.executed_at,
         )
 
     # 2. Evaluate Deterministic Policy Gate
