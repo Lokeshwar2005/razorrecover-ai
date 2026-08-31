@@ -644,6 +644,7 @@ export interface PaymentEventPayload {
   product_category?: string
   quantity?: number
   unit_price?: number
+  items?: Array<any>
   customer?: PaymentCustomerPayload
   metadata?: PaymentEventMetadataPayload
 }

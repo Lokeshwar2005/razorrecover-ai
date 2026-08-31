@@ -92,6 +92,48 @@ export interface ChronovaTransaction {
   quantity?: number
   unit_price?: number
   unit_price_rupees?: number
+  items?: Array<{
+    productId?: string
+    product_id?: string
+    productName?: string
+    product_name?: string
+    productImage?: string
+    product_image?: string
+    productCategory?: string
+    product_category?: string
+    productBrand?: string
+    product_brand?: string
+    quantity: number
+    unitPrice?: number
+    unit_price?: number
+    unit_price_rupees?: number
+    totalPrice?: number
+    total_price?: number
+    total_price_rupees?: number
+    selected_color?: string
+    [key: string]: any
+  }>
+  subtotal?: number
+  subtotal_rupees?: number
+  totalAmount?: number
+  total_amount_rupees?: number
+  payment?: {
+    status: string
+    method?: string
+    provider?: string
+    paymentId?: string
+    capturedAt?: string
+  }
+  recovery?: {
+    required: boolean
+    status?: string
+    reason?: string
+    diagnosis?: string
+    confidence?: number
+    recommendedAction?: string
+    recoveryOperationId?: string
+    recoveredAmount?: number
+  }
   customer?: ChronovaCustomer
   metadata?: ChronovaMetadata
   ai_diagnosis?: AIDiagnosis
@@ -199,6 +241,9 @@ function normalizeTxn(t: any): ChronovaTransaction {
   const resolvedStatus = isRec ? 'RECOVERED' : (isRecActive ? 'WAITING_FOR_RECOVERY' : 'PAYMENT_FAILED')
   const amtMinor = Number(t.amount_minor || t.amount * 100) || 899500
 
+  const rawItems = Array.isArray(t.items) ? t.items : []
+  const firstItem = rawItems[0]
+
   return {
     id: String(t.id).toUpperCase(),
     chronova_order_id: t.chronova_order_id || t.order_id || t.provider_order_id || `order_cn_${t.id.toLowerCase()}`,
@@ -211,18 +256,50 @@ function normalizeTxn(t: any): ChronovaTransaction {
     amount: Math.round(amtMinor / 100),
     amount_minor: amtMinor,
     currency: (t.currency || 'INR').toUpperCase(),
+    product_id: t.product_id || firstItem?.product_id || firstItem?.productId || 'prod_chronova_seeker',
+    product_name: t.product_name || firstItem?.product_name || firstItem?.productName || 'Chronova Luxury Horizon Automatic',
+    product_image: t.product_image || firstItem?.product_image || firstItem?.productImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80',
+    product_brand: t.product_brand || firstItem?.product_brand || firstItem?.productBrand || 'Chronova',
+    product_category: t.product_category || firstItem?.product_category || firstItem?.productCategory || 'Automatic Watches',
+    quantity: Number(t.quantity || firstItem?.quantity) || 1,
+    unit_price: Number(t.unit_price || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100),
+    unit_price_rupees: Number(t.unit_price_rupees || firstItem?.unit_price_rupees || firstItem?.unitPrice) || Math.round(amtMinor / 100),
+    items: rawItems.length > 0 ? rawItems : undefined,
+    subtotal: t.subtotal || Math.round(amtMinor / 100),
+    subtotal_rupees: t.subtotal_rupees || Math.round(amtMinor / 100),
+    totalAmount: t.totalAmount || Math.round(amtMinor / 100),
+    total_amount_rupees: t.total_amount_rupees || Math.round(amtMinor / 100),
     status: resolvedStatus,
-    direction: t.direction || 'Payment degradation',
-    reason: t.reason || t.failure_reason || '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
-    action: t.action || t.recommended_action || 'Send payment link',
-    confidence: Number(t.confidence || t.confidence_score) || 95,
-    recovery_probability: Number(t.recovery_probability) || 88,
-    risk_score: Number(t.risk_score) || 20,
+    direction: t.direction || (isRec ? 'Direct settlement' : 'Payment degradation'),
+    reason: t.reason || t.failure_reason || (isRec ? 'Direct payment completed successfully' : '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)'),
+    action: isRec
+      ? (t.action && !t.action.includes('Send') ? t.action : 'None — Recovery completed')
+      : (t.action || t.recommended_action || 'Send payment link'),
+    confidence: Number(t.confidence || t.confidence_score) || (isRec ? 100 : 95),
+    recovery_probability: Number(t.recovery_probability) || (isRec ? 100 : 88),
+    risk_score: Number(t.risk_score) || (isRec ? 5 : 20),
     policy: t.policy || 'Approved',
-    explanation: t.explanation || t.reasoning_summary || '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+    explanation: t.explanation || t.reasoning_summary || (isRec ? 'Payment successfully recovered and verified.' : '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.'),
     latency: t.latency || '180ms',
     source: 'CHRONOVA',
     provider: 'RAZORPAY',
+    payment: t.payment || {
+      status: isRec ? 'PAYMENT_RECOVERED' : 'PAYMENT_FAILED',
+      method: 'razorpay',
+      provider: 'RAZORPAY',
+      paymentId: t.razorpay_payment_id || t.provider_payment_id,
+      capturedAt: isRec ? (t.captured_at || t.verified_at || new Date().toISOString()) : undefined,
+    },
+    recovery: t.recovery || {
+      required: !isRec,
+      status: isRec ? 'RECOVERED' : 'ELIGIBLE',
+      reason: t.reason,
+      diagnosis: t.explanation,
+      confidence: Number(t.confidence) || 95,
+      recommendedAction: isRec ? 'None — Recovery completed' : 'Send payment retry link',
+      recoveryOperationId: t.recovery_operation_id,
+      recoveredAmount: isRec ? Math.round(amtMinor / 100) : 0,
+    },
     customer: t.customer || {
       name: 'Chronova Customer',
       email: 'customer@chronova.example.com',
@@ -249,10 +326,10 @@ function normalizeTxn(t: any): ChronovaTransaction {
       reason: 'Deterministic risk threshold verification passed.',
     },
     recovery_operation_id: t.recovery_operation_id,
-    recovery_status: isRec ? 'RECOVERED' : (isRecActive ? 'IN_PROGRESS' : undefined),
+    recovery_status: isRec ? (t.recovery_status || 'RECOVERED') : (isRecActive ? 'IN_PROGRESS' : undefined),
     workflow_status: isRec ? 'VERIFIED' : (isRecActive ? 'COMPLETE' : 'PENDING'),
     workflow_message: isRec
-      ? `✓ Verified Capture Confirmed! Recovered ₹${(amtMinor / 100).toLocaleString('en-IN')} for ${t.id}.`
+      ? (t.workflow_message || `✓ Verified Capture Confirmed! Recovered ₹${(amtMinor / 100).toLocaleString('en-IN')} for ${t.id}.`)
       : t.workflow_message || (isRecActive ? `Recovery operation [${t.recovery_operation_id}] active.` : undefined),
     provider_status: isRec ? 'captured' : (t.provider_status || 'failed'),
     verified_amount_minor: isRec ? (t.verified_amount_minor || amtMinor) : 0,
@@ -453,13 +530,61 @@ export async function upsertChronovaEvent(
   const prevHash = '0000000000000000000000000000000000000000000000000000000000000000'
   const hash = pseudoSha256(`${prevHash}:${id}:FAILURE_INGESTED`)
 
-  const prodId = (payload as any).product_id || payload.metadata?.product_id || 'prod_chronova_seeker'
-  const prodName = (payload as any).product_name || payload.metadata?.product_name || 'Chronova Luxury Horizon Automatic'
-  const prodImage = (payload as any).product_image || payload.metadata?.product_image || payload.metadata?.image || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
-  const prodBrand = (payload as any).product_brand || payload.metadata?.brand || 'Chronova'
-  const prodCat = (payload as any).product_category || payload.metadata?.category || 'Automatic Watches'
-  const prodQty = Number((payload as any).quantity || payload.metadata?.quantity) || 1
-  const prodUnitPrice = Number((payload as any).unit_price || payload.metadata?.unit_price) || Math.round(amtMinor / 100)
+  const rawItems = Array.isArray((payload as any).items)
+    ? (payload as any).items
+    : Array.isArray(payload.metadata?.items)
+    ? payload.metadata?.items
+    : []
+
+  const firstItem = rawItems[0]
+  const prodId = (payload as any).product_id || payload.metadata?.product_id || firstItem?.product_id || firstItem?.productId || 'prod_chronova_seeker'
+  const prodName = (payload as any).product_name || payload.metadata?.product_name || firstItem?.product_name || firstItem?.productName || 'Chronova Luxury Horizon Automatic'
+  const prodImage = (payload as any).product_image || payload.metadata?.product_image || payload.metadata?.image || firstItem?.product_image || firstItem?.productImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+  const prodBrand = (payload as any).product_brand || payload.metadata?.brand || firstItem?.product_brand || firstItem?.productBrand || 'Chronova'
+  const prodCat = (payload as any).product_category || payload.metadata?.category || firstItem?.product_category || firstItem?.productCategory || 'Automatic Watches'
+  const prodQty = Number((payload as any).quantity || payload.metadata?.quantity || firstItem?.quantity) || 1
+  const prodUnitPrice = Number((payload as any).unit_price || payload.metadata?.unit_price || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100)
+
+  const normalizedItems = rawItems.length > 0 ? rawItems.map((item: any) => ({
+    productId: item.productId || item.product_id,
+    product_id: item.product_id || item.productId,
+    productName: item.productName || item.product_name,
+    product_name: item.product_name || item.productName,
+    productImage: item.productImage || item.product_image || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80',
+    product_image: item.product_image || item.productImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80',
+    productBrand: item.productBrand || item.product_brand || 'Chronova',
+    product_brand: item.product_brand || item.productBrand || 'Chronova',
+    productCategory: item.productCategory || item.product_category || 'Automatic Watches',
+    product_category: item.product_category || item.productCategory || 'Automatic Watches',
+    quantity: Number(item.quantity) || 1,
+    unitPrice: Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100),
+    unit_price: Number(item.unit_price || item.unitPrice || item.unit_price_rupees) || Math.round(amtMinor / 100),
+    unit_price_rupees: Number(item.unit_price_rupees || item.unitPrice || item.unit_price) || Math.round(amtMinor / 100),
+    totalPrice: Number(item.totalPrice || item.total_price || item.total_price_rupees) || ((Number(item.quantity) || 1) * (Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100))),
+    total_price: Number(item.total_price || item.totalPrice || item.total_price_rupees) || ((Number(item.quantity) || 1) * (Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100))),
+    total_price_rupees: Number(item.total_price_rupees || item.totalPrice || item.total_price) || ((Number(item.quantity) || 1) * (Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(amtMinor / 100))),
+    selected_color: item.selected_color,
+  })) : [
+    {
+      productId: prodId,
+      product_id: prodId,
+      productName: prodName,
+      product_name: prodName,
+      productImage: prodImage,
+      product_image: prodImage,
+      productBrand: prodBrand,
+      product_brand: prodBrand,
+      productCategory: prodCat,
+      product_category: prodCat,
+      quantity: prodQty,
+      unitPrice: prodUnitPrice,
+      unit_price: prodUnitPrice,
+      unit_price_rupees: prodUnitPrice,
+      totalPrice: prodUnitPrice * prodQty,
+      total_price: prodUnitPrice * prodQty,
+      total_price_rupees: prodUnitPrice * prodQty,
+    }
+  ]
 
   const newTxn: ChronovaTransaction = {
     id: id,
@@ -481,6 +606,11 @@ export async function upsertChronovaEvent(
     quantity: prodQty,
     unit_price: prodUnitPrice,
     unit_price_rupees: prodUnitPrice,
+    items: normalizedItems,
+    subtotal: Math.round(amtMinor / 100),
+    subtotal_rupees: Math.round(amtMinor / 100),
+    totalAmount: Math.round(amtMinor / 100),
+    total_amount_rupees: Math.round(amtMinor / 100),
     status: 'PAYMENT_FAILED',
     direction: 'Payment degradation',
     reason: reason,
@@ -493,6 +623,23 @@ export async function upsertChronovaEvent(
     latency: '180ms',
     source: 'CHRONOVA',
     provider: 'RAZORPAY',
+    payment: {
+      status: 'PAYMENT_FAILED',
+      method: (payload as any).method || 'razorpay',
+      provider: 'RAZORPAY',
+      paymentId: payload.payment_id,
+      capturedAt: undefined,
+    },
+    recovery: {
+      required: true,
+      status: 'ELIGIBLE',
+      reason: reason,
+      diagnosis: '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+      confidence: 95,
+      recommendedAction: action,
+      recoveryOperationId: undefined,
+      recoveredAmount: 0,
+    },
     customer: payload.customer || {
       name: 'Chronova Customer',
       email: 'customer@chronova.example.com',
@@ -542,49 +689,52 @@ export async function upsertChronovaEvent(
   return { transaction: newTxn, duplicate: false }
 }
 
-export async function executeChronovaRecovery(
+export async function executeChronovaRecoveryAction(
   transactionId: string,
   actionType: string = 'Send payment link',
   req?: IncomingMessage
 ): Promise<{ transaction: ChronovaTransaction; recovery_operation_id: string; duplicate: boolean }> {
   const cleanId = (transactionId || '').trim().toUpperCase()
   const txn = await findChronovaTransaction(cleanId, req)
-
   if (!txn) {
-    throw new Error(`Transaction ${cleanId} not found`)
+    throw new Error(`Transaction ${cleanId} not found in authoritative Chronova ledger`)
   }
 
-  if (txn.recovery_operation_id) {
-    return {
-      transaction: txn,
-      recovery_operation_id: txn.recovery_operation_id,
-      duplicate: true,
-    }
+  if (txn.status === 'RECOVERED') {
+    return { transaction: txn, recovery_operation_id: txn.recovery_operation_id || 'ALREADY_RECOVERED', duplicate: true }
   }
 
-  const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '')
-  const recoveryOpId = `REC-${dateStr}-${cleanId.replace(/[^A-Za-z0-9]/g, '')}`
+  const recoveryOpId = `REC-20260831-${cleanId.replace(/[^A-Z0-9]/gi, '')}`
+  if (txn.recovery_operation_id === recoveryOpId && txn.status === 'WAITING_FOR_RECOVERY') {
+    return { transaction: txn, recovery_operation_id: recoveryOpId, duplicate: true }
+  }
+
   const now = new Date().toISOString()
-
   const prevHash = txn.audit_events?.[0]?.hash || '0000000000000000000000000000000000000000000000000000000000000000'
   const hash = pseudoSha256(`${prevHash}:${cleanId}:RECOVERY_DISPATCHED:${recoveryOpId}`)
 
   const updated: ChronovaTransaction = {
     ...txn,
     status: 'WAITING_FOR_RECOVERY',
-    action: actionType || txn.action,
     recovery_operation_id: recoveryOpId,
     recovery_status: 'IN_PROGRESS',
-    workflow_status: 'COMPLETE',
-    workflow_message: `Recovery order created for ${cleanId} [${recoveryOpId}] — awaiting Test Mode payment.`,
+    workflow_status: 'DISPATCHED',
+    workflow_message: `Recovery link dispatched for ${cleanId} [${recoveryOpId}]. Awaiting customer payment completion.`,
     updated_at: now,
+    recovery: {
+      ...(txn.recovery || { required: true, reason: txn.reason, confidence: txn.confidence }),
+      required: true,
+      status: 'IN_PROGRESS',
+      recommendedAction: actionType,
+      recoveryOperationId: recoveryOpId,
+    },
     audit_events: [
       {
         id: `audit-${cleanId}-02`,
         transaction_id: cleanId,
-        event_type: 'RECOVERY_DISPATCHED',
-        actor: 'Autonomous Recovery Engine',
-        decision: 'IN_PROGRESS',
+        event_type: 'RECOVERY_ACTION_DISPATCHED',
+        actor: 'RazorRecover Autonomous Engine',
+        decision: 'WAITING_FOR_RECOVERY',
         reason: `Recovery operation [${recoveryOpId}] dispatched with action: ${actionType}.`,
         timestamp: now,
         hash,
@@ -597,6 +747,8 @@ export async function executeChronovaRecovery(
   await persistDurableTransactions({ [cleanId]: updated, [txn.id]: updated }, req)
   return { transaction: updated, recovery_operation_id: recoveryOpId, duplicate: false }
 }
+
+export const executeChronovaRecovery = executeChronovaRecoveryAction
 
 export async function verifyChronovaPaymentCapture(
   transactionId: string,
@@ -614,6 +766,8 @@ export async function verifyChronovaPaymentCapture(
   const prevHash = txn?.audit_events?.[0]?.hash || '0000000000000000000000000000000000000000000000000000000000000000'
   const hash = pseudoSha256(`${prevHash}:${cleanId}:PAYMENT_CAPTURED:${paymentId}`)
 
+  const wasPreviouslyFailed = txn && (txn.status === 'PAYMENT_FAILED' || txn.status === 'STOPPED' || txn.status === 'WAITING_FOR_RECOVERY' || txn.status === 'IN_PROGRESS')
+
   const updated: ChronovaTransaction = {
     ...(txn || {
       id: cleanId,
@@ -622,20 +776,24 @@ export async function verifyChronovaPaymentCapture(
       amount: Math.round(verifiedAmt / 100),
       amount_minor: verifiedAmt,
       currency: 'INR',
-      direction: 'Payment degradation',
-      reason: '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
-      action: 'Send payment link',
-      confidence: 95,
-      recovery_probability: 88,
-      risk_score: 20,
+      direction: 'Direct settlement',
+      reason: 'Direct payment completed successfully',
+      action: 'None — Payment already successful',
+      confidence: 99,
+      recovery_probability: 100,
+      risk_score: 5,
       policy: 'Approved',
-      explanation: '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+      explanation: 'Customer completed payment directly via Razorpay Test Mode.',
       latency: '180ms',
       source: 'CHRONOVA',
       provider: 'RAZORPAY',
       created_at: now,
     }),
     status: 'RECOVERED',
+    action: wasPreviouslyFailed ? 'None — Recovery completed' : 'None — Payment already successful',
+    explanation: wasPreviouslyFailed
+      ? `Payment successfully recovered via customer retry link and captured in Razorpay (Payment ID: ${paymentId}).`
+      : `Customer completed payment directly via Razorpay Test Mode (Payment ID: ${paymentId}). No recovery intervention was required.`,
     razorpay_payment_id: paymentId,
     razorpay_order_id: orderId || txn?.razorpay_order_id || txn?.chronova_order_id,
     provider_id: paymentId,
@@ -643,9 +801,26 @@ export async function verifyChronovaPaymentCapture(
     provider_order_id: orderId || txn?.provider_order_id || txn?.chronova_order_id,
     provider_status: 'captured',
     verified_amount_minor: verifiedAmt,
-    recovery_status: 'RECOVERED',
+    recovery_status: wasPreviouslyFailed ? 'RECOVERED' : 'NONE',
     workflow_status: 'VERIFIED',
     workflow_message: `✓ Verified Capture Confirmed! Recovered ₹${(verifiedAmt / 100).toLocaleString('en-IN')} for ${cleanId}.`,
+    payment: {
+      status: 'PAYMENT_RECOVERED',
+      method: 'razorpay',
+      provider: 'RAZORPAY',
+      paymentId: paymentId,
+      capturedAt: now,
+    },
+    recovery: {
+      required: !!wasPreviouslyFailed,
+      status: wasPreviouslyFailed ? 'RECOVERED' : 'NONE',
+      reason: wasPreviouslyFailed ? txn?.reason : undefined,
+      diagnosis: wasPreviouslyFailed ? txn?.explanation : undefined,
+      confidence: wasPreviouslyFailed ? (txn?.confidence || 95) : 100,
+      recommendedAction: wasPreviouslyFailed ? 'Recovery completed' : 'None — Payment already successful',
+      recoveryOperationId: txn?.recovery_operation_id,
+      recoveredAmount: wasPreviouslyFailed ? Math.round(verifiedAmt / 100) : 0,
+    },
     captured_at: now,
     verified_at: now,
     updated_at: now,

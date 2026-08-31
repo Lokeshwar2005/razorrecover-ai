@@ -43,10 +43,53 @@ export interface CanonicalTransaction {
   quantity?: number
   unit_price?: number
   unit_price_rupees?: number
+  items?: Array<{
+    productId?: string
+    product_id?: string
+    productName?: string
+    product_name?: string
+    productImage?: string
+    product_image?: string
+    productCategory?: string
+    product_category?: string
+    productBrand?: string
+    product_brand?: string
+    quantity: number
+    unitPrice?: number
+    unit_price?: number
+    unit_price_rupees?: number
+    totalPrice?: number
+    total_price?: number
+    total_price_rupees?: number
+    selected_color?: string
+    [key: string]: any
+  }>
+  subtotal?: number
+  subtotal_rupees?: number
+  totalAmount?: number
+  total_amount_rupees?: number
+  payment?: {
+    status: string
+    method?: string
+    provider?: string
+    paymentId?: string
+    capturedAt?: string
+  }
+  recovery?: {
+    required: boolean
+    status?: string
+    reason?: string
+    diagnosis?: string
+    confidence?: number
+    recommendedAction?: string
+    recoveryOperationId?: string
+    recoveredAmount?: number
+  }
 
   // Provider / Recovery fields
   provider?: 'RAZORPAY' | 'razorpay'
   recovery_operation_id?: string
+  recovery_status?: string
   provider_id?: string
   provider_payment_id?: string
   provider_order_id?: string
@@ -338,9 +381,17 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
     const existing = get().transactions.map((t) => {
       if (t.id === id) {
         const isRec = status === 'RECOVERED'
+        const wasPreviouslyFailed = t.status === 'PAYMENT_FAILED' || t.status === 'STOPPED' || t.status === 'WAITING_FOR_RECOVERY' || t.status === 'IN_PROGRESS'
         return {
           ...t,
           status,
+          action: isRec ? (wasPreviouslyFailed ? 'None — Recovery completed' : 'None — Payment already successful') : t.action,
+          recovery_status: isRec ? (wasPreviouslyFailed ? 'RECOVERED' : 'NONE') : t.recovery_status,
+          explanation: isRec
+            ? (wasPreviouslyFailed
+                ? `Payment successfully recovered via customer retry link and captured in Razorpay (Payment ID: ${providerPaymentId || t.provider_payment_id}).`
+                : `Customer completed payment directly via Razorpay Test Mode (Payment ID: ${providerPaymentId || t.provider_payment_id}). No recovery intervention was required.`)
+            : t.explanation,
           verified_amount_minor: isRec ? (verifiedAmountMinor || t.amount_minor) : 0,
           provider_payment_id: providerPaymentId || t.provider_payment_id,
           provider_id: providerPaymentId || t.provider_id,
@@ -348,8 +399,25 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
           workflow_status: isRec ? 'VERIFIED' : 'COMPLETE',
           provider_status: isRec ? 'captured' : t.provider_status,
           updated_at: new Date().toISOString(),
-          captured_at: isRec ? new Date().toISOString() : t.captured_at,
-          verified_at: isRec ? new Date().toISOString() : t.verified_at,
+          captured_at: isRec ? (t.captured_at || new Date().toISOString()) : t.captured_at,
+          verified_at: isRec ? (t.verified_at || new Date().toISOString()) : t.verified_at,
+          payment: {
+            status: isRec ? 'PAYMENT_RECOVERED' : 'PAYMENT_FAILED',
+            method: 'razorpay',
+            provider: 'RAZORPAY',
+            paymentId: providerPaymentId || t.provider_payment_id,
+            capturedAt: isRec ? new Date().toISOString() : undefined,
+          },
+          recovery: {
+            required: !!wasPreviouslyFailed,
+            status: isRec ? (wasPreviouslyFailed ? 'RECOVERED' : 'NONE') : 'ELIGIBLE',
+            reason: wasPreviouslyFailed ? t.reason : undefined,
+            diagnosis: wasPreviouslyFailed ? t.explanation : undefined,
+            confidence: wasPreviouslyFailed ? (t.confidence || 95) : 100,
+            recommendedAction: isRec ? (wasPreviouslyFailed ? 'Recovery completed' : 'None — Payment already successful') : t.action,
+            recoveryOperationId: t.recovery_operation_id,
+            recoveredAmount: isRec ? (wasPreviouslyFailed ? Math.round((verifiedAmountMinor || t.amount_minor) / 100) : 0) : 0,
+          },
         }
       }
       return t

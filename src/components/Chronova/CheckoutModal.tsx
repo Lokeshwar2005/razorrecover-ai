@@ -328,6 +328,31 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     const prod = firstItem?.product
     const primaryImg = prod?.images?.primary || prod?.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
 
+    const mappedItems = items.map((item) => {
+      const p = item.product
+      const img = p.images?.primary || p.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+      return {
+        productId: p.id,
+        product_id: p.id,
+        productName: p.name,
+        product_name: p.name,
+        productImage: img,
+        product_image: img,
+        productCategory: p.category,
+        product_category: p.category,
+        productBrand: p.brand,
+        product_brand: p.brand,
+        quantity: item.quantity,
+        unitPrice: p.price_rupees,
+        unit_price: p.price_rupees,
+        unit_price_rupees: p.price_rupees,
+        totalPrice: p.price_rupees * item.quantity,
+        total_price: p.price_rupees * item.quantity,
+        total_price_rupees: p.price_rupees * item.quantity,
+        selected_color: item.selected_color,
+      }
+    })
+
     if (!activeTxnId) {
       setActiveTxnId(currentTxnId)
     }
@@ -374,6 +399,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         product_category: prod?.category || 'Automatic Watches',
         quantity: firstItem?.quantity || 1,
         unit_price: prod?.price_rupees || Math.round(totalDue),
+        items: mappedItems,
         customer: {
           name: address.full_name,
           email: address.email,
@@ -386,6 +412,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           category: prod?.category,
           quantity: firstItem?.quantity || 1,
           unit_price: prod?.price_rupees,
+          items: mappedItems,
         },
       }).catch(() => {})
 
@@ -394,17 +421,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         order_id: currentOrderId,
         transaction_id: currentTxnId,
         created_at: new Date().toISOString(),
-        items: items.map((item) => ({
-          product_id: item.product.id,
-          product_name: item.product.name,
-          product_image: item.product.images?.primary || item.product.primaryImage || primaryImg,
-          product_category: item.product.category,
-          product_brand: item.product.brand,
-          quantity: item.quantity,
-          unit_price_rupees: item.product.price_rupees,
-          total_price_rupees: item.product.price_rupees * item.quantity,
-          selected_color: item.selected_color,
-        })),
+        items: mappedItems,
         total_amount_rupees: totalDue,
         total_amount_minor: totalMinor,
         currency: 'INR',
@@ -463,13 +480,13 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           source: 'live',
           status: 'RECOVERED',
           direction: 'Direct settlement',
-          reason: 'Payment successful on first attempt',
-          action: 'Direct settlement',
+          reason: 'Payment completed successfully without degradation',
+          action: 'None — Payment already successful',
           confidence: 0.99,
           recovery_probability: 1.0,
           risk_score: 0.05,
           policy: 'Approved',
-          explanation: `Customer successfully authorized ${formatINR(totalDue)} via Razorpay Test Mode (${selectedRzpTab.toUpperCase()})`,
+          explanation: `Customer successfully authorized ${formatINR(totalDue)} via Razorpay Test Mode (${selectedRzpTab.toUpperCase()}). No recovery intervention was required.`,
           latency: '180ms',
           created_at: new Date().toISOString(),
           provider: 'razorpay',
@@ -485,6 +502,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           quantity: firstItem?.quantity || 1,
           unit_price: prod?.price_rupees || Math.round(totalDue),
           unit_price_rupees: prod?.price_rupees || Math.round(totalDue),
+          items: mappedItems,
         }
         useTransactionStore.getState().ingestTransaction(successTxn)
         setOrderReceipt(receipt)
@@ -511,6 +529,31 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     const prod = firstItem?.product
     const primaryImg = prod?.images?.primary || prod?.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
 
+    const mappedItems = items.map((item) => {
+      const p = item.product
+      const img = p.images?.primary || p.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+      return {
+        productId: p.id,
+        product_id: p.id,
+        productName: p.name,
+        product_name: p.name,
+        productImage: img,
+        product_image: img,
+        productCategory: p.category,
+        product_category: p.category,
+        productBrand: p.brand,
+        product_brand: p.brand,
+        quantity: item.quantity,
+        unitPrice: p.price_rupees,
+        unit_price: p.price_rupees,
+        unit_price_rupees: p.price_rupees,
+        totalPrice: p.price_rupees * item.quantity,
+        total_price: p.price_rupees * item.quantity,
+        total_price_rupees: p.price_rupees * item.quantity,
+        selected_color: item.selected_color,
+      }
+    })
+
     setActiveTxnId(generatedTxnId)
     setActiveOrderId(mockOrderId)
     setRecoveryStatus('in_progress')
@@ -520,17 +563,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       order_id: mockOrderId,
       transaction_id: generatedTxnId,
       created_at: new Date().toISOString(),
-      items: items.map((item) => ({
-        product_id: item.product.id,
-        product_name: item.product.name,
-        product_image: item.product.images?.primary || item.product.primaryImage || primaryImg,
-        product_category: item.product.category,
-        product_brand: item.product.brand,
-        quantity: item.quantity,
-        unit_price_rupees: item.product.price_rupees,
-        total_price_rupees: item.product.price_rupees * item.quantity,
-        selected_color: item.selected_color,
-      })),
+      items: mappedItems,
       total_amount_rupees: totalDue,
       total_amount_minor: totalMinor,
       currency: 'INR',
@@ -574,6 +607,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       product_category: prod?.category || 'Automatic Watches',
       quantity: firstItem?.quantity || 1,
       unit_price: prod?.price_rupees || Math.round(totalDue),
+      items: mappedItems,
       customer: {
         name: address.full_name,
         email: address.email,
@@ -587,6 +621,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         quantity: firstItem?.quantity || 1,
         unit_price: prod?.price_rupees,
         scenario_id: scenario.id,
+        items: mappedItems,
       },
     }).catch(() => {})
 
@@ -624,6 +659,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         quantity: firstItem?.quantity || 1,
         unit_price: prod?.price_rupees || Math.round(totalDue),
         unit_price_rupees: prod?.price_rupees || Math.round(totalDue),
+        items: mappedItems,
       }
 
       useTransactionStore.getState().ingestTransaction(failedTxn)

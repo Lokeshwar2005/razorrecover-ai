@@ -374,6 +374,131 @@ async function runOrderHistoryTestSuite() {
     'Test O14: Zero synthetic, demo, or preloaded orders in live Chronova order repository'
   )
 
+  // -------------------------------------------------------------
+  // Test O15: Multi-Item Order (3 Products) Ingestion & Persistence
+  // -------------------------------------------------------------
+  const multiOrderId = `order_cn_3items_${Date.now().toString(36)}`
+  const multiTxnId = `TXN-CN-3ITEMS-${Date.now().toString(36).toUpperCase()}`
+  const threeItems = [
+    {
+      product_id: 'prod_watch_1',
+      product_name: 'Chronova Meridian Chronograph',
+      product_image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600',
+      product_brand: 'Chronova',
+      product_category: 'Automatic Watches',
+      quantity: 1,
+      unit_price_rupees: 19500,
+      total_price_rupees: 19500,
+    },
+    {
+      product_id: 'prod_watch_2',
+      product_name: 'Titan Horizon Obsidian',
+      product_image: 'https://images.unsplash.com/photo-1547996160-71dfa6358862?w=600',
+      product_brand: 'Titan',
+      product_category: 'Ceramic Watches',
+      quantity: 2,
+      unit_price_rupees: 14000,
+      total_price_rupees: 28000,
+    },
+    {
+      product_id: 'prod_watch_3',
+      product_name: 'Chronova Stella Rose Gold',
+      product_image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600',
+      product_brand: 'Chronova',
+      product_category: 'Luxury Watches',
+      quantity: 1,
+      unit_price_rupees: 22500,
+      total_price_rupees: 22500,
+    },
+  ]
+  const multiTotalRupees = 19500 + 28000 + 22500 // 70,000
+  const multiTotalMinor = multiTotalRupees * 100
+
+  saveChronovaOrder({
+    order_id: multiOrderId,
+    transaction_id: multiTxnId,
+    created_at: new Date().toISOString(),
+    items: threeItems,
+    total_amount_rupees: multiTotalRupees,
+    total_amount_minor: multiTotalMinor,
+    currency: 'INR',
+    customer: {
+      full_name: 'Lokeshwar Sudam',
+      email: 'lokeshwar@example.com',
+      phone: '+919876543210',
+    },
+    payment_status: 'FAILED',
+    order_status: 'PAYMENT_FAILED',
+    recovery_status: 'ELIGIBLE',
+    failure_reason: '3DS Authentication Bank Gateway Timeout',
+    failure_code: '3DS_TIMEOUT',
+    recommended_action: 'Send payment retry link',
+  })
+
+  const { transaction: multiTxn } = await upsertChronovaEvent({
+    transaction_id: multiTxnId,
+    chronova_order_id: multiOrderId,
+    amount_minor: multiTotalMinor,
+    currency: 'INR',
+    items: threeItems,
+    customer: {
+      name: 'Lokeshwar Sudam',
+      email: 'lokeshwar@example.com',
+      phone: '+919876543210',
+    },
+  })
+
+  const storedMultiOrder = findChronovaOrder(multiOrderId)
+  const storedMultiTxn = await findChronovaTransaction(multiTxnId)
+
+  assert(
+    storedMultiOrder?.items?.length === 3 &&
+      storedMultiTxn?.items?.length === 3 &&
+      storedMultiTxn.items[1].product_name === 'Titan Horizon Obsidian' &&
+      storedMultiTxn.items[1].quantity === 2 &&
+      storedMultiTxn.amount === 70000,
+    'Test O15: Multi-item order (3 products) preserves all 3 items in Chronova Store and RazorRecover AI ledger'
+  )
+
+  // -------------------------------------------------------------
+  // Test O16: Direct Success Transaction Action Invariant
+  // -------------------------------------------------------------
+  const directTxn2Id = `TXN-CN-DIR2-${Date.now().toString(36).toUpperCase()}`
+  const directPay2Id = `pay_direct_instant_${Date.now().toString(36)}`
+  const { transaction: directTxn2 } = await verifyChronovaPaymentCapture(
+    directTxn2Id,
+    directPay2Id,
+    `order_cn_dir2`,
+    3500000
+  )
+
+  assert(
+    directTxn2.status === 'RECOVERED' &&
+      directTxn2.action === 'None — Payment already successful' &&
+      directTxn2.recovery_status === 'NONE' &&
+      directTxn2.provider_status === 'captured',
+    'Test O16: Direct successful payment sets action "None — Payment already successful" and recovery_status "NONE"'
+  )
+
+  // -------------------------------------------------------------
+  // Test O17: Recovered Transaction State Machine & Action Invariant
+  // -------------------------------------------------------------
+  const { transaction: recoveredMultiTxn } = await verifyChronovaPaymentCapture(
+    multiTxnId,
+    `pay_multi_rec_${Date.now().toString(36)}`,
+    multiOrderId,
+    multiTotalMinor
+  )
+
+  assert(
+    recoveredMultiTxn.status === 'RECOVERED' &&
+      recoveredMultiTxn.action === 'None — Recovery completed' &&
+      recoveredMultiTxn.recovery_status === 'RECOVERED' &&
+      recoveredMultiTxn.items?.length === 3 &&
+      recoveredMultiTxn.verified_amount_minor === multiTotalMinor,
+    'Test O17: Recovered transaction transitions to status "RECOVERED", action "None — Recovery completed", preserving all 3 items and failure history'
+  )
+
   console.log('\n===============================================================')
   console.log(`  ORDER HISTORY TEST SUITE COMPLETE: ${passed} PASSED / ${failed} FAILED`)
   console.log('===============================================================\n')

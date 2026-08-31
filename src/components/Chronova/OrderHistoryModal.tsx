@@ -236,8 +236,17 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
                           )}
                         </div>
 
-                        <div className="text-xs font-bold text-slate-800 truncate">
-                          {firstItem ? `${firstItem.product_name} (x${firstItem.quantity})` : 'Chronova Luxury Timepiece'}
+                        <div className="text-xs font-bold text-slate-800 truncate flex items-center gap-1.5">
+                          <span>
+                            {order.items && order.items.length > 1
+                              ? `${order.items[0]?.product_name} (+${order.items.length - 1} other item${order.items.length > 2 ? 's' : ''})`
+                              : (firstItem ? `${firstItem.product_name} (x${firstItem.quantity})` : 'Chronova Luxury Timepiece')}
+                          </span>
+                          {order.items && order.items.length > 1 && (
+                            <span className="px-1.5 py-0.2 rounded bg-blue-100 text-blue-800 text-[9px] font-mono font-bold">
+                              {order.items.length} ITEMS
+                            </span>
+                          )}
                         </div>
 
                         <div className="text-[11px] text-slate-500 font-mono flex items-center gap-3">
@@ -285,6 +294,47 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
                   {/* Expanded Lifecycle & Order Spec Details */}
                   {isExpanded && (
                     <div className="bg-slate-50/80 border-t border-slate-200 p-4 sm:p-5 space-y-4 text-xs">
+                      {/* Section 0: Purchased Products List (All Items) */}
+                      <div className="p-3.5 bg-white rounded-xl border border-slate-200 space-y-2.5">
+                        <div className="text-[10px] font-mono text-slate-400 font-bold uppercase flex items-center justify-between">
+                          <span>Purchased Items ({order.items.length})</span>
+                          <span className="text-slate-900 font-bold font-mono">Total: {formatINR(order.total_amount_rupees)}</span>
+                        </div>
+                        <div className="space-y-2">
+                          {order.items.map((item, idx) => (
+                            <div key={idx} className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 border border-slate-100">
+                              <div className="w-12 h-12 rounded-lg bg-white border border-slate-200 overflow-hidden shrink-0 flex items-center justify-center">
+                                {item.product_image ? (
+                                  <img
+                                    src={item.product_image}
+                                    alt={item.product_name}
+                                    className="w-full h-full object-cover"
+                                    onError={(e) => {
+                                      (e.target as HTMLElement).style.display = 'none'
+                                    }}
+                                  />
+                                ) : (
+                                  <span className="text-lg">⌚</span>
+                                )}
+                              </div>
+                              <div className="flex-1 min-w-0 space-y-0.5">
+                                <div className="font-bold text-slate-900 text-xs truncate">
+                                  {item.product_name}
+                                </div>
+                                <div className="text-[10px] text-slate-500 font-mono">
+                                  {item.product_brand || 'Chronova'} · {item.product_category || 'Automatic Watches'}
+                                  {item.selected_color && <span> · Color: {item.selected_color}</span>}
+                                </div>
+                                <div className="text-[11px] text-slate-700 font-mono flex items-center justify-between">
+                                  <span>Qty: <strong>{item.quantity}</strong> × {formatINR(item.unit_price_rupees)}</span>
+                                  <span className="font-bold text-slate-900">{formatINR(item.total_price_rupees || (item.unit_price_rupees * item.quantity))}</span>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
                       {/* Section 1: Customer & Delivery Info */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 bg-white rounded-xl border border-slate-200">
                         <div>

@@ -492,7 +492,7 @@ export const TransactionExplorer: React.FC = () => {
                         ) : isStopped ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
                             PAYMENT FAILED
-                          </span>
+          </span>
                         ) : (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
                             ⚡ RECOVERY IN PROGRESS
@@ -500,15 +500,27 @@ export const TransactionExplorer: React.FC = () => {
                         )}
                       </div>
 
-                      {/* Product Name & Brand */}
-                      <div className="text-xs font-bold text-[#f4ede2] truncate">
-                        {txn.product_name || 'Chronova Luxury Timepiece'}
+                      {/* Product Name & Brand & Multi-Item Indicator */}
+                      <div className="text-xs font-bold text-[#f4ede2] truncate flex items-center gap-1.5">
+                        <span>
+                          {txn.items && txn.items.length > 1
+                            ? `${txn.items[0]?.product_name || txn.product_name} (+${txn.items.length - 1} other item${txn.items.length > 2 ? 's' : ''})`
+                            : (txn.product_name || 'Chronova Luxury Timepiece')}
+                        </span>
+                        {txn.items && txn.items.length > 1 && (
+                          <span className="px-1.5 py-0.2 rounded bg-[#e5a944]/20 text-[#e5a944] text-[9px] font-mono font-bold">
+                            {txn.items.length} ITEMS
+                          </span>
+                        )}
                         {txn.product_brand && <span className="text-[#a89f91] font-normal"> · {txn.product_brand}</span>}
-                        {txn.quantity && txn.quantity > 1 && <span className="text-[#e5a944] font-mono"> (Qty: {txn.quantity})</span>}
                       </div>
 
                       <div className="text-xs text-[#a89f91] font-mono truncate">
-                        Reason: <strong className="text-[#f4ede2]">{txn.reason}</strong> • Action: <strong className="text-[#e5a944]">{txn.action}</strong>
+                        {isRecovered ? (
+                          <span>Outcome: <strong className="text-[#10b981]">Captured</strong> • Action: <strong className="text-[#10b981]">{txn.action || 'None — Recovery completed'}</strong></span>
+                        ) : (
+                          <span>Reason: <strong className="text-[#f4ede2]">{txn.reason}</strong> • Action: <strong className="text-[#e5a944]">{txn.action}</strong></span>
+                        )}
                       </div>
 
                       <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#7a7164]">
@@ -531,24 +543,27 @@ export const TransactionExplorer: React.FC = () => {
             })
           )}
 
-          {/* Pagination */}
-          {filteredTransactions.length > PAGE_SIZE && (
-            <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] flex items-center justify-between text-xs font-mono text-[#a89f91]">
               <div className="text-[#7a7164]">
-                Page {currentPage} of {totalPages}
+                Showing {((currentPage - 1) * PAGE_SIZE) + 1}–{Math.min(currentPage * PAGE_SIZE, filteredTransactions.length)} of {filteredTransactions.length} Chronova transactions
               </div>
               <div className="flex items-center gap-2">
                 <button
-                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
                   disabled={currentPage === 1}
-                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition"
+                  className="px-3 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
                 >
-                  ◀ Prev
+                  ◀ Previous
                 </button>
+                <span className="px-2 font-bold text-[#e5a944]">
+                  Page {currentPage} of {totalPages}
+                </span>
                 <button
-                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
                   disabled={currentPage === totalPages}
-                  className="px-3 py-1.5 rounded bg-[#15120c] border border-[#2e271c] text-[#f4ede2] disabled:opacity-30 hover:border-[#e5a944] transition"
+                  className="px-3 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
                 >
                   Next ▶
                 </button>
@@ -557,25 +572,35 @@ export const TransactionExplorer: React.FC = () => {
           )}
         </div>
 
-        {/* Selected Transaction Detail / 7 Structured Sections Panel */}
+        {/* Right Detail Panel: 6 Clear Structured Sections */}
         {selectedTxn && (
           <div className="space-y-4">
-            <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4">
+            <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4 sticky top-6 max-h-[88vh] overflow-y-auto">
               <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
-                <div>
-                  <div className="text-xs font-mono text-[#7a7164]">TRANSACTION PROFILE & DIAGNOSIS</div>
-                  <h3 className="text-base font-mono font-bold text-[#e5a944]">{selectedTxn.id}</h3>
+                <div className="space-y-0.5">
+                  <div className="text-xs font-mono font-bold text-[#f4ede2]">{selectedTxn.id}</div>
+                  <div className="text-[11px] font-mono text-[#a89f91]">
+                    {selectedTxn.chronova_order_id || 'order_cn'} · {selectedTxn.customer?.name || 'Chronova Customer'}
+                  </div>
                 </div>
-                <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
-                  CHRONOVA ORIGIN
-                </span>
+                {selectedTxn.status === 'RECOVERED' ? (
+                  <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold">
+                    ✓ PAYMENT RECOVERED
+                  </span>
+                ) : selectedTxn.status === 'PAYMENT_FAILED' || selectedTxn.status === 'STOPPED' ? (
+                  <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold">
+                    ✕ PAYMENT FAILED
+                  </span>
+                ) : (
+                  <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold animate-pulse">
+                    ⚡ RECOVERY ACTIVE
+                  </span>
+                )}
               </div>
 
-              {/* Execution/Verification Feedback */}
               {executionResult && (
-                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-2">
-                  <div className="font-bold text-[#10b981]">⚡ RECOVERY DISPATCHED</div>
-                  <div>{executionResult.message}</div>
+                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-1">
+                  <div className="font-bold text-[#10b981]">✓ {executionResult.message}</div>
                   {executionResult.paymentLink && (
                     <a
                       href={executionResult.paymentLink}
@@ -609,39 +634,66 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
               )}
 
-              {/* SECTION 1: ORDER DETAILS */}
+              {/* SECTION 1: ORDER DETAILS (MULTI-ITEM CAPABLE) */}
               <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2.5">
                 <div className="text-[10px] font-mono text-[#e5a944] font-bold uppercase tracking-wider flex items-center justify-between">
                   <span>1. ORDER DETAILS</span>
                   <span className="text-[#7a7164]">#{selectedTxn.chronova_order_id || 'order_cn'}</span>
                 </div>
                 
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-[#0f0c08] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center">
-                    {selectedTxn.product_image ? (
-                      <img
-                        src={selectedTxn.product_image}
-                        alt={selectedTxn.product_name || 'Chronova Product'}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          (e.target as HTMLElement).style.display = 'none'
-                        }}
-                      />
-                    ) : (
-                      <span className="text-xl">⌚</span>
-                    )}
-                  </div>
-                  <div className="min-w-0 space-y-0.5">
-                    <div className="text-xs font-bold text-[#f4ede2] truncate">
-                      {selectedTxn.product_name || 'Chronova Luxury Timepiece'}
-                    </div>
-                    <div className="text-[11px] text-[#a89f91] font-mono">
-                      {selectedTxn.product_brand || 'Chronova'} · {selectedTxn.product_category || 'Automatic Watches'}
-                    </div>
-                    <div className="text-[11px] text-[#7a7164] font-mono">
-                      Quantity: <strong className="text-[#f4ede2]">{selectedTxn.quantity || 1}</strong> · Unit Price: <strong className="text-[#f4ede2]">₹{(selectedTxn.unit_price || selectedTxn.amount).toLocaleString('en-IN')}</strong>
-                    </div>
-                  </div>
+                {/* List of Purchased Items */}
+                <div className="space-y-2">
+                  {(selectedTxn.items && selectedTxn.items.length > 0 ? selectedTxn.items : [
+                    {
+                      productId: selectedTxn.product_id,
+                      productName: selectedTxn.product_name || 'Chronova Luxury Timepiece',
+                      productImage: selectedTxn.product_image,
+                      productBrand: selectedTxn.product_brand || 'Chronova',
+                      productCategory: selectedTxn.product_category || 'Automatic Watches',
+                      quantity: selectedTxn.quantity || 1,
+                      unitPrice: selectedTxn.unit_price || selectedTxn.amount,
+                      totalPrice: (selectedTxn.unit_price || selectedTxn.amount) * (selectedTxn.quantity || 1),
+                    }
+                  ]).map((item: any, idx: number) => {
+                    const img = item.productImage || item.product_image || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+                    const pName = item.productName || item.product_name || 'Chronova Luxury Watch'
+                    const pBrand = item.productBrand || item.product_brand || 'Chronova'
+                    const pCat = item.productCategory || item.product_category || 'Automatic Watches'
+                    const qty = Number(item.quantity) || 1
+                    const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(selectedTxn.amount / (selectedTxn.items?.length || 1))
+                    const lineTot = Number(item.totalPrice || item.total_price || item.total_price_rupees) || (qty * uPrice)
+
+                    return (
+                      <div key={idx} className="flex items-center gap-3 p-2 rounded-lg bg-[#0f0c08] border border-[#2e271c]/60">
+                        <div className="w-12 h-12 rounded-lg bg-[#15120c] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center">
+                          {img ? (
+                            <img
+                              src={img}
+                              alt={pName}
+                              className="w-full h-full object-cover"
+                              onError={(e) => {
+                                (e.target as HTMLElement).style.display = 'none'
+                              }}
+                            />
+                          ) : (
+                            <span className="text-xl">⌚</span>
+                          )}
+                        </div>
+                        <div className="min-w-0 flex-1 space-y-0.5">
+                          <div className="text-xs font-bold text-[#f4ede2] truncate">
+                            {pName}
+                          </div>
+                          <div className="text-[10px] text-[#a89f91] font-mono truncate">
+                            {pBrand} · {pCat}
+                          </div>
+                          <div className="text-[10px] text-[#7a7164] font-mono flex items-center justify-between">
+                            <span>Qty: <strong className="text-[#f4ede2]">{qty}</strong> × ₹{uPrice.toLocaleString('en-IN')}</span>
+                            <span className="text-[#fcd34d] font-bold">₹{lineTot.toLocaleString('en-IN')}</span>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
 
                 <div className="flex justify-between pt-1 border-t border-[#2e271c]/40 text-xs font-mono">
@@ -650,9 +702,26 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
               </div>
 
-              {/* SECTION 2: PAYMENT GATEWAY */}
+              {/* SECTION 2: CUSTOMER DETAILS */}
               <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
-                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">2. PAYMENT GATEWAY</div>
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">2. CUSTOMER & SHIPPING</div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Customer Name:</span>
+                  <span className="text-[#f4ede2] font-bold">{selectedTxn.customer?.name || 'Chronova Customer'}</span>
+                </div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Email Address:</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.email || 'customer@chronova.example.com'}</span>
+                </div>
+                <div className="flex justify-between py-0.5">
+                  <span className="text-[#7a7164]">Contact Phone:</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || '+919876543210'}</span>
+                </div>
+              </div>
+
+              {/* SECTION 3: PAYMENT GATEWAY */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">3. PAYMENT GATEWAY</div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Provider:</span>
                   <span className="text-[#f4ede2] font-bold">Razorpay Test Mode</span>
@@ -675,26 +744,34 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
               </div>
 
-              {/* SECTION 3: FAILURE ANALYSIS */}
+              {/* SECTION 4: FAILURE ANALYSIS */}
               <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
-                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">3. FAILURE ANALYSIS</div>
-                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Direction:</span>
-                  <span className="text-[#f4ede2]">{selectedTxn.direction}</span>
-                </div>
-                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Failure Reason:</span>
-                  <span className="text-[#ef4444] font-bold">{selectedTxn.reason}</span>
-                </div>
-                <div className="flex justify-between py-0.5">
-                  <span className="text-[#7a7164]">Gateway Latency:</span>
-                  <span className="text-[#a89f91]">{selectedTxn.latency || '180ms'}</span>
-                </div>
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">4. FAILURE ANALYSIS</div>
+                {selectedTxn.status === 'RECOVERED' && !selectedTxn.reason.includes('3DS') && !selectedTxn.reason.includes('Timeout') && !selectedTxn.reason.includes('degradation') ? (
+                  <div className="p-2.5 rounded-lg bg-[#10b981]/10 border border-[#10b981]/30 text-[#10b981] text-[11px] leading-relaxed">
+                    ✓ Payment completed successfully without degradation on the initial checkout attempt.
+                  </div>
+                ) : (
+                  <>
+                    <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                      <span className="text-[#7a7164]">Direction:</span>
+                      <span className="text-[#f4ede2]">{selectedTxn.direction}</span>
+                    </div>
+                    <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                      <span className="text-[#7a7164]">Failure Reason:</span>
+                      <span className="text-[#ef4444] font-bold">{selectedTxn.reason}</span>
+                    </div>
+                    <div className="flex justify-between py-0.5">
+                      <span className="text-[#7a7164]">Gateway Latency:</span>
+                      <span className="text-[#a89f91]">{selectedTxn.latency || '180ms'}</span>
+                    </div>
+                  </>
+                )}
               </div>
 
-              {/* SECTION 4: AI REVENUE-RECOVERY DIAGNOSIS */}
+              {/* SECTION 5: AI REVENUE-RECOVERY DIAGNOSIS */}
               <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
-                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">4. AI REVENUE-RECOVERY DIAGNOSIS</div>
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">5. AI REVENUE-RECOVERY DIAGNOSIS</div>
                 <p className="text-[11px] text-[#a89f91] leading-relaxed italic bg-[#0f0c08] p-2.5 rounded-lg border border-[#2e271c]/60">
                   "{selectedTxn.explanation}"
                 </p>
@@ -722,32 +799,19 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
               </div>
 
-              {/* SECTION 5: RECOVERY WORKFLOW */}
+              {/* SECTION 6: LIFECYCLE & FINAL OUTCOME */}
               <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
-                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">5. RECOVERY WORKFLOW</div>
-                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Recommended Action:</span>
-                  <span className="text-[#e5a944] font-bold">{selectedTxn.action}</span>
-                </div>
-                {selectedTxn.recovery_operation_id && (
-                  <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
-                    <span className="text-[#7a7164]">Recovery Op ID:</span>
-                    <span className="text-[#f4ede2]">{selectedTxn.recovery_operation_id}</span>
-                  </div>
-                )}
-                <div className="flex justify-between py-0.5">
-                  <span className="text-[#7a7164]">Workflow Status:</span>
-                  <span className="text-[#10b981] font-bold">{selectedTxn.workflow_status || (selectedTxn.status === 'RECOVERED' ? 'VERIFIED' : 'ACTIVE')}</span>
-                </div>
-              </div>
-
-              {/* SECTION 6: FINAL OUTCOME */}
-              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
-                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">6. FINAL OUTCOME</div>
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">6. LIFECYCLE TRACE & OUTCOME</div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Settlement Status:</span>
                   <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#ef4444] font-bold'}>
                     {selectedTxn.status === 'RECOVERED' ? '✓ RECOVERED & CAPTURED' : 'PAYMENT FAILED'}
+                  </span>
+                </div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Recommended Action:</span>
+                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#e5a944] font-bold'}>
+                    {selectedTxn.status === 'RECOVERED' ? 'None — Direct payment successful' : selectedTxn.action}
                   </span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
@@ -762,29 +826,6 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
               </div>
 
-              {/* SECTION 7: AUDIT TRAIL */}
-              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
-                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider flex items-center justify-between">
-                  <span>7. AUDIT TRAIL (CRYPTOGRAPHIC SHA-256)</span>
-                  <span className="text-[9px] text-[#10b981]">TAMPER-EVIDENT</span>
-                </div>
-                <p className="text-[10px] text-[#7a7164]">
-                  All lifecycle events, AI inferences, policy gates, and settlement verifications are chained in immutable ledger blocks.
-                </p>
-                <button
-                  onClick={() => {
-                    window.dispatchEvent(
-                      new CustomEvent('razorrecover:navigate-tab', {
-                        detail: { tab: 'Audit', txnId: selectedTxn.id },
-                      })
-                    )
-                  }}
-                  className="w-full py-2 rounded-lg bg-[#0f0c08] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-mono transition cursor-pointer text-center flex items-center justify-center gap-1.5"
-                >
-                  <span>📜 Inspect Full Cryptographic Audit Logs ➔</span>
-                </button>
-              </div>
-
               {/* Action Buttons */}
               <div className="space-y-2 pt-2">
                 {selectedTxn.status === 'RECOVERED' ? (
@@ -792,7 +833,7 @@ export const TransactionExplorer: React.FC = () => {
                     disabled
                     className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
                   >
-                    ✓ Recovery Verified & Captured in Razorpay
+                    ✓ Payment Verified & Captured in Razorpay
                   </button>
                 ) : selectedTxn.policy === 'Blocked' ? (
                   <button

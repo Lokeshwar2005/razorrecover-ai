@@ -127,44 +127,84 @@ export interface AppliedCoupon {
 }
 
 export interface ChronovaOrderItem {
+  productId?: string
   product_id: string
+  productName?: string
   product_name: string
+  productImage?: string
   product_image: string
+  productCategory?: string
   product_category?: string
+  productBrand?: string
   product_brand?: string
   quantity: number
+  unitPrice?: number
+  unit_price?: number
   unit_price_rupees: number
+  totalPrice?: number
+  total_price?: number
   total_price_rupees: number
   selected_color?: string
 }
 
+export interface CanonicalPaymentMetadata {
+  status: 'PAYMENT_PENDING' | 'PAYMENT_FAILED' | 'RECOVERY_ELIGIBLE' | 'RECOVERY_IN_PROGRESS' | 'PAYMENT_RETRY_PENDING' | 'PAYMENT_SUCCESS' | 'PAYMENT_RECOVERED' | 'ORDER_CONFIRMED' | string
+  method?: string
+  provider?: string
+  paymentId?: string
+  capturedAt?: string
+}
+
+export interface CanonicalRecoveryMetadata {
+  required: boolean
+  status?: string
+  reason?: string
+  diagnosis?: string
+  confidence?: number
+  recommendedAction?: string
+  recoveryOperationId?: string
+  recoveredAmount?: number
+}
+
 export interface ChronovaOrder {
+  orderId?: string
   order_id: string
+  transactionId?: string
   transaction_id: string
+  paymentId?: string
+  razorpay_order_id?: string
+  razorpay_payment_id?: string
+  createdAt?: string
   created_at: string
+  updatedAt?: string
   updated_at?: string
   items: ChronovaOrderItem[]
+  subtotal?: number
+  subtotal_rupees?: number
+  totalAmount?: number
   total_amount_rupees: number
   total_amount_minor: number
   currency: string
   customer: {
+    name?: string
     full_name: string
     email: string
     phone: string
+    address?: string
     address_line1?: string
     address_line2?: string
     city?: string
     state?: string
     pincode?: string
   }
+  payment?: CanonicalPaymentMetadata
+  recovery?: CanonicalRecoveryMetadata
   payment_status: 'FAILED' | 'PENDING' | 'PAID' | 'RECOVERED'
   order_status: 'ORDER_PLACED' | 'PAYMENT_FAILED' | 'RECOVERY_IN_PROGRESS' | 'ORDER_CONFIRMED'
   recovery_status?: 'NONE' | 'ELIGIBLE' | 'IN_PROGRESS' | 'RECOVERED'
   failure_reason?: string
   failure_code?: string
   recommended_action?: string
-  razorpay_order_id?: string
-  razorpay_payment_id?: string
   payment_method?: string
   verified_at?: string
 }
