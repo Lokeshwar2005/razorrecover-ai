@@ -666,7 +666,7 @@ function App() {
               ? `LIVE · RZP ${liveCount} EVENT${liveCount > 1 ? 'S' : ''}`
               : complete
               ? 'LIVE · COMPLETE'
-              : 'LIVE · SYNTHETIC MODE'}
+              : 'LIVE · CHRONOVA CONNECTED'}
           </div>
         </div>
         <div className="mobileNav">

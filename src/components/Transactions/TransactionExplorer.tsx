@@ -1,139 +1,116 @@
-'use client'
-
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import {
   useTransactionStore,
-  computeMetricsFromTransactions,
   type CanonicalTransaction,
   type TransactionSource,
 } from '../../services/canonicalTransactionStore'
-import { launchRazorpayCheckout } from '../../services/backendApi'
+import {
+  executeRecoveryAction as executeRecovery,
+  verifyPaymentCapture as verifyPayment,
+  launchRazorpayCheckout,
+} from '../../services/backendApi'
 
 const PAGE_SIZE = 15
 
 export const TransactionExplorer: React.FC = () => {
-  const transactions = useTransactionStore((s) => s.transactions)
-  const selectedTransactionId = useTransactionStore((s) => s.selectedTransactionId)
-  const setSelectedTransactionId = useTransactionStore((s) => s.setSelectedTransactionId)
-  const getTransactionById = useTransactionStore((s) => s.getTransactionById)
-  const executeRecovery = useTransactionStore((s) => s.executeRecovery)
-  const verifyPayment = useTransactionStore((s) => s.verifyPayment)
-  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
-  const providerFeedStatus = useTransactionStore((s) => s.providerFeedStatus)
-  const syncStatus = useTransactionStore((s) => s.syncStatus)
-  const syncMessage = useTransactionStore((s) => s.syncMessage)
-  const lastSyncedAt = useTransactionStore((s) => s.lastSyncedAt)
+  const {
+    transactions,
+    selectedTransactionId,
+    setSelectedTransactionId,
+    refreshProviderFeed,
+    syncMessage,
+  } = useTransactionStore()
 
-  const metrics = useMemo(() => computeMetricsFromTransactions(transactions), [transactions])
-
-  const [sourceFilter, setSourceFilter] = useState<'all' | 'synthetic' | 'razorpay_test' | 'live'>('live')
+  const [search, setSearch] = useState('')
   const [filter, setFilter] = useState<string>('all')
-  const [search, setSearch] = useState<string>('')
-  const [currentPage, setCurrentPage] = useState<number>(1)
-  const [refreshingFeed, setRefreshingFeed] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1)
   const [executing, setExecuting] = useState(false)
-  const [executionResult, setExecutionResult] = useState<{ orderId?: string; paymentLink?: string; message: string } | null>(null)
-  const [executionError, setExecutionError] = useState<string | null>(null)
   const [verifying, setVerifying] = useState(false)
+  const [executionResult, setExecutionResult] = useState<{
+    message: string
+    orderId?: string
+    paymentLink?: string | null
+  } | null>(null)
+  const [executionError, setExecutionError] = useState<string | null>(null)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
+  const [refreshingFeed, setRefreshingFeed] = useState(false)
+  const [lastSyncedAt, setLastSyncedAt] = useState<string>(new Date().toISOString())
 
-  // URL Deep-linking support (?transaction=TXN-1033 or ?txn=TXN-1033) & Mount Feed Rehydration
+  // Initial load and periodic polling
   useEffect(() => {
-    refreshProviderFeed()
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search)
-      const txnParam = params.get('transaction') || params.get('txn') || params.get('id')
-      if (txnParam) {
-        setSelectedTransactionId(txnParam.toUpperCase())
-      }
-    }
+    refreshProviderFeed().then(() => setLastSyncedAt(new Date().toISOString()))
 
-    // Poll backend every 3.5s to sync newly ingested transactions in real-time
     const pollTimer = setInterval(() => {
-      refreshProviderFeed()
+      refreshProviderFeed().then(() => setLastSyncedAt(new Date().toISOString()))
     }, 3500)
 
     return () => clearInterval(pollTimer)
-  }, [setSelectedTransactionId, refreshProviderFeed])
+  }, [refreshProviderFeed])
 
   const handleRefreshFeed = async () => {
     setRefreshingFeed(true)
     try {
       await refreshProviderFeed()
+      setLastSyncedAt(new Date().toISOString())
     } finally {
       setTimeout(() => setRefreshingFeed(false), 500)
     }
   }
 
-  // Filter & Search over the entire canonical dataset
+  // Filter & Search over Chronova transactions
   const filteredTransactions = useMemo(() => {
     return transactions.filter((txn) => {
-      // 1. Direct ID search flag
       const q = search.trim().toLowerCase()
-      const cleanId = txn.id.toLowerCase()
-      const cleanRawNum = txn.id.replace(/^txn-?/i, '').toLowerCase()
-      const isDirectIdSearch = Boolean(q && (cleanId.includes(q) || (cleanRawNum && cleanRawNum.includes(q))))
+      const cleanId = (txn.id || '').toLowerCase()
+      const cleanChronovaOrderId = (txn.chronova_order_id || '').toLowerCase()
+      const cleanProviderPaymentId = (txn.provider_payment_id || txn.razorpay_payment_id || '').toLowerCase()
+      const cleanProviderOrderId = (txn.provider_order_id || txn.razorpay_order_id || '').toLowerCase()
+      const cleanCustomerName = (txn.customer?.name || '').toLowerCase()
+      const cleanCustomerEmail = (txn.customer?.email || '').toLowerCase()
+      const cleanReason = (txn.reason || '').toLowerCase()
+      const cleanAction = (txn.action || '').toLowerCase()
 
-      // 2. Source filter match
-      if (!isDirectIdSearch && sourceFilter !== 'all' && txn.source !== sourceFilter) {
-        return false
-      }
-
-      // 3. Search match (Case-insensitive across ID, raw numeric, provider ID, order ID, recovery operation, reason, action, direction, status, merchant)
       let matchesSearch = true
       if (q) {
-        const cleanReason = txn.reason.toLowerCase()
-        const cleanAction = txn.action.toLowerCase()
-        const cleanDirection = txn.direction.toLowerCase()
-        const cleanStatus = txn.status.toLowerCase()
-        const cleanMerchant = txn.merchant_id.toLowerCase()
-        const cleanProviderId = (txn.provider_payment_id || '').toLowerCase()
-        const cleanOrderId = (txn.provider_order_id || '').toLowerCase()
-        const cleanRecOpId = (txn.recovery_operation_id || '').toLowerCase()
-        const cleanSource = txn.source.toLowerCase()
-
         matchesSearch =
           cleanId.includes(q) ||
-          (cleanRawNum && cleanRawNum.includes(q)) ||
+          cleanChronovaOrderId.includes(q) ||
+          cleanProviderPaymentId.includes(q) ||
+          cleanProviderOrderId.includes(q) ||
+          cleanCustomerName.includes(q) ||
+          cleanCustomerEmail.includes(q) ||
           cleanReason.includes(q) ||
-          cleanAction.includes(q) ||
-          cleanDirection.includes(q) ||
-          cleanStatus.includes(q) ||
-          cleanMerchant.includes(q) ||
-          cleanProviderId.includes(q) ||
-          cleanOrderId.includes(q) ||
-          cleanRecOpId.includes(q) ||
-          cleanSource.includes(q)
+          cleanAction.includes(q)
       }
 
-      // 4. Category/Status filter match
       let matchesFilter = true
-      if (!isDirectIdSearch) {
-        if (filter === 'pending') matchesFilter = txn.status === 'PENDING' || txn.status === 'IN_PROGRESS'
-        else if (filter === 'recovered') matchesFilter = txn.status === 'RECOVERED'
-        else if (filter === 'failed') matchesFilter = txn.status === 'STOPPED'
-        else if (filter === 'blocked') matchesFilter = txn.policy === 'Blocked' || txn.policy === 'Escalated'
-        else if (filter === 'high_risk') matchesFilter = txn.risk_score >= 60
-        else if (filter === 'high_value') matchesFilter = txn.amount_minor >= 2000000
+      if (filter === 'failed') {
+        matchesFilter = txn.status === 'PAYMENT_FAILED' || txn.status === 'STOPPED'
+      } else if (filter === 'pending') {
+        matchesFilter = txn.status === 'WAITING_FOR_RECOVERY' || txn.status === 'IN_PROGRESS' || txn.status === 'PENDING'
+      } else if (filter === 'recovered') {
+        matchesFilter = txn.status === 'RECOVERED'
+      } else if (filter === 'blocked') {
+        matchesFilter = txn.policy === 'Blocked' || txn.policy === 'Escalated'
       }
 
       return matchesSearch && matchesFilter
     })
-  }, [transactions, sourceFilter, search, filter])
+  }, [transactions, search, filter])
 
   // Reset pagination when search or filter changes
   useEffect(() => {
     setCurrentPage(1)
-  }, [sourceFilter, search, filter])
+  }, [search, filter])
 
   // Selected Transaction: resolve canonical instance
   const selectedTxn: CanonicalTransaction | null = useMemo(() => {
     if (selectedTransactionId) {
-      const found = getTransactionById(selectedTransactionId)
+      const found = transactions.find((t) => t.id === selectedTransactionId)
       if (found) return found
     }
     return filteredTransactions.length > 0 ? filteredTransactions[0] : null
-  }, [selectedTransactionId, getTransactionById, filteredTransactions])
+  }, [selectedTransactionId, transactions, filteredTransactions])
 
   // Pagination slicing
   const totalPages = Math.max(1, Math.ceil(filteredTransactions.length / PAGE_SIZE))
@@ -158,14 +135,15 @@ export const TransactionExplorer: React.FC = () => {
 
     try {
       const res = await executeRecovery(selectedTxn.id, selectedTxn.action)
-      if (res.success) {
+      if (res && res.success) {
         setExecutionResult({
-          message: res.message,
+          message: res.message || 'Recovery action dispatched.',
           orderId: res.orderId,
           paymentLink: res.paymentLink,
         })
+        await refreshProviderFeed()
       } else {
-        setExecutionError(res.message)
+        setExecutionError(res?.message || 'Recovery action failed.')
       }
     } catch (e: any) {
       setExecutionError(e?.message || 'Failed to start recovery execution.')
@@ -196,6 +174,7 @@ export const TransactionExplorer: React.FC = () => {
           )
           if (verifyRes.verified) {
             setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ₹${(selectedTxn.amount_minor / 100).toLocaleString('en-IN')} for ${selectedTxn.id}.`)
+            await refreshProviderFeed()
           } else {
             setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
           }
@@ -211,7 +190,8 @@ export const TransactionExplorer: React.FC = () => {
 
   const handleVerifyPayment = async () => {
     if (!selectedTxn) return
-    if (!selectedTxn.provider_payment_id) {
+    const pId = selectedTxn.provider_payment_id || selectedTxn.razorpay_payment_id
+    if (!pId) {
       setExecutionError('Payment verification unavailable. No payment has been submitted or captured yet.')
       return
     }
@@ -222,7 +202,7 @@ export const TransactionExplorer: React.FC = () => {
     try {
       const res = await verifyPayment(
         selectedTxn.id,
-        selectedTxn.provider_payment_id,
+        pId,
         selectedTxn.amount_minor,
         selectedTxn.currency,
         selectedTxn.provider_order_id
@@ -230,6 +210,7 @@ export const TransactionExplorer: React.FC = () => {
       if (res.verified) {
         setExecutionResult(null)
         setVerifiedSuccess(res.message || `✓ Verified Capture Confirmed! Recovered ₹${(selectedTxn.amount_minor / 100).toLocaleString('en-IN')} for ${selectedTxn.id}.`)
+        await refreshProviderFeed()
       } else {
         setExecutionError(res.message || 'Payment could not be verified — recovery not recorded.')
       }
@@ -244,42 +225,56 @@ export const TransactionExplorer: React.FC = () => {
     return `₹${(minor / 100).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`
   }
 
-  const renderSourceBadge = (source: TransactionSource) => {
-    if (source === 'live') {
-      return (
-        <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
-          LIVE
-        </span>
-      )
+  const metrics = useMemo(() => {
+    let stoppedCount = 0
+    let pendingCount = 0
+    let recoveredCount = 0
+    let blockedCount = 0
+    let atRisk = 0
+    let recoveredRevenue = 0
+
+    for (const t of transactions) {
+      if (t.status === 'RECOVERED' || (t.verified_amount_minor && t.verified_amount_minor > 0)) {
+        recoveredCount++
+        recoveredRevenue += t.verified_amount_minor || t.amount_minor
+      } else if (t.status === 'WAITING_FOR_RECOVERY' || t.status === 'IN_PROGRESS') {
+        pendingCount++
+        atRisk += t.amount_minor
+      } else {
+        stoppedCount++
+        atRisk += t.amount_minor
+      }
+
+      if (t.policy === 'Blocked' || t.policy === 'Escalated') {
+        blockedCount++
+      }
     }
-    if (source === 'razorpay_test') {
-      return (
-        <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40">
-          RAZORPAY TEST
-        </span>
-      )
+
+    return {
+      total: transactions.length,
+      stoppedCount,
+      pendingCount,
+      recoveredCount,
+      blockedCount,
+      atRisk,
+      recoveredRevenue,
     }
-    return (
-      <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#7a7164]/20 text-[#a89f91] border border-[#7a7164]/40">
-        SYNTHETIC
-      </span>
-    )
-  }
+  }, [transactions])
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto px-4 py-6">
-      {/* Header & Canonical Data Summary */}
+      {/* Header & Source Indicator */}
       <div className="p-5 rounded-xl bg-gradient-to-r from-[#15120c] via-[#0f0c08] to-[#15120c] border border-[#2e271c] flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
             <span className="text-lg">🔎</span>
-            <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Transaction Intelligence Explorer</h1>
+            <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Live Chronova Transactions</h1>
             <span className="px-2.5 py-0.5 text-xs font-mono font-bold rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30">
-              {metrics.totalTransactions} Canonical Transactions
+              {transactions.length} Recorded
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Deterministic transaction inspection across complete canonical store ({metrics.syntheticCount} Synthetic + {metrics.providerTestCount} Razorpay Test{metrics.liveCount > 0 ? ` + ${metrics.liveCount} Live` : ''}).
+            Real-time transaction intelligence originating strictly from Website A (Chronova Customer Storefront).
           </p>
           {syncMessage && (
             <div className="mt-2 text-xs font-mono text-[#10b981] flex items-center gap-1.5">
@@ -291,35 +286,34 @@ export const TransactionExplorer: React.FC = () => {
 
         <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
           <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
-            <div className="text-[#7a7164] text-[10px]">TOTAL AT RISK</div>
-            <div className="text-[#ef4444] font-bold">{formatRupees(metrics.revenueAtRiskMinor)}</div>
+            <div className="text-[#7a7164] text-[10px]">REVENUE AT RISK</div>
+            <div className="text-[#ef4444] font-bold">{formatRupees(metrics.atRisk)}</div>
           </div>
           <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
             <div className="text-[#7a7164] text-[10px]">VERIFIED RECOVERED</div>
-            <div className="text-[#10b981] font-bold">{formatRupees(metrics.verifiedRecoveredMinor)}</div>
+            <div className="text-[#10b981] font-bold">{formatRupees(metrics.recoveredRevenue)}</div>
           </div>
           <button
             onClick={handleRefreshFeed}
             disabled={refreshingFeed}
             className="px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] hover:text-[#e5a944] transition flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
-            title="Fetch and normalize latest Razorpay Test Mode payments"
+            title="Refresh transactions from backend"
           >
             <span className={refreshingFeed ? 'animate-spin' : ''}>🔄</span>
-            <span>{refreshingFeed ? 'Syncing...' : 'Refresh Feed'}</span>
+            <span>{refreshingFeed ? 'Syncing...' : 'Refresh'}</span>
           </button>
         </div>
       </div>
 
       {/* Filter and Search Bar */}
       <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-3">
-        {/* Source Switcher */}
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#2e271c]/50 pb-3 text-xs font-mono">
           <div className="flex items-center gap-2">
             <span className="text-[#7a7164] text-[11px]">DATA SOURCE:</span>
             <span className="px-2.5 py-1 rounded bg-[#e5a944] text-[#080705] border border-[#e5a944] font-bold flex items-center gap-1.5">
               <span>CHRONOVA STOREFRONT (LIVE)</span>
               <span className="px-1.5 py-0.2 rounded text-[10px] bg-[#080705]/20 text-[#080705]">
-                {metrics.liveCount}
+                {transactions.length}
               </span>
             </span>
           </div>
@@ -330,12 +324,12 @@ export const TransactionExplorer: React.FC = () => {
           </div>
         </div>
 
-        {/* Search input and status pills */}
+        {/* Search Input */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="w-full md:w-96 relative">
             <input
               type="text"
-              placeholder="Search by transaction ID, payment ID, order ID, failure reason..."
+              placeholder="Search by transaction ID, order ID, payment ID, failure reason..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full px-3.5 py-2 pl-9 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] text-xs font-mono focus:outline-none focus:border-[#e5a944]"
@@ -359,7 +353,7 @@ export const TransactionExplorer: React.FC = () => {
           </div>
         </div>
 
-        {/* Dynamic Category Filter Pills */}
+        {/* Status Filter Pills */}
         <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-[#2e271c]/50 text-xs font-mono">
           <span className="text-[#7a7164] text-[11px]">STATUS:</span>
           {[
@@ -387,25 +381,24 @@ export const TransactionExplorer: React.FC = () => {
         </div>
       </div>
 
-      {/* Main Grid: Transaction List on Left, Lifecycle Trace & Action on Right */}
+      {/* Main Layout: Transactions List on Left, Lifecycle Trace & Action Terminal on Right */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Transaction Table / List */}
         <div className="lg:col-span-2 space-y-3">
           {filteredTransactions.length === 0 ? (
-            sourceFilter === 'live' && !search ? (
+            !search ? (
               <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-4">
                 <div className="w-14 h-14 rounded-2xl bg-[#10b981]/15 border border-[#10b981]/40 flex items-center justify-center mx-auto text-[#10b981] text-2xl font-bold">
                   ⚡
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-base font-bold text-[#f4ede2]">Waiting for Live Payment Events</h3>
+                  <h3 className="text-base font-bold text-[#f4ede2]">No live Chronova transactions yet.</h3>
                   <p className="text-xs text-[#a89f91] max-w-lg mx-auto leading-relaxed">
-                    RazorRecover AI Live Feed is connected and actively listening for payment events. No live checkout failures or recoveries have arrived in this session yet.
+                    RazorRecover AI is actively listening for payment events from Website A (Chronova Storefront). Initiate a checkout or failure scenario to stream real-time events.
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10b981]/10 border border-[#10b981]/30 text-[#10b981] text-xs font-mono">
                   <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
-                  <span>LIVE FEED CONNECTED · Last checked: {lastSyncedAt ? new Date(lastSyncedAt).toLocaleTimeString() : 'Just now'}</span>
+                  <span>LIVE FEED CONNECTED · Last synced: {new Date(lastSyncedAt).toLocaleTimeString()}</span>
                 </div>
                 <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
                   <button
@@ -417,7 +410,9 @@ export const TransactionExplorer: React.FC = () => {
                     <span>{refreshingFeed ? 'Checking Feed...' : 'Refresh Live Feed'}</span>
                   </button>
                   <a
-                    href="/chronova"
+                    href="https://lokeshwar2005.github.io/razorrecover-ai/chronova/"
+                    target="_blank"
+                    rel="noreferrer"
                     className="px-4 py-2 rounded-lg bg-[#e5a944] text-[#080705] text-xs font-mono font-bold hover:bg-[#fcd34d] transition flex items-center gap-1.5 shadow-md"
                   >
                     <span>Open Chronova Storefront</span>
@@ -428,12 +423,12 @@ export const TransactionExplorer: React.FC = () => {
             ) : (
               <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-2">
                 <div className="text-2xl">🔎</div>
-                <div className="text-sm font-mono text-[#f4ede2] font-bold">No transactions match your query.</div>
+                <div className="text-sm font-mono text-[#f4ede2] font-bold">0 transactions match your query.</div>
                 <p className="text-xs text-[#a89f91] font-mono">
-                  Searched across {transactions.length} canonical records for &ldquo;{search}&rdquo;.
+                  Searched across {transactions.length} Chronova transactions for &ldquo;{search}&rdquo;.
                 </p>
                 <button
-                  onClick={() => { setSearch(''); setFilter('all'); setSourceFilter('all') }}
+                  onClick={() => { setSearch(''); setFilter('all') }}
                   className="mt-3 px-3 py-1.5 rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30 text-xs font-mono hover:bg-[#e5a944]/20 cursor-pointer"
                 >
                   Clear Search & Filters
@@ -444,7 +439,7 @@ export const TransactionExplorer: React.FC = () => {
             paginatedTransactions.map((txn) => {
               const isSelected = selectedTxn?.id === txn.id
               const isRecovered = txn.status === 'RECOVERED'
-              const isStopped = txn.status === 'STOPPED'
+              const isStopped = txn.status === 'PAYMENT_FAILED' || txn.status === 'STOPPED'
               const isBlocked = txn.policy === 'Blocked' || txn.policy === 'Escalated'
 
               return (
@@ -464,13 +459,14 @@ export const TransactionExplorer: React.FC = () => {
                   <div className="space-y-1.5 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="font-mono font-bold text-sm text-[#f4ede2]">{txn.id}</span>
-                      {renderSourceBadge(txn.source)}
-                      {txn.provider_payment_id && (
-                        <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-[#15120c] text-[#7a7164] border border-[#2e271c]">
-                          {txn.provider_payment_id}
+                      <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
+                        LIVE • CHRONOVA
+                      </span>
+                      {txn.chronova_order_id && (
+                        <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-[#15120c] text-[#a89f91] border border-[#2e271c]">
+                          {txn.chronova_order_id}
                         </span>
                       )}
-                      <span className="text-xs text-[#7a7164]">• {txn.direction}</span>
                       
                       {isRecovered ? (
                         <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
@@ -480,13 +476,9 @@ export const TransactionExplorer: React.FC = () => {
                         <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
                           PAYMENT FAILED
                         </span>
-                      ) : txn.status === 'IN_PROGRESS' ? (
+                      ) : (
                         <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
                           ⚡ RECOVERY IN PROGRESS
-                        </span>
-                      ) : (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#fcd34d]/20 text-[#fcd34d] border border-[#fcd34d]/40 font-bold ml-auto md:ml-0">
-                          WAITING FOR RECOVERY
                         </span>
                       )}
                     </div>
@@ -514,7 +506,7 @@ export const TransactionExplorer: React.FC = () => {
             })
           )}
 
-          {/* Pagination Controls */}
+          {/* Pagination */}
           {filteredTransactions.length > PAGE_SIZE && (
             <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
               <div className="text-[#7a7164]">
@@ -540,7 +532,7 @@ export const TransactionExplorer: React.FC = () => {
           )}
         </div>
 
-        {/* Selected Transaction: Lifecycle Trace & Action Terminal */}
+        {/* Selected Transaction Detail / Lifecycle Panel */}
         {selectedTxn && (
           <div className="space-y-4">
             <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4">
@@ -549,7 +541,9 @@ export const TransactionExplorer: React.FC = () => {
                   <div className="text-xs font-mono text-[#7a7164]">LIFECYCLE TRACE</div>
                   <h3 className="text-base font-mono font-bold text-[#e5a944]">{selectedTxn.id}</h3>
                 </div>
-                {renderSourceBadge(selectedTxn.source)}
+                <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
+                  CHRONOVA
+                </span>
               </div>
 
               {/* Execution/Verification Feedback */}
@@ -597,12 +591,12 @@ export const TransactionExplorer: React.FC = () => {
                   <span className="text-[#f4ede2] font-bold">₹{selectedTxn.amount.toLocaleString('en-IN')} ({selectedTxn.currency})</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Source:</span>
-                  <span className="text-[#f4ede2] uppercase">{selectedTxn.source}</span>
+                  <span className="text-[#7a7164]">Chronova Order ID:</span>
+                  <span className="text-[#f4ede2] font-bold">{selectedTxn.chronova_order_id || 'N/A'}</span>
                 </div>
                 {selectedTxn.provider_payment_id && (
                   <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                    <span className="text-[#7a7164]">Provider Payment ID:</span>
+                    <span className="text-[#7a7164]">Razorpay Payment ID:</span>
                     <span className="text-[#fcd34d] font-bold">{selectedTxn.provider_payment_id}</span>
                   </div>
                 )}
@@ -648,7 +642,7 @@ export const TransactionExplorer: React.FC = () => {
                 <p className="text-xs text-[#a89f91] leading-relaxed">{selectedTxn.explanation}</p>
               </div>
 
-              {/* State-Aware Lifecycle Controls (Governed by Canonical Store) */}
+              {/* Action Buttons */}
               <div className="space-y-2 pt-2">
                 {selectedTxn.status === 'RECOVERED' ? (
                   <div className="space-y-2">
@@ -656,7 +650,7 @@ export const TransactionExplorer: React.FC = () => {
                       disabled
                       className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
                     >
-                      ✓ Recovery Verified & Captured in Razorpay Test Mode
+                      ✓ Recovery Verified & Captured in Razorpay
                     </button>
                     <button
                       onClick={() => {
@@ -678,7 +672,7 @@ export const TransactionExplorer: React.FC = () => {
                   >
                     ⛔ Blocked by Deterministic Policy Ceiling (Risk {selectedTxn.risk_score}/100)
                   </button>
-                ) : selectedTxn.status === 'IN_PROGRESS' ? (
+                ) : selectedTxn.status === 'WAITING_FOR_RECOVERY' || selectedTxn.status === 'IN_PROGRESS' ? (
                   <div className="space-y-2">
                     <div className="p-3 rounded-lg bg-[#e5a944]/15 border border-[#e5a944]/50 text-[#f4ede2] text-xs font-mono space-y-2">
                       <div className="flex items-center justify-between">
@@ -688,56 +682,28 @@ export const TransactionExplorer: React.FC = () => {
                         </span>
                       </div>
                       <div className="text-[#a89f91] text-[11px]">
-                        {selectedTxn.workflow_message || 'Recovery workflow initiated. Awaiting checkout capture.'}
+                        {selectedTxn.workflow_message || 'Recovery workflow initiated. Awaiting customer retry checkout.'}
                       </div>
-                      {selectedTxn.provider_payment_link_id && (
-                        <a
-                          href={selectedTxn.provider_payment_link_id}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-[#e5a944] underline block pt-1"
-                        >
-                          Open Payment Link ↗
-                        </a>
-                      )}
-                      {selectedTxn.provider_order_id && (
-                        <button
-                          onClick={handleLaunchCheckout}
-                          className="w-full py-2 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs font-mono hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer mt-1 shadow-md"
-                        >
-                          <span>💳 Open Razorpay Test Checkout Modal</span>
-                        </button>
-                      )}
                     </div>
 
-                    {selectedTxn.provider_payment_id && (
-                      <button
-                        onClick={handleVerifyPayment}
-                        disabled={verifying}
-                        className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
-                      >
-                        {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
-                      </button>
-                    )}
+                    <button
+                      onClick={handleVerifyPayment}
+                      disabled={verifying}
+                      className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
+                    >
+                      {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
+                    </button>
                   </div>
                 ) : (
                   <div className="space-y-1.5">
                     <button
-                      onClick={() => {
-                        window.dispatchEvent(
-                          new CustomEvent('razorrecover:navigate-tab', {
-                            detail: { tab: 'Opportunities', txnId: selectedTxn.id },
-                          })
-                        )
-                      }}
-                      className="w-full py-2.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs font-mono hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] cursor-pointer flex items-center justify-center gap-2"
+                      onClick={handleExecuteRecovery}
+                      disabled={executing}
+                      className="w-full py-2.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs font-mono hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50"
                     >
-                      <span>Open Recovery Opportunity</span>
+                      <span>{executing ? 'Dispatching...' : 'Send Retry Payment Link'}</span>
                       <span>➔</span>
                     </button>
-                    <p className="text-[10px] text-[#7a7164] text-center font-mono">
-                      Recovery execution decisions are governed via the Recovery Opportunities workspace.
-                    </p>
                   </div>
                 )}
               </div>

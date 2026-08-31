@@ -3,28 +3,35 @@
 import React, { useEffect, useState, useMemo } from 'react'
 import {
   useTransactionStore,
-  computeMetricsFromTransactions,
-  computeLiveMetrics,
-  computeOpportunitiesFromTransactions,
-  computeOpportunitySummary,
   type CanonicalTransaction,
 } from '../../services/canonicalTransactionStore'
 import { fetchDashboardStats, type DashboardStats } from '../../services/backendApi'
 
 export const MerchantDashboard: React.FC = () => {
-  const transactions = useTransactionStore((s) => s.transactions)
-  const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
-  const providerFeedStatus = useTransactionStore((s) => s.providerFeedStatus)
-  const lastSyncedAt = useTransactionStore((s) => s.lastSyncedAt)
+  const {
+    transactions,
+    refreshProviderFeed,
+    syncMessage,
+  } = useTransactionStore()
+
   const [backendStats, setBackendStats] = useState<DashboardStats | null>(null)
-  const [mode, setMode] = useState<'live' | 'all'>('live')
   const [refreshing, setRefreshing] = useState(false)
+  const [lastSyncedAt, setLastSyncedAt] = useState<string>(new Date().toISOString())
 
   useEffect(() => {
-    refreshProviderFeed()
+    refreshProviderFeed().then(() => setLastSyncedAt(new Date().toISOString()))
     fetchDashboardStats().then((data) => {
       if (data) setBackendStats(data)
     })
+
+    const pollTimer = setInterval(() => {
+      refreshProviderFeed().then(() => setLastSyncedAt(new Date().toISOString()))
+      fetchDashboardStats().then((data) => {
+        if (data) setBackendStats(data)
+      })
+    }, 3500)
+
+    return () => clearInterval(pollTimer)
   }, [refreshProviderFeed])
 
   const handleManualRefresh = async () => {
@@ -33,42 +40,51 @@ export const MerchantDashboard: React.FC = () => {
       await refreshProviderFeed()
       const data = await fetchDashboardStats()
       if (data) setBackendStats(data)
+      setLastSyncedAt(new Date().toISOString())
     } finally {
       setTimeout(() => setRefreshing(false), 400)
     }
   }
 
-  // Active dataset depending on mode (defaults to purely LIVE data)
-  const activeTransactions = useMemo(() => {
-    if (mode === 'live') {
-      return transactions.filter((t) => t.source === 'live')
-    }
-    return transactions
-  }, [transactions, mode])
-
+  // Calculate metrics purely from live Chronova transactions
   const metrics = useMemo(() => {
-    if (mode === 'live') {
-      return computeLiveMetrics(transactions)
+    let stoppedCount = 0
+    let pendingCount = 0
+    let recoveredCount = 0
+    let atRiskMinor = 0
+    let recoveredMinor = 0
+
+    for (const t of transactions) {
+      if (t.status === 'RECOVERED' || (t.verified_amount_minor && t.verified_amount_minor > 0)) {
+        recoveredCount++
+        recoveredMinor += t.verified_amount_minor || t.amount_minor || 0
+      } else if (t.status === 'WAITING_FOR_RECOVERY' || t.status === 'IN_PROGRESS') {
+        pendingCount++
+        atRiskMinor += t.amount_minor || 0
+      } else {
+        stoppedCount++
+        atRiskMinor += t.amount_minor || 0
+      }
     }
-    return computeMetricsFromTransactions(transactions)
-  }, [transactions, mode])
 
-  const opps = useMemo(() => {
-    return computeOpportunitiesFromTransactions(activeTransactions)
-  }, [activeTransactions])
+    const total = transactions.length
+    const rate = total > 0 ? Math.round((recoveredCount / total) * 1000) / 10 : 0
 
-  const oppSummary = useMemo(() => {
-    return computeOpportunitySummary(opps)
-  }, [opps])
+    return {
+      total,
+      stoppedCount,
+      pendingCount,
+      recoveredCount,
+      atRiskMinor,
+      recoveredMinor,
+      rate,
+    }
+  }, [transactions])
 
   const formatRupees = (minor?: number) => {
     const val = Number(minor) || 0
     return `₹${Math.round(val / 100).toLocaleString('en-IN')}`
   }
-
-  const liveTransactionsList = useMemo(() => {
-    return transactions.filter((t) => t.source === 'live')
-  }, [transactions])
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto px-4 py-6">
@@ -79,18 +95,18 @@ export const MerchantDashboard: React.FC = () => {
             <span className="h-2.5 w-2.5 rounded-full bg-[#10b981] animate-ping" />
             <h1 className="text-xl font-bold tracking-tight text-[#f4ede2]">Merchant Command Center</h1>
             <span className="px-2 py-0.5 text-xs font-mono rounded border border-[#10b981]/40 bg-[#10b981]/10 text-[#10b981]">
-              {mode === 'live' ? '● LIVE PRODUCTION MODE' : '⚡ SANDBOX / ALL DATA'}
+              ● LIVE PRODUCTION (CHRONOVA)
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Real-time bounded autonomy telemetry & financial recovery intelligence.
+            Real-time autonomous revenue recovery telemetry originating from Chronova customer storefront.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-xs font-mono text-[#10b981]">
             <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
-            <span>Live Stream: {metrics.liveCount} Events</span>
+            <span>Live Stream: {metrics.total} Events</span>
           </div>
 
           <button
@@ -100,136 +116,106 @@ export const MerchantDashboard: React.FC = () => {
             title="Refresh Live Telemetry"
           >
             <span className={refreshing ? 'animate-spin' : ''}>🔄</span>
-            <span>{refreshing ? 'Syncing...' : 'Refresh Feed'}</span>
+            <span>{refreshing ? 'Syncing...' : 'Refresh'}</span>
           </button>
-
-          <a
-            href="/opportunities"
-            className="px-4 py-2 text-sm font-semibold rounded-lg bg-[#e5a944] text-[#080705] hover:bg-[#fcd34d] transition duration-200"
-          >
-            Review Opportunities ▶
-          </a>
         </div>
       </div>
 
-      {/* Live Mode Telemetry Status Notification */}
-      {mode === 'live' && liveTransactionsList.length === 0 && (
-        <div className="p-4 rounded-xl bg-[#10b981]/10 border border-[#10b981]/30 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-[#f4ede2]">
-          <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse" />
-            <span>
-              <strong className="text-[#10b981]">Live Feed Connected & Listening.</strong> No customer payment failures have occurred yet.
+      {/* KPI Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Revenue at Risk */}
+        <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-1">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-mono text-[#7a7164] uppercase tracking-wider">Revenue at Risk</span>
+            <span className="text-sm">⚠️</span>
+          </div>
+          <div className="text-2xl font-mono font-bold text-[#ef4444]">
+            {formatRupees(backendStats?.revenue_at_risk_minor ?? metrics.atRiskMinor)}
+          </div>
+          <p className="text-[11px] text-[#7a7164] font-mono">
+            {metrics.stoppedCount + metrics.pendingCount} unrecovered payment drops
+          </p>
+        </div>
+
+        {/* Verified Revenue Recovered */}
+        <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#10b981]/40 space-y-1 shadow-[0_0_15px_rgba(16,185,129,0.05)]">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-mono text-[#10b981] uppercase tracking-wider font-bold">
+              Verified Revenue Recovered
             </span>
+            <span className="text-sm">✓</span>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="text-[#7a7164]">
-              Last synced: {lastSyncedAt ? new Date(lastSyncedAt).toLocaleTimeString() : 'Just now'}
-            </span>
-            <a
-              href="/chronova"
-              className="px-3 py-1 rounded-md bg-[#e5a944] text-[#080705] font-bold hover:bg-[#fcd34d] transition"
-            >
-              Open Chronova Storefront ↗
-            </a>
+          <div className="text-2xl font-mono font-bold text-[#10b981]">
+            {formatRupees(backendStats?.revenue_recovered_minor ?? metrics.recoveredMinor)}
           </div>
-        </div>
-      )}
-
-      {/* 8 Primary KPI Metrics */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {/* Metric 1: Money at Risk */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] hover:border-[#e5a944]/40 transition">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Money at Risk</div>
-          <div className="text-2xl font-bold text-[#f4ede2] mt-1">{formatRupees(metrics.revenueAtRiskMinor)}</div>
-          <div className="text-xs text-[#ef4444] mt-1">
-            {metrics.pendingCount + metrics.stoppedCount} failed checkout signals
-          </div>
+          <p className="text-[11px] text-[#10b981]/80 font-mono">
+            {metrics.recoveredCount} verified captured payments
+          </p>
         </div>
 
-        {/* Metric 2: Recovered Revenue */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] hover:border-[#10b981]/40 transition">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Money Recovered</div>
-          <div className="text-2xl font-bold text-[#10b981] mt-1">{formatRupees(metrics.verifiedRecoveredMinor)}</div>
-          <div className="text-xs text-[#10b981] mt-1">
-            {metrics.recoveredCount} verified captures
+        {/* Recovery Success Rate */}
+        <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-1">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-mono text-[#7a7164] uppercase tracking-wider">Recovery Success Rate</span>
+            <span className="text-sm">📈</span>
           </div>
-        </div>
-
-        {/* Metric 3: Recovery Rate */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] hover:border-[#e5a944]/40 transition">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Recovery Rate</div>
-          <div className="text-2xl font-bold text-[#e5a944] mt-1">{metrics.recoveryRate}%</div>
-          <div className="text-xs text-[#a89f91] mt-1">Automated conversion efficiency</div>
-        </div>
-
-        {/* Metric 4: Recovery Opportunities */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] hover:border-[#e5a944]/40 transition">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Recovery Opportunities</div>
-          <div className="text-2xl font-bold text-[#fcd34d] mt-1">
-            {opps.length} Active
+          <div className="text-2xl font-mono font-bold text-[#e5a944]">
+            {backendStats?.recovery_rate ?? metrics.rate}%
           </div>
-          <div className="text-xs text-[#a89f91] mt-1">{formatRupees(metrics.revenueAtRiskMinor)} recoverable pipeline</div>
+          <p className="text-[11px] text-[#7a7164] font-mono">
+            {metrics.recoveredCount} of {metrics.total} total checkout attempts
+          </p>
         </div>
 
-        {/* Metric 5: Active Attempts */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Active Attempts</div>
-          <div className="text-xl font-bold text-[#f4ede2] mt-1">{metrics.pendingCount} in-flight</div>
-          <div className="text-xs text-[#a89f91] mt-1">Recovery links sent</div>
-        </div>
-
-        {/* Metric 6: Policy Blocks */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Policy Guardrails</div>
-          <div className="text-xl font-bold text-[#ef4444] mt-1">{metrics.blockedCount} protected</div>
-          <div className="text-xs text-[#a89f91] mt-1">Hard risk ceiling enforcement</div>
-        </div>
-
-        {/* Metric 7: AI Confidence */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">AI Diagnosis Confidence</div>
-          <div className="text-xl font-bold text-[#f4ede2] mt-1">
-            {activeTransactions.length > 0 ? '94.0%' : '100%'}
+        {/* Active Recovery Opportunities */}
+        <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-1">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-mono text-[#7a7164] uppercase tracking-wider">Active Opportunities</span>
+            <span className="text-sm">🎯</span>
           </div>
-          <div className="text-xs text-[#10b981] mt-1">Root cause precision</div>
-        </div>
-
-        {/* Metric 8: Total Transactions */}
-        <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">
-            {mode === 'live' ? 'Live Events' : 'Total Records'}
+          <div className="text-2xl font-mono font-bold text-[#f4ede2]">
+            {metrics.stoppedCount + metrics.pendingCount}
           </div>
-          <div className="text-xl font-bold text-[#a89f91] mt-1">
-            {activeTransactions.length} {mode === 'live' ? 'Live' : 'Canonical'}
-          </div>
-          <div className="text-xs text-[#7a7164] mt-1">Authoritative transaction log</div>
+          <p className="text-[11px] text-[#7a7164] font-mono">
+            {metrics.pendingCount} in progress · {metrics.stoppedCount} open
+          </p>
         </div>
       </div>
 
-      {/* Live Recent Transactions Feed */}
-      <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-3 font-mono text-xs">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-base">⚡</span>
-            <h2 className="text-sm font-bold text-[#f4ede2]">
-              Live Chronova Payment Stream
+      {/* Live Chronova Stream & Empty State */}
+      <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4">
+        <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
+          <div>
+            <h2 className="text-base font-bold text-[#f4ede2] flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+              <span>Live Chronova Payments Stream</span>
             </h2>
+            <p className="text-xs text-[#a89f91] mt-0.5">
+              Live checkout failures and verified settlements streaming from Chronova Storefront.
+            </p>
           </div>
-          <a href="/transactions" className="text-[#e5a944] hover:underline">
-            View All in Explorer →
-          </a>
+          <div className="text-xs font-mono text-[#7a7164]">
+            Last sync: {new Date(lastSyncedAt).toLocaleTimeString()}
+          </div>
         </div>
 
-        {activeTransactions.length === 0 ? (
-          <div className="p-8 rounded-lg bg-[#15120c] border border-[#2e271c] text-center space-y-3 text-[#a89f91]">
-            <p className="text-sm font-semibold text-[#f4ede2]">Waiting for payment events from Chronova storefront.</p>
-            <p className="text-[11px] text-[#7a7164] max-w-md mx-auto">
-              Open Chronova, select a timepiece, and trigger a checkout failure or payment to see live autonomous recovery in action.
-            </p>
-            <div>
+        {transactions.length === 0 ? (
+          <div className="p-12 rounded-xl bg-[#15120c]/60 border border-[#2e271c]/60 text-center space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-[#10b981]/15 border border-[#10b981]/30 flex items-center justify-center mx-auto text-[#10b981] text-xl">
+              ⚡
+            </div>
+            <div className="space-y-1">
+              <h3 className="text-sm font-bold text-[#f4ede2]">No live Chronova transactions yet.</h3>
+              <p className="text-xs text-[#a89f91] max-w-md mx-auto">
+                RazorRecover AI is actively listening for payment events. Open the Chronova storefront to initiate a checkout or test a failure scenario.
+              </p>
+            </div>
+            <div className="pt-2">
               <a
-                href="/chronova"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs hover:bg-[#fcd34d] transition"
+                href="https://lokeshwar2005.github.io/razorrecover-ai/chronova/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#e5a944] text-[#080705] text-xs font-mono font-bold hover:bg-[#fcd34d] transition shadow-md"
               >
                 <span>Open Chronova Storefront</span>
                 <span>↗</span>
@@ -237,79 +223,60 @@ export const MerchantDashboard: React.FC = () => {
             </div>
           </div>
         ) : (
-          <div className="space-y-2">
-            {activeTransactions.slice(0, 5).map((txn) => {
-              const isRec = txn.status === 'RECOVERED'
+          <div className="space-y-2.5">
+            {transactions.slice(0, 10).map((t) => {
+              const isRec = t.status === 'RECOVERED'
+              const isStopped = t.status === 'PAYMENT_FAILED' || t.status === 'STOPPED'
+
               return (
                 <div
-                  key={txn.id}
-                  className={`p-3 rounded-lg border flex flex-col sm:flex-row sm:items-center justify-between gap-2 ${
-                    isRec
-                      ? 'bg-[#15120c] border-[#10b981]/30'
-                      : 'bg-[#15120c] border-[#2e271c]'
-                  }`}
+                  key={t.id}
+                  className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs font-mono"
                 >
-                  <div className="flex items-center gap-3">
-                    <span className="font-bold text-[#f4ede2]">{txn.id}</span>
-                    <span className="text-[#7a7164]">·</span>
-                    <span className="text-[#a89f91]">{txn.reason}</span>
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-[#f4ede2]">{t.id}</span>
+                      <span className="px-1.5 py-0.2 rounded bg-[#10b981]/20 text-[#10b981] text-[10px] font-bold border border-[#10b981]/40">
+                        CHRONOVA
+                      </span>
+                      {t.chronova_order_id && (
+                        <span className="text-[#a89f91] text-[11px]">{t.chronova_order_id}</span>
+                      )}
+                    </div>
+                    <div className="text-[#a89f91]">
+                      {t.reason} • Action: <span className="text-[#e5a944]">{t.action}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className="font-bold text-[#f4ede2]">{formatRupees(txn.amount_minor)}</span>
-                    <span
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold ${
-                        isRec
-                          ? 'bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40'
-                          : 'bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40'
-                      }`}
-                    >
-                      {isRec ? 'Payment Recovered' : 'Payment Failed'}
-                    </span>
+
+                  <div className="flex items-center justify-between md:justify-end gap-4">
+                    <div className="text-right">
+                      <div className="font-bold text-[#f4ede2]">₹{t.amount.toLocaleString('en-IN')}</div>
+                      <div className="text-[10px] text-[#7a7164]">
+                        {new Date(t.created_at).toLocaleTimeString()}
+                      </div>
+                    </div>
+
+                    <div>
+                      {isRec ? (
+                        <span className="px-2 py-0.5 rounded bg-[#10b981]/20 text-[#10b981] text-[10px] font-bold border border-[#10b981]/40">
+                          ✓ RECOVERED
+                        </span>
+                      ) : isStopped ? (
+                        <span className="px-2 py-0.5 rounded bg-[#ef4444]/20 text-[#ef4444] text-[10px] font-bold border border-[#ef4444]/40">
+                          PAYMENT FAILED
+                        </span>
+                      ) : (
+                        <span className="px-2 py-0.5 rounded bg-[#e5a944]/20 text-[#e5a944] text-[10px] font-bold border border-[#e5a944]/40 animate-pulse">
+                          IN PROGRESS
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
               )
             })}
           </div>
         )}
-      </div>
-
-      {/* System Health & Provenance */}
-      <div className="p-5 rounded-xl bg-gradient-to-r from-[#120f0a] via-[#0d0a07] to-[#120f0a] border border-[#2e271c] space-y-3 font-mono text-xs">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span>🛡️</span>
-            <h3 className="font-bold text-[#f4ede2]">System Health & Data Source</h3>
-            <span className="px-2 py-0.5 text-[10px] font-bold rounded bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30">
-              OPERATIONAL
-            </span>
-          </div>
-          <span className="text-[#7a7164]">
-            Feed: {providerFeedStatus === 'connected' ? 'Razorpay Connected' : 'Listening'}
-          </span>
-        </div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
-          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
-            <div className="text-[#7a7164] text-[10px]">DATA SOURCE</div>
-            <div className="text-[#f4ede2] font-semibold mt-0.5">Authoritative Ledger</div>
-            <div className="text-[#10b981] text-[10px] mt-0.5">● Connected</div>
-          </div>
-          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
-            <div className="text-[#7a7164] text-[10px]">LIVE EVENTS</div>
-            <div className="text-[#f4ede2] font-semibold mt-0.5">{metrics.liveCount} Captured</div>
-            <div className="text-[#10b981] text-[10px] mt-0.5">● Active Ingestion</div>
-          </div>
-          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
-            <div className="text-[#7a7164] text-[10px]">AI ENGINE</div>
-            <div className="text-[#f4ede2] font-semibold mt-0.5">OpenRouter / Bounded</div>
-            <div className="text-[#10b981] text-[10px] mt-0.5">● Ready</div>
-          </div>
-          <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c]">
-            <div className="text-[#7a7164] text-[10px]">TOTAL EXPOSURE</div>
-            <div className="text-[#e5a944] font-semibold mt-0.5">{formatRupees(metrics.revenueAtRiskMinor + metrics.verifiedRecoveredMinor)}</div>
-            <div className="text-[#a89f91] text-[10px] mt-0.5">{metrics.totalTransactions} Total Records</div>
-          </div>
-        </div>
       </div>
     </div>
   )

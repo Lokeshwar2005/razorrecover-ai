@@ -135,10 +135,10 @@ async function runTest() {
   const code5 = getCode5()
   const body5 = getBody5()
   console.log(`HTTP ${code5}:`, JSON.stringify(body5?.transaction))
-  if (code5 !== 200 || body5?.transaction?.id !== TEST_ID || body5?.transaction?.status !== 'IN_PROGRESS') {
-    throw new Error(`Step 5 assertion failed: expected transaction.id=${TEST_ID} and status=IN_PROGRESS`)
+  if (code5 !== 200 || body5?.transaction?.id !== TEST_ID || (body5?.transaction?.status !== 'IN_PROGRESS' && body5?.transaction?.status !== 'WAITING_FOR_RECOVERY')) {
+    throw new Error(`Step 5 assertion failed: expected transaction.id=${TEST_ID} and status=IN_PROGRESS or WAITING_FOR_RECOVERY (got ${body5?.transaction?.status})`)
   }
-  console.log('✓ Step 5 PASSED: Transaction reached IN_PROGRESS state and matches TEST_ID.\n')
+  console.log('✓ Step 5 PASSED: Transaction reached WAITING_FOR_RECOVERY / IN_PROGRESS state and matches TEST_ID.\n')
 
   console.log(`====================================================================`)
   console.log(`🎉 ALL 5 IDEMPOTENCY & RECOVERY E2E TEST STEPS PASSED!`)

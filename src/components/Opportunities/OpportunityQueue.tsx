@@ -24,7 +24,7 @@ export const OpportunityQueue: React.FC = () => {
   const refreshProviderFeed = useTransactionStore((s) => s.refreshProviderFeed)
   const syncStatus = useTransactionStore((s) => s.syncStatus)
   const syncMessage = useTransactionStore((s) => s.syncMessage)
-  const lastSyncedAt = useTransactionStore((s) => s.lastSyncedAt)
+  const [lastSyncedAt, setLastSyncedAt] = useState<string>(new Date().toISOString())
   const [refreshingFeed, setRefreshingFeed] = useState(false)
 
   const [sourceFilter, setSourceFilter] = useState<'live' | 'all' | 'synthetic' | 'razorpay_test'>('live')
@@ -96,7 +96,7 @@ export const OpportunityQueue: React.FC = () => {
 
   // URL Deep-linking support & Periodic Real-Time Backend Feed Rehydration
   useEffect(() => {
-    refreshProviderFeed()
+    refreshProviderFeed().then(() => setLastSyncedAt(new Date().toISOString()))
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)
       const txnParam = params.get('opportunity') || params.get('transaction') || params.get('txn') || params.get('id')
@@ -107,11 +107,21 @@ export const OpportunityQueue: React.FC = () => {
 
     // Poll backend every 3.5 seconds to ingest new events from Website A in real time
     const pollTimer = setInterval(() => {
-      refreshProviderFeed()
+      refreshProviderFeed().then(() => setLastSyncedAt(new Date().toISOString()))
     }, 3500)
 
     return () => clearInterval(pollTimer)
-  }, [setSelectedTransactionId, refreshProviderFeed])
+  }, [refreshProviderFeed, setSelectedTransactionId])
+
+  const handleManualRefresh = async () => {
+    setRefreshingFeed(true)
+    try {
+      await refreshProviderFeed()
+      setLastSyncedAt(new Date().toISOString())
+    } finally {
+      setTimeout(() => setRefreshingFeed(false), 400)
+    }
+  }
 
   // Map for O(1) canonical transaction lookup
   const transactionMap = useMemo(() => {
@@ -133,26 +143,22 @@ export const OpportunityQueue: React.FC = () => {
 
   // Active breakdown counts derived from canonical dataset
   const breakdown = useMemo(() => {
-    let activeSyntheticCount = 0
-    let activeRazorpayTestCount = 0
     let activeLiveCount = 0
     let recoveredCount = 0
 
     for (const t of transactions) {
-      if (t.status === 'RECOVERED') {
+      if (t.status === 'RECOVERED' || (t.verified_amount_minor && t.verified_amount_minor > 0)) {
         recoveredCount++
       } else {
-        if (t.source === 'synthetic') activeSyntheticCount++
-        else if (t.source === 'razorpay_test') activeRazorpayTestCount++
-        else if (t.source === 'live') activeLiveCount++
+        activeLiveCount++
       }
     }
 
     return {
-      activeSyntheticCount,
-      activeRazorpayTestCount,
+      activeSyntheticCount: 0,
+      activeRazorpayTestCount: 0,
       activeLiveCount,
-      totalActive: transactions.length - recoveredCount,
+      totalActive: activeLiveCount,
       recoveredCount,
       total: transactions.length,
     }
@@ -219,10 +225,6 @@ export const OpportunityQueue: React.FC = () => {
           )
         )
 
-        // Source Filter
-        if (!isDirectIdSearch && sourceFilter !== 'all' && parentTxn?.source !== sourceFilter) {
-          return false
-        }
 
         let matchesFilter = true
         if (!isDirectIdSearch) {
@@ -261,7 +263,7 @@ export const OpportunityQueue: React.FC = () => {
           const timeB = txnB ? new Date(txnB.created_at).getTime() : 0
           return timeA - timeB
         }
-        return b.amount_minor - a.amount_minor
+        return 0
       })
   }, [allOpportunities, searchQuery, activeFilter, sortBy, transactionMap])
 
@@ -300,12 +302,16 @@ export const OpportunityQueue: React.FC = () => {
         setExecutionError(result.message)
       } else {
         setExecutionResult({
+          success: true,
           transaction_id: opp.transaction_id,
           action_type: actionToRun,
           workflow_status: 'COMPLETE',
           workflow_message: result.message,
+          message: result.message,
           order_id: result.orderId,
+          orderId: result.orderId,
           payment_link: result.paymentLink,
+          paymentLink: result.paymentLink,
           executed_at: new Date().toISOString(),
         })
       }
@@ -1078,9 +1084,9 @@ export const OpportunityQueue: React.FC = () => {
                       <span>💳 Complete Test Pay with Razorpay Checkout</span>
                       <span>▶</span>
                     </button>
-                    {(executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_link_id) && (
+                    {(executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_id) && (
                       <a
-                        href={executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_link_id}
+                        href={executionResult?.payment_link || `https://rzp.io/i/${transactionMap.get(selectedOpp.transaction_id)?.provider_payment_id}`}
                         target="_blank"
                         rel="noreferrer"
                         className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs text-center transition flex items-center justify-center gap-1.5"
