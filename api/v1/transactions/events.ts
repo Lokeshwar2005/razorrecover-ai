@@ -1,4 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
+import { fetchGistTransactions, updateGistTransactions } from '../../_lib/gistStore'
 
 export interface VercelRequest extends IncomingMessage {
   body?: any
@@ -10,10 +11,6 @@ export interface VercelResponse extends ServerResponse {
   json: (body: any) => void
   setHeader: (name: string, value: string) => this
 }
-
-const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
-const GITHUB_TOKEN = (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) || atob('Z2hvX0NuTEpUTk9Ed2pVYnZKdGRNNnEya0d2NEFEQ2NrbTFrR0JpRw==')
-const GIST_FILENAME = 'razorrecover_db_init.json'
 
 const FAILURE_SCENARIOS: Record<string, { code: string; reason: string; action: string; confidence: number; recoveryProb: number; riskScore: number; explanation: string }> = {
   '3ds_timeout': {
@@ -90,50 +87,6 @@ const FAILURE_SCENARIOS: Record<string, { code: string; reason: string; action: 
   },
 }
 
-async function fetchGistTransactions(): Promise<Record<string, any>> {
-  try {
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
-      headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
-        Accept: 'application/vnd.github.v3+json',
-        'User-Agent': 'RazorRecover-AI-Serverless',
-      },
-      signal: AbortSignal.timeout(4000),
-    })
-    if (res.ok) {
-      const data = await res.json()
-      const rawContent = data?.files?.[GIST_FILENAME]?.content
-      if (rawContent) {
-        const parsed = JSON.parse(rawContent)
-        return parsed?.transactions || {}
-      }
-    }
-  } catch (e) {}
-  return {}
-}
-
-async function updateGistTransactions(transactions: Record<string, any>) {
-  try {
-    await fetch(`https://api.github.com/gists/${GIST_ID}`, {
-      method: 'PATCH',
-      headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-        'User-Agent': 'RazorRecover-AI-Serverless',
-      },
-      body: JSON.stringify({
-        files: {
-          [GIST_FILENAME]: {
-            content: JSON.stringify({ transactions }, null, 2),
-          },
-        },
-      }),
-      signal: AbortSignal.timeout(5000),
-    })
-  } catch (e) {}
-}
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
@@ -169,25 +122,56 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       metadata,
     } = body || {}
 
-    if (!transaction_id || !amount_minor) {
-      res.status(422).json({ error: 'transaction_id and amount_minor are required' })
+    const cleanId = typeof transaction_id === 'string' ? transaction_id.trim() : ''
+    const numericAmount = Number(amount_minor)
+
+    if (!cleanId || !Number.isSafeInteger(numericAmount) || numericAmount <= 0) {
+      res.status(422).json({ error: 'transaction_id and a positive integer amount_minor are required' })
       return
     }
 
-    const isSuccess = status === 'captured' || status === 'recovered'
+    const currentMap = await fetchGistTransactions()
+    const existing = currentMap[cleanId]
+
+    // Transaction IDs are immutable event keys. Never overwrite an existing event.
+    if (existing) {
+      const sameAmount = Number(existing.amount_minor) === numericAmount
+      const sameProvider = (existing.provider || 'razorpay') === (provider || 'razorpay')
+      if (!sameAmount || !sameProvider) {
+        res.status(409).json({
+          error: 'Transaction ID already exists with different immutable fields',
+          transaction_id: existing.id,
+        })
+        return
+      }
+
+      res.status(200).json({
+        success: true,
+        duplicate: true,
+        transaction_id: existing.id,
+        status: existing.status,
+        opportunity_id: `opp-${existing.id}`,
+        message: `Transaction ${existing.id} was already ingested; existing ledger record returned unchanged.`,
+        created_at: existing.created_at,
+      })
+      return
+    }
+
+    const normalizedStatus = String(status || 'failed').toLowerCase()
+    const isSuccess = normalizedStatus === 'captured' || normalizedStatus === 'recovered'
     const scenarioKey = metadata?.scenario_id || (failure_code ? Object.keys(FAILURE_SCENARIOS).find((k) => FAILURE_SCENARIOS[k].code === failure_code) : '3ds_timeout') || '3ds_timeout'
     const scenario = FAILURE_SCENARIOS[scenarioKey] || FAILURE_SCENARIOS['3ds_timeout']
 
     const now = new Date().toISOString()
-    const amountRupees = Math.round(amount_minor / 100)
+    const amountRupees = Math.round(numericAmount / 100)
 
     const newTxn = {
-      id: transaction_id,
+      id: cleanId,
       merchant_id,
       amount: amountRupees,
-      amount_minor,
+      amount_minor: numericAmount,
       currency: (currency || 'INR').toUpperCase(),
-      source: 'live',
+      source: source || 'live',
       status: isSuccess ? 'RECOVERED' : 'STOPPED',
       direction: isSuccess ? 'Direct settlement' : 'Payment degradation',
       reason: isSuccess ? 'Payment successful on first attempt' : (failure_reason || scenario.reason),
@@ -207,18 +191,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       provider_payment_id: payment_id,
       provider_order_id: order_id,
       provider_status: isSuccess ? 'captured' : 'failed',
-      verified_amount_minor: isSuccess ? amount_minor : 0,
+      verified_amount_minor: isSuccess ? numericAmount : 0,
       workflow_status: isSuccess ? 'VERIFIED' : undefined,
       customer,
       metadata,
     }
 
-    const currentMap = await fetchGistTransactions()
-    currentMap[transaction_id] = { ...currentMap[transaction_id], ...newTxn }
+    currentMap[cleanId] = newTxn
     await updateGistTransactions(currentMap)
 
     res.status(200).json({
       success: true,
+      duplicate: false,
       transaction_id: newTxn.id,
       status: newTxn.status,
       opportunity_id: `opp-${newTxn.id}`,
