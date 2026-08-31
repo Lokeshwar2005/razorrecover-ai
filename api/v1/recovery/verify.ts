@@ -14,7 +14,7 @@ export interface VercelResponse extends ServerResponse {
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v7.json')
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v8.json')
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
@@ -44,7 +44,7 @@ function loadLocalFileStore(): Map<string, any> {
         const txns = parsed.transactions || parsed
         if (typeof txns === 'object') {
           for (const [id, txn] of Object.entries(txns)) {
-            inMemoryTransactions.set(id, txn)
+            inMemoryTransactions.set(id.toUpperCase(), txn)
           }
         }
       }
@@ -71,12 +71,14 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'RazorRecover-AI-Serverless',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      Pragma: 'no-cache',
     }
     if (token) {
       headers.Authorization = `token ${token}`
     }
 
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
       headers,
       signal: AbortSignal.timeout(3500),
     })
@@ -89,7 +91,7 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
         const remoteTxns = parsed?.transactions
         if (remoteTxns && typeof remoteTxns === 'object') {
           for (const [id, txn] of Object.entries(remoteTxns)) {
-            inMemoryTransactions.set(id, txn)
+            inMemoryTransactions.set(id.toUpperCase(), txn)
           }
           saveLocalFileStore()
         }
@@ -106,7 +108,7 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
 
 async function updateGistTransactions(transactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
   for (const [id, txn] of Object.entries(transactions)) {
-    inMemoryTransactions.set(id, txn)
+    inMemoryTransactions.set(id.toUpperCase(), txn)
   }
   saveLocalFileStore()
 
@@ -198,6 +200,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     txns[cleanKey] = updated
+    if (txn?.id) txns[txn.id] = updated
     await updateGistTransactions(txns, req)
 
     res.status(200).json({

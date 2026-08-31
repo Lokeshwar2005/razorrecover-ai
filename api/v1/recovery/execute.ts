@@ -14,7 +14,7 @@ export interface VercelResponse extends ServerResponse {
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v7.json')
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v8.json')
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
@@ -44,7 +44,7 @@ function loadLocalFileStore(): Map<string, any> {
         const txns = parsed.transactions || parsed
         if (typeof txns === 'object') {
           for (const [id, txn] of Object.entries(txns)) {
-            inMemoryTransactions.set(id, txn)
+            inMemoryTransactions.set(id.toUpperCase(), txn)
           }
         }
       }
@@ -71,12 +71,14 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'RazorRecover-AI-Serverless',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      Pragma: 'no-cache',
     }
     if (token) {
       headers.Authorization = `token ${token}`
     }
 
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
       headers,
       signal: AbortSignal.timeout(3500),
     })
@@ -89,7 +91,7 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
         const remoteTxns = parsed?.transactions
         if (remoteTxns && typeof remoteTxns === 'object') {
           for (const [id, txn] of Object.entries(remoteTxns)) {
-            inMemoryTransactions.set(id, txn)
+            inMemoryTransactions.set(id.toUpperCase(), txn)
           }
           saveLocalFileStore()
         }
@@ -106,7 +108,7 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
 
 async function updateGistTransactions(transactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
   for (const [id, txn] of Object.entries(transactions)) {
-    inMemoryTransactions.set(id, txn)
+    inMemoryTransactions.set(id.toUpperCase(), txn)
   }
   saveLocalFileStore()
 
@@ -168,6 +170,21 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const recoveryOpId = `REC-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${cleanId}`
     const orderId = `order_test_${cleanId.toLowerCase()}`
 
+    if (txn && (txn.status === 'IN_PROGRESS' || txn.status === 'RECOVERED' || txn.recovery_operation_id)) {
+      res.status(200).json({
+        success: true,
+        duplicate: true,
+        recovery_operation_id: txn.recovery_operation_id || recoveryOpId,
+        action_type: action_type || txn.action || 'Send payment link',
+        order_id: txn.provider_order_id || orderId,
+        payment_link: null,
+        workflow_status: txn.workflow_status || 'COMPLETE',
+        workflow_message: txn.workflow_message || `Recovery already initialized for ${txn.id}.`,
+        executed_at: txn.updated_at || txn.created_at,
+      })
+      return
+    }
+
     if (!txn) {
       txn = {
         id: cleanKey,
@@ -188,31 +205,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         latency: '180ms',
         created_at: new Date().toISOString(),
       }
-      txns[cleanKey] = txn
-    }
-
-    if (txn.status === 'RECOVERED') {
-      res.status(409).json({
-        error: 'Transaction is already recovered; recovery execution is blocked',
-        transaction_id: txn.id,
-        status: txn.status,
-      })
-      return
-    }
-
-    if (txn.status === 'IN_PROGRESS' && txn.recovery_operation_id) {
-      res.status(200).json({
-        success: true,
-        duplicate: true,
-        recovery_operation_id: txn.recovery_operation_id,
-        action_type: action_type || txn.action,
-        order_id: txn.provider_order_id || orderId,
-        payment_link: null,
-        workflow_status: txn.workflow_status || 'COMPLETE',
-        workflow_message: txn.workflow_message || `Recovery already initialized for ${txn.id}.`,
-        executed_at: txn.updated_at || txn.created_at,
-      })
-      return
     }
 
     const executedAt = new Date().toISOString()
@@ -226,6 +218,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       updated_at: executedAt,
     }
 
+    txns[cleanKey] = updated
     txns[txn.id] = updated
     await updateGistTransactions(txns, req)
 
