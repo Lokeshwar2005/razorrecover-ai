@@ -20,9 +20,6 @@ const resolveApiBase = (): string => {
     if (host === 'localhost' || host === '127.0.0.1') {
       return 'http://127.0.0.1:8000/api/v1'
     }
-    if (window.location.origin.includes('vercel.app')) {
-      return `${window.location.origin}/api/v1`
-    }
   }
   return 'https://razorrecover-ai-teal.vercel.app/api/v1'
 }
@@ -668,7 +665,14 @@ export async function fetchCanonicalTransactions(params?: {
 
     const res = await fetch(`${API_BASE}/transactions?${q.toString()}`, { signal: AbortSignal.timeout(4000) })
     if (res.ok) {
-      return await res.json()
+      const data = await res.json()
+      if (Array.isArray(data)) return data
+      if (data && Array.isArray(data.transactions)) return data.transactions
+      if (data && typeof data === 'object') {
+        const vals = Object.values(data).filter((v: any) => v && typeof v === 'object' && v.id)
+        if (vals.length > 0) return vals
+      }
+      return []
     }
   } catch (e) {}
   return null
