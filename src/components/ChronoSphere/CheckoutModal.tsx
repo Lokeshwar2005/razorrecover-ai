@@ -596,7 +596,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   <span>RazorRecover AI Event Ingestion Triggered</span>
                 </div>
                 <div className="text-[11px] text-[#94a3b8]">
-                  Transaction <strong className="text-white font-mono">{failureDetail.txnId}</strong> (₹{totalAmountRupees.toLocaleString('en-IN')}) has been captured by RazorRecover AI for automated root-cause diagnosis, expected yield prioritization, and safe recovery link generation.
+                  Transaction <strong className="text-white font-mono">{failureDetail.txnId}</strong> (₹{totalAmountRupees.toLocaleString('en-IN')}) has been captured by RazorRecover AI for automated root-cause diagnosis, recovery prioritization, and safe recovery link generation.
                 </div>
               </div>
 

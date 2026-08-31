@@ -67,8 +67,8 @@ export const AgentTrace2: React.FC = () => {
         index: 3,
         name: '04 PRIORITIZE',
         status: 'DONE',
-        detail: `Expected recovery value calculated: ${expValFormatted}. Opportunity ranked by monetary yield.`,
-        decision: `${selectedTxn.policy === 'Approved' ? 'High Yield' : 'Gated'}`,
+        detail: `Recovery candidate evaluated: ${amtFormatted} at risk (${selectedTxn.recovery_probability}% recovery probability). Ranked by recovery priority and policy compliance.`,
+        decision: `${selectedTxn.policy === 'Approved' ? 'Prioritized' : 'Gated'}`,
       },
       {
         index: 4,

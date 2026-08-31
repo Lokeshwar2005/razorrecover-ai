@@ -794,7 +794,7 @@ export function RazorRecoverApp() {
 
         <section className="metrics">
           <Metric label="Revenue at risk" value={money(risk)} note="Total failed volume detected" danger />
-          <Metric label="Expected recovery" value={money(Math.round(risk * 0.72))} note="Recoverable pipeline" />
+          <Metric label="Active opportunities" value={money(risk)} note="Recoverable pipeline" />
           <Metric label="Verified recovered" value={money(recovered)} note="Razorpay captured & verified" good />
           <Metric label="Recovery rate" value={`${rate}%`} note="Verified recovered ÷ at-risk" gold />
           <Metric label="Policy gated" value={String(stopped).padStart(2, '0')} note="Stopped / escalated" />

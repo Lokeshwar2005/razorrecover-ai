@@ -328,7 +328,7 @@ export function computeOpportunitiesFromTransactions(
       status: t.status === 'RECOVERED' ? 'RECOVERED' : t.policy === 'Blocked' ? 'POLICY_BLOCKED' : 'ELIGIBLE',
       recovery_operation_id: t.recovery_operation_id,
       explainability: {
-        why_priority: `${priority} priority recovery candidate with ₹${yieldRupees} expected recovery yield.`,
+        why_priority: `${priority} priority recovery candidate with ₹${Math.floor(t.amount_minor / 100).toLocaleString('en-IN')} revenue at risk (${t.recovery_probability}% recovery probability).`,
         why_action: `Targeted automated intervention for ${t.reason} within policy boundaries.`,
         why_policy_status: `Evaluated by Deterministic Policy Engine (Risk ${t.risk_score}/100, Probability ${t.recovery_probability}%).`,
       },

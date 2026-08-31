@@ -181,13 +181,13 @@ export const MerchantDashboard: React.FC = () => {
           <div className="text-xs text-[#a89f91] mt-1">Automated conversion efficiency</div>
         </div>
 
-        {/* Metric 4: Expected Recovery */}
+        {/* Metric 4: Recovery Opportunities */}
         <div className="p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] hover:border-[#e5a944]/40 transition">
-          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Opportunity Value</div>
+          <div className="text-xs font-mono uppercase tracking-wider text-[#7a7164]">Recovery Opportunities</div>
           <div className="text-2xl font-bold text-[#fcd34d] mt-1">
-            {formatRupees(oppSummary.expected_recovery_value_minor)}
+            {opps.length} Active
           </div>
-          <div className="text-xs text-[#a89f91] mt-1">{opps.length} actionable opportunities</div>
+          <div className="text-xs text-[#a89f91] mt-1">{formatRupees(metrics.revenueAtRiskMinor)} recoverable pipeline</div>
         </div>
 
         {/* Metric 5: Active Attempts */}

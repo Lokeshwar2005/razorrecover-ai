@@ -41,15 +41,13 @@ export const OpportunityQueue: React.FC = () => {
     | 'BLOCKED'
   >('ALL')
   const [sortBy, setSortBy] = useState<
-    | 'ev_desc'
-    | 'ev_asc'
     | 'amount_desc'
     | 'amount_asc'
     | 'prob_desc'
     | 'risk_desc'
     | 'newest'
     | 'oldest'
-  >('ev_desc')
+  >('amount_desc')
 
   const [pageSize, setPageSize] = useState<number>(15)
   const [currentPage, setCurrentPage] = useState(1)
@@ -244,14 +242,12 @@ export const OpportunityQueue: React.FC = () => {
         const txnA = transactionMap.get(a.transaction_id)
         const txnB = transactionMap.get(b.transaction_id)
 
-        if (sortBy === 'ev_desc') {
+        if (sortBy === 'amount_desc') {
           const aBoost = a.policy_status === 'Approved' ? 1 : 0
           const bBoost = b.policy_status === 'Approved' ? 1 : 0
           if (aBoost !== bBoost) return bBoost - aBoost
-          return b.expected_value_minor - a.expected_value_minor
+          return b.amount_minor - a.amount_minor
         }
-        if (sortBy === 'ev_asc') return a.expected_value_minor - b.expected_value_minor
-        if (sortBy === 'amount_desc') return b.amount_minor - a.amount_minor
         if (sortBy === 'amount_asc') return a.amount_minor - b.amount_minor
         if (sortBy === 'prob_desc') return b.recovery_probability - a.recovery_probability
         if (sortBy === 'risk_desc') return a.risk_score - b.risk_score
@@ -265,7 +261,7 @@ export const OpportunityQueue: React.FC = () => {
           const timeB = txnB ? new Date(txnB.created_at).getTime() : 0
           return timeA - timeB
         }
-        return b.expected_value_minor - a.expected_value_minor
+        return b.amount_minor - a.amount_minor
       })
   }, [allOpportunities, searchQuery, activeFilter, sortBy, transactionMap])
 
@@ -458,8 +454,8 @@ export const OpportunityQueue: React.FC = () => {
                 <div className="text-[#f4ede2] font-bold">{summary.total_opportunities} Active Items</div>
               </div>
               <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c]">
-                <div className="text-[#7a7164] text-[10px]">EXPECTED RECOVERY</div>
-                <div className="text-[#10b981] font-bold">{formatRupees(summary.expected_recovery_value_minor)}</div>
+                <div className="text-[#7a7164] text-[10px]">REVENUE AT RISK</div>
+                <div className="text-[#ef4444] font-bold">{formatRupees(summary.total_revenue_at_risk_minor)}</div>
               </div>
             </>
           )}
@@ -550,15 +546,15 @@ export const OpportunityQueue: React.FC = () => {
       {summary && (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
-            <div className="text-[10px] font-mono text-[#7a7164]">AT RISK VOLUME</div>
+            <div className="text-[10px] font-mono text-[#7a7164]">REVENUE AT RISK</div>
             <div className="text-base font-bold font-mono text-[#ef4444] mt-1">
               {formatRupees(summary.total_revenue_at_risk_minor)}
             </div>
           </div>
           <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
-            <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED RECOVERY</div>
+            <div className="text-[10px] font-mono text-[#7a7164]">RECOVERY OPPORTUNITIES</div>
             <div className="text-base font-bold font-mono text-[#fcd34d] mt-1">
-              {formatRupees(summary.expected_recovery_value_minor)}
+              {summary.total_opportunities} Items
             </div>
           </div>
           <div className="p-3.5 rounded-xl bg-[#0f0c08] border border-[#2e271c]">
@@ -658,10 +654,8 @@ export const OpportunityQueue: React.FC = () => {
               onChange={(e) => setSortBy(e.target.value as any)}
               className="px-3 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] focus:outline-none focus:border-[#e5a944] text-xs"
             >
-              <option value="ev_desc">Expected Value (High → Low)</option>
-              <option value="ev_asc">Expected Value (Low → High)</option>
-              <option value="amount_desc">Amount (High → Low)</option>
-              <option value="amount_asc">Amount (Low → High)</option>
+              <option value="amount_desc">Amount at Risk (High → Low)</option>
+              <option value="amount_asc">Amount at Risk (Low → High)</option>
               <option value="prob_desc">Recovery Probability (High → Low)</option>
               <option value="risk_desc">Risk (Low → High)</option>
               <option value="newest">Newest First</option>
@@ -843,9 +837,9 @@ export const OpportunityQueue: React.FC = () => {
                     </div>
 
                     <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
-                      <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED VALUE</div>
-                      <div className="text-lg font-mono font-bold text-[#fcd34d]">
-                        {formatRupees(opp.expected_value_minor)}
+                      <div className="text-[10px] font-mono text-[#7a7164]">AMOUNT AT RISK</div>
+                      <div className="text-lg font-mono font-bold text-[#f4ede2]">
+                        {formatRupees(opp.amount_minor)}
                       </div>
                     </div>
                   </div>
@@ -931,8 +925,8 @@ export const OpportunityQueue: React.FC = () => {
                 <span className="text-[#f4ede2] font-bold">{formatRupees(selectedOpp.amount_minor)}</span>
               </div>
               <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
-                <span className="text-[#7a7164]">EXPECTED RECOVERY:</span>
-                <span className="text-[#fcd34d] font-bold">{formatRupees(selectedOpp.expected_value_minor)}</span>
+                <span className="text-[#7a7164]">RECOVERY PROBABILITY:</span>
+                <span className="text-[#10b981] font-bold">{selectedOpp.recovery_probability}%</span>
               </div>
               <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
                 <span className="text-[#7a7164]">FAILURE REASON:</span>
@@ -965,7 +959,7 @@ export const OpportunityQueue: React.FC = () => {
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className="text-[#fcd34d] font-bold">{formatRupees(act.expected_value_minor)}</div>
+                        <div className="text-[#10b981] font-bold">{act.recovery_probability}%</div>
                         <span
                           className={`text-[9px] px-1 rounded ${
                             act.policy_decision === 'Approved'
@@ -1132,7 +1126,7 @@ export const OpportunityQueue: React.FC = () => {
                 >
                   {executing
                     ? '⚡ Contacting Razorpay Orchestrator...'
-                    : `Execute Recovery (${formatRupees(selectedOpp.expected_value_minor)}) ▶`}
+                    : `Execute Recovery (${formatRupees(selectedOpp.amount_minor)}) ▶`}
                 </button>
 
                 <button
