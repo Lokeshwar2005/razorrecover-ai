@@ -14,7 +14,7 @@ export interface VercelResponse extends ServerResponse {
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v9.json')
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v10.json')
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
@@ -130,8 +130,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const txns = await fetchGistTransactions(req)
+    let txns = await fetchGistTransactions(req)
     let txn = txns[id] || Object.values(txns).find((t: any) => (t?.id || '').toUpperCase() === id)
+
+    if (!txn) {
+      await new Promise((r) => setTimeout(r, 200))
+      txns = await fetchGistTransactions(req)
+      txn = txns[id] || Object.values(txns).find((t: any) => (t?.id || '').toUpperCase() === id)
+    }
 
     if (txn) {
       if (txn.provider_payment_id && txn.provider_status === 'captured' && (txn.verified_amount_minor ?? 0) > 0) {
