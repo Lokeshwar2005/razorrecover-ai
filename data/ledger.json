@@ -5429,7 +5429,7 @@
       "amount_minor": 699500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)",
       "action": "Switch to UPI Auto-Pay / Split Link",
@@ -5440,7 +5440,7 @@
       "explanation": "Card decline due to temporary limit. Split payment link provisioned.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:18:39.383Z",
-      "updated_at": "2026-08-31T14:18:39.383Z",
+      "updated_at": "2026-08-31T14:18:42.240Z",
       "provider": "razorpay",
       "provider_id": "order_test_low_balance_1788185910797",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-LOW_BALANCE-1788185910797",
@@ -5467,7 +5467,10 @@
           "reason": "Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)",
           "timestamp": "2026-08-31T14:18:39.383Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOLOWBALANCE1788185910797",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-LOW_BALANCE-1788185910797 [REC-20260831-TXNE2ESCENARIOLOWBALANCE1788185910797] — awaiting Test Mode payment."
     }
   }
 }
