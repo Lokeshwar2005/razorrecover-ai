@@ -85,7 +85,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         payload.chronova_order_id || payload.order_id,
         Number(rawAmountMinor),
         payload.signature,
-        req
+        req,
+        {
+          customer: payload.customer,
+          items: payload.items || payload.metadata?.items,
+          product_id: payload.product_id || payload.metadata?.product_id,
+          product_name: payload.product_name || payload.metadata?.product_name,
+          product_image: payload.product_image || payload.metadata?.product_image || payload.metadata?.image,
+          product_brand: payload.product_brand || payload.metadata?.brand,
+          product_category: payload.product_category || payload.metadata?.category,
+          quantity: payload.quantity || payload.metadata?.quantity,
+          unit_price: payload.unit_price || payload.metadata?.unit_price,
+        }
       )
       res.status(200).json({
         success: true,
@@ -108,9 +119,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         payment_id: payload.payment_id,
         amount_minor: Number(rawAmountMinor),
         currency: payload.currency || 'INR',
-        status: 'failed',
+        status: payload.status || 'failed',
         failure_code: payload.failure_code,
         failure_reason: payload.failure_reason,
+        product_id: payload.product_id || payload.metadata?.product_id,
+        product_name: payload.product_name || payload.metadata?.product_name,
+        product_image: payload.product_image || payload.metadata?.product_image || payload.metadata?.image,
+        product_brand: payload.product_brand || payload.metadata?.brand,
+        product_category: payload.product_category || payload.metadata?.category,
+        quantity: payload.quantity || payload.metadata?.quantity,
+        unit_price: payload.unit_price || payload.metadata?.unit_price,
+        items: payload.items || payload.metadata?.items,
         customer: payload.customer,
         metadata: payload.metadata,
       },

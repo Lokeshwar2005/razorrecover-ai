@@ -617,8 +617,17 @@ export async function fetchDatabaseHealth(): Promise<DatabaseHealthData | null> 
 
 export interface PaymentCustomerPayload {
   name?: string
+  full_name?: string
   email?: string
   phone?: string
+  address?: string
+  address_line1?: string
+  address_line2?: string
+  city?: string
+  state?: string
+  pincode?: string
+  id?: string
+  [key: string]: any
 }
 
 export interface PaymentEventMetadataPayload {

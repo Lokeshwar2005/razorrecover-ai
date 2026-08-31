@@ -3,6 +3,7 @@ import {
   useTransactionStore,
   type CanonicalTransaction,
   type TransactionSource,
+  chronovaOrderToCanonicalTransaction,
 } from '../../services/canonicalTransactionStore'
 import {
   executeRecoveryAction as executeRecovery,
@@ -10,6 +11,7 @@ import {
   launchRazorpayCheckout,
 } from '../../services/backendApi'
 import { resolveProductImageUrl } from '../Chronova/utils'
+import { findChronovaOrder } from '../../services/chronovaOrderStore'
 
 const PAGE_SIZE = 15
 
@@ -70,6 +72,8 @@ export const TransactionExplorer: React.FC = () => {
       const cleanCustomerEmail = (txn.customer?.email || '').toLowerCase()
       const cleanReason = (txn.reason || '').toLowerCase()
       const cleanAction = (txn.action || '').toLowerCase()
+      const cleanProdName = (txn.product_name || '').toLowerCase()
+      const itemNames = (txn.items || []).map((i: any) => (i.product_name || i.productName || '').toLowerCase()).join(' ')
 
       let matchesSearch = true
       if (q) {
@@ -81,7 +85,9 @@ export const TransactionExplorer: React.FC = () => {
           cleanCustomerName.includes(q) ||
           cleanCustomerEmail.includes(q) ||
           cleanReason.includes(q) ||
-          cleanAction.includes(q)
+          cleanAction.includes(q) ||
+          cleanProdName.includes(q) ||
+          itemNames.includes(q)
       }
 
       let matchesFilter = true
@@ -104,13 +110,46 @@ export const TransactionExplorer: React.FC = () => {
     setCurrentPage(1)
   }, [search, filter])
 
-  // Selected Transaction: resolve canonical instance
+  // Selected Transaction: resolve canonical instance and enrich from Chronova order store
   const selectedTxn: CanonicalTransaction | null = useMemo(() => {
+    let baseTxn: CanonicalTransaction | null = null
     if (selectedTransactionId) {
-      const found = transactions.find((t) => t.id === selectedTransactionId)
-      if (found) return found
+      baseTxn = transactions.find((t) => t.id === selectedTransactionId) || null
     }
-    return filteredTransactions.length > 0 ? filteredTransactions[0] : null
+    if (!baseTxn && filteredTransactions.length > 0) {
+      baseTxn = filteredTransactions[0]
+    }
+    if (!baseTxn) return null
+
+    // Check if we can enrich further with Chronova Order Store
+    const chronovaOrder =
+      findChronovaOrder(baseTxn.id) ||
+      (baseTxn.chronova_order_id ? findChronovaOrder(baseTxn.chronova_order_id) : null) ||
+      (baseTxn.provider_order_id ? findChronovaOrder(baseTxn.provider_order_id) : null)
+
+    if (chronovaOrder) {
+      const ordTxn = chronovaOrderToCanonicalTransaction(chronovaOrder)
+      return {
+        ...baseTxn,
+        customer: (ordTxn.customer?.name !== 'Information unavailable' || ordTxn.customer?.email !== 'Information unavailable') ? ordTxn.customer : baseTxn.customer,
+        items: (ordTxn.items && ordTxn.items.length > 0) ? ordTxn.items : baseTxn.items,
+        product_name: ordTxn.product_name !== 'Information unavailable' ? ordTxn.product_name : baseTxn.product_name,
+        product_image: ordTxn.product_image || baseTxn.product_image,
+        product_brand: ordTxn.product_brand !== 'Information unavailable' ? ordTxn.product_brand : baseTxn.product_brand,
+        product_category: ordTxn.product_category !== 'Information unavailable' ? ordTxn.product_category : baseTxn.product_category,
+        quantity: ordTxn.quantity || baseTxn.quantity,
+        unit_price: ordTxn.unit_price || baseTxn.unit_price,
+        unit_price_rupees: ordTxn.unit_price_rupees || baseTxn.unit_price_rupees,
+        amount: ordTxn.amount || baseTxn.amount,
+        amount_minor: ordTxn.amount_minor || baseTxn.amount_minor,
+        status: (chronovaOrder.payment_status === 'PAID' || chronovaOrder.recovery_status === 'RECOVERED') ? 'RECOVERED' : baseTxn.status,
+        action: (chronovaOrder.payment_status === 'PAID' || chronovaOrder.recovery_status === 'RECOVERED')
+          ? (chronovaOrder.recovery_status === 'RECOVERED' ? 'None — Recovery completed' : 'None — Payment already successful')
+          : baseTxn.action,
+      }
+    }
+
+    return baseTxn
   }, [selectedTransactionId, transactions, filteredTransactions])
 
   // Pagination slicing
@@ -506,7 +545,7 @@ export const TransactionExplorer: React.FC = () => {
                         <span>
                           {txn.items && txn.items.length > 1
                             ? `${txn.items[0]?.product_name || txn.product_name} (+${txn.items.length - 1} other item${txn.items.length > 2 ? 's' : ''})`
-                            : (txn.product_name || 'Chronova Luxury Timepiece')}
+                            : (txn.product_name || 'Information unavailable')}
                         </span>
                         {txn.items && txn.items.length > 1 && (
                           <span className="px-1.5 py-0.2 rounded bg-[#e5a944]/20 text-[#e5a944] text-[9px] font-mono font-bold">
@@ -647,10 +686,10 @@ export const TransactionExplorer: React.FC = () => {
                   {(selectedTxn.items && selectedTxn.items.length > 0 ? selectedTxn.items : [
                     {
                       productId: selectedTxn.product_id,
-                      productName: selectedTxn.product_name || 'Chronova Luxury Timepiece',
+                      productName: selectedTxn.product_name || 'Information unavailable',
                       productImage: selectedTxn.product_image,
-                      productBrand: selectedTxn.product_brand || 'Chronova',
-                      productCategory: selectedTxn.product_category || 'Automatic Watches',
+                      productBrand: selectedTxn.product_brand || 'Information unavailable',
+                      productCategory: selectedTxn.product_category || 'Information unavailable',
                       quantity: selectedTxn.quantity || 1,
                       unitPrice: selectedTxn.unit_price || selectedTxn.amount,
                       totalPrice: (selectedTxn.unit_price || selectedTxn.amount) * (selectedTxn.quantity || 1),
@@ -658,9 +697,9 @@ export const TransactionExplorer: React.FC = () => {
                   ]).map((item: any, idx: number) => {
                     const img = resolveProductImageUrl(item.productImage || item.product_image || item.imageUrl || item.image_url)
                     const pName = item.productName || item.product_name || 'Information unavailable'
-                    const pBrand = item.productBrand || item.product_brand || item.brand || 'Chronova'
+                    const pBrand = item.productBrand || item.product_brand || item.brand || 'Information unavailable'
                     const pModel = item.productModel || item.product_model || item.model || pName
-                    const pCat = item.productCategory || item.product_category || item.category || 'Automatic Watches'
+                    const pCat = item.productCategory || item.product_category || item.category || 'Information unavailable'
                     const qty = Number(item.quantity) || 1
                     const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || Math.round(selectedTxn.amount / (selectedTxn.items?.length || 1))
                     const lineTot = Number(item.totalPrice || item.total_price || item.total_price_rupees || item.lineTotal || item.line_total) || (qty * uPrice)
@@ -695,7 +734,7 @@ export const TransactionExplorer: React.FC = () => {
                           </div>
                           <div className="text-[10px] text-[#a89f91] font-mono truncate">
                             {pBrand} · Model: {pModel}
-                            {pCat && <span> · {pCat}</span>}
+                            {pCat && pCat !== 'Information unavailable' && <span> · {pCat}</span>}
                             {item.selected_color && <span> · Color: {item.selected_color}</span>}
                           </div>
                           <div className="text-[10px] text-[#7a7164] font-mono flex items-center justify-between pt-0.5">
@@ -729,9 +768,9 @@ export const TransactionExplorer: React.FC = () => {
                   <span className="text-[#7a7164]">Contact Phone:</span>
                   <span className="text-[#a89f91]">{selectedTxn.customer?.phone || 'Information unavailable'}</span>
                 </div>
-                <div className="flex justify-between py-0.5">
-                  <span className="text-[#7a7164]">Shipping Address:</span>
-                  <span className="text-[#a89f91] text-right truncate max-w-[220px]">{selectedTxn.customer?.address || 'Information unavailable'}</span>
+                <div className="flex justify-between items-start py-0.5">
+                  <span className="text-[#7a7164] shrink-0">Shipping Address:</span>
+                  <span className="text-[#a89f91] text-right break-words max-w-[260px] pl-2">{selectedTxn.customer?.address || 'Information unavailable'}</span>
                 </div>
               </div>
 

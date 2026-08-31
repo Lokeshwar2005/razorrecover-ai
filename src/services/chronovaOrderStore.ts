@@ -1,3 +1,4 @@
+export type { ChronovaOrder } from '../components/Chronova/types'
 import type { ChronovaOrder } from '../components/Chronova/types'
 
 const CHRONOVA_ORDERS_KEY = 'chronova_orders'

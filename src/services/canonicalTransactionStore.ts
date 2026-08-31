@@ -6,6 +6,8 @@ import {
   type OpportunityItem,
   type OpportunitySummary,
 } from './backendApi'
+import { getStoredChronovaOrders, type ChronovaOrder } from './chronovaOrderStore'
+import { resolveProductImageUrl } from '../components/Chronova/utils'
 
 export type TransactionSource = 'CHRONOVA' | 'live' | 'razorpay_test' | 'synthetic'
 export type TransactionStatus = 'PAYMENT_FAILED' | 'WAITING_FOR_RECOVERY' | 'RECOVERED' | 'STOPPED' | 'IN_PROGRESS' | 'PENDING' | 'ESCALATED'
@@ -187,6 +189,153 @@ export interface TransactionStoreState {
   exportAuditLedgerCSV: () => string
 }
 
+export function chronovaOrderToCanonicalTransaction(order: ChronovaOrder): CanonicalTransaction {
+  const isPaid = order.payment_status === 'PAID' || order.payment_status === 'RECOVERED' || order.order_status === 'ORDER_CONFIRMED'
+  const isRecovered = order.recovery_status === 'RECOVERED' || (isPaid && !!order.failure_reason)
+
+  const status: TransactionStatus = isRecovered || isPaid ? 'RECOVERED' : (order.recovery_status === 'IN_PROGRESS' ? 'WAITING_FOR_RECOVERY' : 'PAYMENT_FAILED')
+  const amountRupees = order.total_amount_rupees || Math.round((order.total_amount_minor || 0) / 100) || 0
+  const amountMinor = order.total_amount_minor || (amountRupees * 100)
+
+  const rawItems = Array.isArray(order.items) ? order.items : []
+  const mappedItems = rawItems.map((item: any) => {
+    const pImg = resolveProductImageUrl(item.productImage || item.product_image || item.imageUrl || item.image_url)
+    const pName = item.productName || item.product_name || 'Information unavailable'
+    const pBrand = item.productBrand || item.product_brand || item.brand || 'Information unavailable'
+    const pCat = item.productCategory || item.product_category || item.category || 'Information unavailable'
+    const pModel = item.productModel || item.product_model || item.model || pName
+    const pId = item.productId || item.product_id || 'Information unavailable'
+    const qty = Number(item.quantity) || 1
+    const uPrice = Number(item.unitPrice || item.unit_price || item.unit_price_rupees) || amountRupees
+    const lTotal = Number(item.totalPrice || item.total_price || item.total_price_rupees || item.lineTotal || item.line_total) || (qty * uPrice)
+    return {
+      productId: pId,
+      product_id: pId,
+      productName: pName,
+      product_name: pName,
+      productImage: pImg,
+      product_image: pImg,
+      imageUrl: pImg,
+      image_url: pImg,
+      productBrand: pBrand,
+      product_brand: pBrand,
+      brand: pBrand,
+      productModel: pModel,
+      product_model: pModel,
+      model: pModel,
+      productCategory: pCat,
+      product_category: pCat,
+      category: pCat,
+      quantity: qty,
+      unitPrice: uPrice,
+      unit_price: uPrice,
+      unit_price_rupees: uPrice,
+      lineTotal: lTotal,
+      line_total: lTotal,
+      totalPrice: lTotal,
+      total_price: lTotal,
+      total_price_rupees: lTotal,
+      selected_color: item.selected_color,
+    }
+  })
+
+  const firstItem = mappedItems[0]
+
+  const rawName = order.customer?.full_name || order.customer?.name || ''
+  const isPlaceholderName = !rawName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawName.trim())
+  const custName = isPlaceholderName ? 'Information unavailable' : rawName.trim()
+
+  const rawEmail = order.customer?.email || ''
+  const isPlaceholderEmail = !rawEmail || /^(customer@chronova\.example\.com|demo@.*)$/i.test(rawEmail.trim())
+  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawEmail.trim()
+
+  const rawPhone = order.customer?.phone || ''
+  const isPlaceholderPhone = !rawPhone || /^\+?919876543210$/i.test(rawPhone.replace(/\s+/g, ''))
+  const custPhone = isPlaceholderPhone ? 'Information unavailable' : rawPhone.trim()
+
+  const rawAddress = order.customer?.address || order.customer?.address_line1 || ''
+  const isPlaceholderAddress = !rawAddress || /^(Information unavailable|Main Street|Default Address)$/i.test(rawAddress.trim())
+  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawAddress.trim()
+
+  const prodName = firstItem?.product_name || 'Information unavailable'
+  const prodImg = firstItem?.product_image || ''
+  const prodBrand = firstItem?.product_brand || 'Information unavailable'
+  const prodCat = firstItem?.product_category || 'Information unavailable'
+  const prodId = firstItem?.product_id || 'Information unavailable'
+  const prodQty = firstItem?.quantity || 1
+  const prodUnitPrice = firstItem?.unit_price || amountRupees
+
+  const id = (order.transaction_id || order.transactionId || `TXN-CN-${(order.order_id || '').toUpperCase()}`).toUpperCase()
+
+  return {
+    id,
+    chronova_order_id: order.order_id || order.orderId,
+    chronova_customer_id: custEmail !== 'Information unavailable' ? custEmail : undefined,
+    razorpay_order_id: order.razorpay_order_id || order.order_id,
+    razorpay_payment_id: order.razorpay_payment_id || order.paymentId,
+    provider_id: order.razorpay_payment_id || order.paymentId,
+    provider_payment_id: order.razorpay_payment_id || order.paymentId,
+    provider_order_id: order.razorpay_order_id || order.order_id,
+    merchant_id: 'mer_chronova_watches',
+    amount: amountRupees,
+    amount_minor: amountMinor,
+    currency: (order.currency || 'INR').toUpperCase(),
+    source: 'CHRONOVA',
+    status,
+    direction: isPaid ? 'Direct settlement' : 'Payment degradation',
+    reason: order.failure_reason || (isPaid ? 'Payment completed successfully without degradation' : '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)'),
+    action: isPaid ? (isRecovered ? 'None — Recovery completed' : 'None — Payment already successful') : (order.recommended_action || 'Send payment link'),
+    confidence: isPaid ? 100 : 95,
+    recovery_probability: isPaid ? 100 : 88,
+    risk_score: isPaid ? 5 : 20,
+    policy: 'Approved',
+    explanation: isPaid
+      ? (isRecovered
+          ? `Payment successfully recovered via customer retry link and captured in Razorpay (Payment ID: ${order.razorpay_payment_id || order.paymentId}).`
+          : `Customer completed payment directly via Razorpay Test Mode (Payment ID: ${order.razorpay_payment_id || order.paymentId}). No recovery intervention was required.`)
+      : '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+    latency: '180ms',
+    created_at: order.created_at || order.createdAt || new Date().toISOString(),
+    updated_at: order.updated_at || order.updatedAt,
+    product_id: prodId,
+    product_name: prodName,
+    product_image: prodImg,
+    product_brand: prodBrand,
+    product_category: prodCat,
+    quantity: prodQty,
+    unit_price: prodUnitPrice,
+    unit_price_rupees: prodUnitPrice,
+    items: mappedItems,
+    subtotal: order.subtotal_rupees || order.subtotal || amountRupees,
+    subtotal_rupees: order.subtotal_rupees || order.subtotal || amountRupees,
+    totalAmount: amountRupees,
+    total_amount_rupees: amountRupees,
+    customer: {
+      name: custName,
+      full_name: custName,
+      email: custEmail,
+      phone: custPhone,
+      address: custAddress,
+    },
+    payment: {
+      status: isPaid ? (isRecovered ? 'PAYMENT_RECOVERED' : 'PAYMENT_SUCCESS') : 'PAYMENT_FAILED',
+      method: order.payment_method || 'razorpay',
+      provider: 'RAZORPAY',
+      paymentId: order.razorpay_payment_id || order.paymentId,
+      capturedAt: isPaid ? (order.verified_at || order.created_at || new Date().toISOString()) : undefined,
+    },
+    recovery: {
+      required: !isPaid,
+      status: isRecovered ? 'RECOVERED' : (isPaid ? 'NONE' : 'ELIGIBLE'),
+      reason: order.failure_reason,
+      diagnosis: isPaid ? undefined : '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+      confidence: isPaid ? 100 : 95,
+      recommendedAction: isPaid ? (isRecovered ? 'Recovery completed' : 'None — Payment already successful') : 'Send payment retry link',
+      recoveredAmount: isRecovered ? amountRupees : 0,
+    },
+  }
+}
+
 let isRefreshingProviderFeed = false
 
 export const useTransactionStore = create<TransactionStoreState>((set, get) => ({
@@ -260,11 +409,58 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
 
     try {
       const liveTxns = await fetchTransactionsBackend()
-      
+      const storedOrders = typeof window !== 'undefined' ? getStoredChronovaOrders() : []
+      const orderMap = new Map<string, ChronovaOrder>()
+      for (const ord of storedOrders) {
+        if (ord.transaction_id) orderMap.set(ord.transaction_id.toUpperCase(), ord)
+        if (ord.order_id) orderMap.set(ord.order_id.toUpperCase(), ord)
+        if (ord.orderId) orderMap.set(ord.orderId.toUpperCase(), ord)
+        if (ord.transactionId) orderMap.set(ord.transactionId.toUpperCase(), ord)
+      }
+
       // Filter out any synthetic items
       const chronovaOnly = (liveTxns || []).filter((t: any) => {
         return t && t.source !== 'synthetic' && !/^TXN-\d{3,4}$/i.test(t.id)
+      }).map((t: any) => {
+        const matchingOrder =
+          orderMap.get(t.id?.toUpperCase()) ||
+          orderMap.get(t.chronova_order_id?.toUpperCase()) ||
+          orderMap.get(t.provider_order_id?.toUpperCase()) ||
+          orderMap.get(t.razorpay_order_id?.toUpperCase())
+
+        if (matchingOrder) {
+          const ordTxn = chronovaOrderToCanonicalTransaction(matchingOrder)
+          return {
+            ...t,
+            customer: (ordTxn.customer?.name !== 'Information unavailable' || ordTxn.customer?.email !== 'Information unavailable') ? ordTxn.customer : t.customer,
+            items: (ordTxn.items && ordTxn.items.length > 0) ? ordTxn.items : t.items,
+            product_name: ordTxn.product_name !== 'Information unavailable' ? ordTxn.product_name : t.product_name,
+            product_image: ordTxn.product_image || t.product_image,
+            product_brand: ordTxn.product_brand !== 'Information unavailable' ? ordTxn.product_brand : t.product_brand,
+            product_category: ordTxn.product_category !== 'Information unavailable' ? ordTxn.product_category : t.product_category,
+            quantity: ordTxn.quantity || t.quantity,
+            unit_price: ordTxn.unit_price || t.unit_price,
+            unit_price_rupees: ordTxn.unit_price_rupees || t.unit_price_rupees,
+            amount: ordTxn.amount || t.amount,
+            amount_minor: ordTxn.amount_minor || t.amount_minor,
+            status: (matchingOrder.payment_status === 'PAID' || matchingOrder.recovery_status === 'RECOVERED') ? 'RECOVERED' : t.status,
+            action: (matchingOrder.payment_status === 'PAID' || matchingOrder.recovery_status === 'RECOVERED')
+              ? (matchingOrder.recovery_status === 'RECOVERED' ? 'None — Recovery completed' : 'None — Payment already successful')
+              : t.action,
+          }
+        }
+        return t
       })
+
+      // Add any local orders that haven't reached the backend yet
+      const existingIds = new Set(chronovaOnly.map((t: any) => t.id?.toUpperCase()))
+      for (const ord of storedOrders) {
+        const txnId = (ord.transaction_id || `TXN-CN-${ord.order_id}`).toUpperCase()
+        if (!existingIds.has(txnId)) {
+          chronovaOnly.unshift(chronovaOrderToCanonicalTransaction(ord))
+          existingIds.add(txnId)
+        }
+      }
 
       // Calculate financial invariants
       let atRisk = 0
