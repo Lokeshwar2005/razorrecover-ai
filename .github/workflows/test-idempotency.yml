@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for Vercel production deployment
-        run: sleep 30
+        run: sleep 35
 
       - name: Run duplicate transaction and recovery test
         env:
@@ -25,9 +25,9 @@ jobs:
             local url="$3"
             local body="${4:-}"
 
-            echo "------------------------------------------------------------"
-            echo "[TEST #1] STEP: $step_name"
-            echo "[TEST #1] ENDPOINT: $method $url"
+            echo "------------------------------------------------------------" >&2
+            echo "[TEST #1] STEP: $step_name" >&2
+            echo "[TEST #1] ENDPOINT: $method $url" >&2
 
             local response_file
             response_file=$(mktemp)
@@ -47,15 +47,15 @@ jobs:
             response_body=$(cat "$response_file")
             rm -f "$response_file"
 
-            echo "[TEST #1] HTTP STATUS: $status_code"
-            echo "[TEST #1] RESPONSE: $response_body"
+            echo "[TEST #1] HTTP STATUS: $status_code" >&2
+            echo "[TEST #1] RESPONSE: $response_body" >&2
 
             if [[ "$status_code" -lt 200 || "$status_code" -ge 300 ]]; then
               echo "❌ FAILED: $step_name returned HTTP $status_code" >&2
               return 1
             fi
 
-            echo "$response_body"
+            printf '%s' "$response_body"
           }
 
           payload=$(cat <<JSON

@@ -1,6 +1,4 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import fs from 'fs'
-import path from 'path'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>
@@ -12,66 +10,50 @@ export interface VercelResponse extends ServerResponse {
   setHeader: (name: string, value: string) => this
 }
 
+const RESTFUL_OBJECT_ID = 'ff808181a057a55b01a057bb444f003a'
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v5.json')
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
-function getGithubToken(): string | null {
-  return (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) || null
-}
-
-function loadLocalFileStore(): Map<string, any> {
+async function fetchSharedTransactions(): Promise<any[]> {
   try {
-    if (fs.existsSync(TMP_FILE)) {
-      const raw = fs.readFileSync(TMP_FILE, 'utf-8')
-      const parsed = JSON.parse(raw)
-      if (parsed && typeof parsed === 'object') {
-        const txns = parsed.transactions || parsed
-        if (typeof txns === 'object') {
-          for (const [id, txn] of Object.entries(txns)) {
-            inMemoryTransactions.set(id, txn)
-          }
-        }
-      }
-    }
-  } catch (e) {}
-  return inMemoryTransactions
-}
-
-async function fetchGistTransactions(): Promise<any[]> {
-  loadLocalFileStore()
-
-  try {
-    const token = getGithubToken()
-    const headers: Record<string, string> = {
-      Accept: 'application/vnd.github.v3+json',
-      'User-Agent': 'RazorRecover-AI-Serverless',
-    }
-    if (token) {
-      headers.Authorization = `token ${token}`
-    }
-
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
-      headers,
+    const res = await fetch(`https://api.restful-api.dev/objects/${RESTFUL_OBJECT_ID}`, {
+      headers: { Accept: 'application/json' },
       signal: AbortSignal.timeout(3000),
     })
-
     if (res.ok) {
       const data = await res.json()
-      const rawContent = data?.files?.[GIST_FILENAME]?.content
-      if (rawContent) {
-        const parsed = JSON.parse(rawContent)
-        const remoteTxns = parsed?.transactions
-        if (remoteTxns && typeof remoteTxns === 'object') {
-          for (const [id, txn] of Object.entries(remoteTxns)) {
-            inMemoryTransactions.set(id, txn)
-          }
+      const txns = data?.data?.transactions
+      if (txns && typeof txns === 'object') {
+        for (const [id, txn] of Object.entries(txns)) {
+          inMemoryTransactions.set(id, txn)
         }
       }
     }
   } catch (e) {}
+
+  if (inMemoryTransactions.size === 0) {
+    try {
+      const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+        headers: { Accept: 'application/vnd.github.v3+json', 'User-Agent': 'RazorRecover-AI' },
+        signal: AbortSignal.timeout(3000),
+      })
+      if (res.ok) {
+        const data = await res.json()
+        const rawContent = data?.files?.[GIST_FILENAME]?.content
+        if (rawContent) {
+          const parsed = JSON.parse(rawContent)
+          const remoteTxns = parsed?.transactions
+          if (remoteTxns && typeof remoteTxns === 'object') {
+            for (const [id, txn] of Object.entries(remoteTxns)) {
+              inMemoryTransactions.set(id, txn)
+            }
+          }
+        }
+      }
+    } catch (e) {}
+  }
 
   return Array.from(inMemoryTransactions.values())
 }
@@ -92,7 +74,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    let list = await fetchGistTransactions()
+    let list = await fetchSharedTransactions()
 
     const query = req.query || {}
     const search = typeof query.search === 'string' ? query.search.trim().toLowerCase() : ''
