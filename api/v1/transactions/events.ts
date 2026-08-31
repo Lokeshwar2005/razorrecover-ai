@@ -15,7 +15,7 @@ export interface VercelResponse extends ServerResponse {
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v8.json')
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v9.json')
 
 let inMemoryTransactions: Map<string, any> = new Map()
 
@@ -117,6 +117,33 @@ async function updateGistTransactions(transactions: Record<string, any>, req?: I
     const token = getGithubToken(req)
     if (!token) return
 
+    let remoteMap: Record<string, any> = {}
+    try {
+      const getRes = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github.v3+json',
+          'User-Agent': 'RazorRecover-AI-Serverless',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          Pragma: 'no-cache',
+        },
+        signal: AbortSignal.timeout(3000),
+      })
+      if (getRes.ok) {
+        const d = await getRes.json()
+        const raw = d?.files?.[GIST_FILENAME]?.content
+        if (raw) {
+          const parsed = JSON.parse(raw)
+          if (parsed?.transactions) remoteMap = parsed.transactions
+        }
+      }
+    } catch (e) {}
+
+    const merged: Record<string, any> = { ...remoteMap }
+    for (const [id, txn] of inMemoryTransactions.entries()) {
+      merged[id] = txn
+    }
+
     await fetch(`https://api.github.com/gists/${GIST_ID}`, {
       method: 'PATCH',
       headers: {
@@ -128,7 +155,7 @@ async function updateGistTransactions(transactions: Record<string, any>, req?: I
       body: JSON.stringify({
         files: {
           [GIST_FILENAME]: {
-            content: JSON.stringify({ transactions }, null, 2),
+            content: JSON.stringify({ transactions: merged }, null, 2),
           },
         },
       }),
@@ -308,7 +335,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       verified_amount_minor: isSuccess ? numericAmount : 0,
       workflow_status: isSuccess ? 'VERIFIED' : undefined,
       customer,
-      metadata,
+      metadata: {
+        ...(metadata || {}),
+        scenario_id: scenarioKey,
+        failure_code: failure_code || scenario.code,
+      },
     }
 
     currentMap[cleanId] = newTxn
