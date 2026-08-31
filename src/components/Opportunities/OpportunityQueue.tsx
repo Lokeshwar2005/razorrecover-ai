@@ -471,38 +471,19 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       </div>
 
-      {/* Source Filter Switcher */}
+      {/* Source Indicator */}
       <div className="flex flex-wrap items-center justify-between gap-3 p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
         <div className="flex items-center gap-2">
           <span className="text-[#7a7164] text-[11px]">DATA SOURCE:</span>
-          {[
-            { id: 'live', label: 'LIVE OPPORTUNITIES', count: breakdown.activeLiveCount },
-            { id: 'all', label: 'ALL SOURCES', count: allOpportunities.length },
-            { id: 'synthetic', label: 'SYNTHETIC', count: breakdown.activeSyntheticCount },
-            { id: 'razorpay_test', label: 'RAZORPAY TEST', count: breakdown.activeRazorpayTestCount },
-          ].map((src) => (
-            <button
-              key={src.id}
-              onClick={() => setSourceFilter(src.id as any)}
-              className={`px-2.5 py-1 rounded border transition flex items-center gap-1.5 ${
-                sourceFilter === src.id
-                  ? 'bg-[#e5a944] text-[#080705] border-[#e5a944] font-bold'
-                  : 'bg-[#15120c] text-[#a89f91] border-[#2e271c] hover:border-[#453d32]'
-              }`}
-            >
-              <span>{src.label}</span>
-              <span
-                className={`px-1.5 py-0.2 rounded text-[10px] ${
-                  sourceFilter === src.id ? 'bg-[#080705]/20 text-[#080705]' : 'bg-[#2e271c] text-[#a89f91]'
-                }`}
-              >
-                {src.count}
-              </span>
-            </button>
-          ))}
+          <span className="px-2.5 py-1 rounded bg-[#e5a944] text-[#080705] border border-[#e5a944] font-bold flex items-center gap-1.5">
+            <span>CHRONOVA FAILED CHECKOUTS (LIVE)</span>
+            <span className="px-1.5 py-0.2 rounded text-[10px] bg-[#080705]/20 text-[#080705]">
+              {breakdown.activeLiveCount}
+            </span>
+          </span>
         </div>
         <div className="text-[11px] text-[#7a7164] flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-full bg-[#10b981]" />
+          <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
           <span>Live Recovery Engine Active</span>
         </div>
       </div>
@@ -803,27 +784,27 @@ export const OpportunityQueue: React.FC = () => {
                         
                         {isRecovered ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
-                            🔵 RECOVERED
+                            🔵 PAYMENT RECOVERED
                           </span>
                         ) : isInProgress ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
-                            ⚡ IN PROGRESS
+                            ⚡ RECOVERY IN PROGRESS
                           </span>
                         ) : isBlocked ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
                             🔴 POLICY BLOCKED
                           </span>
                         ) : opp.status === 'STOPPED' || parentTxn?.status === 'STOPPED' ? (
-                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#7a7164]/20 text-[#a89f91] border border-[#7a7164]/40 font-bold ml-auto md:ml-0">
-                            ⚪ STOPPED
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
+                            🔴 PAYMENT FAILED
                           </span>
                         ) : opp.status === 'PENDING' || parentTxn?.status === 'PENDING' ? (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#fcd34d]/20 text-[#fcd34d] border border-[#fcd34d]/40 font-bold ml-auto md:ml-0">
-                            🟡 PENDING
+                            🟡 WAITING FOR RECOVERY
                           </span>
                         ) : (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
-                            🟢 ACTIVE / ELIGIBLE
+                            🟢 RECOVERY ELIGIBLE
                           </span>
                         )}
                       </div>

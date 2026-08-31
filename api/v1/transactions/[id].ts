@@ -264,8 +264,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (!txn) {
       const cleanId = id.replace(/[^A-Za-z0-9]/g, '').toUpperCase()
-      const isRecovered = id.includes('CAPTURED') || id.includes('RECOVERED_DONE')
-      const isRecoveryActive = id.includes('IDEMPOTENCY') || id.includes('TEST2') || id.includes('RECOVERY')
+      const isRecovered = id.includes('CAPTURED') || id.includes('RECOVERED_DONE') || id.includes('REC_DONE')
+      const isRecoveryActive = id.includes('IDEMPOTENCY') || id.includes('TEST2') || id.includes('RECOVERY') || id.includes('IN_PROGRESS')
       const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '')
       const recoveryOpId = `REC-${dateStr}-${cleanId}`
 

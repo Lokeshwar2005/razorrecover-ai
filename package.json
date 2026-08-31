@@ -8,7 +8,13 @@
     "dev:next": "next dev",
     "build": "tsc --noEmit && vite build && node scripts/build-pages.js",
     "build:next": "next build --webpack",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:idempotency": "tsx scripts/test-idempotency-e2e.ts",
+    "test:lifecycle": "tsx scripts/test-recovery-lifecycle-e2e.ts",
+    "test:scenarios": "tsx scripts/test-all-scenarios-e2e.ts",
+    "test:customer-flow": "tsx scripts/test-e2e-customer-to-recovery.ts",
+    "test:security": "tsx scripts/test-security-integrity.ts",
+    "test:loop": "tsx scripts/test-real-customer-recovery-loop.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.3",

@@ -175,18 +175,17 @@ function mapRazorpayPayment(payment: RazorpayPayment): EventItem | null {
 }
 
 const detectViewFromUrl = (): string => {
-  if (typeof window === 'undefined') return 'Overview'
+  if (typeof window === 'undefined') return 'Command Center'
   const full = `${window.location.pathname} ${window.location.hash} ${window.location.search}`.toLowerCase()
-  if (full.includes('dashboard')) return 'Command Center'
   if (full.includes('opportunities')) return 'Opportunities'
   if (full.includes('transactions')) return 'Transactions'
   if (full.includes('analytics')) return 'Analytics'
   if (full.includes('policies') || full.includes('settings')) return 'Policies'
   if (full.includes('audit')) return 'Audit'
-  if (full.includes('simulation')) return 'Simulation'
   if (full.includes('agent-trace') || full.includes('trace')) return 'Agent trace'
   if (full.includes('chronova') || full.includes('watches') || full.includes('store') || full.includes('chronosphere')) return 'Chronova Store'
-  return 'Overview'
+  if (full.includes('simulation')) return 'Simulation'
+  return 'Command Center'
 }
 
 export function RazorRecoverApp() {
@@ -545,7 +544,7 @@ export function RazorRecoverApp() {
       Analytics: 'analytics/recovery',
       Policies: 'settings/policies',
       Audit: 'audit',
-      Overview: '',
+      Overview: 'dashboard',
       Simulation: 'simulation',
       'Agent trace': 'agent-trace',
       'Chronova Store': 'chronova',
@@ -581,17 +580,17 @@ export function RazorRecoverApp() {
   }
 
   const primaryNavItems = [
-    { label: 'Overview', tab: 'Overview' },
+    { label: 'Dashboard', tab: 'Command Center' },
     { label: 'Opportunities', tab: 'Opportunities' },
     { label: 'Transactions', tab: 'Transactions' },
     { label: 'Audit', tab: 'Audit' },
+    { label: 'Policies', tab: 'Policies' },
   ]
 
   const advancedNavItems = [
     { label: 'Analytics', tab: 'Analytics' },
     { label: 'Agent Trace', tab: 'Agent trace' },
-    { label: 'Simulation', tab: 'Simulation' },
-    { label: 'Policies', tab: 'Policies' },
+    { label: 'Storefront', tab: 'Chronova Store' },
   ]
 
   const isAdvancedActive = advancedNavItems.some((item) => item.tab === tab)

@@ -280,6 +280,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     txns[cleanKey] = updated
     if (txn?.id) txns[txn.id] = updated
+    inMemoryTransactions.set(cleanKey.toUpperCase(), updated)
+    if (txn?.id) inMemoryTransactions.set(txn.id.toUpperCase(), updated)
+    saveLocalFileStore()
     await updateGistTransactions({ [cleanKey]: updated, [txn?.id || cleanKey]: updated }, req)
 
     res.status(200).json({

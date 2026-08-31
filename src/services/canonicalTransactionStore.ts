@@ -683,43 +683,6 @@ function getCachedSyntheticTransactions(scenario: 'balanced' | 'checkout' | 'deg
 }
 
 export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
-  const initialSynthetic = generateCanonicalSyntheticTransactions('balanced').map((t) => {
-    const saved = getPersistedStateForTransaction(t.id, t.provider_payment_id, t.provider_order_id)
-    if (saved && saved.recovery_status === 'RECOVERED') {
-      return {
-        ...t,
-        status: 'RECOVERED' as TransactionStatus,
-        verified_amount_minor: saved.verified_amount_minor || t.amount_minor,
-        provider_payment_id: saved.razorpay_payment_id || t.provider_payment_id,
-        provider_order_id: saved.razorpay_order_id || t.provider_order_id,
-        provider_status: 'captured',
-        workflow_status: 'VERIFIED' as const,
-        captured_at: saved.recovered_at || t.created_at,
-        updated_at: saved.updated_at || new Date().toISOString(),
-      }
-    }
-    return t
-  })
-
-  const initialProvider = INITIAL_RAZORPAY_TEST_PAYMENTS.map((p) => {
-    const normalized = normalizeRazorpayPayment(p, false)
-    const saved = getPersistedStateForTransaction(normalized.id, normalized.provider_payment_id, normalized.provider_order_id)
-    if (saved && saved.recovery_status === 'RECOVERED') {
-      return {
-        ...normalized,
-        status: 'RECOVERED' as TransactionStatus,
-        verified_amount_minor: saved.verified_amount_minor || normalized.amount_minor,
-        provider_payment_id: saved.razorpay_payment_id || normalized.provider_payment_id,
-        provider_order_id: saved.razorpay_order_id || normalized.provider_order_id,
-        provider_status: 'captured',
-        workflow_status: 'VERIFIED' as const,
-        captured_at: saved.recovered_at || normalized.created_at,
-        updated_at: saved.updated_at || new Date().toISOString(),
-      }
-    }
-    return normalized
-  })
-
   const initialLive = loadPersistedLiveTransactions().map((lt) => {
     const saved = getPersistedStateForTransaction(lt.id, lt.provider_payment_id, lt.provider_order_id)
     const isRec = lt.status === 'RECOVERED' || saved?.recovery_status === 'RECOVERED'
@@ -732,11 +695,9 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
     }
   })
 
-  const initialMerged = mergeCanonicalTransactions(initialSynthetic, [...initialProvider, ...initialLive])
-
   return {
-    transactions: initialMerged,
-    providerTransactions: [...initialProvider, ...initialLive],
+    transactions: initialLive,
+    providerTransactions: initialLive,
     selectedTransactionId: null,
     scenario: 'balanced',
     providerFeedStatus: 'connected',
@@ -913,17 +874,17 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
             const existingMap = new Map(get().transactions.map((t) => [t.id, t]))
 
             for (const bt of combinedItems) {
+              const isSynthetic = bt.source === 'synthetic' || /^TXN-\d{3,4}$/i.test(bt.id)
+              if (isSynthetic) {
+                continue
+              }
+
               const existing = existingMap.get(bt.id)
               const saved = getPersistedStateForTransaction(bt.id, bt.provider_id || bt.provider_payment_id, bt.provider_order_id)
               const isRec = bt.status === 'RECOVERED' || (saved && saved.recovery_status === 'RECOVERED')
-              const resolvedStatus = isRec ? 'RECOVERED' : (bt.status || existing?.status || 'PENDING')
-              const isSynthetic = bt.source === 'synthetic' || /^TXN-\d{3,4}$/i.test(bt.id)
+              const resolvedStatus = isRec ? 'RECOVERED' : (bt.status || existing?.status || 'STOPPED')
               const isRzpTest = bt.source === 'razorpay_test' || bt.id.startsWith('RZP-')
-              const resolvedSource: TransactionSource = isSynthetic
-                ? 'synthetic'
-                : isRzpTest
-                ? 'razorpay_test'
-                : 'live'
+              const resolvedSource: TransactionSource = isRzpTest ? 'razorpay_test' : 'live'
 
               if (existing) {
                 const updated: CanonicalTransaction = {

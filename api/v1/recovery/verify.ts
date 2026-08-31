@@ -219,7 +219,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     let body = req.body
     if (typeof body === 'string') body = JSON.parse(body)
 
-    const { transaction_id, payment_id, order_id, amount_minor, currency = 'INR' } = body || {}
+    const { transaction_id, amount_minor, currency = 'INR' } = body || {}
+    const payment_id = body?.payment_id || body?.razorpay_payment_id
+    const order_id = body?.order_id || body?.razorpay_order_id
     const cleanKey = typeof transaction_id === 'string' ? transaction_id.trim().toUpperCase() : ''
 
     if (!cleanKey || !payment_id) {
@@ -265,6 +267,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     txns[cleanKey] = updated
     if (txn?.id) txns[txn.id] = updated
+    inMemoryTransactions.set(cleanKey.toUpperCase(), updated)
+    if (txn?.id) inMemoryTransactions.set(txn.id.toUpperCase(), updated)
+    saveLocalFileStore()
     await updateGistTransactions({ [cleanKey]: updated, [txn?.id || cleanKey]: updated }, req)
 
     res.status(200).json({

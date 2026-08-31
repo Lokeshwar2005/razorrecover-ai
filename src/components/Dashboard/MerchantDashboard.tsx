@@ -88,28 +88,9 @@ export const MerchantDashboard: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          {/* Mode Switcher */}
-          <div className="flex items-center p-1 rounded-lg bg-[#15120c] border border-[#2e271c] text-xs font-mono">
-            <button
-              onClick={() => setMode('live')}
-              className={`px-3 py-1 rounded-md transition font-bold ${
-                mode === 'live'
-                  ? 'bg-[#10b981] text-[#080705]'
-                  : 'text-[#a89f91] hover:text-[#f4ede2]'
-              }`}
-            >
-              ● Live Mode ({metrics.liveCount})
-            </button>
-            <button
-              onClick={() => setMode('all')}
-              className={`px-3 py-1 rounded-md transition font-bold ${
-                mode === 'all'
-                  ? 'bg-[#e5a944] text-[#080705]'
-                  : 'text-[#a89f91] hover:text-[#f4ede2]'
-              }`}
-            >
-              Sandbox / All ({transactions.length})
-            </button>
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-xs font-mono text-[#10b981]">
+            <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+            <span>Live Stream: {metrics.liveCount} Events</span>
           </div>
 
           <button
@@ -231,7 +212,7 @@ export const MerchantDashboard: React.FC = () => {
           <div className="flex items-center gap-2">
             <span className="text-base">⚡</span>
             <h2 className="text-sm font-bold text-[#f4ede2]">
-              {mode === 'live' ? 'Live Production Transaction Stream' : 'Canonical Transaction Stream'}
+              Live Chronova Payment Stream
             </h2>
           </div>
           <a href="/transactions" className="text-[#e5a944] hover:underline">
@@ -240,11 +221,20 @@ export const MerchantDashboard: React.FC = () => {
         </div>
 
         {activeTransactions.length === 0 ? (
-          <div className="p-8 rounded-lg bg-[#15120c] border border-[#2e271c] text-center space-y-2 text-[#a89f91]">
-            <p>No transactions available in this view.</p>
-            <p className="text-[11px] text-[#7a7164]">
-              Trigger a test purchase on Chronova or switch to Sandbox Mode to inspect sample telemetry.
+          <div className="p-8 rounded-lg bg-[#15120c] border border-[#2e271c] text-center space-y-3 text-[#a89f91]">
+            <p className="text-sm font-semibold text-[#f4ede2]">Waiting for payment events from Chronova storefront.</p>
+            <p className="text-[11px] text-[#7a7164] max-w-md mx-auto">
+              Open Chronova, select a timepiece, and trigger a checkout failure or payment to see live autonomous recovery in action.
             </p>
+            <div>
+              <a
+                href="/chronova"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs hover:bg-[#fcd34d] transition"
+              >
+                <span>Open Chronova Storefront</span>
+                <span>↗</span>
+              </a>
+            </div>
           </div>
         ) : (
           <div className="space-y-2">
@@ -273,7 +263,7 @@ export const MerchantDashboard: React.FC = () => {
                           : 'bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40'
                       }`}
                     >
-                      {isRec ? 'RECOVERED' : 'FAILED'}
+                      {isRec ? 'Payment Recovered' : 'Payment Failed'}
                     </span>
                   </div>
                 </div>

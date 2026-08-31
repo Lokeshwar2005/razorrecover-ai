@@ -155,7 +155,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const txns = await fetchGistTransactions(req)
-    const list = Object.values(txns)
+    const list = Object.values(txns).filter((t: any) => {
+      if (!t || !t.id) return false
+      const isSynthetic = t.source === 'synthetic' || /^TXN-\d{3,4}$/i.test(t.id)
+      return !isSynthetic
+    })
 
     res.status(200).json({
       success: true,

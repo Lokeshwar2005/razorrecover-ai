@@ -316,32 +316,17 @@ export const TransactionExplorer: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#2e271c]/50 pb-3 text-xs font-mono">
           <div className="flex items-center gap-2">
             <span className="text-[#7a7164] text-[11px]">DATA SOURCE:</span>
-            {[
-              { id: 'all', label: 'ALL SOURCES', count: metrics.totalTransactions },
-              { id: 'synthetic', label: 'SYNTHETIC', count: metrics.syntheticCount },
-              { id: 'razorpay_test', label: 'RAZORPAY TEST', count: metrics.providerTestCount },
-              { id: 'live', label: 'LIVE', count: metrics.liveCount },
-            ].map((src) => (
-              <button
-                key={src.id}
-                onClick={() => setSourceFilter(src.id as any)}
-                className={`px-2.5 py-1 rounded border transition flex items-center gap-1.5 ${
-                  sourceFilter === src.id
-                    ? 'bg-[#e5a944] text-[#080705] border-[#e5a944] font-bold'
-                    : 'bg-[#15120c] text-[#a89f91] border-[#2e271c] hover:border-[#453d32]'
-                }`}
-              >
-                <span>{src.label}</span>
-                <span className={`px-1.5 py-0.2 rounded text-[10px] ${sourceFilter === src.id ? 'bg-[#080705]/20 text-[#080705]' : 'bg-[#2e271c] text-[#a89f91]'}`}>
-                  {src.count}
-                </span>
-              </button>
-            ))}
+            <span className="px-2.5 py-1 rounded bg-[#e5a944] text-[#080705] border border-[#e5a944] font-bold flex items-center gap-1.5">
+              <span>CHRONOVA STOREFRONT (LIVE)</span>
+              <span className="px-1.5 py-0.2 rounded text-[10px] bg-[#080705]/20 text-[#080705]">
+                {metrics.liveCount}
+              </span>
+            </span>
           </div>
 
           <div className="text-[11px] text-[#7a7164] flex items-center gap-1.5">
-            <span className={`w-2 h-2 rounded-full ${providerFeedStatus === 'connected' ? 'bg-[#10b981]' : 'bg-[#e5a944]'}`} />
-            <span>Feed: {providerFeedStatus === 'connected' ? 'Razorpay Test Connected' : 'Synthetic Mode'}</span>
+            <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+            <span>Feed: Razorpay Live Ingestion Active</span>
           </div>
         </div>
 
@@ -350,7 +335,7 @@ export const TransactionExplorer: React.FC = () => {
           <div className="w-full md:w-96 relative">
             <input
               type="text"
-              placeholder="Search by ID (e.g. 1033), provider (e.g. pay_TVWR), reason..."
+              placeholder="Search by transaction ID, payment ID, order ID, failure reason..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full px-3.5 py-2 pl-9 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#f4ede2] text-xs font-mono focus:outline-none focus:border-[#e5a944]"
@@ -378,13 +363,11 @@ export const TransactionExplorer: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-[#2e271c]/50 text-xs font-mono">
           <span className="text-[#7a7164] text-[11px]">STATUS:</span>
           {[
-            { id: 'all', label: 'All Statuses', count: transactions.length },
-            { id: 'pending', label: 'Pending', count: metrics.pendingCount },
-            { id: 'recovered', label: 'Recovered', count: metrics.recoveredCount },
-            { id: 'failed', label: 'Failed / Stopped', count: metrics.stoppedCount },
+            { id: 'all', label: 'All Transactions', count: transactions.length },
+            { id: 'failed', label: 'Payment Failed', count: metrics.stoppedCount },
+            { id: 'pending', label: 'Waiting for Recovery', count: metrics.pendingCount },
+            { id: 'recovered', label: 'Payment Recovered', count: metrics.recoveredCount },
             { id: 'blocked', label: 'Policy Gated', count: metrics.blockedCount },
-            { id: 'high_risk', label: 'High Risk (≥60)', count: metrics.highRiskCount },
-            { id: 'high_value', label: 'High Value (≥₹20k)', count: metrics.highValueCount },
           ].map((pill) => (
             <button
               key={pill.id}
@@ -491,19 +474,19 @@ export const TransactionExplorer: React.FC = () => {
                       
                       {isRecovered ? (
                         <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
-                          ✓ RECOVERED
+                          ✓ PAYMENT RECOVERED
                         </span>
                       ) : isStopped ? (
                         <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
-                          STOPPED
+                          PAYMENT FAILED
                         </span>
                       ) : txn.status === 'IN_PROGRESS' ? (
                         <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
-                          ⚡ IN PROGRESS
+                          ⚡ RECOVERY IN PROGRESS
                         </span>
                       ) : (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30 font-bold ml-auto md:ml-0">
-                          PENDING
+                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#fcd34d]/20 text-[#fcd34d] border border-[#fcd34d]/40 font-bold ml-auto md:ml-0">
+                          WAITING FOR RECOVERY
                         </span>
                       )}
                     </div>
