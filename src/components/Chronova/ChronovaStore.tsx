@@ -291,10 +291,9 @@ export const ChronovaStore: React.FC = () => {
     { label: 'Above ₹25,000', min: 25000, max: 1000000, id: 'above-25k' },
   ]
 
-  const movementOptions = ['Precision Japanese Quartz', 'Mechanical Automatic', 'Smart Digital OS']
-  const displayOptions = ['AMOLED', 'High-Res TFT', 'Analog Dial', 'Digital LCD']
-  const dialColors = ['Obsidian Black', 'Sunburst Midnight Blue', 'Emerald Green', 'Champagne Gold', 'Silver Sunray']
-  const strapMaterials = ['Genuine Leather', 'Stainless Steel', 'Silicone', 'Ceramic', 'Titanium Mesh']
+  const movementOptions = ['Quartz', 'Automatic / Mechanical', 'Smart OS / Digital']
+  const dialColors = ['Black / Dark', 'Silver / White', 'Blue / Navy', 'Green / Emerald', 'Gold / Champagne']
+  const strapMaterials = ['Stainless Steel', 'Genuine Leather', 'Silicone / Resin', 'Ceramic']
 
   // Filtered & Sorted Catalog
   const filteredProducts = useMemo(() => {
@@ -349,16 +348,43 @@ export const ChronovaStore: React.FC = () => {
       if (selectedGenders.length > 0 && !selectedGenders.includes(p.gender)) return false
 
       // Movement Filter
-      if (selectedMovements.length > 0 && !selectedMovements.some((m) => p.specs.movement.includes(m))) return false
-
-      // Display Type Filter
-      if (selectedDisplayTypes.length > 0 && !selectedDisplayTypes.some((d) => (p.specs.display_type || '').includes(d))) return false
+      if (selectedMovements.length > 0) {
+        const movMatch = selectedMovements.some((m) => {
+          const movLower = (p.specs.movement || '').toLowerCase()
+          if (m === 'Quartz') return movLower.includes('quartz') || movLower.includes('calibre') || movLower.includes('module')
+          if (m === 'Automatic / Mechanical') return movLower.includes('automatic') || movLower.includes('mechanical') || movLower.includes('self-winding')
+          if (m === 'Smart OS / Digital') return movLower.includes('noise') || movLower.includes('smart') || movLower.includes('digital') || movLower.includes('wear')
+          return false
+        })
+        if (!movMatch) return false
+      }
 
       // Dial Color Filter
-      if (selectedDialColors.length > 0 && !selectedDialColors.some((c) => (p.specs.dial_color || '').includes(c))) return false
+      if (selectedDialColors.length > 0) {
+        const dialMatch = selectedDialColors.some((c) => {
+          const dialLower = (p.specs.dial_color || '').toLowerCase()
+          if (c === 'Black / Dark') return dialLower.includes('black') || dialLower.includes('anthracite') || dialLower.includes('carbon') || dialLower.includes('gunmetal')
+          if (c === 'Silver / White') return dialLower.includes('silver') || dialLower.includes('white') || dialLower.includes('grey') || dialLower.includes('gray') || dialLower.includes('cream') || dialLower.includes('pearl')
+          if (c === 'Blue / Navy') return dialLower.includes('blue') || dialLower.includes('navy') || dialLower.includes('ocean') || dialLower.includes('cyan') || dialLower.includes('tiffany')
+          if (c === 'Green / Emerald') return dialLower.includes('green') || dialLower.includes('emerald') || dialLower.includes('teal')
+          if (c === 'Gold / Champagne') return dialLower.includes('gold') || dialLower.includes('champagne') || dialLower.includes('beige') || dialLower.includes('amber')
+          return false
+        })
+        if (!dialMatch) return false
+      }
 
       // Strap Material Filter
-      if (selectedStrapMaterials.length > 0 && !selectedStrapMaterials.some((s) => (p.specs.strap_material || '').includes(s))) return false
+      if (selectedStrapMaterials.length > 0) {
+        const strapMatch = selectedStrapMaterials.some((s) => {
+          const strapLower = (p.specs.strap_material || '').toLowerCase()
+          if (s === 'Stainless Steel') return strapLower.includes('steel') || strapLower.includes('metal') || strapLower.includes('mesh') || strapLower.includes('gold')
+          if (s === 'Genuine Leather') return strapLower.includes('leather') || strapLower.includes('calfskin')
+          if (s === 'Silicone / Resin') return strapLower.includes('silicone') || strapLower.includes('resin') || strapLower.includes('polyether') || strapLower.includes('plastic')
+          if (s === 'Ceramic') return strapLower.includes('ceramic')
+          return false
+        })
+        if (!strapMatch) return false
+      }
 
       // Discount Filter
       if (selectedDiscounts.length > 0 && !selectedDiscounts.some((d) => p.discount_percent >= d)) return false
@@ -617,26 +643,26 @@ export const ChronovaStore: React.FC = () => {
         )}
       </div>
 
-      {/* DISPLAY TYPE ACCORDION */}
+      {/* DIAL COLOR ACCORDION */}
       <div className="border-b border-slate-200 pb-3">
         <button
-          onClick={() => toggleAccordion('display')}
+          onClick={() => toggleAccordion('dial')}
           className="w-full flex items-center justify-between py-1 text-xs font-bold uppercase text-slate-900 cursor-pointer"
         >
-          <span>DISPLAY TYPE</span>
-          <span>{openAccordions.display ? '⌃' : '⌄'}</span>
+          <span>DIAL / CASE COLOR</span>
+          <span>{openAccordions.dial ? '⌃' : '⌄'}</span>
         </button>
-        {openAccordions.display && (
+        {openAccordions.dial && (
           <div className="mt-2 space-y-1.5">
-            {displayOptions.map((disp) => (
-              <label key={disp} className="flex items-center gap-2 text-slate-700 cursor-pointer hover:text-slate-900">
+            {dialColors.map((color) => (
+              <label key={color} className="flex items-center gap-2 text-slate-700 cursor-pointer hover:text-slate-900">
                 <input
                   type="checkbox"
-                  checked={selectedDisplayTypes.includes(disp)}
-                  onChange={() => toggleArrayItem(selectedDisplayTypes, disp, setSelectedDisplayTypes)}
+                  checked={selectedDialColors.includes(color)}
+                  onChange={() => toggleArrayItem(selectedDialColors, color, setSelectedDialColors)}
                   className="rounded border-slate-300 text-slate-900 focus:ring-0 cursor-pointer"
                 />
-                <span className="text-xs">{disp}</span>
+                <span className="text-xs">{color}</span>
               </label>
             ))}
           </div>
@@ -1520,57 +1546,58 @@ export const ChronovaStore: React.FC = () => {
       )}
 
       {/* 10. Multi-Column Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-16 mt-20 text-xs border-t border-slate-800">
+      <footer className="bg-[#0b1120] text-slate-300 py-16 mt-20 text-xs border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-white text-slate-900 font-black flex items-center justify-center text-lg">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-white text-slate-950 font-black flex items-center justify-center text-xl shadow-md">
                 ⧖
               </div>
-              <span className="text-white font-black text-lg tracking-wider">CHRONOVA</span>
+              <span className="text-white font-black text-xl tracking-wider">CHRONOVA</span>
             </div>
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-slate-300 leading-relaxed font-normal">
               India's premier luxury and connected horology destination. Offering 100% authentic manufacturer warranty and pan-India express courier delivery.
             </p>
-            <div className="pt-2 text-white font-bold text-xs font-mono">
+            <div className="pt-2 text-amber-400 font-black text-sm tracking-widest font-mono">
               "FIND YOUR TIME."
             </div>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-white font-bold uppercase tracking-wider font-mono">Customer Service</h4>
-            <ul className="space-y-2">
-              <li className="hover:text-white cursor-pointer">Track Order Status</li>
-              <li className="hover:text-white cursor-pointer">Doorstep Warranty Claims</li>
-              <li className="hover:text-white cursor-pointer">Free 7-Day Replacement</li>
-              <li className="hover:text-white cursor-pointer">Authenticity Certificate</li>
-              <li className="hover:text-white cursor-pointer">Store Locator</li>
+            <h4 className="text-white font-black uppercase tracking-wider font-mono text-xs">Customer Service</h4>
+            <ul className="space-y-2 text-slate-300 font-medium">
+              <li className="hover:text-white transition cursor-pointer">Track Order Status</li>
+              <li className="hover:text-white transition cursor-pointer">Doorstep Warranty Claims</li>
+              <li className="hover:text-white transition cursor-pointer">Free 7-Day Replacement</li>
+              <li className="hover:text-white transition cursor-pointer">Authenticity Certificate</li>
+              <li className="hover:text-white transition cursor-pointer">Store Locator</li>
             </ul>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-white font-bold uppercase tracking-wider font-mono">Approved Brands</h4>
-            <ul className="space-y-2">
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan (Edge, Maritime, Karishma)</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack (Stunners, UFO, Thor)</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio (G-Shock, Vintage, Edifice)</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Noise']); setCurrentView('catalog'); }}>Noise (ColorFit, Diva, Halo, Origin)</li>
-              <li className="hover:text-white cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fossil']); setCurrentView('catalog'); }}>Fossil (Grant, Machine, Raquel, Townsman)</li>
+            <h4 className="text-white font-black uppercase tracking-wider font-mono text-xs">Approved Brands</h4>
+            <ul className="space-y-2 text-slate-300 font-medium">
+              <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan (Edge, Maritime, Karishma)</li>
+              <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack (Stunners, UFO, Thor)</li>
+              <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio (G-Shock, Vintage, Edifice)</li>
+              <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Noise']); setCurrentView('catalog'); }}>Noise (ColorFit, Diva, Halo, Origin)</li>
+              <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fossil']); setCurrentView('catalog'); }}>Fossil (Grant, Machine, Raquel, Townsman)</li>
             </ul>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-white font-bold uppercase tracking-wider font-mono">Payment & Security</h4>
-            <p className="text-slate-400 leading-relaxed">
+            <h4 className="text-white font-black uppercase tracking-wider font-mono text-xs">Payment & Security</h4>
+            <p className="text-slate-300 leading-relaxed font-normal">
               Secured by 256-bit SSL encryption. Supporting UPI, NetBanking, Credit/Debit Cards, and Razorpay Test Mode.
             </p>
-            <div className="pt-2 text-emerald-400 font-mono font-bold">
-              ✓ Verified Merchant Checkout Active
+            <div className="pt-2 text-emerald-400 font-mono font-black text-xs flex items-center gap-1.5">
+              <span>✓</span>
+              <span>Verified Merchant Checkout Active</span>
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 mt-10 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 mt-10 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>© 2026 CHRONOVA Timepieces Inc. All rights reserved.</div>
           <div className="font-mono text-slate-400">Designed for watch lovers across India</div>
         </div>
