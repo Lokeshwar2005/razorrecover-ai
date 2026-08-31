@@ -2062,7 +2062,7 @@
       "amount_minor": 1299500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "Issuer Velocity Heuristic Triggered (False Positive Soft Decline)",
       "action": "Dispatch Biometric Verified Secure Link",
@@ -2073,13 +2073,13 @@
       "explanation": "False positive velocity flag. Cryptographic biometric challenge dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:03:37.134Z",
-      "updated_at": "2026-08-31T14:03:39.988Z",
+      "updated_at": "2026-08-31T14:03:42.685Z",
       "provider": "razorpay",
-      "provider_id": "order_test_risk_engine_flag_1788184985294",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788184985294",
+      "provider_id": "pay_test_capture_risk_engine_flag_1788184985294",
+      "provider_payment_id": "pay_test_capture_risk_engine_flag_1788184985294",
       "provider_order_id": "order_test_risk_engine_flag_1788184985294",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 1299500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -2102,8 +2102,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIORISKENGINEFLAG1788184985294",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788184985294 [REC-20260831-TXNE2ESCENARIORISKENGINEFLAG1788184985294] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹12,995 for TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788184985294.",
+      "captured_at": "2026-08-31T14:03:42.685Z"
     }
   }
 }
