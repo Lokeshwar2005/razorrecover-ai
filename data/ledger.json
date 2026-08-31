@@ -6431,6 +6431,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹4,295 for TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788186083371.",
       "captured_at": "2026-08-31T14:22:19.457Z"
+    },
+    "TXN-E2E-SCENARIO-CART_ABANDONMENT-1788186083371": {
+      "id": "TXN-E2E-SCENARIO-CART_ABANDONMENT-1788186083371",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 7995,
+      "amount_minor": 799500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Customer Dismissed Razorpay Checkout Window Before Submitting Credentials",
+      "action": "Send Cart Recovery WhatsApp with 5% Perk",
+      "confidence": 94,
+      "recovery_probability": 89,
+      "risk_score": 18,
+      "policy": "Approved",
+      "explanation": "High-intent cart abandonment detected. Automated promotional recovery link dispatched.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:22:22.286Z",
+      "updated_at": "2026-08-31T14:22:22.286Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_cart_abandonment_1788186083371",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-CART_ABANDONMENT-1788186083371",
+      "provider_order_id": "order_test_cart_abandonment_1788186083371",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "cart_abandonment",
+        "test": "test_3_all_scenarios",
+        "failure_code": "GATEWAY_DISMISSED_BY_USER",
+        "failure_reason": "Customer Dismissed Razorpay Checkout Window Before Submitting Credentials"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-CART_ABANDONMENT-1788186083371-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Customer Dismissed Razorpay Checkout Window Before Submitting Credentials",
+          "timestamp": "2026-08-31T14:22:22.286Z"
+        }
+      ]
     }
   }
 }
