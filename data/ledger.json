@@ -5240,7 +5240,7 @@
       "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:16:58.583Z",
-      "updated_at": "2026-08-31T14:17:02.557Z",
+      "updated_at": "2026-08-31T14:17:02.571Z",
       "provider": "razorpay",
       "provider_id": "pay_TXN-SEC-CONCURRENT-1788185805292",
       "provider_payment_id": "pay_TXN-SEC-CONCURRENT-1788185805292",
@@ -5269,6 +5269,53 @@
       "recovery_operation_id": "REC-20260831-TXNSECCONCURRENT1788185805292",
       "workflow_status": "COMPLETE",
       "workflow_message": "Recovery order created for TXN-SEC-CONCURRENT-1788185805292 [REC-20260831-TXNSECCONCURRENT1788185805292] — awaiting Test Mode payment."
+    },
+    "TXN-E2E-IDEMPOTENCY-33401725543": {
+      "id": "TXN-E2E-IDEMPOTENCY-33401725543",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 3713,
+      "amount_minor": 371300,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+      "action": "Send payment link",
+      "confidence": 95,
+      "recovery_probability": 88,
+      "risk_score": 20,
+      "policy": "Approved",
+      "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:18:03.403Z",
+      "updated_at": "2026-08-31T14:18:03.403Z",
+      "provider": "razorpay",
+      "provider_id": "pay_TXN-E2E-IDEMPOTENCY-33401725543",
+      "provider_payment_id": "pay_TXN-E2E-IDEMPOTENCY-33401725543",
+      "provider_order_id": "order_TXN-E2E-IDEMPOTENCY-33401725543",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "3ds_timeout",
+        "test": "idempotency",
+        "failure_code": "GATEWAY_ERROR_3DS_TIMEOUT",
+        "failure_reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-IDEMPOTENCY-33401725543-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+          "timestamp": "2026-08-31T14:18:03.403Z"
+        }
+      ]
     }
   }
 }
