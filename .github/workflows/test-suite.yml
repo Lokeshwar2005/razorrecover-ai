@@ -49,12 +49,12 @@ jobs:
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Content-Type: application/json' \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}" \
+                -H "x-github-token: ${{ secrets.GIST_TOKEN }}" \
                 --data "$body")
             else
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}")
+                -H "x-github-token: ${{ secrets.GIST_TOKEN }}")
             fi
 
             local response_body
@@ -154,12 +154,12 @@ jobs:
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Content-Type: application/json' \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}" \
+                -H "x-github-token: ${{ secrets.GIST_TOKEN }}" \
                 --data "$body")
             else
               status_code=$(curl -s -o "$response_file" -w "%{http_code}" -X "$method" "$url" \
                 -H 'Accept: application/json' \
-                -H "x-github-token: ${{ secrets.GITHUB_TOKEN }}")
+                -H "x-github-token: ${{ secrets.GIST_TOKEN }}")
             fi
 
             local response_body
@@ -227,14 +227,17 @@ jobs:
       - name: 3. Run Test #3 — All 8 Payment Failure Scenarios & AI Recovery
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
+          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: npx tsx scripts/test-all-scenarios-e2e.ts
 
       - name: 4. Run Test #5 — Full E2E Customer Storefront to Recovery Lifecycle
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
+          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: npx tsx scripts/test-e2e-customer-to-recovery.ts
 
       - name: 5. Run Test #6 — Security & Production Integrity Audit Suite
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
+          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: npx tsx scripts/test-security-integrity.ts
