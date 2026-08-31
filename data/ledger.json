@@ -9245,6 +9245,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹8,995 for TXN-E2E-SCENARIO-BANK_DOWNTIME-1788186869886.",
       "captured_at": "2026-08-31T14:35:02.502Z"
+    },
+    "TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788186869886": {
+      "id": "TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788186869886",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 12995,
+      "amount_minor": 1299500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Issuer Velocity Heuristic Triggered (False Positive Soft Decline)",
+      "action": "Dispatch Biometric Verified Secure Link",
+      "confidence": 89,
+      "recovery_probability": 82,
+      "risk_score": 40,
+      "policy": "Approved",
+      "explanation": "False positive velocity flag. Cryptographic biometric challenge dispatched.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:35:05.360Z",
+      "updated_at": "2026-08-31T14:35:05.360Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_risk_engine_flag_1788186869886",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788186869886",
+      "provider_order_id": "order_test_risk_engine_flag_1788186869886",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "risk_engine_flag",
+        "test": "test_3_all_scenarios",
+        "failure_code": "FRAUD_VELOCITY_SOFT_BLOCK",
+        "failure_reason": "Issuer Velocity Heuristic Triggered (False Positive Soft Decline)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788186869886-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Issuer Velocity Heuristic Triggered (False Positive Soft Decline)",
+          "timestamp": "2026-08-31T14:35:05.360Z"
+        }
+      ]
     }
   }
 }
