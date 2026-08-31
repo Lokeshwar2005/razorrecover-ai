@@ -11356,7 +11356,7 @@
       "amount_minor": 699500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)",
       "action": "Switch to UPI Auto-Pay / Split Link",
@@ -11367,13 +11367,13 @@
       "explanation": "Card decline due to temporary limit. Split payment link provisioned.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:46:33.636Z",
-      "updated_at": "2026-08-31T14:46:36.892Z",
+      "updated_at": "2026-08-31T14:46:40.045Z",
       "provider": "razorpay",
-      "provider_id": "order_test_low_balance_1788187582628",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-LOW_BALANCE-1788187582628",
+      "provider_id": "pay_test_capture_low_balance_1788187582628",
+      "provider_payment_id": "pay_test_capture_low_balance_1788187582628",
       "provider_order_id": "order_test_low_balance_1788187582628",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 699500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -11396,8 +11396,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOLOWBALANCE1788187582628",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-LOW_BALANCE-1788187582628 [REC-20260831-TXNE2ESCENARIOLOWBALANCE1788187582628] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹6,995 for TXN-E2E-SCENARIO-LOW_BALANCE-1788187582628.",
+      "captured_at": "2026-08-31T14:46:40.045Z"
     }
   }
 }
