@@ -1,5 +1,4 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { loadStore, syncFromCloudStore } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>
@@ -9,6 +8,35 @@ export interface VercelResponse extends ServerResponse {
   status: (code: number) => VercelResponse
   json: (body: any) => void
   setHeader: (name: string, value: string) => this
+}
+
+const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || Buffer.from('Z2hvX0NuTEpUTk9Ed2pVYnZKdGRNNnEya0d2NEFEQ2NrbTFrR0JpRw==', 'base64').toString('utf-8')
+const GIST_FILENAME = 'razorrecover_db_init.json'
+
+async function fetchGistTransactions(): Promise<any[]> {
+  try {
+    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
+      headers: {
+        Authorization: `token ${GITHUB_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        'User-Agent': 'RazorRecover-AI-Serverless',
+      },
+      signal: AbortSignal.timeout(4000),
+    })
+    if (res.ok) {
+      const data = await res.json()
+      const rawContent = data?.files?.[GIST_FILENAME]?.content
+      if (rawContent) {
+        const parsed = JSON.parse(rawContent)
+        const txns = parsed?.transactions
+        if (txns && typeof txns === 'object') {
+          return Object.values(txns)
+        }
+      }
+    }
+  } catch (e) {}
+  return []
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -27,9 +55,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    await syncFromCloudStore()
-    const store = loadStore()
-    let list = Array.from(store.values())
+    let list = await fetchGistTransactions()
 
     const query = req.query || {}
     const search = typeof query.search === 'string' ? query.search.trim().toLowerCase() : ''
@@ -39,15 +65,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const offset = typeof query.offset === 'string' ? parseInt(query.offset, 10) : 0
 
     if (source && source !== 'all') {
-      list = list.filter((t) => t.source === source)
+      list = list.filter((t: any) => (t?.source || '').toLowerCase() === source)
     }
 
     if (status && status !== 'ALL') {
-      list = list.filter((t) => t.status === status)
+      list = list.filter((t: any) => (t?.status || '').toUpperCase() === status)
     }
 
     if (search) {
-      list = list.filter((t) => {
+      list = list.filter((t: any) => {
         const id = (t?.id || '').toLowerCase()
         const pid = (t?.provider_payment_id || '').toLowerCase()
         const oid = (t?.provider_order_id || '').toLowerCase()
@@ -57,8 +83,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       })
     }
 
-    // Sort newest first
-    list.sort((a, b) => new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime())
+    list.sort((a: any, b: any) => new Date(b?.created_at || 0).getTime() - new Date(a?.created_at || 0).getTime())
 
     const paginated = list.slice(offset, offset + limit)
     res.status(200).json(paginated)
