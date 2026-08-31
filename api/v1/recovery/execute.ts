@@ -11,7 +11,7 @@ export interface VercelResponse extends ServerResponse {
 }
 
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || Buffer.from('Z2hvX0NuTEpUTk9Ed2pVYnZKdGRNNnEya0d2NEFEQ2NrbTFrR0JpRw==', 'base64').toString('utf-8')
+const GITHUB_TOKEN = (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) || atob('Z2hvX0NuTEpUTk9Ed2pVYnZKdGRNNnEya0d2NEFEQ2NrbTFrR0JpRw==')
 const GIST_FILENAME = 'razorrecover_db_init.json'
 
 async function fetchGistTransactions(): Promise<Record<string, any>> {
