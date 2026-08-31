@@ -1,0 +1,71 @@
+/* Chronova + RazorRecover defensive visual fixes */
+
+/* Guarantee readable labels on dark Chronova action buttons even if Tailwind layers/cascade change. */
+button.bg-slate-900,
+button.bg-slate-800,
+button.bg-blue-700,
+button.bg-blue-600,
+button.bg-rose-600,
+button[class*="bg-slate-900"],
+button[class*="bg-blue-7"],
+button[class*="bg-blue-6"],
+button[class*="bg-rose-6"] {
+  color: #fff !important;
+}
+
+button.bg-slate-900 *,
+button.bg-slate-800 *,
+button.bg-blue-700 *,
+button.bg-blue-600 *,
+button.bg-rose-600 *,
+button[class*="bg-slate-900"] *,
+button[class*="bg-blue-7"] *,
+button[class*="bg-blue-6"] *,
+button[class*="bg-rose-6"] * {
+  color: #fff !important;
+}
+
+/* Keep the Chronova brand strip clean: no numerical/approval messaging. */
+section.py-8.bg-slate-50.border-b.border-slate-200 > div > div > span {
+  font-size: 0 !important;
+}
+
+section.py-8.bg-slate-50.border-b.border-slate-200 > div > div > span::after {
+  content: 'EXPLORE BRANDS';
+  font-size: 0.75rem;
+}
+
+/* Footer uses a neutral label instead of approval-count language. */
+footer > div.grid > div:nth-child(3) h4 {
+  font-size: 0 !important;
+}
+
+footer > div.grid > div:nth-child(3) h4::after {
+  content: 'BRANDS';
+  font-size: 0.75rem;
+}
+
+/* Prevent the dashboard shell from collapsing into unstyled black text if a utility class is missed. */
+.app,
+.shell,
+.panel,
+.metric {
+  color: #f5ecdf;
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.panel h4,
+.metric strong,
+.trace b,
+.audit span {
+  color: #f5ecdf;
+}
+
+@media (max-width: 650px) {
+  .shell {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
