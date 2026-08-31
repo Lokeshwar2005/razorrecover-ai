@@ -1,1 +1,8 @@
-{"transactions":{}}
+{
+  "transactions": {
+    "TXN-TEST-123": {
+      "id": "TXN-TEST-123",
+      "status": "RECOVERED"
+    }
+  }
+}
