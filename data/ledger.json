@@ -2817,7 +2817,7 @@
       "amount_minor": 549500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "Client TCP Connection Reset During 3D-Secure Handshake (Network Flap)",
       "action": "Send 1-Click SMS Recovery Link",
@@ -2828,13 +2828,13 @@
       "explanation": "Customer network handshake dropped. Direct tokenized SMS retry link generated.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:06:29.586Z",
-      "updated_at": "2026-08-31T14:06:31.960Z",
+      "updated_at": "2026-08-31T14:06:34.439Z",
       "provider": "razorpay",
-      "provider_id": "order_test_network_drop_1788185151602",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-NETWORK_DROP-1788185151602",
+      "provider_id": "pay_test_capture_network_drop_1788185151602",
+      "provider_payment_id": "pay_test_capture_network_drop_1788185151602",
       "provider_order_id": "order_test_network_drop_1788185151602",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 549500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -2857,8 +2857,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIONETWORKDROP1788185151602",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-NETWORK_DROP-1788185151602 [REC-20260831-TXNE2ESCENARIONETWORKDROP1788185151602] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹5,495 for TXN-E2E-SCENARIO-NETWORK_DROP-1788185151602.",
+      "captured_at": "2026-08-31T14:06:34.439Z"
     }
   }
 }
