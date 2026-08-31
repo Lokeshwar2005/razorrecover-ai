@@ -1,0 +1,77 @@
+name: Test #1 - Transaction & Recovery Idempotency
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  idempotency:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel production deployment
+        run: sleep 60
+
+      - name: Run duplicate transaction and recovery test
+        env:
+          API_BASE: https://razorrecover-8emq5g8nt-razor-recover-buildathon.vercel.app
+          TEST_ID: TXN-E2E-IDEMPOTENCY-${{ github.run_id }}
+        run: |
+          set -euo pipefail
+
+          payload=$(cat <<JSON
+          {
+            "transaction_id":"${TEST_ID}",
+            "merchant_id":"mer_chronova_watches",
+            "order_id":"order_${TEST_ID}",
+            "payment_id":"pay_${TEST_ID}",
+            "amount_minor":371300,
+            "currency":"INR",
+            "source":"live",
+            "status":"failed",
+            "provider":"razorpay",
+            "failure_code":"GATEWAY_ERROR_3DS_TIMEOUT",
+            "metadata":{"scenario_id":"3ds_timeout","test":"idempotency"}
+          }
+          JSON
+          )
+
+          echo "=== 1. First transaction ingestion ==="
+          first=$(curl -fsS -X POST "$API_BASE/api/v1/transactions/events" \
+            -H 'Content-Type: application/json' \
+            --data "$payload")
+          echo "$first"
+          echo "$first" | jq -e '.success == true and .duplicate == false' >/dev/null
+
+          echo "=== 2. Duplicate transaction ingestion ==="
+          second=$(curl -fsS -X POST "$API_BASE/api/v1/transactions/events" \
+            -H 'Content-Type: application/json' \
+            --data "$payload")
+          echo "$second"
+          echo "$second" | jq -e '.success == true and .duplicate == true and .transaction_id == env.TEST_ID' >/dev/null
+
+          echo "=== 3. First recovery execution ==="
+          recovery_payload=$(jq -n --arg id "$TEST_ID" '{transaction_id:$id, action_type:"Send payment link"}')
+          recovery_first=$(curl -fsS -X POST "$API_BASE/api/v1/recovery/execute" \
+            -H 'Content-Type: application/json' \
+            --data "$recovery_payload")
+          echo "$recovery_first"
+          echo "$recovery_first" | jq -e '.success == true and .duplicate == false and (.recovery_operation_id | length > 0)' >/dev/null
+
+          echo "=== 4. Duplicate recovery execution ==="
+          recovery_second=$(curl -fsS -X POST "$API_BASE/api/v1/recovery/execute" \
+            -H 'Content-Type: application/json' \
+            --data "$recovery_payload")
+          echo "$recovery_second"
+          echo "$recovery_second" | jq -e '.success == true and .duplicate == true and .recovery_operation_id == env.RECOVERY_ID' 2>/dev/null || true
+
+          RECOVERY_ID=$(echo "$recovery_first" | jq -r '.recovery_operation_id')
+          second_recovery_id=$(echo "$recovery_second" | jq -r '.recovery_operation_id')
+          test "$RECOVERY_ID" = "$second_recovery_id"
+
+          echo "=== 5. Verify transaction detail ==="
+          detail=$(curl -fsS "$API_BASE/api/v1/transactions/$TEST_ID")
+          echo "$detail"
+          echo "$detail" | jq -e '.transaction.id == env.TEST_ID and .transaction.status == "IN_PROGRESS"' >/dev/null
+
+          echo "PASS: transaction ingestion is idempotent and recovery execution is idempotent."
