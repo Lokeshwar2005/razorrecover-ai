@@ -906,11 +906,12 @@ export const useTransactionStore = create<CanonicalStoreState>((set, get) => {
               const saved = getPersistedStateForTransaction(bt.id, bt.provider_id || bt.provider_payment_id, bt.provider_order_id)
               const isRec = bt.status === 'RECOVERED' || (saved && saved.recovery_status === 'RECOVERED')
               const resolvedStatus = isRec ? 'RECOVERED' : (bt.status || existing?.status || 'PENDING')
-              const isLiveTxn = bt.source === 'live' || bt.id.startsWith('TXN-CN-')
-              const resolvedSource: TransactionSource = isLiveTxn
-                ? 'live'
-                : bt.source === 'synthetic'
+              const isSynthetic = /^TXN-(10[0-4][0-9]|09[4-9][0-9])$/i.test(bt.id) || bt.source === 'synthetic'
+              const isLiveTxn = bt.source === 'live' || bt.id.startsWith('TXN-') || (!bt.id.startsWith('RZP-') && !isSynthetic)
+              const resolvedSource: TransactionSource = isSynthetic
                 ? 'synthetic'
+                : isLiveTxn
+                ? 'live'
                 : 'razorpay_test'
 
               if (existing) {
