@@ -11524,6 +11524,100 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹8,995 for TXN-E2E-TEST2-RECOVERY-33404520332.",
       "captured_at": "2026-08-31T14:47:00.578Z"
+    },
+    "TXN-E2E-SCENARIO-BANK_DOWNTIME-1788187582628": {
+      "id": "TXN-E2E-SCENARIO-BANK_DOWNTIME-1788187582628",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 8995,
+      "amount_minor": 899500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
+      "action": "Smart Routing to Alternate Bank Node",
+      "confidence": 99,
+      "recovery_probability": 91,
+      "risk_score": 10,
+      "policy": "Approved",
+      "explanation": "Issuer node 502 detected. Re-routed authorization through redundant bank gateway.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:46:53.441Z",
+      "updated_at": "2026-08-31T14:46:53.441Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_bank_downtime_1788187582628",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-BANK_DOWNTIME-1788187582628",
+      "provider_order_id": "order_test_bank_downtime_1788187582628",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "bank_downtime",
+        "test": "test_3_all_scenarios",
+        "failure_code": "ISSUER_CBS_DOWN_502",
+        "failure_reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-BANK_DOWNTIME-1788187582628-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
+          "timestamp": "2026-08-31T14:46:53.441Z"
+        }
+      ]
+    },
+    "TXN-E2E-SCENARIO-3DS_TIMEOUT-1788187632140": {
+      "id": "TXN-E2E-SCENARIO-3DS_TIMEOUT-1788187632140",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 4995,
+      "amount_minor": 499500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+      "action": "Send payment link",
+      "confidence": 95,
+      "recovery_probability": 88,
+      "risk_score": 20,
+      "policy": "Approved",
+      "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:47:13.121Z",
+      "updated_at": "2026-08-31T14:47:13.121Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_3ds_timeout_1788187632140",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-3DS_TIMEOUT-1788187632140",
+      "provider_order_id": "order_test_3ds_timeout_1788187632140",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "3ds_timeout",
+        "test": "test_3_all_scenarios",
+        "failure_code": "GATEWAY_ERROR_3DS_TIMEOUT",
+        "failure_reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-3DS_TIMEOUT-1788187632140-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+          "timestamp": "2026-08-31T14:47:13.121Z"
+        }
+      ]
     }
   }
 }
