@@ -12450,6 +12450,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹6,995 for TXN-E2E-SCENARIO-LOW_BALANCE-1788187962977.",
       "captured_at": "2026-08-31T14:52:57.291Z"
+    },
+    "TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187962977": {
+      "id": "TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187962977",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 3495,
+      "amount_minor": 349500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "UPI Intent Session Expired (Customer Backgrounded App to Check SMS)",
+      "action": "Send instant WhatsApp UPI deep link",
+      "confidence": 97,
+      "recovery_probability": 94,
+      "risk_score": 12,
+      "policy": "Approved",
+      "explanation": "UPI app switch timeout detected. High-intent 1-click WhatsApp deep link activated.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:52:59.824Z",
+      "updated_at": "2026-08-31T14:52:59.824Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_upi_intent_drop_1788187962977",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187962977",
+      "provider_order_id": "order_test_upi_intent_drop_1788187962977",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "upi_intent_drop",
+        "test": "test_3_all_scenarios",
+        "failure_code": "UPI_INTENT_TIMEOUT",
+        "failure_reason": "UPI Intent Session Expired (Customer Backgrounded App to Check SMS)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187962977-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "UPI Intent Session Expired (Customer Backgrounded App to Check SMS)",
+          "timestamp": "2026-08-31T14:52:59.824Z"
+        }
+      ]
     }
   }
 }
