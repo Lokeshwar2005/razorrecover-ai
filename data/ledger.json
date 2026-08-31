@@ -12458,7 +12458,7 @@
       "amount_minor": 349500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "UPI Intent Session Expired (Customer Backgrounded App to Check SMS)",
       "action": "Send instant WhatsApp UPI deep link",
@@ -12469,7 +12469,7 @@
       "explanation": "UPI app switch timeout detected. High-intent 1-click WhatsApp deep link activated.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:52:59.824Z",
-      "updated_at": "2026-08-31T14:52:59.824Z",
+      "updated_at": "2026-08-31T14:53:03.491Z",
       "provider": "razorpay",
       "provider_id": "order_test_upi_intent_drop_1788187962977",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187962977",
@@ -12496,7 +12496,10 @@
           "reason": "UPI Intent Session Expired (Customer Backgrounded App to Check SMS)",
           "timestamp": "2026-08-31T14:52:59.824Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOUPIINTENTDROP1788187962977",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187962977 [REC-20260831-TXNE2ESCENARIOUPIINTENTDROP1788187962977] — awaiting Test Mode payment."
     }
   }
 }
