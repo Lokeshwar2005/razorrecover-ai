@@ -3,9 +3,6 @@ import type { IncomingMessage } from 'http'
 import fs from 'fs'
 import path from 'path'
 
-const REPO_OWNER = 'Lokeshwar2005'
-const REPO_NAME = 'razorrecover-ai'
-const REPO_FILE = 'data/ledger.json'
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
 const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
@@ -91,53 +88,34 @@ function saveLocalFileStore() {
   } catch (e) {}
 }
 
-async function fetchRemoteLedger(req?: IncomingMessage): Promise<Record<string, any>> {
+async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<string, any>> {
   loadLocalFileStore()
   const token = getGithubToken(req)
-
-  if (token) {
-    try {
-      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}?_t=${Date.now()}`, {
-        headers: {
-          Authorization: `token ${token}`,
-          Accept: 'application/vnd.github.v3+json',
-          'User-Agent': 'RazorRecover-AI-Serverless',
-        },
-        signal: AbortSignal.timeout(3500),
-      })
-      if (res.ok) {
-        const d = await res.json()
-        if (d?.content) {
-          const raw = Buffer.from(d.content, 'base64').toString('utf-8')
-          const parsed = JSON.parse(raw)
-          if (parsed?.transactions && typeof parsed.transactions === 'object') {
-            for (const [id, txn] of Object.entries(parsed.transactions)) {
-              inMemoryTransactions.set(id.toUpperCase(), txn)
-            }
-            saveLocalFileStore()
-          }
-        }
-      }
-    } catch (e) {}
-  }
 
   try {
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'RazorRecover-AI-Serverless',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      Pragma: 'no-cache',
     }
-    if (token) headers.Authorization = `token ${token}`
+    if (token) {
+      headers.Authorization = `token ${token}`
+    }
+
     const res = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
       headers,
-      signal: AbortSignal.timeout(3000),
+      signal: AbortSignal.timeout(3500),
     })
+
     if (res.ok) {
       const data = await res.json()
       const rawContent = data?.files?.[GIST_FILENAME]?.content
       if (rawContent) {
         const parsed = JSON.parse(rawContent)
-        if (parsed?.transactions && typeof parsed.transactions === 'object') {
-          for (const [id, txn] of Object.entries(parsed.transactions)) {
+        const remoteTxns = parsed?.transactions
+        if (remoteTxns && typeof remoteTxns === 'object') {
+          for (const [id, txn] of Object.entries(remoteTxns)) {
             inMemoryTransactions.set(id.toUpperCase(), txn)
           }
           saveLocalFileStore()
@@ -153,37 +131,41 @@ async function fetchRemoteLedger(req?: IncomingMessage): Promise<Record<string, 
   return result
 }
 
-async function persistRemoteLedger(newTransactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
+async function updateGistTransactions(newTransactions: Record<string, any>, req?: IncomingMessage): Promise<void> {
   for (const [id, txn] of Object.entries(newTransactions)) {
     inMemoryTransactions.set(id.toUpperCase(), txn)
   }
   saveLocalFileStore()
 
-  const token = getGithubToken(req)
-  if (!token) return
-
   try {
-    const getRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}?_t=${Date.now()}`, {
-      headers: {
-        Authorization: `token ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'User-Agent': 'RazorRecover-AI-Serverless',
-      },
-      signal: AbortSignal.timeout(3500),
-    })
+    const token = getGithubToken(req)
+    if (!token) return
 
-    let sha: string | undefined
-    let remoteTxns: Record<string, any> = {}
-    if (getRes.ok) {
-      const d = await getRes.json()
-      sha = d.sha
-      if (d.content) {
-        const raw = Buffer.from(d.content, 'base64').toString('utf-8')
-        remoteTxns = JSON.parse(raw)?.transactions || {}
+    let existingRemote: Record<string, any> = {}
+    try {
+      const getRes = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github.v3+json',
+          'User-Agent': 'RazorRecover-AI-Serverless',
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          Pragma: 'no-cache',
+        },
+        signal: AbortSignal.timeout(3500),
+      })
+      if (getRes.ok) {
+        const d = await getRes.json()
+        const raw = d?.files?.[GIST_FILENAME]?.content
+        if (raw) {
+          const parsed = JSON.parse(raw)
+          if (parsed?.transactions && typeof parsed.transactions === 'object') {
+            existingRemote = parsed.transactions
+          }
+        }
       }
-    }
+    } catch (e) {}
 
-    const merged = { ...remoteTxns }
+    const merged: Record<string, any> = { ...existingRemote }
     for (const [id, txn] of inMemoryTransactions.entries()) {
       merged[id] = txn
     }
@@ -191,31 +173,6 @@ async function persistRemoteLedger(newTransactions: Record<string, any>, req?: I
       merged[id.toUpperCase()] = txn
     }
 
-    await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}`, {
-      method: 'PUT',
-      headers: {
-        Authorization: `token ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-        'User-Agent': 'RazorRecover-AI-Serverless',
-      },
-      body: JSON.stringify({
-        message: 'recovery execute',
-        content: Buffer.from(JSON.stringify({ transactions: merged }, null, 2)).toString('base64'),
-        sha,
-      }),
-      signal: AbortSignal.timeout(4000),
-    })
-  } catch (e) {}
-
-  try {
-    const merged: Record<string, any> = {}
-    for (const [id, txn] of inMemoryTransactions.entries()) {
-      merged[id] = txn
-    }
-    for (const [id, txn] of Object.entries(newTransactions)) {
-      merged[id.toUpperCase()] = txn
-    }
     await fetch(`https://api.github.com/gists/${GIST_ID}`, {
       method: 'PATCH',
       headers: {
@@ -231,7 +188,7 @@ async function persistRemoteLedger(newTransactions: Record<string, any>, req?: I
           },
         },
       }),
-      signal: AbortSignal.timeout(3000),
+      signal: AbortSignal.timeout(4000),
     })
   } catch (e) {}
 }
@@ -270,7 +227,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const txns = await fetchRemoteLedger(req)
+    const txns = await fetchGistTransactions(req)
     let txn = txns[cleanKey] || Object.values(txns).find((t: any) => (t?.id || '').toUpperCase() === cleanKey)
 
     if (txn?.recovery_operation_id) {
@@ -323,7 +280,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     txns[cleanKey] = updated
     if (txn?.id) txns[txn.id] = updated
-    await persistRemoteLedger({ [cleanKey]: updated, [txn?.id || cleanKey]: updated }, req)
+    await updateGistTransactions({ [cleanKey]: updated, [txn?.id || cleanKey]: updated }, req)
 
     res.status(200).json({
       success: true,

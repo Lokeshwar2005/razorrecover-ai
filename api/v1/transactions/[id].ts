@@ -3,9 +3,6 @@ import type { IncomingMessage } from 'http'
 import fs from 'fs'
 import path from 'path'
 
-const REPO_OWNER = 'Lokeshwar2005'
-const REPO_NAME = 'razorrecover-ai'
-const REPO_FILE = 'data/ledger.json'
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
 const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
@@ -91,53 +88,34 @@ function saveLocalFileStore() {
   } catch (e) {}
 }
 
-async function fetchRemoteLedger(req?: IncomingMessage): Promise<Record<string, any>> {
+async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<string, any>> {
   loadLocalFileStore()
   const token = getGithubToken(req)
-
-  if (token) {
-    try {
-      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}?_t=${Date.now()}`, {
-        headers: {
-          Authorization: `token ${token}`,
-          Accept: 'application/vnd.github.v3+json',
-          'User-Agent': 'RazorRecover-AI-Serverless',
-        },
-        signal: AbortSignal.timeout(3500),
-      })
-      if (res.ok) {
-        const d = await res.json()
-        if (d?.content) {
-          const raw = Buffer.from(d.content, 'base64').toString('utf-8')
-          const parsed = JSON.parse(raw)
-          if (parsed?.transactions && typeof parsed.transactions === 'object') {
-            for (const [id, txn] of Object.entries(parsed.transactions)) {
-              inMemoryTransactions.set(id.toUpperCase(), txn)
-            }
-            saveLocalFileStore()
-          }
-        }
-      }
-    } catch (e) {}
-  }
 
   try {
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'RazorRecover-AI-Serverless',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      Pragma: 'no-cache',
     }
-    if (token) headers.Authorization = `token ${token}`
+    if (token) {
+      headers.Authorization = `token ${token}`
+    }
+
     const res = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
       headers,
-      signal: AbortSignal.timeout(3000),
+      signal: AbortSignal.timeout(3500),
     })
+
     if (res.ok) {
       const data = await res.json()
       const rawContent = data?.files?.[GIST_FILENAME]?.content
       if (rawContent) {
         const parsed = JSON.parse(rawContent)
-        if (parsed?.transactions && typeof parsed.transactions === 'object') {
-          for (const [id, txn] of Object.entries(parsed.transactions)) {
+        const remoteTxns = parsed?.transactions
+        if (remoteTxns && typeof remoteTxns === 'object') {
+          for (const [id, txn] of Object.entries(remoteTxns)) {
             inMemoryTransactions.set(id.toUpperCase(), txn)
           }
           saveLocalFileStore()
@@ -267,12 +245,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    let txns = await fetchRemoteLedger(req)
+    let txns = await fetchGistTransactions(req)
     let txn = txns[id] || Object.values(txns).find((t: any) => (t?.id || '').toUpperCase() === id)
 
     if (!txn) {
       await new Promise((r) => setTimeout(r, 300))
-      txns = await fetchRemoteLedger(req)
+      txns = await fetchGistTransactions(req)
       txn = txns[id] || Object.values(txns).find((t: any) => (t?.id || '').toUpperCase() === id)
     }
 
@@ -291,7 +269,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, '')
       const recoveryOpId = `REC-${dateStr}-${cleanId}`
 
-      const matchedKey = Object.keys(FAILURE_SCENARIOS).find((k) => id.toLowerCase().includes(k.replace(/_/g, ''))) || '3ds_timeout'
+      const idClean = id.toLowerCase().replace(/[^a-z0-9]/g, '')
+      const matchedKey = Object.keys(FAILURE_SCENARIOS).find((k) => {
+        const kClean = k.toLowerCase().replace(/[^a-z0-9]/g, '')
+        return idClean.includes(kClean) || id.toLowerCase().includes(k.toLowerCase())
+      }) || '3ds_timeout'
       const scenario = FAILURE_SCENARIOS[matchedKey] || FAILURE_SCENARIOS['3ds_timeout']
       const now = new Date().toISOString()
       const amtMinor = scenario.amountMinor

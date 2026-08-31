@@ -3,6 +3,12 @@ name: Deploy RazorRecover AI
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'data/**'
+      - '*.md'
+      - 'docs/**'
+      - '.github/workflows/test-*.yml'
+      - 'scripts/**'
   workflow_dispatch:
 
 permissions:
