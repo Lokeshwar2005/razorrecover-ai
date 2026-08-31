@@ -6980,6 +6980,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹4,995 for TXN-E2E-SCENARIO-3DS_TIMEOUT-1788186346614.",
       "captured_at": "2026-08-31T14:25:52.510Z"
+    },
+    "TXN-E2E-SCENARIO-LOW_BALANCE-1788186346614": {
+      "id": "TXN-E2E-SCENARIO-LOW_BALANCE-1788186346614",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 6995,
+      "amount_minor": 699500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)",
+      "action": "Switch to UPI Auto-Pay / Split Link",
+      "confidence": 92,
+      "recovery_probability": 78,
+      "risk_score": 35,
+      "policy": "Approved",
+      "explanation": "Card decline due to temporary limit. Split payment link provisioned.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:25:55.170Z",
+      "updated_at": "2026-08-31T14:25:55.170Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_low_balance_1788186346614",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-LOW_BALANCE-1788186346614",
+      "provider_order_id": "order_test_low_balance_1788186346614",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "low_balance",
+        "test": "test_3_all_scenarios",
+        "failure_code": "BAD_REQUEST_INSUFFICIENT_FUNDS",
+        "failure_reason": "Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-LOW_BALANCE-1788186346614-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Insufficient Funds / Account Credit Limit Exhausted (Soft Decline)",
+          "timestamp": "2026-08-31T14:25:55.170Z"
+        }
+      ]
     }
   }
 }
