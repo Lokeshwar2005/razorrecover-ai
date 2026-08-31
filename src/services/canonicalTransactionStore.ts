@@ -35,6 +35,15 @@ export interface CanonicalTransaction {
   created_at: string
   updated_at?: string
 
+  product_id?: string
+  product_name?: string
+  product_image?: string
+  product_brand?: string
+  product_category?: string
+  quantity?: number
+  unit_price?: number
+  unit_price_rupees?: number
+
   // Provider / Recovery fields
   provider?: 'RAZORPAY' | 'razorpay'
   recovery_operation_id?: string

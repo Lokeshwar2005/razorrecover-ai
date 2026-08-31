@@ -5,6 +5,7 @@ import type { CartItem, ShippingAddress, AppliedCoupon } from './types'
 import { useTransactionStore, type CanonicalTransaction } from '../../services/canonicalTransactionStore'
 import { AVAILABLE_COUPONS } from './CartDrawer'
 import { ingestPaymentEvent, fetchTransactionDetail, verifyPaymentCapture } from '../../services/backendApi'
+import { saveChronovaOrder, updateChronovaOrder } from '../../services/chronovaOrderStore'
 
 interface CheckoutModalProps {
   isOpen: boolean
@@ -323,6 +324,9 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     const currentTxnId = activeTxnId || `TXN-CN-${Date.now().toString(36).toUpperCase()}`
     const currentOrderId = activeOrderId || `order_cn_${Date.now().toString(36)}`
     const paymentId = `pay_live_${Date.now().toString(36)}`
+    const firstItem = items[0]
+    const prod = firstItem?.product
+    const primaryImg = prod?.images?.primary || prod?.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
 
     if (!activeTxnId) {
       setActiveTxnId(currentTxnId)
@@ -340,6 +344,16 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         amount_minor: totalMinor,
         currency: 'INR',
       }).catch(() => {})
+
+      // Update Order in Customer Order History
+      updateChronovaOrder(currentTxnId, {
+        payment_status: 'PAID',
+        order_status: 'ORDER_CONFIRMED',
+        recovery_status: 'RECOVERED',
+        razorpay_payment_id: paymentId,
+        payment_method: selectedRzpTab,
+        verified_at: new Date().toISOString(),
+      })
     } else {
       // Authoritative Server-Side Ingestion for DIRECT PAYMENT
       ingestPaymentEvent({
@@ -353,17 +367,65 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         status: 'captured',
         provider: 'razorpay',
         method: selectedRzpTab,
+        product_id: prod?.id,
+        product_name: prod?.name || 'Chronova Luxury Timepiece',
+        product_image: primaryImg,
+        product_brand: prod?.brand || 'Chronova',
+        product_category: prod?.category || 'Automatic Watches',
+        quantity: firstItem?.quantity || 1,
+        unit_price: prod?.price_rupees || Math.round(totalDue),
         customer: {
           name: address.full_name,
           email: address.email,
           phone: address.phone,
         },
         metadata: {
-          product_id: items[0]?.product.id,
-          product_name: items[0]?.product.name,
-          brand: items[0]?.product.brand,
+          product_id: prod?.id,
+          product_name: prod?.name,
+          brand: prod?.brand,
+          category: prod?.category,
+          quantity: firstItem?.quantity || 1,
+          unit_price: prod?.price_rupees,
         },
       }).catch(() => {})
+
+      // Save Order in Customer Order History
+      saveChronovaOrder({
+        order_id: currentOrderId,
+        transaction_id: currentTxnId,
+        created_at: new Date().toISOString(),
+        items: items.map((item) => ({
+          product_id: item.product.id,
+          product_name: item.product.name,
+          product_image: item.product.images?.primary || item.product.primaryImage || primaryImg,
+          product_category: item.product.category,
+          product_brand: item.product.brand,
+          quantity: item.quantity,
+          unit_price_rupees: item.product.price_rupees,
+          total_price_rupees: item.product.price_rupees * item.quantity,
+          selected_color: item.selected_color,
+        })),
+        total_amount_rupees: totalDue,
+        total_amount_minor: totalMinor,
+        currency: 'INR',
+        customer: {
+          full_name: address.full_name,
+          email: address.email,
+          phone: address.phone,
+          address_line1: address.address_line1,
+          address_line2: address.address_line2,
+          city: address.city,
+          state: address.state,
+          pincode: address.pincode,
+        },
+        payment_status: 'PAID',
+        order_status: 'ORDER_CONFIRMED',
+        recovery_status: 'NONE',
+        razorpay_order_id: currentOrderId,
+        razorpay_payment_id: paymentId,
+        payment_method: selectedRzpTab,
+        verified_at: new Date().toISOString(),
+      })
     }
 
     // Update frontend canonical store
@@ -394,6 +456,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         const successTxn: CanonicalTransaction = {
           id: currentTxnId,
           merchant_id: 'mer_chronova_watches',
+          chronova_order_id: currentOrderId,
           amount: totalDue,
           amount_minor: totalMinor,
           currency: 'INR',
@@ -414,6 +477,14 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           provider_order_id: currentOrderId,
           verified_amount_minor: totalMinor,
           captured_at: new Date().toISOString(),
+          product_id: prod?.id,
+          product_name: prod?.name || 'Chronova Luxury Timepiece',
+          product_image: primaryImg,
+          product_brand: prod?.brand || 'Chronova',
+          product_category: prod?.category || 'Automatic Watches',
+          quantity: firstItem?.quantity || 1,
+          unit_price: prod?.price_rupees || Math.round(totalDue),
+          unit_price_rupees: prod?.price_rupees || Math.round(totalDue),
         }
         useTransactionStore.getState().ingestTransaction(successTxn)
         setOrderReceipt(receipt)
@@ -436,9 +507,52 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
     const generatedTxnId = `TXN-CN-${Date.now().toString(36).toUpperCase()}`
     const mockOrderId = `order_cn_${Date.now().toString(36)}`
+    const firstItem = items[0]
+    const prod = firstItem?.product
+    const primaryImg = prod?.images?.primary || prod?.primaryImage || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+
     setActiveTxnId(generatedTxnId)
     setActiveOrderId(mockOrderId)
     setRecoveryStatus('in_progress')
+
+    // Save Failed Order in Customer Order History so customer can track/retry it
+    saveChronovaOrder({
+      order_id: mockOrderId,
+      transaction_id: generatedTxnId,
+      created_at: new Date().toISOString(),
+      items: items.map((item) => ({
+        product_id: item.product.id,
+        product_name: item.product.name,
+        product_image: item.product.images?.primary || item.product.primaryImage || primaryImg,
+        product_category: item.product.category,
+        product_brand: item.product.brand,
+        quantity: item.quantity,
+        unit_price_rupees: item.product.price_rupees,
+        total_price_rupees: item.product.price_rupees * item.quantity,
+        selected_color: item.selected_color,
+      })),
+      total_amount_rupees: totalDue,
+      total_amount_minor: totalMinor,
+      currency: 'INR',
+      customer: {
+        full_name: address.full_name,
+        email: address.email,
+        phone: address.phone,
+        address_line1: address.address_line1,
+        address_line2: address.address_line2,
+        city: address.city,
+        state: address.state,
+        pincode: address.pincode,
+      },
+      payment_status: 'FAILED',
+      order_status: 'PAYMENT_FAILED',
+      recovery_status: 'ELIGIBLE',
+      failure_reason: scenario.reason,
+      failure_code: scenario.code,
+      recommended_action: scenario.action,
+      razorpay_order_id: mockOrderId,
+      payment_method: selectedRzpTab,
+    })
 
     // Authoritative Backend Event Ingestion to Trigger AI & Recovery Pipeline
     ingestPaymentEvent({
@@ -453,15 +567,25 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       method: selectedRzpTab,
       failure_code: scenario.code,
       failure_reason: scenario.reason,
+      product_id: prod?.id,
+      product_name: prod?.name || 'Chronova Luxury Timepiece',
+      product_image: primaryImg,
+      product_brand: prod?.brand || 'Chronova',
+      product_category: prod?.category || 'Automatic Watches',
+      quantity: firstItem?.quantity || 1,
+      unit_price: prod?.price_rupees || Math.round(totalDue),
       customer: {
         name: address.full_name,
         email: address.email,
         phone: address.phone,
       },
       metadata: {
-        product_id: items[0]?.product.id,
-        product_name: items[0]?.product.name,
-        brand: items[0]?.product.brand,
+        product_id: prod?.id,
+        product_name: prod?.name,
+        brand: prod?.brand,
+        category: prod?.category,
+        quantity: firstItem?.quantity || 1,
+        unit_price: prod?.price_rupees,
         scenario_id: scenario.id,
       },
     }).catch(() => {})
@@ -473,6 +597,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       const failedTxn: CanonicalTransaction = {
         id: generatedTxnId,
         merchant_id: 'mer_chronova_watches',
+        chronova_order_id: mockOrderId,
         amount: totalDue,
         amount_minor: totalMinor,
         currency: 'INR',
@@ -491,6 +616,14 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
         provider: 'razorpay',
         provider_order_id: mockOrderId,
         verified_amount_minor: 0,
+        product_id: prod?.id,
+        product_name: prod?.name || 'Chronova Luxury Timepiece',
+        product_image: primaryImg,
+        product_brand: prod?.brand || 'Chronova',
+        product_category: prod?.category || 'Automatic Watches',
+        quantity: firstItem?.quantity || 1,
+        unit_price: prod?.price_rupees || Math.round(totalDue),
+        unit_price_rupees: prod?.price_rupees || Math.round(totalDue),
       }
 
       useTransactionStore.getState().ingestTransaction(failedTxn)

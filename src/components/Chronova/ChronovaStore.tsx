@@ -21,6 +21,8 @@ import { QuickViewModal } from './QuickViewModal'
 import { CartDrawer } from './CartDrawer'
 import { CheckoutModal } from './CheckoutModal'
 import { CustomerAuthModal, CustomerUser } from './CustomerAuthModal'
+import { OrderHistoryModal } from './OrderHistoryModal'
+import { getStoredChronovaOrders } from '../../services/chronovaOrderStore'
 
 export const ChronovaStore: React.FC = () => {
   // Navigation & View Mode
@@ -139,6 +141,22 @@ export const ChronovaStore: React.FC = () => {
 
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false)
   const [isCheckoutOpen, setIsCheckoutOpen] = useState<boolean>(false)
+  const [isOrdersOpen, setIsOrdersOpen] = useState<boolean>(false)
+  const [orderCount, setOrderCount] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      return getStoredChronovaOrders().length
+    }
+    return 0
+  })
+
+  useEffect(() => {
+    const handleOrdersUpdated = () => {
+      setOrderCount(getStoredChronovaOrders().length)
+    }
+    window.addEventListener('chronova:orders-updated', handleOrdersUpdated)
+    return () => window.removeEventListener('chronova:orders-updated', handleOrdersUpdated)
+  }, [])
+
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false)
   const [customerUser, setCustomerUser] = useState<CustomerUser>(() => {
     if (typeof window !== 'undefined') {
@@ -813,6 +831,20 @@ export const ChronovaStore: React.FC = () => {
                 <span className="text-[10px] font-bold whitespace-nowrap">
                   {customerUser.isLoggedIn ? customerUser.name.split(' ')[0] : 'Sign In'}
                 </span>
+              </button>
+
+              <button
+                onClick={() => setIsOrdersOpen(true)}
+                className="flex flex-col items-center p-1 rounded-xl text-slate-700 hover:text-slate-900 cursor-pointer relative transition"
+                title="View Customer Order History"
+              >
+                <span className="text-lg">📦</span>
+                <span className="text-[10px] font-bold">Orders</span>
+                {orderCount > 0 && (
+                  <span className="absolute -top-1 -right-1.5 w-4 h-4 rounded-full bg-slate-900 text-white text-[9px] font-black flex items-center justify-center font-mono">
+                    {orderCount}
+                  </span>
+                )}
               </button>
 
               <button
@@ -1672,6 +1704,26 @@ export const ChronovaStore: React.FC = () => {
           if (typeof window !== 'undefined') {
             localStorage.removeItem('chronova_user')
           }
+        }}
+      />
+
+      <OrderHistoryModal
+        isOpen={isOrdersOpen}
+        onClose={() => setIsOrdersOpen(false)}
+        onRetryOrder={(order) => {
+          // Open checkout modal directly with this order's items
+          const matchingProducts = order.items
+            .map((item) => {
+              const p = CHRONOVA_CATALOG.find((catItem) => catItem.id === item.product_id)
+              if (p) return { product: p, quantity: item.quantity, selected_color: item.selected_color }
+              return null
+            })
+            .filter(Boolean) as CartItem[]
+
+          if (matchingProducts.length > 0) {
+            setCartItems(matchingProducts)
+          }
+          setIsCheckoutOpen(true)
         }}
       />
     </div>

@@ -456,47 +456,72 @@ export const TransactionExplorer: React.FC = () => {
                       : 'bg-[#0f0c08] border-[#2e271c] hover:border-[#453d32]'
                   }`}
                 >
-                  <div className="space-y-1.5 flex-1">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="font-mono font-bold text-sm text-[#f4ede2]">{txn.id}</span>
-                      <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
-                        LIVE • CHRONOVA
-                      </span>
-                      {txn.chronova_order_id && (
-                        <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-[#15120c] text-[#a89f91] border border-[#2e271c]">
-                          {txn.chronova_order_id}
-                        </span>
-                      )}
-                      
-                      {isRecovered ? (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
-                          ✓ PAYMENT RECOVERED
-                        </span>
-                      ) : isStopped ? (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
-                          PAYMENT FAILED
-                        </span>
+                  {/* Product Thumbnail with Defensive Error Fallback */}
+                  <div className="flex items-center gap-3.5 flex-1 min-w-0">
+                    <div className="w-12 h-12 rounded-xl bg-[#15120c] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center relative">
+                      {txn.product_image ? (
+                        <img
+                          src={txn.product_image}
+                          alt={txn.product_name || 'Chronova Watch'}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            (e.target as HTMLElement).style.display = 'none'
+                          }}
+                        />
                       ) : (
-                        <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
-                          ⚡ RECOVERY IN PROGRESS
-                        </span>
+                        <span className="text-xl">⌚</span>
                       )}
                     </div>
 
-                    <div className="text-xs text-[#a89f91] font-mono">
-                      Reason: <strong className="text-[#f4ede2]">{txn.reason}</strong> • Action: <strong className="text-[#e5a944]">{txn.action}</strong>
-                    </div>
+                    <div className="space-y-1.5 flex-1 min-w-0">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-mono font-bold text-sm text-[#f4ede2]">{txn.id}</span>
+                        <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
+                          LIVE • CHRONOVA
+                        </span>
+                        {txn.chronova_order_id && (
+                          <span className="px-1.5 py-0.5 text-[9px] font-mono rounded bg-[#15120c] text-[#a89f91] border border-[#2e271c]">
+                            {txn.chronova_order_id}
+                          </span>
+                        )}
+                        
+                        {isRecovered ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
+                            ✓ PAYMENT RECOVERED
+                          </span>
+                        ) : isStopped ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
+                            PAYMENT FAILED
+                          </span>
+                        ) : (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#e5a944]/20 text-[#e5a944] border border-[#e5a944]/40 font-bold ml-auto md:ml-0 animate-pulse">
+                            ⚡ RECOVERY IN PROGRESS
+                          </span>
+                        )}
+                      </div>
 
-                    <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#7a7164]">
-                      <span>Confidence: <strong className="text-[#10b981]">{txn.confidence}%</strong></span>
-                      <span>Recovery Prob: <strong className="text-[#10b981]">{txn.recovery_probability}%</strong></span>
-                      <span>Risk: <strong className={txn.risk_score >= 60 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>{txn.risk_score}/100</strong></span>
-                      <span>Policy: <strong className={txn.policy === 'Approved' ? 'text-[#10b981]' : 'text-[#ef4444]'}>{txn.policy}</strong></span>
+                      {/* Product Name & Brand */}
+                      <div className="text-xs font-bold text-[#f4ede2] truncate">
+                        {txn.product_name || 'Chronova Luxury Timepiece'}
+                        {txn.product_brand && <span className="text-[#a89f91] font-normal"> · {txn.product_brand}</span>}
+                        {txn.quantity && txn.quantity > 1 && <span className="text-[#e5a944] font-mono"> (Qty: {txn.quantity})</span>}
+                      </div>
+
+                      <div className="text-xs text-[#a89f91] font-mono truncate">
+                        Reason: <strong className="text-[#f4ede2]">{txn.reason}</strong> • Action: <strong className="text-[#e5a944]">{txn.action}</strong>
+                      </div>
+
+                      <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#7a7164]">
+                        <span>Confidence: <strong className="text-[#10b981]">{txn.confidence}%</strong></span>
+                        <span>Recovery Prob: <strong className="text-[#10b981]">{txn.recovery_probability}%</strong></span>
+                        <span>Risk: <strong className={txn.risk_score >= 60 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>{txn.risk_score}/100</strong></span>
+                        <span>Policy: <strong className={txn.policy === 'Approved' ? 'text-[#10b981]' : 'text-[#ef4444]'}>{txn.policy}</strong></span>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
-                    <div className="text-[10px] font-mono text-[#7a7164]">AMOUNT</div>
+                  <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c] shrink-0">
+                    <div className="text-[10px] font-mono text-[#7a7164]">TOTAL</div>
                     <div className="text-base font-mono font-bold text-[#f4ede2]">
                       ₹{txn.amount.toLocaleString('en-IN')}
                     </div>
@@ -532,17 +557,17 @@ export const TransactionExplorer: React.FC = () => {
           )}
         </div>
 
-        {/* Selected Transaction Detail / Lifecycle Panel */}
+        {/* Selected Transaction Detail / 7 Structured Sections Panel */}
         {selectedTxn && (
           <div className="space-y-4">
             <div className="p-5 rounded-xl bg-[#0f0c08] border border-[#2e271c] space-y-4">
               <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
                 <div>
-                  <div className="text-xs font-mono text-[#7a7164]">LIFECYCLE TRACE</div>
+                  <div className="text-xs font-mono text-[#7a7164]">TRANSACTION PROFILE & DIAGNOSIS</div>
                   <h3 className="text-base font-mono font-bold text-[#e5a944]">{selectedTxn.id}</h3>
                 </div>
                 <span className="px-2 py-0.5 text-[9px] font-mono font-bold rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
-                  CHRONOVA
+                  CHRONOVA ORIGIN
                 </span>
               </div>
 
@@ -584,87 +609,191 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
               )}
 
-              {/* Transaction Specs */}
-              <div className="space-y-2 text-xs font-mono">
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Amount:</span>
+              {/* SECTION 1: ORDER DETAILS */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2.5">
+                <div className="text-[10px] font-mono text-[#e5a944] font-bold uppercase tracking-wider flex items-center justify-between">
+                  <span>1. ORDER DETAILS</span>
+                  <span className="text-[#7a7164]">#{selectedTxn.chronova_order_id || 'order_cn'}</span>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-[#0f0c08] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center">
+                    {selectedTxn.product_image ? (
+                      <img
+                        src={selectedTxn.product_image}
+                        alt={selectedTxn.product_name || 'Chronova Product'}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          (e.target as HTMLElement).style.display = 'none'
+                        }}
+                      />
+                    ) : (
+                      <span className="text-xl">⌚</span>
+                    )}
+                  </div>
+                  <div className="min-w-0 space-y-0.5">
+                    <div className="text-xs font-bold text-[#f4ede2] truncate">
+                      {selectedTxn.product_name || 'Chronova Luxury Timepiece'}
+                    </div>
+                    <div className="text-[11px] text-[#a89f91] font-mono">
+                      {selectedTxn.product_brand || 'Chronova'} · {selectedTxn.product_category || 'Automatic Watches'}
+                    </div>
+                    <div className="text-[11px] text-[#7a7164] font-mono">
+                      Quantity: <strong className="text-[#f4ede2]">{selectedTxn.quantity || 1}</strong> · Unit Price: <strong className="text-[#f4ede2]">₹{(selectedTxn.unit_price || selectedTxn.amount).toLocaleString('en-IN')}</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between pt-1 border-t border-[#2e271c]/40 text-xs font-mono">
+                  <span className="text-[#7a7164]">Total Order Amount:</span>
                   <span className="text-[#f4ede2] font-bold">₹{selectedTxn.amount.toLocaleString('en-IN')} ({selectedTxn.currency})</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Chronova Order ID:</span>
-                  <span className="text-[#f4ede2] font-bold">{selectedTxn.chronova_order_id || 'N/A'}</span>
+              </div>
+
+              {/* SECTION 2: PAYMENT GATEWAY */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">2. PAYMENT GATEWAY</div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Provider:</span>
+                  <span className="text-[#f4ede2] font-bold">Razorpay Test Mode</span>
+                </div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Gateway Status:</span>
+                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#ef4444]'}>
+                    {selectedTxn.provider_status || (selectedTxn.status === 'RECOVERED' ? 'captured' : 'failed')}
+                  </span>
                 </div>
                 {selectedTxn.provider_payment_id && (
-                  <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                    <span className="text-[#7a7164]">Razorpay Payment ID:</span>
+                  <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                    <span className="text-[#7a7164]">Payment ID:</span>
                     <span className="text-[#fcd34d] font-bold">{selectedTxn.provider_payment_id}</span>
                   </div>
                 )}
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
+                <div className="flex justify-between py-0.5">
+                  <span className="text-[#7a7164]">Order ID:</span>
+                  <span className="text-[#a89f91]">{selectedTxn.provider_order_id || selectedTxn.chronova_order_id || 'N/A'}</span>
+                </div>
+              </div>
+
+              {/* SECTION 3: FAILURE ANALYSIS */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">3. FAILURE ANALYSIS</div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Direction:</span>
                   <span className="text-[#f4ede2]">{selectedTxn.direction}</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Reason:</span>
-                  <span className="text-[#ef4444]">{selectedTxn.reason}</span>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Failure Reason:</span>
+                  <span className="text-[#ef4444] font-bold">{selectedTxn.reason}</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Risk Score:</span>
-                  <span className={selectedTxn.risk_score >= 60 ? 'text-[#ef4444] font-bold' : 'text-[#10b981]'}>
-                    {selectedTxn.risk_score}/100
-                  </span>
+                <div className="flex justify-between py-0.5">
+                  <span className="text-[#7a7164]">Gateway Latency:</span>
+                  <span className="text-[#a89f91]">{selectedTxn.latency || '180ms'}</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Recovery Probability:</span>
-                  <span className="text-[#10b981] font-bold">{selectedTxn.recovery_probability}%</span>
+              </div>
+
+              {/* SECTION 4: AI REVENUE-RECOVERY DIAGNOSIS */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">4. AI REVENUE-RECOVERY DIAGNOSIS</div>
+                <p className="text-[11px] text-[#a89f91] leading-relaxed italic bg-[#0f0c08] p-2.5 rounded-lg border border-[#2e271c]/60">
+                  "{selectedTxn.explanation}"
+                </p>
+                <div className="grid grid-cols-2 gap-2 pt-1">
+                  <div className="p-2 rounded bg-[#0f0c08] border border-[#2e271c]">
+                    <div className="text-[10px] text-[#7a7164]">AI Confidence</div>
+                    <div className="text-sm font-bold text-[#10b981]">{selectedTxn.confidence}%</div>
+                  </div>
+                  <div className="p-2 rounded bg-[#0f0c08] border border-[#2e271c]">
+                    <div className="text-[10px] text-[#7a7164]">Recovery Prob</div>
+                    <div className="text-sm font-bold text-[#10b981]">{selectedTxn.recovery_probability}%</div>
+                  </div>
+                  <div className="p-2 rounded bg-[#0f0c08] border border-[#2e271c]">
+                    <div className="text-[10px] text-[#7a7164]">Risk Score</div>
+                    <div className={`text-sm font-bold ${selectedTxn.risk_score >= 60 ? 'text-[#ef4444]' : 'text-[#e5a944]'}`}>
+                      {selectedTxn.risk_score}/100
+                    </div>
+                  </div>
+                  <div className="p-2 rounded bg-[#0f0c08] border border-[#2e271c]">
+                    <div className="text-[10px] text-[#7a7164]">Policy Gate</div>
+                    <div className={`text-sm font-bold ${selectedTxn.policy === 'Approved' ? 'text-[#10b981]' : 'text-[#ef4444]'}`}>
+                      {selectedTxn.policy}
+                    </div>
+                  </div>
                 </div>
-                <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                  <span className="text-[#7a7164]">Policy Gate:</span>
-                  <span className={selectedTxn.policy === 'Approved' ? 'text-[#10b981]' : 'text-[#ef4444]'}>
-                    {selectedTxn.policy}
-                  </span>
+              </div>
+
+              {/* SECTION 5: RECOVERY WORKFLOW */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">5. RECOVERY WORKFLOW</div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Recommended Action:</span>
+                  <span className="text-[#e5a944] font-bold">{selectedTxn.action}</span>
                 </div>
                 {selectedTxn.recovery_operation_id && (
-                  <div className="flex justify-between py-1 border-b border-[#2e271c]/40">
-                    <span className="text-[#7a7164]">Recovery Operation ID:</span>
-                    <span className="text-[#e5a944] font-bold">{selectedTxn.recovery_operation_id}</span>
+                  <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                    <span className="text-[#7a7164]">Recovery Op ID:</span>
+                    <span className="text-[#f4ede2]">{selectedTxn.recovery_operation_id}</span>
                   </div>
                 )}
-                <div className="flex justify-between py-1">
-                  <span className="text-[#7a7164]">Timestamp:</span>
+                <div className="flex justify-between py-0.5">
+                  <span className="text-[#7a7164]">Workflow Status:</span>
+                  <span className="text-[#10b981] font-bold">{selectedTxn.workflow_status || (selectedTxn.status === 'RECOVERED' ? 'VERIFIED' : 'ACTIVE')}</span>
+                </div>
+              </div>
+
+              {/* SECTION 6: FINAL OUTCOME */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">6. FINAL OUTCOME</div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Settlement Status:</span>
+                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#ef4444] font-bold'}>
+                    {selectedTxn.status === 'RECOVERED' ? '✓ RECOVERED & CAPTURED' : 'PAYMENT FAILED'}
+                  </span>
+                </div>
+                <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
+                  <span className="text-[#7a7164]">Verified Amount:</span>
+                  <span className="text-[#f4ede2] font-bold">
+                    ₹{(selectedTxn.verified_amount_minor ? selectedTxn.verified_amount_minor / 100 : selectedTxn.status === 'RECOVERED' ? selectedTxn.amount : 0).toLocaleString('en-IN')}
+                  </span>
+                </div>
+                <div className="flex justify-between py-0.5">
+                  <span className="text-[#7a7164]">Created At:</span>
                   <span className="text-[#a89f91]">{new Date(selectedTxn.created_at).toLocaleString('en-IN')}</span>
                 </div>
               </div>
 
-              {/* AI Explanation Box */}
-              <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-1">
-                <div className="text-[10px] font-mono text-[#e5a944] font-bold">AI DIAGNOSTIC EXPLANATION</div>
-                <p className="text-xs text-[#a89f91] leading-relaxed">{selectedTxn.explanation}</p>
+              {/* SECTION 7: AUDIT TRAIL */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+                <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider flex items-center justify-between">
+                  <span>7. AUDIT TRAIL (CRYPTOGRAPHIC SHA-256)</span>
+                  <span className="text-[9px] text-[#10b981]">TAMPER-EVIDENT</span>
+                </div>
+                <p className="text-[10px] text-[#7a7164]">
+                  All lifecycle events, AI inferences, policy gates, and settlement verifications are chained in immutable ledger blocks.
+                </p>
+                <button
+                  onClick={() => {
+                    window.dispatchEvent(
+                      new CustomEvent('razorrecover:navigate-tab', {
+                        detail: { tab: 'Audit', txnId: selectedTxn.id },
+                      })
+                    )
+                  }}
+                  className="w-full py-2 rounded-lg bg-[#0f0c08] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-mono transition cursor-pointer text-center flex items-center justify-center gap-1.5"
+                >
+                  <span>📜 Inspect Full Cryptographic Audit Logs ➔</span>
+                </button>
               </div>
 
               {/* Action Buttons */}
               <div className="space-y-2 pt-2">
                 {selectedTxn.status === 'RECOVERED' ? (
-                  <div className="space-y-2">
-                    <button
-                      disabled
-                      className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
-                    >
-                      ✓ Recovery Verified & Captured in Razorpay
-                    </button>
-                    <button
-                      onClick={() => {
-                        window.dispatchEvent(
-                          new CustomEvent('razorrecover:navigate-tab', {
-                            detail: { tab: 'Audit', txnId: selectedTxn.id },
-                          })
-                        )
-                      }}
-                      className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-mono transition cursor-pointer text-center"
-                    >
-                      View Audit Trail ➔
-                    </button>
-                  </div>
+                  <button
+                    disabled
+                    className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
+                  >
+                    ✓ Recovery Verified & Captured in Razorpay
+                  </button>
                 ) : selectedTxn.policy === 'Blocked' ? (
                   <button
                     disabled

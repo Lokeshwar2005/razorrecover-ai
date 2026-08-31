@@ -84,6 +84,14 @@ export interface ChronovaTransaction {
   latency: string
   source: 'CHRONOVA' | 'live'
   provider: 'RAZORPAY' | 'razorpay'
+  product_id?: string
+  product_name?: string
+  product_image?: string
+  product_brand?: string
+  product_category?: string
+  quantity?: number
+  unit_price?: number
+  unit_price_rupees?: number
   customer?: ChronovaCustomer
   metadata?: ChronovaMetadata
   ai_diagnosis?: AIDiagnosis
@@ -445,6 +453,14 @@ export async function upsertChronovaEvent(
   const prevHash = '0000000000000000000000000000000000000000000000000000000000000000'
   const hash = pseudoSha256(`${prevHash}:${id}:FAILURE_INGESTED`)
 
+  const prodId = (payload as any).product_id || payload.metadata?.product_id || 'prod_chronova_seeker'
+  const prodName = (payload as any).product_name || payload.metadata?.product_name || 'Chronova Luxury Horizon Automatic'
+  const prodImage = (payload as any).product_image || payload.metadata?.product_image || payload.metadata?.image || 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&auto=format&fit=crop&q=80'
+  const prodBrand = (payload as any).product_brand || payload.metadata?.brand || 'Chronova'
+  const prodCat = (payload as any).product_category || payload.metadata?.category || 'Automatic Watches'
+  const prodQty = Number((payload as any).quantity || payload.metadata?.quantity) || 1
+  const prodUnitPrice = Number((payload as any).unit_price || payload.metadata?.unit_price) || Math.round(amtMinor / 100)
+
   const newTxn: ChronovaTransaction = {
     id: id,
     chronova_order_id: orderId,
@@ -457,6 +473,14 @@ export async function upsertChronovaEvent(
     amount: Math.round(amtMinor / 100),
     amount_minor: amtMinor,
     currency: (payload.currency || 'INR').toUpperCase(),
+    product_id: prodId,
+    product_name: prodName,
+    product_image: prodImage,
+    product_brand: prodBrand,
+    product_category: prodCat,
+    quantity: prodQty,
+    unit_price: prodUnitPrice,
+    unit_price_rupees: prodUnitPrice,
     status: 'PAYMENT_FAILED',
     direction: 'Payment degradation',
     reason: reason,

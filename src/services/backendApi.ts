@@ -614,15 +614,20 @@ export interface PaymentCustomerPayload {
 export interface PaymentEventMetadataPayload {
   product_id?: string
   product_name?: string
+  product_image?: string
   brand?: string
+  category?: string
+  quantity?: number
+  unit_price?: number
   scenario_id?: string
-  extra?: Record<string, any>
+  [key: string]: any
 }
 
 export interface PaymentEventPayload {
   transaction_id: string
   merchant_id?: string
   order_id?: string
+  chronova_order_id?: string
   payment_id?: string
   amount_minor: number
   currency?: string
@@ -632,6 +637,13 @@ export interface PaymentEventPayload {
   method?: string
   failure_code?: string
   failure_reason?: string
+  product_id?: string
+  product_name?: string
+  product_image?: string
+  product_brand?: string
+  product_category?: string
+  quantity?: number
+  unit_price?: number
   customer?: PaymentCustomerPayload
   metadata?: PaymentEventMetadataPayload
 }

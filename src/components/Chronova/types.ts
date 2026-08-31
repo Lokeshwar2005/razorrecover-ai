@@ -126,3 +126,46 @@ export interface AppliedCoupon {
   description: string
 }
 
+export interface ChronovaOrderItem {
+  product_id: string
+  product_name: string
+  product_image: string
+  product_category?: string
+  product_brand?: string
+  quantity: number
+  unit_price_rupees: number
+  total_price_rupees: number
+  selected_color?: string
+}
+
+export interface ChronovaOrder {
+  order_id: string
+  transaction_id: string
+  created_at: string
+  updated_at?: string
+  items: ChronovaOrderItem[]
+  total_amount_rupees: number
+  total_amount_minor: number
+  currency: string
+  customer: {
+    full_name: string
+    email: string
+    phone: string
+    address_line1?: string
+    address_line2?: string
+    city?: string
+    state?: string
+    pincode?: string
+  }
+  payment_status: 'FAILED' | 'PENDING' | 'PAID' | 'RECOVERED'
+  order_status: 'ORDER_PLACED' | 'PAYMENT_FAILED' | 'RECOVERY_IN_PROGRESS' | 'ORDER_CONFIRMED'
+  recovery_status?: 'NONE' | 'ELIGIBLE' | 'IN_PROGRESS' | 'RECOVERED'
+  failure_reason?: string
+  failure_code?: string
+  recommended_action?: string
+  razorpay_order_id?: string
+  razorpay_payment_id?: string
+  payment_method?: string
+  verified_at?: string
+}
+
