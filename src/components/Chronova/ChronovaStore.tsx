@@ -836,12 +836,15 @@ export const ChronovaStore: React.FC = () => {
 
               <button
                 onClick={() => setIsCartOpen(true)}
-                className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900 hover:bg-blue-600 text-white transition shadow-sm cursor-pointer"
+                className="flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full bg-slate-900 hover:bg-blue-600 text-white transition shadow-sm cursor-pointer"
                 style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
               >
-                <span className="text-base">🛍️</span>
-                <span className="text-xs font-black tracking-wide hidden sm:inline" style={{ color: '#ffffff' }}>CART</span>
-                <span className="w-5 h-5 rounded-full bg-white text-slate-900 text-xs font-black font-mono flex items-center justify-center">
+                <span className="text-sm sm:text-base">🛍️</span>
+                <span className="text-xs sm:text-sm font-black tracking-wider hidden sm:inline" style={{ color: '#ffffff' }}>CART</span>
+                <span
+                  className="cart-badge w-5.5 h-5.5 min-w-[22px] px-1 rounded-full text-xs font-black font-mono flex items-center justify-center shadow-xs"
+                  style={{ color: '#0f172a', backgroundColor: '#ffffff' }}
+                >
                   {totalCartCount}
                 </span>
               </button>
@@ -1546,26 +1549,26 @@ export const ChronovaStore: React.FC = () => {
       )}
 
       {/* 10. Multi-Column Footer */}
-      <footer className="bg-[#0b1120] text-slate-300 py-16 mt-20 text-xs border-t border-slate-800">
+      <footer className="bg-[#0b1120] text-slate-300 py-16 mt-20 text-sm border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-white text-slate-950 font-black flex items-center justify-center text-xl shadow-md">
+              <div className="w-10 h-10 rounded-xl bg-white text-slate-950 font-black flex items-center justify-center text-2xl shadow-md">
                 ⧖
               </div>
-              <span className="text-white font-black text-xl tracking-wider">CHRONOVA</span>
+              <span className="text-white font-black text-2xl tracking-wider">CHRONOVA</span>
             </div>
-            <p className="text-slate-300 leading-relaxed font-normal">
+            <p className="text-slate-300 text-sm leading-relaxed font-normal">
               India's premier luxury and connected horology destination. Offering 100% authentic manufacturer warranty and pan-India express courier delivery.
             </p>
-            <div className="pt-2 text-amber-400 font-black text-sm tracking-widest font-mono">
-              "FIND YOUR TIME."
+            <div className="pt-2 text-amber-400 font-extrabold text-base tracking-widest">
+              FIND YOUR TIME.
             </div>
           </div>
 
-          <div className="space-y-3">
-            <h4 className="text-white font-black uppercase tracking-wider font-mono text-xs">Customer Service</h4>
-            <ul className="space-y-2 text-slate-300 font-medium">
+          <div className="space-y-3.5">
+            <h4 className="text-white font-black uppercase tracking-wider text-sm">Customer Service</h4>
+            <ul className="space-y-2.5 text-slate-300 text-sm font-medium">
               <li className="hover:text-white transition cursor-pointer">Track Order Status</li>
               <li className="hover:text-white transition cursor-pointer">Doorstep Warranty Claims</li>
               <li className="hover:text-white transition cursor-pointer">Free 7-Day Replacement</li>
@@ -1574,9 +1577,9 @@ export const ChronovaStore: React.FC = () => {
             </ul>
           </div>
 
-          <div className="space-y-3">
-            <h4 className="text-white font-black uppercase tracking-wider font-mono text-xs">Approved Brands</h4>
-            <ul className="space-y-2 text-slate-300 font-medium">
+          <div className="space-y-3.5">
+            <h4 className="text-white font-black uppercase tracking-wider text-sm">Approved Brands</h4>
+            <ul className="space-y-2.5 text-slate-300 text-sm font-medium">
               <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Titan']); setCurrentView('catalog'); }}>Titan (Edge, Maritime, Karishma)</li>
               <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Fastrack']); setCurrentView('catalog'); }}>Fastrack (Stunners, UFO, Thor)</li>
               <li className="hover:text-white transition cursor-pointer" onClick={() => { handleClearAllFilters(); setSelectedBrands(['Casio']); setCurrentView('catalog'); }}>Casio (G-Shock, Vintage, Edifice)</li>
@@ -1585,21 +1588,21 @@ export const ChronovaStore: React.FC = () => {
             </ul>
           </div>
 
-          <div className="space-y-3">
-            <h4 className="text-white font-black uppercase tracking-wider font-mono text-xs">Payment & Security</h4>
-            <p className="text-slate-300 leading-relaxed font-normal">
+          <div className="space-y-3.5">
+            <h4 className="text-white font-black uppercase tracking-wider text-sm">Payment & Security</h4>
+            <p className="text-slate-300 text-sm leading-relaxed font-normal">
               Secured by 256-bit SSL encryption. Supporting UPI, NetBanking, Credit/Debit Cards, and Razorpay Test Mode.
             </p>
-            <div className="pt-2 text-emerald-400 font-mono font-black text-xs flex items-center gap-1.5">
+            <div className="pt-2 text-emerald-400 font-bold text-sm flex items-center gap-1.5">
               <span>✓</span>
               <span>Verified Merchant Checkout Active</span>
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 mt-10 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 mt-10 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400 font-normal">
           <div>© 2026 CHRONOVA Timepieces Inc. All rights reserved.</div>
-          <div className="font-mono text-slate-400">Designed for watch lovers across India</div>
+          <div>Designed for watch lovers across India</div>
         </div>
       </footer>
 

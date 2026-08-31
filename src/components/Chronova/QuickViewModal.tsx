@@ -69,55 +69,55 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
 
           {/* Product Summary */}
           <div className="flex flex-col justify-between space-y-4">
-            <div className="space-y-2">
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-black font-mono text-blue-700 uppercase">
+                <span className="text-xs font-black font-mono text-blue-700 uppercase bg-blue-50 px-2.5 py-0.5 rounded border border-blue-100">
                   {product.brand}
                 </span>
-                <span className="text-xs font-semibold text-slate-500 font-mono">
+                <span className="text-xs font-bold text-slate-500 font-mono">
                   {product.model}
                 </span>
               </div>
 
-              <h2 className="text-xl font-black text-slate-900 leading-tight">
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 leading-tight">
                 {product.name}
               </h2>
 
-              <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 text-xs font-black font-mono">
+              <div className="flex items-center gap-2.5">
+                <span className="px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200 text-xs font-black font-mono">
                   ★ {product.rating}
                 </span>
-                <span className="text-xs text-slate-500 font-medium">
+                <span className="text-xs text-slate-500 font-semibold">
                   ({product.review_count} reviews)
                 </span>
-                <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
+                <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
                   {product.stock_status}
                 </span>
               </div>
 
               {/* Price */}
-              <div className="pt-2 flex items-baseline gap-2">
-                <span className="text-2xl font-black text-slate-900">
+              <div className="pt-2 flex items-baseline gap-2.5">
+                <span className="text-2xl sm:text-3xl font-black text-slate-900">
                   ₹{product.price_rupees.toLocaleString('en-IN')}
                 </span>
                 {product.discount_percent > 0 && (
-                  <span className="text-sm text-slate-400 line-through font-semibold">
+                  <span className="text-sm sm:text-base text-slate-400 line-through font-semibold">
                     ₹{product.original_price_rupees.toLocaleString('en-IN')}
                   </span>
                 )}
                 {product.discount_percent > 0 && (
-                  <span className="text-xs font-black text-rose-600 font-mono bg-rose-50 px-2 py-0.5 rounded border border-rose-200">
+                  <span className="text-xs sm:text-sm font-black text-rose-600 font-mono bg-rose-50 px-2.5 py-0.5 rounded border border-rose-200">
                     {product.discount_percent}% OFF
                   </span>
                 )}
               </div>
 
-              <p className="text-xs text-slate-600 line-clamp-3 pt-1">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3 pt-1">
                 {product.description}
               </p>
 
               {/* Key Specs */}
-              <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 grid grid-cols-2 gap-2 text-xs text-slate-700">
+              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 grid grid-cols-2 gap-2 text-xs sm:text-sm text-slate-700">
                 <div>Movement: <strong className="text-slate-900 font-bold block">{product.specs.movement}</strong></div>
                 <div>Case Size: <strong className="text-slate-900 font-bold block">{product.specs.case_size}</strong></div>
                 <div>Water Resist: <strong className="text-slate-900 font-bold block">{product.specs.water_resistance}</strong></div>
@@ -132,16 +132,16 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 <div className="flex items-center border border-slate-300 rounded-xl bg-white shadow-xs">
                   <button
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                    className="px-3 py-2 text-xs font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                    className="px-3.5 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-100 transition cursor-pointer"
                   >
                     −
                   </button>
-                  <span className="px-3 py-2 text-xs font-black text-slate-900 font-mono">
+                  <span className="px-3 py-2.5 text-sm font-black text-slate-900 font-mono">
                     {quantity}
                   </span>
                   <button
                     onClick={() => setQuantity((q) => Math.min(5, q + 1))}
-                    className="px-3 py-2 text-xs font-bold text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                    className="px-3.5 py-2.5 text-sm font-bold text-slate-700 hover:bg-slate-100 transition cursor-pointer"
                   >
                     +
                   </button>
@@ -152,16 +152,16 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                     onAddToCart(product, quantity, selectedColor)
                     onClose()
                   }}
-                  className="flex-1 py-3 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider transition cursor-pointer shadow-md"
+                  className="flex-1 py-3.5 px-5 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs sm:text-sm font-black uppercase tracking-wider transition cursor-pointer shadow-md"
                   style={{ color: "#ffffff", backgroundColor: "#0f172a" }}
                 >
-                  ADD TO BAG
+                  <span style={{ color: "#ffffff" }}>ADD TO BAG</span>
                 </button>
               </div>
 
               <button
                 onClick={handleOpenDetail}
-                className="w-full py-2.5 rounded-xl border border-slate-300 text-slate-800 hover:bg-slate-100 text-xs font-bold uppercase tracking-wider transition cursor-pointer text-center"
+                className="w-full py-3 rounded-xl border border-slate-300 text-slate-800 hover:bg-slate-100 text-xs sm:text-sm font-bold uppercase tracking-wider transition cursor-pointer text-center"
               >
                 View Full Product Specifications & Reviews →
               </button>

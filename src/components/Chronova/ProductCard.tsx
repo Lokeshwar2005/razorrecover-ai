@@ -74,13 +74,16 @@ export const ProductCard: React.FC<ProductCardProps> = React.memo(({
         {/* Quick View Floating Button on Desktop Hover */}
         {onQuickView && (
           <button
+            type="button"
             onClick={(e) => {
               e.stopPropagation()
               onQuickView(product)
             }}
-            className="absolute bottom-3 left-3 right-3 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-xs font-black uppercase tracking-wider shadow-md opacity-0 group-hover:opacity-100 transition-all duration-200 hover:bg-slate-900 hover:text-white cursor-pointer hidden sm:block text-center"
+            className="absolute bottom-3 left-3 right-3 py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-black uppercase tracking-wider shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 cursor-pointer hidden sm:flex items-center justify-center gap-2 border border-slate-700/50"
+            style={{ color: '#ffffff', backgroundColor: '#0f172a' }}
           >
-            QUICK VIEW 👁️
+            <span style={{ color: '#ffffff' }}>QUICK VIEW</span>
+            <span>👁️</span>
           </button>
         )}
       </div>

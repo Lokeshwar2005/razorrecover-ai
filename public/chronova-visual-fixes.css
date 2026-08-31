@@ -1,51 +1,24 @@
-/* Chronova + RazorRecover defensive visual fixes */
+/* Chronova + RazorRecover Clean Defensive Styles */
 
-/* Guarantee readable labels on dark Chronova action buttons even if Tailwind layers/cascade change. */
+/* Ensure dark action buttons have clear white text */
+.dark-btn,
 button.bg-slate-900,
 button.bg-slate-800,
 button.bg-blue-700,
 button.bg-blue-600,
-button.bg-rose-600,
-button[class*="bg-slate-900"],
-button[class*="bg-blue-7"],
-button[class*="bg-blue-6"],
-button[class*="bg-rose-6"] {
-  color: #fff !important;
+button.bg-rose-600 {
+  color: #ffffff !important;
 }
 
-button.bg-slate-900 *,
-button.bg-slate-800 *,
-button.bg-blue-700 *,
-button.bg-blue-600 *,
-button.bg-rose-600 *,
-button[class*="bg-slate-900"] *,
-button[class*="bg-blue-7"] *,
-button[class*="bg-blue-6"] *,
-button[class*="bg-rose-6"] * {
-  color: #fff !important;
+/* Explicit rule: CART Badge must ALWAYS be dark slate text on white circle */
+.cart-badge,
+button .cart-badge,
+button.bg-slate-900 .cart-badge {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
 }
 
-/* Keep the Chronova brand strip clean: no numerical/approval messaging. */
-section.py-8.bg-slate-50.border-b.border-slate-200 > div > div > span {
-  font-size: 0 !important;
-}
-
-section.py-8.bg-slate-50.border-b.border-slate-200 > div > div > span::after {
-  content: 'EXPLORE BRANDS';
-  font-size: 0.75rem;
-}
-
-/* Footer uses a neutral label instead of approval-count language. */
-footer > div.grid > div:nth-child(3) h4 {
-  font-size: 0 !important;
-}
-
-footer > div.grid > div:nth-child(3) h4::after {
-  content: 'BRANDS';
-  font-size: 0.75rem;
-}
-
-/* Prevent the dashboard shell from collapsing into unstyled black text if a utility class is missed. */
+/* Ensure Dashboard text colors */
 .app,
 .shell,
 .panel,

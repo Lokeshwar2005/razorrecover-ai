@@ -988,9 +988,10 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   disabled={paymentLoading}
                   onClick={handleExecuteSuccessfulPayment}
                   className="w-full py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-black text-xs uppercase tracking-wider transition cursor-pointer shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
+                  style={{ color: '#ffffff', backgroundColor: '#2563eb' }}
                 >
-                  <span>{paymentLoading ? 'AUTHORIZING WITH ISSUER...' : `AUTHORIZE & PAY ${formatINR(totalDue)}`}</span>
-                  <span>✓</span>
+                  <span style={{ color: '#ffffff' }}>{paymentLoading ? 'AUTHORIZING WITH ISSUER...' : `AUTHORIZE & PAY ${formatINR(totalDue)}`}</span>
+                  <span style={{ color: '#ffffff' }}>✓</span>
                 </button>
 
                 <div className="flex items-center justify-between pt-1 text-[10px] text-slate-400 font-mono">

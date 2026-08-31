@@ -186,9 +186,10 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                             ? 'border-slate-900 bg-slate-900 text-white shadow-xs'
                             : 'border-slate-300 bg-white text-slate-700 hover:border-slate-500'
                         }`}
+                        style={selectedColor === c.name ? { color: '#ffffff', backgroundColor: '#0f172a' } : { color: '#334155', backgroundColor: '#ffffff' }}
                       >
-                        <span className="w-4 h-4 rounded-full border border-white" style={{ backgroundColor: c.hex }} />
-                        <span>{c.name}</span>
+                        <span className="w-4 h-4 rounded-full border border-white shrink-0" style={{ backgroundColor: c.hex }} />
+                        <span style={{ color: selectedColor === c.name ? '#ffffff' : '#334155' }}>{c.name}</span>
                       </button>
                     ))}
                   </div>
@@ -201,7 +202,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   <div className="flex items-center border border-slate-300 rounded-xl bg-white overflow-hidden shadow-xs">
                     <button
                       onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                      className="px-4 py-3 text-xs font-black text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                      className="px-4 py-3 text-sm font-black text-slate-800 hover:bg-slate-100 transition cursor-pointer"
                     >
                       −
                     </button>
@@ -210,7 +211,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     </span>
                     <button
                       onClick={() => setQuantity((q) => Math.min(5, q + 1))}
-                      className="px-4 py-3 text-xs font-black text-slate-600 hover:bg-slate-100 transition cursor-pointer"
+                      className="px-4 py-3 text-sm font-black text-slate-800 hover:bg-slate-100 transition cursor-pointer"
                     >
                       +
                     </button>
