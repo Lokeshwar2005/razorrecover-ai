@@ -27,6 +27,7 @@ export const OpportunityQueue: React.FC = () => {
   const lastSyncedAt = useTransactionStore((s) => s.lastSyncedAt)
   const [refreshingFeed, setRefreshingFeed] = useState(false)
 
+  const [sourceFilter, setSourceFilter] = useState<'live' | 'all' | 'synthetic' | 'razorpay_test'>('live')
   const [searchQuery, setSearchQuery] = useState('')
   const [activeFilter, setActiveFilter] = useState<
     | 'ALL'
@@ -219,6 +220,11 @@ export const OpportunityQueue: React.FC = () => {
             opp.id.toLowerCase().includes(q)
           )
         )
+
+        // Source Filter
+        if (!isDirectIdSearch && sourceFilter !== 'all' && parentTxn?.source !== sourceFilter) {
+          return false
+        }
 
         let matchesFilter = true
         if (!isDirectIdSearch) {
@@ -469,6 +475,42 @@ export const OpportunityQueue: React.FC = () => {
         </div>
       </div>
 
+      {/* Source Filter Switcher */}
+      <div className="flex flex-wrap items-center justify-between gap-3 p-4 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-xs font-mono">
+        <div className="flex items-center gap-2">
+          <span className="text-[#7a7164] text-[11px]">DATA SOURCE:</span>
+          {[
+            { id: 'live', label: 'LIVE OPPORTUNITIES', count: breakdown.activeLiveCount },
+            { id: 'all', label: 'ALL SOURCES', count: allOpportunities.length },
+            { id: 'synthetic', label: 'SYNTHETIC', count: breakdown.activeSyntheticCount },
+            { id: 'razorpay_test', label: 'RAZORPAY TEST', count: breakdown.activeRazorpayTestCount },
+          ].map((src) => (
+            <button
+              key={src.id}
+              onClick={() => setSourceFilter(src.id as any)}
+              className={`px-2.5 py-1 rounded border transition flex items-center gap-1.5 ${
+                sourceFilter === src.id
+                  ? 'bg-[#e5a944] text-[#080705] border-[#e5a944] font-bold'
+                  : 'bg-[#15120c] text-[#a89f91] border-[#2e271c] hover:border-[#453d32]'
+              }`}
+            >
+              <span>{src.label}</span>
+              <span
+                className={`px-1.5 py-0.2 rounded text-[10px] ${
+                  sourceFilter === src.id ? 'bg-[#080705]/20 text-[#080705]' : 'bg-[#2e271c] text-[#a89f91]'
+                }`}
+              >
+                {src.count}
+              </span>
+            </button>
+          ))}
+        </div>
+        <div className="text-[11px] text-[#7a7164] flex items-center gap-1.5">
+          <span className="w-2 h-2 rounded-full bg-[#10b981]" />
+          <span>Live Recovery Engine Active</span>
+        </div>
+      </div>
+
       {/* Prominent Global Canonical Transaction Search */}
       <div className="p-5 rounded-xl bg-[#0f0c08] border-2 border-[#e5a944]/40 shadow-[0_0_20px_rgba(229,169,68,0.15)] space-y-2 font-mono">
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
@@ -682,20 +724,46 @@ export const OpportunityQueue: React.FC = () => {
         {/* Opportunity List */}
         <div className="lg:col-span-2 space-y-3">
           {filteredOpportunities.length === 0 ? (
-            <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-3 font-mono">
-              <span className="text-3xl">🔍</span>
-              <h4 className="text-sm font-bold text-[#f4ede2]">No opportunities match your search.</h4>
-              <p className="text-xs text-[#a89f91]">Try another transaction ID, payment ID, reason, action, or status.</p>
-              <button
-                onClick={() => {
-                  setSearchQuery('')
-                  setActiveFilter('ALL')
-                }}
-                className="px-3.5 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#e5a944] text-xs transition cursor-pointer"
-              >
-                Clear Search & Filters
-              </button>
-            </div>
+            sourceFilter === 'live' && !searchQuery ? (
+              <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-4 font-mono">
+                <span className="text-3xl">🟢</span>
+                <h4 className="text-base font-bold text-[#f4ede2]">No Active Live Recovery Opportunities</h4>
+                <p className="text-xs text-[#a89f91] max-w-md mx-auto leading-relaxed">
+                  All live customer checkouts are either settled, recovered, or within policy boundaries. To test recovery, trigger a simulated checkout decline on the Chronova storefront.
+                </p>
+                <div className="pt-2 flex items-center justify-center gap-3">
+                  <button
+                    onClick={handleRefreshFeed}
+                    disabled={refreshingFeed}
+                    className="px-3.5 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-xs text-[#f4ede2] hover:text-[#e5a944] transition cursor-pointer disabled:opacity-50"
+                  >
+                    ↻ Refresh Live Feed
+                  </button>
+                  <a
+                    href="/chronova"
+                    className="px-3.5 py-1.5 rounded-lg bg-[#e5a944] text-[#080705] text-xs font-bold hover:bg-[#fcd34d] transition"
+                  >
+                    Open Chronova Storefront ↗
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-3 font-mono">
+                <span className="text-3xl">🔍</span>
+                <h4 className="text-sm font-bold text-[#f4ede2]">No opportunities match your search.</h4>
+                <p className="text-xs text-[#a89f91]">Try another transaction ID, payment ID, reason, action, or status.</p>
+                <button
+                  onClick={() => {
+                    setSearchQuery('')
+                    setActiveFilter('ALL')
+                    setSourceFilter('all')
+                  }}
+                  className="px-3.5 py-1.5 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#e5a944] text-xs transition cursor-pointer"
+                >
+                  Clear Search & Filters
+                </button>
+              </div>
+            )
           ) : (
             <div className="space-y-3">
               {paginatedOpportunities.map((opp) => {

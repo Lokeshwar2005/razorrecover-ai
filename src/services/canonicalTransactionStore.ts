@@ -482,6 +482,14 @@ export function computeMetricsFromTransactions(transactions: CanonicalTransactio
   return result
 }
 
+/**
+ * Pure function to calculate KPIs exclusively from live production transactions.
+ */
+export function computeLiveMetrics(transactions: CanonicalTransaction[]) {
+  const liveOnly = transactions.filter((t) => t.source === 'live')
+  return computeMetricsRaw(liveOnly)
+}
+
 export interface CanonicalStoreState {
   transactions: CanonicalTransaction[]
   providerTransactions: CanonicalTransaction[]

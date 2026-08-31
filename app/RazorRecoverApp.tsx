@@ -13,6 +13,7 @@ import { RecoveryAnalyticsView } from '../src/components/Analytics/RecoveryAnaly
 import { PolicySettingsView } from '../src/components/Settings/PolicySettingsView'
 import { AuditComplianceCenter } from '../src/components/Audit/AuditComplianceCenter'
 import { ChronovaStore } from '../src/components/Chronova/ChronovaStore'
+import { ErrorBoundary } from '../src/components/ErrorBoundary'
 import { GraphTransactionContext } from '../src/types/graph'
 import { createTransaction, type RecoveryDirection } from '../src/recoveryEngine'
 import { useTransactionStore } from '../src/services/canonicalTransactionStore'
@@ -685,14 +686,28 @@ export function RazorRecoverApp() {
         </div>
       </header>
 
-      {/* Render Sub-View if tab is not Overview/Simulation */}
-      {tab === 'Command Center' && <MerchantDashboard />}
-      {tab === 'Opportunities' && <OpportunityQueue />}
-      {tab === 'Transactions' && <TransactionExplorer />}
-      {tab === 'Analytics' && <RecoveryAnalyticsView />}
-      {tab === 'Policies' && <PolicySettingsView />}
-      {tab === 'Audit' && <AuditComplianceCenter />}
-      {tab === 'Agent trace' && <AgentTrace2 />}
+      {/* Render Sub-View with Error Boundaries if tab is not Overview/Simulation */}
+      <ErrorBoundary fallbackTitle="Command Center">
+        {tab === 'Command Center' && <MerchantDashboard />}
+      </ErrorBoundary>
+      <ErrorBoundary fallbackTitle="Opportunities Explorer">
+        {tab === 'Opportunities' && <OpportunityQueue />}
+      </ErrorBoundary>
+      <ErrorBoundary fallbackTitle="Transaction Explorer">
+        {tab === 'Transactions' && <TransactionExplorer />}
+      </ErrorBoundary>
+      <ErrorBoundary fallbackTitle="Recovery Analytics">
+        {tab === 'Analytics' && <RecoveryAnalyticsView />}
+      </ErrorBoundary>
+      <ErrorBoundary fallbackTitle="Policy Settings">
+        {tab === 'Policies' && <PolicySettingsView />}
+      </ErrorBoundary>
+      <ErrorBoundary fallbackTitle="Audit Compliance Center">
+        {tab === 'Audit' && <AuditComplianceCenter />}
+      </ErrorBoundary>
+      <ErrorBoundary fallbackTitle="Agent Decision Trace">
+        {tab === 'Agent trace' && <AgentTrace2 />}
+      </ErrorBoundary>
 
       {/* Main Core View (Overview / Simulation) */}
       {(tab === 'Overview' || tab === 'Simulation') && (

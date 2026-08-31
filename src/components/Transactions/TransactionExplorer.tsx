@@ -26,7 +26,7 @@ export const TransactionExplorer: React.FC = () => {
 
   const metrics = useMemo(() => computeMetricsFromTransactions(transactions), [transactions])
 
-  const [sourceFilter, setSourceFilter] = useState<'all' | 'synthetic' | 'razorpay_test' | 'live'>('all')
+  const [sourceFilter, setSourceFilter] = useState<'all' | 'synthetic' | 'razorpay_test' | 'live'>('live')
   const [filter, setFilter] = useState<string>('all')
   const [search, setSearch] = useState<string>('')
   const [currentPage, setCurrentPage] = useState<number>(1)
@@ -409,19 +409,54 @@ export const TransactionExplorer: React.FC = () => {
         {/* Transaction Table / List */}
         <div className="lg:col-span-2 space-y-3">
           {filteredTransactions.length === 0 ? (
-            <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-2">
-              <div className="text-2xl">🔎</div>
-              <div className="text-sm font-mono text-[#f4ede2] font-bold">No transactions match your search.</div>
-              <p className="text-xs text-[#a89f91] font-mono">
-                Searched across all {transactions.length} canonical records for "{search}".
-              </p>
-              <button
-                onClick={() => { setSearch(''); setFilter('all'); setSourceFilter('all') }}
-                className="mt-3 px-3 py-1.5 rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30 text-xs font-mono hover:bg-[#e5a944]/20"
-              >
-                Clear Search & Filters
-              </button>
-            </div>
+            sourceFilter === 'live' && !search ? (
+              <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-4">
+                <div className="w-14 h-14 rounded-2xl bg-[#10b981]/15 border border-[#10b981]/40 flex items-center justify-center mx-auto text-[#10b981] text-2xl font-bold">
+                  ⚡
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-base font-bold text-[#f4ede2]">Waiting for Live Payment Events</h3>
+                  <p className="text-xs text-[#a89f91] max-w-lg mx-auto leading-relaxed">
+                    RazorRecover AI Live Feed is connected and actively listening for payment events. No live checkout failures or recoveries have arrived in this session yet.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10b981]/10 border border-[#10b981]/30 text-[#10b981] text-xs font-mono">
+                  <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
+                  <span>LIVE FEED CONNECTED · Last checked: {lastSyncedAt ? new Date(lastSyncedAt).toLocaleTimeString() : 'Just now'}</span>
+                </div>
+                <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
+                  <button
+                    onClick={handleRefreshFeed}
+                    disabled={refreshingFeed}
+                    className="px-4 py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-xs font-mono font-semibold text-[#f4ede2] hover:text-[#e5a944] transition flex items-center gap-2 cursor-pointer disabled:opacity-50"
+                  >
+                    <span className={refreshingFeed ? 'animate-spin' : ''}>🔄</span>
+                    <span>{refreshingFeed ? 'Checking Feed...' : 'Refresh Live Feed'}</span>
+                  </button>
+                  <a
+                    href="/chronova"
+                    className="px-4 py-2 rounded-lg bg-[#e5a944] text-[#080705] text-xs font-mono font-bold hover:bg-[#fcd34d] transition flex items-center gap-1.5 shadow-md"
+                  >
+                    <span>Open Chronova Storefront</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <div className="p-12 rounded-xl bg-[#0f0c08] border border-[#2e271c] text-center space-y-2">
+                <div className="text-2xl">🔎</div>
+                <div className="text-sm font-mono text-[#f4ede2] font-bold">No transactions match your query.</div>
+                <p className="text-xs text-[#a89f91] font-mono">
+                  Searched across {transactions.length} canonical records for &ldquo;{search}&rdquo;.
+                </p>
+                <button
+                  onClick={() => { setSearch(''); setFilter('all'); setSourceFilter('all') }}
+                  className="mt-3 px-3 py-1.5 rounded bg-[#e5a944]/10 text-[#e5a944] border border-[#e5a944]/30 text-xs font-mono hover:bg-[#e5a944]/20 cursor-pointer"
+                >
+                  Clear Search & Filters
+                </button>
+              </div>
+            )
           ) : (
             paginatedTransactions.map((txn) => {
               const isSelected = selectedTxn?.id === txn.id
