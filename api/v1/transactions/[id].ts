@@ -1,4 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
+import { fetchGistTransactions } from '../../_lib/gistStore'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>
@@ -8,32 +9,6 @@ export interface VercelResponse extends ServerResponse {
   status: (code: number) => VercelResponse
   json: (body: any) => void
   setHeader: (name: string, value: string) => this
-}
-
-const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
-const GITHUB_TOKEN = (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) || atob('Z2hvX0NuTEpUTk9Ed2pVYnZKdGRNNnEya0d2NEFEQ2NrbTFrR0JpRw==')
-const GIST_FILENAME = 'razorrecover_db_init.json'
-
-async function fetchGistTransactions(): Promise<Record<string, any>> {
-  try {
-    const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
-      headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
-        Accept: 'application/vnd.github.v3+json',
-        'User-Agent': 'RazorRecover-AI-Serverless',
-      },
-      signal: AbortSignal.timeout(4000),
-    })
-    if (res.ok) {
-      const data = await res.json()
-      const rawContent = data?.files?.[GIST_FILENAME]?.content
-      if (rawContent) {
-        const parsed = JSON.parse(rawContent)
-        return parsed?.transactions || {}
-      }
-    }
-  } catch (e) {}
-  return {}
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
