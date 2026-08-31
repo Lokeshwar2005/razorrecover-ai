@@ -11407,7 +11407,7 @@
       "amount_minor": 349500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "UPI Intent Session Expired (Customer Backgrounded App to Check SMS)",
       "action": "Send instant WhatsApp UPI deep link",
@@ -11418,13 +11418,13 @@
       "explanation": "UPI app switch timeout detected. High-intent 1-click WhatsApp deep link activated.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:46:43.345Z",
-      "updated_at": "2026-08-31T14:46:46.534Z",
+      "updated_at": "2026-08-31T14:46:50.256Z",
       "provider": "razorpay",
-      "provider_id": "order_test_upi_intent_drop_1788187582628",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187582628",
+      "provider_id": "pay_test_capture_upi_intent_drop_1788187582628",
+      "provider_payment_id": "pay_test_capture_upi_intent_drop_1788187582628",
       "provider_order_id": "order_test_upi_intent_drop_1788187582628",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 349500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -11447,8 +11447,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOUPIINTENTDROP1788187582628",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187582628 [REC-20260831-TXNE2ESCENARIOUPIINTENTDROP1788187582628] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹3,495 for TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187582628.",
+      "captured_at": "2026-08-31T14:46:50.256Z"
     },
     "TXN-E2E-IDEMPOTENCY-33404520332": {
       "id": "TXN-E2E-IDEMPOTENCY-33404520332",
