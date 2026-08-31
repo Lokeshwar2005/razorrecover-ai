@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import type { CartItem, ShippingAddress, AppliedCoupon } from './types'
 import { useTransactionStore, type CanonicalTransaction } from '../../services/canonicalTransactionStore'
 import { AVAILABLE_COUPONS } from './CartDrawer'
-import { ingestPaymentEvent, fetchTransactionDetail } from '../../services/backendApi'
+import { ingestPaymentEvent, fetchTransactionDetail, verifyPaymentCapture } from '../../services/backendApi'
 
 interface CheckoutModalProps {
   isOpen: boolean
@@ -319,42 +319,62 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   // 3. Process Successful Payment via Simulator
   const handleExecuteSuccessfulPayment = () => {
     setPaymentLoading(true)
-    const generatedTxnId = `TXN-CN-${Date.now().toString(36).toUpperCase()}`
-    const mockOrderId = `order_cn_${Date.now().toString(36)}`
-    const paymentId = `pay_test_${Date.now().toString(36)}`
-    setActiveTxnId(generatedTxnId)
-    setActiveOrderId(mockOrderId)
+    const isRetry = !!activeTxnId
+    const currentTxnId = activeTxnId || `TXN-CN-${Date.now().toString(36).toUpperCase()}`
+    const currentOrderId = activeOrderId || `order_cn_${Date.now().toString(36)}`
+    const paymentId = `pay_live_${Date.now().toString(36)}`
 
-    // Authoritative Backend Event Ingestion (Fire & Forget with Fallback)
-    ingestPaymentEvent({
-      transaction_id: generatedTxnId,
-      merchant_id: 'mer_chronova_watches',
-      order_id: mockOrderId,
-      payment_id: paymentId,
-      amount_minor: totalMinor,
-      currency: 'INR',
-      source: 'live',
-      status: 'captured',
-      provider: 'razorpay',
-      method: selectedRzpTab,
-      customer: {
-        name: address.full_name,
-        email: address.email,
-        phone: address.phone,
-      },
-      metadata: {
-        product_id: items[0]?.product.id,
-        product_name: items[0]?.product.name,
-        brand: items[0]?.product.brand,
-      },
-    }).catch(() => {})
+    if (!activeTxnId) {
+      setActiveTxnId(currentTxnId)
+    }
+    if (!activeOrderId) {
+      setActiveOrderId(currentOrderId)
+    }
+
+    if (isRetry) {
+      // Authoritative Server-Side Payment Verification for RETRY
+      verifyPaymentCapture({
+        transaction_id: currentTxnId,
+        payment_id: paymentId,
+        order_id: currentOrderId,
+        amount_minor: totalMinor,
+        currency: 'INR',
+      }).catch(() => {})
+    } else {
+      // Authoritative Server-Side Ingestion for DIRECT PAYMENT
+      ingestPaymentEvent({
+        transaction_id: currentTxnId,
+        merchant_id: 'mer_chronova_watches',
+        order_id: currentOrderId,
+        payment_id: paymentId,
+        amount_minor: totalMinor,
+        currency: 'INR',
+        source: 'live',
+        status: 'captured',
+        provider: 'razorpay',
+        method: selectedRzpTab,
+        customer: {
+          name: address.full_name,
+          email: address.email,
+          phone: address.phone,
+        },
+        metadata: {
+          product_id: items[0]?.product.id,
+          product_name: items[0]?.product.name,
+          brand: items[0]?.product.brand,
+        },
+      }).catch(() => {})
+    }
+
+    // Update frontend canonical store
+    useTransactionStore.getState().updateTransactionStatus(currentTxnId, 'RECOVERED', totalMinor, paymentId)
 
     setTimeout(() => {
       setPaymentLoading(false)
       setIsRazorpayModalOpen(false)
 
-      setOrderReceipt({
-        orderId: mockOrderId,
+      const receipt = {
+        orderId: currentOrderId,
         paymentId: paymentId,
         amount: totalDue,
         date: new Date().toLocaleDateString('en-IN', {
@@ -364,38 +384,45 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
           hour: '2-digit',
           minute: '2-digit',
         }),
-      })
-
-      // Ingest SUCCESSFUL payment into canonical transaction store
-      const successTxn: CanonicalTransaction = {
-        id: generatedTxnId,
-        merchant_id: 'mer_chronova_watches',
-        amount: totalDue,
-        amount_minor: totalMinor,
-        currency: 'INR',
-        source: 'live',
-        status: 'RECOVERED',
-        direction: 'Direct settlement',
-        reason: 'Payment successful on first attempt',
-        action: 'Direct settlement',
-        confidence: 0.99,
-        recovery_probability: 1.0,
-        risk_score: 0.05,
-        policy: 'Approved',
-        explanation: `Customer successfully authorized ${formatINR(totalDue)} via Razorpay Test Mode (${selectedRzpTab.toUpperCase()})`,
-        latency: '180ms',
-        created_at: new Date().toISOString(),
-        provider: 'razorpay',
-        provider_payment_id: paymentId,
-        provider_order_id: mockOrderId,
-        verified_amount_minor: totalMinor,
-        captured_at: new Date().toISOString(),
       }
 
-      useTransactionStore.getState().ingestTransaction(successTxn)
+      if (isRetry) {
+        setRecoveryStatus('recovered')
+        setRecoveredReceipt(receipt)
+        setStep('failure')
+      } else {
+        const successTxn: CanonicalTransaction = {
+          id: currentTxnId,
+          merchant_id: 'mer_chronova_watches',
+          amount: totalDue,
+          amount_minor: totalMinor,
+          currency: 'INR',
+          source: 'live',
+          status: 'RECOVERED',
+          direction: 'Direct settlement',
+          reason: 'Payment successful on first attempt',
+          action: 'Direct settlement',
+          confidence: 0.99,
+          recovery_probability: 1.0,
+          risk_score: 0.05,
+          policy: 'Approved',
+          explanation: `Customer successfully authorized ${formatINR(totalDue)} via Razorpay Test Mode (${selectedRzpTab.toUpperCase()})`,
+          latency: '180ms',
+          created_at: new Date().toISOString(),
+          provider: 'razorpay',
+          provider_payment_id: paymentId,
+          provider_order_id: currentOrderId,
+          verified_amount_minor: totalMinor,
+          captured_at: new Date().toISOString(),
+        }
+        useTransactionStore.getState().ingestTransaction(successTxn)
+        setOrderReceipt(receipt)
+        setStep('success')
+      }
+
       onClearCart()
-      setStep('success')
-    }, 850)
+      useTransactionStore.getState().refreshProviderFeed().catch(() => {})
+    }, 650)
   }
 
   // 4. Simulate Failure Scenarios for RazorRecover AI Testing

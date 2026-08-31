@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { upsertChronovaEvent, findChronovaTransaction } from '../../lib/db.js'
+import { upsertChronovaEvent, findChronovaTransaction, verifyChronovaPaymentCapture } from '../../lib/db.js'
 
 const ALLOWED_ORIGIN_PATTERNS = [
   /^https:\/\/lokeshwar2005\.github\.io$/,
@@ -72,6 +72,33 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
+    const isCaptured =
+      payload.status === 'captured' ||
+      payload.status === 'RECOVERED' ||
+      payload.status === 'paid'
+
+    if (isCaptured) {
+      const pId = payload.payment_id || `pay_direct_${Date.now().toString(36)}`
+      const { transaction } = await verifyChronovaPaymentCapture(
+        rawId.trim(),
+        pId,
+        payload.chronova_order_id || payload.order_id,
+        Number(rawAmountMinor),
+        payload.signature,
+        req
+      )
+      res.status(200).json({
+        success: true,
+        duplicate: false,
+        transaction_id: transaction.id,
+        status: 'RECOVERED',
+        opportunity_id: `opp-${transaction.id}`,
+        message: `Transaction ${transaction.id} captured and recorded in RECOVERED state.`,
+        created_at: transaction.created_at,
+      })
+      return
+    }
+
     const { transaction, duplicate } = await upsertChronovaEvent(
       {
         transaction_id: rawId.trim(),
@@ -94,14 +121,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       success: true,
       duplicate,
       transaction_id: transaction.id,
-      status: 'STOPPED',
+      status: transaction.status === 'RECOVERED' ? 'RECOVERED' : 'STOPPED',
       opportunity_id: `opp-${transaction.id}`,
       message: duplicate
         ? `Transaction ${transaction.id} was already ingested; existing ledger record returned unchanged.`
         : `Transaction ${transaction.id} successfully ingested into authoritative backend ledger.`,
       created_at: transaction.created_at,
     })
-  } catch (err: any) {
+  }
+ catch (err: any) {
     res.status(500).json({
       error: 'Internal Server Error',
       message: err?.message,
