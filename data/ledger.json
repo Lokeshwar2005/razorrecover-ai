@@ -3411,6 +3411,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹3,495 for TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788185316793.",
       "captured_at": "2026-08-31T14:09:00.448Z"
+    },
+    "TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793": {
+      "id": "TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 8995,
+      "amount_minor": 899500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
+      "action": "Smart Routing to Alternate Bank Node",
+      "confidence": 99,
+      "recovery_probability": 91,
+      "risk_score": 10,
+      "policy": "Approved",
+      "explanation": "Issuer node 502 detected. Re-routed authorization through redundant bank gateway.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:09:03.444Z",
+      "updated_at": "2026-08-31T14:09:03.444Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_bank_downtime_1788185316793",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793",
+      "provider_order_id": "order_test_bank_downtime_1788185316793",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "bank_downtime",
+        "test": "test_3_all_scenarios",
+        "failure_code": "ISSUER_CBS_DOWN_502",
+        "failure_reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
+          "timestamp": "2026-08-31T14:09:03.444Z"
+        }
+      ]
     }
   }
 }
