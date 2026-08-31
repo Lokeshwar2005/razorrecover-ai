@@ -3215,7 +3215,7 @@
       "amount_minor": 899500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
       "action": "Send payment link",
@@ -3226,13 +3226,13 @@
       "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:08:24.026Z",
-      "updated_at": "2026-08-31T14:08:26.684Z",
+      "updated_at": "2026-08-31T14:08:30.944Z",
       "provider": "razorpay",
-      "provider_id": "order_test_33400769605",
-      "provider_payment_id": "pay_TXN-E2E-TEST2-RECOVERY-33400769605",
+      "provider_id": "pay_test_capture_33400769605",
+      "provider_payment_id": "pay_test_capture_33400769605",
       "provider_order_id": "order_test_33400769605",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 899500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -3255,8 +3255,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ETEST2RECOVERY33400769605",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-TEST2-RECOVERY-33400769605 [REC-20260831-TXNE2ETEST2RECOVERY33400769605] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹8,995 for TXN-E2E-TEST2-RECOVERY-33400769605.",
+      "captured_at": "2026-08-31T14:08:30.944Z"
     }
   }
 }
