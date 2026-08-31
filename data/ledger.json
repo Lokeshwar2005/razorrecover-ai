@@ -2156,6 +2156,53 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹5,495 for TXN-E2E-SCENARIO-NETWORK_DROP-1788184985294.",
       "captured_at": "2026-08-31T14:03:49.931Z"
+    },
+    "TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788184985294": {
+      "id": "TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788184985294",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 4295,
+      "amount_minor": 429500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded",
+      "action": "Send UPI QR Alternative Link",
+      "confidence": 91,
+      "recovery_probability": 84,
+      "risk_score": 28,
+      "policy": "Approved",
+      "explanation": "Card OTP limit reached. Alternate dynamic UPI QR payment link provisioned.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:03:52.410Z",
+      "updated_at": "2026-08-31T14:03:52.410Z",
+      "provider": "razorpay",
+      "provider_id": "order_test_auth_retries_exceeded_1788184985294",
+      "provider_payment_id": "pay_TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788184985294",
+      "provider_order_id": "order_test_auth_retries_exceeded_1788184985294",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "scenario_id": "auth_retries_exceeded",
+        "test": "test_3_all_scenarios",
+        "failure_code": "AUTH_RETRIES_EXCEEDED_3DS",
+        "failure_reason": "Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788184985294-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded",
+          "timestamp": "2026-08-31T14:03:52.410Z"
+        }
+      ]
     }
   }
 }
