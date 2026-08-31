@@ -1,4 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'http'
+import fs from 'fs'
+import path from 'path'
 
 export interface VercelRequest extends IncomingMessage {
   body?: any
@@ -11,76 +13,34 @@ export interface VercelResponse extends ServerResponse {
   setHeader: (name: string, value: string) => this
 }
 
-const RESTFUL_OBJECT_ID = 'ff808181a057a55b01a057bb444f003a'
-const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
-const GIST_FILENAME = 'razorrecover_db_init.json'
-
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v6.json')
 let inMemoryTransactions: Map<string, any> = new Map()
 
-async function fetchSharedTransactions(): Promise<Record<string, any>> {
+function loadStore(): Map<string, any> {
   try {
-    const res = await fetch(`https://api.restful-api.dev/objects/${RESTFUL_OBJECT_ID}`, {
-      headers: { Accept: 'application/json' },
-      signal: AbortSignal.timeout(3000),
-    })
-    if (res.ok) {
-      const data = await res.json()
-      const txns = data?.data?.transactions
-      if (txns && typeof txns === 'object') {
-        for (const [id, txn] of Object.entries(txns)) {
-          inMemoryTransactions.set(id, txn)
+    if (fs.existsSync(TMP_FILE)) {
+      const raw = fs.readFileSync(TMP_FILE, 'utf-8')
+      const parsed = JSON.parse(raw)
+      if (parsed && typeof parsed === 'object') {
+        const txns = parsed.transactions || parsed
+        if (typeof txns === 'object') {
+          for (const [id, txn] of Object.entries(txns)) {
+            inMemoryTransactions.set(id, txn)
+          }
         }
       }
     }
   } catch (e) {}
-
-  if (inMemoryTransactions.size === 0) {
-    try {
-      const res = await fetch(`https://api.github.com/gists/${GIST_ID}`, {
-        headers: { Accept: 'application/vnd.github.v3+json', 'User-Agent': 'RazorRecover-AI' },
-        signal: AbortSignal.timeout(3000),
-      })
-      if (res.ok) {
-        const data = await res.json()
-        const rawContent = data?.files?.[GIST_FILENAME]?.content
-        if (rawContent) {
-          const parsed = JSON.parse(rawContent)
-          const remoteTxns = parsed?.transactions
-          if (remoteTxns && typeof remoteTxns === 'object') {
-            for (const [id, txn] of Object.entries(remoteTxns)) {
-              inMemoryTransactions.set(id, txn)
-            }
-          }
-        }
-      }
-    } catch (e) {}
-  }
-
-  const result: Record<string, any> = {}
-  for (const [id, txn] of inMemoryTransactions.entries()) {
-    result[id] = txn
-  }
-  return result
+  return inMemoryTransactions
 }
 
-async function updateSharedTransactions(transactions: Record<string, any>): Promise<void> {
-  for (const [id, txn] of Object.entries(transactions)) {
-    inMemoryTransactions.set(id, txn)
-  }
-
+function saveStore() {
   try {
-    await fetch(`https://api.restful-api.dev/objects/${RESTFUL_OBJECT_ID}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        name: 'razorrecover_ledger',
-        data: { transactions },
-      }),
-      signal: AbortSignal.timeout(4000),
-    })
+    const obj: Record<string, any> = {}
+    for (const [id, txn] of inMemoryTransactions.entries()) {
+      obj[id] = txn
+    }
+    fs.writeFileSync(TMP_FILE, JSON.stringify({ transactions: obj }, null, 2), 'utf-8')
   } catch (e) {}
 }
 
@@ -202,8 +162,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const currentMap = await fetchSharedTransactions()
-    const existing = currentMap[cleanId] || Object.values(currentMap).find((t: any) => (t?.id || '').toUpperCase() === cleanId.toUpperCase())
+    loadStore()
+    const existing = inMemoryTransactions.get(cleanId) || Array.from(inMemoryTransactions.values()).find((t: any) => (t?.id || '').toUpperCase() === cleanId.toUpperCase())
 
     if (existing) {
       res.status(200).json({
@@ -258,8 +218,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       metadata,
     }
 
-    currentMap[cleanId] = newTxn
-    await updateSharedTransactions(currentMap)
+    inMemoryTransactions.set(cleanId, newTxn)
+    saveStore()
 
     res.status(200).json({
       success: true,
