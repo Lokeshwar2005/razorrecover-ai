@@ -224,3 +224,8 @@ jobs:
         env:
           API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
         run: npx tsx scripts/test-all-scenarios-e2e.ts
+
+      - name: 4. Run Test #5 — Full E2E Customer Storefront to Recovery Lifecycle
+        env:
+          API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
+        run: npx tsx scripts/test-e2e-customer-to-recovery.ts
