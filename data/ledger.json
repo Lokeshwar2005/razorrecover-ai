@@ -5735,7 +5735,7 @@
       "amount_minor": 799500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "Customer Dismissed Razorpay Checkout Window Before Submitting Credentials",
       "action": "Send Cart Recovery WhatsApp with 5% Perk",
@@ -5746,7 +5746,7 @@
       "explanation": "High-intent cart abandonment detected. Automated promotional recovery link dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:19:28.115Z",
-      "updated_at": "2026-08-31T14:19:28.115Z",
+      "updated_at": "2026-08-31T14:19:30.526Z",
       "provider": "razorpay",
       "provider_id": "order_test_cart_abandonment_1788185910797",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-CART_ABANDONMENT-1788185910797",
@@ -5773,7 +5773,10 @@
           "reason": "Customer Dismissed Razorpay Checkout Window Before Submitting Credentials",
           "timestamp": "2026-08-31T14:19:28.115Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOCARTABANDONMENT1788185910797",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-CART_ABANDONMENT-1788185910797 [REC-20260831-TXNE2ESCENARIOCARTABANDONMENT1788185910797] — awaiting Test Mode payment."
     }
   }
 }
