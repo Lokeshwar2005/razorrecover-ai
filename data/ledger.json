@@ -5074,6 +5074,55 @@
       "workflow_status": "VERIFIED",
       "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹7,995 for TXN-E2E-SCENARIO-CART_ABANDONMENT-1788185704835.",
       "captured_at": "2026-08-31T14:16:30.983Z"
+    },
+    "TXN-CN-PROD-MTHBNHV4": {
+      "id": "TXN-CN-PROD-MTHBNHV4",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 8995,
+      "amount_minor": 899500,
+      "currency": "INR",
+      "source": "live",
+      "status": "STOPPED",
+      "direction": "Payment degradation",
+      "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+      "action": "Send payment link",
+      "confidence": 95,
+      "recovery_probability": 88,
+      "risk_score": 20,
+      "policy": "Approved",
+      "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
+      "latency": "180ms",
+      "created_at": "2026-08-31T14:16:35.449Z",
+      "updated_at": "2026-08-31T14:16:35.449Z",
+      "provider": "razorpay",
+      "provider_id": "order_cn_mthbnhv4",
+      "provider_payment_id": "pay_TXN-CN-PROD-MTHBNHV4",
+      "provider_order_id": "order_cn_mthbnhv4",
+      "provider_status": "failed",
+      "verified_amount_minor": 0,
+      "customer": {
+        "name": "Lokeshwar Sudam",
+        "email": "customer@chronova.example.com",
+        "phone": "+919876543210"
+      },
+      "metadata": {
+        "product_id": "prod_seeker_40",
+        "product_name": "Chronova Seeker 40",
+        "brand": "Chronova",
+        "scenario_id": "3ds_timeout",
+        "failure_code": "GATEWAY_ERROR_3DS_TIMEOUT",
+        "failure_reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)"
+      },
+      "audit_events": [
+        {
+          "id": "audit-TXN-CN-PROD-MTHBNHV4-01",
+          "event_type": "FAILURE_INGESTED",
+          "actor": "RazorRecover Ingestion Gateway",
+          "decision": "STOPPED",
+          "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+          "timestamp": "2026-08-31T14:16:35.449Z"
+        }
+      ]
     }
   }
 }
