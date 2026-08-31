@@ -1,5 +1,7 @@
 async function runTest2() {
   const API_BASE = process.env.API_BASE || 'https://razorrecover-ai-teal.vercel.app'
+  const GITHUB_TOKEN = process.env.GIST_TOKEN || process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+  const authHeaders = GITHUB_TOKEN ? { 'x-github-token': GITHUB_TOKEN } : {}
   const TEST_ID = `TXN-E2E-TEST2-RECOVERY-${Date.now()}`
   const PAYMENT_ID = `pay_test_cn_capture_${Date.now()}`
   const ORDER_ID = `order_test_${Date.now()}`
@@ -28,7 +30,7 @@ async function runTest2() {
 
   const res1 = await fetch(`${API_BASE}/api/v1/transactions/events`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
     body: JSON.stringify(step1Payload),
   })
   const body1 = await res1.json()
@@ -50,7 +52,7 @@ async function runTest2() {
 
   const res2 = await fetch(`${API_BASE}/api/v1/recovery/execute`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
     body: JSON.stringify(step2Payload),
   })
   const body2 = await res2.json()
@@ -65,7 +67,7 @@ async function runTest2() {
   // STEP 3: Verify Invariant before settlement
   console.log('=== STEP 3: Verify invariant: Unrecovered before payment settlement ===')
   const res3 = await fetch(`${API_BASE}/api/v1/transactions/${TEST_ID}`, {
-    headers: { Accept: 'application/json' },
+    headers: { Accept: 'application/json', ...authHeaders },
   })
   const body3 = await res3.json()
   console.log(`HTTP ${res3.status}: Transaction Status = ${body3?.transaction?.status}`)
@@ -87,7 +89,7 @@ async function runTest2() {
 
   const res4 = await fetch(`${API_BASE}/api/v1/recovery/verify`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...authHeaders },
     body: JSON.stringify(step4Payload),
   })
   const body4 = await res4.json()
@@ -101,7 +103,7 @@ async function runTest2() {
   // STEP 5: Verify final state in authoritative ledger
   console.log('=== STEP 5: Final ledger lookup & state confirmation ===')
   const res5 = await fetch(`${API_BASE}/api/v1/transactions/${TEST_ID}`, {
-    headers: { Accept: 'application/json' },
+    headers: { Accept: 'application/json', ...authHeaders },
   })
   const body5 = await res5.json()
   console.log(`HTTP ${res5.status}:`, JSON.stringify(body5?.transaction))
