@@ -9957,7 +9957,7 @@
       "amount_minor": 1299500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "Issuer Velocity Heuristic Triggered (False Positive Soft Decline)",
       "action": "Dispatch Biometric Verified Secure Link",
@@ -9968,7 +9968,7 @@
       "explanation": "False positive velocity flag. Cryptographic biometric challenge dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:38:06.952Z",
-      "updated_at": "2026-08-31T14:38:06.952Z",
+      "updated_at": "2026-08-31T14:38:09.750Z",
       "provider": "razorpay",
       "provider_id": "order_test_risk_engine_flag_1788187051303",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788187051303",
@@ -9995,7 +9995,10 @@
           "reason": "Issuer Velocity Heuristic Triggered (False Positive Soft Decline)",
           "timestamp": "2026-08-31T14:38:06.952Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIORISKENGINEFLAG1788187051303",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-RISK_ENGINE_FLAG-1788187051303 [REC-20260831-TXNE2ESCENARIORISKENGINEFLAG1788187051303] — awaiting Test Mode payment."
     }
   }
 }
