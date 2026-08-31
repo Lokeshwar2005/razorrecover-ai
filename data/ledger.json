@@ -3419,7 +3419,7 @@
       "amount_minor": 899500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "Issuer Core Banking System (CBS) Scheduled Maintenance / Outage",
       "action": "Smart Routing to Alternate Bank Node",
@@ -3430,13 +3430,13 @@
       "explanation": "Issuer node 502 detected. Re-routed authorization through redundant bank gateway.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:09:03.444Z",
-      "updated_at": "2026-08-31T14:09:06.083Z",
+      "updated_at": "2026-08-31T14:09:08.693Z",
       "provider": "razorpay",
-      "provider_id": "order_test_bank_downtime_1788185316793",
-      "provider_payment_id": "pay_TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793",
+      "provider_id": "pay_test_capture_bank_downtime_1788185316793",
+      "provider_payment_id": "pay_test_capture_bank_downtime_1788185316793",
       "provider_order_id": "order_test_bank_downtime_1788185316793",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_status": "captured",
+      "verified_amount_minor": 899500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -3459,8 +3459,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOBANKDOWNTIME1788185316793",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793 [REC-20260831-TXNE2ESCENARIOBANKDOWNTIME1788185316793] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹8,995 for TXN-E2E-SCENARIO-BANK_DOWNTIME-1788185316793.",
+      "captured_at": "2026-08-31T14:09:08.693Z"
     }
   }
 }
