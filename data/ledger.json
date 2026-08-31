@@ -9510,7 +9510,7 @@
       "amount_minor": 899500,
       "currency": "INR",
       "source": "live",
-      "status": "IN_PROGRESS",
+      "status": "RECOVERED",
       "direction": "Payment degradation",
       "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
       "action": "Send payment link",
@@ -9521,13 +9521,13 @@
       "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:35:47.294Z",
-      "updated_at": "2026-08-31T14:35:53.068Z",
+      "updated_at": "2026-08-31T14:35:55.725Z",
       "provider": "razorpay",
-      "provider_id": "pay_TXN-SEC-VALID-1788186946366",
-      "provider_payment_id": "pay_TXN-SEC-VALID-1788186946366",
-      "provider_order_id": "order_TXN-SEC-VALID-1788186946366",
-      "provider_status": "failed",
-      "verified_amount_minor": 0,
+      "provider_id": "pay_sec_test_1788186946366",
+      "provider_payment_id": "pay_sec_test_1788186946366",
+      "provider_order_id": "order_sec_1788186946366",
+      "provider_status": "captured",
+      "verified_amount_minor": 899500,
       "customer": {
         "name": "Lokeshwar Sudam",
         "email": "customer@chronova.example.com",
@@ -9548,8 +9548,9 @@
         }
       ],
       "recovery_operation_id": "REC-20260831-TXNSECVALID1788186946366",
-      "workflow_status": "COMPLETE",
-      "workflow_message": "Recovery order created for TXN-SEC-VALID-1788186946366 [REC-20260831-TXNSECVALID1788186946366] — awaiting Test Mode payment."
+      "workflow_status": "VERIFIED",
+      "workflow_message": "✓ Verified Capture Confirmed! Recovered ₹8,995 for TXN-SEC-VALID-1788186946366.",
+      "captured_at": "2026-08-31T14:35:55.725Z"
     },
     "TXN-SEC-FORGED-1788186946366": {
       "id": "TXN-SEC-FORGED-1788186946366",
