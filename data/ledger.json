@@ -1460,7 +1460,7 @@
       "amount_minor": 429500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded",
       "action": "Send UPI QR Alternative Link",
@@ -1471,7 +1471,7 @@
       "explanation": "Card OTP limit reached. Alternate dynamic UPI QR payment link provisioned.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:01:05.724Z",
-      "updated_at": "2026-08-31T14:01:05.724Z",
+      "updated_at": "2026-08-31T14:01:08.397Z",
       "provider": "razorpay",
       "provider_id": "order_test_auth_retries_exceeded_1788184814728",
       "provider_payment_id": "pay_TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788184814728",
@@ -1498,7 +1498,10 @@
           "reason": "Cardholder Entered Incorrect OTP / 3DS Verification Retries Exceeded",
           "timestamp": "2026-08-31T14:01:05.724Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOAUTHRETRIESEXCEEDED1788184814728",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-AUTH_RETRIES_EXCEEDED-1788184814728 [REC-20260831-TXNE2ESCENARIOAUTHRETRIESEXCEEDED1788184814728] — awaiting Test Mode payment."
     }
   }
 }
