@@ -1,0 +1,26 @@
+name: Test #3 - All 8 Payment Failure Scenarios & AI Recovery
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  all_scenarios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Wait for Vercel production deployment
+        run: sleep 35
+
+      - name: Run all 8 scenarios test suite
+        env:
+          API_BASE: ${{ vars.API_BASE || 'https://razorrecover-ai-teal.vercel.app' }}
+        run: npx tsx scripts/test-all-scenarios-e2e.ts
