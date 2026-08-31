@@ -356,6 +356,7 @@ class PaymentEventIngestRequest(BaseModel):
     payment_id: Optional[str] = Field(default=None, description="Razorpay Payment ID")
     amount_minor: int = Field(..., gt=0, description="Amount in paise")
     currency: str = Field(default="INR", max_length=3)
+    source: Optional[str] = Field(default="live", description="synthetic | razorpay_test | live")
     status: str = Field(default="failed", description="failed | captured | recovered | pending | stopped")
     provider: str = Field(default="razorpay", description="Payment provider")
     method: Optional[str] = Field(default="card", description="Payment method: card | upi | netbanking | wallet")

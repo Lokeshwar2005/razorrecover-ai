@@ -38,7 +38,7 @@ async function runChronovaRecoveryE2ETest() {
     amount: orderAmountRupees,
     amount_minor: orderAmountMinor,
     currency: 'INR',
-    source: 'razorpay_test',
+    source: 'live',
     status: 'STOPPED',
     direction: 'Payment degradation',
     reason: '3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)',
@@ -57,6 +57,20 @@ async function runChronovaRecoveryE2ETest() {
 
   useTransactionStore.getState().ingestTransaction(failedCheckoutTxn)
   console.log(`✓ Server ingested payment failure event for ${testTxnId}`)
+
+  // Verify dynamic metrics and LIVE source count
+  const metricsAfterIngest = computeMetricsFromTransactions(useTransactionStore.getState().transactions)
+  console.log(`✓ Live Source Transactions Count: ${metricsAfterIngest.liveCount}`)
+  if (metricsAfterIngest.liveCount < 1) {
+    throw new Error(`Expected at least 1 live transaction, found ${metricsAfterIngest.liveCount}`)
+  }
+
+  // Verify Search capability
+  const searchFound = useTransactionStore.getState().getTransactionById(testTxnId)
+  if (!searchFound || searchFound.id !== testTxnId) {
+    throw new Error(`Transaction search failed for ID ${testTxnId}`)
+  }
+  console.log(`✓ Transaction Explorer Search verified for: ${searchFound.id} (Source: ${searchFound.source})`)
 
   // TEST 3: RazorRecover AI Opportunity Analysis & Policy Decision
   console.log('\nTEST 3: RazorRecover AI Opportunity Analysis & Policy Decision')

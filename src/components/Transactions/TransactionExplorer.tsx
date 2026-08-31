@@ -274,7 +274,7 @@ export const TransactionExplorer: React.FC = () => {
             </span>
           </div>
           <p className="text-sm text-[#a89f91] mt-1">
-            Deterministic transaction inspection across complete canonical store ({metrics.syntheticCount} Synthetic + {metrics.providerTestCount} Razorpay Test).
+            Deterministic transaction inspection across complete canonical store ({metrics.syntheticCount} Synthetic + {metrics.providerTestCount} Razorpay Test{metrics.liveCount > 0 ? ` + ${metrics.liveCount} Live` : ''}).
           </p>
           {syncMessage && (
             <div className="mt-2 text-xs font-mono text-[#10b981] flex items-center gap-1.5">

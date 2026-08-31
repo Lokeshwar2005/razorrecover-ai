@@ -7,10 +7,24 @@
  * - Zero store imports / Zero circular dependencies
  */
 
-const API_BASE =
-  (typeof process !== 'undefined' && (process.env?.NEXT_PUBLIC_BACKEND_API_URL || process.env?.VITE_BACKEND_API_URL)) ||
-  (typeof import.meta !== 'undefined' && (import.meta as any)?.env?.VITE_BACKEND_API_URL) ||
-  'http://127.0.0.1:8000/api/v1'
+const resolveApiBase = (): string => {
+  if (typeof process !== 'undefined') {
+    if (process.env?.NEXT_PUBLIC_BACKEND_API_URL) return process.env.NEXT_PUBLIC_BACKEND_API_URL
+    if (process.env?.VITE_BACKEND_API_URL) return process.env.VITE_BACKEND_API_URL
+  }
+  if (typeof import.meta !== 'undefined' && (import.meta as any)?.env?.VITE_BACKEND_API_URL) {
+    return (import.meta as any).env.VITE_BACKEND_API_URL
+  }
+  if (typeof window !== 'undefined') {
+    const host = window.location.hostname
+    if (host === 'localhost' || host === '127.0.0.1') {
+      return 'http://127.0.0.1:8000/api/v1'
+    }
+  }
+  return 'https://razorrecover-ai-teal.vercel.app/api/v1'
+}
+
+export const API_BASE = resolveApiBase()
 
 export interface DashboardStats {
   revenue_at_risk_minor: number
@@ -715,6 +729,7 @@ export interface PaymentEventPayload {
   payment_id?: string
   amount_minor: number
   currency?: string
+  source?: 'synthetic' | 'razorpay_test' | 'live' | string
   status?: 'failed' | 'captured' | 'recovered' | 'pending' | 'stopped' | string
   provider?: string
   method?: string

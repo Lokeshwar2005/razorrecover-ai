@@ -307,6 +307,8 @@ def ingest_payment_event(
         failure_reason=event.failure_reason,
     )
 
+    req_source = getattr(event, "source", None) or ("live" if txn_id.startswith("TXN-CN-") else "live")
+
     if is_success:
         # Create directly recovered transaction
         new_txn = TransactionModel(
@@ -314,7 +316,7 @@ def ingest_payment_event(
             merchant_id=event.merchant_id or "mer_chronova_watches",
             amount_minor=event.amount_minor,
             currency=event.currency.upper(),
-            source="razorpay_test",
+            source=req_source,
             status="RECOVERED",
             direction="Direct settlement",
             reason="Payment successful on first attempt",
@@ -383,7 +385,7 @@ def ingest_payment_event(
         merchant_id=event.merchant_id or "mer_chronova_watches",
         amount_minor=event.amount_minor,
         currency=event.currency.upper(),
-        source="razorpay_test",
+        source=req_source,
         status="STOPPED",
         direction="Payment degradation",
         reason=scenario_info["reason"],
