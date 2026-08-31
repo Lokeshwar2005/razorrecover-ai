@@ -22,7 +22,7 @@ jobs:
           node-version: 22
 
       - name: Wait for Vercel production deployment
-        run: sleep 35
+        run: sleep 50
 
       - name: 1. Run Test #1 — Transaction & Recovery Idempotency
         env:
