@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { getTransaction } from '../store.js'
+import { getTransactionAsync } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>
@@ -35,7 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const txn = getTransaction(id)
+    const txn = await getTransactionAsync(id)
     if (!txn) {
       res.status(404).json({ error: `Transaction ${id} not found` })
       return

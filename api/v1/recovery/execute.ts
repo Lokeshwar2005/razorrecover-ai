@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { getTransaction, upsertTransaction } from '../store.js'
+import { getTransactionAsync, upsertTransactionAsync } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   body?: any
@@ -36,7 +36,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const txn = getTransaction(transaction_id)
+    const txn = await getTransactionAsync(transaction_id)
     if (!txn) {
       res.status(404).json({ error: `Transaction ${transaction_id} not found` })
       return
@@ -46,7 +46,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const recoveryOpId = `REC-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${cleanId}`
     const orderId = `order_test_${cleanId.toLowerCase()}_${Date.now()}`
 
-    const updated = upsertTransaction({
+    const updated = await upsertTransactionAsync({
       ...txn,
       status: 'IN_PROGRESS',
       recovery_operation_id: recoveryOpId,

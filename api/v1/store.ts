@@ -39,7 +39,8 @@ export interface ServerlessTransaction {
   metadata?: Record<string, any>
 }
 
-const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_db_v2.json')
+const CLOUD_LEDGER_URL = 'https://api.restful-api.dev/objects/ff808181a04ccf2d01a0577582f02660'
+const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_db_v3.json')
 let inMemoryStore: Map<string, ServerlessTransaction> = new Map()
 
 export const FAILURE_SCENARIO_MAP: Record<
@@ -137,6 +138,43 @@ export const FAILURE_SCENARIO_MAP: Record<
   },
 }
 
+export async function syncFromCloudStore(): Promise<Map<string, ServerlessTransaction>> {
+  try {
+    const res = await fetch(CLOUD_LEDGER_URL, {
+      headers: { Accept: 'application/json' },
+      signal: AbortSignal.timeout(2500),
+    })
+    if (res.ok) {
+      const data = await res.json()
+      const txns = data?.data?.transactions
+      if (txns && typeof txns === 'object') {
+        for (const [id, txn] of Object.entries(txns)) {
+          inMemoryStore.set(id, txn as ServerlessTransaction)
+        }
+      }
+    }
+  } catch (e) {}
+  return inMemoryStore
+}
+
+export async function syncToCloudStore() {
+  try {
+    const obj: Record<string, ServerlessTransaction> = {}
+    for (const [id, txn] of inMemoryStore.entries()) {
+      obj[id] = txn
+    }
+    await fetch(CLOUD_LEDGER_URL, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: 'RAZORRECOVER_CANONICAL_LIVE_LEDGER_V1',
+        data: { transactions: obj },
+      }),
+      signal: AbortSignal.timeout(3000),
+    })
+  } catch (e) {}
+}
+
 export function loadStore(): Map<string, ServerlessTransaction> {
   if (inMemoryStore.size > 0) return inMemoryStore
   try {
@@ -157,6 +195,23 @@ export function saveStore() {
     const list = Array.from(inMemoryStore.values())
     fs.writeFileSync(TMP_FILE, JSON.stringify(list, null, 2), 'utf-8')
   } catch (e) {}
+  syncToCloudStore().catch(() => {})
+}
+
+export async function getTransactionAsync(id: string): Promise<ServerlessTransaction | undefined> {
+  await syncFromCloudStore()
+  const store = loadStore()
+  const cleanId = id.trim().toUpperCase()
+  return (
+    store.get(cleanId) ||
+    store.get(id) ||
+    Array.from(store.values()).find(
+      (t) =>
+        t.id.toUpperCase() === cleanId ||
+        (t.provider_payment_id && t.provider_payment_id.toUpperCase() === cleanId) ||
+        (t.provider_order_id && t.provider_order_id.toUpperCase() === cleanId)
+    )
+  )
 }
 
 export function getTransaction(id: string): ServerlessTransaction | undefined {
@@ -172,6 +227,21 @@ export function getTransaction(id: string): ServerlessTransaction | undefined {
         (t.provider_order_id && t.provider_order_id.toUpperCase() === cleanId)
     )
   )
+}
+
+export async function upsertTransactionAsync(txn: ServerlessTransaction): Promise<ServerlessTransaction> {
+  await syncFromCloudStore()
+  const store = loadStore()
+  const existing = store.get(txn.id)
+  const merged: ServerlessTransaction = {
+    ...existing,
+    ...txn,
+    updated_at: new Date().toISOString(),
+  }
+  store.set(txn.id, merged)
+  saveStore()
+  await syncToCloudStore()
+  return merged
 }
 
 export function upsertTransaction(txn: ServerlessTransaction): ServerlessTransaction {

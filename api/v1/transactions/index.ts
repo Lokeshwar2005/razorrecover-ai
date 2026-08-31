@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'http'
-import { loadStore } from '../store.js'
+import { loadStore, syncFromCloudStore } from '../store.js'
 
 export interface VercelRequest extends IncomingMessage {
   query?: Record<string, string | string[]>
@@ -27,6 +27,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
+    await syncFromCloudStore()
     const store = loadStore()
     let list = Array.from(store.values())
 
@@ -47,17 +48,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (search) {
       list = list.filter((t) => {
-        const id = t.id.toLowerCase()
-        const pid = (t.provider_payment_id || '').toLowerCase()
-        const oid = (t.provider_order_id || '').toLowerCase()
-        const reason = t.reason.toLowerCase()
-        const action = t.action.toLowerCase()
+        const id = (t?.id || '').toLowerCase()
+        const pid = (t?.provider_payment_id || '').toLowerCase()
+        const oid = (t?.provider_order_id || '').toLowerCase()
+        const reason = (t?.reason || '').toLowerCase()
+        const action = (t?.action || '').toLowerCase()
         return id.includes(search) || pid.includes(search) || oid.includes(search) || reason.includes(search) || action.includes(search)
       })
     }
 
     // Sort newest first
-    list.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+    list.sort((a, b) => new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime())
 
     const paginated = list.slice(offset, offset + limit)
     res.status(200).json(paginated)

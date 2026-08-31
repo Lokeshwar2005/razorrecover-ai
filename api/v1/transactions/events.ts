@@ -4,6 +4,7 @@ import {
   loadStore,
   saveStore,
   upsertTransaction,
+  upsertTransactionAsync,
   type ServerlessTransaction,
 } from '../store.js'
 
@@ -100,7 +101,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       metadata,
     }
 
-    upsertTransaction(txn)
+    await upsertTransactionAsync(txn)
 
     res.status(200).json({
       success: true,
