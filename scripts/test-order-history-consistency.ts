@@ -499,6 +499,63 @@ async function runOrderHistoryTestSuite() {
     'Test O17: Recovered transaction transitions to status "RECOVERED", action "None — Recovery completed", preserving all 3 items and failure history'
   )
 
+  // -------------------------------------------------------------
+  // Test O18: Customer Phone & Identity Integrity Data Contract
+  // -------------------------------------------------------------
+  const realCustPhone = '+91 98765 43210'
+  const realCustName = 'Lokeshwar Sudam'
+  const realCustEmail = 'lokeshwar@example.com'
+  const realCustAddress = '42, Brigade Metropolis, Whitefield, Tower C, Apt 402, Bengaluru, Karnataka, 560048'
+  const custTxnId = `TXN-CN-CUST-${Date.now().toString(36).toUpperCase()}`
+  const custOrderId = `order_cn_cust_${Date.now().toString(36)}`
+
+  saveChronovaOrder({
+    order_id: custOrderId,
+    transaction_id: custTxnId,
+    created_at: new Date().toISOString(),
+    items: threeItems,
+    total_amount_rupees: multiTotalRupees,
+    total_amount_minor: multiTotalMinor,
+    currency: 'INR',
+    customer: {
+      full_name: realCustName,
+      name: realCustName,
+      email: realCustEmail,
+      phone: realCustPhone,
+      address: realCustAddress,
+    },
+    payment_status: 'FAILED',
+    order_status: 'PAYMENT_FAILED',
+    recovery_status: 'ELIGIBLE',
+  })
+
+  const { transaction: custTxn } = await upsertChronovaEvent({
+    transaction_id: custTxnId,
+    chronova_order_id: custOrderId,
+    amount_minor: multiTotalMinor,
+    currency: 'INR',
+    items: threeItems,
+    customer: {
+      name: realCustName,
+      full_name: realCustName,
+      email: realCustEmail,
+      phone: realCustPhone,
+      address: realCustAddress,
+    },
+  })
+
+  const storedCustOrder = findChronovaOrder(custOrderId)
+  const storedCustTxn = await findChronovaTransaction(custTxnId)
+
+  assert(
+    storedCustOrder?.customer?.phone === realCustPhone &&
+      storedCustTxn?.customer?.phone === realCustPhone &&
+      storedCustTxn?.customer?.name === realCustName &&
+      storedCustTxn?.customer?.email === realCustEmail &&
+      storedCustTxn?.customer?.address === realCustAddress,
+    `Test O18: Customer Phone (${realCustPhone}) & Address preserved 1:1 across Chronova and RazorRecover AI ledger`
+  )
+
   console.log('\n===============================================================')
   console.log(`  ORDER HISTORY TEST SUITE COMPLETE: ${passed} PASSED / ${failed} FAILED`)
   console.log('===============================================================\n')

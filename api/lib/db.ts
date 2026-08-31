@@ -312,21 +312,20 @@ function normalizeTxn(t: any): ChronovaTransaction {
   const prodQty = Number(t.quantity || firstItem?.quantity) || 1
   const prodUnitPrice = Number(t.unit_price || t.unit_price_rupees || firstItem?.unit_price || firstItem?.unitPrice || firstItem?.unit_price_rupees) || Math.round(amtMinor / 100)
 
-  const rawCustName = t.customer?.full_name || t.customer?.name || ''
-  const isPlaceholderName = !rawCustName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawCustName.trim())
-  const custName = isPlaceholderName ? 'Information unavailable' : rawCustName.trim()
+  const rawCustName = (t.customer?.full_name || t.customer?.name || '').trim()
+  const isPlaceholderName = !rawCustName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawCustName)
+  const custName = isPlaceholderName ? 'Information unavailable' : rawCustName
 
-  const rawCustEmail = t.customer?.email || ''
-  const isPlaceholderEmail = !rawCustEmail || /^(customer@chronova\.example\.com|demo@.*)$/i.test(rawCustEmail.trim())
-  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawCustEmail.trim()
+  const rawCustEmail = (t.customer?.email || '').trim()
+  const isPlaceholderEmail = !rawCustEmail || /^(customer@chronova\.example\.com)$/i.test(rawCustEmail)
+  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawCustEmail
 
-  const rawCustPhone = t.customer?.phone || ''
-  const isPlaceholderPhone = !rawCustPhone || /^\+?919876543210$/i.test(rawCustPhone.replace(/\s+/g, ''))
-  const custPhone = isPlaceholderPhone ? 'Information unavailable' : rawCustPhone.trim()
+  const rawCustPhone = (t.customer?.phone || (t.customer as any)?.contact_phone || (t.customer as any)?.contactPhone || (t.customer as any)?.phoneNumber || '').trim()
+  const custPhone = rawCustPhone || 'Information unavailable'
 
-  const rawCustAddress = t.customer?.address || t.customer?.address_line1 || ''
-  const isPlaceholderAddress = !rawCustAddress || /^(Information unavailable|Main Street|Default Address)$/i.test(rawCustAddress.trim())
-  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawCustAddress.trim()
+  const rawCustAddress = (t.customer?.address || t.customer?.address_line1 || '').trim()
+  const isPlaceholderAddress = !rawCustAddress || /^(Information unavailable)$/i.test(rawCustAddress)
+  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawCustAddress
 
   return {
     id: String(t.id).toUpperCase(),
@@ -704,21 +703,20 @@ export async function upsertChronovaEvent(
     }
   ]
 
-  const rawCustName = payload.customer?.full_name || payload.customer?.name || ''
-  const isPlaceholderName = !rawCustName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawCustName.trim())
-  const custName = isPlaceholderName ? 'Information unavailable' : rawCustName.trim()
+  const rawCustName = (payload.customer?.full_name || payload.customer?.name || '').trim()
+  const isPlaceholderName = !rawCustName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawCustName)
+  const custName = isPlaceholderName ? 'Information unavailable' : rawCustName
 
-  const rawCustEmail = payload.customer?.email || ''
-  const isPlaceholderEmail = !rawCustEmail || /^(customer@chronova\.example\.com|demo@.*)$/i.test(rawCustEmail.trim())
-  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawCustEmail.trim()
+  const rawCustEmail = (payload.customer?.email || '').trim()
+  const isPlaceholderEmail = !rawCustEmail || /^(customer@chronova\.example\.com)$/i.test(rawCustEmail)
+  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawCustEmail
 
-  const rawCustPhone = payload.customer?.phone || ''
-  const isPlaceholderPhone = !rawCustPhone || /^\+?919876543210$/i.test(rawCustPhone.replace(/\s+/g, ''))
-  const custPhone = isPlaceholderPhone ? 'Information unavailable' : rawCustPhone.trim()
+  const rawCustPhone = (payload.customer?.phone || (payload.customer as any)?.contact_phone || (payload.customer as any)?.contactPhone || (payload.customer as any)?.phoneNumber || '').trim()
+  const custPhone = rawCustPhone || 'Information unavailable'
 
-  const rawCustAddress = payload.customer?.address || payload.customer?.address_line1 || ''
-  const isPlaceholderAddress = !rawCustAddress || /^(Information unavailable|Main Street|Default Address)$/i.test(rawCustAddress.trim())
-  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawCustAddress.trim()
+  const rawCustAddress = (payload.customer?.address || payload.customer?.address_line1 || '').trim()
+  const isPlaceholderAddress = !rawCustAddress || /^(Information unavailable)$/i.test(rawCustAddress)
+  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawCustAddress
 
   const existing = await findChronovaTransaction(id, req)
   if (existing) {
@@ -947,37 +945,35 @@ export async function verifyChronovaPaymentCapture(
   const existingCustomer = txn?.customer
   const extraCustomer = extraMetadata?.customer
 
-  const rawExistingName = existingCustomer?.full_name || existingCustomer?.name || ''
-  const isExistingPlaceholderName = !rawExistingName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawExistingName.trim())
-  const validExistingName = isExistingPlaceholderName ? '' : rawExistingName.trim()
+  const rawExistingName = (existingCustomer?.full_name || existingCustomer?.name || '').trim()
+  const isExistingPlaceholderName = !rawExistingName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawExistingName)
+  const validExistingName = isExistingPlaceholderName ? '' : rawExistingName
 
-  const rawExistingEmail = existingCustomer?.email || ''
-  const isExistingPlaceholderEmail = !rawExistingEmail || /^(customer@chronova\.example\.com|demo@.*)$/i.test(rawExistingEmail.trim())
-  const validExistingEmail = isExistingPlaceholderEmail ? '' : rawExistingEmail.trim()
+  const rawExistingEmail = (existingCustomer?.email || '').trim()
+  const isExistingPlaceholderEmail = !rawExistingEmail || /^(customer@chronova\.example\.com)$/i.test(rawExistingEmail)
+  const validExistingEmail = isExistingPlaceholderEmail ? '' : rawExistingEmail
 
-  const rawExistingPhone = existingCustomer?.phone || ''
-  const isExistingPlaceholderPhone = !rawExistingPhone || /^\+?919876543210$/i.test(rawExistingPhone.replace(/\s+/g, ''))
-  const validExistingPhone = isExistingPlaceholderPhone ? '' : rawExistingPhone.trim()
+  const rawExistingPhone = (existingCustomer?.phone || (existingCustomer as any)?.contact_phone || (existingCustomer as any)?.contactPhone || (existingCustomer as any)?.phoneNumber || '').trim()
+  const validExistingPhone = rawExistingPhone
 
-  const rawExistingAddress = existingCustomer?.address || existingCustomer?.address_line1 || ''
-  const isExistingPlaceholderAddress = !rawExistingAddress || /^(Information unavailable|Main Street|Default Address)$/i.test(rawExistingAddress.trim())
-  const validExistingAddress = isExistingPlaceholderAddress ? '' : rawExistingAddress.trim()
+  const rawExistingAddress = (existingCustomer?.address || existingCustomer?.address_line1 || '').trim()
+  const isExistingPlaceholderAddress = !rawExistingAddress || /^(Information unavailable)$/i.test(rawExistingAddress)
+  const validExistingAddress = isExistingPlaceholderAddress ? '' : rawExistingAddress
 
-  const rawExtraName = extraCustomer?.full_name || extraCustomer?.name || ''
-  const isExtraPlaceholderName = !rawExtraName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawExtraName.trim())
-  const validExtraName = isExtraPlaceholderName ? '' : rawExtraName.trim()
+  const rawExtraName = (extraCustomer?.full_name || extraCustomer?.name || '').trim()
+  const isExtraPlaceholderName = !rawExtraName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawExtraName)
+  const validExtraName = isExtraPlaceholderName ? '' : rawExtraName
 
-  const rawExtraEmail = extraCustomer?.email || ''
-  const isExtraPlaceholderEmail = !rawExtraEmail || /^(customer@chronova\.example\.com|demo@.*)$/i.test(rawExtraEmail.trim())
-  const validExtraEmail = isExtraPlaceholderEmail ? '' : rawExtraEmail.trim()
+  const rawExtraEmail = (extraCustomer?.email || '').trim()
+  const isExtraPlaceholderEmail = !rawExtraEmail || /^(customer@chronova\.example\.com)$/i.test(rawExtraEmail)
+  const validExtraEmail = isExtraPlaceholderEmail ? '' : rawExtraEmail
 
-  const rawExtraPhone = extraCustomer?.phone || ''
-  const isExtraPlaceholderPhone = !rawExtraPhone || /^\+?919876543210$/i.test(rawExtraPhone.replace(/\s+/g, ''))
-  const validExtraPhone = isExtraPlaceholderPhone ? '' : rawExtraPhone.trim()
+  const rawExtraPhone = (extraCustomer?.phone || (extraCustomer as any)?.contact_phone || (extraCustomer as any)?.contactPhone || (extraCustomer as any)?.phoneNumber || '').trim()
+  const validExtraPhone = rawExtraPhone
 
-  const rawExtraAddress = extraCustomer?.address || extraCustomer?.address_line1 || ''
-  const isExtraPlaceholderAddress = !rawExtraAddress || /^(Information unavailable|Main Street|Default Address)$/i.test(rawExtraAddress.trim())
-  const validExtraAddress = isExtraPlaceholderAddress ? '' : rawExtraAddress.trim()
+  const rawExtraAddress = (extraCustomer?.address || extraCustomer?.address_line1 || '').trim()
+  const isExtraPlaceholderAddress = !rawExtraAddress || /^(Information unavailable)$/i.test(rawExtraAddress)
+  const validExtraAddress = isExtraPlaceholderAddress ? '' : rawExtraAddress
 
   const custName = validExtraName || validExistingName || 'Information unavailable'
   const custEmail = validExtraEmail || validExistingEmail || 'Information unavailable'

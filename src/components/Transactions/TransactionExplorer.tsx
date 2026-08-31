@@ -766,7 +766,7 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Contact Phone:</span>
-                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || 'Information unavailable'}</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || (selectedTxn.customer as any)?.contact_phone || (selectedTxn.customer as any)?.contactPhone || (selectedTxn.customer as any)?.phoneNumber || 'Information unavailable'}</span>
                 </div>
                 <div className="flex justify-between items-start py-0.5">
                   <span className="text-[#7a7164] shrink-0">Shipping Address:</span>

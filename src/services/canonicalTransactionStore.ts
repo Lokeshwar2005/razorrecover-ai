@@ -241,21 +241,20 @@ export function chronovaOrderToCanonicalTransaction(order: ChronovaOrder): Canon
 
   const firstItem = mappedItems[0]
 
-  const rawName = order.customer?.full_name || order.customer?.name || ''
-  const isPlaceholderName = !rawName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawName.trim())
-  const custName = isPlaceholderName ? 'Information unavailable' : rawName.trim()
+  const rawName = (order.customer?.full_name || order.customer?.name || '').trim()
+  const isPlaceholderName = !rawName || /^(Chronova Customer|Default Customer|Mock Customer|Demo Customer)$/i.test(rawName)
+  const custName = isPlaceholderName ? 'Information unavailable' : rawName
 
-  const rawEmail = order.customer?.email || ''
-  const isPlaceholderEmail = !rawEmail || /^(customer@chronova\.example\.com|demo@.*)$/i.test(rawEmail.trim())
-  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawEmail.trim()
+  const rawEmail = (order.customer?.email || '').trim()
+  const isPlaceholderEmail = !rawEmail || /^(customer@chronova\.example\.com)$/i.test(rawEmail)
+  const custEmail = isPlaceholderEmail ? 'Information unavailable' : rawEmail
 
-  const rawPhone = order.customer?.phone || ''
-  const isPlaceholderPhone = !rawPhone || /^\+?919876543210$/i.test(rawPhone.replace(/\s+/g, ''))
-  const custPhone = isPlaceholderPhone ? 'Information unavailable' : rawPhone.trim()
+  const rawPhone = (order.customer?.phone || (order.customer as any)?.contact_phone || (order.customer as any)?.contactPhone || (order.customer as any)?.phoneNumber || '').trim()
+  const custPhone = rawPhone || 'Information unavailable'
 
-  const rawAddress = order.customer?.address || order.customer?.address_line1 || ''
-  const isPlaceholderAddress = !rawAddress || /^(Information unavailable|Main Street|Default Address)$/i.test(rawAddress.trim())
-  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawAddress.trim()
+  const rawAddress = (order.customer?.address || order.customer?.address_line1 || '').trim()
+  const isPlaceholderAddress = !rawAddress || /^(Information unavailable)$/i.test(rawAddress)
+  const custAddress = isPlaceholderAddress ? 'Information unavailable' : rawAddress
 
   const prodName = firstItem?.product_name || 'Information unavailable'
   const prodImg = firstItem?.product_image || ''
