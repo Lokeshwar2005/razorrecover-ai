@@ -11449,6 +11449,29 @@
       "recovery_operation_id": "REC-20260831-TXNE2ESCENARIOUPIINTENTDROP1788187582628",
       "workflow_status": "COMPLETE",
       "workflow_message": "Recovery order created for TXN-E2E-SCENARIO-UPI_INTENT_DROP-1788187582628 [REC-20260831-TXNE2ESCENARIOUPIINTENTDROP1788187582628] — awaiting Test Mode payment."
+    },
+    "TXN-E2E-IDEMPOTENCY-33404520332": {
+      "id": "TXN-E2E-IDEMPOTENCY-33404520332",
+      "merchant_id": "mer_chronova_watches",
+      "amount": 8995,
+      "amount_minor": 899500,
+      "currency": "INR",
+      "source": "live",
+      "direction": "Payment degradation",
+      "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
+      "action": "Send payment link",
+      "confidence": 95,
+      "recovery_probability": 88,
+      "risk_score": 20,
+      "policy": "Approved",
+      "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
+      "created_at": "2026-08-31T14:46:48.224Z",
+      "status": "IN_PROGRESS",
+      "recovery_operation_id": "REC-20260831-TXNE2EIDEMPOTENCY33404520332",
+      "provider_order_id": "order_test_txne2eidempotency33404520332",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-E2E-IDEMPOTENCY-33404520332 [REC-20260831-TXNE2EIDEMPOTENCY33404520332] — awaiting Test Mode payment.",
+      "updated_at": "2026-08-31T14:46:48.224Z"
     }
   }
 }
