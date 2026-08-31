@@ -1,57 +1,57 @@
-import type { IncomingMessage, ServerResponse } from 'http'
+import type { VercelRequest, VercelResponse } from '@vercel/node'
+import type { IncomingMessage } from 'http'
 import fs from 'fs'
 import path from 'path'
 
-export interface VercelRequest extends IncomingMessage {
-  body?: any
-  query?: Record<string, string | string[]>
-}
-
-export interface VercelResponse extends ServerResponse {
-  status: (code: number) => VercelResponse
-  json: (body: any) => void
-  setHeader: (name: string, value: string) => this
-}
-
+const REPO_OWNER = 'Lokeshwar2005'
+const REPO_NAME = 'razorrecover-ai'
+const REPO_FILE = 'data/ledger.json'
 const GIST_ID = '2f5891b16cf74dd9c53fa5589ed2954a'
 const GIST_FILENAME = 'razorrecover_db_init.json'
 const TMP_FILE = path.join('/tmp', 'razorrecover_serverless_ledger_v11.json')
 
-const ALLOWED_ORIGINS = [
-  'https://lokeshwar2005.github.io',
-  'https://razorrecover-ai-teal.vercel.app',
-  'http://localhost:3000',
-  'http://localhost:5173',
-  'http://localhost:4173',
-  'http://localhost:8000',
-  'http://127.0.0.1:3000',
-  'http://127.0.0.1:5173',
-  'http://127.0.0.1:4173',
+const inMemoryTransactions = new Map<string, any>()
+
+const ALLOWED_ORIGIN_PATTERNS = [
+  /^https:\/\/lokeshwar2005\.github\.io$/,
+  /^https:\/\/razorrecover-ai-.*\.vercel\.app$/,
+  /^https:\/\/razorrecover-.*\.vercel\.app$/,
+  /^https:\/\/razorrecover-ai-teal\.vercel\.app$/,
+  /^http:\/\/localhost:\d+$/,
+  /^http:\/\/127\.0\.0\.1:\d+$/,
 ]
 
-function applyCors(req: VercelRequest, res: VercelResponse): boolean {
-  const origin = req.headers.origin
-  if (origin) {
-    const isAllowed = ALLOWED_ORIGINS.includes(origin) || origin.endsWith('.vercel.app') || origin.endsWith('github.io')
-    if (isAllowed) {
-      res.setHeader('Access-Control-Allow-Origin', origin)
-      res.setHeader('Access-Control-Allow-Credentials', 'true')
-    } else {
-      res.setHeader('Access-Control-Allow-Origin', 'null')
-      return false
-    }
-  } else {
-    res.setHeader('Access-Control-Allow-Origin', '*')
-  }
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token')
-  return true
+function isOriginAllowed(origin: string | undefined): boolean {
+  if (!origin) return true
+  return ALLOWED_ORIGIN_PATTERNS.some((pattern) => pattern.test(origin))
 }
 
-let inMemoryTransactions: Map<string, any> = new Map()
+function applyCors(req: VercelRequest, res: VercelResponse): boolean {
+  const origin = req.headers.origin as string | undefined
+  const allowed = isOriginAllowed(origin)
+
+  if (allowed) {
+    res.setHeader('Access-Control-Allow-Origin', origin || '*')
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE')
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-github-token, X-GitHub-Token, x-token, Accept')
+    res.setHeader('Access-Control-Allow-Credentials', 'true')
+  }
+
+  return allowed
+}
 
 function getGithubToken(req?: IncomingMessage): string | null {
-  const customHeader = req?.headers?.['x-github-token'] || req?.headers?.authorization
+  if (!req?.headers) {
+    return (typeof process !== 'undefined' && process.env?.GITHUB_TOKEN) ? process.env.GITHUB_TOKEN.trim() : null
+  }
+  const headers = req.headers
+  const customHeader =
+    headers['x-github-token'] ||
+    headers['X-GitHub-Token'] ||
+    headers['x-token'] ||
+    headers['authorization'] ||
+    headers['Authorization']
+
   if (customHeader) {
     const raw = Array.isArray(customHeader) ? customHeader[0] : customHeader
     const token = raw.replace(/^Bearer\s+/i, '').replace(/^token\s+/i, '').trim()
@@ -91,34 +91,53 @@ function saveLocalFileStore() {
   } catch (e) {}
 }
 
-async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<string, any>> {
+async function fetchRemoteLedger(req?: IncomingMessage): Promise<Record<string, any>> {
   loadLocalFileStore()
+  const token = getGithubToken(req)
+
+  if (token) {
+    try {
+      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}?_t=${Date.now()}`, {
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github.v3+json',
+          'User-Agent': 'RazorRecover-AI-Serverless',
+        },
+        signal: AbortSignal.timeout(3500),
+      })
+      if (res.ok) {
+        const d = await res.json()
+        if (d?.content) {
+          const raw = Buffer.from(d.content, 'base64').toString('utf-8')
+          const parsed = JSON.parse(raw)
+          if (parsed?.transactions && typeof parsed.transactions === 'object') {
+            for (const [id, txn] of Object.entries(parsed.transactions)) {
+              inMemoryTransactions.set(id.toUpperCase(), txn)
+            }
+            saveLocalFileStore()
+          }
+        }
+      }
+    } catch (e) {}
+  }
 
   try {
-    const token = getGithubToken(req)
     const headers: Record<string, string> = {
       Accept: 'application/vnd.github.v3+json',
       'User-Agent': 'RazorRecover-AI-Serverless',
-      'Cache-Control': 'no-cache, no-store, must-revalidate',
-      Pragma: 'no-cache',
     }
-    if (token) {
-      headers.Authorization = `token ${token}`
-    }
-
+    if (token) headers.Authorization = `token ${token}`
     const res = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
       headers,
-      signal: AbortSignal.timeout(3500),
+      signal: AbortSignal.timeout(3000),
     })
-
     if (res.ok) {
       const data = await res.json()
       const rawContent = data?.files?.[GIST_FILENAME]?.content
       if (rawContent) {
         const parsed = JSON.parse(rawContent)
-        const remoteTxns = parsed?.transactions
-        if (remoteTxns && typeof remoteTxns === 'object') {
-          for (const [id, txn] of Object.entries(remoteTxns)) {
+        if (parsed?.transactions && typeof parsed.transactions === 'object') {
+          for (const [id, txn] of Object.entries(parsed.transactions)) {
             inMemoryTransactions.set(id.toUpperCase(), txn)
           }
           saveLocalFileStore()
@@ -134,7 +153,7 @@ async function fetchGistTransactions(req?: IncomingMessage): Promise<Record<stri
   return result
 }
 
-async function updateGistTransactionsAtomic(
+async function updateRemoteLedgerAtomic(
   targetId: string,
   newTxn: any,
   req?: IncomingMessage
@@ -147,49 +166,64 @@ async function updateGistTransactionsAtomic(
   }
 
   const token = getGithubToken(req)
-  let existingRemote: Record<string, any> = {}
+  let remoteTxns: Record<string, any> = {}
+  let sha: string | undefined
 
   if (token) {
     try {
-      const getRes = await fetch(`https://api.github.com/gists/${GIST_ID}?_t=${Date.now()}`, {
+      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}?_t=${Date.now()}`, {
         headers: {
           Authorization: `token ${token}`,
           Accept: 'application/vnd.github.v3+json',
           'User-Agent': 'RazorRecover-AI-Serverless',
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          Pragma: 'no-cache',
         },
         signal: AbortSignal.timeout(3500),
       })
-      if (getRes.ok) {
-        const d = await getRes.json()
-        const raw = d?.files?.[GIST_FILENAME]?.content
-        if (raw) {
-          const parsed = JSON.parse(raw)
-          if (parsed?.transactions && typeof parsed.transactions === 'object') {
-            existingRemote = parsed.transactions
-          }
+      if (res.ok) {
+        const d = await res.json()
+        sha = d.sha
+        if (d?.content) {
+          const raw = Buffer.from(d.content, 'base64').toString('utf-8')
+          remoteTxns = JSON.parse(raw)?.transactions || {}
         }
       }
     } catch (e) {}
   }
 
-  if (existingRemote[cleanTarget]) {
-    inMemoryTransactions.set(cleanTarget, existingRemote[cleanTarget])
+  if (remoteTxns[cleanTarget]) {
+    inMemoryTransactions.set(cleanTarget, remoteTxns[cleanTarget])
     saveLocalFileStore()
-    return { isDuplicate: true, existingRecord: existingRemote[cleanTarget] }
+    return { isDuplicate: true, existingRecord: remoteTxns[cleanTarget] }
   }
 
   inMemoryTransactions.set(cleanTarget, newTxn)
   saveLocalFileStore()
 
-  const merged: Record<string, any> = { ...existingRemote }
+  const merged = { ...remoteTxns }
   for (const [id, txn] of inMemoryTransactions.entries()) {
     merged[id] = txn
   }
   merged[cleanTarget] = newTxn
 
   if (token) {
+    try {
+      await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${REPO_FILE}`, {
+        method: 'PUT',
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          'User-Agent': 'RazorRecover-AI-Serverless',
+        },
+        body: JSON.stringify({
+          message: `ingest ${cleanTarget}`,
+          content: Buffer.from(JSON.stringify({ transactions: merged }, null, 2)).toString('base64'),
+          sha,
+        }),
+        signal: AbortSignal.timeout(4000),
+      })
+    } catch (e) {}
+
     try {
       await fetch(`https://api.github.com/gists/${GIST_ID}`, {
         method: 'PATCH',
@@ -206,7 +240,7 @@ async function updateGistTransactionsAtomic(
             },
           },
         }),
-        signal: AbortSignal.timeout(4000),
+        signal: AbortSignal.timeout(3000),
       })
     } catch (e) {}
   }
@@ -231,7 +265,7 @@ const FAILURE_SCENARIOS: Record<string, { code: string; reason: string; action: 
     confidence: 92,
     recoveryProb: 78,
     riskScore: 35,
-    explanation: 'Soft decline from issuer bank. Alternate low-friction payment channel dispatched.',
+    explanation: 'Card decline due to temporary limit. Split payment link provisioned.',
   },
   'upi_intent_drop': {
     code: 'UPI_INTENT_TIMEOUT',
@@ -338,7 +372,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return
     }
 
-    const currentMap = await fetchGistTransactions(req)
+    const currentMap = await fetchRemoteLedger(req)
     const existing = currentMap[cleanId] || Object.values(currentMap).find((t: any) => (t?.id || '').toUpperCase() === cleanId)
 
     if (existing) {
@@ -358,15 +392,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const scenario = FAILURE_SCENARIOS[scenarioKey] || FAILURE_SCENARIOS['3ds_timeout']
 
     const now = new Date().toISOString()
-    const amountRupees = Math.round(numericAmount / 100)
-
-    // Ingestion of payment degradation events always initializes strictly to STOPPED state
     const newTxn = {
       id: cleanId,
-      merchant_id,
-      amount: amountRupees,
+      merchant_id: merchant_id,
+      amount: Math.round(numericAmount / 100),
       amount_minor: numericAmount,
-      currency: (currency || 'INR').toUpperCase(),
+      currency: currency.toUpperCase(),
       source: source || 'live',
       status: 'STOPPED',
       direction: 'Payment degradation',
@@ -376,49 +407,52 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       recovery_probability: scenario.recoveryProb,
       risk_score: scenario.riskScore,
       policy: 'Approved',
-      explanation: scenario.explanation || `Payment degradation detected: ${scenario.reason}. Automated recovery initialized.`,
+      explanation: scenario.explanation,
       latency: '180ms',
       created_at: now,
       updated_at: now,
       provider: provider || 'razorpay',
-      provider_id: payment_id || order_id,
-      provider_payment_id: payment_id,
-      provider_order_id: order_id,
+      provider_id: payment_id || order_id || `pay_${cleanId}`,
+      provider_payment_id: payment_id || `pay_${cleanId}`,
+      provider_order_id: order_id || `order_${cleanId}`,
       provider_status: 'failed',
       verified_amount_minor: 0,
-      customer,
+      customer: customer || {
+        name: 'Lokeshwar Sudam',
+        email: 'customer@chronova.example.com',
+        phone: '+919876543210',
+      },
       metadata: {
         ...(metadata || {}),
-        scenario_id: scenarioKey,
         failure_code: failure_code || scenario.code,
+        failure_reason: failure_reason || scenario.reason,
       },
+      audit_events: [
+        {
+          id: `audit-${cleanId}-01`,
+          event_type: 'FAILURE_INGESTED',
+          actor: 'RazorRecover Ingestion Gateway',
+          decision: 'STOPPED',
+          reason: failure_reason || scenario.reason,
+          timestamp: now,
+        },
+      ],
     }
 
-    const { isDuplicate, existingRecord } = await updateGistTransactionsAtomic(cleanId, newTxn, req)
-
-    if (isDuplicate && existingRecord) {
-      res.status(200).json({
-        success: true,
-        duplicate: true,
-        transaction_id: existingRecord.id,
-        status: existingRecord.status,
-        opportunity_id: `opp-${existingRecord.id}`,
-        message: `Transaction ${existingRecord.id} was already ingested; existing ledger record returned unchanged.`,
-        created_at: existingRecord.created_at,
-      })
-      return
-    }
+    const { isDuplicate, existingRecord } = await updateRemoteLedgerAtomic(cleanId, newTxn, req)
 
     res.status(200).json({
       success: true,
-      duplicate: false,
-      transaction_id: newTxn.id,
-      status: newTxn.status,
-      opportunity_id: `opp-${newTxn.id}`,
-      message: `Transaction ${newTxn.id} successfully ingested into authoritative backend ledger.`,
-      created_at: newTxn.created_at,
+      duplicate: isDuplicate,
+      transaction_id: existingRecord.id,
+      status: existingRecord.status,
+      opportunity_id: `opp-${existingRecord.id}`,
+      message: isDuplicate
+        ? `Transaction ${existingRecord.id} was already ingested concurrently.`
+        : `Transaction ${existingRecord.id} successfully ingested into authoritative backend ledger.`,
+      created_at: existingRecord.created_at,
     })
   } catch (err: any) {
-    res.status(500).json({ error: err?.message || 'Failed to ingest transaction event' })
+    res.status(500).json({ error: err?.message || 'Internal Server Error' })
   }
 }
