@@ -4378,7 +4378,7 @@
       "amount_minor": 899500,
       "currency": "INR",
       "source": "live",
-      "status": "STOPPED",
+      "status": "IN_PROGRESS",
       "direction": "Payment degradation",
       "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
       "action": "Send payment link",
@@ -4389,7 +4389,7 @@
       "explanation": "3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.",
       "latency": "180ms",
       "created_at": "2026-08-31T14:13:04.665Z",
-      "updated_at": "2026-08-31T14:13:04.665Z",
+      "updated_at": "2026-08-31T14:13:07.640Z",
       "provider": "razorpay",
       "provider_id": "order_cn_mthbiz84",
       "provider_payment_id": "pay_TXN-CN-PROD-MTHBIZ84",
@@ -4418,7 +4418,10 @@
           "reason": "3DS Authentication Bank Gateway Timeout (Issuer Switch Unresponsive)",
           "timestamp": "2026-08-31T14:13:04.665Z"
         }
-      ]
+      ],
+      "recovery_operation_id": "REC-20260831-TXNCNPRODMTHBIZ84",
+      "workflow_status": "COMPLETE",
+      "workflow_message": "Recovery order created for TXN-CN-PROD-MTHBIZ84 [REC-20260831-TXNCNPRODMTHBIZ84] — awaiting Test Mode payment."
     }
   }
 }
