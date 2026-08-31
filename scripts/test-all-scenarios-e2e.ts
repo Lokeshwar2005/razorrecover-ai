@@ -65,9 +65,21 @@ const SCENARIOS = [
   },
 ]
 
+import { execSync } from 'child_process'
+
+function resolveGithubToken(): string {
+  if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN
+  if (process.env.GIST_TOKEN) return process.env.GIST_TOKEN
+  try {
+    const token = execSync('gh auth token', { encoding: 'utf-8' }).trim()
+    if (token) return token
+  } catch (e) {}
+  return ''
+}
+
 async function runAllScenariosTest() {
   const API_BASE = process.env.API_BASE || 'https://razorrecover-ai-teal.vercel.app'
-  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GIST_TOKEN || ''
+  const GITHUB_TOKEN = resolveGithubToken()
   const authHeaders: Record<string, string> = GITHUB_TOKEN ? { 'x-github-token': GITHUB_TOKEN } : {}
   const RUN_TIMESTAMP = Date.now()
 

@@ -1,6 +1,18 @@
+import { execSync } from 'child_process'
+
+function resolveGithubToken(): string {
+  if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN
+  if (process.env.GIST_TOKEN) return process.env.GIST_TOKEN
+  try {
+    const token = execSync('gh auth token', { encoding: 'utf-8' }).trim()
+    if (token) return token
+  } catch (e) {}
+  return ''
+}
+
 async function runTest2() {
   const API_BASE = process.env.API_BASE || 'https://razorrecover-ai-teal.vercel.app'
-  const GITHUB_TOKEN = process.env.GIST_TOKEN || process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+  const GITHUB_TOKEN = resolveGithubToken()
   const authHeaders = GITHUB_TOKEN ? { 'x-github-token': GITHUB_TOKEN } : {}
   const TEST_ID = `TXN-E2E-TEST2-RECOVERY-${Date.now()}`
   const PAYMENT_ID = `pay_test_cn_capture_${Date.now()}`
