@@ -206,7 +206,6 @@ export function RazorRecoverApp() {
   const [ptpDate, setPtpDate] = useState(() => new Date(Date.now() + 86400000 * 3).toISOString().slice(0, 10))
   const [ptpState, setPtpState] = useState<'PROMISED' | 'PAID' | 'MISSED'>('PROMISED')
   const [voicePlaying, setVoicePlaying] = useState(false)
-  const [judgeMode, setJudgeMode] = useState(false)
   const [cfTransaction, setCfTransaction] = useState<GraphTransactionContext | null>(null)
   const [cfTarget, setCfTarget] = useState<'original' | 'counterfactual'>('counterfactual')
   const [cfRunning, setCfRunning] = useState(false)
@@ -519,22 +518,6 @@ export function RazorRecoverApp() {
     }, 650)
   }
 
-  const startJudgeDemo = () => {
-    setJudgeMode(true)
-    setTab('Overview')
-    setScenario('degradation')
-    const next = makeEvents('degradation')
-    setEvents(next)
-    const live = events.find((e) => e.source === 'razorpay' && e.result === 'Pending')
-    const target = live || next.find((e) => e.result === 'Stopped') || next[0]
-    setSelected(target)
-    setActiveDirection(target.direction)
-    setWorkflowStatus('READY')
-    setWorkflowMessage('Judge Mode: one transaction will travel through diagnosis → policy → recovery → verification → evidence.')
-    addAudit('judge.demo.started', `${target.id} · ${money(target.amount)}`, 'LIVE')
-    window.setTimeout(() => document.getElementById('recovery-operations')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250)
-  }
-
   const navigateToTab = (newTab: string) => {
     setTab(newTab)
     const slugMap: Record<string, string> = {
@@ -648,22 +631,16 @@ export function RazorRecoverApp() {
                 </div>
               )}
             </div>
-
-            <button className={`judgeNav ${judgeMode ? 'active' : ''}`} onClick={startJudgeDemo}>
-              ▶ Judge Demo
-            </button>
           </div>
           <div className="live">
             <span />
-            {judgeMode
-              ? 'JUDGE MODE'
-              : running
+            {running
               ? `PROCESSING · ${Math.floor(progress)}%`
               : liveCount
               ? `LIVE · RZP ${liveCount} EVENT${liveCount > 1 ? 'S' : ''}`
               : complete
               ? 'LIVE · COMPLETE'
-              : 'LIVE · SYNTHETIC MODE'}
+              : 'LIVE · CHRONOVA CONNECTED'}
           </div>
         </div>
         <div className="mobileNav">
@@ -678,9 +655,6 @@ export function RazorRecoverApp() {
                 {item.label}
               </button>
             ))}
-            <button className={`judgeNav ${judgeMode ? 'active' : ''}`} onClick={startJudgeDemo}>
-              ▶ Judge Demo
-            </button>
           </div>
         </div>
       </header>
@@ -722,12 +696,6 @@ export function RazorRecoverApp() {
             <p>
               RazorRecover detects payment failure leakage, prioritizes high-value opportunities, safely executes policy-governed recoveries, and cryptographically verifies recovered revenue.
             </p>
-            {judgeMode && (
-              <div className="judgeBanner">
-                <b>JUDGE MODE</b>
-                <span>Follow the highlighted transaction: diagnosis → policy → action → verification → evidence.</span>
-              </div>
-            )}
           </div>
           <div className="heroAction">
             <div className="health">
@@ -864,7 +832,7 @@ export function RazorRecoverApp() {
           <div className="panel tracePanel">
             <div className="panelTop">
               <div>
-                <span className="eyebrow">AI JUDGEMENT</span>
+                <span className="eyebrow">AI DIAGNOSIS & REASONING</span>
                 <h2>{tab === 'Overview' ? 'Latest decisions' : tab}</h2>
               </div>
               <span className="pulse">

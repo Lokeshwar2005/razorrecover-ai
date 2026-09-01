@@ -192,7 +192,7 @@ async function runTestSuite() {
   // TEST 6: Failure History Preservation
   assert(
     recTxn.reason.includes('3DS Authentication Timeout'),
-    'Test P7: Recovered transaction preserves original failure reason for audit and judge inspection'
+    'Test P7: Recovered transaction preserves original failure reason for audit and compliance inspection'
   )
 
   // TEST 7: Multi-Item Order Invariants

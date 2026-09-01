@@ -28,7 +28,6 @@ const routes = [
   'audit-trail',
   'simulation',
   'agent-trace',
-  'judge-demo',
   'overview',
   'merchant-portal',
   'acme-store',

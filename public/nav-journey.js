@@ -19,7 +19,6 @@
       button.dataset.journeyWired = 'true';
       button.addEventListener('click', (event) => {
         const text = button.textContent.trim();
-        if (text.includes('Judge Demo')) return; // handled by React state
         const target = sectionFor(text);
         if (!target) return;
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -45,7 +44,7 @@
         currentButtons.forEach((item) => {
           if (item.textContent.trim() === match.name) {
             item.classList.add('active');
-          } else if (!item.textContent.includes('Judge Demo')) {
+          } else {
             item.classList.remove('active');
           }
         });

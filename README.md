@@ -16,7 +16,7 @@
 ### 🛍️ Chronova Customer Storefront (Website A)
 👉 **[🛍️ Open Chronova Customer Storefront](https://lokeshwar2005.github.io/razorrecover-ai/chronova/)**
 
-**Customer-Facing Experience**: A 75-watch luxury catalog where judges and merchants can browse real timepieces, add items to cart, proceed through checkout, trigger controlled payment-failure scenarios (e.g., *3DS Bank OTP Timeout*, *UPI App Intent Auto-Drop*, *Bank CBS Downtime*), and observe immediate autonomous recovery without manual page reloads.
+**Customer-Facing Experience**: A 75-watch luxury catalog where customers can browse real timepieces, add items to cart, proceed through checkout, trigger controlled payment-failure scenarios (e.g., *3DS Bank OTP Timeout*, *UPI App Intent Auto-Drop*, *Bank CBS Downtime*), and observe immediate autonomous recovery without manual page reloads.
 
 ---
 
@@ -27,7 +27,7 @@
 
 ---
 
-# 🎯 Judge Demo Walkthrough (Visual Step-by-Step)
+# 🚀 End-to-End Autonomous Recovery Walkthrough (Visual Step-by-Step)
 
 Follow this deterministic evaluation sequence demonstrating the cross-origin recovery lifecycle between **Website A (Chronova Storefront)** and **Website B (RazorRecover AI)**:
 
@@ -48,7 +48,7 @@ Policy Gate approves recovery (RULE-POL-GATE-01)
        ↓
 Send Payment Link dispatched
        ↓
-Simulate Test Payment Capture
+Customer Settles Payment via Test Mode
        ↓
 Transaction becomes RECOVERED
        ↓
@@ -58,20 +58,20 @@ Transaction becomes RECOVERED
 ---
 
 ### 📸 Step 1: Customer Storefront & Catalog Selection (Website A)
-![Step 1 — Chronova Luxury Watch Storefront](docs/screenshots/judge_step1_chronova_catalog.png)
+![Step 1 — Chronova Luxury Watch Storefront](docs/screenshots/step1_chronova_catalog.png)
 > **Action**: The customer browses the luxury horology catalog at [Chronova Storefront](https://lokeshwar2005.github.io/razorrecover-ai/chronova/), selects the **Chronova Seeker 40 (₹8,995)**, and adds the watch to cart.
 
 ---
 
 ### 📸 Step 2: Checkout & Payment Degradation Trigger (Website A ➔ Website B)
-![Step 2 — Judge Demo & Autonomous Failure Recovery Ingestion](docs/screenshots/judge_step2_judge_demo_flow.png)
+![Step 2 — Checkout & Payment Failure Autonomous Ingestion](docs/screenshots/step2_failure_recovery_ingestion.png)
 > **Action**: During checkout, the customer experiences a payment failure (e.g. **3DS Bank OTP Timeout**). 
 > **System Response**: Website A automatically sends an ingestion event (`POST /api/v1/transactions/events`). The transaction status is locked at `STOPPED`, a canonical Transaction ID is minted, and the AI autonomous recovery pipeline is engaged.
 
 ---
 
 ### 📸 Step 3: Transaction Intelligence & 7-Stage Lifecycle Trace (Website B)
-![Step 3 — Transactions Intelligence Explorer](docs/screenshots/judge_step3_transactions_explorer.png)
+![Step 3 — Transactions Intelligence Explorer](docs/screenshots/step3_transactions_explorer.png)
 > **Action**: Open the [Transactions Intelligence Explorer](https://lokeshwar2005.github.io/razorrecover-ai/transactions/).
 > **System Response**: The ingested transaction appears in the live ledger. Clicking the record opens the 7-stage lifecycle drawer displaying:
 > 1. **AI Root-Cause Diagnosis**: Evaluated with 95% confidence.
@@ -81,28 +81,28 @@ Transaction becomes RECOVERED
 ---
 
 ### 📸 Step 4: Opportunity Engine & Value-Ranked Recovery Queue (Website B)
-![Step 4 — Recovery Opportunity Engine](docs/screenshots/judge_step4_opportunity_engine.png)
+![Step 4 — Recovery Opportunity Engine](docs/screenshots/step4_opportunity_engine.png)
 > **Action**: Open the [Opportunity Engine Queue](https://lokeshwar2005.github.io/razorrecover-ai/opportunities/).
 > **System Response**: RazorRecover AI calculates the **Expected Recovery Value** ($\text{Recoverable Amount} \times \text{Recovery Probability}$) to rank high-yield merchant opportunities and select the optimal safe action.
 
 ---
 
 ### 📸 Step 5: Decision Replay Theater & Agent Trace 2.0 (Website B)
-![Step 5 — Agent Decision Trace](docs/screenshots/judge_step5_agent_decision_trace.png)
+![Step 5 — Agent Decision Trace](docs/screenshots/step5_agent_decision_trace.png)
 > **Action**: Navigate to the [Agent Decision Trace Theater](https://lokeshwar2005.github.io/razorrecover-ai/agent-trace/).
-> **System Response**: Evaluators and compliance officers can step through the 8 stages of the AI decision process (`DETECT ➔ DIAGNOSE ➔ SCORE ➔ PRIORITIZE ➔ POLICY ➔ ACTION ➔ VERIFY ➔ LEARN`) with synchronized 3D WebGL topology tracking.
+> **System Response**: Merchants and compliance officers can step through the 8 stages of the AI decision process (`DETECT ➔ DIAGNOSE ➔ SCORE ➔ PRIORITIZE ➔ POLICY ➔ ACTION ➔ VERIFY ➔ LEARN`) with synchronized 3D WebGL topology tracking.
 
 ---
 
 ### 📸 Step 6: Verified Payment Capture & Merchant Command Center (Website A ➔ Website B)
-![Step 6 — Merchant Command Center](docs/screenshots/judge_step6_merchant_dashboard.png)
+![Step 6 — Merchant Command Center](docs/screenshots/step6_merchant_dashboard.png)
 > **Action**: The customer settles the payment via the recovery link (`POST /api/v1/recovery/verify`).
 > **System Response**: Website A background polling instantly detects the verified capture and transitions to **"PAYMENT RECOVERED & ORDER CONFIRMED!"** without a page refresh. Simultaneously, the [Merchant Dashboard](https://lokeshwar2005.github.io/razorrecover-ai/dashboard/) credits **₹8,995** to Verified Recovered Revenue.
 
 ---
 
 ### 📸 Step 7: Tamper-Evident SHA-256 Cryptographic Audit Ledger (Website B)
-![Step 7 — Cryptographic Audit Ledger](docs/screenshots/judge_step7_audit_trail.png)
+![Step 7 — Cryptographic Audit Ledger](docs/screenshots/step7_audit_trail.png)
 > **Action**: Open the [Audit & Compliance Center](https://lokeshwar2005.github.io/razorrecover-ai/audit/).
 > **System Response**: The entire transaction lifecycle—from failure detection to AI diagnosis, policy authorization, and final settlement—is immutably sealed in a SHA-256 cryptographic audit chain with one-click CSV/JSON export.
 
@@ -115,8 +115,8 @@ Transaction becomes RECOVERED
 | **Chronova Storefront** | [https://lokeshwar2005.github.io/razorrecover-ai/chronova/](https://lokeshwar2005.github.io/razorrecover-ai/chronova/) | Customer storefront with 75 luxury watches & payment degradation |
 | **RazorRecover AI (Primary)** | [https://razorrecover-ai-teal.vercel.app/](https://razorrecover-ai-teal.vercel.app/) | Merchant command center, AI diagnosis, and recovery intelligence |
 | **Transaction Explorer** | [https://lokeshwar2005.github.io/razorrecover-ai/transactions/](https://lokeshwar2005.github.io/razorrecover-ai/transactions/) | Real-time searchable transaction ledger with 7-stage lifecycle trace |
+| **Recovery Opportunities** | [https://lokeshwar2005.github.io/razorrecover-ai/opportunities/](https://lokeshwar2005.github.io/razorrecover-ai/opportunities/) | Value-ranked recovery queue with Expected Recovery Value formula |
 | **Merchant Dashboard** | [https://lokeshwar2005.github.io/razorrecover-ai/dashboard/](https://lokeshwar2005.github.io/razorrecover-ai/dashboard/) | Recovery KPIs, velocity telemetry, and 7-day revenue recovery charts |
-| **Judge Demo Mode** | [https://lokeshwar2005.github.io/razorrecover-ai/judge-demo/](https://lokeshwar2005.github.io/razorrecover-ai/judge-demo/) | Interactive guided step-by-step evaluator walkthrough |
 | **Audit & Compliance** | [https://lokeshwar2005.github.io/razorrecover-ai/audit/](https://lokeshwar2005.github.io/razorrecover-ai/audit/) | Tamper-evident SHA-256 chained ledger with CSV/JSON export |
 | **Production API (Vercel)** | [https://razorrecover-ai-teal.vercel.app/api/v1/transactions](https://razorrecover-ai-teal.vercel.app/api/v1/transactions) | Authoritative serverless REST API with CORS security allowlist |
 | **GitHub Monorepo** | [https://github.com/Lokeshwar2005/razorrecover-ai](https://github.com/Lokeshwar2005/razorrecover-ai) | Full monorepo containing Frontend, FastAPI backend, & tests |
