@@ -157,6 +157,38 @@ export const ChronovaStore: React.FC = () => {
     return () => window.removeEventListener('chronova:orders-updated', handleOrdersUpdated)
   }, [])
 
+  // Auto-detect recovery payment link parameters (?recovery=REC-xxx or ?txn=TXN-xxx or ?order_id=xxx)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const recParam = params.get('recovery') || params.get('txn') || params.get('order_id') || params.get('order')
+      if (recParam) {
+        const storedOrders = getStoredChronovaOrders()
+        const matched = storedOrders.find(
+          (o) =>
+            (recParam && o.transaction_id.toLowerCase().includes(recParam.toLowerCase())) ||
+            (o.order_id && o.order_id.toLowerCase().includes(recParam.toLowerCase())) ||
+            (o.recovery_operation_id && o.recovery_operation_id.toLowerCase().includes(recParam.toLowerCase()))
+        )
+        if (matched) {
+          const matchingProducts = matched.items
+            .map((item) => {
+              const p = CHRONOVA_CATALOG.find((catItem) => catItem.id === item.product_id)
+              if (p) return { product: p, quantity: item.quantity, selected_color: item.selected_color }
+              return null
+            })
+            .filter(Boolean) as CartItem[]
+          if (matchingProducts.length > 0) {
+            setCartItems(matchingProducts)
+          }
+          setIsCheckoutOpen(true)
+        } else {
+          setIsOrdersOpen(true)
+        }
+      }
+    }
+  }, [])
+
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false)
   const [customerUser, setCustomerUser] = useState<CustomerUser>(() => {
     if (typeof window !== 'undefined') {

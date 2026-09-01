@@ -8,7 +8,6 @@ import {
 import {
   executeRecoveryAction as executeRecovery,
   verifyPaymentCapture as verifyPayment,
-  launchRazorpayCheckout,
 } from '../../services/backendApi'
 import { resolveProductImageUrl } from '../Chronova/utils'
 import { findChronovaOrder } from '../../services/chronovaOrderStore'
@@ -36,6 +35,7 @@ export const TransactionExplorer: React.FC = () => {
   } | null>(null)
   const [executionError, setExecutionError] = useState<string | null>(null)
   const [verifiedSuccess, setVerifiedSuccess] = useState<string | null>(null)
+  const [copiedLink, setCopiedLink] = useState<string | null>(null)
   const [refreshingFeed, setRefreshingFeed] = useState(false)
   const [lastSyncedAt, setLastSyncedAt] = useState<string>(new Date().toISOString())
 
@@ -192,41 +192,7 @@ export const TransactionExplorer: React.FC = () => {
     }
   }
 
-  const handleLaunchCheckout = () => {
-    if (!selectedTxn) return
-    launchRazorpayCheckout({
-      order_id: executionResult?.orderId || selectedTxn.provider_order_id,
-      amount_minor: selectedTxn.amount_minor,
-      currency: selectedTxn.currency,
-      description: `RazorRecover AI Recovery for ${selectedTxn.id}`,
-      onSuccess: async (resp) => {
-        setVerifying(true)
-        setExecutionResult(null)
-        setExecutionError(null)
-        try {
-          const verifyRes = await verifyPayment(
-            selectedTxn.id,
-            resp.razorpay_payment_id,
-            selectedTxn.amount_minor,
-            selectedTxn.currency,
-            resp.razorpay_order_id,
-            resp.razorpay_signature
-          )
-          if (verifyRes.verified) {
-            setVerifiedSuccess(verifyRes.message || `✓ Verified Capture Confirmed! Recovered ₹${(selectedTxn.amount_minor / 100).toLocaleString('en-IN')} for ${selectedTxn.id}.`)
-            await refreshProviderFeed()
-          } else {
-            setExecutionError(verifyRes.message || 'Payment could not be verified — recovery not recorded.')
-          }
-        } finally {
-          setVerifying(false)
-        }
-      },
-      onFailure: (err) => {
-        setExecutionError(err?.message || 'Razorpay Checkout cancelled.')
-      },
-    })
-  }
+
 
   const handleVerifyPayment = async () => {
     if (!selectedTxn) return
@@ -639,26 +605,38 @@ export const TransactionExplorer: React.FC = () => {
               </div>
 
               {executionResult && (
-                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#f4ede2] text-xs font-mono space-y-1">
-                  <div className="font-bold text-[#10b981]">✓ {executionResult.message}</div>
-                  {executionResult.paymentLink && (
+                <div className="p-3 rounded-lg bg-[#10b981]/15 border border-[#10b981]/50 text-[#10b981] text-xs font-mono space-y-2">
+                  <div className="font-bold">✓ {executionResult.message}</div>
+                  <div className="grid grid-cols-2 gap-2 pt-1">
+                    <button
+                      onClick={() => {
+                        const linkUrl =
+                          executionResult.paymentLink ||
+                          selectedTxn.recovery_link_url ||
+                          `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedTxn.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedTxn.id}`
+                        if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                          navigator.clipboard.writeText(linkUrl)
+                          setCopiedLink(selectedTxn.id)
+                          setTimeout(() => setCopiedLink(null), 2500)
+                        }
+                      }}
+                      className="py-1.5 px-2.5 rounded bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-[11px] font-bold text-center transition cursor-pointer"
+                    >
+                      <span>{copiedLink === selectedTxn.id ? '✓ Copied Link' : '📋 Copy Link'}</span>
+                    </button>
                     <a
-                      href={executionResult.paymentLink}
+                      href={
+                        executionResult.paymentLink ||
+                        selectedTxn.recovery_link_url ||
+                        `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedTxn.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedTxn.id}`
+                      }
                       target="_blank"
                       rel="noreferrer"
-                      className="text-[#10b981] underline block pt-1"
+                      className="py-1.5 px-2.5 rounded bg-[#e5a944]/15 border border-[#e5a944]/40 hover:border-[#e5a944] text-[#e5a944] text-[11px] font-bold text-center transition"
                     >
-                      Open Razorpay Link ↗
+                      <span>Open Link ↗</span>
                     </a>
-                  )}
-                  {executionResult.orderId && selectedTxn.status !== 'RECOVERED' && (
-                    <button
-                      onClick={handleLaunchCheckout}
-                      className="w-full py-2 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs font-mono hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer mt-1 shadow-md"
-                    >
-                      <span>💳 Open Razorpay Test Checkout Modal</span>
-                    </button>
-                  )}
+                  </div>
                 </div>
               )}
 
@@ -904,26 +882,78 @@ export const TransactionExplorer: React.FC = () => {
                     ⛔ Blocked by Deterministic Policy Ceiling (Risk {selectedTxn.risk_score}/100)
                   </button>
                 ) : selectedTxn.status === 'WAITING_FOR_RECOVERY' || selectedTxn.status === 'IN_PROGRESS' ? (
-                  <div className="space-y-2">
-                    <div className="p-3 rounded-lg bg-[#fcd34d]/15 border border-[#fcd34d]/50 text-[#f4ede2] text-xs font-mono space-y-2">
-                      <div className="flex items-center justify-between">
-                        <span className="font-bold text-[#fcd34d]">⚡ CUSTOMER PAYMENT PENDING</span>
+                  <div className="space-y-2.5">
+                    <div className="p-3.5 rounded-lg bg-[#fcd34d]/10 border border-[#fcd34d]/40 space-y-2.5 font-mono">
+                      <div className="flex items-center justify-between text-[#fcd34d] font-bold text-xs">
+                        <span className="flex items-center gap-1.5">
+                          <span className="w-2 h-2 rounded-full bg-[#fcd34d] animate-pulse" />
+                          CUSTOMER PAYMENT PENDING
+                        </span>
                         <span className="px-1.5 py-0.5 text-[9px] rounded bg-[#e5a944]/20 text-[#e5a944] font-mono border border-[#e5a944]/40">
                           {selectedTxn.recovery_operation_id || 'ACTIVE'}
                         </span>
                       </div>
-                      <div className="text-[#a89f91] text-[11px]">
-                        {selectedTxn.workflow_message || 'Recovery workflow authorized and payment link dispatched. Awaiting customer payment via Razorpay.'}
+
+                      <div className="text-[#e5e7eb] text-[11px] leading-relaxed">
+                        {selectedTxn.workflow_message || 'Recovery workflow authorized and payment link dispatched. Awaiting customer payment completion.'}
+                      </div>
+
+                      {/* Recovery Link Preview Box */}
+                      <div className="p-2.5 rounded-lg bg-[#0f0c08] border border-[#2e271c] space-y-1">
+                        <div className="text-[10px] text-[#7a7164] flex justify-between">
+                          <span>CUSTOMER RECOVERY LINK:</span>
+                          <span className="text-[#10b981]">Expires in 30m</span>
+                        </div>
+                        <div className="text-[11px] text-[#e5a944] break-all font-mono select-all bg-[#15120c] p-1.5 rounded border border-[#2e271c]/60">
+                          {executionResult?.paymentLink ||
+                            selectedTxn.recovery_link_url ||
+                            `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedTxn.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedTxn.id}`}
+                        </div>
+                      </div>
+
+                      {/* Operator Actions: Copy Link & Verify */}
+                      <div className="flex flex-col gap-2 pt-1">
+                        <div className="grid grid-cols-2 gap-2">
+                          <button
+                            onClick={() => {
+                              const linkUrl =
+                                executionResult?.paymentLink ||
+                                selectedTxn.recovery_link_url ||
+                                `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedTxn.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedTxn.id}`
+                              if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                                navigator.clipboard.writeText(linkUrl)
+                                setCopiedLink(selectedTxn.id)
+                                setTimeout(() => setCopiedLink(null), 2500)
+                              }
+                            }}
+                            className="py-2.5 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs font-bold text-center transition flex items-center justify-center gap-1.5 cursor-pointer shadow-sm"
+                          >
+                            <span>{copiedLink === selectedTxn.id ? '✓ Copied Link' : '📋 Copy Payment Link'}</span>
+                          </button>
+
+                          <a
+                            href={
+                              executionResult?.paymentLink ||
+                              selectedTxn.recovery_link_url ||
+                              `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedTxn.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedTxn.id}`
+                            }
+                            target="_blank"
+                            rel="noreferrer"
+                            className="py-2.5 px-3 rounded-lg bg-[#e5a944]/15 border border-[#e5a944]/40 hover:border-[#e5a944] text-[#e5a944] text-xs font-bold text-center transition flex items-center justify-center gap-1.5 cursor-pointer shadow-sm"
+                          >
+                            <span>Open Link in Store ↗</span>
+                          </a>
+                        </div>
+
+                        <button
+                          onClick={handleVerifyPayment}
+                          disabled={verifying}
+                          className="w-full py-2.5 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-bold transition cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
+                        >
+                          {verifying ? 'Checking Gateway Capture...' : '🔄 Check Gateway Capture Status ▶'}
+                        </button>
                       </div>
                     </div>
-
-                    <button
-                      onClick={handleVerifyPayment}
-                      disabled={verifying}
-                      className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
-                    >
-                      {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
-                    </button>
                   </div>
                 ) : (
                   <div className="space-y-1.5">

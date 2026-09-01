@@ -210,6 +210,8 @@ export interface ChronovaOrder {
   recovery?: CanonicalRecoveryMetadata
   payment_status: 'FAILED' | 'PENDING' | 'PAID' | 'RECOVERED'
   order_status: 'ORDER_PLACED' | 'PAYMENT_FAILED' | 'RECOVERY_IN_PROGRESS' | 'ORDER_CONFIRMED'
+  recovery_operation_id?: string
+  recovery_link_url?: string
   recovery_status?: 'NONE' | 'ELIGIBLE' | 'IN_PROGRESS' | 'RECOVERED'
   failure_reason?: string
   failure_code?: string
