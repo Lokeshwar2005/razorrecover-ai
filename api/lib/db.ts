@@ -747,6 +747,10 @@ export async function upsertChronovaEvent(
     return { transaction: existing, duplicate: true }
   }
 
+  const rawStatus = (payload as any).payment_status || (payload as any).status || ''
+  const isPaid = rawStatus === 'PAID' || rawStatus === 'CAPTURED' || rawStatus === 'SUCCESS' || (payload as any).recovery_status === 'RECOVERED'
+  const isRecovered = (payload as any).recovery_status === 'RECOVERED'
+
   const newTxn: ChronovaTransaction = {
     id: id,
     chronova_order_id: orderId,
@@ -772,34 +776,36 @@ export async function upsertChronovaEvent(
     subtotal_rupees: Math.round(amtMinor / 100),
     totalAmount: Math.round(amtMinor / 100),
     total_amount_rupees: Math.round(amtMinor / 100),
-    status: 'PAYMENT_FAILED',
-    direction: 'Payment degradation',
-    reason: reason,
-    action: action,
-    confidence: 95,
-    recovery_probability: 88,
-    risk_score: 20,
+    status: isPaid ? 'RECOVERED' : 'PAYMENT_FAILED',
+    direction: isPaid ? 'Direct settlement' : 'Payment degradation',
+    reason: isPaid ? 'Direct payment capture completed' : reason,
+    action: isPaid ? (isRecovered ? 'None — Recovery completed' : 'None — Payment captured') : action,
+    confidence: isPaid ? 100 : 95,
+    recovery_probability: isPaid ? 100 : 88,
+    risk_score: isPaid ? 0 : 20,
     policy: 'Approved',
-    explanation: '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+    explanation: isPaid
+      ? 'Payment captured successfully by Razorpay gateway. No recovery intervention required.'
+      : '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
     latency: '180ms',
     source: 'CHRONOVA',
     provider: 'RAZORPAY',
     payment: {
-      status: 'PAYMENT_FAILED',
+      status: isPaid ? (isRecovered ? 'PAYMENT_RECOVERED' : 'PAID') : 'PAYMENT_FAILED',
       method: (payload as any).method || 'razorpay',
       provider: 'RAZORPAY',
       paymentId: payload.payment_id,
-      capturedAt: undefined,
+      capturedAt: isPaid ? now : undefined,
     },
     recovery: {
-      required: true,
-      status: 'ELIGIBLE',
-      reason: reason,
-      diagnosis: '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
-      confidence: 95,
-      recommendedAction: action,
-      recoveryOperationId: undefined,
-      recoveredAmount: 0,
+      required: !isPaid,
+      status: isPaid ? (isRecovered ? 'RECOVERED' : 'NONE') : 'ELIGIBLE',
+      reason: isPaid ? undefined : reason,
+      diagnosis: isPaid ? undefined : '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+      confidence: isPaid ? 100 : 95,
+      recommendedAction: isPaid ? (isRecovered ? 'None — Recovery completed' : 'None — Payment captured') : action,
+      recoveryOperationId: isRecovered ? (payload as any).recovery_operation_id : undefined,
+      recoveredAmount: isPaid ? Math.round(amtMinor / 100) : 0,
     },
     customer: {
       name: custName,
@@ -810,16 +816,18 @@ export async function upsertChronovaEvent(
     },
     metadata: payload.metadata || {
       brand: prodBrand,
-      scenario_id: '3ds_timeout',
+      scenario_id: isPaid ? 'direct_capture' : '3ds_timeout',
     },
     ai_diagnosis: {
       transaction_id: id,
-      root_cause: reason,
-      recommended_action: action,
-      confidence_score: 95,
-      recovery_probability: 88,
-      risk_score: 20,
-      reasoning_summary: '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
+      root_cause: isPaid ? 'Direct payment capture completed' : reason,
+      recommended_action: isPaid ? (isRecovered ? 'None — Recovery completed' : 'None — Payment captured') : action,
+      confidence_score: isPaid ? 100 : 95,
+      recovery_probability: isPaid ? 100 : 88,
+      risk_score: isPaid ? 0 : 20,
+      reasoning_summary: isPaid
+        ? 'Payment captured successfully by Razorpay gateway. No recovery intervention required.'
+        : '3DS challenge expired due to issuer bank latency. Direct customer retry link dispatched.',
     },
     policy_decision: {
       transaction_id: id,
@@ -828,19 +836,19 @@ export async function upsertChronovaEvent(
       requires_human_approval: false,
       reason: 'Deterministic risk threshold verification passed.',
     },
-    provider_status: 'failed',
-    verified_amount_minor: 0,
-    workflow_status: 'PENDING',
+    provider_status: isPaid ? 'captured' : 'failed',
+    verified_amount_minor: isPaid ? amtMinor : 0,
+    workflow_status: isPaid ? 'COMPLETE' : 'PENDING',
     created_at: now,
     updated_at: now,
     audit_events: [
       {
         id: auditId,
         transaction_id: id,
-        event_type: 'FAILURE_INGESTED',
+        event_type: isPaid ? 'PAYMENT_CAPTURED' : 'FAILURE_INGESTED',
         actor: 'RazorRecover Ingestion Gateway',
-        decision: 'STOPPED',
-        reason: reason,
+        decision: isPaid ? 'CAPTURED' : 'STOPPED',
+        reason: isPaid ? 'Direct payment captured' : reason,
         timestamp: now,
         hash,
         prev_hash: prevHash,

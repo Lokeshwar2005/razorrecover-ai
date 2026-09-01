@@ -758,19 +758,19 @@ export const TransactionExplorer: React.FC = () => {
                 <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">2. CUSTOMER & SHIPPING</div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Customer Name:</span>
-                  <span className="text-[#f4ede2] font-bold">{selectedTxn.customer?.full_name || selectedTxn.customer?.name || 'Information unavailable'}</span>
+                  <span className="text-[#f4ede2] font-bold">{selectedTxn.customer?.full_name || selectedTxn.customer?.name || 'Not provided'}</span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Email Address:</span>
-                  <span className="text-[#a89f91]">{selectedTxn.customer?.email || 'Information unavailable'}</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.email || 'Not provided'}</span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Contact Phone:</span>
-                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || (selectedTxn.customer as any)?.contact_phone || (selectedTxn.customer as any)?.contactPhone || (selectedTxn.customer as any)?.phoneNumber || 'Information unavailable'}</span>
+                  <span className="text-[#a89f91]">{selectedTxn.customer?.phone || (selectedTxn.customer as any)?.contact_phone || (selectedTxn.customer as any)?.contactPhone || (selectedTxn.customer as any)?.phoneNumber || 'Not provided'}</span>
                 </div>
                 <div className="flex justify-between items-start py-0.5">
                   <span className="text-[#7a7164] shrink-0">Shipping Address:</span>
-                  <span className="text-[#a89f91] text-right break-words max-w-[260px] pl-2">{selectedTxn.customer?.address || 'Information unavailable'}</span>
+                  <span className="text-[#a89f91] text-right break-words max-w-[260px] pl-2">{selectedTxn.customer?.address || 'Not provided'}</span>
                 </div>
               </div>
 
@@ -783,7 +783,7 @@ export const TransactionExplorer: React.FC = () => {
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Gateway Status:</span>
-                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#ef4444]'}>
+                  <span className={selectedTxn.status === 'RECOVERED' || selectedTxn.status === 'CAPTURED' ? 'text-[#10b981] font-bold' : 'text-[#ef4444]'}>
                     {selectedTxn.provider_status || (selectedTxn.status === 'RECOVERED' ? 'captured' : 'failed')}
                   </span>
                 </div>
@@ -804,7 +804,7 @@ export const TransactionExplorer: React.FC = () => {
                 <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">4. FAILURE ANALYSIS</div>
                 {selectedTxn.status === 'RECOVERED' && !selectedTxn.reason.includes('3DS') && !selectedTxn.reason.includes('Timeout') && !selectedTxn.reason.includes('degradation') ? (
                   <div className="p-2.5 rounded-lg bg-[#10b981]/10 border border-[#10b981]/30 text-[#10b981] text-[11px] leading-relaxed">
-                    ✓ Payment completed successfully without degradation on the initial checkout attempt.
+                    ✓ Direct payment captured successfully on initial attempt.
                   </div>
                 ) : (
                   <>
@@ -859,20 +859,26 @@ export const TransactionExplorer: React.FC = () => {
                 <div className="text-[10px] text-[#e5a944] font-bold uppercase tracking-wider">6. LIFECYCLE TRACE & OUTCOME</div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Settlement Status:</span>
-                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#ef4444] font-bold'}>
-                    {selectedTxn.status === 'RECOVERED' ? '✓ RECOVERED & CAPTURED' : 'PAYMENT FAILED'}
+                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : selectedTxn.status === 'CAPTURED' ? 'text-[#3b82f6] font-bold' : 'text-[#ef4444] font-bold'}>
+                    {selectedTxn.status === 'RECOVERED' ? '✓ RECOVERED & CAPTURED' : selectedTxn.status === 'CAPTURED' ? '✓ DIRECT CAPTURE' : 'PAYMENT FAILED'}
                   </span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Recommended Action:</span>
-                  <span className={selectedTxn.status === 'RECOVERED' ? 'text-[#10b981] font-bold' : 'text-[#e5a944] font-bold'}>
-                    {selectedTxn.status === 'RECOVERED' ? (selectedTxn.action && !selectedTxn.action.includes('Send') ? selectedTxn.action : 'None — Recovery completed') : selectedTxn.action}
+                  <span className={selectedTxn.status === 'RECOVERED' || selectedTxn.status === 'CAPTURED' ? 'text-[#10b981] font-bold' : 'text-[#e5a944] font-bold'}>
+                    {selectedTxn.status === 'RECOVERED'
+                      ? 'None — Recovery completed'
+                      : selectedTxn.status === 'CAPTURED'
+                      ? 'None — Payment captured'
+                      : (selectedTxn.status === 'WAITING_FOR_RECOVERY' || selectedTxn.status === 'IN_PROGRESS')
+                      ? 'Waiting for customer payment'
+                      : selectedTxn.action}
                   </span>
                 </div>
                 <div className="flex justify-between py-0.5 border-b border-[#2e271c]/40">
                   <span className="text-[#7a7164]">Verified Amount:</span>
                   <span className="text-[#f4ede2] font-bold">
-                    ₹{(selectedTxn.verified_amount_minor ? selectedTxn.verified_amount_minor / 100 : selectedTxn.status === 'RECOVERED' ? selectedTxn.amount : 0).toLocaleString('en-IN')}
+                    ₹{(selectedTxn.verified_amount_minor ? selectedTxn.verified_amount_minor / 100 : selectedTxn.status === 'RECOVERED' || selectedTxn.status === 'CAPTURED' ? selectedTxn.amount : 0).toLocaleString('en-IN')}
                   </span>
                 </div>
                 <div className="flex justify-between py-0.5">
@@ -883,7 +889,7 @@ export const TransactionExplorer: React.FC = () => {
 
               {/* Action Buttons */}
               <div className="space-y-2 pt-2">
-                {selectedTxn.status === 'RECOVERED' ? (
+                {selectedTxn.status === 'RECOVERED' || selectedTxn.status === 'CAPTURED' ? (
                   <button
                     disabled
                     className="w-full py-2.5 rounded-lg bg-[#10b981]/20 border border-[#10b981]/50 text-[#10b981] font-bold text-xs font-mono cursor-default"
@@ -899,15 +905,15 @@ export const TransactionExplorer: React.FC = () => {
                   </button>
                 ) : selectedTxn.status === 'WAITING_FOR_RECOVERY' || selectedTxn.status === 'IN_PROGRESS' ? (
                   <div className="space-y-2">
-                    <div className="p-3 rounded-lg bg-[#e5a944]/15 border border-[#e5a944]/50 text-[#f4ede2] text-xs font-mono space-y-2">
+                    <div className="p-3 rounded-lg bg-[#fcd34d]/15 border border-[#fcd34d]/50 text-[#f4ede2] text-xs font-mono space-y-2">
                       <div className="flex items-center justify-between">
-                        <span className="font-bold text-[#e5a944]">⚡ RECOVERY IN PROGRESS</span>
+                        <span className="font-bold text-[#fcd34d]">⚡ CUSTOMER PAYMENT PENDING</span>
                         <span className="px-1.5 py-0.5 text-[9px] rounded bg-[#e5a944]/20 text-[#e5a944] font-mono border border-[#e5a944]/40">
                           {selectedTxn.recovery_operation_id || 'ACTIVE'}
                         </span>
                       </div>
                       <div className="text-[#a89f91] text-[11px]">
-                        {selectedTxn.workflow_message || 'Recovery workflow initiated. Awaiting customer retry checkout.'}
+                        {selectedTxn.workflow_message || 'Recovery workflow authorized and payment link dispatched. Awaiting customer payment via Razorpay.'}
                       </div>
                     </div>
 
@@ -916,7 +922,7 @@ export const TransactionExplorer: React.FC = () => {
                       disabled={verifying}
                       className="w-full py-2 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs font-mono transition disabled:opacity-50 cursor-pointer"
                     >
-                      {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate'}
+                      {verifying ? 'Verifying Gateway Capture...' : 'Verify Captured Payment Gate ▶'}
                     </button>
                   </div>
                 ) : (
@@ -926,7 +932,7 @@ export const TransactionExplorer: React.FC = () => {
                       disabled={executing}
                       className="w-full py-2.5 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-xs font-mono hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50"
                     >
-                      <span>{executing ? 'Dispatching...' : 'Send Retry Payment Link'}</span>
+                      <span>{executing ? 'Authorizing...' : '⚡ AUTHORIZE & SEND RECOVERY LINK'}</span>
                       <span>➔</span>
                     </button>
                   </div>

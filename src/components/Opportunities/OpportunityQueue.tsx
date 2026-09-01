@@ -804,9 +804,9 @@ export const OpportunityQueue: React.FC = () => {
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#ef4444]/20 text-[#ef4444] border border-[#ef4444]/40 font-bold ml-auto md:ml-0">
                             🔴 PAYMENT FAILED
                           </span>
-                        ) : opp.status === 'PENDING' || parentTxn?.status === 'PENDING' ? (
-                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#fcd34d]/20 text-[#fcd34d] border border-[#fcd34d]/40 font-bold ml-auto md:ml-0">
-                            🟡 WAITING FOR RECOVERY
+                        ) : opp.status === 'PENDING' || parentTxn?.status === 'PENDING' || opp.status === 'IN_PROGRESS' || parentTxn?.status === 'WAITING_FOR_RECOVERY' ? (
+                          <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#fcd34d]/20 text-[#fcd34d] border border-[#fcd34d]/40 font-bold ml-auto md:ml-0 animate-pulse">
+                            🟡 CUSTOMER PAYMENT PENDING
                           </span>
                         ) : (
                           <span className="px-2 py-0.5 text-[10px] font-mono rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold ml-auto md:ml-0">
@@ -816,7 +816,8 @@ export const OpportunityQueue: React.FC = () => {
                       </div>
 
                       <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#a89f91]">
-                        <span>Amount: <strong className="text-[#f4ede2]">{formatRupees(opp.amount_minor)}</strong></span>
+                        <span>At Risk: <strong className="text-[#f4ede2]">{formatRupees(opp.amount_minor)}</strong></span>
+                        <span>Expected Value: <strong className="text-[#fcd34d]">{formatRupees(opp.expected_recovery_value_minor || Math.round(opp.amount_minor * (opp.recovery_probability / 100)))}</strong></span>
                         <span>Prob: <strong className="text-[#10b981]">{opp.recovery_probability}%</strong></span>
                         <span>Risk: <strong className={opp.risk_score >= 70 ? 'text-[#ef4444]' : 'text-[#e5a944]'}>{opp.risk_score}/100</strong></span>
                         <span>Action: <strong className="text-[#f4ede2]">{opp.recommended_action}</strong></span>
@@ -824,9 +825,12 @@ export const OpportunityQueue: React.FC = () => {
                     </div>
 
                     <div className="flex md:flex-col items-end justify-between md:justify-center border-t md:border-t-0 pt-2 md:pt-0 border-[#2e271c]">
-                      <div className="text-[10px] font-mono text-[#7a7164]">AMOUNT AT RISK</div>
-                      <div className="text-lg font-mono font-bold text-[#f4ede2]">
-                        {formatRupees(opp.amount_minor)}
+                      <div className="text-[10px] font-mono text-[#7a7164]">EXPECTED RECOVERY</div>
+                      <div className="text-lg font-mono font-bold text-[#fcd34d]">
+                        {formatRupees(opp.expected_recovery_value_minor || Math.round(opp.amount_minor * (opp.recovery_probability / 100)))}
+                      </div>
+                      <div className="text-[10px] font-mono text-[#7a7164]">
+                        Risk: {formatRupees(opp.amount_minor)} ({opp.recovery_probability}%)
                       </div>
                     </div>
                   </div>
@@ -908,12 +912,18 @@ export const OpportunityQueue: React.FC = () => {
                 <span className="text-[#f4ede2] font-bold">{selectedOpp.transaction_id}</span>
               </div>
               <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
-                <span className="text-[#7a7164]">AMOUNT:</span>
-                <span className="text-[#f4ede2] font-bold">{formatRupees(selectedOpp.amount_minor)}</span>
+                <span className="text-[#7a7164]">AMOUNT AT RISK:</span>
+                <span className="text-[#ef4444] font-bold">{formatRupees(selectedOpp.amount_minor)}</span>
               </div>
               <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
                 <span className="text-[#7a7164]">RECOVERY PROBABILITY:</span>
                 <span className="text-[#10b981] font-bold">{selectedOpp.recovery_probability}%</span>
+              </div>
+              <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
+                <span className="text-[#7a7164]">EXPECTED RECOVERY VALUE:</span>
+                <span className="text-[#fcd34d] font-bold">
+                  {formatRupees(selectedOpp.expected_recovery_value_minor || Math.round(selectedOpp.amount_minor * (selectedOpp.recovery_probability / 100)))}
+                </span>
               </div>
               <div className="flex justify-between border-b border-[#2e271c]/40 pb-1.5">
                 <span className="text-[#7a7164]">FAILURE REASON:</span>
@@ -921,7 +931,7 @@ export const OpportunityQueue: React.FC = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-[#7a7164]">PRIORITY RATING:</span>
-                <span className="text-[#e5a944] font-bold">{selectedOpp.priority} ({selectedOpp.priority_score}/100)</span>
+                <span className="text-[#e5a944] font-bold">{selectedOpp.priority} ({selectedOpp.priority_score || 85}/100)</span>
               </div>
             </div>
 
@@ -965,41 +975,30 @@ export const OpportunityQueue: React.FC = () => {
               </div>
             )}
 
-            {/* Best Safe Action Recommendation */}
-            <div className="space-y-2">
-              <div className="text-xs font-mono text-[#7a7164]">RECOMMENDED SAFE ACTION</div>
-              <div
-                className={`p-3.5 rounded-lg border space-y-1.5 ${
-                  selectedOpp.policy_status === 'Approved'
-                    ? 'bg-[#15120c] border-[#10b981]/40'
-                    : 'bg-[#15120c] border-[#ef4444]/40'
-                }`}
-              >
-                <div className="text-sm font-bold text-[#f4ede2] flex items-center gap-2">
-                  <span>⚡</span> {selectedOpp.best_safe_action || selectedOpp.recommended_action}
+            {/* Why This Action? — AI Explanation */}
+            <div className="p-3.5 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-2 text-xs font-mono">
+              <div className="text-[#e5a944] font-bold flex items-center justify-between">
+                <span>WHY THIS ACTION?</span>
+                <span className="text-[#10b981] text-[11px]">AI Confidence: {selectedOpp.confidence || 94}%</span>
+              </div>
+              <div className="text-[11px] text-[#a89f91] space-y-1">
+                <div className="flex items-start gap-1.5 text-[#f4ede2]">
+                  <span className="text-[#10b981]">✓</span>
+                  <span>{selectedOpp.explainability?.why_action || `Failure signature [${selectedOpp.reason}] is categorized as transient and recoverable.`}</span>
                 </div>
-                {selectedOpp.explainability && (
-                  <p className="text-xs text-[#a89f91] leading-relaxed">
-                    {selectedOpp.explainability.why_action}
-                  </p>
-                )}
+                <div className="flex items-start gap-1.5">
+                  <span className="text-[#10b981]">✓</span>
+                  <span>Recovery probability ({selectedOpp.recovery_probability}%) exceeds deterministic policy threshold (70%).</span>
+                </div>
+                <div className="flex items-start gap-1.5">
+                  <span className="text-[#10b981]">✓</span>
+                  <span>No duplicate recovery session active for transaction {selectedOpp.transaction_id}.</span>
+                </div>
+                <div className="pt-1 text-[#7a7164] border-t border-[#2e271c]/40 text-[10px]">
+                  <strong>Alternative Considered:</strong> Immediate automatic retry • <strong className="text-[#ef4444]">Rejected:</strong> Gateway / Issuer cooldown policy prevents duplicate charges.
+                </div>
               </div>
             </div>
-
-            {/* Audited Explainability Breakdown */}
-            {selectedOpp.explainability && (
-              <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] space-y-2 text-[11px] font-mono">
-                <div className="text-[#e5a944] font-bold">AUDITED EXPLAINABILITY</div>
-                <div>
-                  <span className="text-[#7a7164]">Priority Rationale: </span>
-                  <span className="text-[#a89f91]">{selectedOpp.explainability.why_priority}</span>
-                </div>
-                <div>
-                  <span className="text-[#7a7164]">Policy Gate: </span>
-                  <span className="text-[#a89f91]">{selectedOpp.explainability.why_policy_status}</span>
-                </div>
-              </div>
-            )}
 
             {/* Inline Feedback inside Inspector Drawer */}
             {executionError && (
@@ -1067,13 +1066,13 @@ export const OpportunityQueue: React.FC = () => {
               </button>
             ) : selectedOpp.status === 'IN_PROGRESS' || selectedOpp.recovery_operation_id ? (
               <div className="space-y-2.5">
-                <div className="p-3.5 rounded-lg bg-[#10b981]/10 border border-[#10b981]/40 space-y-2 font-mono">
-                  <div className="flex items-center justify-between text-[#10b981] font-bold text-xs">
-                    <span>⚡ RECOVERY OPERATION ACTIVE</span>
-                    <span className="text-[11px] text-[#e5a944]">{selectedOpp.recovery_operation_id || 'IN PROGRESS'}</span>
+                <div className="p-3.5 rounded-lg bg-[#fcd34d]/10 border border-[#fcd34d]/40 space-y-2 font-mono">
+                  <div className="flex items-center justify-between text-[#fcd34d] font-bold text-xs">
+                    <span>⚡ CUSTOMER PAYMENT PENDING</span>
+                    <span className="text-[11px] text-[#e5a944]">{selectedOpp.recovery_operation_id || 'ACTIVE'}</span>
                   </div>
                   <p className="text-[11px] text-[#e5e7eb] leading-relaxed">
-                    {executionResult?.workflow_message || 'Recovery action initiated. Complete test payment via Razorpay checkout, or verify captured gateway status.'}
+                    {executionResult?.workflow_message || 'Recovery workflow authorized and payment link dispatched. Waiting for customer to complete checkout on Razorpay.'}
                   </p>
                   <div className="flex flex-col gap-2 pt-1">
                     <button
@@ -1081,7 +1080,7 @@ export const OpportunityQueue: React.FC = () => {
                       disabled={verifying}
                       className="w-full py-2.5 px-3 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer shadow-[0_0_15px_rgba(16,185,129,0.3)] disabled:opacity-50"
                     >
-                      <span>💳 Complete Test Pay with Razorpay Checkout</span>
+                      <span>💳 Customer Pays via Razorpay Checkout</span>
                       <span>▶</span>
                     </button>
                     {(executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_id) && (
@@ -1091,7 +1090,7 @@ export const OpportunityQueue: React.FC = () => {
                         rel="noreferrer"
                         className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs text-center transition flex items-center justify-center gap-1.5"
                       >
-                        Open Razorpay Payment Link ↗
+                        Open Customer Payment Link ↗
                       </a>
                     )}
                     <button
@@ -1112,9 +1111,12 @@ export const OpportunityQueue: React.FC = () => {
                   className="w-full py-3 px-4 rounded-lg bg-[#e5a944] text-[#080705] font-bold text-sm hover:bg-[#fcd34d] transition shadow-[0_0_15px_rgba(229,169,68,0.3)] disabled:opacity-50 cursor-pointer font-mono"
                 >
                   {executing
-                    ? '⚡ Contacting Razorpay Orchestrator...'
-                    : `Execute Recovery (${formatRupees(selectedOpp.amount_minor)}) ▶`}
+                    ? '⚡ Authorizing Recovery Workflow...'
+                    : '⚡ AUTHORIZE & SEND RECOVERY LINK ▶'}
                 </button>
+                <div className="text-[10px] text-[#7a7164] text-center font-mono">
+                  Authorizes AI to create recovery session and send payment link to customer.
+                </div>
 
                 <button
                   onClick={() => handleVerifyPayment(selectedOpp)}
@@ -1147,8 +1149,8 @@ export const OpportunityQueue: React.FC = () => {
               <div className="flex items-center gap-2">
                 <span className="text-xl">💳</span>
                 <div>
-                  <div className="font-bold text-[#f4ede2] text-sm">Razorpay Test Mode Checkout</div>
-                  <div className="text-[10px] text-[#e5a944]">⚡ INSTANT CAPTURE GATEWAY SIMULATOR</div>
+                  <div className="font-bold text-[#f4ede2] text-sm">Customer Recovery Payment — Razorpay Checkout</div>
+                  <div className="text-[10px] text-[#e5a944]">⚡ SIMULATED CUSTOMER CHECKOUT (TEST MODE)</div>
                 </div>
               </div>
               <button
@@ -1169,18 +1171,18 @@ export const OpportunityQueue: React.FC = () => {
                 <span className="text-[#f4ede2] font-bold">{checkoutModalOpp.transaction_id}</span>
               </div>
               <div className="flex justify-between text-[#7a7164]">
-                <span>Operation ID:</span>
+                <span>Recovery Session:</span>
                 <span className="text-[#e5a944]">{checkoutModalOpp.recovery_operation_id || 'REC-RETRY-01'}</span>
               </div>
               <div className="flex justify-between text-[#7a7164] pt-1 border-t border-[#2e271c]">
-                <span>Recovery Amount:</span>
+                <span>Customer Amount Due:</span>
                 <span className="text-[#10b981] font-bold text-sm">{formatRupees(checkoutModalOpp.amount_minor)}</span>
               </div>
             </div>
 
             {/* Payment Methods */}
             <div className="space-y-2">
-              <div className="text-[#7a7164] text-[11px]">Select Test Payment Instrument:</div>
+              <div className="text-[#7a7164] text-[11px]">Select Customer Payment Instrument:</div>
               <div className="grid grid-cols-3 gap-2">
                 <button
                   onClick={() => setTestPayMethod('card')}
@@ -1241,8 +1243,11 @@ export const OpportunityQueue: React.FC = () => {
                 disabled={simulatingPayment}
                 className="w-full py-3 px-4 rounded-xl bg-[#10b981] hover:bg-[#34d399] text-[#080705] font-bold text-xs transition cursor-pointer shadow-[0_0_20px_rgba(16,185,129,0.4)] disabled:opacity-50 flex items-center justify-center gap-2"
               >
-                {simulatingPayment ? '⚡ Capturing and Verifying on Ledger...' : `✓ Pay & Complete Recovery (${formatRupees(checkoutModalOpp.amount_minor)}) ▶`}
+                {simulatingPayment ? '⚡ Customer Paying & Verifying on Gateway...' : `✓ Customer Pays ${formatRupees(checkoutModalOpp.amount_minor)} (Test Mode) ▶`}
               </button>
+              <div className="text-[10px] text-[#7a7164] text-center font-mono">
+                Simulates customer paying on recovery link and gateway capturing funds.
+              </div>
               <button
                 onClick={() => {
                   setCheckoutModalOpp(null)

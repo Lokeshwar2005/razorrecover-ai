@@ -78,6 +78,7 @@ export interface OpportunityItem {
   policy_status: 'Approved' | 'Blocked' | 'Escalated'
   reason: string
   risk_score: number
+  confidence?: number
   status?: string
   recovery_operation_id?: string
   explainability?: OpportunityExplainability

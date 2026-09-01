@@ -10,7 +10,7 @@ import { getStoredChronovaOrders, type ChronovaOrder } from './chronovaOrderStor
 import { resolveProductImageUrl } from '../components/Chronova/utils'
 
 export type TransactionSource = 'CHRONOVA' | 'live' | 'razorpay_test' | 'synthetic'
-export type TransactionStatus = 'PAYMENT_FAILED' | 'WAITING_FOR_RECOVERY' | 'RECOVERED' | 'STOPPED' | 'IN_PROGRESS' | 'PENDING' | 'ESCALATED'
+export type TransactionStatus = 'PAYMENT_FAILED' | 'WAITING_FOR_RECOVERY' | 'RECOVERED' | 'STOPPED' | 'IN_PROGRESS' | 'PENDING' | 'ESCALATED' | 'CAPTURED' | 'PAID' | 'SUCCESS'
 export type PolicyDecision = 'Approved' | 'Escalated' | 'Blocked'
 
 export interface CanonicalTransaction {
@@ -658,10 +658,20 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
     const opps: OpportunityItem[] = []
 
     for (const t of transactions) {
-      if (t.status === 'RECOVERED') continue
+      if (
+        t.status === 'RECOVERED' ||
+        t.status === 'CAPTURED' ||
+        t.status === 'SUCCESS' ||
+        (t.verified_amount_minor && t.verified_amount_minor > 0 && t.recovery_status === 'NONE')
+      ) {
+        continue
+      }
+
+      const prob = Number(t.recovery_probability) || 85
+      const expectedMinor = Math.round(t.amount_minor * (prob / 100))
 
       const isCritical = t.amount >= 10000 || t.risk_score <= 15
-      const isHigh = t.amount >= 5000 || t.recovery_probability >= 85
+      const isHigh = t.amount >= 5000 || prob >= 85
       const priorityLevel = isCritical ? 'CRITICAL' : isHigh ? 'HIGH' : 'MEDIUM'
 
       opps.push({
@@ -669,30 +679,31 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
         opportunity_id: `opp-${t.id}`,
         transaction_id: t.id,
         amount_minor: t.amount_minor,
-        currency: t.currency,
+        currency: t.currency || 'INR',
         failure_signature: t.reason,
-        recovery_probability: t.recovery_probability,
-        expected_value_minor: t.amount_minor,
-        expected_recovery_value_minor: t.amount_minor,
+        recovery_probability: prob,
+        expected_value_minor: expectedMinor,
+        expected_recovery_value_minor: expectedMinor,
         priority: priorityLevel,
         priority_level: priorityLevel,
         recommended_action: t.action,
         policy_status: t.policy,
         reason: t.reason,
         risk_score: t.risk_score,
-        status: t.status === 'WAITING_FOR_RECOVERY' ? 'IN_PROGRESS' : 'OPEN',
+        status: t.status === 'WAITING_FOR_RECOVERY' || t.status === 'IN_PROGRESS' ? 'IN_PROGRESS' : 'OPEN',
         recovery_operation_id: t.recovery_operation_id,
         created_at: t.created_at,
         updated_at: t.updated_at,
       })
     }
 
-    return opps
+    return opps.sort((a, b) => (b.expected_recovery_value_minor || 0) - (a.expected_recovery_value_minor || 0))
   },
 
   getOpportunitiesSummary: () => {
     const opps = get().getOpportunities()
     let totalRisk = 0
+    let totalExpected = 0
     let policyEligible = 0
     let policyBlocked = 0
     let highPriority = 0
@@ -700,6 +711,7 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
 
     for (const o of opps) {
       totalRisk += o.amount_minor
+      totalExpected += (o.expected_recovery_value_minor || o.amount_minor)
       if (o.policy_status === 'Approved') policyEligible++
       else policyBlocked++
       if (o.priority === 'CRITICAL' || o.priority === 'HIGH') highPriority++
@@ -709,7 +721,7 @@ export const useTransactionStore = create<TransactionStoreState>((set, get) => (
     return {
       total_opportunities: opps.length,
       total_revenue_at_risk_minor: totalRisk,
-      expected_recovery_value_minor: totalRisk,
+      expected_recovery_value_minor: totalExpected,
       policy_eligible_count: policyEligible,
       policy_blocked_count: policyBlocked,
       high_priority_count: highPriority,
@@ -771,10 +783,20 @@ export function computeOpportunitiesFromTransactions(transactions: CanonicalTran
   const opps: OpportunityItem[] = []
 
   for (const t of transactions) {
-    if (t.status === 'RECOVERED') continue
+    if (
+      t.status === 'RECOVERED' ||
+      t.status === 'CAPTURED' ||
+      t.status === 'SUCCESS' ||
+      (t.verified_amount_minor && t.verified_amount_minor > 0 && t.recovery_status === 'NONE')
+    ) {
+      continue
+    }
+
+    const prob = Number(t.recovery_probability) || 85
+    const expectedMinor = Math.round(t.amount_minor * (prob / 100))
 
     const isCritical = t.amount >= 10000 || t.risk_score <= 15
-    const isHigh = t.amount >= 5000 || t.recovery_probability >= 85
+    const isHigh = t.amount >= 5000 || prob >= 85
     const priorityLevel = isCritical ? 'CRITICAL' : isHigh ? 'HIGH' : 'MEDIUM'
 
     opps.push({
@@ -782,29 +804,30 @@ export function computeOpportunitiesFromTransactions(transactions: CanonicalTran
       opportunity_id: `opp-${t.id}`,
       transaction_id: t.id,
       amount_minor: t.amount_minor,
-      currency: t.currency,
+      currency: t.currency || 'INR',
       failure_signature: t.reason,
-      recovery_probability: t.recovery_probability,
-      expected_value_minor: t.amount_minor,
-      expected_recovery_value_minor: t.amount_minor,
+      recovery_probability: prob,
+      expected_value_minor: expectedMinor,
+      expected_recovery_value_minor: expectedMinor,
       priority: priorityLevel,
       priority_level: priorityLevel,
       recommended_action: t.action,
       policy_status: t.policy,
       reason: t.reason,
       risk_score: t.risk_score,
-      status: t.status === 'WAITING_FOR_RECOVERY' ? 'IN_PROGRESS' : 'OPEN',
+      status: t.status === 'WAITING_FOR_RECOVERY' || t.status === 'IN_PROGRESS' ? 'IN_PROGRESS' : 'OPEN',
       recovery_operation_id: t.recovery_operation_id,
       created_at: t.created_at,
       updated_at: t.updated_at,
     })
   }
 
-  return opps
+  return opps.sort((a, b) => (b.expected_recovery_value_minor || 0) - (a.expected_recovery_value_minor || 0))
 }
 
 export function computeOpportunitySummary(opps: OpportunityItem[]): OpportunitySummary {
   let totalRisk = 0
+  let totalExpected = 0
   let policyEligible = 0
   let policyBlocked = 0
   let highPriority = 0
@@ -812,6 +835,7 @@ export function computeOpportunitySummary(opps: OpportunityItem[]): OpportunityS
 
   for (const o of opps) {
     totalRisk += o.amount_minor
+    totalExpected += (o.expected_recovery_value_minor || o.amount_minor)
     if (o.policy_status === 'Approved') policyEligible++
     else policyBlocked++
     if (o.priority === 'CRITICAL' || o.priority === 'HIGH') highPriority++
@@ -821,7 +845,7 @@ export function computeOpportunitySummary(opps: OpportunityItem[]): OpportunityS
   return {
     total_opportunities: opps.length,
     total_revenue_at_risk_minor: totalRisk,
-    expected_recovery_value_minor: totalRisk,
+    expected_recovery_value_minor: totalExpected,
     policy_eligible_count: policyEligible,
     policy_blocked_count: policyBlocked,
     high_priority_count: highPriority,

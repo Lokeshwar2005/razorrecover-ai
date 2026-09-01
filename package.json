@@ -16,7 +16,8 @@
     "test:security": "tsx scripts/test-security-integrity.ts",
     "test:loop": "tsx scripts/test-real-customer-recovery-loop.ts",
     "test:consistency": "tsx scripts/test-master-data-consistency.ts",
-    "test:orders": "tsx scripts/test-order-history-consistency.ts"
+    "test:orders": "tsx scripts/test-order-history-consistency.ts",
+    "test:hardening": "tsx scripts/test-production-hardening.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.3",
