@@ -14,6 +14,7 @@ import {
   unlockPageScroll,
   fetchRazorpayFeed,
 } from '../../services/backendApi'
+import { resolveProductImageUrl } from '../Chronova/utils'
 
 export const OpportunityQueue: React.FC = () => {
   const transactions = useTransactionStore((s) => s.transactions)
@@ -63,6 +64,7 @@ export const OpportunityQueue: React.FC = () => {
   const [checkoutModalOpp, setCheckoutModalOpp] = useState<OpportunityItem | null>(null)
   const [testPayMethod, setTestPayMethod] = useState<'card' | 'upi' | 'netbanking'>('card')
   const [simulatingPayment, setSimulatingPayment] = useState(false)
+  const [copiedLink, setCopiedLink] = useState<string | null>(null)
 
   // Listen for external payment bridge verification events
   useEffect(() => {
@@ -1080,19 +1082,38 @@ export const OpportunityQueue: React.FC = () => {
                       disabled={verifying}
                       className="w-full py-2.5 px-3 rounded-lg bg-[#10b981] text-[#080705] font-bold text-xs hover:bg-[#34d399] transition flex items-center justify-center gap-1.5 cursor-pointer shadow-[0_0_15px_rgba(16,185,129,0.3)] disabled:opacity-50"
                     >
-                      <span>💳 Customer Pays via Razorpay Checkout</span>
+                      <span>💳 Open Customer Recovery Checkout</span>
                       <span>▶</span>
                     </button>
-                    {(executionResult?.payment_link || transactionMap.get(selectedOpp.transaction_id)?.provider_payment_id) && (
+                    <div className="grid grid-cols-2 gap-2">
+                      <button
+                        onClick={() => {
+                          const linkUrl = executionResult?.payment_link ||
+                            transactionMap.get(selectedOpp.transaction_id)?.recovery_link_url ||
+                            `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedOpp.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedOpp.transaction_id}`
+                          if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                            navigator.clipboard.writeText(linkUrl)
+                            setCopiedLink(selectedOpp.transaction_id)
+                            setTimeout(() => setCopiedLink(null), 2500)
+                          }
+                        }}
+                        className="py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#e5a944] text-[#f4ede2] text-xs text-center transition flex items-center justify-center gap-1.5 cursor-pointer"
+                      >
+                        <span>{copiedLink === selectedOpp.transaction_id ? '✓ Copied Link' : '📋 Copy Link'}</span>
+                      </button>
                       <a
-                        href={executionResult?.payment_link || `https://rzp.io/i/${transactionMap.get(selectedOpp.transaction_id)?.provider_payment_id}`}
+                        href={
+                          executionResult?.payment_link ||
+                          transactionMap.get(selectedOpp.transaction_id)?.recovery_link_url ||
+                          `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${selectedOpp.recovery_operation_id || 'REC-ACTIVE'}&txn=${selectedOpp.transaction_id}`
+                        }
                         target="_blank"
                         rel="noreferrer"
-                        className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs text-center transition flex items-center justify-center gap-1.5"
+                        className="py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] hover:border-[#10b981] text-[#10b981] text-xs text-center transition flex items-center justify-center gap-1.5"
                       >
-                        Open Customer Payment Link ↗
+                        <span>Open Link ↗</span>
                       </a>
-                    )}
+                    </div>
                     <button
                       onClick={() => handleVerifyPayment(selectedOpp)}
                       disabled={verifying}
@@ -1132,135 +1153,218 @@ export const OpportunityQueue: React.FC = () => {
       </div>
 
       {/* Razorpay Test Mode In-App Checkout Modal */}
-      {checkoutModalOpp && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
-          onClick={() => {
-            setCheckoutModalOpp(null)
-            unlockPageScroll()
-          }}
-        >
+      {checkoutModalOpp && (() => {
+        const modalTxn = transactionMap.get(checkoutModalOpp.transaction_id)
+        const custName = modalTxn?.customer?.full_name || modalTxn?.customer?.name || 'Customer'
+        const custEmail = modalTxn?.customer?.email || 'customer@example.com'
+        const custAddr = modalTxn?.customer?.address || 'Destination not provided'
+        const itemList = modalTxn?.items && modalTxn.items.length > 0 ? modalTxn.items : [
+          {
+            product_name: modalTxn?.product_name || 'Chronova Luxury Horizon Timepiece',
+            product_image: modalTxn?.product_image || '/images/products/titan_edge_silver.png',
+            product_brand: modalTxn?.product_brand || 'Chronova',
+            product_model: modalTxn?.product_name || 'Luxury Edition',
+            quantity: modalTxn?.quantity || 1,
+            unit_price: modalTxn?.unit_price || Math.round(checkoutModalOpp.amount_minor / 100),
+            total_price: Math.round(checkoutModalOpp.amount_minor / 100),
+          }
+        ]
+
+        return (
           <div
-            className="w-full max-w-md bg-[#0f0c08] border border-[#2e271c] rounded-2xl shadow-2xl overflow-hidden font-mono text-xs space-y-4 p-6"
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-fade-in overflow-y-auto"
+            onClick={() => {
+              setCheckoutModalOpp(null)
+              unlockPageScroll()
+            }}
           >
-            {/* Modal Header */}
-            <div className="flex items-center justify-between border-b border-[#2e271c] pb-4">
-              <div className="flex items-center gap-2">
-                <span className="text-xl">💳</span>
+            <div
+              className="w-full max-w-lg bg-[#0f0c08] border border-[#2e271c] rounded-2xl shadow-2xl overflow-hidden font-mono text-xs space-y-4 p-5 sm:p-6 my-auto max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Modal Header */}
+              <div className="flex items-center justify-between border-b border-[#2e271c] pb-3">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-lg bg-[#e5a944]/15 border border-[#e5a944]/40 text-[#e5a944] flex items-center justify-center font-bold text-sm">
+                    ⌚
+                  </div>
+                  <div>
+                    <div className="font-bold text-[#f4ede2] text-sm tracking-wide">PAYMENT RECOVERY</div>
+                    <div className="text-[10px] text-[#e5a944]">CHRONOVA LUXURY HOROLOGY · RAZORPAY TEST MODE</div>
+                  </div>
+                </div>
+                <button
+                  onClick={() => {
+                    setCheckoutModalOpp(null)
+                    unlockPageScroll()
+                  }}
+                  className="text-[#a89f91] hover:text-white p-1 text-sm font-bold cursor-pointer"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {/* Customer Safe Explanation */}
+              <div className="p-3 rounded-xl bg-[#e5a944]/10 border border-[#e5a944]/30 text-[#f4ede2] text-[11px] leading-relaxed">
+                <span className="text-[#e5a944] font-bold">Important Notice: </span>
+                Your previous payment attempt was unsuccessful. You can securely complete your payment below to confirm your order.
+              </div>
+
+              {/* Order Items Breakdown */}
+              <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-2.5">
+                <div className="text-[10px] text-[#7a7164] uppercase font-bold flex justify-between">
+                  <span>Order Items ({itemList.length})</span>
+                  <span className="text-[#f4ede2] font-mono">{checkoutModalOpp.transaction_id}</span>
+                </div>
+                <div className="space-y-2 max-h-36 overflow-y-auto pr-1">
+                  {itemList.map((it: any, idx: number) => {
+                    const itImg = resolveProductImageUrl(it.productImage || it.product_image || it.imageUrl || it.image_url)
+                    const itName = it.productName || it.product_name || 'Chronova Watch'
+                    const itBrand = it.productBrand || it.product_brand || it.brand || 'Chronova'
+                    const itModel = it.productModel || it.product_model || it.model || itName
+                    const itQty = it.quantity || 1
+                    const itPrice = it.unitPrice || it.unit_price || it.unit_price_rupees || 0
+                    const itTotal = it.totalPrice || it.total_price || it.total_price_rupees || (itPrice * itQty)
+                    return (
+                      <div key={idx} className="flex items-center gap-3 p-2 rounded-lg bg-[#0f0c08] border border-[#2e271c]/60">
+                        <div className="w-10 h-10 rounded-md bg-[#1a1610] border border-[#2e271c] overflow-hidden shrink-0 flex items-center justify-center">
+                          {itImg ? (
+                            <img
+                              src={itImg}
+                              alt={itName}
+                              className="w-full h-full object-cover"
+                              onError={(e) => {
+                                (e.target as HTMLElement).style.display = 'none'
+                              }}
+                            />
+                          ) : (
+                            <span className="text-xs">⌚</span>
+                          )}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-bold text-[#f4ede2] text-[11px] truncate">{itName}</div>
+                          <div className="text-[9px] text-[#7a7164]">{itBrand} · {itModel}</div>
+                        </div>
+                        <div className="text-right text-[11px] shrink-0">
+                          <div className="text-[#a89f91]">{itQty} × ₹{itPrice.toLocaleString('en-IN')}</div>
+                          <div className="text-[#10b981] font-bold">₹{itTotal.toLocaleString('en-IN')}</div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* Customer & Shipping Details */}
+              <div className="p-3 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-1 text-[11px]">
+                <div className="text-[10px] text-[#7a7164] uppercase font-bold">Customer & Shipping Destination</div>
+                <div className="flex justify-between text-[#a89f91]">
+                  <span>Customer:</span>
+                  <span className="text-[#f4ede2] font-bold">{custName}</span>
+                </div>
+                <div className="flex justify-between text-[#a89f91]">
+                  <span>Email:</span>
+                  <span className="text-[#f4ede2]">{custEmail}</span>
+                </div>
+                <div className="flex justify-between text-[#a89f91]">
+                  <span className="shrink-0">Destination:</span>
+                  <span className="text-[#f4ede2] text-right truncate max-w-[260px] pl-2">{custAddr}</span>
+                </div>
+              </div>
+
+              {/* Amount Due Banner */}
+              <div className="p-3 rounded-xl bg-[#10b981]/10 border border-[#10b981]/40 flex justify-between items-center">
                 <div>
-                  <div className="font-bold text-[#f4ede2] text-sm">Customer Recovery Payment — Razorpay Checkout</div>
-                  <div className="text-[10px] text-[#e5a944]">⚡ SIMULATED CUSTOMER CHECKOUT (TEST MODE)</div>
+                  <div className="text-[10px] text-[#10b981] font-bold uppercase">Total Amount Due</div>
+                  <div className="text-[10px] text-[#7a7164]">Includes all taxes & priority insured delivery</div>
+                </div>
+                <div className="text-[#10b981] font-bold text-lg font-mono">
+                  {formatRupees(checkoutModalOpp.amount_minor)}
                 </div>
               </div>
-              <button
-                onClick={() => {
-                  setCheckoutModalOpp(null)
-                  unlockPageScroll()
-                }}
-                className="text-[#a89f91] hover:text-white p-1 text-sm font-bold cursor-pointer"
-              >
-                ✕
-              </button>
-            </div>
 
-            {/* Transaction Summary */}
-            <div className="p-3.5 rounded-xl bg-[#15120c] border border-[#2e271c] space-y-1.5">
-              <div className="flex justify-between text-[#7a7164]">
-                <span>Transaction:</span>
-                <span className="text-[#f4ede2] font-bold">{checkoutModalOpp.transaction_id}</span>
-              </div>
-              <div className="flex justify-between text-[#7a7164]">
-                <span>Recovery Session:</span>
-                <span className="text-[#e5a944]">{checkoutModalOpp.recovery_operation_id || 'REC-RETRY-01'}</span>
-              </div>
-              <div className="flex justify-between text-[#7a7164] pt-1 border-t border-[#2e271c]">
-                <span>Customer Amount Due:</span>
-                <span className="text-[#10b981] font-bold text-sm">{formatRupees(checkoutModalOpp.amount_minor)}</span>
-              </div>
-            </div>
+              {/* Payment Methods */}
+              <div className="space-y-2">
+                <div className="text-[#7a7164] text-[11px]">Select Customer Payment Instrument:</div>
+                <div className="grid grid-cols-3 gap-2">
+                  <button
+                    onClick={() => setTestPayMethod('card')}
+                    className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
+                      testPayMethod === 'card'
+                        ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
+                        : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
+                    }`}
+                  >
+                    💳 Test Card
+                  </button>
+                  <button
+                    onClick={() => setTestPayMethod('upi')}
+                    className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
+                      testPayMethod === 'upi'
+                        ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
+                        : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
+                    }`}
+                  >
+                    📱 UPI Test
+                  </button>
+                  <button
+                    onClick={() => setTestPayMethod('netbanking')}
+                    className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
+                      testPayMethod === 'netbanking'
+                        ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
+                        : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
+                    }`}
+                  >
+                    🏦 Netbanking
+                  </button>
+                </div>
 
-            {/* Payment Methods */}
-            <div className="space-y-2">
-              <div className="text-[#7a7164] text-[11px]">Select Customer Payment Instrument:</div>
-              <div className="grid grid-cols-3 gap-2">
+                {testPayMethod === 'card' && (
+                  <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-0.5 text-[#a89f91]">
+                    <div><span className="text-[#7a7164]">Card: </span>4111 2222 3333 4444</div>
+                    <div><span className="text-[#7a7164]">Expiry / CVV: </span>12/28 · 123</div>
+                  </div>
+                )}
+
+                {testPayMethod === 'upi' && (
+                  <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-0.5 text-[#a89f91]">
+                    <div><span className="text-[#7a7164]">VPA: </span>success@razorpay</div>
+                  </div>
+                )}
+
+                {testPayMethod === 'netbanking' && (
+                  <div className="p-2.5 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-0.5 text-[#a89f91]">
+                    <div><span className="text-[#7a7164]">Bank: </span>HDFC / ICICI Test Gateway (Instant Simulation)</div>
+                  </div>
+                )}
+              </div>
+
+              {/* Actions */}
+              <div className="pt-1 space-y-2">
                 <button
-                  onClick={() => setTestPayMethod('card')}
-                  className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
-                    testPayMethod === 'card'
-                      ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
-                      : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
-                  }`}
+                  onClick={handleSimulateCheckoutCapture}
+                  disabled={simulatingPayment}
+                  className="w-full py-3 px-4 rounded-xl bg-[#10b981] hover:bg-[#34d399] text-[#080705] font-bold text-xs transition cursor-pointer shadow-[0_0_20px_rgba(16,185,129,0.4)] disabled:opacity-50 flex items-center justify-center gap-2"
                 >
-                  💳 Test Card
+                  {simulatingPayment ? '⚡ Customer Paying & Verifying on Gateway...' : `✓ PAY ${formatRupees(checkoutModalOpp.amount_minor)} ▶`}
                 </button>
+                <div className="text-[10px] text-[#7a7164] text-center font-mono">
+                  Customer completes recovery payment in Razorpay Test Mode.
+                </div>
                 <button
-                  onClick={() => setTestPayMethod('upi')}
-                  className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
-                    testPayMethod === 'upi'
-                      ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
-                      : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
-                  }`}
+                  onClick={() => {
+                    setCheckoutModalOpp(null)
+                    unlockPageScroll()
+                  }}
+                  className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#a89f91] hover:text-white transition cursor-pointer text-center text-[11px]"
                 >
-                  📱 UPI Test
-                </button>
-                <button
-                  onClick={() => setTestPayMethod('netbanking')}
-                  className={`py-2 px-2 rounded-lg border text-center transition cursor-pointer ${
-                    testPayMethod === 'netbanking'
-                      ? 'bg-[#e5a944]/20 border-[#e5a944] text-[#e5a944] font-bold'
-                      : 'bg-[#15120c] border-[#2e271c] text-[#a89f91]'
-                  }`}
-                >
-                  🏦 Netbanking
+                  Cancel
                 </button>
               </div>
-
-              {testPayMethod === 'card' && (
-                <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-1 text-[#a89f91]">
-                  <div><span className="text-[#7a7164]">Card Number: </span>4111 2222 3333 4444</div>
-                  <div><span className="text-[#7a7164]">Expiry / CVV: </span>12/28 · 123</div>
-                </div>
-              )}
-
-              {testPayMethod === 'upi' && (
-                <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-1 text-[#a89f91]">
-                  <div><span className="text-[#7a7164]">Virtual Payment Address: </span>success@razorpay</div>
-                </div>
-              )}
-
-              {testPayMethod === 'netbanking' && (
-                <div className="p-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[11px] space-y-1 text-[#a89f91]">
-                  <div><span className="text-[#7a7164]">Bank: </span>HDFC / ICICI Test Gateway (Instant Simulation)</div>
-                </div>
-              )}
-            </div>
-
-            {/* Actions */}
-            <div className="pt-2 space-y-2">
-              <button
-                onClick={handleSimulateCheckoutCapture}
-                disabled={simulatingPayment}
-                className="w-full py-3 px-4 rounded-xl bg-[#10b981] hover:bg-[#34d399] text-[#080705] font-bold text-xs transition cursor-pointer shadow-[0_0_20px_rgba(16,185,129,0.4)] disabled:opacity-50 flex items-center justify-center gap-2"
-              >
-                {simulatingPayment ? '⚡ Customer Paying & Verifying on Gateway...' : `✓ Customer Pays ${formatRupees(checkoutModalOpp.amount_minor)} (Test Mode) ▶`}
-              </button>
-              <div className="text-[10px] text-[#7a7164] text-center font-mono">
-                Simulates customer paying on recovery link and gateway capturing funds.
-              </div>
-              <button
-                onClick={() => {
-                  setCheckoutModalOpp(null)
-                  unlockPageScroll()
-                }}
-                className="w-full py-2 px-3 rounded-lg bg-[#15120c] border border-[#2e271c] text-[#a89f91] hover:text-white transition cursor-pointer text-center text-[11px]"
-              >
-                Cancel
-              </button>
             </div>
           </div>
-        </div>
-      )}
+        )
+      })()}
     </div>
   )
 }

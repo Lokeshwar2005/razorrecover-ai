@@ -157,7 +157,11 @@ export interface ChronovaTransaction {
   metadata?: ChronovaMetadata
   ai_diagnosis?: AIDiagnosis
   policy_decision?: PolicyDecision
+  original_payment_id?: string
+  recovery_payment_id?: string
   recovery_operation_id?: string
+  recovery_link_url?: string
+  recovery_link_expires_at?: string
   recovery_status?: string
   workflow_status?: string
   workflow_message?: string
@@ -875,12 +879,14 @@ export async function executeChronovaRecoveryAction(
     return { transaction: txn, recovery_operation_id: txn.recovery_operation_id || 'ALREADY_RECOVERED', duplicate: true }
   }
 
-  const recoveryOpId = `REC-20260831-${cleanId.replace(/[^A-Z0-9]/gi, '')}`
+  const recoveryOpId = `REC-20260901-${cleanId.replace(/[^A-Z0-9]/gi, '')}`
   if (txn.recovery_operation_id === recoveryOpId && txn.status === 'WAITING_FOR_RECOVERY') {
     return { transaction: txn, recovery_operation_id: recoveryOpId, duplicate: true }
   }
 
   const now = new Date().toISOString()
+  const expiresAt = new Date(Date.now() + 30 * 60 * 1000).toISOString() // 30 mins expiry
+  const recoveryUrl = `https://lokeshwar2005.github.io/razorrecover-ai/chronova/?recovery=${recoveryOpId}&txn=${cleanId}`
   const prevHash = txn.audit_events?.[0]?.hash || '0000000000000000000000000000000000000000000000000000000000000000'
   const hash = pseudoSha256(`${prevHash}:${cleanId}:RECOVERY_DISPATCHED:${recoveryOpId}`)
 
@@ -888,6 +894,9 @@ export async function executeChronovaRecoveryAction(
     ...txn,
     status: 'WAITING_FOR_RECOVERY',
     recovery_operation_id: recoveryOpId,
+    recovery_link_url: recoveryUrl,
+    recovery_link_expires_at: expiresAt,
+    original_payment_id: txn.original_payment_id || txn.razorpay_payment_id || txn.provider_payment_id || 'pay_failed_init',
     recovery_status: 'IN_PROGRESS',
     workflow_status: 'DISPATCHED',
     workflow_message: `Recovery link dispatched for ${cleanId} [${recoveryOpId}]. Awaiting customer payment completion.`,
@@ -906,7 +915,7 @@ export async function executeChronovaRecoveryAction(
         event_type: 'RECOVERY_ACTION_DISPATCHED',
         actor: 'RazorRecover Autonomous Engine',
         decision: 'WAITING_FOR_RECOVERY',
-        reason: `Recovery operation [${recoveryOpId}] dispatched with action: ${actionType}.`,
+        reason: `Recovery operation [${recoveryOpId}] dispatched with action: ${actionType}. Expiry: 30m.`,
         timestamp: now,
         hash,
         prev_hash: prevHash,
@@ -1083,6 +1092,8 @@ export async function verifyChronovaPaymentCapture(
       ? `Payment successfully recovered via customer retry link and captured in Razorpay (Payment ID: ${paymentId}).`
       : `Payment completed successfully via Razorpay Test Mode (Payment ID: ${paymentId}). No recovery intervention was required.`,
     razorpay_payment_id: paymentId,
+    original_payment_id: txn?.original_payment_id || (wasPreviouslyFailed ? (txn?.razorpay_payment_id || txn?.provider_payment_id || 'pay_orig_failed') : undefined),
+    recovery_payment_id: wasPreviouslyFailed ? paymentId : undefined,
     razorpay_order_id: orderId || txn?.razorpay_order_id || txn?.chronova_order_id,
     provider_id: paymentId,
     provider_payment_id: paymentId,

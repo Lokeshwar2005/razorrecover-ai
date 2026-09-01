@@ -90,7 +90,11 @@ export interface CanonicalTransaction {
 
   // Provider / Recovery fields
   provider?: 'RAZORPAY' | 'razorpay'
+  original_payment_id?: string
+  recovery_payment_id?: string
   recovery_operation_id?: string
+  recovery_link_url?: string
+  recovery_link_expires_at?: string
   recovery_status?: string
   provider_id?: string
   provider_payment_id?: string
