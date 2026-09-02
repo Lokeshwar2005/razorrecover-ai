@@ -22,7 +22,7 @@ import { CartDrawer } from './CartDrawer'
 import { CheckoutModal } from './CheckoutModal'
 import { CustomerAuthModal, CustomerUser } from './CustomerAuthModal'
 import { OrderHistoryModal } from './OrderHistoryModal'
-import { getStoredChronovaOrders } from '../../services/chronovaOrderStore'
+import { getStoredChronovaOrders, reconcileChronovaOrdersWithBackend } from '../../services/chronovaOrderStore'
 
 export const ChronovaStore: React.FC = () => {
   // Navigation & View Mode
@@ -157,34 +157,49 @@ export const ChronovaStore: React.FC = () => {
     return () => window.removeEventListener('chronova:orders-updated', handleOrdersUpdated)
   }, [])
 
+  // Auto-sync local orders with backend ledger on mount and periodically
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      void reconcileChronovaOrdersWithBackend()
+      const syncTimer = window.setInterval(() => {
+        void reconcileChronovaOrdersWithBackend()
+      }, 10000)
+      return () => window.clearInterval(syncTimer)
+    }
+  }, [])
+
   // Auto-detect recovery payment link parameters (?recovery=REC-xxx or ?txn=TXN-xxx or ?order_id=xxx)
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search)
       const recParam = params.get('recovery') || params.get('txn') || params.get('order_id') || params.get('order')
       if (recParam) {
-        const storedOrders = getStoredChronovaOrders()
-        const matched = storedOrders.find(
-          (o) =>
-            (recParam && o.transaction_id.toLowerCase().includes(recParam.toLowerCase())) ||
-            (o.order_id && o.order_id.toLowerCase().includes(recParam.toLowerCase())) ||
-            (o.recovery_operation_id && o.recovery_operation_id.toLowerCase().includes(recParam.toLowerCase()))
-        )
-        if (matched) {
-          const matchingProducts = matched.items
-            .map((item) => {
-              const p = CHRONOVA_CATALOG.find((catItem) => catItem.id === item.product_id)
-              if (p) return { product: p, quantity: item.quantity, selected_color: item.selected_color }
-              return null
-            })
-            .filter(Boolean) as CartItem[]
-          if (matchingProducts.length > 0) {
-            setCartItems(matchingProducts)
+        const processParam = async () => {
+          await reconcileChronovaOrdersWithBackend()
+          const storedOrders = getStoredChronovaOrders()
+          const matched = storedOrders.find(
+            (o) =>
+              (recParam && o.transaction_id.toLowerCase().includes(recParam.toLowerCase())) ||
+              (o.order_id && o.order_id.toLowerCase().includes(recParam.toLowerCase())) ||
+              (o.recovery_operation_id && o.recovery_operation_id.toLowerCase().includes(recParam.toLowerCase()))
+          )
+          if (matched) {
+            const matchingProducts = matched.items
+              .map((item) => {
+                const p = CHRONOVA_CATALOG.find((catItem) => catItem.id === item.product_id)
+                if (p) return { product: p, quantity: item.quantity, selected_color: item.selected_color }
+                return null
+              })
+              .filter(Boolean) as CartItem[]
+            if (matchingProducts.length > 0) {
+              setCartItems(matchingProducts)
+            }
+            setIsCheckoutOpen(true)
+          } else {
+            setIsOrdersOpen(true)
           }
-          setIsCheckoutOpen(true)
-        } else {
-          setIsOrdersOpen(true)
         }
+        void processParam()
       }
     }
   }, [])

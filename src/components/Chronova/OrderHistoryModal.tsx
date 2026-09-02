@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import type { ChronovaOrder } from './types'
 import { resolveProductImageUrl } from './utils'
-import { getStoredChronovaOrders } from '../../services/chronovaOrderStore'
+import { getStoredChronovaOrders, reconcileChronovaOrdersWithBackend } from '../../services/chronovaOrderStore'
 
 interface OrderHistoryModalProps {
   isOpen: boolean
@@ -20,16 +20,36 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
   const [filter, setFilter] = useState<'all' | 'paid' | 'failed'>('all')
   const [search, setSearch] = useState<string>('')
   const [expandedOrderId, setExpandedOrderId] = useState<string | null>(null)
+  const [isSyncing, setIsSyncing] = useState<boolean>(false)
 
-  const reloadOrders = () => {
+  const reloadOrders = useCallback(() => {
     setOrders(getStoredChronovaOrders())
-  }
+  }, [])
+
+  const syncWithBackend = useCallback(async () => {
+    setIsSyncing(true)
+    try {
+      const reconciled = await reconcileChronovaOrdersWithBackend()
+      setOrders(reconciled)
+    } finally {
+      setIsSyncing(false)
+    }
+  }, [])
 
   useEffect(() => {
     if (isOpen) {
       reloadOrders()
+      // Immediately reconcile with authoritative backend ledger
+      void syncWithBackend()
+
+      // Continuous polling for real-time recovery updates while modal is open
+      const pollTimer = window.setInterval(() => {
+        void syncWithBackend()
+      }, 3500)
+
+      return () => window.clearInterval(pollTimer)
     }
-  }, [isOpen])
+  }, [isOpen, reloadOrders, syncWithBackend])
 
   useEffect(() => {
     const handleUpdated = () => {
@@ -37,7 +57,7 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
     }
     window.addEventListener('chronova:orders-updated', handleUpdated)
     return () => window.removeEventListener('chronova:orders-updated', handleUpdated)
-  }, [])
+  }, [reloadOrders])
 
   const filteredOrders = useMemo(() => {
     return orders.filter((order) => {
@@ -137,23 +157,35 @@ export const OrderHistoryModal: React.FC<OrderHistoryModalProps> = ({
             ))}
           </div>
 
-          <div className="relative w-full sm:w-64">
-            <input
-              type="text"
-              placeholder="Search by order, txn, watch..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full px-3 py-1.5 pl-8 rounded-xl bg-white border border-slate-200 text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-slate-900 font-mono"
-            />
-            <span className="absolute left-2.5 top-2 text-xs text-slate-400">🔍</span>
-            {search && (
-              <button
-                onClick={() => setSearch('')}
-                className="absolute right-2.5 top-1.5 text-xs text-slate-400 hover:text-slate-600"
-              >
-                ✕
-              </button>
-            )}
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <div className="relative w-full sm:w-64">
+              <input
+                type="text"
+                placeholder="Search by order, txn, watch..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full px-3 py-1.5 pl-8 rounded-xl bg-white border border-slate-200 text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-slate-900 font-mono"
+              />
+              <span className="absolute left-2.5 top-2 text-xs text-slate-400">🔍</span>
+              {search && (
+                <button
+                  onClick={() => setSearch('')}
+                  className="absolute right-2.5 top-1.5 text-xs text-slate-400 hover:text-slate-600"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+
+            <button
+              onClick={() => void syncWithBackend()}
+              disabled={isSyncing}
+              title="Sync latest live recovery status from backend"
+              className="px-2.5 py-1.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-bold flex items-center gap-1.5 transition cursor-pointer shrink-0 disabled:opacity-60"
+            >
+              <span className={isSyncing ? 'animate-spin' : ''}>🔄</span>
+              <span className="hidden sm:inline">{isSyncing ? 'Syncing...' : 'Sync'}</span>
+            </button>
           </div>
         </div>
 
